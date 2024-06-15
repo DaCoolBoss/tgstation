@@ -72,28 +72,46 @@
 	discountable = SUPPLY_PACK_RARE_DISCOUNTABLE
 
 /datum/supply_pack/imports/dumpstercorpse
-	name = "A....Dumpster?"
+	name = "A Corpse"
 	desc = "Why does it smell so bad...."
-	cost = CARGO_CRATE_VALUE * 5
+	cost = CARGO_CRATE_VALUE * 6
 	contains = list(/mob/living/carbon/human)
-	crate_name = "putrid dumpster"
+	crate_name = "dumpster"
 	crate_type = /obj/structure/closet/crate/trashcart
+	contraband = TRUE
 
 /datum/supply_pack/imports/dumpstercorpse/generate()
 	. = ..()
 	var/mob/living/carbon/human/corpse = locate() in .
 	corpse.death()
 
+
 /datum/supply_pack/imports/dumpsterloot
-	name = "A....Dumpster"
-	desc = "I'm not sure why you bothered to buy this...and why does it cost so much?"
-	cost = CARGO_CRATE_VALUE * 5
+	name = "A Dumpster"
+	desc = "A dumpster full of trash, shipped from the Spinward Recycling Depot. \
+	Useful if you need trash in a hurry. Rarely contains items of great value."
+	cost = CARGO_CRATE_VALUE * 4
 	contains = list(
-		/obj/effect/spawner/random/maintenance/three,
+		/obj/effect/spawner/random/maintenance/two,
 		/obj/effect/spawner/random/trash/garbage = 5,
+		/obj/item/storage/bag/trash/filled = 2,
 	)
-	crate_name = "putrid dumpster"
+	crate_name = "dumpster"
 	crate_type = /obj/structure/closet/crate/trashcart
+
+/datum/supply_pack/imports/dumpsterloot_fancy
+	name = "Locked Dumpster"
+	desc = "A dumpster full of trash, shipped from the Spinward Recycling Depot. \
+	These ones have locks on them, openable by any custodial ID card. \
+	Much more likely than other dumpsters to contain items of great value."
+	cost = CARGO_CRATE_VALUE * 6
+	contains = list(
+		/obj/effect/spawner/random/maintenance/four,
+		/obj/effect/spawner/random/trash/deluxe_garbage = 7,
+		/obj/item/storage/bag/trash/filled = 3,
+	)
+	crate_name = "secure dumpster"
+	crate_type = /obj/structure/closet/crate/trashcart/secure
 
 /datum/supply_pack/imports/error
 	name = "NULL_ENTRY"

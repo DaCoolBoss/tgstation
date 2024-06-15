@@ -31,17 +31,40 @@
 	crate_name = "medipen crate"
 	crate_type = /obj/structure/closet/crate/medical
 
-/datum/supply_pack/medical/coroner_crate
-	name = "Autopsy Kit"
-	desc = "Contains an autopsy scanner, when you lose your own and really \
-		need to complete your dissection experiments."
-	cost = CARGO_CRATE_VALUE * 2.5
+/datum/supply_pack/medical/human_cadaver
+	name = "Human Cadaver and Dissection Kit"
+	desc = "All you need for a human anatomy class in the surgical theatre. \
+		Includes: One Homo Sapien (deceased), One Set of Dissection Tools, One Autopsy Scanner, One Certificate of Authenticity \
+		All cadavers and carcasses are guaranteed to be humanely-sourced, cruelty-free, non-clone, free-range and gluten-free."
+	cost = CARGO_CRATE_VALUE * 9
 	contains = list(
 		/obj/item/autopsy_scanner = 1,
 		/obj/item/storage/medkit/coroner = 1,
+		/mob/living/carbon/human = 1
 	)
 	crate_name = "autopsy kit crate"
+/datum/supply_pack/medical/human_cadaver/generate()
+	. = ..()
+	var/mob/living/carbon/human/corpse = locate() in .
 
+	corpse.death()
+
+/datum/supply_pack/medical/lizard_cadaver
+	name = "Lizardman Cadaver and Autopsy Kit"
+	desc = "All you need for a xenobiological anatomy class in the test chamber. \
+		Includes: One Xeno Saurus (deceased), One Set of Dissection Tools, One Autopsy Scanner, One Certificate of Authenticity \
+		All cadavers and carcasses are guaranteed to be humanely-sourced, non-clone, free-range and gluten-free."
+	cost = CARGO_CRATE_VALUE * 12
+	contains = list(
+		/obj/item/autopsy_scanner = 1,
+		/obj/item/storage/medkit/coroner = 1,
+		/mob/living/carbon/human
+	)
+	crate_name = "autopsy kit crate"
+/datum/supply_pack/imports/dumpstercorpse/generate()
+	. = ..()
+	var/mob/living/carbon/human/corpse = locate() in .
+	corpse.death()
 /datum/supply_pack/medical/chemical
 	name = "Chemical Starter Kit Crate"
 	desc = "Contains thirteen different chemicals, for all the fun experiments you can make."
