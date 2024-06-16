@@ -111,7 +111,7 @@
 		/obj/item/storage/bag/trash/filled = 3,
 	)
 	crate_name = "secure dumpster"
-	crate_type = /obj/structure/closet/crate/trashcart/secure
+//	crate_type = /obj/structure/closet/crate/trashcart/secure
 
 /datum/supply_pack/imports/error
 	name = "NULL_ENTRY"
