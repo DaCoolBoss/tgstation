@@ -78,6 +78,13 @@
 	},
 /turf/open/floor/carpet/green,
 /area/virtual_domain/safehouse)
+"u" = (
+/obj/structure/displaycase{
+	alert = 0;
+	showpiece = /obj/item/drake_remains
+	},
+/turf/open/floor/carpet/green,
+/area/virtual_domain/safehouse)
 "v" = (
 /obj/effect/landmark/bitrunning/hololadder_spawn,
 /turf/open/floor/carpet/green,
@@ -92,6 +99,13 @@
 	pixel_y = 8
 	},
 /obj/item/clothing/mask/cigarette/pipe,
+/turf/open/floor/carpet/green,
+/area/virtual_domain/safehouse)
+"P" = (
+/obj/structure/displaycase{
+	showpiece = /obj/item/crusher_trophy/bear_paw;
+	alert = 0
+	},
 /turf/open/floor/carpet/green,
 /area/virtual_domain/safehouse)
 "R" = (
@@ -124,7 +138,7 @@ R
 m
 q
 o
-p
+P
 R
 "}
 (3,1,1) = {"
@@ -156,7 +170,7 @@ R
 i
 N
 U
-p
+u
 R
 "}
 (7,1,1) = {"

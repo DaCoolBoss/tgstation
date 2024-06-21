@@ -7,13 +7,18 @@
 /turf/closed/mineral/gold,
 /area/space)
 "aR" = (
-/mob/living/basic/seedling/meanie,
 /obj/structure/flora/bush/grassy/style_3,
 /turf/open/misc/grass/jungle,
 /area/space)
 "bK" = (
 /obj/item/food/grown/mushroom/plumphelmet,
 /turf/open/misc/dirt/jungle,
+/area/space)
+"cQ" = (
+/obj/effect/decal/remains/human{
+	pixel_x = 8
+	},
+/turf/open/misc/grass/jungle,
 /area/space)
 "dj" = (
 /obj/structure/flora/tree/jungle/style_3,
@@ -22,6 +27,10 @@
 "dm" = (
 /obj/structure/flora/bush/flowers_pp/style_2,
 /turf/open/misc/grass/jungle,
+/area/space)
+"dp" = (
+/obj/structure/flora/bush/jungle/b,
+/turf/open/misc/dirt/jungle/dark,
 /area/space)
 "dV" = (
 /mob/living/basic/frog,
@@ -85,6 +94,11 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/misc/grass/jungle,
 /area/space)
+"iG" = (
+/obj/structure/flora/grass/jungle/a,
+/obj/item/food/grown/bungofruit,
+/turf/open/misc/dirt/jungle,
+/area/space)
 "iJ" = (
 /obj/structure/flora/grass/jungle/a/style_4,
 /turf/open/misc/grass/jungle,
@@ -102,10 +116,6 @@
 /obj/structure/flora/bush/style_4,
 /turf/open/misc/dirt/jungle,
 /area/space)
-"jO" = (
-/mob/living/basic/snake/banded,
-/turf/open/misc/dirt/jungle,
-/area/space)
 "jU" = (
 /turf/closed/indestructible/binary,
 /area/space)
@@ -118,9 +128,9 @@
 /obj/structure/flora/grass/jungle/a/style_2,
 /turf/open/misc/dirt/jungle,
 /area/space)
-"kh" = (
-/mob/living/basic/gorilla,
-/turf/open/misc/dirt/jungle/dark,
+"kq" = (
+/obj/structure/flora/bush/ferny/style_2,
+/turf/open/misc/dirt/jungle,
 /area/space)
 "kt" = (
 /obj/structure/spider/stickyweb,
@@ -177,6 +187,10 @@
 /obj/structure/flora/bush/stalky/style_2,
 /turf/open/misc/dirt/jungle,
 /area/space)
+"nJ" = (
+/obj/item/food/grown/berries/death,
+/turf/open/misc/grass/jungle,
+/area/space)
 "on" = (
 /obj/structure/flora/rock,
 /obj/structure/flora/bush/grassy/style_3{
@@ -198,11 +212,12 @@
 /turf/open/misc/dirt/jungle,
 /area/space)
 "px" = (
-/mob/living/basic/bear,
+/obj/structure/flora/grass/jungle/b/style_2,
+/obj/effect/spawner/random/jungle_threat/big,
 /turf/open/misc/dirt/jungle,
 /area/space)
 "pC" = (
-/mob/living/basic/bear,
+/obj/effect/spawner/random/jungle_threat/dangerous_snakes/less_dangerous,
 /turf/open/misc/grass/jungle,
 /area/space)
 "pH" = (
@@ -213,12 +228,17 @@
 /obj/item/grown/log/tree,
 /turf/open/misc/grass/jungle,
 /area/space)
+"qE" = (
+/obj/structure/flora/rock,
+/turf/open/misc/dirt/jungle,
+/area/space)
 "qF" = (
 /obj/structure/flora/rock/pile/jungle/style_3,
 /turf/open/misc/grass/jungle,
 /area/space)
 "rE" = (
 /obj/structure/flora/rock/pile/jungle/style_5,
+/obj/effect/spawner/random/jungle_threat/big,
 /turf/open/misc/grass/jungle,
 /area/space)
 "rI" = (
@@ -227,7 +247,7 @@
 /area/space)
 "sH" = (
 /obj/structure/spider/stickyweb,
-/mob/living/basic/spider/giant/guard,
+/obj/effect/spawner/random/jungle_threat/spider,
 /turf/open/misc/dirt/jungle,
 /area/space)
 "sX" = (
@@ -251,8 +271,8 @@
 /turf/open/water/jungle,
 /area/space)
 "tC" = (
-/mob/living/basic/venus_human_trap,
-/turf/open/misc/grass/jungle,
+/obj/effect/spawner/random/jungle_threat/group/big,
+/turf/open/misc/dirt/jungle/dark,
 /area/space)
 "tK" = (
 /turf/open/misc/dirt/jungle,
@@ -264,6 +284,10 @@
 "tQ" = (
 /obj/structure/spider/passage,
 /turf/open/misc/dirt/jungle,
+/area/space)
+"tR" = (
+/obj/item/food/grown/mushroom/odious_puffball,
+/turf/open/misc/dirt/jungle/dark,
 /area/space)
 "tY" = (
 /obj/structure/flora/bush/jungle/c,
@@ -284,6 +308,14 @@
 "uy" = (
 /obj/structure/flora/bush/flowers_yw/style_2,
 /turf/open/misc/dirt/jungle/dark,
+/area/space)
+"uC" = (
+/obj/structure/flora/rock/style_4,
+/obj/item/clothing/glasses/monocle{
+	pixel_y = -7;
+	pixel_x = -4
+	},
+/turf/open/misc/grass/jungle,
 /area/space)
 "uE" = (
 /obj/structure/flora/bush/generic/style_3,
@@ -342,8 +374,8 @@
 /turf/open/misc/dirt/jungle,
 /area/space)
 "xI" = (
-/obj/item/clothing/accessory/talisman,
-/turf/open/misc/dirt/jungle,
+/obj/structure/flora/bush/jungle/a,
+/turf/open/water/jungle,
 /area/space)
 "xK" = (
 /obj/structure/flora/tree/jungle/style_4,
@@ -397,6 +429,10 @@
 /obj/structure/firepit,
 /turf/open/misc/dirt/jungle,
 /area/space)
+"Bk" = (
+/obj/structure/flora/bush/flowers_br/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
 "Bm" = (
 /obj/structure/flora/grass/jungle/a/style_2,
 /turf/open/misc/dirt/jungle,
@@ -442,7 +478,7 @@
 /turf/open/misc/dirt/jungle,
 /area/space)
 "Fh" = (
-/mob/living/basic/seedling/meanie,
+/obj/effect/spawner/random/jungle_threat/plant,
 /turf/open/misc/grass/jungle,
 /area/space)
 "Fj" = (
@@ -503,9 +539,8 @@
 /turf/open/misc/grass/jungle,
 /area/space)
 "HQ" = (
-/mob/living/basic/venus_human_trap,
-/obj/structure/flora/grass/jungle/a/style_4,
-/turf/open/misc/dirt/jungle,
+/obj/effect/spawner/random/jungle_threat/plant,
+/turf/open/misc/dirt/jungle/dark,
 /area/space)
 "Ie" = (
 /obj/structure/flora/bush/jungle/b/style_2,
@@ -521,8 +556,8 @@
 /turf/open/misc/dirt/jungle,
 /area/space)
 "Je" = (
-/mob/living/basic/spider/giant/guard,
 /obj/structure/spider/stickyweb,
+/obj/effect/spawner/random/jungle_threat/spider,
 /turf/open/misc/grass/jungle,
 /area/space)
 "Jt" = (
@@ -570,6 +605,10 @@
 /obj/structure/flora/bush/reed/style_4,
 /turf/open/water/jungle,
 /area/space)
+"LQ" = (
+/obj/structure/flora/bush/flowers_br/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
 "Mm" = (
 /obj/structure/flora/bush/generic/style_4,
 /turf/open/misc/dirt/jungle,
@@ -584,8 +623,10 @@
 /turf/template_noop,
 /area/space)
 "NN" = (
-/obj/structure/flora/bush/generic/style_4,
-/turf/open/misc/grass/jungle,
+/obj/effect/decal/cleanable/ants/fire{
+	name = "fire ants"
+	},
+/turf/open/misc/dirt/jungle,
 /area/space)
 "Ob" = (
 /obj/structure/flora/rock/pile/jungle/style_2,
@@ -594,6 +635,10 @@
 "Oe" = (
 /obj/structure/flora/bush/jungle/c/style_2,
 /turf/open/misc/dirt/jungle,
+/area/space)
+"Ol" = (
+/obj/item/food/grown/toechtauese,
+/turf/open/misc/grass/jungle,
 /area/space)
 "OQ" = (
 /obj/structure/flora/bush/jungle/b/style_3,
@@ -639,6 +684,7 @@
 /area/space)
 "Qi" = (
 /obj/structure/flora/grass/jungle/a/style_3,
+/obj/item/clothing/accessory/talisman,
 /turf/open/misc/dirt/jungle,
 /area/space)
 "Qk" = (
@@ -673,8 +719,8 @@
 /turf/open/water/jungle,
 /area/space)
 "SU" = (
-/mob/living/basic/bear,
-/turf/open/misc/dirt/jungle/dark,
+/obj/effect/spawner/random/jungle_threat,
+/turf/open/misc/grass/jungle,
 /area/space)
 "Ta" = (
 /obj/structure/flora/bush/flowers_yw/style_3,
@@ -744,9 +790,8 @@
 /turf/open/misc/dirt/jungle/dark,
 /area/space)
 "Xn" = (
-/obj/structure/spider/stickyweb,
-/mob/living/basic/spider/giant/viper,
-/turf/open/misc/dirt/jungle,
+/obj/effect/spawner/random/jungle_threat/big,
+/turf/open/misc/grass/jungle,
 /area/space)
 "XD" = (
 /obj/structure/flora/rock/style_4,
@@ -888,7 +933,7 @@ ag
 ag
 ag
 ag
-ag
+dp
 ag
 ag
 ag
@@ -909,7 +954,7 @@ jU
 jU
 KN
 ag
-Zq
+tR
 tK
 Ta
 Jt
@@ -927,8 +972,8 @@ ag
 To
 ag
 ag
-ag
-Jt
+fe
+gU
 ag
 ag
 ag
@@ -964,9 +1009,9 @@ fl
 if
 ub
 sX
-Fh
+Jt
 ag
-ag
+yP
 pH
 ka
 ag
@@ -1003,8 +1048,8 @@ ii
 Jt
 if
 Jt
-Jt
-Jt
+SU
+qE
 Jt
 Jt
 Jt
@@ -1035,7 +1080,7 @@ OR
 SS
 SS
 Jt
-Jt
+FP
 Jt
 Jt
 Jt
@@ -1078,7 +1123,7 @@ Jt
 Jt
 Jt
 Jt
-Jt
+Ol
 fe
 Jt
 Jt
@@ -1107,7 +1152,7 @@ tK
 iM
 Pe
 Jt
-tK
+TK
 Zq
 Li
 SS
@@ -1124,7 +1169,7 @@ Zq
 tK
 Jt
 Jt
-Jt
+pC
 tl
 tK
 SS
@@ -1154,12 +1199,12 @@ SS
 SS
 SS
 SS
-Jt
+Fh
 Jt
 Jt
 Jt
 TK
-tK
+NN
 Jt
 Jt
 FP
@@ -1184,7 +1229,7 @@ KN
 ag
 ag
 Lu
-xI
+tK
 Bi
 Tt
 tK
@@ -1193,7 +1238,7 @@ SS
 SS
 SS
 SS
-tC
+Jt
 Jt
 Jt
 Jt
@@ -1203,7 +1248,7 @@ Jt
 Jt
 Jt
 Jt
-Ho
+Jt
 Ca
 ZD
 NK
@@ -1223,7 +1268,7 @@ KN
 ag
 ag
 Vs
-jO
+tK
 GB
 Jt
 Qi
@@ -1261,8 +1306,8 @@ jU
 KN
 ag
 PR
-Zq
-Jt
+AE
+Bk
 fh
 Jt
 yP
@@ -1272,7 +1317,7 @@ SS
 Bm
 SS
 Qk
-SS
+tz
 tK
 Jt
 YM
@@ -1299,9 +1344,9 @@ jU
 jU
 KN
 ag
-tK
-NN
-Jt
+AE
+AE
+AE
 Jt
 HK
 zv
@@ -1309,11 +1354,11 @@ vm
 TG
 SS
 tK
-Zq
+HQ
 Wv
+tz
 SS
-SS
-Jt
+yP
 Jt
 Jt
 Jt
@@ -1339,12 +1384,12 @@ jU
 KN
 ag
 uZ
-Jt
+AE
 pH
 Jt
 tK
 rI
-Lu
+iG
 tK
 gb
 tz
@@ -1353,7 +1398,7 @@ tK
 PI
 SS
 SS
-Jt
+sX
 Jt
 XD
 AE
@@ -1378,7 +1423,7 @@ jU
 KN
 ag
 hK
-Jt
+SU
 uv
 An
 tK
@@ -1388,7 +1433,7 @@ uE
 tK
 nc
 Qk
-HQ
+vm
 tK
 tK
 tz
@@ -1415,7 +1460,7 @@ jU
 (17,1,1) = {"
 jU
 KN
-ag
+tK
 Jt
 Jt
 Jt
@@ -1430,7 +1475,7 @@ SS
 SS
 vm
 Zq
-SS
+xI
 Jt
 Jt
 Jt
@@ -1454,7 +1499,7 @@ jU
 (18,1,1) = {"
 jU
 KN
-ag
+Ds
 tK
 Jt
 Jt
@@ -1501,7 +1546,7 @@ Jt
 Jt
 Jt
 aR
-Jt
+Fh
 Jt
 zL
 lc
@@ -1591,7 +1636,7 @@ SS
 tK
 Zq
 Jt
-Jt
+LQ
 Jt
 Jt
 nC
@@ -1630,7 +1675,7 @@ SS
 dV
 Ob
 Jt
-Jt
+Vc
 Jt
 Jt
 Ie
@@ -1823,9 +1868,9 @@ Jt
 SS
 SS
 Zq
-px
+tK
 Ob
-Zq
+tC
 Jt
 Jt
 SS
@@ -1857,7 +1902,7 @@ Jt
 Jt
 Vx
 Jt
-Jt
+Bk
 SS
 SS
 tK
@@ -1902,7 +1947,7 @@ SS
 gb
 tK
 tK
-SU
+Zq
 Zq
 Jt
 Jt
@@ -1930,7 +1975,7 @@ Jt
 GG
 if
 Ie
-An
+px
 Jt
 Jt
 Jt
@@ -2004,11 +2049,11 @@ IQ
 lp
 PJ
 ag
-Cn
+cQ
 Jt
 Jt
 Jt
-pC
+Jt
 Jt
 Jt
 Jt
@@ -2043,12 +2088,12 @@ sH
 PJ
 Zq
 ag
-XD
+uC
 Jt
 Jt
 Jt
 Jt
-Jt
+LQ
 Jt
 rI
 SS
@@ -2070,7 +2115,7 @@ SS
 SS
 SS
 SS
-tK
+YB
 qx
 KN
 jU
@@ -2087,7 +2132,7 @@ Jt
 Jt
 Jt
 Zj
-pC
+Jt
 Jt
 Jt
 SS
@@ -2117,7 +2162,7 @@ jU
 (35,1,1) = {"
 jU
 KN
-Xn
+sH
 Zq
 ag
 ag
@@ -2171,15 +2216,15 @@ SS
 SS
 uf
 tK
+dm
 Jt
 Jt
 Jt
 Jt
+FP
 Jt
-Jt
-Jt
-Jt
-kh
+Xn
+Zq
 SS
 SS
 SS
@@ -2188,7 +2233,7 @@ SS
 SS
 SS
 Jt
-Jt
+FP
 KN
 jU
 "}
@@ -2216,7 +2261,7 @@ fl
 Jt
 Jt
 Jt
-Jt
+nJ
 GH
 Jt
 SS
@@ -2226,8 +2271,8 @@ SS
 SS
 SS
 SS
-tK
-Jt
+kq
+FP
 KN
 jU
 "}
@@ -2250,13 +2295,13 @@ SS
 dj
 ag
 ag
-Jt
+dm
 Jt
 Jt
 ag
 ag
 ag
-Jt
+FP
 SS
 LO
 SS
