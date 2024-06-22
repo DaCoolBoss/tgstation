@@ -506,6 +506,23 @@
 	acid = 40
 	wound = 15
 
+/obj/item/clothing/head/helmet/pith
+	name = "Pith Helmet"
+	desc = "For protecting your head, for keeping the sun off, and for looking good."
+	max_heat_protection_temperature = FIRE_HELM_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF
+
+/datum/armor/helmet_pith
+	melee = 40
+	bullet = 40
+	laser = 10
+	energy = 10
+	bomb = 50
+	fire = 80
+	acid = 30
+	wound = 10
+
+
 /obj/item/clothing/head/helmet/military
 	name = "Crude Helmet"
 	desc = "A cheaply made kettle helmet with an added faceplate to protect your eyes and mouth."

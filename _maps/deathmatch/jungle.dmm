@@ -1,0 +1,1039 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"at" = (
+/turf/open/misc/dirt/jungle,
+/area/space)
+"aF" = (
+/obj/structure/flora/bush/reed,
+/turf/open/water/jungle,
+/area/space)
+"bg" = (
+/obj/structure/flora/tree/jungle/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
+"bu" = (
+/obj/structure/flora/rock/pile/jungle/style_5,
+/turf/open/water/jungle,
+/area/space)
+"cr" = (
+/obj/structure/flora/grass/jungle/a/style_5,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"ea" = (
+/obj/structure/flora/tree/jungle/small,
+/turf/open/misc/grass/jungle,
+/area/space)
+"ex" = (
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"fJ" = (
+/obj/structure/flora/bush/ferny/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
+"fV" = (
+/obj/structure/flora/ash/stem_shroom,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"gZ" = (
+/obj/structure/flora/grass/jungle/a,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"hH" = (
+/turf/closed/indestructible/rock,
+/area/space)
+"hM" = (
+/obj/structure/flora/ash/leaf_shroom,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"jh" = (
+/obj/structure/flora/tree/jungle/small/style_5,
+/turf/open/misc/grass/jungle,
+/area/space)
+"jB" = (
+/turf/open/water/jungle,
+/area/space)
+"ka" = (
+/obj/structure/flora/grass/jungle/a/style_3,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"kd" = (
+/obj/structure/flora/bush/fullgrass/style_3,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"kh" = (
+/obj/structure/firepit,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"kr" = (
+/obj/structure/flora/rock/pile/style_3,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"ku" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/misc/grass/jungle,
+/area/space)
+"mk" = (
+/obj/structure/flora/tree/jungle/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
+"nb" = (
+/obj/structure/flora/grass/jungle/a/style_2,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"nm" = (
+/obj/structure/flora/bush/sparsegrass,
+/turf/open/misc/grass/jungle,
+/area/space)
+"nV" = (
+/turf/closed/mineral/gold,
+/area/space)
+"oa" = (
+/turf/open/misc/grass/jungle,
+/area/space)
+"pt" = (
+/obj/structure/flora/rock/pile/jungle/style_2,
+/turf/open/water/jungle,
+/area/space)
+"sF" = (
+/obj/structure/flora/grass/jungle/a/style_4,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"sM" = (
+/obj/structure/flora/bush/grassy/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
+"us" = (
+/obj/structure/flora/grass/jungle/b/style_5,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"ve" = (
+/obj/structure/flora/bush/ferny/style_3,
+/turf/open/water/jungle,
+/area/space)
+"vK" = (
+/obj/structure/flora/grass/jungle/b/style_2,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"wn" = (
+/obj/structure/flora/tree/jungle/small/style_6,
+/turf/open/misc/grass/jungle,
+/area/space)
+"wu" = (
+/obj/structure/flora/grass/jungle/a/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
+"xd" = (
+/obj/structure/flora/bush/generic/style_3,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"yW" = (
+/obj/structure/flora/bush/grassy/style_4{
+	pixel_y = -10
+	},
+/turf/open/misc/grass/jungle,
+/area/space)
+"yZ" = (
+/obj/structure/flora/bush/reed/style_4,
+/turf/open/water/jungle,
+/area/space)
+"zU" = (
+/obj/structure/flora/rock/pile/jungle/style_3,
+/turf/open/water/jungle,
+/area/space)
+"Aj" = (
+/obj/structure/flora/bush/ferny/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
+"AG" = (
+/obj/structure/flora/rock/pile,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"CY" = (
+/obj/structure/flora/tree/jungle/small/style_4,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"Ds" = (
+/obj/structure/flora/bush/jungle/c,
+/turf/open/misc/grass/jungle,
+/area/space)
+"DM" = (
+/obj/structure/flora/rock/pile/jungle,
+/turf/open/water/jungle,
+/area/space)
+"EB" = (
+/obj/structure/flora/bush/reed/style_4,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"Fe" = (
+/obj/item/food/grown/bungofruit,
+/obj/structure/flora/bush/ferny/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
+"FL" = (
+/obj/structure/flora/grass/jungle/a/style_5,
+/turf/open/misc/grass/jungle,
+/area/space)
+"GS" = (
+/obj/structure/flora/rock/pile/jungle/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
+"Ha" = (
+/obj/effect/decal/cleanable/ants/fire{
+	name = "fire ants"
+	},
+/turf/open/misc/dirt/jungle,
+/area/space)
+"Hd" = (
+/obj/structure/flora/tree/jungle/small/style_6,
+/obj/structure/flora/bush/fullgrass/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
+"Id" = (
+/obj/structure/flora/rock/pile/jungle,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"Ih" = (
+/obj/structure/flora/grass/jungle/a/style_4,
+/turf/open/misc/grass/jungle,
+/area/space)
+"IE" = (
+/obj/structure/flora/rock/pile/style_2,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"IX" = (
+/obj/structure/flora/bush/jungle/a,
+/turf/open/misc/grass/jungle,
+/area/space)
+"Ji" = (
+/obj/structure/flora/bush/stalky/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
+"KB" = (
+/obj/structure/flora/rock/style_4,
+/turf/open/misc/grass/jungle,
+/area/space)
+"Lw" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"Lz" = (
+/obj/effect/landmark/deathmatch_player_spawn,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"LG" = (
+/obj/structure/flora/bush/reed/style_3,
+/turf/open/water/jungle,
+/area/space)
+"Mb" = (
+/obj/structure/flora/rock/pile/jungle/style_2,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"Mk" = (
+/obj/structure/flora/rock,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"NG" = (
+/obj/structure/flora/bush/leafy,
+/turf/open/misc/grass/jungle,
+/area/space)
+"Oe" = (
+/obj/structure/flora/tree/jungle/small/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
+"Pg" = (
+/obj/structure/flora/rock/style_4,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"PW" = (
+/obj/structure/flora/bush/leafy,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"QD" = (
+/obj/structure/flora/rock/pile/jungle/style_4,
+/turf/open/water/jungle,
+/area/space)
+"QR" = (
+/obj/structure/flora/rock,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"QU" = (
+/obj/structure/flora/rock/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
+"QV" = (
+/obj/structure/firepit,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"Rc" = (
+/obj/structure/flora/ash/cap_shroom,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"RH" = (
+/obj/structure/flora/bush/fullgrass/style_3,
+/turf/open/misc/grass/jungle,
+/area/space)
+"Tc" = (
+/obj/structure/flora/tree/jungle/small/style_5,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"Tu" = (
+/obj/structure/flora/grass/jungle/b/style_3,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"UK" = (
+/obj/structure/flora/ash/tall_shroom,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"UO" = (
+/obj/structure/flora/bush/reed/style_2,
+/turf/open/water/jungle,
+/area/space)
+"UV" = (
+/obj/structure/flora/tree/jungle,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"VF" = (
+/obj/structure/flora/bush/ferny/style_3,
+/turf/open/misc/dirt/jungle,
+/area/space)
+"XS" = (
+/obj/item/clothing/accessory/talisman,
+/obj/structure/flora/rock/style_4,
+/turf/open/misc/dirt/jungle/dark,
+/area/space)
+"ZY" = (
+/obj/structure/flora/grass/jungle/b/style_2,
+/turf/open/misc/grass/jungle,
+/area/space)
+"ZZ" = (
+/obj/structure/flora/grass/jungle/a/style_4,
+/turf/open/misc/dirt/jungle,
+/area/space)
+
+(1,1,1) = {"
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+"}
+(2,1,1) = {"
+hH
+nV
+nV
+nV
+nV
+nV
+nV
+jB
+jB
+jB
+at
+at
+at
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+at
+oa
+hH
+"}
+(3,1,1) = {"
+hH
+nV
+nV
+nV
+nV
+nV
+LG
+jB
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+pt
+jB
+jB
+jB
+aF
+jB
+jB
+at
+oa
+oa
+hH
+"}
+(4,1,1) = {"
+hH
+nV
+nV
+nV
+nV
+at
+at
+at
+hM
+nV
+nV
+at
+VF
+nV
+nV
+nV
+yZ
+jB
+oa
+oa
+jB
+jB
+bu
+oa
+jB
+hH
+"}
+(5,1,1) = {"
+hH
+nV
+nV
+nV
+Lz
+at
+QV
+at
+at
+at
+at
+IE
+at
+at
+nV
+nV
+nV
+jB
+Hd
+at
+oa
+ku
+jB
+aF
+jB
+hH
+"}
+(6,1,1) = {"
+hH
+nV
+nV
+UK
+at
+at
+at
+at
+nV
+nV
+nV
+at
+oa
+at
+IE
+Id
+oa
+jB
+LG
+oa
+at
+at
+oa
+jB
+jB
+hH
+"}
+(7,1,1) = {"
+hH
+nV
+nV
+ea
+ex
+at
+at
+nV
+nV
+nV
+nV
+bg
+oa
+oa
+Mk
+oa
+oa
+oa
+jB
+oa
+at
+at
+at
+jB
+jB
+hH
+"}
+(8,1,1) = {"
+hH
+nV
+nV
+Aj
+oa
+ex
+ex
+nV
+nV
+nV
+Fe
+oa
+oa
+oa
+oa
+oa
+kd
+Ha
+oa
+oa
+oa
+ZZ
+LG
+jB
+jB
+hH
+"}
+(9,1,1) = {"
+hH
+jB
+fJ
+mk
+oa
+ex
+at
+at
+nV
+nV
+QU
+oa
+oa
+oa
+oa
+oa
+oa
+RH
+oa
+oa
+aF
+jB
+jB
+pt
+jB
+hH
+"}
+(10,1,1) = {"
+hH
+jB
+KB
+NG
+ex
+ex
+ka
+cr
+nV
+nV
+oa
+oa
+vK
+at
+oa
+oa
+oa
+oa
+oa
+oa
+ex
+jB
+QD
+at
+jB
+hH
+"}
+(11,1,1) = {"
+hH
+jB
+nV
+nV
+ex
+ex
+IX
+ZZ
+at
+at
+nb
+oa
+QD
+pt
+at
+oa
+wn
+ex
+oa
+oa
+ex
+jB
+jB
+at
+jB
+hH
+"}
+(12,1,1) = {"
+hH
+jB
+nV
+nV
+ex
+ex
+FL
+ZZ
+EB
+oa
+at
+ex
+cr
+oa
+oa
+IX
+oa
+ex
+oa
+oa
+ex
+ex
+jB
+jB
+jB
+hH
+"}
+(13,1,1) = {"
+hH
+jB
+nV
+nV
+QR
+ex
+Aj
+gZ
+at
+Pg
+pt
+cr
+oa
+Tu
+oa
+oa
+RH
+oa
+oa
+oa
+oa
+QR
+jB
+DM
+jB
+hH
+"}
+(14,1,1) = {"
+hH
+jB
+nV
+nV
+Tc
+ex
+oa
+oa
+xd
+at
+jB
+oa
+ZZ
+at
+at
+pt
+oa
+oa
+oa
+oa
+oa
+CY
+ex
+jB
+jB
+hH
+"}
+(15,1,1) = {"
+hH
+ex
+nV
+nV
+oa
+ex
+oa
+oa
+oa
+jh
+Ds
+oa
+oa
+sF
+ex
+ex
+ex
+oa
+oa
+oa
+oa
+oa
+ex
+LG
+jB
+hH
+"}
+(16,1,1) = {"
+hH
+ex
+nV
+nV
+oa
+oa
+oa
+oa
+oa
+oa
+Ih
+oa
+yW
+QU
+at
+jB
+jB
+oa
+oa
+oa
+oa
+oa
+ex
+jB
+jB
+hH
+"}
+(17,1,1) = {"
+hH
+ex
+nV
+Mb
+ex
+oa
+oa
+sM
+oa
+oa
+ZY
+wu
+oa
+ex
+oa
+oa
+QD
+ex
+oa
+oa
+oa
+oa
+ex
+yZ
+jB
+hH
+"}
+(18,1,1) = {"
+hH
+ex
+nV
+UV
+AG
+ex
+nV
+nV
+oa
+oa
+GS
+ZY
+us
+ex
+oa
+oa
+ve
+ex
+ex
+oa
+oa
+ex
+ex
+jB
+jB
+hH
+"}
+(19,1,1) = {"
+hH
+ex
+nV
+XS
+ex
+ex
+nV
+nV
+ex
+ex
+oa
+oa
+oa
+ex
+ex
+oa
+jB
+jB
+ex
+oa
+oa
+ex
+ex
+jB
+jB
+hH
+"}
+(20,1,1) = {"
+hH
+ex
+nV
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+ex
+nm
+bg
+oa
+oa
+ex
+ex
+oa
+oa
+oa
+oa
+ex
+ex
+jB
+jB
+hH
+"}
+(21,1,1) = {"
+hH
+nV
+nV
+UK
+ex
+ex
+ex
+ex
+ex
+ex
+nV
+Aj
+Ji
+oa
+nV
+nV
+ex
+PW
+oa
+oa
+oa
+ex
+ex
+jB
+jB
+hH
+"}
+(22,1,1) = {"
+hH
+nV
+nV
+nV
+Lw
+ex
+ex
+kh
+ex
+ex
+nV
+nV
+jh
+nV
+nV
+zU
+UO
+oa
+Oe
+oa
+oa
+Lw
+aF
+DM
+jB
+hH
+"}
+(23,1,1) = {"
+hH
+nV
+nV
+nV
+nV
+kr
+ex
+ex
+ex
+Rc
+nV
+nV
+nV
+nV
+nV
+jB
+jB
+jB
+oa
+oa
+fV
+jB
+jB
+jB
+jB
+hH
+"}
+(24,1,1) = {"
+hH
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+aF
+bu
+jB
+aF
+jB
+jB
+jB
+pt
+jB
+at
+hH
+"}
+(25,1,1) = {"
+hH
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+nV
+at
+at
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+jB
+at
+hH
+"}
+(26,1,1) = {"
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+hH
+"}
