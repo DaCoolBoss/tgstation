@@ -78,20 +78,7 @@
 	desc = "It's incredibly classy. Almost unbelievably classy."
 	uniform = /obj/item/clothing/under/suit/tuxedo
 	shoes = /obj/item/clothing/shoes/laceup
-	if(prob(20))
-		l_pocket = pick_weight(list(
-		/obj/item/coin/iron = 2,
-		/obj/item/coin/silver = 1,
-		/obj/item/food/grown/poppy = 1,
-		/obj/item/food/grown/harebell = 1,
-		))
-	if(prob(20))
-		r_pocket = pick_weight(list(
-		/obj/item/coin/iron = 2,
-		/obj/item/coin/silver = 1,
-		/obj/item/food/grown/poppy = 1,
-		/obj/item/food/grown/harebell = 1,
-		))
+
 /datum/outfit/tuxedo/pre_equip(visualsOnly = FALSE)
 	if(prob(35))
 		head = /obj/item/clothing/head/hats/tophat
@@ -109,10 +96,11 @@
 		/obj/item/food/grown/poppy = 1,
 		/obj/item/food/grown/harebell = 1,
 		))
+
 /obj/effect/mob_spawn/corpse/human/medical_cadaver/lizardman
 		mob_type = /mob/living/carbon/human/species/lizard
 
-/obj/effect/mob_spawn/corpse/human/medical_cadaver/Initialize(mapload)
+/obj/effect/mob_spawn/corpse/human/medical_cadaver/lizardman/Initialize(mapload)
 	add_reagent(/datum/reagent/toxin/formaldehyde, 5)
 	outfit = select_outfit()
 	return ..()
@@ -177,7 +165,7 @@
 /obj/effect/mob_spawn/corpse/human/medical_cadaver/dubious
 
 /obj/effect/mob_spawn/corpse/human/medical_cadaver/dubious/proc/select_outfit()
-	var/funeral_outfit = pick_weight(list(
+	var/dumpster_funeral_outfit = pick_weight(list(
 		/datum/outfit/nothing = 40
 		/datum/outfit/corpse_scrubs = 10,
 		/datum/outfit/corpse_greyshirt = 10,
