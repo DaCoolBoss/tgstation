@@ -1,313 +1,407 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "at" = (
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "aF" = (
 /obj/structure/flora/bush/reed,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"aI" = (
+/obj/structure/flora/grass/jungle/a/style_3,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "bg" = (
 /obj/structure/flora/tree/jungle/style_2,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "bu" = (
 /obj/structure/flora/rock/pile/jungle/style_5,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"bG" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "cr" = (
 /obj/structure/flora/grass/jungle/a/style_5,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"cv" = (
+/obj/structure/flora/bush/leavy/style_2,
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
+"dJ" = (
+/obj/structure/flora/bush/large,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "ea" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "ex" = (
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "fJ" = (
 /obj/structure/flora/bush/ferny/style_2,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "fV" = (
 /obj/structure/flora/ash/stem_shroom,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
+"gr" = (
+/obj/structure/flora/rock/pile,
+/turf/open/misc/dirt/jungle,
+/area/deathmatch/fullbright)
 "gZ" = (
 /obj/structure/flora/grass/jungle/a,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "hH" = (
 /turf/closed/indestructible/rock,
-/area/space)
+/area/deathmatch/fullbright)
 "hM" = (
 /obj/structure/flora/ash/leaf_shroom,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "jh" = (
 /obj/structure/flora/tree/jungle/small/style_5,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"ju" = (
+/obj/structure/flora/grass/jungle/a,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "jB" = (
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "ka" = (
 /obj/structure/flora/grass/jungle/a/style_3,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "kd" = (
 /obj/structure/flora/bush/fullgrass/style_3,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "kh" = (
 /obj/structure/firepit,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "kr" = (
 /obj/structure/flora/rock/pile/style_3,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "ku" = (
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "mk" = (
 /obj/structure/flora/tree/jungle/style_3,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"mz" = (
+/obj/structure/flora/bush/large/style_3,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "nb" = (
 /obj/structure/flora/grass/jungle/a/style_2,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "nm" = (
 /obj/structure/flora/bush/sparsegrass,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"nH" = (
+/obj/structure/flora/rock/pile/style_3,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "nV" = (
 /turf/closed/mineral/gold,
-/area/space)
+/area/deathmatch/fullbright)
 "oa" = (
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"pe" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/misc/dirt/jungle,
+/area/deathmatch/fullbright)
 "pt" = (
 /obj/structure/flora/rock/pile/jungle/style_2,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"qx" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
+"qT" = (
+/obj/structure/flora/rock/pile/jungle/style_3,
+/turf/open/misc/dirt/jungle,
+/area/deathmatch/fullbright)
 "sF" = (
 /obj/structure/flora/grass/jungle/a/style_4,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "sM" = (
 /obj/structure/flora/bush/grassy/style_3,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "us" = (
 /obj/structure/flora/grass/jungle/b/style_5,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "ve" = (
 /obj/structure/flora/bush/ferny/style_3,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "vK" = (
 /obj/structure/flora/grass/jungle/b/style_2,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"wa" = (
+/obj/structure/flora/bush/fullgrass,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "wn" = (
 /obj/structure/flora/tree/jungle/small/style_6,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "wu" = (
 /obj/structure/flora/grass/jungle/a/style_2,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "xd" = (
 /obj/structure/flora/bush/generic/style_3,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "yW" = (
 /obj/structure/flora/bush/grassy/style_4{
 	pixel_y = -10
 	},
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "yZ" = (
 /obj/structure/flora/bush/reed/style_4,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "zU" = (
 /obj/structure/flora/rock/pile/jungle/style_3,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Aj" = (
 /obj/structure/flora/bush/ferny/style_3,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "AG" = (
 /obj/structure/flora/rock/pile,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
+"Cn" = (
+/obj/structure/flora/rock/pile,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "CY" = (
 /obj/structure/flora/tree/jungle/small/style_4,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "Ds" = (
 /obj/structure/flora/bush/jungle/c,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "DM" = (
 /obj/structure/flora/rock/pile/jungle,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "EB" = (
 /obj/structure/flora/bush/reed/style_4,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Fe" = (
 /obj/item/food/grown/bungofruit,
 /obj/structure/flora/bush/ferny/style_3,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "FL" = (
 /obj/structure/flora/grass/jungle/a/style_5,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"Gf" = (
+/obj/effect/decal/cleanable/ants/fire{
+	name = "fire ants"
+	},
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
 "GS" = (
 /obj/structure/flora/rock/pile/jungle/style_2,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Ha" = (
 /obj/effect/decal/cleanable/ants/fire{
 	name = "fire ants"
 	},
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Hd" = (
 /obj/structure/flora/tree/jungle/small/style_6,
 /obj/structure/flora/bush/fullgrass/style_3,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Id" = (
 /obj/structure/flora/rock/pile/jungle,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Ih" = (
 /obj/structure/flora/grass/jungle/a/style_4,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "IE" = (
 /obj/structure/flora/rock/pile/style_2,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "IX" = (
 /obj/structure/flora/bush/jungle/a,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Ji" = (
 /obj/structure/flora/bush/stalky/style_2,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "KB" = (
 /obj/structure/flora/rock/style_4,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Lw" = (
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "Lz" = (
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"LE" = (
+/obj/structure/flora/rock/pile/jungle/style_4,
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
 "LG" = (
 /obj/structure/flora/bush/reed/style_3,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Mb" = (
 /obj/structure/flora/rock/pile/jungle/style_2,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "Mk" = (
 /obj/structure/flora/rock,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"Mv" = (
+/obj/structure/flora/grass/jungle/a/style_5,
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
 "NG" = (
 /obj/structure/flora/bush/leafy,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"NO" = (
+/obj/structure/flora/grass/jungle/a/style_3,
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
 "Oe" = (
 /obj/structure/flora/tree/jungle/small/style_2,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Pg" = (
 /obj/structure/flora/rock/style_4,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "PW" = (
 /obj/structure/flora/bush/leafy,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "QD" = (
 /obj/structure/flora/rock/pile/jungle/style_4,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "QR" = (
 /obj/structure/flora/rock,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "QU" = (
 /obj/structure/flora/rock/style_3,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "QV" = (
 /obj/structure/firepit,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Rc" = (
 /obj/structure/flora/ash/cap_shroom,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
+"RA" = (
+/obj/structure/flora/bush/fullgrass/style_2,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
 "RH" = (
 /obj/structure/flora/bush/fullgrass/style_3,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "Tc" = (
 /obj/structure/flora/tree/jungle/small/style_5,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "Tu" = (
 /obj/structure/flora/grass/jungle/b/style_3,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
+"Up" = (
+/obj/structure/flora/bush/stalky/style_3,
+/turf/open/misc/dirt/jungle,
+/area/deathmatch/fullbright)
 "UK" = (
 /obj/structure/flora/ash/tall_shroom,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
 "UO" = (
 /obj/structure/flora/bush/reed/style_2,
 /turf/open/water/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "UV" = (
 /obj/structure/flora/tree/jungle,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
+"Vo" = (
+/obj/structure/flora/grass/jungle/a/style_2,
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
 "VF" = (
 /obj/structure/flora/bush/ferny/style_3,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "XS" = (
 /obj/item/clothing/accessory/talisman,
 /obj/structure/flora/rock/style_4,
 /turf/open/misc/dirt/jungle/dark,
-/area/space)
+/area/deathmatch/fullbright)
+"XX" = (
+/obj/structure/flora/bush/lavendergrass/style_3,
+/turf/open/misc/dirt/jungle,
+/area/deathmatch/fullbright)
+"Ys" = (
+/obj/structure/flora/bush/leavy/style_3,
+/turf/open/misc/grass/jungle,
+/area/deathmatch/fullbright)
+"ZA" = (
+/obj/structure/flora/rock/pile/jungle,
+/turf/open/misc/dirt/jungle/dark,
+/area/deathmatch/fullbright)
 "ZY" = (
 /obj/structure/flora/grass/jungle/b/style_2,
 /turf/open/misc/grass/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 "ZZ" = (
 /obj/structure/flora/grass/jungle/a/style_4,
 /turf/open/misc/dirt/jungle,
-/area/space)
+/area/deathmatch/fullbright)
 
 (1,1,1) = {"
 hH
@@ -348,9 +442,9 @@ nV
 jB
 jB
 jB
+pe
 at
-at
-at
+ZZ
 jB
 jB
 jB
@@ -362,7 +456,7 @@ jB
 jB
 jB
 at
-oa
+wa
 hH
 "}
 (3,1,1) = {"
@@ -377,7 +471,7 @@ jB
 nV
 nV
 nV
-nV
+at
 nV
 nV
 nV
@@ -388,7 +482,7 @@ jB
 aF
 jB
 jB
-at
+cr
 oa
 oa
 hH
@@ -399,7 +493,7 @@ nV
 nV
 nV
 nV
-at
+gr
 at
 at
 hM
@@ -412,12 +506,12 @@ nV
 nV
 yZ
 jB
-oa
-oa
+mz
+wa
 jB
 jB
 bu
-oa
+RH
 jB
 hH
 "}
@@ -435,13 +529,13 @@ at
 at
 IE
 at
-at
+cr
 nV
 nV
 nV
 jB
 Hd
-at
+XX
 oa
 ku
 jB
@@ -457,11 +551,11 @@ UK
 at
 at
 at
-at
+gZ
 nV
 nV
 nV
-at
+Up
 oa
 at
 IE
@@ -469,10 +563,10 @@ Id
 oa
 jB
 LG
-oa
+RA
 at
-at
-oa
+cr
+RH
 jB
 jB
 hH
@@ -482,7 +576,7 @@ hH
 nV
 nV
 ea
-ex
+Mv
 at
 at
 nV
@@ -490,17 +584,17 @@ nV
 nV
 nV
 bg
-oa
+ju
 oa
 Mk
 oa
 oa
-oa
+Ys
 jB
 oa
+gr
 at
-at
-at
+qT
 jB
 jB
 hH
@@ -517,7 +611,7 @@ nV
 nV
 nV
 Fe
-oa
+Ji
 oa
 oa
 oa
@@ -538,10 +632,10 @@ hH
 jB
 fJ
 mk
-oa
+Ih
 ex
 at
-at
+gr
 nV
 nV
 QU
@@ -552,7 +646,7 @@ oa
 oa
 oa
 RH
-oa
+FL
 oa
 aF
 jB
@@ -592,8 +686,8 @@ hH
 (11,1,1) = {"
 hH
 jB
-nV
-nV
+oa
+ex
 ex
 ex
 IX
@@ -605,9 +699,9 @@ oa
 QD
 pt
 at
-oa
+dJ
 wn
-ex
+Mv
 oa
 oa
 ex
@@ -619,8 +713,8 @@ hH
 "}
 (12,1,1) = {"
 hH
-jB
-nV
+yZ
+oa
 nV
 ex
 ex
@@ -628,17 +722,17 @@ FL
 ZZ
 EB
 oa
-at
+Ha
 ex
 cr
 oa
 oa
 IX
-oa
+dJ
 ex
 oa
 oa
-ex
+Vo
 ex
 jB
 jB
@@ -658,7 +752,7 @@ at
 Pg
 pt
 cr
-oa
+nH
 Tu
 oa
 oa
@@ -675,7 +769,7 @@ hH
 "}
 (14,1,1) = {"
 hH
-jB
+LG
 nV
 nV
 Tc
@@ -696,17 +790,17 @@ oa
 oa
 oa
 CY
-ex
+cv
 jB
 jB
 hH
 "}
 (15,1,1) = {"
 hH
-ex
+LE
 nV
 nV
-oa
+wu
 ex
 oa
 oa
@@ -718,9 +812,9 @@ oa
 sF
 ex
 ex
-ex
+Mv
 oa
-oa
+ju
 oa
 oa
 oa
@@ -749,7 +843,7 @@ jB
 jB
 oa
 oa
-oa
+Cn
 oa
 oa
 ex
@@ -759,7 +853,7 @@ hH
 "}
 (17,1,1) = {"
 hH
-ex
+ZA
 nV
 Mb
 ex
@@ -780,7 +874,7 @@ oa
 oa
 oa
 oa
-ex
+Vo
 yZ
 jB
 hH
@@ -794,7 +888,7 @@ AG
 ex
 nV
 nV
-oa
+aI
 oa
 GS
 ZY
@@ -806,7 +900,7 @@ ve
 ex
 ex
 oa
-oa
+bG
 ex
 ex
 jB
@@ -816,26 +910,26 @@ hH
 (19,1,1) = {"
 hH
 ex
-nV
+ex
 XS
 ex
 ex
 nV
 nV
-ex
+Vo
 ex
 oa
 oa
 oa
 ex
-ex
+Gf
 oa
 jB
 jB
 ex
 oa
 oa
-ex
+NO
 ex
 jB
 jB
@@ -843,12 +937,12 @@ hH
 "}
 (20,1,1) = {"
 hH
-ex
-nV
-ex
+Mb
 ex
 ex
 ex
+ex
+qx
 ex
 ex
 ex
@@ -858,7 +952,7 @@ bg
 oa
 oa
 ex
-ex
+Mv
 oa
 oa
 oa
@@ -879,7 +973,7 @@ ex
 ex
 ex
 ex
-ex
+Mv
 nV
 Aj
 Ji
@@ -890,9 +984,9 @@ ex
 PW
 oa
 oa
-oa
+Cn
 ex
-ex
+Vo
 jB
 jB
 hH
@@ -944,7 +1038,7 @@ nV
 jB
 jB
 jB
-oa
+FL
 oa
 fV
 jB
@@ -978,7 +1072,7 @@ jB
 jB
 pt
 jB
-at
+cr
 hH
 "}
 (25,1,1) = {"
@@ -994,7 +1088,7 @@ nV
 nV
 nV
 nV
-at
+ka
 at
 jB
 jB

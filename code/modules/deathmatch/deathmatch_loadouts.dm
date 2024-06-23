@@ -744,3 +744,76 @@
 		/obj/item/knife/butcher,
 		/obj/item/sharpener,
 	)
+
+//jungle rumble outfits
+/datum/outfit/deathmatch_loadout/big_game_hunter
+	name = "Deathmatch: Big Game Hunter"
+	display_name = "Big Game Hunter"
+	desc = "Bring some trophies back. Armed with an antique rifle."
+	head = /obj/item/clothing/head/helmet/pith
+	uniform = /obj/item/clothing/under/costume/buttondown/slacks
+	suit = /obj/item/clothing/suit/jacket/curator
+	gloves = /obj/item/clothing/gloves/color/brown
+	shoes = /obj/item/clothing/shoes/laceup
+	back = /obj/item/storage/backpack/satchel/leather
+	r_hand = /obj/item/gun/ballistic/rifle/boltaction/donkrifle
+	backpack_contents = list(
+		/obj/item/knife/hunting,
+		/obj/item/ammo_box/strilka310 = 3,
+	)
+
+/datum/outfit/deathmatch_loadout/big_game_hunter/pre_equip(visualsOnly = FALSE)
+	. = ..()
+	if(prob(80))
+		accessory = pick(list(
+			/obj/item/clothing/accessory/waistcoat,
+			/obj/item/clothing/accessory/medal/silver/valor,
+			/obj/item/clothing/accessory/medal/bronze_heart,
+			/obj/item/clothing/accessory/medal/gold,
+		))
+	if(prob(50))
+		glasses = /obj/item/clothing/glasses/monocle
+	if(prob(25))
+		mask = /obj/item/clothing/mask/cigarette/pipe
+
+/datum/outfit/deathmatch_loadout/monkey
+	name = "Deathmatch: Jungle Monkey"
+	display_name = "Monkey"
+	desc = "The real king of the jungle. Armed with a spear, a blowpipe, and poisoned darts."
+	uniform = /obj/item/clothing/under/costume/loincloth
+	r_hand = /obj/item/gun/syringe/blowgun
+	back = /obj/item/storage/backpack/satchel/explorer
+
+/datum/outfit/deathmatch_loadout/monkey/pre_equip(visualsOnly = FALSE)
+	r_pocket = pick_weight(list(
+		/obj/item/food/grown/banana = 70,
+		/obj/item/food/grown/banana/bunch = 20,
+		/obj/item/reagent_containers/cup/soda_cans/monkey_energy = 10,
+	))
+	l_pocket = /obj/item/reagent_containers/syringe/crude/tribal
+
+/datum/outfit/deathmatch_loadout/caveman
+	name = "Deathmatch: Caveman"
+	display_name = "Caveman"
+	desc = "Show those monkeys what opposable thumbs can do. Armed with a spear, some caveman tools, and basic materials."
+	uniform = /obj/item/clothing/under/costume/loincloth
+	shoes = /obj/item/clothing/shoes/sandal
+	belt = /obj/item/storage/belt/mining/primitive/caveman_tools
+	l_pocket = /obj/item/stack/medical/gauze/improvised
+
+/datum/outfit/deathmatch_loadout/caveman/pre_equip(visualsOnly = FALSE)
+	if(prob(50))
+		accessory = /obj/item/clothing/accessory/talisman
+	r_pocket = pick(list(
+		/obj/item/food/meat/cutlet/plain,
+		/obj/item/food/grown/bungofruit,
+
+	))
+
+/datum/outfit/deathmatch_loadout/guerilla
+	name = "Deathmatch: Guerilla"
+	display_name = "Guerilla"
+	desc = "There's enemies in this jungle, somewhere... Armed with a machinegun."
+
+/turf/open/chasm/jungle
+

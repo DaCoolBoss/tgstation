@@ -21,7 +21,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 
 /datum/outfit/big_game_hunter
-	name "Big Game Hunter"
+	name = "Big Game Hunter"
 	head = /obj/item/clothing/head/helmet/pith
 	uniform = /obj/item/clothing/under/costume/buttondown/slacks
 	suit = /obj/item/clothing/suit/jacket/curator
@@ -34,10 +34,10 @@
 		return
 	if(prob(60))
 		accessory = pick_weight(list(
-			/obj/item/clothing/accessory/waistcoat = 3
-			/obj/item/clothing/accessory/medal/silver/valor = 1
-			/obj/item/clothing/accessory/medal/bronze_heart = 1
-			/obj/item/clothing/accessory/medal/gold = 1
+			/obj/item/clothing/accessory/waistcoat = 3,
+			/obj/item/clothing/accessory/medal/silver/valor = 1,
+			/obj/item/clothing/accessory/medal/bronze_heart = 1,
+			/obj/item/clothing/accessory/medal/gold = 1,
 
 		))
 	if(prob(50))

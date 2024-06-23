@@ -270,6 +270,8 @@ GLOBAL_LIST_INIT(sinew_recipes, list ( \
 	. = ..()
 	. += GLOB.sinew_recipes
 
+/obj/item/stack/sheet/sinew/wolf/twelve
+	amount = 12
 
 /*Plates*/
 /obj/item/stack/sheet/animalhide/goliath_hide

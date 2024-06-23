@@ -42,6 +42,20 @@
 	map_name = "OSHA_violator"
 	key = "OSHA_violator"
 
+/datum/lazy_template/deathmatch/jungle
+	name = "Jungle Rumble"
+	desc = "The verdant jungles of Katalor-6 are the perfect place to kill something."
+	max_players = 4
+	automatic_gameend_time = 6 MINUTES
+	allowed_loadouts = list(
+		/datum/outfit/deathmatch_loadout/big_game_hunter,
+		/datum/outfit/deathmatch_loadout/monkey,
+		/datum/outfit/deathmatch_loadout/caveman,
+		/datum/outfit/deathmatch_loadout/guerilla,
+		)
+	map_name = "jungle"
+	key = "jungle"
+
 /datum/lazy_template/deathmatch/the_brig
 	name = "The Brig"
 	desc = "A recreation of MetaStation Brig."

@@ -479,6 +479,15 @@
 	. = ..()
 	atom_storage.max_slots = 5
 
+/obj/item/storage/belt/mining/primitive/caveman_tools
+
+/obj/item/storage/belt/mining/primitive/caveman_tools/PopulateContents()
+	new /obj/item/knife/combat/bone(src)
+	new /obj/item/hatchet/wooden(src)
+	new /obj/item/stack/sheet/bone/twelve(src)
+	new /obj/item/stack/sheet/sinew/wolf/twelve(src)
+	new /obj/item/stack/sheet/mineral/bamboo/twentyfive(src)
+
 /obj/item/storage/belt/soulstone
 	name = "soul stone belt"
 	desc = "Designed for ease of access to the shards during a fight, as to not let a single enemy spirit slip away."

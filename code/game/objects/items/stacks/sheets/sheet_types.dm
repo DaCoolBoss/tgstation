@@ -443,6 +443,9 @@ GLOBAL_LIST_INIT(bamboo_recipes, list ( \
 	. = ..()
 	. += GLOB.bamboo_recipes
 
+/obj/item/stack/sheet/mineral/bamboo/twentyfive
+	amount = 25
+
 /obj/item/stack/sheet/mineral/bamboo/fifty
 	amount = 50
 
@@ -815,6 +818,10 @@ GLOBAL_LIST_INIT(bronze_recipes, list ( \
 		/datum/component/slapcrafting,\
 		slapcraft_recipes = slapcraft_recipe_list,\
 	)
+
+/obj/item/stack/sheet/bone/twelve
+	amount = 12
+
 GLOBAL_LIST_INIT(plastic_recipes, list(
 	new /datum/stack_recipe("plastic floor tile", /obj/item/stack/tile/plastic, 1, 4, 20, time = 2 SECONDS, crafting_flags = NONE, category = CAT_TILES), \
 	new /datum/stack_recipe("light tram tile", /obj/item/stack/thermoplastic/light, 1, 4, 20, time = 2 SECONDS, crafting_flags = NONE, category = CAT_TILES), \
