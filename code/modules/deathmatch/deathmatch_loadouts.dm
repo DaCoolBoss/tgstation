@@ -800,6 +800,7 @@
 	shoes = /obj/item/clothing/shoes/sandal
 	belt = /obj/item/storage/belt/mining/primitive/caveman_tools
 	l_pocket = /obj/item/stack/medical/gauze/improvised
+	r_hand = /obj/item/spear/bonespear
 
 /datum/outfit/deathmatch_loadout/caveman/pre_equip(visualsOnly = FALSE)
 	if(prob(50))
@@ -814,6 +815,7 @@
 	name = "Deathmatch: Guerilla"
 	display_name = "Guerilla"
 	desc = "There's enemies in this jungle, somewhere... Armed with a machinegun."
-
-/turf/open/chasm/jungle
-
+	uniform = /obj/item/clothing/under/syndicate/camo
+	shoes = /obj/item/clothing/shoes/combat
+	r_hand = /obj/item/gun/ballistic/automatic/l6_saw/unrestricted
+	r_pocket = /obj/item/knife/combat
