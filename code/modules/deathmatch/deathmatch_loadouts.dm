@@ -781,7 +781,8 @@
 	display_name = "Monkey"
 	desc = "The real king of the jungle. Armed with a spear, a blowpipe, and poisoned darts."
 	uniform = /obj/item/clothing/under/costume/loincloth
-	r_hand = /obj/item/gun/syringe/blowgun
+	belt = /obj/item/gun/syringe/blowgun
+	r_hand = /obj/item/spear/bamboospear
 	back = /obj/item/storage/backpack/satchel/explorer
 
 /datum/outfit/deathmatch_loadout/monkey/pre_equip(visualsOnly = FALSE)
