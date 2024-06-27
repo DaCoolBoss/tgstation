@@ -85,6 +85,7 @@
 /datum/dog_fashion/head/pithhelmet
 	name = "Explorer %REAL_NAME%"
 	desc = "An expert at digging up bones."
+	obj_icon_state = "pithhelmet"
 
 /datum/dog_fashion/head/chef
 	name = "Sous chef %REAL_NAME%"

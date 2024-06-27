@@ -512,7 +512,8 @@
 	icon_state = "pith"
 	inhand_icon_state = "pith_helmet"
 	max_heat_protection_temperature = FIRE_HELM_MAX_TEMP_PROTECT
-	resistance_flags = FIRE_PROOF
+	resistance_flags = ACID_PROOF
+	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 2.4)
 	strip_delay = 20
 	clothing_flags = null
 	flags_cover = null
@@ -520,13 +521,13 @@
 	dog_fashion = /datum/dog_fashion/head/pithhelmet
 
 /datum/armor/helmet_pith
-	melee = 40
-	bullet = 40
-	laser = 10
-	energy = 10
+	melee = 35
+	bullet = 35
+	laser = 30
+	energy = 30
 	bomb = 50
-	fire = 80
-	acid = 30
+	fire = 20
+	acid = 80
 	wound = 10
 
 
