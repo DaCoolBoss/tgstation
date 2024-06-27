@@ -509,8 +509,15 @@
 /obj/item/clothing/head/helmet/pith
 	name = "Pith Helmet"
 	desc = "For protecting your head, for keeping the sun off, and for looking good."
+	icon_state = "pith"
+	inhand_icon_state = "pith_helmet"
 	max_heat_protection_temperature = FIRE_HELM_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF
+	strip_delay = 20
+	clothing_flags = null
+	flags_cover = null
+	flags_inv = null
+	dog_fashion = /datum/dog_fashion/head/pithhelmet
 
 /datum/armor/helmet_pith
 	melee = 40

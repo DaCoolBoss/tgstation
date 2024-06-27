@@ -82,6 +82,10 @@
 	name = "Sergeant %REAL_NAME%"
 	desc = "The ever-loyal, the ever-vigilant."
 
+/datum/dog_fashion/head/pithhelmet
+	name = "Explorer %REAL_NAME%"
+	desc = "An expert at digging up bones."
+
 /datum/dog_fashion/head/chef
 	name = "Sous chef %REAL_NAME%"
 	desc = "Your food will be taste-tested. All of it."
