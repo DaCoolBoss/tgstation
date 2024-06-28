@@ -784,6 +784,10 @@
 	belt = /obj/item/gun/syringe/blowgun
 	r_hand = /obj/item/spear/bamboospear
 	back = /obj/item/storage/backpack/satchel/explorer
+	backpack_contents = list(
+		/obj/item/reagent_containers/syringe/crude/tribal = 12,
+	)
+	species_override = /datum/species/monkey
 
 /datum/outfit/deathmatch_loadout/monkey/pre_equip(visualsOnly = FALSE)
 	r_pocket = pick_weight(list(
@@ -819,4 +823,17 @@
 	uniform = /obj/item/clothing/under/syndicate/camo
 	shoes = /obj/item/clothing/shoes/combat
 	r_hand = /obj/item/gun/ballistic/automatic/l6_saw/unrestricted
-	r_pocket = /obj/item/knife/combat
+	l_pocket = /obj/item/knife/combat
+
+/obj/item/clothing/glasses/eyepatch
+
+/datum/outfit/deathmatch_loadout/guerilla/pre_equip(visualsOnly = FALSE)
+	if(prob(25))
+		glasses = /obj/item/clothing/glasses/eyepatch
+	if(prob(25))
+		head = /obj/item/clothing/glasses/eyepatch
+	r_pocket = pick(list(
+		/obj/item/food/meat/cutlet/plain,
+		/obj/item/food/grown/bungofruit,
+
+	))
