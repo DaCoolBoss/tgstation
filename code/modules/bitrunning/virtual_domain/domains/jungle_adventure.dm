@@ -7,4 +7,4 @@
 	help_text = "The treasure could be anywhere... \
 	Watch out for the local wildlife. If anything seems aggressive shoot it dead."
 	key = "jungle_adventure"
-	map_name = "jungle"
+	map_name = "jungle_adventure"
