@@ -21,7 +21,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 
 /datum/outfit/big_game_hunter
-	name = "Big Game Hunter"
+	name = "Big Game Hunter" //Did someone say... gaming?
 	head = /obj/item/clothing/head/helmet/pith
 	uniform = /obj/item/clothing/under/costume/buttondown/slacks
 	suit = /obj/item/clothing/suit/jacket/curator
@@ -42,5 +42,5 @@
 		))
 	if(prob(50))
 		glasses = /obj/item/clothing/glasses/monocle
-	if(prob(25))
-		mask = /obj/item/clothing/mask/cigarette/pipe
+	if(prob(40))
+		mask = pick_weight(list(/obj/item/clothing/mask/cigarette/pipe= 4, /obj/item/clothing/mask/fakemoustache = 1))
