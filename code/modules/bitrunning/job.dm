@@ -38,4 +38,4 @@
 	id_trim = /datum/id_trim/job/bitrunner
 	uniform = /obj/item/clothing/under/rank/cargo/bitrunner
 	belt = /obj/item/modular_computer/pda/bitrunner
-	ears = /obj/item/radio/headset/headset_cargo
+	ears = /obj/item/radio/headset/headset_cargo/bitrunner

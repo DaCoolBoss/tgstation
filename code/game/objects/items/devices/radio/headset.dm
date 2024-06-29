@@ -297,6 +297,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	worn_icon_state = "cargo_headset"
 	keyslot = /obj/item/encryptionkey/headset_cargo
 
+/obj/item/radio/headset/headset_cargo/bitrunner
+	name = "bitrunner headset"
+	desc = "A fancy headset used by the station's resident gamers-for-hire."
+	icon_state = "bitrunner_headset"
+	worn_icon_state = "bitrunner_headset"
+	keyslot = /obj/item/encryptionkey/headset_cargo
+
 /obj/item/radio/headset/headset_cargo/mining
 	name = "mining radio headset"
 	desc = "Headset used by shaft miners."
