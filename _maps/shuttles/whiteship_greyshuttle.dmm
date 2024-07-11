@@ -1,0 +1,760 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ao" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"bo" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"bx" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/airalarm/directional/east,
+/obj/structure/cable,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"ck" = (
+/obj/machinery/door/airlock/external/ruin,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"cG" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/structure/railing/corner,
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark/corner,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"cK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/obj/machinery/door/airlock/titanium,
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"do" = (
+/obj/machinery/door/airlock/external/ruin,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"dx" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"dP" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor/preopen,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"ez" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"fx" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"ha" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"hf" = (
+/obj/machinery/suit_storage_unit/open,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"hj" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon/burgundy,
+/turf/template_noop,
+/area/shuttle/abandoned)
+"hW" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/chair/comfy/shuttle,
+/obj/machinery/light/directional/west,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"iI" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"iT" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/decal/cleanable/oil/streak,
+/obj/machinery/recharge_station,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"jV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"kJ" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"lU" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/railing/corner,
+/obj/effect/turf_decal/siding/dark/corner,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"mv" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden{
+	dir = 1
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"my" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 1
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"nk" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"oE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"oV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
+/obj/machinery/door/airlock/hatch,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge)
+"pj" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_cannon_right"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge)
+"pC" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned)
+"pO" = (
+/obj/machinery/computer/shuttle/white_ship/bridge,
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"pT" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/iron/twenty{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/stack/sheet/glass/fifty{
+	amount = 25;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/storage/toolbox/emergency,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"qk" = (
+/obj/machinery/power/emitter{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/catwalk_floor,
+/area/shuttle/abandoned/bridge)
+"qy" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"sD" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/railing/corner/end{
+	dir = 1
+	},
+/obj/structure/railing/corner/end/flip{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"tB" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned)
+"tR" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"vX" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/obj/machinery/door/airlock/titanium,
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"vY" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	pixel_y = -1;
+	pixel_x = -5;
+	icon_state = "button-warning";
+	id = "whiteship_cannon_left"
+	},
+/obj/machinery/button/door{
+	pixel_y = -1;
+	pixel_x = 5;
+	skin = "-warning";
+	icon_state = "button-warning";
+	id = "whiteship_cannon_right"
+	},
+/obj/machinery/button/door{
+	pixel_y = 7;
+	skin = "-warning";
+	id = "whiteship_bridge"
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"ws" = (
+/obj/structure/lattice,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/template_noop,
+/area/shuttle/abandoned/bridge)
+"xa" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"yM" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_bridge"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge)
+"zg" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/dark,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"zF" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_cannon_left"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge)
+"zN" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bridge)
+"zX" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/obj/machinery/door/airlock/titanium/glass,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"Ce" = (
+/turf/template_noop,
+/area/template_noop)
+"CC" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/dark,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"CN" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/chair/comfy/shuttle,
+/obj/machinery/light/directional/east,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"Dt" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/reflector/single/mapping{
+	dir = 10
+	},
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/template_noop,
+/area/shuttle/abandoned/bridge)
+"Ea" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 4
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"Eh" = (
+/obj/machinery/power/shuttle_engine/propulsion/left,
+/turf/open/space/basic,
+/area/shuttle/abandoned)
+"HN" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"Kj" = (
+/obj/machinery/power/shuttle_engine/heater,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned)
+"KE" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 4
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"LH" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/obj/machinery/light/directional/north,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"MQ" = (
+/obj/structure/lattice,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/template_noop,
+/area/shuttle/abandoned/bridge)
+"Oq" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/machinery/light/floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"Pn" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker/whiteship{
+	view_range = 14;
+	x_offset = -4;
+	y_offset = -8
+	},
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/dark/opposingcorners{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned/bridge)
+"PF" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/reflector/box/mapping{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/template_noop,
+/area/shuttle/abandoned/bridge)
+"PX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/item/wrench,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"Ql" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"QA" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/machinery/power/apc/auto_name/directional/north,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"QI" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor/preopen,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"RY" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/bridge)
+"Sf" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 1
+	},
+/turf/template_noop,
+/area/shuttle/abandoned)
+"Sk" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"TX" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	pixel_y = 23
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/power_store/cell/high,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"Vy" = (
+/obj/structure/lattice,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/template_noop,
+/area/shuttle/abandoned/bridge)
+"XY" = (
+/obj/machinery/suit_storage_unit/open,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/shuttle/abandoned)
+"Yu" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon/burgundy,
+/turf/template_noop,
+/area/shuttle/abandoned/bridge)
+"YF" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/hatch,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge)
+"YW" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 1
+	},
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"Zu" = (
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"ZC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/dark/fourcorners,
+/turf/open/floor/plastic,
+/area/shuttle/abandoned)
+"ZI" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/reflector/single/mapping{
+	dir = 6
+	},
+/obj/structure/railing{
+	dir = 9
+	},
+/turf/template_noop,
+/area/shuttle/abandoned/bridge)
+"ZS" = (
+/obj/machinery/power/shuttle_engine/propulsion/right,
+/turf/open/space/basic,
+/area/shuttle/abandoned)
+
+(1,1,1) = {"
+Ce
+Ce
+Ce
+Ce
+Ce
+Ce
+pC
+fx
+fx
+tB
+do
+tB
+Kj
+Eh
+Ce
+"}
+(2,1,1) = {"
+Ce
+Ce
+Ce
+Ce
+zN
+RY
+RY
+TX
+iT
+tB
+ha
+XY
+Kj
+ZS
+Ce
+"}
+(3,1,1) = {"
+Yu
+ZI
+ws
+ws
+zF
+qk
+RY
+bo
+lU
+tB
+vX
+tB
+tB
+tB
+hj
+"}
+(4,1,1) = {"
+Ce
+MQ
+yM
+yM
+RY
+oV
+RY
+ez
+nk
+my
+iI
+hW
+Ql
+QI
+Ce
+"}
+(5,1,1) = {"
+Ce
+MQ
+yM
+Pn
+kJ
+HN
+RY
+QA
+CC
+Ea
+iI
+dx
+Ql
+dP
+Sf
+"}
+(6,1,1) = {"
+Yu
+PF
+yM
+vY
+Oq
+xa
+zX
+tR
+cG
+sD
+tR
+mv
+jV
+dP
+Sf
+"}
+(7,1,1) = {"
+Ce
+MQ
+yM
+pO
+bx
+qy
+RY
+Sk
+zg
+YW
+iI
+dx
+ZC
+dP
+Sf
+"}
+(8,1,1) = {"
+Ce
+MQ
+yM
+yM
+RY
+YF
+RY
+iI
+nk
+KE
+iI
+CN
+PX
+QI
+Ce
+"}
+(9,1,1) = {"
+Yu
+Dt
+Vy
+Vy
+pj
+qk
+RY
+LH
+Zu
+tB
+cK
+tB
+tB
+tB
+hj
+"}
+(10,1,1) = {"
+Ce
+Ce
+Ce
+Ce
+zN
+RY
+RY
+pT
+ao
+tB
+oE
+hf
+Kj
+Eh
+Ce
+"}
+(11,1,1) = {"
+Ce
+Ce
+Ce
+Ce
+Ce
+Ce
+pC
+QI
+QI
+tB
+ck
+tB
+Kj
+ZS
+Ce
+"}
