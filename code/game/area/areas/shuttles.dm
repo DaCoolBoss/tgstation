@@ -246,6 +246,15 @@
 /area/shuttle/ruin/caravan/freighter3
 	name = "Tiny Freighter"
 
+/// Special shuttles made for the Caravan Ambush ruin.
+/area/shuttle/ruin/busted_foodtruck
+	requires_power = TRUE
+	name = "Perfectly Ordinary Foodtruck"
+
+/area/shuttle/ruin/busted_transport
+	requires_power = TRUE
+	name = "Transport Shuttle 52"
+
 // ----------- Cyborg Mothership
 
 /area/shuttle/ruin/cyborg_mothership

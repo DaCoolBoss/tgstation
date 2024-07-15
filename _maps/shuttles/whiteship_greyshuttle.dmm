@@ -32,6 +32,15 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/docking_port/mobile{
+	callTime = 250;
+	can_move_docking_ports = 1;
+	dir = 4;
+	shuttle_id = "whiteship";
+	launch_status = 0;
+	name = "White Ship";
+	port_direction = 4
+	},
 /turf/open/floor/plating,
 /area/shuttle/abandoned)
 "cG" = (
@@ -94,6 +103,7 @@
 /area/shuttle/abandoned)
 "hf" = (
 /obj/machinery/suit_storage_unit/open,
+/obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/plating,
 /area/shuttle/abandoned)
 "hj" = (
@@ -141,6 +151,7 @@
 /obj/effect/turf_decal/tile/dark/fourcorners,
 /obj/structure/railing/corner,
 /obj/effect/turf_decal/siding/dark/corner,
+/obj/item/weldingtool/largetank/empty,
 /turf/open/floor/plastic,
 /area/shuttle/abandoned)
 "mv" = (
@@ -437,6 +448,7 @@
 	},
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/smes/engineering,
 /turf/open/floor/plastic,
 /area/shuttle/abandoned/bridge)
 "Pn" = (
@@ -520,6 +532,15 @@
 "XY" = (
 /obj/machinery/suit_storage_unit/open,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/clothing/suit/space{
+	pixel_y = -3;
+	pixel_x = 2
+	},
+/obj/item/clothing/head/helmet/space{
+	pixel_x = 5;
+	pixel_y = 7
+	},
 /turf/open/floor/plating,
 /area/shuttle/abandoned)
 "Yu" = (

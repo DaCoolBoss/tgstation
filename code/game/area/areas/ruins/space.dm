@@ -699,3 +699,36 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste
 /area/ruin/space/has_grav/garbagetruck/squat
 /area/ruin/space/has_grav/garbagetruck/toystore
+
+//busted depot
+/area/ruin/space/has_grav/busted_depot
+	name = "Transit Depot 4"
+
+/area/ruin/space/has_grav/busted_depot/docks
+	icon_state = "dock"
+
+/area/ruin/space/has_grav/busted_depot/docks/one
+	name = "Transit Depot 4 Dock 1"
+
+/area/ruin/space/has_grav/busted_depot/docks/two
+	name = "Transit Depot 4 Dock 2"
+
+/area/ruin/space/has_grav/busted_depot/docks/three
+	name = "Transit Depot 4 Dock 3"
+
+/area/ruin/space/has_grav/busted_depot/docks/four
+	name = "Transit Depot 4 Dock 4"
+
+/area/ruin/space/has_grav/busted_depot/bridge
+	name = "Transit Depot 4 Control Room"
+	icon_state = "control"
+
+/area/ruin/space/has_grav/busted_depot/bridge/office
+	name = "Transit Depot 4 Administration"
+
+/area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint
+
+/area/ruin/space/has_grav/busted_depot/restarea
+	name = "Transit Depot 4 Rest Area"
+
+

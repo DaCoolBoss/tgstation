@@ -1,0 +1,1117 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"am" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/ruin/busted_transport)
+"cf" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"cm" = (
+/obj/effect/mapping_helpers/burnt_floor,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"co" = (
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/airlock/shuttle,
+/turf/open/floor/iron/dark/textured,
+/area/shuttle/ruin/busted_transport)
+"dS" = (
+/obj/machinery/door/airlock/grunge,
+/obj/structure/fans/tiny,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/plating/dumpsterair,
+/area/shuttle/ruin/busted_transport)
+"er" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/mapping_helpers/mob_buckler,
+/obj/effect/mob_spawn/corpse/human/skeleton,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"eK" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"fb" = (
+/obj/structure/grille/broken,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/plating,
+/area/shuttle/ruin/busted_transport)
+"ge" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/structure/lattice,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"gS" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 1
+	},
+/obj/structure/table_frame/wood,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"hi" = (
+/obj/structure/lattice,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"hp" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"hE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/sign/poster/official/cleanliness/directional/north,
+/turf/open/floor/plating/dumpsterair,
+/area/shuttle/ruin/busted_transport)
+"iM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"jc" = (
+/obj/structure/toilet/secret{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/dumpsterair,
+/area/shuttle/ruin/busted_transport)
+"jk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/shuttle/ruin/busted_transport)
+"jn" = (
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/airalarm/directional/south,
+/mob/living/basic/viscerator,
+/obj/machinery/holopad,
+/turf/open/floor/iron/dark/textured,
+/area/shuttle/ruin/busted_transport)
+"jx" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon/burgundy,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"jG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"ka" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/shuttle,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"kQ" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/mob_buckler,
+/obj/effect/mob_spawn/corpse/human/skeleton,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"kU" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/wrapping,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"lN" = (
+/obj/machinery/power/shuttle_engine/propulsion/left,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"me" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/shuttle/ruin/busted_transport)
+"nN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"nT" = (
+/obj/machinery/power/shuttle_engine/propulsion/right,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"pe" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"pR" = (
+/obj/machinery/power/smes/super/full,
+/obj/structure/cable,
+/obj/structure/sign/warning/engine_safety/directional/north,
+/turf/open/floor/plating,
+/area/shuttle/ruin/busted_transport)
+"pU" = (
+/obj/machinery/portable_atmospherics/canister,
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"qB" = (
+/obj/machinery/door/airlock/vault{
+	normalspeed = 0;
+	name = "Secure Door";
+	desc = "An imposing looking door. It looks reinforced."
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"qU" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/mapping_helpers/burnt_floor,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"se" = (
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/mob/living/basic/viscerator,
+/turf/open/floor/iron/dark/textured,
+/area/shuttle/ruin/busted_transport)
+"sG" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4,
+/obj/structure/cable,
+/obj/structure/table/wood,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"sR" = (
+/obj/structure/sink/directional/west,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/mirror/broken/directional/east,
+/obj/item/food/badrecipe/moldy{
+	pixel_x = 2;
+	pixel_y = -4
+	},
+/obj/item/paper/crumpled{
+	pixel_y = 9;
+	pixel_x = 9
+	},
+/turf/open/floor/plating/dumpsterair,
+/area/shuttle/ruin/busted_transport)
+"ti" = (
+/obj/structure/cable,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/shuttle/ruin/busted_transport)
+"tS" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"ua" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/digital_clock/directional/north,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"ug" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4{
+	dir = 1
+	},
+/obj/structure/table/wood,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"uL" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4{
+	dir = 1
+	},
+/obj/structure/closet/crate/secure,
+/obj/item/mod/module/jetpack,
+/obj/item/mod/module/springlock,
+/obj/item/mod/core/standard,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"uV" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"vt" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/textured,
+/area/shuttle/ruin/busted_transport)
+"vT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/ripped/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4{
+	dir = 4
+	},
+/obj/item/food/deadmouse/moldy,
+/obj/item/paper/crumpled{
+	pixel_y = 8;
+	pixel_x = -7
+	},
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/plating/dumpsterair,
+/area/shuttle/ruin/busted_transport)
+"wh" = (
+/obj/machinery/door/airlock/vault{
+	normalspeed = 0;
+	name = "Secure Door";
+	desc = "An imposing looking door. It looks reinforced."
+	},
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"wE" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/ruin/busted_transport)
+"wP" = (
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/belt/fannypack/blue,
+/turf/open/floor/iron/dark/textured_corner{
+	dir = 8
+	},
+/area/shuttle/ruin/busted_transport)
+"wR" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2,
+/obj/structure/closet/crate/secure/loot,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"wT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/shuttle/ruin/busted_transport)
+"wV" = (
+/obj/machinery/computer/warrant,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/dark/textured_corner{
+	dir = 8
+	},
+/area/shuttle/ruin/busted_transport)
+"xq" = (
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/structure/sign/poster/ripped/directional/north,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"ya" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"yg" = (
+/obj/machinery/door/airlock/external,
+/obj/docking_port/mobile{
+	dir = 8;
+	shuttle_id = "transport52";
+	port_direction = 8;
+	preferred_direction = 4;
+	name = "Transport Shuttle 52"
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"yR" = (
+/obj/structure/marker_beacon/burgundy,
+/obj/structure/lattice,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"Aj" = (
+/obj/structure/girder,
+/turf/open/floor/plating,
+/area/shuttle/ruin/busted_transport)
+"An" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"AS" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"AW" = (
+/obj/structure/closet/crate,
+/obj/item/stack/tile/iron/dark{
+	amount = 50
+	},
+/obj/item/stack/rods/fifty,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"BX" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"CI" = (
+/obj/machinery/power/shuttle_engine/large,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"Di" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"DQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"DX" = (
+/obj/effect/mapping_helpers/burnt_floor,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"Eh" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/stairs,
+/area/shuttle/ruin/busted_transport)
+"Fn" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/sign/calendar/directional/north,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"FB" = (
+/obj/item/wheelchair,
+/obj/effect/turf_decal/box,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"FW" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/shuttle/ruin/busted_transport)
+"FX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/backpack/duffelbag{
+	pixel_x = -3;
+	pixel_y = 10
+	},
+/obj/item/storage/backpack/explorer,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"Gj" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2,
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/waterbottle/empty{
+	pixel_y = 5;
+	pixel_x = -4
+	},
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"GL" = (
+/obj/structure/closet/crate/secure,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/backpack/satchel/leather/withwallet,
+/obj/item/storage/medkit/ancient,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"Ha" = (
+/obj/structure/table/reinforced,
+/obj/machinery/recharger,
+/turf/open/floor/iron/dark/textured_corner,
+/area/shuttle/ruin/busted_transport)
+"Hb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"Hl" = (
+/obj/item/storage/briefcase{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/storage/backpack/messenger/vir{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"Is" = (
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"Iu" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"Ja" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Jv" = (
+/turf/template_noop,
+/area/template_noop)
+"JJ" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/ruin/busted_transport)
+"JQ" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/glass{
+	amount = 10
+	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/flashlight{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/structure/cable,
+/obj/structure/cable,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/shuttle/ruin/busted_transport)
+"Ko" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/cardboard,
+/obj/item/storage/belt/utility{
+	pixel_y = -3
+	},
+/obj/item/book/manual/wiki/engineering_construction{
+	pixel_x = -6
+	},
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"KL" = (
+/obj/structure/safe,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/storage/cans/sixbeer,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"Ll" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Ml" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/ruin/busted_transport)
+"MO" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/effect/mapping_helpers/damaged_window,
+/turf/open/floor/plating,
+/area/shuttle/ruin/busted_transport)
+"Ns" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/binary/pump/off/cyan/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/binary/pump/off/yellow/hidden/layer2,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/shuttle/ruin/busted_transport)
+"NE" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"Oo" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4,
+/obj/structure/closet/crate/preopen,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"Or" = (
+/obj/structure/safe,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/coin/gold,
+/obj/item/coin/silver,
+/obj/item/coin/silver,
+/obj/item/clothing/gloves/boxing/golden,
+/turf/open/floor/iron/dark/small,
+/area/shuttle/ruin/busted_transport)
+"OM" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/shuttle/ruin/busted_transport)
+"OO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"Po" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/burnt_floor,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"PW" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Qb" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"Ry" = (
+/turf/open/floor/iron/dark/textured_corner,
+/area/shuttle/ruin/busted_transport)
+"RT" = (
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"UL" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"Vh" = (
+/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/obj/item/paper/calling_card,
+/turf/open/floor/iron/dark/textured,
+/area/shuttle/ruin/busted_transport)
+"Vi" = (
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"Vs" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/template_noop,
+/area/shuttle/ruin/busted_transport)
+"Vz" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/rack_parts,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2,
+/turf/open/floor/iron/dark/textured_edge{
+	dir = 4
+	},
+/area/shuttle/ruin/busted_transport)
+"VF" = (
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"VX" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4{
+	dir = 4
+	},
+/obj/item/bodypart/arm/left/skeleton{
+	pixel_y = 8;
+	pixel_x = -10
+	},
+/obj/item/bodypart/leg/left/skeleton{
+	pixel_y = -7;
+	pixel_x = -12
+	},
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Wi" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/layer4,
+/obj/structure/tank_holder/extinguisher,
+/turf/open/floor/iron/dark/textured_edge{
+	dir = 8
+	},
+/area/shuttle/ruin/busted_transport)
+"Wo" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Wv" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+"WV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"XF" = (
+/obj/item/wrench,
+/obj/item/flashlight{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/effect/decal/cleanable/oil/streak,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"XN" = (
+/obj/machinery/power/shuttle_engine/heater,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/ruin/busted_transport)
+"Yc" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Ye" = (
+/obj/machinery/portable_atmospherics/canister/air{
+	filled = 0.2
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/layer4,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Yj" = (
+/obj/machinery/airalarm/directional/north,
+/obj/effect/mapping_helpers/burnt_floor,
+/turf/open/floor/plating/airless,
+/area/shuttle/ruin/busted_transport)
+"Yy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/textured_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/busted_transport)
+"Zp" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/iron/dark/airless,
+/area/shuttle/ruin/busted_transport)
+"Zq" = (
+/turf/open/floor/wood/airless,
+/area/shuttle/ruin/busted_transport)
+
+(1,1,1) = {"
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+jx
+hi
+hi
+JJ
+JJ
+JJ
+JJ
+JJ
+am
+am
+MO
+Ml
+am
+JJ
+XN
+lN
+Jv
+Jv
+Jv
+Jv
+"}
+(2,1,1) = {"
+Jv
+Jv
+Jv
+Jv
+Jv
+wE
+JJ
+JJ
+JJ
+JJ
+am
+am
+am
+JJ
+vT
+jc
+JJ
+FB
+PW
+uV
+VF
+er
+VX
+kU
+JJ
+JJ
+JJ
+JJ
+jx
+Jv
+"}
+(3,1,1) = {"
+Jv
+Jv
+Jv
+wE
+JJ
+JJ
+GL
+KL
+FX
+JJ
+hp
+Zq
+Wv
+JJ
+hE
+sR
+JJ
+ua
+jG
+er
+cm
+uV
+Ja
+er
+JJ
+pR
+JQ
+XN
+wE
+CI
+"}
+(4,1,1) = {"
+Jv
+am
+am
+am
+Ha
+JJ
+Oo
+Hb
+DQ
+JJ
+Gj
+Qb
+ug
+JJ
+dS
+JJ
+wE
+RT
+iM
+Zp
+VF
+uV
+pe
+Wo
+JJ
+XF
+ti
+XN
+wE
+Vi
+"}
+(5,1,1) = {"
+jx
+am
+Ry
+Wi
+jn
+JJ
+JJ
+wh
+JJ
+JJ
+Di
+UL
+Iu
+JJ
+Ll
+DX
+RT
+hi
+Vs
+hi
+RT
+uV
+pe
+kQ
+JJ
+AW
+ti
+JJ
+yR
+Jv
+"}
+(6,1,1) = {"
+Jv
+am
+Yy
+vt
+Vh
+co
+Eh
+wT
+jk
+FW
+WV
+WV
+WV
+FW
+Po
+tS
+hi
+Vi
+Vi
+Vi
+Vi
+iM
+ya
+Yc
+ka
+Ns
+me
+JJ
+Jv
+Jv
+"}
+(7,1,1) = {"
+jx
+am
+wV
+Vz
+se
+JJ
+JJ
+qB
+JJ
+JJ
+Fn
+cf
+NE
+JJ
+Yj
+hi
+Vi
+Vi
+Vi
+Vi
+Vi
+hi
+nN
+RT
+JJ
+Ye
+me
+JJ
+yR
+Jv
+"}
+(8,1,1) = {"
+Jv
+am
+am
+am
+wP
+JJ
+wR
+BX
+uL
+JJ
+sG
+Qb
+gS
+Aj
+Is
+hi
+Vi
+Vi
+Vi
+Vi
+Vi
+hi
+ge
+AS
+JJ
+pU
+OM
+XN
+wE
+CI
+"}
+(9,1,1) = {"
+Jv
+Jv
+Jv
+wE
+JJ
+JJ
+Or
+Hl
+Ko
+JJ
+An
+Zq
+Wv
+Aj
+RT
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+hi
+OO
+Zp
+JJ
+VF
+ti
+XN
+wE
+Vi
+"}
+(10,1,1) = {"
+Jv
+Jv
+Jv
+Jv
+Jv
+wE
+JJ
+JJ
+JJ
+JJ
+am
+am
+am
+JJ
+xq
+hi
+hi
+Vi
+Vi
+Vi
+hi
+qU
+eK
+er
+JJ
+JJ
+JJ
+JJ
+jx
+Jv
+"}
+(11,1,1) = {"
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+Jv
+jx
+hi
+hi
+JJ
+JJ
+Aj
+yg
+hi
+Vi
+hi
+fb
+MO
+am
+JJ
+XN
+nT
+Jv
+Jv
+Jv
+Jv
+"}
