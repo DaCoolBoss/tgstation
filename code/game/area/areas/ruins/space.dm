@@ -702,33 +702,69 @@
 
 //busted depot
 /area/ruin/space/has_grav/busted_depot
-	name = "Transit Depot 4"
+	name = "Depot 10"
+	icon_state = "depot10_corridor"
+	ambience_index = AMBIENCE_RUINS
+
+/area/ruin/space/has_grav/busted_depot/corridor
+	icon_state = "depot10_corridor"
+	sound_environment = SOUND_ENVIRONMENT_STONE_CORRIDOR
 
 /area/ruin/space/has_grav/busted_depot/docks
-	icon_state = "dock"
+	icon_state = "depot10_dock"
+	sound_environment = SOUND_ENVIRONMENT_AUDITORIUM
+	ambience_index = AMBIENCE_GENERIC | AMBIENCE_RUINS
 
 /area/ruin/space/has_grav/busted_depot/docks/one
-	name = "Transit Depot 4 Dock 1"
+	name = "Depot 10 Dock Alpha"
 
 /area/ruin/space/has_grav/busted_depot/docks/two
-	name = "Transit Depot 4 Dock 2"
+	name = "Depot 10 Dock Beta"
 
 /area/ruin/space/has_grav/busted_depot/docks/three
-	name = "Transit Depot 4 Dock 3"
+	name = "Depot 10 Dock Gamma"
 
 /area/ruin/space/has_grav/busted_depot/docks/four
-	name = "Transit Depot 4 Dock 4"
+	name = "Depot 10 Dock Delta"
 
 /area/ruin/space/has_grav/busted_depot/bridge
-	name = "Transit Depot 4 Control Room"
-	icon_state = "control"
+	name = "Depot 10 Control Room"
+	icon_state = "depot10_controlroom"
 
 /area/ruin/space/has_grav/busted_depot/bridge/office
-	name = "Transit Depot 4 Administration"
+	name = "Depot 10 Administration"
 
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint
+	ambience_index = AMBIENCE_DANGER | AMBIENCE_RUINS
 
 /area/ruin/space/has_grav/busted_depot/restarea
-	name = "Transit Depot 4 Rest Area"
+	name = "Depot 10 Rest Area"
+	icon_state = "depot10_restarea"
+	sound_environment = SOUND_ENVIRONMENT_LIVINGROOM
 
+/area/ruin/space/has_grav/busted_depot/medical
+	name = "Depot 10 First Aid Station"
+	icon_state = "depot10_firstaid"
+	sound_environment = SOUND_ENVIRONMENT_BATHROOM
 
+/area/ruin/space/has_grav/busted_depot/maintenance
+	name = "Depot 10 Maintenance Tunnel"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	ambience_index = AMBIENCE_DANGER | AMBIENCE_ENGI
+
+/area/ruin/space/has_grav/busted_depot/maintenance/north
+
+/area/ruin/space/has_grav/busted_depot/maintenance/south
+
+/area/ruin/space/has_grav/busted_depot/checkpoint
+	icon_state = "depot10_checkpoint"
+
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack
+	icon_state = "depot10_barrack"
+
+/area/ruin/space/has_grav/busted_depot/engine
+	icon_state = "depot10_hazard"
+
+/area/ruin/space/busted_depot/solars
+	name = "Depot 10 Solar Array"
+	icon_state = "depot10_solars"

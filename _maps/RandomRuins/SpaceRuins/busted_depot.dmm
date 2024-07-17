@@ -1,4 +1,11 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ak" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
 "am" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
@@ -8,21 +15,42 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/left/directional/west,
 /obj/machinery/door/window/brigdoor/right/directional/east,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "aq" = (
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
+"ar" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
+"aw" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/public,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
 "ax" = (
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"aI" = (
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/structure/table/reinforced,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "aO" = (
 /obj/structure/chair/sofa/corp,
+/obj/effect/turf_decal/tile/dark_blue{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
 "aY" = (
 /obj/machinery/vending/snack/orange,
-/turf/open/floor/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "be" = (
 /obj/structure/chair/comfy/shuttle,
@@ -33,6 +61,11 @@
 	},
 /turf/open/floor/carpet/green,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"bj" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
 "bs" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/spawner/structure/electrified_grille,
@@ -40,6 +73,8 @@
 /area/ruin/space/has_grav/busted_depot/bridge)
 "bD" = (
 /obj/machinery/light/directional/west,
+/obj/effect/spawner/random/trash/deluxe_garbage,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/two)
 "bR" = (
@@ -49,8 +84,22 @@
 "bT" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/east,
-/turf/open/floor/iron,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"ca" = (
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
 /area/space)
+"cb" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance)
+"cq" = (
+/obj/structure/sign/poster/official/safety_internals/directional/north,
+/obj/structure/chair,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "cu" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating/airless,
@@ -63,13 +112,39 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
+"cz" = (
+/obj/structure/sign/poster/official/midtown_slice/directional/east,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"cA" = (
+/obj/structure/marker_beacon/burgundy,
+/obj/structure/lattice,
+/obj/structure/sign/warning/electric_shock/directional/east,
+/turf/open/space/basic,
+/area/ruin/space/has_grav/busted_depot/bridge)
+"cF" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/docks/one)
 "cK" = (
 /obj/structure/lattice,
 /obj/structure/marker_beacon/burgundy,
 /turf/open/space/basic,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"cM" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/public,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
 "cU" = (
 /obj/structure/lattice,
 /obj/structure/marker_beacon/olive,
@@ -81,13 +156,28 @@
 /area/space)
 "cZ" = (
 /obj/machinery/vending/coffee,
-/turf/open/floor/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "da" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
+"db" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
+"dd" = (
+/obj/machinery/computer/security/telescreen/entertainment/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "df" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -100,27 +190,56 @@
 /obj/machinery/computer/station_alert{
 	dir = 1
 	},
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "dt" = (
 /obj/machinery/camera/autoname/deconstructed{
 	dir = 8
 	},
+/obj/structure/filingcabinet/chestdrawer,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
+/obj/item/skillchip/appraiser,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "dy" = (
 /obj/item/toy/beach_ball/branded,
-/turf/open/floor/iron,
-/area/space)
+/obj/item/bikehorn/rubberducky{
+	pixel_y = 12;
+	pixel_x = 8
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "dB" = (
 /obj/structure/lattice,
 /obj/structure/marker_beacon/olive,
 /turf/open/space/basic,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"dQ" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/handcuffs{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/tile/bar/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "dU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"dX" = (
+/obj/structure/chair/office,
+/mob/living/basic/mining/legion,
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "ee" = (
 /obj/structure/table/reinforced,
 /obj/structure/cable,
@@ -129,13 +248,22 @@
 	pixel_x = 3
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "eq" = (
 /obj/item/kirbyplants/organic/plant2,
 /obj/item/toy/brokenradio,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"ey" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
 "eF" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/mapping_helpers/damaged_window,
@@ -152,6 +280,10 @@
 	dir = 8
 	},
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"eX" = (
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
 "fb" = (
 /obj/effect/turf_decal/caution{
 	dir = 8
@@ -173,10 +305,28 @@
 	},
 /turf/open/space/basic,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"fs" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "fy" = (
-/obj/item/clothing/head/utility/hardhat/welding/dblue,
+/obj/machinery/suit_storage_unit/open,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"fz" = (
+/obj/item/c_tube,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"fA" = (
+/obj/structure/chair/sofa/left/brown,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"fI" = (
+/obj/item/cigbutt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/four)
 "gg" = (
 /obj/machinery/door/poddoor,
 /obj/structure/cable,
@@ -202,6 +352,13 @@
 /obj/structure/cable,
 /turf/open/space/basic,
 /area/space)
+"gC" = (
+/obj/structure/sign/poster/official/here_for_your_safety/directional/east,
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "gF" = (
 /obj/machinery/camera/autoname/directional/east,
 /turf/open/floor/iron,
@@ -209,7 +366,16 @@
 "gP" = (
 /obj/machinery/light/small/red/dim/directional/south,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance)
+"hc" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"hD" = (
+/obj/effect/turf_decal/tile/dark_blue{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
 "hF" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -221,12 +387,24 @@
 /obj/structure/chair,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"hL" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
+"hM" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/public,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "hN" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "hS" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -238,6 +416,9 @@
 "im" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/left/directional/north,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "in" = (
@@ -248,30 +429,55 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"iq" = (
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "iz" = (
 /obj/structure/chair/office,
 /mob/living/basic/mining/legion,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "iR" = (
 /obj/structure/table/reinforced,
 /obj/machinery/fax/auto_name,
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
 "jp" = (
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance)
 "jq" = (
 /obj/structure/cable,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "jB" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/spawner/random/trash/deluxe_garbage,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"jC" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/cardboard_cutout,
+/obj/structure/rack,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
 "jE" = (
 /obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/item/folder/blue,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "jN" = (
@@ -285,17 +491,30 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/welded,
 /obj/effect/decal/cleanable/blood/old,
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "km" = (
 /obj/structure/sign/warning/electric_shock/directional/south,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "kn" = (
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"ks" = (
+/obj/structure/sign/poster/official/help_others/directional/west,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"kD" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
 "kJ" = (
 /obj/item/ammo_casing/c45/spent{
 	pixel_x = 5;
@@ -303,10 +522,36 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"kY" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "le" = (
-/obj/structure/sign/poster/official/twelve_gauge/directional/east,
+/obj/machinery/door/window/brigdoor/security/holding/right/directional/north,
+/obj/effect/turf_decal/tile/dark_red/fourcorners,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"lg" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"ln" = (
+/obj/structure/cable,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"lo" = (
+/obj/machinery/modular_computer/preset/id,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "lq" = (
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/busted_depot/docks/one)
@@ -314,11 +559,14 @@
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
 "lz" = (
 /obj/machinery/door/poddoor,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"lD" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/maintenance)
 "lK" = (
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
@@ -330,13 +578,38 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"lN" = (
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "lR" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"lS" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"lT" = (
+/obj/structure/closet/bombcloset/security,
+/obj/effect/turf_decal/tile/dark_red/anticorner/contrasted{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"mi" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "mp" = (
 /obj/structure/railing,
+/obj/item/cigarette/space_cigarette{
+	pixel_x = 1;
+	pixel_y = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
 "mt" = (
@@ -354,10 +627,28 @@
 "mI" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"mN" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/docks/two)
+"nc" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "nn" = (
 /obj/machinery/light/directional/east,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "nq" = (
@@ -367,18 +658,27 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"nv" = (
+/obj/structure/chair/office/tactical{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "nx" = (
 /obj/machinery/light/small/red/dim/directional/north,
 /obj/machinery/atmospherics/components/tank/air{
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "nA" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/machinery/vending/medical,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/medical)
 "nB" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -389,11 +689,15 @@
 /area/ruin/space/has_grav/busted_depot/docks/four)
 "nD" = (
 /obj/structure/cable,
-/turf/open/floor/wood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "nG" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
+	},
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 4
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
@@ -405,13 +709,55 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/fuel_pool,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "nM" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/right/directional/north,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
+"nP" = (
+/obj/item/trash/boritos{
+	pixel_x = 2;
+	pixel_y = -8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/bin,
+/obj/item/trash/chips{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/obj/item/food/meat/slab/human/mutant/zombie,
+/obj/item/trash/flare{
+	pixel_y = 12
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/one)
+"nR" = (
+/obj/structure/cable,
+/obj/item/chair{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"nZ" = (
+/obj/structure/table,
+/obj/structure/sign/departments/medbay/alt/directional/south,
+/obj/effect/spawner/random/trash/deluxe_garbage,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/ready_donk{
+	pixel_x = -4;
+	pixel_y = 12
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "ob" = (
 /obj/structure/cable,
 /obj/structure/railing/corner/end{
@@ -419,11 +765,42 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"oc" = (
+/obj/structure/cable,
+/obj/machinery/computer/monitor{
+	dir = 4
+	},
+/turf/open/floor/circuit,
+/area/ruin/space/has_grav/busted_depot/engine)
+"or" = (
+/obj/machinery/computer/security/telescreen/entertainment/directional/west,
+/obj/item/cigbutt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/four)
+"ov" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
+"oz" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/medical)
+"oB" = (
+/obj/structure/chair/sofa/right/brown,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "oS" = (
 /obj/structure/table/reinforced,
 /obj/effect/mapping_helpers/broken_floor,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "pb" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/structure/lattice,
@@ -452,6 +829,9 @@
 /obj/item/trash/candle{
 	pixel_y = 3;
 	pixel_x = -3
+	},
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 4
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
@@ -485,6 +865,12 @@
 "pU" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
+/obj/structure/chair/office{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "pY" = (
@@ -500,6 +886,10 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"qp" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/docks/four)
 "qu" = (
 /obj/structure/cable,
 /obj/structure/chair/sofa/corp/right,
@@ -509,7 +899,13 @@
 /obj/structure/sign/warning/electric_shock/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance)
+"qB" = (
+/obj/machinery/camera/autoname/directional/west,
+/obj/effect/spawner/random/trash/deluxe_garbage,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "qC" = (
 /obj/structure/sign/warning/docking/directional/west,
 /turf/open/space/basic,
@@ -519,23 +915,45 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/floor,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "qM" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/oil/streak,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"qZ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"rI" = (
+/obj/structure/sink/kitchen/directional/west,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "rL" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"rW" = (
+/obj/structure/table/reinforced,
+/obj/structure/sign/poster/official/do_not_question/directional/east,
+/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "sa" = (
 /obj/machinery/coffeemaker,
 /obj/structure/table/reinforced,
 /obj/structure/cable,
+/obj/structure/sign/poster/official/corporate_perks_vacation/directional/north,
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "sc" = (
@@ -547,6 +965,7 @@
 /obj/effect/turf_decal/caution{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/edge{
 	dir = 8
 	},
@@ -559,7 +978,7 @@
 "sj" = (
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "sl" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
@@ -573,9 +992,25 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"sF" = (
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
 "sJ" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gps/spaceruin{
+	pixel_y = 5;
+	pixel_x = -5
+	},
+/obj/item/implanter/tracking/gps{
+	pixel_y = -4
+	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "sK" = (
@@ -588,22 +1023,59 @@
 "sS" = (
 /obj/structure/cable,
 /obj/machinery/light/small/red/dim/directional/north,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"tb" = (
+/obj/machinery/camera/autoname/directional/east,
+/obj/structure/sign/poster/ripped/directional/east,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"te" = (
+/obj/machinery/vending/coffee,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"tg" = (
+/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/east,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "tr" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"tE" = (
+/obj/machinery/computer/security/telescreen/entertainment/directional/south,
+/obj/structure/table,
+/obj/item/book/random,
+/obj/structure/sign/poster/contraband/robust_softdrinks/directional/west,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "tI" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/structure/lattice,
+/obj/structure/sign/warning/electric_shock/directional/west,
 /turf/open/space/basic,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"tT" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/structure/table/reinforced,
+/obj/item/folder/blue,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "tV" = (
 /obj/structure/chair,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"tX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
+"tY" = (
+/obj/structure/cable,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "tZ" = (
 /obj/machinery/camera/autoname/directional/east,
 /turf/open/floor/iron,
@@ -617,7 +1089,13 @@
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"uh" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "uo" = (
 /obj/item/kirbyplants/organic/plant2,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -627,6 +1105,15 @@
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/four)
+"uz" = (
+/obj/effect/turf_decal/caution{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/edge{
+	dir = 4
+	},
 /area/ruin/space/has_grav/busted_depot/docks/four)
 "uG" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
@@ -658,13 +1145,38 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/circuit,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
 "vr" = (
 /obj/structure/chair/office{
 	dir = 4
 	},
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"vw" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance)
+"vy" = (
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
+"vA" = (
+/obj/effect/turf_decal/tile/dark_blue{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
+"vF" = (
+/obj/machinery/light/floor/broken,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/docks/one)
+"vI" = (
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "vK" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating/airless,
@@ -672,12 +1184,33 @@
 "vY" = (
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"wb" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/docks/four)
+"wg" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "wE" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/sign/poster/contraband/robust_softdrinks/directional/west,
-/turf/open/floor/wood,
+/obj/item/cigbutt/roach{
+	pixel_y = 18;
+	pixel_x = -13
+	},
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"wG" = (
+/obj/structure/railing,
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "wK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
@@ -686,20 +1219,54 @@
 /obj/structure/chair,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"wV" = (
+/obj/structure/table/reinforced,
+/obj/item/gun/energy/laser/retro,
+/obj/structure/sign/poster/official/twelve_gauge/directional/east,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "wZ" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 8
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"xj" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/item/cigbutt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "xl" = (
 /turf/template_noop,
 /area/template_noop)
+"xz" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "xC" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/security,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red/half/contrasted,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"xE" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "xF" = (
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron,
@@ -710,27 +1277,91 @@
 	pixel_y = 13;
 	pixel_x = -9
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"xN" = (
+/obj/machinery/computer/security/telescreen/entertainment/directional/north,
+/obj/structure/easel,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "xZ" = (
-/obj/item/gps/spaceruin,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
 "yh" = (
 /obj/machinery/light/directional/south,
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/structure/table/reinforced,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
+"yk" = (
+/obj/structure/table,
+/obj/item/trash/fleet_ration{
+	pixel_y = 6
+	},
+/obj/item/trash/can{
+	pixel_x = -11
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "yx" = (
 /turf/open/floor/iron/edge{
 	dir = 8
 	},
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"yy" = (
+/obj/structure/cable,
+/obj/effect/spawner/random/trash/deluxe_garbage,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"yC" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "yD" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"yF" = (
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
+"yI" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/dark_red,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"yX" = (
+/obj/machinery/light/directional/north,
+/obj/item/clothing/gloves/color/black,
+/obj/item/clothing/suit/armor/vest/secjacket{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/clothing/shoes/jackboots{
+	pixel_x = -7;
+	pixel_y = -8
+	},
+/obj/item/clothing/head/helmet/blueshirt{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/clothing/under/syndicate/combat{
+	pixel_x = 5;
+	pixel_y = -8
+	},
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "zb" = (
 /obj/structure/sign/poster/contraband/robust_softdrinks/directional/west,
 /turf/open/floor/iron,
@@ -740,21 +1371,32 @@
 /obj/effect/turf_decal/caution{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"zj" = (
+/obj/effect/turf_decal/tile/dark_red/half/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "zk" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/left/directional/north,
 /obj/machinery/door/poddoor/shutters,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "zq" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
+/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "zv" = (
 /obj/structure/sign/poster/contraband/masked_men/directional/east,
 /turf/open/floor/iron,
@@ -767,22 +1409,35 @@
 /obj/machinery/power/smes/engineering,
 /obj/structure/cable,
 /turf/open/floor/circuit,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
 "zG" = (
 /obj/structure/table/reinforced,
 /obj/item/pen/fountain,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"zY" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "Ag" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/left/directional/east,
 /obj/machinery/door/window/brigdoor/right/directional/west,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "Aj" = (
 /obj/item/pipe_dispenser,
+/obj/structure/rack,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "Am" = (
 /obj/machinery/computer/slot_machine,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -795,9 +1450,32 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"Aq" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"AC" = (
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "Be" = (
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"Bj" = (
+/obj/machinery/washing_machine,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"Bl" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
+"BB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "BN" = (
 /obj/machinery/vending/snack/green,
 /obj/effect/mapping_helpers/broken_machine,
@@ -810,6 +1488,10 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"BZ" = (
+/obj/effect/spawner/random/trash/deluxe_garbage,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "Cb" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron,
@@ -820,6 +1502,7 @@
 /area/space)
 "Cj" = (
 /obj/item/kirbyplants/organic/plant2,
+/obj/item/cigbutt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
 "Ck" = (
@@ -837,10 +1520,14 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "CV" = (
-/obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"Da" = (
+/obj/structure/chair,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "Di" = (
 /obj/structure/chair{
 	dir = 1
@@ -848,17 +1535,46 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
-"Ef" = (
+"Dk" = (
+/obj/structure/closet/secure_closet/brig,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"Dw" = (
+/obj/structure/railing,
 /obj/structure/table,
+/obj/item/paint_palette{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"Ef" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"EM" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/dark_red/anticorner/contrasted,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "ER" = (
 /obj/structure/lattice,
 /obj/structure/marker_beacon/olive,
 /turf/open/space/basic,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"ES" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "EW" = (
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/busted_depot/docks/four)
@@ -876,21 +1592,38 @@
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance)
 "Fo" = (
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"FB" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "FD" = (
 /obj/machinery/camera/autoname/directional/north,
 /obj/machinery/computer/security,
+/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint)
+"FF" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "FH" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"FN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "FQ" = (
 /obj/machinery/vending/cola/starkist,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -899,6 +1632,8 @@
 "FS" = (
 /obj/structure/table/reinforced,
 /obj/machinery/camera/autoname/deconstructed,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/item/food/chococoin,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
 "FW" = (
@@ -913,6 +1648,13 @@
 	dir = 8
 	},
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"FZ" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "Gg" = (
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
@@ -921,6 +1663,10 @@
 /obj/structure/marker_beacon/burgundy,
 /turf/open/space/basic,
 /area/space)
+"Gp" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/engine)
 "Gw" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/caution{
@@ -936,12 +1682,13 @@
 /area/ruin/space/has_grav/busted_depot/bridge)
 "GK" = (
 /obj/machinery/light/directional/east,
-/turf/open/floor/wood,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "GL" = (
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/vending/cigarette,
 /obj/effect/mapping_helpers/broken_machine,
+/obj/structure/sign/poster/official/dick_gum/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
 "GR" = (
@@ -950,6 +1697,10 @@
 /obj/structure/table_frame,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"GY" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "Hf" = (
 /obj/machinery/camera/autoname/directional/south,
 /turf/open/floor/iron,
@@ -973,23 +1724,41 @@
 	pixel_y = 6;
 	pixel_x = 6
 	},
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
 "HF" = (
 /obj/item/pipe_meter,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "HJ" = (
 /turf/open/floor/iron/edge{
 	dir = 8
 	},
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"HR" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "HT" = (
 /obj/structure/grille/broken,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"Ib" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/floor/broken,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/docks/two)
+"In" = (
+/obj/structure/cable,
+/obj/structure/railing/corner/end/flip{
+	dir = 8
+	},
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "Io" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -1002,7 +1771,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "It" = (
 /obj/machinery/power/solar,
 /obj/structure/cable,
@@ -1016,6 +1785,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "IA" = (
+/obj/machinery/light/floor/broken,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "IJ" = (
@@ -1028,34 +1798,81 @@
 /area/ruin/space/has_grav/busted_depot/docks/four)
 "IT" = (
 /obj/structure/filingcabinet,
+/obj/item/paper/guides/jobs/engi/solars,
+/obj/item/paper/pamphlet/ruin/spacehotel,
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 4
+	},
+/obj/item/radio/off,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "IW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"Jd" = (
+/obj/structure/closet/firecloset/full,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "Jg" = (
+/obj/machinery/light/floor/broken,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "Jp" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/ruin/space/has_grav/busted_depot/docks/two)
 "Jv" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/chair/sofa/left/maroon{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "JD" = (
 /obj/machinery/computer/security/telescreen/entertainment/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "JE" = (
 /obj/machinery/computer/security/telescreen/entertainment/directional/south,
-/turf/open/floor/wood,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"JI" = (
+/obj/item/cigbutt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"JT" = (
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"JW" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/item/bedsheet{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
+"JZ" = (
+/obj/machinery/computer/security,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "Ka" = (
 /obj/item/reagent_containers/cup/glass/waterbottle/large/empty{
 	pixel_y = 8;
@@ -1068,18 +1885,28 @@
 /obj/machinery/computer/warrant{
 	dir = 4
 	},
+/obj/machinery/vending/wallmed/directional/west,
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "Kh" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"Kj" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "Kp" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/right/directional/north,
 /obj/item/paper_bin{
 	pixel_y = 4;
 	pixel_x = 3
+	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
@@ -1091,7 +1918,11 @@
 "Ks" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance)
+"Kv" = (
+/obj/effect/turf_decal/tile/dark_red/anticorner/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "Kx" = (
 /obj/structure/cable,
 /turf/open/floor/iron/edge{
@@ -1107,20 +1938,54 @@
 /obj/structure/cable,
 /obj/machinery/light/small/red/dim/directional/south,
 /turf/open/floor/circuit/green/off,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
+"KH" = (
+/obj/machinery/washing_machine,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "KQ" = (
 /obj/machinery/door/poddoor,
 /obj/structure/cable,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "KR" = (
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"KZ" = (
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"Lb" = (
+/obj/structure/chair,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/flag/nanotrasen/directional/north,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/four)
 "Lj" = (
 /obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 1
+	},
+/obj/item/folder/blue,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"Lk" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"LB" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
 "LC" = (
 /obj/effect/mapping_helpers/bombable_wall,
 /turf/closed/wall/r_wall,
@@ -1137,11 +2002,33 @@
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "LS" = (
 /obj/machinery/camera/autoname/directional/west,
+/obj/structure/table,
+/obj/item/food/cookie/raisin{
+	pixel_y = 18
+	},
+/obj/machinery/microwave,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"LU" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
+/obj/item/folder/blue,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"Ma" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
 "Me" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/crowbar{
+	pixel_y = 5;
+	pixel_x = 2
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "Mk" = (
@@ -1151,10 +2038,27 @@
 "Mp" = (
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/one)
-"MZ" = (
-/obj/structure/curtain/bounty/start_closed,
+"MR" = (
+/obj/effect/spawner/random/trash/deluxe_garbage,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/docks/three)
+"MV" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"MZ" = (
+/obj/structure/chair,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"Np" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/one)
 "Ns" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /turf/open/floor/plating,
@@ -1162,20 +2066,32 @@
 "Ny" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/organic/plant2,
+/obj/effect/spawner/random/trash/deluxe_garbage,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"Nz" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
+/obj/structure/chair/office,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "NA" = (
 /obj/machinery/vending/cola,
 /obj/machinery/light/directional/east,
-/turf/open/floor/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "NV" = (
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
 /obj/structure/cable,
 /turf/open/floor/circuit/green,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
 "Oz" = (
 /obj/machinery/camera/autoname/directional/east,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "OA" = (
@@ -1186,36 +2102,62 @@
 /area/ruin/space/has_grav/busted_depot/docks/two)
 "OE" = (
 /obj/machinery/light/small/red/dim/directional/north,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
+"OF" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "OG" = (
 /obj/structure/filingcabinet/chestdrawer,
+/obj/structure/sign/flag/nanotrasen/directional/north,
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 1
+	},
+/obj/item/folder/yellow,
+/obj/item/food/canned/chap,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "OI" = (
 /obj/structure/chair/comfy/shuttle,
 /turf/open/floor/carpet/green,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"OO" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "OR" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"Pc" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/busted_depot/engine)
+"Pf" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "Ps" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/official/soft_cap_pop_art/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
 "PC" = (
-/obj/structure/bed,
-/turf/open/floor/iron,
-/area/space)
+/obj/structure/bookcase/manuals,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "PS" = (
 /obj/machinery/door/airlock/engineering,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
 "PU" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/spawner/structure/electrified_grille,
@@ -1225,6 +2167,7 @@
 /obj/effect/turf_decal/caution{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
@@ -1244,22 +2187,38 @@
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "Qo" = (
 /obj/machinery/door/poddoor,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office)
 "Qq" = (
 /obj/machinery/camera/autoname/directional/north,
+/obj/structure/sign/flag/nanotrasen/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
 "Qr" = (
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"Qw" = (
+/obj/structure/sign/departments/medbay/alt/directional/west,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "Qx" = (
 /obj/structure/cable,
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"QD" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "QG" = (
 /obj/structure/chair/sofa/corp/corner,
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
 "QK" = (
@@ -1274,13 +2233,31 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"QS" = (
+/obj/machinery/vending/games,
+/obj/effect/mapping_helpers/broken_machine,
+/obj/structure/sign/poster/contraband/space_up/directional/west,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "QU" = (
 /obj/structure/cable,
 /obj/machinery/light/small/red/dim/directional/north,
 /turf/open/floor/circuit/green/off,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
+"QW" = (
+/obj/structure/bed,
+/obj/effect/turf_decal/tile/dark_red/fourcorners,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"QY" = (
+/obj/structure/rack,
+/obj/item/storage/medkit/surgery,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
 "QZ" = (
 /obj/structure/sign/poster/contraband/robust_softdrinks/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/two)
 "Rb" = (
@@ -1298,16 +2275,26 @@
 "Rj" = (
 /obj/structure/cable,
 /turf/open/floor/circuit,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
 "Rn" = (
 /turf/open/space/basic,
 /area/space)
+"Rp" = (
+/obj/structure/rack,
+/obj/item/clothing/head/utility/hardhat/welding/dblue,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
 "Rt" = (
 /obj/structure/window/reinforced/fulltile,
 /obj/structure/grille/broken,
 /obj/effect/mapping_helpers/damaged_window,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"Ry" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "RA" = (
 /obj/structure/chair/stool/bar/directional/east,
 /obj/structure/sign/poster/contraband/eistee/directional/south,
@@ -1324,17 +2311,66 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
+"Sp" = (
+/obj/structure/sign/poster/official/safety_internals/directional/west,
+/obj/item/soap,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
+"Ss" = (
+/obj/item/relic,
+/obj/structure/rack,
+/obj/item/crowbar/red,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance)
+"St" = (
+/obj/machinery/light/directional/west,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"SA" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
+"SY" = (
+/obj/item/cigbutt,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/three)
 "Tf" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"Ti" = (
+/obj/item/chair{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"Tl" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/busted_depot/maintenance)
 "TD" = (
 /obj/structure/cable,
 /obj/machinery/light/small/dim/directional/north,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"TK" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "TR" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -1347,8 +2383,13 @@
 "TU" = (
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/oil/streak,
+/obj/structure/sign/poster/ripped/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"TW" = (
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
 "TY" = (
 /obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/iron,
@@ -1358,17 +2399,20 @@
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "Ud" = (
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "Ug" = (
 /obj/machinery/atmospherics/components/unary/portables_connector,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/north)
 "Uh" = (
-/obj/structure/toilet{
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/item/bedsheet{
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/medical)
 "Um" = (
 /obj/structure/chair{
 	dir = 1
@@ -1380,17 +2424,46 @@
 /obj/machinery/door/airlock/command,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/welded,
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"Uy" = (
+/obj/structure/sink/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
 "UH" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
 /turf/open/floor/circuit/green/off,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
+"UM" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/structure/sign/flag/nanotrasen/directional/north,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
+"UQ" = (
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/item/food/chocolatebar,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
 "US" = (
 /obj/machinery/camera/autoname/directional/south,
+/obj/structure/chair/sofa/right/maroon{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/dark_red/anticorner/contrasted{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "UV" = (
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
@@ -1402,10 +2475,40 @@
 /obj/structure/cable,
 /obj/machinery/camera/autoname/motion/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/warning/doors/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"VP" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/restarea)
+"Wa" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/structure/chair/office,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
+"Wd" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/security,
+/obj/effect/turf_decal/tile/dark_red/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
+"Wj" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 4
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_y = 6
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
 "Wn" = (
 /obj/machinery/camera/autoname/directional/west,
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
 "Wu" = (
@@ -1416,10 +2519,14 @@
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "Ww" = (
 /obj/machinery/computer/security,
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
 "WJ" = (
 /obj/machinery/light/directional/south,
+/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
 "WQ" = (
@@ -1427,40 +2534,80 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/three)
-"Xb" = (
-/obj/machinery/door/airlock/external/glass/ruin,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/turf/open/floor/plating,
+"WT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/four)
+"Xb" = (
+/obj/effect/decal/cleanable/oil/streak,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "Xd" = (
 /obj/machinery/light/directional/west,
-/obj/structure/table/reinforced,
+/obj/machinery/computer/security{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
+"Xi" = (
+/obj/machinery/recharge_station,
+/obj/structure/sign/poster/contraband/pwr_game/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "Xk" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/maintenance/south)
+"Xn" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "Xp" = (
 /obj/structure/table/reinforced,
+/obj/machinery/light/directional/south,
+/obj/effect/turf_decal/tile/red/half/contrasted,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "XE" = (
 /obj/machinery/vending/snack/blue,
 /obj/effect/mapping_helpers/broken_machine,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"XF" = (
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/busted_depot/restarea)
 "XK" = (
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/busted_depot/docks/two)
 "XM" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint)
+"XY" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge/office)
+"Yc" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/checkpoint)
 "Ys" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -1471,14 +2618,20 @@
 "Yv" = (
 /obj/structure/cable,
 /turf/open/floor/circuit/green/off,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/engine)
 "Yw" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/mapping_helpers/damaged_window,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/one)
+"YF" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/docks/one)
 "YI" = (
-/turf/open/floor/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "YK" = (
 /obj/item/toy/crayon/spraycan,
@@ -1488,6 +2641,18 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot)
+"YP" = (
+/obj/structure/bedsheetbin/basket,
+/obj/structure/table,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/medical)
+"YR" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "Ze" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -1495,20 +2660,57 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/docks/two)
+"Zl" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/ruin/space/has_grav/busted_depot/docks/two)
 "Zn" = (
 /obj/structure/table/reinforced,
+/obj/item/relic,
+/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint)
 "Zq" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/security/glass,
+/obj/effect/turf_decal/tile/red/half/contrasted{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
-/area/space)
+/area/ruin/space/has_grav/busted_depot/checkpoint)
+"Zr" = (
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/bridge)
+"ZC" = (
+/obj/structure/chair,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 "ZG" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
+/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/bridge)
+"ZN" = (
+/obj/structure/lattice/catwalk,
+/obj/effect/spawner/random/structure/billboard/nanotrasen,
+/turf/open/space/basic,
+/area/space)
+"ZT" = (
+/obj/structure/sign/poster/ripped/directional/east,
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot)
 
 (1,1,1) = {"
 Rn
@@ -2261,7 +3463,7 @@ Rn
 cU
 Rn
 Kh
-Mp
+vF
 Rt
 Jg
 HT
@@ -2335,8 +3537,8 @@ Rn
 Rn
 Rn
 Rn
-Rn
-Rn
+Cg
+ZN
 Rn
 Rn
 Rn
@@ -2396,8 +3598,8 @@ Rn
 Rn
 Rn
 Rn
-Rn
-Rn
+Cg
+ca
 Rn
 Rn
 Rn
@@ -2442,23 +3644,23 @@ bs
 bs
 lq
 wE
-nD
+mF
 nD
 Gw
 mF
 se
-YI
-YI
-YI
+in
+in
+in
 lq
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Rn
+HR
+wg
+wg
+wg
+wg
+HR
+HR
+ca
 Rn
 Rn
 Rn
@@ -2502,29 +3704,29 @@ Rn
 Rn
 Rn
 Kh
-YI
+in
 pF
 OI
 in
 mF
 in
 pF
-OI
+YF
 JE
 lq
-PC
+QS
 MZ
-Ud
-Ud
+wG
+oB
 dy
-Ud
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
+tE
+HR
+HR
+oz
+oz
+oz
+oz
+oz
 TZ
 TZ
 hS
@@ -2571,21 +3773,21 @@ mF
 in
 pF
 OI
-YI
+in
 lq
-PC
-MZ
-Ud
-Ud
-Ud
-Ud
+xN
+VP
+Dw
+fA
+VP
+yk
 LS
-Ud
-Yt
+nZ
+oz
+JW
 Uh
-Uh
-Uh
-Uh
+JW
+JW
 TZ
 FQ
 Qr
@@ -2626,33 +3828,33 @@ Rn
 Kh
 YI
 pF
-OI
+YF
 in
 mF
 in
-pF
+cF
 be
 JE
 lq
 PC
-MZ
-sj
-sj
-sj
-sj
-sj
-sj
-sj
-sj
-sj
-sj
-Ud
+Ti
+In
+tY
+tY
+ln
+QD
+ln
+cM
+kD
+eX
+eX
+Uy
 TZ
 uK
 Qd
 RU
 Qr
-Qr
+MR
 Qr
 uK
 Qr
@@ -2687,27 +3889,27 @@ Rn
 Kh
 YI
 YI
-YI
+in
 tZ
 mF
 in
-YI
+in
 GK
-YI
+nP
 lq
-PC
-MZ
-sj
-Ud
+Xi
+XF
+QD
+rI
 bT
-Ud
-Ud
-Ud
-Yt
+Bj
+Bj
+KH
+oz
 nA
-Ud
-sj
-Ud
+QY
+eX
+YP
 TZ
 sf
 QP
@@ -2740,7 +3942,7 @@ Rn
 Rn
 Rn
 bs
-tI
+cA
 vY
 FH
 FH
@@ -2750,31 +3952,31 @@ cZ
 NA
 aY
 lq
-mF
+Np
 uG
 lq
 lq
 lq
 lq
-Yt
-Yt
-sj
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-sj
-Yt
+HR
+HR
+hM
+HR
+HR
+HR
+HR
+HR
+oz
+oz
+oz
+aw
+oz
 TZ
 ip
 kJ
-Wu
+nq
 Qr
-Qr
+SY
 Qr
 ip
 Qr
@@ -2804,7 +4006,7 @@ Tf
 eN
 vY
 sa
-Zn
+LU
 Zn
 lq
 lq
@@ -2814,11 +4016,11 @@ lq
 Qx
 Gg
 Gg
+ks
 Gg
 Gg
-Gg
-Gg
-Gg
+Mk
+Mk
 qm
 Gg
 Gg
@@ -2827,7 +4029,7 @@ Gg
 Gg
 Gg
 zb
-Gg
+Qw
 qm
 Gg
 xF
@@ -2866,12 +4068,12 @@ ZG
 vY
 jq
 lK
-lK
+lg
 dt
 Xd
 Kc
 vY
-Gg
+JI
 qm
 qm
 qm
@@ -2920,8 +4122,8 @@ Rn
 Rn
 Rn
 sc
-UV
-UV
+Zr
+vA
 UV
 WJ
 vY
@@ -2930,26 +4132,26 @@ lK
 lK
 lK
 lK
-iz
+dX
 im
 Gg
 qm
 Gg
 Gg
-Gg
-Gg
+ZT
+te
 qm
-gF
+tb
 Gg
 Gg
+FF
 Gg
-Gg
-Gg
+cz
 gF
 YN
 Gg
 Gg
-Gg
+fz
 Gg
 qm
 sl
@@ -2981,35 +4183,35 @@ bs
 bs
 sc
 sc
+ak
 Gy
 Gy
-Gy
-Gy
+bj
 Uv
 nJ
 lK
 lK
 lK
 lK
-lK
+lS
 Kp
 Gg
 uZ
 Gg
 Cj
-Yt
-Yt
+mi
+mi
 hN
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+lD
+lD
+lD
 uo
 Mk
 qm
@@ -3042,26 +4244,26 @@ Rn
 cK
 sc
 Ww
-UV
+vA
 Gy
 UV
 rL
 vY
 IT
 nn
-lK
-lK
+ES
+lo
 iz
 vr
 vY
-Gg
+wK
 qm
 Cb
-Yt
-Yt
+mi
+mi
 nx
 Ir
-Yt
+Pc
 Yv
 Yv
 Yv
@@ -3070,14 +4272,14 @@ Yv
 PS
 Ks
 gP
-Yt
-Yt
+lD
+lD
 Ky
 qm
 Rb
-Yt
-Yt
-Yt
+LB
+LB
+LB
 CB
 It
 It
@@ -3102,11 +4304,11 @@ Rn
 Rn
 sc
 sc
-UV
+yF
 UV
 Gy
 UV
-Lj
+ey
 uR
 uR
 uR
@@ -3115,28 +4317,28 @@ uR
 Ag
 ap
 vY
-YN
+UM
 qm
-Gg
-Yt
+uh
+mi
 Ug
 HF
 da
-XM
+Gp
 Yv
 NV
 vc
 NV
 KC
-Yt
+Pc
 qx
 jp
-jp
-Yt
+vw
+lD
 YK
-qm
+nR
 Hf
-Yt
+LB
 sS
 lt
 gy
@@ -3163,44 +4365,44 @@ Rn
 Rn
 sc
 Lj
-UV
+vA
 UV
 Kq
 UV
 FS
 uR
 OG
-aq
-aq
+Nz
+UQ
 uR
 Vv
 qm
 gg
 qm
 qm
-Gg
-Yt
+uh
+mi
 Aj
-jp
-Ks
-XM
+vy
+OO
+Gp
 Yv
 Rj
 zB
 Rj
 Yv
-XM
+Gp
 Ks
-jp
-jp
-Yt
-Gg
+Ks
+cb
+lD
+Da
 qm
 Fo
-Yt
+LB
 Xk
-Yt
-Yt
+LB
+LB
 It
 gy
 It
@@ -3223,14 +4425,14 @@ bs
 Rn
 Rn
 sc
-Lj
+Wj
+hD
 UV
-UV
 Gy
 Gy
-Gy
+bj
 jV
-Vj
+db
 aq
 yh
 uR
@@ -3239,29 +4441,29 @@ Gg
 lz
 Gg
 qm
-Gg
-Yt
-jp
-jp
-Ks
-XM
+uh
+mi
+Jd
+OO
+OO
+Gp
 Yv
 Rj
 zB
 Rj
 Yv
-XM
+Gp
 Ks
 jp
-jp
-Yt
-Gg
+Tl
+lD
+Da
 qm
 xL
-Yt
-Ks
+LB
+Aq
 fy
-Yt
+LB
 It
 gy
 It
@@ -3285,44 +4487,44 @@ Rn
 Rn
 sc
 sc
-UV
+yF
 UV
 Gy
 UV
-UV
+TW
 uR
-Vj
+db
 aq
-aq
+tT
 uR
 KQ
 Qo
 uR
 Qq
 qm
-Gg
-Yt
-jp
-jp
+Lk
+mi
+GY
+vy
 km
-Yt
+Pc
 QU
 NV
-Rj
+oc
 NV
 Yv
-XM
+Gp
 Ks
 jp
-jp
-Yt
-Gg
+Ss
+lD
+cq
 qm
 Gg
-Yt
+LB
 TD
-jp
-XM
+JT
+qZ
 It
 gy
 It
@@ -3346,44 +4548,44 @@ Rn
 Rn
 cK
 sc
-UV
-UV
+sF
+hD
 Gy
 UV
-UV
+TW
 uR
-Vj
+db
 aq
-aq
-aq
-Vj
-aq
+fs
+hL
+XY
+lN
 uR
 Gg
 qm
 Cb
-Yt
-Yt
+mi
+mi
 OE
-Ks
+OO
 PS
 Yv
 Yv
 UH
 Yv
 Yv
-Yt
+Pc
 Ks
 gP
-Yt
-Yt
+lD
+lD
 ii
 qm
 qm
-Fi
+Ma
 ud
-jp
-XM
+JT
+qZ
 Rn
 It
 Rn
@@ -3411,40 +4613,40 @@ sc
 Hx
 qu
 UV
-UV
+TW
 uR
-pU
+nc
 Vj
 Vj
 Vj
 Vj
-aq
+Bl
 zk
 Gg
 qm
 Gg
 Ny
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
+mi
+mi
+mi
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
 Fi
-Yt
-Yt
+lD
+lD
 eq
 Gg
 qm
 GL
-Yt
-ud
-jp
-Yt
+LB
+jC
+Rp
+LB
 Rn
 Rn
 Rn
@@ -3479,22 +4681,22 @@ aq
 aq
 aq
 aq
-aq
+Wa
 nM
-Gg
+Mk
 xZ
 Gg
 Gg
 Gg
 Gg
-Gg
+ZC
 Wn
+uh
+Mk
+FN
 Gg
 Gg
-Gg
-Gg
-Gg
-Wn
+qB
 qm
 Gg
 Gg
@@ -3537,10 +4739,10 @@ OR
 uR
 pU
 bR
-aq
+SA
 Oz
-aq
-aq
+zY
+aI
 LC
 BN
 qm
@@ -3557,7 +4759,7 @@ qm
 qm
 qm
 qm
-qm
+yy
 qm
 qm
 qm
@@ -3570,7 +4772,7 @@ Be
 TY
 Ps
 Be
-gq
+or
 GR
 IO
 Rn
@@ -3605,24 +4807,24 @@ XK
 XK
 XK
 Qx
+Ry
+JI
+Mk
+Gg
+Gg
 wK
 Gg
+qm
+BZ
 Gg
-Gg
+Xn
+Xn
+gC
 Gg
 Gg
 Gg
 qm
-Gg
-Gg
-Gg
-Gg
-Gg
-Gg
-Gg
-Gg
-qm
-Gg
+tg
 Be
 HJ
 HJ
@@ -3671,19 +4873,19 @@ XK
 XK
 XK
 XK
-Yt
-Yt
-xC
-Yt
-Yt
-Yt
-Yt
-Yt
+hc
+hc
+Wd
+hc
+hc
+hc
+hc
+Kj
 oS
-Xp
-Yt
+TK
+Kj
 Zq
-Yt
+Kj
 EW
 uv
 Be
@@ -3724,33 +4926,33 @@ Rn
 tr
 Iw
 Iw
-Iw
+Xb
 OA
 Kx
 yx
 QZ
 bD
-Iw
+Sp
 XK
-Ud
-Ud
-sj
-Ud
+lT
+KZ
+MV
+St
 Jv
 US
-Yt
+hc
 FD
-Ud
-Ud
+Yc
+Yc
 dl
-sj
+xz
 zq
 EW
-uv
+Lb
 Be
 BW
-Be
-Be
+fI
+IW
 Be
 qM
 Be
@@ -3761,7 +4963,7 @@ Cg
 Rn
 Rn
 Rn
-Cg
+Gl
 Rn
 Rn
 Rn
@@ -3785,34 +4987,34 @@ Rn
 tr
 Iw
 Jp
-mC
+Zl
 Iw
 KR
 Iw
-Jp
-mC
-cw
+YR
+Zl
+dd
 XK
+yX
 Ud
-Ud
 sj
-sj
-sj
-sj
+yI
+FZ
+EM
 xC
-sj
-sj
-sj
-sj
-sj
+xE
+AC
+AC
+AC
+AC
 Xp
 EW
 wT
 Be
 BW
-Be
-Be
-Be
+IW
+WT
+IW
 tV
 Be
 Di
@@ -3844,42 +5046,42 @@ Rn
 Rn
 Rn
 tr
-Iw
+ar
 Jp
-mC
+OF
 Iw
 KR
-Iw
-Jp
+ar
+YR
 mC
-Iw
+tX
 XK
+JZ
+nv
 Ud
-Ud
-Ud
-Ud
-Ud
-Ud
-Yt
-Ud
-bT
-Ud
-Ud
-Ud
-Xp
+zj
+yC
+yC
+hc
+ov
+iq
+iq
+vI
+iq
+rW
 EW
 Ck
 Be
-Be
-fb
-Be
+IW
+uz
+IW
 fb
 dU
 IW
 CV
 EW
 Rn
-Cg
+Gl
 Rn
 Rn
 Rn
@@ -3907,32 +5109,32 @@ Rn
 tr
 Iw
 Jp
-mC
-Iw
-KR
-Iw
-Jp
+xj
+tX
+Pf
+BB
+kY
 mC
 cw
 XK
-Ud
-Ud
-Ud
-Ud
+dQ
+wV
+Dk
+Kv
 le
-Ud
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
+QW
+hc
+Kj
+XM
+XM
+XM
+XM
+Kj
 EW
 EW
 mt
 mt
-Xb
+nB
 cu
 nB
 mt
@@ -3968,7 +5170,7 @@ bs
 XK
 jB
 KR
-KR
+FB
 zf
 KR
 PX
@@ -3976,14 +5178,14 @@ Iw
 Iw
 Iw
 XK
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Yt
-Rn
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+ZN
 Rn
 Rn
 Rn
@@ -3993,7 +5195,7 @@ qC
 pY
 Rn
 mt
-ax
+qp
 mt
 ax
 mt
@@ -4043,8 +5245,8 @@ Rn
 Rn
 Rn
 Rn
-Rn
-Rn
+Cg
+ca
 Rn
 Rn
 Rn
@@ -4054,9 +5256,9 @@ Rn
 uS
 Rn
 mt
-ax
+wb
 mt
-ax
+wb
 mt
 Rn
 uS
@@ -4104,8 +5306,8 @@ Rn
 Rn
 Rn
 Rn
-Rn
-Rn
+Cg
+ca
 Rn
 Rn
 Rn
@@ -4152,9 +5354,9 @@ Rn
 dB
 Rn
 tr
-IJ
+Ib
 tr
-QK
+mN
 tr
 Rn
 dB
