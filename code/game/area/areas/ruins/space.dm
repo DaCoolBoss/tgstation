@@ -703,8 +703,6 @@
 //busted depot
 /area/ruin/space/has_grav/busted_depot
 	name = "Depot 10"
-	icon_state = "depot10_corridor"
-	ambience_index = AMBIENCE_RUINS
 
 /area/ruin/space/has_grav/busted_depot/corridor
 	icon_state = "depot10_corridor"
@@ -713,7 +711,7 @@
 /area/ruin/space/has_grav/busted_depot/docks
 	icon_state = "depot10_dock"
 	sound_environment = SOUND_ENVIRONMENT_AUDITORIUM
-	ambience_index = AMBIENCE_GENERIC | AMBIENCE_RUINS
+	ambience_index = AMBIENCE_GENERIC
 
 /area/ruin/space/has_grav/busted_depot/docks/one
 	name = "Depot 10 Dock Alpha"
@@ -735,7 +733,7 @@
 	name = "Depot 10 Administration"
 
 /area/ruin/space/has_grav/busted_depot/bridge/office/checkpoint
-	ambience_index = AMBIENCE_DANGER | AMBIENCE_RUINS
+	ambience_index = AMBIENCE_DANGER
 
 /area/ruin/space/has_grav/busted_depot/restarea
 	name = "Depot 10 Rest Area"
@@ -750,7 +748,7 @@
 /area/ruin/space/has_grav/busted_depot/maintenance
 	name = "Depot 10 Maintenance Tunnel"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
-	ambience_index = AMBIENCE_DANGER | AMBIENCE_ENGI
+	ambience_index = AMBIENCE_ENGI
 
 /area/ruin/space/has_grav/busted_depot/maintenance/north
 
@@ -765,6 +763,6 @@
 /area/ruin/space/has_grav/busted_depot/engine
 	icon_state = "depot10_hazard"
 
-/area/ruin/space/busted_depot/solars
+/area/ruin/space/solars/busted_depot
 	name = "Depot 10 Solar Array"
 	icon_state = "depot10_solars"

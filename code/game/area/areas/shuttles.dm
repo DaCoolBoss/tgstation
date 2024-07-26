@@ -246,7 +246,7 @@
 /area/shuttle/ruin/caravan/freighter3
 	name = "Tiny Freighter"
 
-/// Special shuttles made for the Caravan Ambush ruin.
+/// Depot 10 shuttles
 /area/shuttle/ruin/busted_foodtruck
 	requires_power = TRUE
 	name = "Perfectly Ordinary Foodtruck"

@@ -279,10 +279,6 @@
 	pixel_x = 2;
 	pixel_y = -8
 	},
-/obj/item/trash/can{
-	pixel_x = -8;
-	pixel_y = 4
-	},
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/busted_transport)
 "vt" = (
@@ -664,6 +660,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/layer4{
 	dir = 4
 	},
+/obj/item/trash/can{
+	pixel_x = -8;
+	pixel_y = 4
+	},
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/busted_transport)
 "Qb" = (
@@ -823,9 +823,9 @@ JJ
 JJ
 JJ
 JJ
-am
-am
 MO
+am
+am
 Ml
 am
 JJ
