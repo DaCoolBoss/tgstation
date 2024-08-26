@@ -78,6 +78,8 @@
 /obj/structure/chair/comfy/shuttle,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/extinguisher_cabinet/directional/north,
+/obj/effect/mob_spawn/corpse/human/skeleton,
+/obj/effect/mapping_helpers/mob_buckler,
 /turf/open/floor/wood/airless,
 /area/shuttle/ruin/busted_transport)
 "hE" = (
@@ -387,6 +389,8 @@
 "An" = (
 /obj/structure/chair/comfy/shuttle,
 /obj/structure/extinguisher_cabinet/directional/north,
+/obj/effect/mob_spawn/corpse/human/skeleton,
+/obj/effect/mapping_helpers/mob_buckler,
 /turf/open/floor/wood/airless,
 /area/shuttle/ruin/busted_transport)
 "AS" = (
@@ -524,6 +528,8 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
+/obj/effect/mob_spawn/corpse/human/skeleton,
+/obj/effect/mapping_helpers/mob_buckler,
 /turf/open/floor/wood/airless,
 /area/shuttle/ruin/busted_transport)
 "Ja" = (
