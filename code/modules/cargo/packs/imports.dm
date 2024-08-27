@@ -73,7 +73,7 @@
 
 /datum/supply_pack/imports/dumpstercorpse
 	name = "A Corpse"
-	desc = "Why does it smell so bad...."
+	desc = "For a small fee, you can be shipped a corpse. No questions asked."
 	cost = CARGO_CRATE_VALUE * 6
 	contains = list(/mob/living/carbon/human)
 	crate_name = "dumpster"

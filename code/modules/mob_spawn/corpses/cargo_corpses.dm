@@ -1,4 +1,5 @@
 //in this file: corpses that can be ordered at cargo, and outfits for them
+
 /obj/effect/mob_spawn/corpse/human/medical_cadaver
 
 /obj/effect/mob_spawn/corpse/human/medical_cadaver/Initialize(mapload)
