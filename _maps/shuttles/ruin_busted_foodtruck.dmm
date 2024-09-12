@@ -2,9 +2,8 @@
 "aa" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /obj/effect/mapping_helpers/damaged_window,
-/obj/structure/fans/tiny,
 /obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_backroom_shutters";
+	id = "bustedfoodtruck_backroom_shutters";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -73,15 +72,6 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/ruin/busted_foodtruck)
-"dC" = (
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/structure/fans/tiny,
-/obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_backroom_shutters";
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/shuttle/ruin/busted_foodtruck)
 "dJ" = (
 /obj/item/food/classic_hard_shell_taco{
 	pixel_x = 2;
@@ -148,8 +138,8 @@
 /turf/open/floor/iron/smooth,
 /area/shuttle/ruin/busted_foodtruck)
 "gc" = (
-/obj/structure/sign/poster/contraband/little_fruits/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/ripped/directional/south,
 /turf/open/floor/iron/smooth,
 /area/shuttle/ruin/busted_foodtruck)
 "gs" = (
@@ -177,6 +167,7 @@
 	pixel_y = -2;
 	pixel_x = -8
 	},
+/obj/machinery/button/door/directional/west,
 /turf/open/floor/iron/smooth,
 /area/shuttle/ruin/busted_foodtruck)
 "hB" = (
@@ -248,16 +239,6 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/shuttle/ruin/busted_foodtruck)
-"lp" = (
-/obj/structure/grille/broken,
-/obj/effect/decal/cleanable/glass/titanium,
-/obj/structure/fans/tiny,
-/obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_backroom_shutters";
-	dir = 4
-	},
-/turf/open/floor/plating,
 /area/shuttle/ruin/busted_foodtruck)
 "lX" = (
 /obj/item/reagent_containers/condiment/flour{
@@ -336,37 +317,28 @@
 "sZ" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_backroom_shutters";
+	id = "bustedfoodtruck_backroom_shutters";
 	dir = 4
 	},
-/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/shuttle/ruin/busted_foodtruck)
 "te" = (
 /obj/structure/fans/tiny,
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 7;
-	height = 15;
-	name = "Deep Space";
-	shuttle_id = "huntership_home";
-	width = 13
-	},
 /obj/docking_port/mobile{
 	name = "food truck";
 	rechargeTime = 1800;
 	dir = 4;
-	shuttle_id = "huntership";
+	shuttle_id = "busted_foodtruck";
 	port_direction = 8
 	},
 /obj/effect/turf_decal/stripes{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_shutters";
+	id = "bustedfoodtruck_shutters";
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/ruin/busted_foodtruck)
 "tW" = (
@@ -474,11 +446,11 @@
 /area/shuttle/ruin/busted_foodtruck)
 "AF" = (
 /obj/structure/fans/tiny,
-/obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_shutters";
+/obj/effect/turf_decal/stripes{
 	dir = 8
 	},
-/obj/effect/turf_decal/stripes{
+/obj/machinery/door/poddoor/shutters{
+	id = "bustedfoodtruck_shutters";
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -493,17 +465,6 @@
 "Bn" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/mineral/titanium,
-/area/shuttle/ruin/busted_foodtruck)
-"CF" = (
-/obj/structure/fans/tiny,
-/obj/effect/turf_decal/stripes{
-	dir = 8
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_shutters";
-	dir = 8
-	},
-/turf/open/floor/plating,
 /area/shuttle/ruin/busted_foodtruck)
 "CY" = (
 /obj/machinery/deepfryer,
@@ -529,20 +490,11 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/ruin/busted_foodtruck)
-"Ff" = (
-/obj/effect/spawner/random/structure/grille,
-/obj/effect/decal/cleanable/glass/titanium,
-/obj/structure/fans/tiny,
-/obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_backroom_shutters";
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/shuttle/ruin/busted_foodtruck)
 "Fv" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
 /obj/machinery/light/dim/directional/west,
+/obj/structure/sign/poster/contraband/little_fruits/directional/west,
 /turf/open/floor/iron/smooth,
 /area/shuttle/ruin/busted_foodtruck)
 "IG" = (
@@ -595,17 +547,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/kitchen/small,
 /area/shuttle/ruin/busted_foodtruck)
-"OU" = (
-/obj/effect/spawner/random/structure/grille,
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/effect/mapping_helpers/damaged_window,
-/obj/structure/fans/tiny,
-/obj/machinery/door/poddoor/shutters{
-	id = "foodtruck_backroom_shutters";
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/shuttle/ruin/busted_foodtruck)
 "Pq" = (
 /turf/template_noop,
 /area/template_noop)
@@ -624,7 +565,7 @@
 /area/shuttle/ruin/busted_foodtruck)
 "RO" = (
 /obj/machinery/button/door/directional/east{
-	id = "foodtruck_shutters";
+	id = "bustedfoodtruck_shutters";
 	name = "External Shutter Switch"
 	},
 /obj/structure/table/reinforced,
@@ -698,11 +639,11 @@ Pq
 Pq
 ku
 AF
-CF
+AF
 te
-CF
-CF
-CF
+AF
+AF
+AF
 ku
 Pq
 Pq
@@ -901,11 +842,11 @@ Pq
 Pq
 Pq
 ku
-OU
-lp
-Ff
 aa
-dC
+sZ
+sZ
+aa
+sZ
 sZ
 ku
 Pq

@@ -1277,8 +1277,8 @@
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "sS" = (
 /obj/structure/cable,
-/obj/machinery/light/small/red/dim/directional/north,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/red/dim/directional/west,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/maintenance/south)
 "tb" = (
@@ -1772,7 +1772,9 @@
 /obj/effect/turf_decal/tile/dark_red/half/contrasted{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/security,
+/obj/structure/closet/secure_closet/security{
+	locked = 0
+	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "zb" = (
@@ -2817,8 +2819,8 @@
 	dir = 4;
 	dwidth = 15;
 	height = 12;
-	shuttle_id = "depot10_delta";
-	name = "Trade Route";
+	shuttle_id = "busted_foodtruck";
+	name = "Depot 10 Dock Delta";
 	roundstart_template = /datum/map_template/shuttle/ruin/busted_foodtruck;
 	width = 9
 	},
