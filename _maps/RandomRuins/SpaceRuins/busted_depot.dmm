@@ -196,9 +196,9 @@
 /area/ruin/space/has_grav/busted_depot/docks/one)
 "da" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/busted_depot/maintenance/north)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron,
+/area/ruin/space/has_grav/busted_depot/corridor)
 "db" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
@@ -499,10 +499,10 @@
 "hN" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/maintenance/north)
 "hS" = (
@@ -2243,7 +2243,7 @@
 /area/ruin/space/has_grav/busted_depot/bridge)
 "HF" = (
 /obj/item/pipe_meter,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/maintenance/north)
 "HJ" = (
@@ -2284,8 +2284,7 @@
 /area/ruin/space/has_grav/busted_depot/docks/three)
 "Ir" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/maintenance/north)
 "It" = (
@@ -3085,8 +3084,8 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/busted_depot/checkpoint/barrack)
 "Ug" = (
-/obj/machinery/atmospherics/components/unary/portables_connector,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/portables_connector/layer2,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/busted_depot/maintenance/north)
 "Uh" = (
@@ -4895,7 +4894,7 @@ Gg
 Gg
 ZT
 te
-qm
+da
 tb
 XH
 uh
@@ -5075,7 +5074,7 @@ uh
 mi
 Ug
 HF
-da
+Ir
 Gp
 Yv
 NV
