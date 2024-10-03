@@ -1,0 +1,15 @@
+/datum/outfit/forged
+	name = "Forged Gang"
+	head = /obj/item/clothing/head/utility/welding
+	mask = /obj/item/clothing/mask/gas/atmos
+	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker
+	suit = /obj/item/clothing/suit/armor/vest/military
+	shoes = /obj/item/clothing/shoes/workboots
+	back = /obj/item/storage/backpack/satchel/explorer
+
+/datum/outfit/forged/elite
+	name = "Forged Warrior"
+	head = /obj/item/clothing/head/utility/welding
+	uniform = /obj/item/clothing/under/costume/pirate
+	suit = /obj/item/clothing/suit/armor/vest/cuirass
+	shoes = /obj/item/clothing/shoes/pirate/armored

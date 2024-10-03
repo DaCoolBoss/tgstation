@@ -40,11 +40,12 @@
 
 /datum/outfit/scrapper
 	name = "Scrapper Gang"
-	head = /obj/item/clothing/head/utility/hardhat/welding/orange
-	mask = /obj/item/clothing/mask/gas/atmos
+	head = /obj/item/clothing/head/costume/pirate/bandana
+	mask = /obj/item/clothing/mask/gas
 	uniform = /obj/item/clothing/under/color/lightbrown
-	suit = /obj/item/clothing/suit/hazardvest
+	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/pirate
+	back = /obj/item/storage/backpack/satchel/explorer
 
 /datum/outfit/scrapper/elite
 	name = "Scrapper Gang Wrecker"
@@ -65,10 +66,14 @@
 /datum/outfit/scrapper/boss
 
 	uniform = /obj/item/clothing/under/suit/carpskin
+	shoes = /obj/item/clothing/shoes/pirate/armored
 
 /mob/living/basic/trooper/scrapper/boss/captain
 
 
 /datum/outfit/scrapper/boss/captain
+	name = "Scrapper Captain"
 	uniform = /obj/item/clothing/under/costume/dutch
+	back = /obj/item/storage/backpack/satchel/leather
+	mask = /obj/item/clothing/mask/gas/ninja
 
