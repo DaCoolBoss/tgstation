@@ -1,0 +1,74 @@
+/mob/living/basic/trooper/pirate
+	name = "Pirate"
+	desc = "Does what he wants cause a pirate is free."
+	response_help_continuous = "pushes"
+	response_help_simple = "push"
+	speak_emote = list("yarrs")
+	faction = list(FACTION_PIRATE)
+	loot = list(/obj/effect/mob_spawn/corpse/human/pirate)
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/pirate
+
+	/// The amount of money to steal with a melee attack
+	var/plunder_credits = 25
+
+	/mob/living/basic/trooper/pirate/melee
+	name = "Pirate Swashbuckler"
+	melee_damage_lower = 30
+	melee_damage_upper = 30
+	armour_penetration = 35
+	attack_verb_continuous = "slashes"
+	attack_verb_simple = "slash"
+	attack_sound = 'sound/weapons/blade1.ogg'
+	attack_vis_effect = ATTACK_EFFECT_SLASH
+	loot = list(/obj/effect/mob_spawn/corpse/human/pirate/melee)
+	light_range = 2
+	light_power = 2.5
+	light_color = COLOR_SOFT_RED
+	loot = list(
+		/obj/effect/mob_spawn/corpse/human/pirate/melee,
+		/obj/item/melee/energy/sword/pirate,
+	)
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/pirate/melee
+	r_hand = /obj/item/melee/energy/sword/pirate
+
+/obj/effect/mob_spawn/corpse/human/pirate/scrapper
+	name = "Scrapper Pirate"
+	skin_tone = "caucasian1" //all pirates are white because it's easier that way
+	outfit = /datum/outfit/scrapper
+	hairstyle = "Bald"
+	facial_hairstyle = "Shaved"
+
+/datum/outfit/scrapper
+	name = "Scrapper Gang"
+	head = /obj/item/clothing/head/utility/hardhat/welding/orange
+	mask = /obj/item/clothing/mask/gas/atmos
+	uniform = /obj/item/clothing/under/color/lightbrown
+	suit = /obj/item/clothing/suit/hazardvest
+	shoes = /obj/item/clothing/shoes/pirate
+
+/datum/outfit/scrapper/elite
+	name = "Scrapper Gang Wrecker"
+	head = /obj/item/clothing/head/utility/welding
+	uniform = /obj/item/clothing/under/costume/pirate
+	suit = /obj/item/clothing/suit/armor/heavy
+	shoes = /obj/item/clothing/shoes/pirate/armored
+
+/datum/outfit/scrapper/officer
+	name = "Scrapper Gang Officer"
+	uniform = /obj/item/clothing/under/costume/pirate
+	shoes = /obj/item/clothing/shoes/jackboots
+
+/datum/outfit/scrapper/officer
+
+/mob/living/basic/trooper/scrapper/boss
+
+/datum/outfit/scrapper/boss
+
+	uniform = /obj/item/clothing/under/suit/carpskin
+
+/mob/living/basic/trooper/scrapper/boss/captain
+
+
+/datum/outfit/scrapper/boss/captain
+	uniform = /obj/item/clothing/under/costume/dutch
+
