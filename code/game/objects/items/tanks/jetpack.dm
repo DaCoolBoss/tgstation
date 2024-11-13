@@ -244,7 +244,6 @@
 	inhand_icon_state = "jetpack-sec"
 
 
-
 /obj/item/tank/jetpack/carbondioxide
 	name = "jetpack (carbon dioxide)"
 	desc = "A tank of compressed carbon dioxide for use as propulsion in zero-gravity areas. Painted black to indicate that it should not be used as a source for internals."
@@ -252,3 +251,14 @@
 	inhand_icon_state = "jetpack-black"
 	distribute_pressure = 0
 	gas_type = /datum/gas/carbon_dioxide
+
+/obj/item/tank/jetpack/jumppack
+	name = "jet jumppack"
+	desc = "A back-mounted device for propelling its wearer around in low or no gravity enviroments."
+	icon_state = "jetpack-improvised"
+	inhand_icon_state = "jetpack-improvised"
+	worn_icon = null
+	worn_icon_state = "jetpack-improvised"
+	volume = 15
+	drift_force = 2 NEWTONS
+	stabilizer_force = 2 NEWTONS

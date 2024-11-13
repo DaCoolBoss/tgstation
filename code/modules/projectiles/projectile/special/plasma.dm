@@ -32,6 +32,17 @@
 	range = 9
 	mine_range = 3
 
+//projectiles for the shipwrecker pirate mobs
+/obj/projectile/plasma/pirate
+	name = "cutter beam"
+	armor_flag = ENERGY
+	damage = 15
+	range = 6
+	dismemberment = 15
+	mine_range = 2
+	catastropic_dismemberment = TRUE
+	wound_bonus = 30
+
 /obj/projectile/plasma/turret
 	//Between normal and advanced for damage, made a beam so not the turret does not destroy glass
 	name = "plasma beam"

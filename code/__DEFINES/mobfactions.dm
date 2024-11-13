@@ -93,6 +93,8 @@
 #define FACTION_HERETIC "heretics"
 /// Mainly used by pirate simplemobs. However I placed them here instead, as its also used by players
 #define FACTION_PIRATE "pirate"
+/// Subfaction of pirates
+#define FACTION_SHIPWRECKER "shipwrecker"
 
 /// Generates a mob faction for the passed owner, used by stabilized pink extracts
 #define FACTION_PINK_EXTRACT(owner) "pink_[owner]"

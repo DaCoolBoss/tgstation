@@ -184,6 +184,16 @@
 	force = 15
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/adv)
 
+/obj/item/gun/energy/plasmacutter/pirate
+	name = "plasma blaster"
+	desc = "A stripped down mining tool capable of expelling concentrated plasma bursts. Its shortened plasma circulator coils let off a hotter beam, making it particularly good as a weapon but limiting its ammo and ability to break minerals. A common weapon used by low-ranking criminals in space."
+	icon_state = "pirate_plasmacutter"
+	inhand_icon_state = "pirate_plasmacutter"
+	force = 8
+	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pirate)
+	attack_verb_continuous = list("pistolwhips","whacks","strikes")
+	attack_verb_simple = list("pistolwhip","whack","strikes")
+
 #define AMMO_SELECT_BLUE 1
 #define AMMO_SELECT_ORANGE 2
 

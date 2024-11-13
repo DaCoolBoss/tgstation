@@ -1,17 +1,51 @@
-/mob/living/basic/trooper/pirate
-	name = "Pirate"
-	desc = "Does what he wants cause a pirate is free."
+/mob/living/basic/trooper/shipwrecker
+	name = "Scrapper"
+	desc = "A low-ranking member of the Shipwrecker Gang, infamous for raiding shuttles mid-transit. This one is armed with a plasma cutter and a pickaxe."
 	response_help_continuous = "pushes"
 	response_help_simple = "push"
-	speak_emote = list("yarrs")
-	faction = list(FACTION_PIRATE)
-	loot = list(/obj/effect/mob_spawn/corpse/human/pirate)
-	mob_spawner = /obj/effect/mob_spawn/corpse/human/pirate
+	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
+	loot = list(/datum/outfit/shipwrecker, /obj/item/gun/energy/plasmacutter/pirate, /obj/item/pickaxe)
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker
+	r_hand = /obj/item/gun/energy/plasmacutter/pirate
+	l_hand = /obj/item/pickaxe
+	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0.5)
 
-	/// The amount of money to steal with a melee attack
-	var/plunder_credits = 25
+/datum/outfit/shipwrecker
+	name = "Scrapper Gang"
+	head = /obj/item/clothing/head/costume/pirate/bandana
+	mask = /obj/item/clothing/mask/gas
+	uniform = /obj/item/clothing/under/color/lightbrown
+	suit = /obj/item/clothing/suit/armor/vest/alt
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/pirate
+	back = /obj/item/storage/backpack/satchel/explorer
 
-	/mob/living/basic/trooper/pirate/melee
+/obj/effect/mob_spawn/corpse/human/shipwrecker
+	name = "Scrapper Pirate"
+	outfit = /datum/outfit/shipwrecker
+	hairstyle = "Bald"
+	facial_hairstyle = "Shaved"
+
+/mob/living/basic/trooper/shipwrecker/space
+	unsuitable_atmos_damage = 0
+	minimum_survivable_temperature = 0
+	mob_spawner =
+
+/mob/living/basic/trooper/syndicate/space/Initialize(mapload)
+	. = ..()
+	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)
+	set_light(4)
+/mob/living/basic/trooper/shipwrecker/heavy
+
+/mob/living/basic/trooper/shipwrecker/heavy/space
+
+/mob/living/basic/trooper/shipwrecker/officer
+
+/mob/living/basic/trooper/shipwrecker/officer/space
+
+/mob/living/basic/trooper/shipwrecker/bigboss
+
+/mob/living/basic/trooper/pirate/melee
 	name = "Pirate Swashbuckler"
 	melee_damage_lower = 30
 	melee_damage_upper = 30

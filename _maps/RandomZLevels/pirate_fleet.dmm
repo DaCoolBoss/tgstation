@@ -1423,6 +1423,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/space)
+"mN" = (
+/obj/item/gun/energy/plasmacutter/pirate,
+/turf/open/floor/mineral/titanium,
+/area/space)
 "mO" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
@@ -1794,6 +1798,11 @@
 "qe" = (
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/dark,
+/area/space)
+"qg" = (
+/obj/structure/table/reinforced,
+/obj/item/gun/energy/plasmacutter/pirate,
+/turf/open/floor/iron/smooth,
 /area/space)
 "qi" = (
 /turf/open/misc/ashplanet/rocky,
@@ -33650,7 +33659,7 @@ Hp
 aZ
 Zt
 nf
-ql
+qg
 Hp
 Hp
 BP
@@ -38278,7 +38287,7 @@ Hp
 Op
 Op
 Zo
-ql
+qg
 BP
 Hp
 Op
@@ -40045,7 +40054,7 @@ gb
 hg
 IV
 hg
-hg
+mN
 IO
 UH
 UH
@@ -42607,7 +42616,7 @@ nn
 Oc
 nn
 nn
-Hp
+Oc
 Oc
 UT
 TA
@@ -43635,9 +43644,9 @@ Hp
 Hp
 Hp
 nn
-OS
-OS
-OS
+Hp
+Hp
+Hp
 nn
 nn
 nn
