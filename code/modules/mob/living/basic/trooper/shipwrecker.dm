@@ -11,17 +11,17 @@
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0.5)
 
 /datum/outfit/shipwrecker
-	name = "Scrapper Gang"
+	name = "Shipwrecker Pirate"
 	head = /obj/item/clothing/head/costume/pirate/bandana
 	mask = /obj/item/clothing/mask/gas
 	uniform = /obj/item/clothing/under/color/lightbrown
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/pirate
-	back = /obj/item/storage/backpack/satchel/explorer
+	back = /obj/item/tank/jetpack/jumppack
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker
-	name = "Scrapper Pirate"
+	name = "Shipwrecker Pirate"
 	outfit = /datum/outfit/shipwrecker
 	hairstyle = "Bald"
 	facial_hairstyle = "Shaved"
@@ -29,13 +29,33 @@
 /mob/living/basic/trooper/shipwrecker/space
 	unsuitable_atmos_damage = 0
 	minimum_survivable_temperature = 0
-	mob_spawner =
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/space
+
+/datum/outfit/shipwrecker/space
+	name = "Shipwrecker Pirate (Spacesuit)"
+	head = /obj/item/clothing/head/helmet/space/pirate/bandana
+	mask = /obj/item/clothing/mask/gas
+	suit = /obj/item/clothing/suit/space/pirate
+	suit_store = /obj/item/tank/internals/oxygen/red
+
+/obj/effect/mob_spawn/corpse/human/shipwrecker/space
+	name = "Shipwrecker Pirate (Spacesuit)"
+	outfit = /datum/outfit/shipwrecker
+	hairstyle = "Bald"
+	facial_hairstyle = "Shaved"
 
 /mob/living/basic/trooper/syndicate/space/Initialize(mapload)
 	. = ..()
 	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)
 	set_light(4)
+
 /mob/living/basic/trooper/shipwrecker/heavy
+	name = "Wrecker"
+	desc = "A member of the infamous Shipwrecker Gang. Wreckers are heavily armored pirates and brandishing a huge axe."
+	melee_damage_lower = 30
+	melee_damage_upper = 30
+	armour_penetration = 35
+	attack_verb_continuous = "slashes"
 
 /mob/living/basic/trooper/shipwrecker/heavy/space
 
@@ -50,9 +70,7 @@
 	melee_damage_lower = 30
 	melee_damage_upper = 30
 	armour_penetration = 35
-	attack_verb_continuous = "slashes"
-	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/blade1.ogg'
+
 	attack_vis_effect = ATTACK_EFFECT_SLASH
 	loot = list(/obj/effect/mob_spawn/corpse/human/pirate/melee)
 	light_range = 2

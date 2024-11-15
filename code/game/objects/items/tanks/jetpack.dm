@@ -254,11 +254,10 @@
 
 /obj/item/tank/jetpack/jumppack
 	name = "jet jumppack"
-	desc = "A back-mounted device for propelling its wearer around in low or no gravity enviroments."
-	icon_state = "jetpack-improvised"
-	inhand_icon_state = "jetpack-improvised"
-	worn_icon = null
-	worn_icon_state = "jetpack-improvised"
+	desc = "A back-mounted movement device for skirmishing in low gravity enviroments. Powerful and fast, but with a limited supply of pressurised propellant."
+	icon_state = "jetjumppack"
+	inhand_icon_state = "jetjumppack"
+	worn_icon_state = "jetpack-jumppack"
 	volume = 15
 	drift_force = 2 NEWTONS
 	stabilizer_force = 2 NEWTONS

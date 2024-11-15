@@ -5085,6 +5085,7 @@
 #include "code\modules\mob\living\basic\trooper\nanotrasen.dm"
 #include "code\modules\mob\living\basic\trooper\pirate.dm"
 #include "code\modules\mob\living\basic\trooper\russian.dm"
+#include "code\modules\mob\living\basic\trooper\shipwrecker.dm"
 #include "code\modules\mob\living\basic\trooper\syndicate.dm"
 #include "code\modules\mob\living\basic\trooper\trooper.dm"
 #include "code\modules\mob\living\basic\trooper\trooper_ai.dm"
