@@ -14,7 +14,7 @@
 	name = "Shipwrecker Pirate"
 	head = /obj/item/clothing/head/costume/pirate/bandana
 	mask = /obj/item/clothing/mask/gas
-	uniform = /obj/item/clothing/under/color/lightbrown
+	uniform = /obj/item/clothing/under/syndicate/wrecker
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/pirate

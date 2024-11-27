@@ -98,6 +98,21 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
+/obj/item/clothing/under/syndicate/wrecker
+	name = "wrecker suit"
+	desc = "A handcrafted jumpsuit of rubberized fabric reinforced with patches of nano-woven plexiglass plating. Provides little protection, but thin enough to wear under armour."
+	armor_type = /datum/armor/clothing_under/syndicate/wrecker
+	icon_state = "wrecker"
+	inhand_icon_state = "bl_suit"
+	alt_covers_chest = FALSE
+
+/datum/armor/clothing_under/syndicate/wrecker
+	bullet = 10
+	energy = 10
+	fire = 50
+	acid = 40
+	wound = 10
+
 /obj/item/clothing/under/syndicate/sniper
 	name = "tactical turtleneck suit"
 	desc = "A double seamed tactical turtleneck disguised as a civilian-grade silk suit. Intended for the most formal operator. The collar is really sharp."
