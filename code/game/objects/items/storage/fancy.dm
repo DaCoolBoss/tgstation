@@ -611,3 +611,52 @@
 	for(var/i in 1 to 3)
 		new /obj/item/reagent_containers/condiment/chocolate(src)
 	update_appearance()
+
+/obj/item/storage/fancy/binder
+	icon = 'icons/obj/service/bureaucracy.dmi'
+	icon_state = "binder_blue"
+	base_icon_state = "binder_blue"
+	name = "binder"
+	desc = "A looseleaf office binder, for storing folders and documents."
+	contents_tag = "document"
+	open_status = FANCY_CONTAINER_ALWAYS_OPEN
+	has_open_closed_states = FALSE
+	spawn_type = /obj/item/paper
+
+/obj/item/storage/fancy/binder/Initialize(mapload)
+	. = ..()
+	atom_storage.max_slots = 12
+	atom_storage.set_holdable(list(
+		/obj/item/aicard,
+		/obj/item/bitrunning_disk,
+		/obj/item/card,
+		/obj/item/cardpack,
+		/obj/item/computer_disk,
+		/obj/item/disk,
+		/obj/item/folder,
+		/obj/item/newspaper,
+		/obj/item/paper,
+		/obj/item/tcgcard,
+	))
+
+/obj/item/storage/fancy/binder/update_icon_state()
+	. = ..()
+	if(!contents.len)
+		icon_state = "[base_icon_state]_empty"
+	else
+		if(contents.len < 5)
+			icon_state = "[base_icon_state]_[contents.len]"
+		else
+			icon_state = base_icon_state
+
+/obj/item/storage/fancy/binder/red
+	icon_state = "binder_red"
+	base_icon_state = "binder_red"
+
+/obj/item/storage/fancy/binder/plastic
+	custom_materials = list(/datum/material/plastic = SHEET_MATERIAL_AMOUNT)
+	foldable_result = /obj/item/stack/sheet/plastic
+
+/obj/item/storage/fancy/binder/plastic/red
+	icon_state = "binder_red"
+	base_icon_state = "binder_red"
