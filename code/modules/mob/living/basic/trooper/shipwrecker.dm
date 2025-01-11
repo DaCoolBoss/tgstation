@@ -1,5 +1,39 @@
+//SHIPWRECKER GANG:
+//A pirate subfaction
+
+//WHO ARE THEY:
+//Violent criminals who launch themselves on shuttles and kill everyone and smash everything.
+//A highly varied bunch of NPCs designed to challenge players combat skills on multiple fronts.
+//2 ranks of basic trooper (Scrapper, )
+
+//WHAT DO THEY DO
+//
+
+//VISUAL THEMES:
+//Primarily Greys, Greens, Olives. Warm Browns and Reds used for detailing.
+//Short NPC names, indicating rank or specialty
+//
+
+//GAMEPLAY THEMES:
+//These guys are designed to be more dangerous than regular space pirates, to have a unique gameplay pattern and to give interesting loot.
+//Mix of melee and ranged capability, these guys work together and specialise to cover multiple bases.
+//
+
+//LOOT:
+//Stuff that
+//
+//
+
+//LORE:
+//The Shipwrecker Gang hangs out on the "Scrapmaker", a heavily modified pirate frigate. They share this vessel with the secretive and eccentric Cult of the Singularity.
+//Captain Carpheart is the leader of the Gang, and rules the ship with an iron fist. This Gang is highly militerised, disciplined and loyal.
+//The Scrapmaker is kept in a state of perpetual Warp by the Cult to prevent detection by corporate security forces.
+//Shuttles using Warp Transit are often unprepared
+
 /mob/living/basic/trooper/shipwrecker
+	//Basic troopers, with melee (brute) and ranged (burn) damage
 	name = "Scrapper"
+	icon_state = "wrecker"
 	desc = "A low-ranking member of the Shipwrecker Gang, infamous for raiding shuttles mid-transit. This one is armed with a plasma cutter and a pickaxe."
 	response_help_continuous = "pushes"
 	response_help_simple = "push"
@@ -9,6 +43,9 @@
 	r_hand = /obj/item/gun/energy/plasmacutter/pirate
 	l_hand = /obj/item/pickaxe
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0.5)
+	ai_controller = /datum/ai_controller/basic_controller/trooper/calls_reinforcements
+	/// Sound to play when firing weapon
+	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
 
 /datum/outfit/shipwrecker
 	name = "Shipwrecker Pirate"
@@ -50,7 +87,9 @@
 	set_light(4)
 
 /mob/living/basic/trooper/shipwrecker/heavy
+	//slow melee troopers with a lot of hp, armour and damage
 	name = "Wrecker"
+	icon_state = "wrecker_heavy"
 	desc = "A member of the infamous Shipwrecker Gang. Wreckers are heavily armored pirates and brandishing a huge axe."
 	melee_damage_lower = 30
 	melee_damage_upper = 30
@@ -59,11 +98,13 @@
 
 /mob/living/basic/trooper/shipwrecker/heavy/space
 
-/mob/living/basic/trooper/shipwrecker/officer
+/mob/living/basic/trooper/shipwrecker/elite
+	name = "Wrecker"
+	desc = "A member of the infamous Shipwrecker Gang. Wreckers are heavily armored pirates and brandishing a huge axe."
 
 /mob/living/basic/trooper/shipwrecker/officer/space
 
-/mob/living/basic/trooper/shipwrecker/bigboss
+/mob/living/basic/trooper/shipwrecker/bigboss/captain_
 
 /mob/living/basic/trooper/pirate/melee
 	name = "Pirate Swashbuckler"
