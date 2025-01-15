@@ -287,6 +287,15 @@
 	amount_per_transfer_from_this = 60
 	list_reagents = list(/datum/reagent/medicine/salbutamol = 10, /datum/reagent/medicine/c2/penthrite = 10, /datum/reagent/medicine/oxandrolone = 10, /datum/reagent/medicine/sal_acid = 10 ,/datum/reagent/medicine/omnizine = 10 ,/datum/reagent/medicine/leporazine = 10)
 
+/obj/item/reagent_containers/hypospray/medipen/military
+	name = "military stimulant autoinjector"
+	desc = "An autoinjecting hypopen labelled '8752B', a chemical cocktail designed to keep injured soldiers fighting for as long as possible. Usage of dubious stimulants is commonplace among private military groups and space pirates."
+	volume = 60
+	list_reagents = list(/datum/reagent/medicine/muscle_stimulant = 15, /datum/reagent/drug/aranesp = 15, /datum/reagent/medicine/c2/helbital = 10, /datum/reagent/medicine/coagulant = 10, /datum/reagent/medicine/epinephrine = 10,)
+
+/obj/item/reagent_containers/hypospray/medipen/military/knockoff
+
+
 /obj/item/reagent_containers/hypospray/medipen/atropine
 	name = "atropine autoinjector"
 	desc = "A rapid way to save a person from a critical injury state!"

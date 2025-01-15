@@ -46,6 +46,7 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/pirate
 	back = /obj/item/tank/jetpack/jumppack
+	l_pocket = /obj/item/food/grown/ash_flora/cactus_fruit
 
 /obj/effect/mob_spawn/corpse/human/bloodforged
 	name = "Bloodforged Soldier"

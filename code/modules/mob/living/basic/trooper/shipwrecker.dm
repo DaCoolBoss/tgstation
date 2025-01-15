@@ -52,10 +52,12 @@
 	head = /obj/item/clothing/head/costume/pirate/bandana
 	mask = /obj/item/clothing/mask/gas
 	uniform = /obj/item/clothing/under/syndicate/wrecker
-	suit = /obj/item/clothing/suit/armor/vest/alt
+	suit = /obj/item/clothing/suit/armor/vest
 	gloves = /obj/item/clothing/gloves/color/black
 	shoes = /obj/item/clothing/shoes/pirate
 	back = /obj/item/tank/jetpack/jumppack
+
+	l_pocket = /obj/item/reagent_containers/hypospray/medipen/military
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker
 	name = "Shipwrecker Pirate"
@@ -90,7 +92,7 @@
 	//slow melee troopers with a lot of hp, armour and damage
 	name = "Wrecker"
 	icon_state = "wrecker_heavy"
-	desc = "A member of the infamous Shipwrecker Gang. Wreckers are heavily armored pirates and brandishing a huge axe."
+	desc = "A member of the infamous Shipwrecker Gang. This one is heavily armoured and brandishing a huge axe."
 	melee_damage_lower = 30
 	melee_damage_upper = 30
 	armour_penetration = 35
@@ -98,9 +100,11 @@
 
 /mob/living/basic/trooper/shipwrecker/heavy/space
 
-/mob/living/basic/trooper/shipwrecker/elite
-	name = "Wrecker"
-	desc = "A member of the infamous Shipwrecker Gang. Wreckers are heavily armored pirates and brandishing a huge axe."
+/mob/living/basic/trooper/shipwrecker/officer
+	name = "Ganger"
+	desc = "A member of the infamous Shipwrecker Gang. Gangers are officers who maintain discipline and cohesion during attacks on enemy ships."
+
+
 
 /mob/living/basic/trooper/shipwrecker/officer/space
 
