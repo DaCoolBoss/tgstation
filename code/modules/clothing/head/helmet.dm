@@ -602,6 +602,37 @@
 	acid = 40
 	wound = 15
 
+/obj/item/clothing/head/helmet/shipwrecker
+	name = "ballistic plate helmet"
+	desc = "An open-face helmet made of composite armour plates for protecting the wearer from ballistic and laser projectiles without impairing vision."
+	icon_state = "shipwrecker"
+	armor_type = /datum/armor/helmet_ballistic
+
+/datum/armor/helmet_ballistic
+	melee = 20
+	bullet = 50
+	laser = 50
+	energy = 25
+	bomb = 50
+	fire = 30
+	acid = 30
+	wound = 40
+
+/obj/item/clothing/head/helmet/shipwrecker/heavy
+	desc = "A heavy helmet made of composite armour plates. Effective against projectiles, without sacrificing protection from melee weapons."
+	icon_state = "shipwrecker_heavy"
+	armor_type = /datum/armor/helmet_ballistic_heavy
+
+/datum/armor/helmet_ballistic_heavy
+	melee = 40
+	bullet = 50
+	laser = 50
+	energy = 25
+	bomb = 50
+	fire = 30
+	acid = 30
+	wound = 40
+
 /obj/item/clothing/head/helmet/military
 	name = "Crude Helmet"
 	desc = "A cheaply made kettle helmet with an added faceplate to protect your eyes and mouth."

@@ -289,12 +289,54 @@
 
 /obj/item/reagent_containers/hypospray/medipen/military
 	name = "military stimulant autoinjector"
-	desc = "An autoinjecting hypopen labelled '8752B', a chemical cocktail designed to keep injured soldiers fighting for as long as possible. Usage of dubious stimulants is commonplace among private military groups and space pirates."
-	volume = 60
-	list_reagents = list(/datum/reagent/medicine/muscle_stimulant = 15, /datum/reagent/drug/aranesp = 15, /datum/reagent/medicine/c2/helbital = 10, /datum/reagent/medicine/coagulant = 10, /datum/reagent/medicine/epinephrine = 10,)
+	desc = "An autoinjecting hypopen labelled '8752b', an experimental chemical cocktail designed to keep injured soldiers on their feet. Commonplace among private military groups and space pirates."
+	volume = 40
+	amount_per_transfer_from_this = 40
+	list_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
+		/datum/reagent/drug/aranesp = 6,
+		/datum/reagent/medicine/c2/multiver = 6,
+		/datum/reagent/medicine/c2/helbital = 4,
+		/datum/reagent/medicine/c2/convermol = 4,
+		/datum/reagent/medicine/mine_salve = 4,
+		/datum/reagent/medicine/synaptizine = 4,
+		/datum/reagent/medicine/coagulant = 2,
+		/datum/reagent/medicine/atropine = 2,
+		)
 
 /obj/item/reagent_containers/hypospray/medipen/military/knockoff
 
+/obj/item/reagent_containers/hypospray/medipen/military/knockoff/Initialize(mapload)
+	. = ..()
+	var/weak_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
+		/datum/reagent/drug/nicotine = 6,
+		/datum/reagent/medicine/c2/multiver = 6,
+		/datum/reagent/medicine/c2/helbital = 4,
+		/datum/reagent/medicine/c2/convermol = 4,
+		/datum/reagent/medicine/mine_salve = 4,
+		/datum/reagent/medicine/synaptizine = 4,
+		/datum/reagent/medicine/coagulant = 2,
+		/datum/reagent/medicine/atropine = 2,
+		)
+	var/tainted_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
+		/datum/reagent/drug/aranesp = 6,
+		/datum/reagent/medicine/c2/multiver = 6,
+		/datum/reagent/medicine/c2/helbital = 4,
+		/datum/reagent/medicine/c2/convermol = 4,
+		/datum/reagent/medicine/mine_salve = 4,
+		/datum/reagent/medicine/synaptizine = 4,
+		/datum/reagent/medicine/coagulant = 2,
+		/datum/reagent/medicine/atropine = 2,
+		)
+	var/unbalanced_reagents = list()
+	var/offbrand_reagents = list(/datum/reagent/drug/pumpup = 10,
+		/datum/reagent/drug/maint/tar = 10,
+		/datum/reagent/medicine/c2/helbital = 4,
+		/datum/reagent/medicine/c2/convermol = 4,)
+	var/experimental_reagents = list(/datum/reagent/drug/pumpup = 10,
+		/datum/reagent/drug/maint/tar = 10,
+		/datum/reagent/medicine/c2/helbital = 4,
+		/datum/reagent/medicine/c2/convermol = 4,)
+	var/berserk_reagents = list(/datum/reagent/medicine/c2/penthrite = 8,  /datum/reagent/medicine/mine_salve = 6, /datum/reagent/drug/bath_salts = 4, /datum/reagent/drug/kronkaine/gore = 12)
 
 /obj/item/reagent_containers/hypospray/medipen/atropine
 	name = "atropine autoinjector"

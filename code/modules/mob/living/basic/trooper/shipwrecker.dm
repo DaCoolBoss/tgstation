@@ -4,7 +4,9 @@
 //WHO ARE THEY:
 //Violent criminals who launch themselves on shuttles and kill everyone and smash everything.
 //A highly varied bunch of NPCs designed to challenge players combat skills on multiple fronts.
-//2 ranks of basic trooper (Scrapper, )
+//2 ranks of basic trooper (Scrapper, Wrecker)
+//1 specialist (Ganger)
+//1 boss (Commander) (plus a unique named variant)
 
 //WHAT DO THEY DO
 //
@@ -20,8 +22,8 @@
 //
 
 //LOOT:
-//Stuff that
-//
+//Primarily variants on station gear
+//A lot of junk, sorting through piles of garbage to find good items
 //
 
 //LORE:
@@ -47,17 +49,67 @@
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
 
+/datum/ai_controller/basic_controller/trooper/shipwrecker
+	ai_movement = /datum/ai_movement/basic_avoidance
+	idle_behavior = /datum/idle_behavior/idle_random_walk
+	planning_subtrees = list(
+		/datum/ai_planning_subtree/simple_find_target,
+		/datum/ai_planning_subtree/attack_obstacle_in_path/trooper,
+		/datum/ai_planning_subtree/basic_melee_attack_subtree,
+		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
+	)
+
+/datum/ai_controller/basic_controller/trooper/shipwrecker
+	planning_subtrees = list(
+		/datum/ai_planning_subtree/simple_find_target,
+		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper_shotgun,
+		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
+	)
+
+/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper_shotgun
+	ranged_attack_behavior = /datum/ai_behavior/basic_ranged_attack/trooper_shotgun
+
+/datum/ai_behavior/basic_ranged_attack/trooper_shotgun
+	action_cooldown = 3 SECONDS
+	required_distance = 3
+	avoid_friendly_fire = TRUE
+
 /datum/outfit/shipwrecker
-	name = "Shipwrecker Pirate"
-	head = /obj/item/clothing/head/costume/pirate/bandana
+	name = "Shipwrecker Scrapper"
+	head = /obj/item/clothing/head/helmet/shipwrecker
 	mask = /obj/item/clothing/mask/gas
 	uniform = /obj/item/clothing/under/syndicate/wrecker
-	suit = /obj/item/clothing/suit/armor/vest
-	gloves = /obj/item/clothing/gloves/color/black
+	suit = /obj/item/clothing/suit/armor/shipwrecker
+	gloves = /obj/item/clothing/gloves/color/brown
 	shoes = /obj/item/clothing/shoes/pirate
 	back = /obj/item/tank/jetpack/jumppack
 
-	l_pocket = /obj/item/reagent_containers/hypospray/medipen/military
+/datum/outfit/shipwrecker/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 20,
+	/obj/item/reagent_containers/hypospray/medipen/military = 15,
+	/obj/item/tank/internals/emergency_oxygen/engi = 10,
+	/obj/effect/spawner/random/trash/garbage = 10,
+	/obj/item/lighter/greyscale = 5,
+	/obj/effect/spawner/random/entertainment/coin = 5,
+	/obj/item/stack/medical/bandage/makeshift = 5,
+	/obj/effect/spawner/random/entertainment/cigarette = 5,
+	/obj/item/stack/spacecash/c20 = 5,
+	/obj/item/knife/combat/survival = 5,
+	/obj/item/dice/d6 = 2,
+	/obj/item/reagent_containers/pill/happy = 2,
+	/obj/item/reagent_containers/pill/aranesp = 2,
+	/obj/item/match = 2,
+	/obj/item/stack/sheet/mineral/plasma/five = 2,
+	/obj/item/crowbar = 1,
+	/obj/item/boxcutter = 1,
+	/obj/item/shard = 1,
+	/obj/item/wirecutters = 1,
+	/obj/item/boxcutter = 1,
+	)
+	if(prob(70))
+		l_pocket = pick_weight(pocket_loot)
+	if(prob(70))
+		r_pocket = pick_weight(pocket_loot)
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker
 	name = "Shipwrecker Pirate"
@@ -72,7 +124,7 @@
 
 /datum/outfit/shipwrecker/space
 	name = "Shipwrecker Pirate (Spacesuit)"
-	head = /obj/item/clothing/head/helmet/space/pirate/bandana
+	head = /obj/item/clothing/head/helmet/shipwrecker
 	mask = /obj/item/clothing/mask/gas
 	suit = /obj/item/clothing/suit/space/pirate
 	suit_store = /obj/item/tank/internals/oxygen/red
@@ -98,17 +150,82 @@
 	armour_penetration = 35
 	attack_verb_continuous = "slashes"
 
+/datum/outfit/shipwrecker/heavy
+	name = "Shipwrecker Wrecker" //oof that's a lil awkward
+	head = /obj/item/clothing/head/helmet/shipwrecker/heavy
+	suit = /obj/item/clothing/suit/armor/shipwrecker/heavy
+
+
+/obj/item/clothing/suit/armor/shipwrecker/heavy
+/datum/outfit/shipwrecker/heavy/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+	l_pocket = pick_weight(list(/obj/item/reagent_containers/hypospray/medipen/military = 25,
+	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 15,
+	/obj/item/tank/internals/emergency_oxygen/engi = 10,
+	/obj/item/lighter/greyscale = 5,
+	/obj/item/stack/medical/bandage = 5,
+	/obj/item/stack/spacecash/c50 = 5,
+	/obj/item/knife/combat/survival = 5,
+	/obj/item/dice/d10 = 2,
+	/obj/item/reagent_containers/cup/blastoff_ampoule = 2,
+	/obj/item/reagent_containers/pill/aranesp = 2,
+	/obj/item/match = 2,
+	/obj/item/cigarette = 2,
+	/obj/item/crowbar = 1,
+	/obj/item/boxcutter = 1,
+	/obj/item/shard = 1,
+	/obj/item/wirecutters = 1,
+	/obj/item/boxcutter = 1,
+	))
+	r_pocket = pick_weight(list(/obj/item/reagent_containers/hypospray/medipen/military = 20,
+	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 10,
+	/obj/item/tank/internals/emergency_oxygen/engi = 10,
+	/obj/item/lighter/greyscale = 5,
+	/obj/item/stack/medical/bandage = 5,
+	/obj/item/stack/spacecash/c50 = 5,
+	/obj/item/knife/combat/survival = 5,
+	/obj/item/dice/d10 = 2,
+	/obj/item/reagent_containers/cup/blastoff_ampoule = 2,
+	/obj/item/reagent_containers/pill/aranesp = 2,
+	/obj/item/match = 2,
+	/obj/item/cigarette = 2,
+	/obj/item/crowbar = 1,
+	/obj/item/boxcutter = 1,
+	/obj/item/shard = 1,
+	/obj/item/wirecutters = 1,
+	/obj/item/boxcutter = 1,
+	))
 /mob/living/basic/trooper/shipwrecker/heavy/space
 
 /mob/living/basic/trooper/shipwrecker/officer
 	name = "Ganger"
 	desc = "A member of the infamous Shipwrecker Gang. Gangers are officers who maintain discipline and cohesion during attacks on enemy ships."
 
+/datum/outfit/shipwrecker/officer
+	name = "Shipwrecker Ganger"
+	head = /obj/item/clothing/head/costume/pirate/bandana
+	mask = /obj/item/clothing/mask/gas
+	uniform = /obj/item/clothing/under/syndicate/wrecker
+	suit = /obj/item/clothing/suit/armor/vest
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/pirate
+	back = /obj/item/tank/jetpack/jumppack
 
+/datum/outfit/shipwrecker/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+	l_pocket = pick_weight(list(/obj/item/reagent_containers/hypospray/medipen/military = 40,
+	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 10,
+	/obj/item/storage/wallet/random = 10,
+	/obj/item/stack/spacecash/c100 = 5,
+	/obj/item/spess_knife = 1,
+	))
 
 /mob/living/basic/trooper/shipwrecker/officer/space
 
-/mob/living/basic/trooper/shipwrecker/bigboss/captain_
+/mob/living/basic/trooper/shipwrecker/boss
+	name = "Commander"
+
+/mob/living/basic/trooper/shipwrecker/boss/blackskull
+	name = "\improper Commodore Blackskull"
+
 
 /mob/living/basic/trooper/pirate/melee
 	name = "Pirate Swashbuckler"

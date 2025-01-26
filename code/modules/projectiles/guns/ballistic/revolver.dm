@@ -175,6 +175,13 @@
 
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/cylinder/rev762
 
+/obj/item/gun/ballistic/revolver/junk
+	name = "scrap revolver"
+	desc = "A revolving 5-chamber handgun designed to shoot junk and scrap rounds."
+	icon_state = "scraprevolver"
+	projectile_damage_multiplier = 1.2
+	projectile_wound_bonus = 5
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/cylinder/scrap
 
 // A gun to play Russian Roulette!
 // You can spin the chamber to randomize the position of the bullet.

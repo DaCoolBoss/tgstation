@@ -29,3 +29,9 @@
 	ammo_type = /obj/item/ammo_casing/pea
 	caliber = CALIBER_PEA
 	max_ammo = 7
+
+/obj/item/ammo_box/magazine/internal/cylinder/scrap
+	name = "junk revolver cylinder"
+	ammo_type = /obj/item/ammo_casing/junk
+	caliber = CALIBER_JUNK
+	max_ammo = 5

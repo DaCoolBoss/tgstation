@@ -706,6 +706,52 @@
 	acid = 50
 	wound = 30
 
+/obj/item/clothing/suit/armor/shipwrecker
+	name = "ballistic plate armour"
+	icon = 'icons/obj/clothing/suits/armor.dmi'
+	worn_icon = 'icons/mob/clothing/suits/armor.dmi'
+	icon_state = "shipwrecker"
+	desc = "A rigid yet lightweight set of composite armour plates designed to be worn around the torso. \
+		It's effective at deflecting both physical and energy projectiles, but its open design provides little melee protection."
+	armor_type = /datum/armor/suit_ballistic
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/datum/armor/suit_ballistic
+	melee = 20
+	bullet = 50
+	laser = 50
+	energy = 25
+	bomb = 50
+	fire = 30
+	acid = 30
+	wound = 40
+
+/obj/item/clothing/suit/armor/shipwrecker/heavy
+	name = "heavy ballistic plate armour"
+	desc = "A heavy suit of armour made of rigid composite armour plates. \
+		It has a minor slowdown, but offers decent protection and helps the wearer resist shoving in close quarters."
+	icon_state = "shipwrecker_heavy"
+	inhand_icon_state = "swat_suit"
+	armor_type = /datum/armor/suit_ballistic_heavy
+	strip_delay = 120
+	clothing_flags = THICKMATERIAL
+	cold_protection = CHEST | GROIN | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT_OFF
+	heat_protection = CHEST | GROIN | LEGS | ARMS
+	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
+	slowdown = 0.7
+	body_parts_covered = CHEST | GROIN | LEGS | ARMS
+
+/datum/armor/suit_ballistic_heavy
+	melee = 50
+	bullet = 60
+	laser = 50
+	energy = 25
+	bomb = 60
+	fire = 30
+	acid = 30
+	wound = 50
+
 /obj/item/clothing/suit/armor/vest/military
 	name = "Crude chestplate"
 	desc = "It may look rough, rusty and battered, but it's also made out of junk and uncomfortable to wear."
