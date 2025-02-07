@@ -103,7 +103,7 @@
 	desc = "A handcrafted jumpsuit of rubberized fabric reinforced with patches of nano-woven plexiglass plating. Provides little protection, but thin enough to wear under armour."
 	armor_type = /datum/armor/clothing_under/syndicate/wrecker
 	icon_state = "wrecker"
-	inhand_icon_state = "bl_suit"
+	inhand_icon_state = "gy_suit"
 	alt_covers_chest = FALSE
 
 /datum/armor/clothing_under/syndicate/wrecker

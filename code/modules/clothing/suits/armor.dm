@@ -715,6 +715,7 @@
 		It's effective at deflecting both physical and energy projectiles, but its open design provides little melee protection."
 	armor_type = /datum/armor/suit_ballistic
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+	custom_materials = list(list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*4, /datum/material/titanium=SMALL_MATERIAL_AMOUNT*1.5, /datum/material/plastic=SMALL_MATERIAL_AMOUNT*1))
 
 /datum/armor/suit_ballistic
 	melee = 20
@@ -728,8 +729,8 @@
 
 /obj/item/clothing/suit/armor/shipwrecker/heavy
 	name = "heavy ballistic plate armour"
-	desc = "A heavy suit of armour made of rigid composite armour plates. \
-		It has a minor slowdown, but offers decent protection and helps the wearer resist shoving in close quarters."
+	desc = "A heavy suit of armour composed of multiple layers of rigid composite armour plates. \
+		It provides a great deal of protection to the torso and limbs. It is heavy and rigid at the joints."
 	icon_state = "shipwrecker_heavy"
 	inhand_icon_state = "swat_suit"
 	armor_type = /datum/armor/suit_ballistic_heavy
@@ -741,6 +742,8 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
 	slowdown = 0.7
 	body_parts_covered = CHEST | GROIN | LEGS | ARMS
+	custom_materials = list(list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*6, /datum/material/titanium=SMALL_MATERIAL_AMOUNT*3, /datum/material/plastic=SMALL_MATERIAL_AMOUNT*2))
+
 
 /datum/armor/suit_ballistic_heavy
 	melee = 50

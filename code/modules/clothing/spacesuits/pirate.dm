@@ -48,3 +48,25 @@
 		and the trim is lined with the ivory of the critically endangered Zanzibarian dwarf elephant. Baby seal leather boots sold separately."
 	inhand_icon_state = "syndicate-black"
 	icon_state = "syndicate-black-white"
+
+/obj/item/clothing/suit/space/pirate/shipwrecker
+	name = "ballistic EVA suit"
+	inhand_icon_state = "shipwrecker_heavy"
+	icon_state = "shipwrecker"
+	desc = "A rigid yet lightweight set of composite armour plates designed to be worn around the torso. \
+		It's effective at deflecting both physical and energy projectiles, but its open design provides little melee protection."
+	armor_type = /datum/armor/suit_ballistic
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	custom_materials = list(list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2, /datum/material/glass=SMALL_MATERIAL_AMOUNT*1))
+	strip_delay = 80
+	slowdown = 0.8
+
+/obj/item/clothing/suit/space/pirate/shipwrecker/heavy
+	name = "heavy ballistic plate armour"
+	desc = "A heavy suit of armour made of rigid composite armour plates. \
+		It has a minor slowdown, but offers decent protection and helps the wearer resist shoving in close quarters."
+	icon_state = "shipwrecker_heavy"
+	inhand_icon_state = "swat_suit"
+	armor_type = /datum/armor/suit_ballistic_heavy
+	strip_delay = 160
+	slowdown = 0.6

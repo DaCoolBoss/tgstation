@@ -33,18 +33,18 @@
 //Shuttles using Warp Transit are often unprepared
 
 /mob/living/basic/trooper/shipwrecker
-	//Basic troopers, with melee (brute) and ranged (burn) damage
+	//Basic close-range troopers, with melee (brute) and ranged (burn) damage
 	name = "Scrapper"
 	icon_state = "wrecker"
 	desc = "A low-ranking member of the Shipwrecker Gang, infamous for raiding shuttles mid-transit. This one is armed with a plasma cutter and a pickaxe."
 	response_help_continuous = "pushes"
 	response_help_simple = "push"
 	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
-	loot = list(/datum/outfit/shipwrecker, /obj/item/gun/energy/plasmacutter/pirate, /obj/item/pickaxe)
+	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker, /obj/item/gun/energy/plasmacutter/pirate, /obj/item/pickaxe)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker
 	r_hand = /obj/item/gun/energy/plasmacutter/pirate
 	l_hand = /obj/item/pickaxe
-	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0.5)
+	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
 	ai_controller = /datum/ai_controller/basic_controller/trooper/calls_reinforcements
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
@@ -55,9 +55,17 @@
 	planning_subtrees = list(
 		/datum/ai_planning_subtree/simple_find_target,
 		/datum/ai_planning_subtree/attack_obstacle_in_path/trooper,
+		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
 	)
+
+/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker
+	ranged_attack_behavior = /datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
+
+/datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
+	action_cooldown = 1.2 SECONDS
+	required_distance = 3
 
 /datum/ai_controller/basic_controller/trooper/shipwrecker
 	planning_subtrees = list(
@@ -66,7 +74,7 @@
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
 	)
 
-/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper_shotgun
+/datum/ai_planning_subtree/basic_ranged_attack_subtree/troop
 	ranged_attack_behavior = /datum/ai_behavior/basic_ranged_attack/trooper_shotgun
 
 /datum/ai_behavior/basic_ranged_attack/trooper_shotgun
@@ -80,8 +88,8 @@
 	mask = /obj/item/clothing/mask/gas
 	uniform = /obj/item/clothing/under/syndicate/wrecker
 	suit = /obj/item/clothing/suit/armor/shipwrecker
-	gloves = /obj/item/clothing/gloves/color/brown
-	shoes = /obj/item/clothing/shoes/pirate
+	gloves = /obj/item/clothing/gloves/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/tank/jetpack/jumppack
 
 /datum/outfit/shipwrecker/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
@@ -106,6 +114,8 @@
 	/obj/item/wirecutters = 1,
 	/obj/item/boxcutter = 1,
 	)
+	if(prob(80))
+		glasses = pick(/obj/item/clothing/glasses/meson, /obj/item/clothing/glasses/eyepatch, /obj/item/clothing/glasses/sunglasses, /obj/item/clothing/glasses/night,)
 	if(prob(70))
 		l_pocket = pick_weight(pocket_loot)
 	if(prob(70))
@@ -114,8 +124,6 @@
 /obj/effect/mob_spawn/corpse/human/shipwrecker
 	name = "Shipwrecker Pirate"
 	outfit = /datum/outfit/shipwrecker
-	hairstyle = "Bald"
-	facial_hairstyle = "Shaved"
 
 /mob/living/basic/trooper/shipwrecker/space
 	unsuitable_atmos_damage = 0
@@ -155,45 +163,32 @@
 	head = /obj/item/clothing/head/helmet/shipwrecker/heavy
 	suit = /obj/item/clothing/suit/armor/shipwrecker/heavy
 
-
-/obj/item/clothing/suit/armor/shipwrecker/heavy
 /datum/outfit/shipwrecker/heavy/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	l_pocket = pick_weight(list(/obj/item/reagent_containers/hypospray/medipen/military = 25,
+	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 25,
 	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 15,
 	/obj/item/tank/internals/emergency_oxygen/engi = 10,
-	/obj/item/lighter/greyscale = 5,
+	/obj/effect/spawner/random/trash/deluxe_garbage = 10,
+	/obj/effect/spawner/random/entertainment/coin = 5,
 	/obj/item/stack/medical/bandage = 5,
+	/obj/effect/spawner/random/entertainment/cigarette = 5,
 	/obj/item/stack/spacecash/c50 = 5,
 	/obj/item/knife/combat/survival = 5,
 	/obj/item/dice/d10 = 2,
 	/obj/item/reagent_containers/cup/blastoff_ampoule = 2,
 	/obj/item/reagent_containers/pill/aranesp = 2,
-	/obj/item/match = 2,
-	/obj/item/cigarette = 2,
-	/obj/item/crowbar = 1,
+	/obj/item/lighter = 2,
+	/obj/effect/spawner/random/entertainment/cigar = 2,
+	/obj/item/crowbar = 2,
 	/obj/item/boxcutter = 1,
 	/obj/item/shard = 1,
 	/obj/item/wirecutters = 1,
 	/obj/item/boxcutter = 1,
-	))
-	r_pocket = pick_weight(list(/obj/item/reagent_containers/hypospray/medipen/military = 20,
-	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 10,
-	/obj/item/tank/internals/emergency_oxygen/engi = 10,
-	/obj/item/lighter/greyscale = 5,
-	/obj/item/stack/medical/bandage = 5,
-	/obj/item/stack/spacecash/c50 = 5,
-	/obj/item/knife/combat/survival = 5,
-	/obj/item/dice/d10 = 2,
-	/obj/item/reagent_containers/cup/blastoff_ampoule = 2,
-	/obj/item/reagent_containers/pill/aranesp = 2,
-	/obj/item/match = 2,
-	/obj/item/cigarette = 2,
-	/obj/item/crowbar = 1,
-	/obj/item/boxcutter = 1,
-	/obj/item/shard = 1,
-	/obj/item/wirecutters = 1,
-	/obj/item/boxcutter = 1,
-	))
+	)
+	if(prob(80))
+		l_pocket = pick_weight(pocket_loot)
+	if(prob(80))
+		r_pocket = pick_weight(pocket_loot)
+
 /mob/living/basic/trooper/shipwrecker/heavy/space
 
 /mob/living/basic/trooper/shipwrecker/officer
@@ -207,10 +202,34 @@
 	uniform = /obj/item/clothing/under/syndicate/wrecker
 	suit = /obj/item/clothing/suit/armor/vest
 	gloves = /obj/item/clothing/gloves/color/black
-	shoes = /obj/item/clothing/shoes/pirate
+	shoes = /obj/item/clothing/shoes/combat
 	back = /obj/item/tank/jetpack/jumppack
 
-/datum/outfit/shipwrecker/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+/datum/outfit/shipwrecker/officer/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 35,
+	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 5,
+	/obj/item/tank/internals/emergency_oxygen/double = 10,
+	/obj/effect/spawner/random/trash/deluxe_garbage = 10,
+	/obj/effect/spawner/random/entertainment/coin = 5,
+	/obj/item/stack/medical/bandage = 5,
+	/obj/effect/spawner/random/entertainment/cigarette = 5,
+	/obj/item/stack/spacecash/c100 = 5,
+	/obj/item/knife/combat/survival = 5,
+	/obj/item/dice/d12 = 2,
+	/obj/item/reagent_containers/cup/blastoff_ampoule = 2,
+	/obj/item/reagent_containers/pill/aranesp = 2,
+	/obj/item/lighter = 2,
+	/obj/effect/spawner/random/entertainment/cigar = 2,
+	/obj/item/crowbar = 2,
+	/obj/item/lighter = 1,
+	/obj/item/lighter/skull = 1,
+	/obj/item/wirecutters = 1,
+	/obj/item/spess_knife = 1,
+	)
+	if(prob(80))
+		l_pocket = pick_weight(pocket_loot)
+	if(prob(80))
+		r_pocket = pick_weight(pocket_loot)
 	l_pocket = pick_weight(list(/obj/item/reagent_containers/hypospray/medipen/military = 40,
 	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 10,
 	/obj/item/storage/wallet/random = 10,
@@ -244,50 +263,3 @@
 	)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/pirate/melee
 	r_hand = /obj/item/melee/energy/sword/pirate
-
-/obj/effect/mob_spawn/corpse/human/pirate/scrapper
-	name = "Scrapper Pirate"
-	skin_tone = "caucasian1" //all pirates are white because it's easier that way
-	outfit = /datum/outfit/scrapper
-	hairstyle = "Bald"
-	facial_hairstyle = "Shaved"
-
-/datum/outfit/scrapper
-	name = "Scrapper Gang"
-	head = /obj/item/clothing/head/costume/pirate/bandana
-	mask = /obj/item/clothing/mask/gas
-	uniform = /obj/item/clothing/under/color/lightbrown
-	suit = /obj/item/clothing/suit/armor/vest/alt
-	shoes = /obj/item/clothing/shoes/pirate
-	back = /obj/item/storage/backpack/satchel/explorer
-
-/datum/outfit/scrapper/elite
-	name = "Scrapper Gang Wrecker"
-	head = /obj/item/clothing/head/utility/welding
-	uniform = /obj/item/clothing/under/costume/pirate
-	suit = /obj/item/clothing/suit/armor/heavy
-	shoes = /obj/item/clothing/shoes/pirate/armored
-
-/datum/outfit/scrapper/officer
-	name = "Scrapper Gang Officer"
-	uniform = /obj/item/clothing/under/costume/pirate
-	shoes = /obj/item/clothing/shoes/jackboots
-
-/datum/outfit/scrapper/officer
-
-/mob/living/basic/trooper/scrapper/boss
-
-/datum/outfit/scrapper/boss
-
-	uniform = /obj/item/clothing/under/suit/carpskin
-	shoes = /obj/item/clothing/shoes/pirate/armored
-
-/mob/living/basic/trooper/scrapper/boss/captain
-
-
-/datum/outfit/scrapper/boss/captain
-	name = "Scrapper Captain"
-	uniform = /obj/item/clothing/under/costume/dutch
-	back = /obj/item/storage/backpack/satchel/leather
-	mask = /obj/item/clothing/mask/gas/ninja
-

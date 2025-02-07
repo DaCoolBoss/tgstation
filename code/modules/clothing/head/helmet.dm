@@ -622,6 +622,7 @@
 	desc = "A heavy helmet made of composite armour plates. Effective against projectiles, without sacrificing protection from melee weapons."
 	icon_state = "shipwrecker_heavy"
 	armor_type = /datum/armor/helmet_ballistic_heavy
+	
 
 /datum/armor/helmet_ballistic_heavy
 	melee = 40

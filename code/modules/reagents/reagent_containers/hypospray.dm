@@ -290,11 +290,13 @@
 /obj/item/reagent_containers/hypospray/medipen/military
 	name = "military stimulant autoinjector"
 	desc = "An autoinjecting hypopen labelled '8752b', an experimental chemical cocktail designed to keep injured soldiers on their feet. Commonplace among private military groups and space pirates."
+	icon_state = "milstim"
+	base_icon_state = "milstim"
 	volume = 40
 	amount_per_transfer_from_this = 40
 	list_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
 		/datum/reagent/drug/aranesp = 6,
-		/datum/reagent/medicine/c2/multiver = 6,
+		/datum/reagent/medicine/c2/syriniver = 6,
 		/datum/reagent/medicine/c2/helbital = 4,
 		/datum/reagent/medicine/c2/convermol = 4,
 		/datum/reagent/medicine/mine_salve = 4,
@@ -337,6 +339,8 @@
 		/datum/reagent/medicine/c2/helbital = 4,
 		/datum/reagent/medicine/c2/convermol = 4,)
 	var/berserk_reagents = list(/datum/reagent/medicine/c2/penthrite = 8,  /datum/reagent/medicine/mine_salve = 6, /datum/reagent/drug/bath_salts = 4, /datum/reagent/drug/kronkaine/gore = 12)
+	if(prob(60))
+		list_reagents = pick_weight(list(weak_reagents = 20, tainted_reagents  = 15, unbalanced_reagents = 15, experimental_reagents = 5, berserk_reagents = 5))
 
 /obj/item/reagent_containers/hypospray/medipen/atropine
 	name = "atropine autoinjector"
