@@ -4684,6 +4684,7 @@
 #include "code\modules\mapfluff\ruins\objects_and_mobs\cursed_slot_machine.dm"
 #include "code\modules\mapfluff\ruins\objects_and_mobs\museum.dm"
 #include "code\modules\mapfluff\ruins\objects_and_mobs\necropolis_gate.dm"
+#include "code\modules\mapfluff\ruins\objects_and_mobs\pirate_fleet.dm"
 #include "code\modules\mapfluff\ruins\objects_and_mobs\sin_ruins.dm"
 #include "code\modules\mapfluff\ruins\spaceruin_code\allamericandiner.dm"
 #include "code\modules\mapfluff\ruins\spaceruin_code\anomalyresearch.dm"

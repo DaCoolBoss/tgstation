@@ -45,7 +45,7 @@
 	r_hand = /obj/item/gun/energy/plasmacutter/pirate
 	l_hand = /obj/item/pickaxe
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
-	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
+	ai_controller = /datum/ai_controller/basic_controller/trooper/calls_reinforcements
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
 
@@ -58,32 +58,24 @@
 		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
-		/datum/ai_planning_subtree/random_speech/shipwrecker,
 	)
-
-/datum/ai_planning_subtree/random_speech/shipwrecker
-	speech_chance = 2
-	speak = list("Hate em. Hate em all!",
-	"Been up all night! I'm wide awake and ready for a fight!",
-	"Can't wait to kill some fools.",
-	"All I need is a little stim money...",
-	"Oh I'm ready. Ready to kill something.",
-	"Running low on stims...",
-	"Hope we get some action soon...",
-	"It's kicking in!",
-	"Can't stop my heart racing...",
-	"Anyone else hear that?",
-	"I feel alive, man!",
-	"One last score. Just need one last score. Maybe a couple...")
-	emote_see = list("twitches.", "scratches their neck.", "glances around.")
 
 /datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker
 	ranged_attack_behavior = /datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
 
 /datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
 	action_cooldown = 1.2 SECONDS
-	required_distance = 2
-	avoid_friendly_fire = TRUE
+	required_distance = 3
+
+/datum/ai_controller/basic_controller/trooper/shipwrecker
+	planning_subtrees = list(
+		/datum/ai_planning_subtree/simple_find_target,
+		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper_shotgun,
+		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
+	)
+
+/datum/ai_planning_subtree/basic_ranged_attack_subtree/troop
+	ranged_attack_behavior = /datum/ai_behavior/basic_ranged_attack/trooper_shotgun
 
 /datum/ai_behavior/basic_ranged_attack/trooper_shotgun
 	action_cooldown = 3 SECONDS
@@ -168,7 +160,7 @@
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
 	r_hand = /obj/item/chainsaw/anglegrinder
 	l_hand = null
-	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/heavy, /obj/item/chainsaw/anglegrinder)
+	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker, /obj/item/chainsaw/anglegrinder)
 
 /obj/item/chainsaw/anglegrinder
 	name = "saw grinder"
@@ -178,6 +170,8 @@
 	throwforce = 10
 	demolition_mod = 1.7
 	custom_materials = list(/datum/material/iron= SHEET_MATERIAL_AMOUNT * 8, /datum/material/titanium= SHEET_MATERIAL_AMOUNT * 2, /datum/material/glass= SHEET_MATERIAL_AMOUNT * 0.5)
+	attack_verb_continuous = list("saws", "tears", "lacerates", "cuts", "chops", "dices")
+	attack_verb_simple = list("saw", "tear", "lacerate", "cut", "chop", "dice")
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
 	name = "Shipwrecker Heavy Wrecker"
@@ -219,22 +213,6 @@
 /mob/living/basic/trooper/shipwrecker/officer
 	name = "Ganger"
 	desc = "A member of the infamous Shipwrecker Gang. Gangers are officers who maintain discipline and cohesion during attacks on enemy ships."
-
-/datum/action/cooldown/spell/conjure/wizard_summon_minions
-	name = "Summon Minions"
-	button_icon = 'icons/mob/actions/actions_minor_antag.dmi'
-	button_icon_state = "art_summon"
-	invocation = "Rise, my creations! Jump off your pages and into this realm!"
-	invocation_type = INVOCATION_SHOUT
-	spell_requirements = NONE
-	cooldown_time = 15 SECONDS
-	summon_type = list(
-		/mob/living/basic/stickman,
-		/mob/living/basic/stickman/ranged,
-		/mob/living/basic/stickman/dog,
-	)
-	summon_radius = 1
-	summon_amount = 2
 
 /datum/outfit/shipwrecker/officer
 	name = "Shipwrecker Ganger"
