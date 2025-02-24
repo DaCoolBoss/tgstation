@@ -708,14 +708,13 @@
 
 /obj/item/clothing/suit/armor/shipwrecker
 	name = "ballistic plate armour"
-	icon = 'icons/obj/clothing/suits/armor.dmi'
-	worn_icon = 'icons/mob/clothing/suits/armor.dmi'
 	icon_state = "shipwrecker"
+	inhand_icon_state = "armor_shipwrecker"
 	desc = "A rigid yet lightweight set of composite armour plates designed to be worn around the torso. \
 		It's effective at deflecting both physical and energy projectiles, but its open design provides little melee protection."
 	armor_type = /datum/armor/suit_ballistic
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	custom_materials = list(list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*4, /datum/material/titanium=SMALL_MATERIAL_AMOUNT*1.5, /datum/material/plastic=SMALL_MATERIAL_AMOUNT*1))
+	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*4, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*1.5, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*1)
 
 /datum/armor/suit_ballistic
 	melee = 20
@@ -726,6 +725,12 @@
 	fire = 30
 	acid = 30
 	wound = 40
+
+/obj/item/clothing/suit/armor/shipwrecker/officer
+	name = "ballistic jacket"
+	icon_state = "shipwrecker_officer"
+	desc = "A lightweight coat carrying composite armour plates. \
+		It's effective at deflecting both physical and energy projectiles, but its open design provides little melee protection."
 
 /obj/item/clothing/suit/armor/shipwrecker/heavy
 	name = "heavy ballistic plate armour"
@@ -742,8 +747,7 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
 	slowdown = 0.7
 	body_parts_covered = CHEST | GROIN | LEGS | ARMS
-	custom_materials = list(list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*6, /datum/material/titanium=SMALL_MATERIAL_AMOUNT*3, /datum/material/plastic=SMALL_MATERIAL_AMOUNT*2))
-
+	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*6, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*3, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*2)
 
 /datum/armor/suit_ballistic_heavy
 	melee = 50

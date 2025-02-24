@@ -606,7 +606,9 @@
 	name = "ballistic plate helmet"
 	desc = "An open-face helmet made of composite armour plates for protecting the wearer from ballistic and laser projectiles without impairing vision."
 	icon_state = "shipwrecker"
+	inhand_icon_state = "helmet_shipwrecker"
 	armor_type = /datum/armor/helmet_ballistic
+	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*0.8, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*0.6)
 
 /datum/armor/helmet_ballistic
 	melee = 20
@@ -618,11 +620,16 @@
 	acid = 30
 	wound = 40
 
+/obj/item/clothing/head/helmet/shipwrecker/officer
+	desc = "An open-face helmet made of composite armour plates, with an ornamental spike on top."
+	icon_state = "shipwrecker_officer"
+	worn_y_offset = 2
+
 /obj/item/clothing/head/helmet/shipwrecker/heavy
 	desc = "A heavy helmet made of composite armour plates. Effective against projectiles, without sacrificing protection from melee weapons."
 	icon_state = "shipwrecker_heavy"
 	armor_type = /datum/armor/helmet_ballistic_heavy
-	
+	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2.8, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*1.2, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*0.9)
 
 /datum/armor/helmet_ballistic_heavy
 	melee = 40

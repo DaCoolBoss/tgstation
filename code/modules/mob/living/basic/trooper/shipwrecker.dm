@@ -48,6 +48,8 @@
 	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
+	/// Time between taking shots
+	var/ranged_cooldown = 1.4 SECONDS
 
 /datum/ai_controller/basic_controller/trooper/shipwrecker
 	ai_movement = /datum/ai_movement/basic_avoidance
@@ -60,6 +62,17 @@
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
 		/datum/ai_planning_subtree/random_speech/shipwrecker,
 	)
+
+/mob/living/basic/trooper/shipwrecker/Initialize(mapload)
+	. = ..()
+	AddComponent(\
+		/datum/component/ranged_attacks,\
+		projectile_sound = projectilesound,\
+		cooldown_time = ranged_cooldown,\
+	)
+	if(prob(50))
+		l_hand = /obj/item/crowbar/hammer
+		loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker, /obj/item/gun/energy/plasmacutter/pirate, /obj/item/crowbar/hammer)
 
 /datum/ai_planning_subtree/random_speech/shipwrecker
 	speech_chance = 2
@@ -219,6 +232,7 @@
 /mob/living/basic/trooper/shipwrecker/officer
 	name = "Ganger"
 	desc = "A member of the infamous Shipwrecker Gang. Gangers are officers who maintain discipline and cohesion during attacks on enemy ships."
+	icon_state = "wrecker_officer"
 
 /datum/action/cooldown/spell/conjure/wizard_summon_minions
 	name = "Summon Minions"
