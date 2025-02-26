@@ -324,7 +324,9 @@
 "bM" = (
 /obj/structure/closet/crate,
 /obj/item/soap/deluxe,
-/obj/item/sticker/assistant,
+/obj/item/sticker/assistant{
+	name = "shipwrecker sticker"
+	},
 /turf/open/floor/iron/smooth,
 /area/space)
 "bN" = (
@@ -382,6 +384,11 @@
 /obj/effect/spawner/random/structure/furniture_parts,
 /obj/effect/spawner/random/medical/supplies,
 /turf/open/floor/pod/light,
+/area/space)
+"cg" = (
+/obj/structure/chair/stool/directional/south,
+/mob/living/basic/trooper/shipwrecker,
+/turf/open/floor/iron/smooth,
 /area/space)
 "cj" = (
 /obj/effect/spawner/random/structure/chair_flipped,
@@ -551,6 +558,13 @@
 /obj/machinery/power/emitter{
 	dir = 8;
 	req_access = list("syndicate")
+	},
+/turf/open/floor/plating,
+/area/space)
+"dq" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/space)
@@ -947,6 +961,10 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/plating,
 /area/space)
+"fx" = (
+/obj/item/stock_parts/power_store/cell/empty,
+/turf/open/floor/engine,
+/area/space)
 "fy" = (
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/engine,
@@ -964,6 +982,13 @@
 	dir = 8
 	},
 /turf/open/floor/iron/smooth,
+/area/space)
+"fJ" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/mob/living/basic/trooper/shipwrecker/officer,
+/turf/open/floor/iron/grimy,
 /area/space)
 "fK" = (
 /obj/machinery/door/airlock/grunge,
@@ -1306,6 +1331,13 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/iron/smooth,
 /area/space)
+"hC" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/space)
 "hD" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
@@ -1600,6 +1632,10 @@
 /obj/item/clothing/suit/armor/shipwrecker/heavy,
 /turf/open/floor/plating,
 /area/space)
+"je" = (
+/mob/living/basic/trooper/shipwrecker/officer,
+/turf/open/floor/iron/grimy,
+/area/space)
 "jg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/tank_dispenser/oxygen,
@@ -1820,8 +1856,12 @@
 "kx" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/ballistic/revolver/junk,
-/obj/item/gun/ballistic/revolver/junk,
 /turf/open/floor/iron/grimy,
+/area/space)
+"kz" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/mob/living/basic/trooper/shipwrecker/heavy,
+/turf/open/floor/iron/smooth,
 /area/space)
 "kA" = (
 /obj/structure/destructible/cult/item_dispenser/forge/engine,
@@ -2761,6 +2801,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/iron/dark,
+/area/space)
+"pV" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/item/stack/ore/titanium,
+/turf/open/floor/iron/smooth,
 /area/space)
 "pW" = (
 /obj/effect/turf_decal/tile/purple/anticorner{
@@ -3894,6 +3939,14 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/iron/smooth,
 /area/space)
+"wJ" = (
+/obj/structure/table/wood,
+/obj/item/paper/fluff/awaymissions/piratefleet{
+	pixel_x = 7;
+	pixel_y = 14
+	},
+/turf/open/floor/wood/large,
+/area/space)
 "wL" = (
 /obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 4
@@ -4012,6 +4065,11 @@
 /obj/item/stack/ore/iron,
 /turf/open/floor/plating,
 /area/space)
+"xn" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/obj/machinery/door/poddoor/shutters/preopen,
+/turf/open/floor/plating,
+/area/space)
 "xo" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /obj/structure/rack,
@@ -4034,6 +4092,14 @@
 "xq" = (
 /obj/item/stock_parts/micro_laser,
 /turf/open/floor/plating,
+/area/space)
+"xr" = (
+/obj/structure/table/wood,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker{
+	pixel_x = -1;
+	pixel_y = -2
+	},
+/turf/open/floor/wood/large,
 /area/space)
 "xs" = (
 /obj/structure/table/reinforced,
@@ -5380,7 +5446,6 @@
 "EG" = (
 /obj/structure/filingcabinet,
 /obj/item/skillchip/big_pointer,
-/obj/item/skillchip/big_pointer,
 /turf/open/floor/wood/large,
 /area/space)
 "EJ" = (
@@ -5831,6 +5896,10 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"Hk" = (
+/obj/effect/decal/cleanable/glass/titanium,
+/turf/open/floor/engine,
+/area/space)
 "Hl" = (
 /obj/structure/table/wood/poker,
 /obj/item/storage/wallet/money{
@@ -6136,7 +6205,10 @@
 /turf/open/floor/mineral/titanium,
 /area/space)
 "IW" = (
-/obj/item/stack/rods/two,
+/obj/item/stock_parts/power_store/cell/crap/empty{
+	pixel_y = 5;
+	pixel_x = -8
+	},
 /obj/item/stack/rods/two,
 /turf/open/floor/engine,
 /area/space)
@@ -6499,6 +6571,11 @@
 	dir = 1
 	},
 /turf/open/floor/iron/grimy,
+/area/space)
+"Lh" = (
+/obj/structure/table/wood,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker,
+/turf/open/floor/wood/large,
 /area/space)
 "Li" = (
 /obj/effect/turf_decal/tile/dark{
@@ -7308,6 +7385,7 @@
 /area/space)
 "PN" = (
 /obj/structure/filingcabinet,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/report,
 /turf/open/floor/wood/large,
 /area/space)
 "PO" = (
@@ -7474,6 +7552,7 @@
 /area/space)
 "QT" = (
 /obj/structure/filingcabinet/chestdrawer,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker,
 /turf/open/floor/iron/grimy,
 /area/space)
 "QU" = (
@@ -7660,6 +7739,11 @@
 "RX" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/spacecash/c20,
+/turf/open/floor/iron/smooth,
+/area/space)
+"RY" = (
+/obj/effect/turf_decal/tile/dark/anticorner/contrasted,
+/mob/living/basic/trooper/shipwrecker/heavy,
 /turf/open/floor/iron/smooth,
 /area/space)
 "Sb" = (
@@ -20243,7 +20327,7 @@ ib
 ib
 ib
 ib
-ib
+fx
 ib
 ib
 ib
@@ -21271,7 +21355,7 @@ ib
 ib
 ib
 ib
-ib
+Hk
 ib
 ib
 ib
@@ -26141,7 +26225,7 @@ bq
 Nz
 yY
 Tk
-kW
+cg
 Hp
 Hp
 Hp
@@ -28493,7 +28577,7 @@ ib
 kl
 xI
 Hp
-PM
+pV
 QV
 qc
 hf
@@ -30263,7 +30347,7 @@ ib
 Pc
 ib
 ib
-ib
+wO
 ib
 ib
 ib
@@ -32333,7 +32417,7 @@ ib
 ib
 ib
 ib
-ib
+fx
 ib
 UZ
 ib
@@ -32862,7 +32946,7 @@ ib
 ib
 xI
 Hp
-PM
+kz
 QV
 yl
 Xn
@@ -33087,7 +33171,7 @@ HF
 Hp
 xS
 ib
-ib
+YO
 ib
 ib
 ib
@@ -33376,7 +33460,7 @@ ib
 ib
 pF
 GQ
-Ie
+RY
 QV
 Dh
 Op
@@ -34654,7 +34738,7 @@ ib
 ib
 ib
 ib
-ib
+Mj
 ib
 ib
 ib
@@ -34888,7 +34972,7 @@ xS
 ib
 ib
 ib
-ib
+Mj
 ib
 ib
 ib
@@ -35907,9 +35991,9 @@ yY
 yY
 yY
 QV
-QV
-QV
-QV
+Hp
+Hp
+Hp
 QV
 Hp
 xS
@@ -36164,10 +36248,10 @@ Vj
 QV
 zx
 QV
-bJ
-Aq
-tc
-Qj
+QV
+QV
+QV
+QV
 Hp
 xS
 ib
@@ -36421,9 +36505,9 @@ NN
 QV
 UH
 QV
-NC
-Qg
-Qg
+bJ
+Aq
+tc
 Qj
 Hp
 xS
@@ -37706,7 +37790,7 @@ UH
 aC
 UH
 aC
-NC
+wB
 Qg
 Qg
 Qj
@@ -37963,8 +38047,8 @@ XT
 QV
 UH
 QV
-wB
-Qg
+RB
+ga
 Qg
 Qj
 Hp
@@ -38220,10 +38304,10 @@ Vj
 QV
 zx
 QV
-RB
-ga
-Qg
-Qj
+QV
+QV
+QV
+QV
 Hp
 xS
 ib
@@ -38477,9 +38561,9 @@ yY
 yY
 yY
 QV
-QV
-QV
-QV
+mg
+kT
+ql
 QV
 Hp
 xS
@@ -38734,9 +38818,9 @@ Nz
 QV
 yY
 Nz
-mg
-kT
-ql
+Hp
+Hp
+Us
 QV
 Hp
 xS
@@ -38993,7 +39077,7 @@ yY
 Nz
 Hp
 Hp
-Us
+Hp
 QV
 Hp
 xS
@@ -39010,11 +39094,11 @@ UH
 UH
 UH
 UH
-fK
+Pa
 vT
 Hp
 rl
-fK
+Pa
 UH
 UH
 UH
@@ -39769,7 +39853,7 @@ gl
 Hp
 xS
 ib
-ib
+Mj
 ib
 ib
 ib
@@ -39796,7 +39880,7 @@ ib
 ib
 ib
 ib
-ib
+Mj
 ib
 ib
 Id
@@ -40019,9 +40103,9 @@ IQ
 Nz
 yY
 Nz
-WT
 Hp
-Wl
+Hp
+Hp
 QV
 Hp
 xS
@@ -40276,9 +40360,9 @@ Nz
 QV
 yY
 Nz
-yC
-ik
-Jg
+WT
+Hp
+Wl
 QV
 Hp
 xS
@@ -40533,9 +40617,9 @@ yY
 yY
 yY
 QV
-QV
-QV
-QV
+yC
+ik
+Jg
 QV
 Hp
 xS
@@ -40556,7 +40640,7 @@ QV
 vT
 Hp
 rl
-fK
+Pa
 UH
 UH
 UH
@@ -40790,9 +40874,9 @@ Vj
 QV
 zx
 QV
-xX
-xX
-xX
+QV
+QV
+QV
 QV
 Hp
 xS
@@ -41047,9 +41131,9 @@ Hp
 Op
 Hp
 QV
-Hp
-Hp
-ZE
+xX
+xX
+xX
 QV
 Hp
 xS
@@ -41066,7 +41150,7 @@ QV
 UH
 UH
 UH
-fK
+Pa
 vT
 Hp
 rl
@@ -41306,8 +41390,8 @@ Hp
 QV
 Hp
 Hp
-Hp
-UH
+ZE
+QV
 Hp
 xS
 ib
@@ -41324,8 +41408,8 @@ QV
 cW
 QV
 QV
-RI
-RI
+tY
+pa
 Dd
 QV
 QV
@@ -43144,10 +43228,10 @@ Id
 yy
 QV
 QV
-HF
-HF
-HF
-HF
+hC
+hC
+hC
+hC
 QV
 QV
 Hp
@@ -43656,14 +43740,14 @@ ib
 ib
 Id
 Hp
-HF
+dq
 fv
 CH
 zs
 JX
 QR
 Tb
-HF
+xn
 Hp
 Hp
 TF
@@ -43885,6 +43969,7 @@ ib
 ib
 ib
 ib
+Mj
 ib
 ib
 ib
@@ -43904,8 +43989,7 @@ ib
 ib
 ib
 ib
-ib
-ib
+Mj
 ib
 ib
 ib
@@ -43913,14 +43997,14 @@ ib
 ib
 Id
 Hp
-HF
+dq
 dL
 KH
 rR
 rR
 ZZ
 Tb
-HF
+xn
 Hp
 Hp
 QV
@@ -44170,14 +44254,14 @@ ib
 ib
 Id
 Hp
-HF
+dq
 Tb
 KH
 rR
 rR
 ZZ
 Tb
-HF
+xn
 Hp
 Hp
 Hp
@@ -44427,14 +44511,14 @@ ib
 ib
 Id
 Hp
-HF
+dq
 kI
 hu
 Gf
 Gf
 MH
 Tb
-HF
+xn
 Ow
 Hp
 Cm
@@ -45713,7 +45797,7 @@ PZ
 QV
 WG
 lj
-HS
+fJ
 HS
 HS
 QV
@@ -47002,7 +47086,7 @@ Op
 Op
 Op
 Op
-Op
+je
 Op
 yu
 Op
@@ -48028,10 +48112,10 @@ NS
 WG
 WG
 sw
+xr
+wJ
 cn
-cn
-cn
-cn
+Lh
 cn
 WG
 WG

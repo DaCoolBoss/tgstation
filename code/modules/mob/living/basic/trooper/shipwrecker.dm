@@ -1,9 +1,8 @@
-//SHIPWRECKER GANG:
-//A pirate subfaction
+//THE SHIPWRECKER GANG
+//"Scrap 'em."
 
 //WHO ARE THEY:
-//Violent criminals who launch themselves on shuttles and kill everyone and smash everything.
-//A highly varied bunch of NPCs designed to challenge players combat skills on multiple fronts.
+//
 //2 ranks of basic trooper (Scrapper, Wrecker)
 //1 specialist (Ganger)
 //1 boss (Commander) (plus a unique named variant)
@@ -233,6 +232,11 @@
 	name = "Ganger"
 	desc = "A member of the infamous Shipwrecker Gang. Gangers are officers who maintain discipline and cohesion during attacks on enemy ships."
 	icon_state = "wrecker_officer"
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
+	r_hand = /obj/item/chainsaw/anglegrinder
+	l_hand = null
+	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/heavy, /obj/item/chainsaw/anglegrinder)
+
 
 /datum/action/cooldown/spell/conjure/wizard_summon_minions
 	name = "Summon Minions"
