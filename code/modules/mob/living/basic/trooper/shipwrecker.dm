@@ -45,6 +45,8 @@
 	l_hand = /obj/item/pickaxe
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
 	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
+	/// Type of bullet we use
+	var/casingtype = /obj/item/ammo_casing/c45
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
 	/// Time between taking shots
@@ -229,49 +231,31 @@
 /mob/living/basic/trooper/shipwrecker/heavy/space
 
 /mob/living/basic/trooper/shipwrecker/officer
-	name = "Ganger"
-	desc = "A member of the infamous Shipwrecker Gang. Gangers are officers who maintain discipline and cohesion during attacks on enemy ships."
+	name = "Officer"
+	desc = "A member of the infamous Shipwrecker Gang. Officers maintain discipline and cohesion during attacks on enemy ships. This one is armed with a scrap revolver."
 	icon_state = "wrecker_officer"
-	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/officer
 	r_hand = /obj/item/chainsaw/anglegrinder
 	l_hand = null
-	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/heavy, /obj/item/chainsaw/anglegrinder)
+	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/officer, /obj/item/chainsaw/anglegrinder)
 
-
-/datum/action/cooldown/spell/conjure/wizard_summon_minions
-	name = "Summon Minions"
-	button_icon = 'icons/mob/actions/actions_minor_antag.dmi'
-	button_icon_state = "art_summon"
-	invocation = "Rise, my creations! Jump off your pages and into this realm!"
-	invocation_type = INVOCATION_SHOUT
-	spell_requirements = NONE
-	cooldown_time = 15 SECONDS
-	summon_type = list(
-		/mob/living/basic/stickman,
-		/mob/living/basic/stickman/ranged,
-		/mob/living/basic/stickman/dog,
-	)
-	summon_radius = 1
-	summon_amount = 2
+/obj/effect/mob_spawn/corpse/human/shipwrecker/officer
+	name = "Shipwrecker Officer"
+	outfit = /datum/outfit/shipwrecker/officer
 
 /datum/outfit/shipwrecker/officer
-	name = "Shipwrecker Ganger"
-	head = /obj/item/clothing/head/costume/pirate/bandana
-	mask = /obj/item/clothing/mask/gas
-	uniform = /obj/item/clothing/under/syndicate/wrecker
-	suit = /obj/item/clothing/suit/armor/vest
-	gloves = /obj/item/clothing/gloves/color/black
-	shoes = /obj/item/clothing/shoes/combat
-	back = /obj/item/tank/jetpack/jumppack
+	name = "Shipwrecker Officer"
+	head = /obj/item/clothing/head/helmet/shipwrecker/officer
+	suit = /obj/item/clothing/suit/armor/shipwrecker/officer
 
 /datum/outfit/shipwrecker/officer/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 35,
-	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 5,
-	/obj/item/tank/internals/emergency_oxygen/double = 10,
+	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 30,
+	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 10,
+	/obj/item/tank/internals/emergency_oxygen/engi = 10,
 	/obj/effect/spawner/random/trash/deluxe_garbage = 10,
 	/obj/effect/spawner/random/entertainment/coin = 5,
-	/obj/item/stack/medical/bandage = 5,
-	/obj/effect/spawner/random/entertainment/cigarette = 5,
+	/obj/item/stack/medical/mesh/advanced = 5,
+	/obj/effect/spawner/random/entertainment/cigar = 5,
 	/obj/item/stack/spacecash/c100 = 5,
 	/obj/item/knife/combat/survival = 5,
 	/obj/item/dice/d12 = 2,
@@ -289,36 +273,25 @@
 		l_pocket = pick_weight(pocket_loot)
 	if(prob(80))
 		r_pocket = pick_weight(pocket_loot)
-	l_pocket = pick_weight(list(/obj/item/reagent_containers/hypospray/medipen/military = 40,
-	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 10,
-	/obj/item/storage/wallet/random = 10,
-	/obj/item/stack/spacecash/c100 = 5,
-	/obj/item/spess_knife = 1,
-	))
 
-/mob/living/basic/trooper/shipwrecker/officer/space
+/datum/action/cooldown/spell/conjure/shipwrecker_reinforcements
+	name = "Shipwrecker Reinforcements"
+	button_icon = 'icons/obj/clothing/masks.dmi'
+	button_icon_state = "gas_alt"
+	invocation = "Rise, my creations! Jump off your pages and into this realm!"
+	invocation_type = INVOCATION_SHOUT
+	spell_requirements = NONE
+	cooldown_time = 15 SECONDS
+	summon_type = list(
+		/mob/living/basic/stickman,
+		/mob/living/basic/stickman/ranged,
+		/mob/living/basic/stickman/dog,
+	)
+	summon_radius = 1
+	summon_amount = 2
 
 /mob/living/basic/trooper/shipwrecker/boss
 	name = "Commander"
 
 /mob/living/basic/trooper/shipwrecker/boss/blackskull
 	name = "\improper Commodore Blackskull"
-
-
-/mob/living/basic/trooper/pirate/melee
-	name = "Pirate Swashbuckler"
-	melee_damage_lower = 30
-	melee_damage_upper = 30
-	armour_penetration = 35
-
-	attack_vis_effect = ATTACK_EFFECT_SLASH
-	loot = list(/obj/effect/mob_spawn/corpse/human/pirate/melee)
-	light_range = 2
-	light_power = 2.5
-	light_color = COLOR_SOFT_RED
-	loot = list(
-		/obj/effect/mob_spawn/corpse/human/pirate/melee,
-		/obj/item/melee/energy/sword/pirate,
-	)
-	mob_spawner = /obj/effect/mob_spawn/corpse/human/pirate/melee
-	r_hand = /obj/item/melee/energy/sword/pirate

@@ -194,6 +194,11 @@
 /obj/structure/cable/layer1,
 /turf/open/floor/plating/rust,
 /area/space)
+"bg" = (
+/mob/living/basic/trooper/shipwrecker/heavy,
+/mob/living/basic/trooper/shipwrecker/heavy,
+/turf/open/floor/pod/light,
+/area/space)
 "bh" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/random/trash/grime,
@@ -272,6 +277,16 @@
 /obj/item/stack/ore/silver,
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /obj/structure/closet/crate/trashcart/filled,
+/turf/open/floor/iron/smooth,
+/area/space)
+"bw" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/mineral/plastitanium{
+	amount = 10;
+	pixel_x = 2;
+	pixel_y = 7
+	},
 /turf/open/floor/iron/smooth,
 /area/space)
 "bx" = (
@@ -2503,6 +2518,16 @@
 /obj/machinery/porta_turret/syndicate,
 /turf/open/space/basic,
 /area/space)
+"oh" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 8
+	},
+/obj/structure/rack,
+/obj/item/stack/sheet/mineral/sandbags{
+	amount = 10
+	},
+/turf/open/floor/iron/smooth,
+/area/space)
 "ok" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /obj/structure/rack,
@@ -2823,7 +2848,6 @@
 /area/space)
 "qc" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/cable_coil/thirty,
 /obj/item/stack/cable_coil/thirty,
 /obj/item/stack/sheet/mineral/titanium{
 	amount = 7
@@ -3233,6 +3257,12 @@
 /obj/item/stack/ore/glass,
 /turf/open/floor/iron/smooth,
 /area/space)
+"sD" = (
+/obj/effect/decal/cleanable/plastic,
+/obj/item/stack/cable_coil/cut,
+/obj/item/stack/cable_coil/cut,
+/turf/open/floor/engine,
+/area/space)
 "sE" = (
 /obj/structure/grille/broken,
 /obj/effect/mapping_helpers/burnt_floor,
@@ -3272,6 +3302,19 @@
 	dir = 1
 	},
 /turf/open/floor/plating/reinforced,
+/area/space)
+"sT" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/mineral/silver{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/stack/spacecash/c10{
+	pixel_x = 14;
+	pixel_y = 3
+	},
+/turf/open/floor/iron/smooth,
 /area/space)
 "sU" = (
 /obj/structure/cable,
@@ -4106,6 +4149,10 @@
 /obj/machinery/recharger,
 /turf/open/floor/iron/grimy,
 /area/space)
+"xw" = (
+/obj/item/kirbyplants/organic/plant21,
+/turf/open/floor/pod/light,
+/area/space)
 "xx" = (
 /obj/structure/fence/door/opened,
 /turf/open/misc/ashplanet/rocky,
@@ -4668,6 +4715,7 @@
 "As" = (
 /obj/effect/turf_decal/tile/dark/anticorner/contrasted,
 /obj/item/kirbyplants/organic/plant2,
+/obj/item/stack/cable_coil/five,
 /turf/open/floor/iron/smooth,
 /area/space)
 "Av" = (
@@ -5168,6 +5216,11 @@
 /obj/item/bedsheet/mime,
 /turf/open/floor/iron/smooth,
 /area/space)
+"Df" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/item/stack/sheet/mineral/coal,
+/turf/open/floor/iron/smooth,
+/area/space)
 "Dg" = (
 /obj/structure/railing{
 	dir = 10
@@ -5326,7 +5379,7 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/contraband/starkist/directional/west,
-/obj/item/stack/sheet/mineral/coal,
+/obj/structure/rack,
 /turf/open/floor/iron/smooth,
 /area/space)
 "Ec" = (
@@ -5359,6 +5412,12 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
+/area/space)
+"El" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/structure/table/reinforced,
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/smooth,
 /area/space)
 "Em" = (
 /obj/structure/fluff/broken_canister_frame,
@@ -5623,6 +5682,12 @@
 "FH" = (
 /obj/structure/sign/poster/contraband/gorlex_recruitment/directional/north,
 /turf/open/floor/iron/dark,
+/area/space)
+"FI" = (
+/mob/living/basic/pet/dog/bullterrier/guarddog{
+	faction = list("pirate")
+	},
+/turf/open/floor/iron/smooth,
 /area/space)
 "FJ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -6237,8 +6302,23 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"Jd" = (
+/obj/item/stack/tile/iron/smooth{
+	amount = 40
+	},
+/obj/structure/rack,
+/obj/item/stack/tile/iron/grimy{
+	pixel_x = 2;
+	pixel_y = -2;
+	amount = 40
+	},
+/turf/open/floor/pod/light,
+/area/space)
 "Je" = (
 /obj/structure/closet/crate/preopen,
+/obj/item/stack/tile/iron/grimy{
+	amount = 40
+	},
 /obj/item/spear/military,
 /obj/item/skillchip/light_remover,
 /turf/open/floor/iron/smooth,
@@ -8011,6 +8091,18 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/engine,
 /area/space)
+"Tq" = (
+/obj/item/stack/tile/iron/smooth{
+	amount = 40
+	},
+/obj/structure/rack,
+/obj/item/stack/tile/pod{
+	pixel_x = 2;
+	pixel_y = -2;
+	amount = 40
+	},
+/turf/open/floor/pod/light,
+/area/space)
 "Tr" = (
 /obj/structure/bed/medical/anchored{
 	dir = 4
@@ -8233,6 +8325,11 @@
 /obj/structure/bed,
 /turf/open/floor/plating,
 /area/space)
+"UE" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/smooth,
+/area/space)
 "UF" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -8353,6 +8450,14 @@
 "VA" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/floor/plating,
+/area/space)
+"VC" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 8
+	},
+/obj/structure/rack,
+/obj/item/stack/cable_coil/thirty,
+/turf/open/floor/iron/smooth,
 /area/space)
 "VD" = (
 /obj/effect/decal/cleanable/oil/slippery,
@@ -27766,7 +27871,7 @@ NW
 NW
 QV
 JO
-Ow
+Hp
 Hp
 Hp
 fK
@@ -29349,8 +29454,8 @@ ib
 xI
 Hp
 Li
-fF
-fF
+oh
+VC
 Eb
 QV
 yY
@@ -29608,7 +29713,7 @@ Hp
 Hp
 Hp
 Hp
-PM
+Df
 Nz
 yY
 QV
@@ -29865,7 +29970,7 @@ Hp
 Hp
 Hp
 Hp
-PM
+sT
 Nz
 yY
 Nz
@@ -30099,7 +30204,7 @@ ib
 ib
 ib
 ib
-ib
+Vl
 ib
 ib
 ib
@@ -30121,8 +30226,8 @@ xI
 Hp
 Hp
 Hp
-Hp
-PM
+GU
+bw
 Nz
 yY
 Nz
@@ -30356,7 +30461,7 @@ ib
 ib
 ib
 ib
-ib
+Pc
 ib
 ib
 ib
@@ -30376,10 +30481,10 @@ ib
 ib
 xI
 Hp
+FI
 Hp
-Hp
-Hp
-PM
+Gg
+UE
 Nz
 yY
 Nz
@@ -30595,7 +30700,7 @@ Nz
 yY
 hA
 Hp
-Hp
+Ow
 Hp
 Hp
 Hp
@@ -30633,10 +30738,10 @@ ib
 ib
 xI
 Hp
+Ow
 Hp
-Hp
-Hp
-PM
+Rg
+UE
 Nz
 yY
 Nz
@@ -30852,7 +30957,7 @@ Nz
 yY
 hA
 Hp
-Hp
+FI
 Hp
 Hp
 Hp
@@ -30872,7 +30977,7 @@ ib
 ib
 ib
 ib
-ib
+Vl
 ib
 ib
 ib
@@ -30893,7 +30998,7 @@ Hp
 Hp
 Hp
 Hp
-PM
+El
 Nz
 yY
 Nz
@@ -31638,14 +31743,14 @@ IV
 hg
 mN
 IO
-UH
+Ra
 vv
 UH
 dg
 ib
 ib
 ib
-ly
+sD
 ib
 ib
 ib
@@ -31663,8 +31768,8 @@ xI
 Hp
 PM
 QV
-QV
-QV
+HF
+HF
 QV
 Vj
 QV
@@ -31920,8 +32025,8 @@ xI
 Hp
 PM
 QV
-hf
-hf
+Jd
+Tq
 hf
 hf
 hf
@@ -32179,7 +32284,7 @@ PM
 Uo
 hf
 hf
-hf
+bg
 hf
 hf
 hf
@@ -32434,7 +32539,7 @@ xI
 Hp
 PM
 QV
-hf
+xw
 hf
 hf
 hf
@@ -33209,7 +33314,7 @@ Op
 DU
 HF
 hf
-hf
+UG
 hf
 kj
 jn
