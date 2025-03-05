@@ -624,13 +624,14 @@
 /obj/item/clothing/head/helmet/shipwrecker/officer
 	desc = "An open-face helmet made of composite armour plates, with an ornamental silver crest on top."
 	icon_state = "shipwrecker_officer"
-	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*0.8, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*0.6, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*0.6)
+	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*0.8, /datum/material/silver=SHEET_MATERIAL_AMOUNT*0.6, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*0.6)
 
 /obj/item/clothing/head/helmet/shipwrecker/heavy
 	desc = "A heavy helmet made of composite armour plates. Effective against projectiles, without sacrificing protection from melee weapons."
 	icon_state = "shipwrecker_heavy"
 	armor_type = /datum/armor/helmet_ballistic_heavy
 	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2.8, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*1.2, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*0.9)
+	flags_cover = HEADCOVERSMOUTH
 
 /datum/armor/helmet_ballistic_heavy
 	melee = 40

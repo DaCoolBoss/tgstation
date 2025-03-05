@@ -69,4 +69,4 @@
 	inhand_icon_state = "swat_suit"
 	armor_type = /datum/armor/suit_ballistic_heavy
 	strip_delay = 160
-	slowdown = 0.6
+	slowdown = 0.7
