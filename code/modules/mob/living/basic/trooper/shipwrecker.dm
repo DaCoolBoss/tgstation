@@ -321,6 +321,7 @@
 	invocation = "Rise, my creations! Jump off your pages and into this realm!"
 	invocation_type = INVOCATION_SHOUT
 	spell_requirements = NONE
+	create_summon_timer = 4 SECONDS
 	cooldown_time = 15 SECONDS
 	summon_type = list(
 		/mob/living/basic/stickman,

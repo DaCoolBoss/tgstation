@@ -402,3 +402,10 @@
 		to_chat(user, span_warning("This kit cannot be applied with hardpoint equipment attached."))
 		return FALSE
 	return ..()
+
+/obj/item/mecha_parts/mecha_equipment/ripleyupgrade/shipwrecker
+	name = "Shuttlebreaker Conversion Kit"
+	desc = "A flatpack modification kit for an Autonomous Power Loader Unit \"Ripley\" MK-I exosuit, to convert it to the Shuttlebreaker design. This kit cannot be removed, once applied."
+	icon_state = "ripleyupgrade-shuttlebreaker"
+	mech_flags = EXOSUIT_MODULE_RIPLEY
+	result = /obj/vehicle/sealed/mecha/ripley/shuttlebreaker

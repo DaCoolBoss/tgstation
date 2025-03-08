@@ -290,6 +290,31 @@ GLOBAL_DATUM(cargo_ripley, /obj/vehicle/sealed/mecha/ripley/cargo)
 	servo = new /obj/item/stock_parts/servo(src)
 	update_part_values()
 
+/obj/vehicle/sealed/mecha/ripley/shuttlebreaker
+	desc = "A modified Ripley Power Loader Unit. It has a pressurized cabin and anti-ballistic armor plating."
+	name = "\improper Shuttlebreaker Exosuit"
+	icon_state = "ripleymkii"
+	base_icon_state = "ripleymkii"
+	fast_pressure_step_in = 2 //step_in while in low pressure conditions
+	slow_pressure_step_in = 4 //step_in while in normal pressure conditions
+	movedelay = 3
+	max_temperature = 30000
+	mecha_flags = CAN_STRAFE | IS_ENCLOSED | HAS_LIGHTS | MMI_COMPATIBLE
+	possible_int_damage = MECHA_INT_FIRE|MECHA_INT_TEMP_CONTROL|MECHA_CABIN_AIR_BREACH|MECHA_INT_CONTROL_LOST|MECHA_INT_SHORT_CIRCUIT
+	armor_type = /datum/armor/mecha_shuttlebreaker
+	wreckage = /obj/structure/mecha_wreckage/ripley/mk2
+	enter_delay = 40
+	silicon_icon_state = null
+
+/datum/armor/mecha_shuttlebreaker
+	melee = 30
+	bullet = 50
+	laser = 50
+	energy = 50
+	bomb = 70
+	fire = 100
+	acid = 100
+
 /obj/item/mecha_parts/mecha_equipment/ejector
 	name = "cargo compartment"
 	desc = "Holds cargo loaded with a hydraulic clamp."
