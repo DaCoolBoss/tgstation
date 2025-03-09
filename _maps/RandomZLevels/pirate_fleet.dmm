@@ -170,6 +170,13 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/space)
+"aI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_x = 32
+	},
+/turf/open/floor/pod/dark,
+/area/space)
 "aJ" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/glass{
@@ -287,7 +294,9 @@
 /area/space)
 "be" = (
 /obj/effect/mob_spawn/corpse/human/nanotrasensoldier,
-/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "splatter1"
+	},
 /turf/open/floor/mineral/titanium,
 /area/space)
 "bg" = (
@@ -364,6 +373,18 @@
 "bq" = (
 /obj/structure/lattice,
 /turf/open/space/transit/west,
+/area/space)
+"br" = (
+/obj/structure/bed/maint,
+/obj/item/bedsheet/black,
+/turf/open/floor/pod/light,
+/area/space)
+"bs" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
 /area/space)
 "bt" = (
 /obj/effect/turf_decal/tile/purple/half,
@@ -1047,6 +1068,13 @@
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/iron/smooth,
 /area/space)
+"ee" = (
+/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+	dir = 4
+	},
+/obj/item/cigbutt,
+/turf/open/floor/iron/smooth,
+/area/space)
 "ef" = (
 /obj/effect/turf_decal/tile/dark/half{
 	dir = 1
@@ -1276,6 +1304,7 @@
 	name = "Emergency Shuttle Cargo"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
+/obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/mineral/titanium/purple,
 /area/space)
 "eV" = (
@@ -1330,7 +1359,7 @@
 	pixel_y = 3
 	},
 /obj/item/flashlight,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "fd" = (
 /obj/structure/railing{
@@ -1487,6 +1516,18 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/space)
+"fH" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/shaker{
+	pixel_x = 8;
+	pixel_y = 15
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "fJ" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -1497,6 +1538,11 @@
 "fK" = (
 /obj/machinery/door/airlock/grunge,
 /turf/open/floor/iron/smooth,
+/area/space)
+"fL" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/item/cigbutt/cigarbutt,
+/turf/open/floor/pod/light,
 /area/space)
 "fN" = (
 /obj/structure/railing{
@@ -1530,6 +1576,7 @@
 /area/space)
 "fS" = (
 /obj/item/kirbyplants/organic/plant21,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/light,
 /area/space)
 "fT" = (
@@ -1548,6 +1595,10 @@
 	pixel_y = 11
 	},
 /turf/open/floor/iron/smooth,
+/area/space)
+"fV" = (
+/obj/structure/table,
+/turf/open/floor/engine,
 /area/space)
 "fW" = (
 /turf/closed/mineral,
@@ -1683,6 +1734,7 @@
 /area/space)
 "gw" = (
 /obj/structure/filingcabinet/chestdrawer,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/rambling/noslaves,
 /turf/open/floor/iron/dark,
 /area/space)
 "gx" = (
@@ -2075,6 +2127,12 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/iron/smooth,
 /area/space)
+"hO" = (
+/obj/structure/rack,
+/obj/item/wirecutters,
+/obj/item/wrench/caravan,
+/turf/open/floor/pod/light,
+/area/space)
 "hP" = (
 /obj/structure/ore_box,
 /turf/open/floor/iron/smooth,
@@ -2246,6 +2304,10 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/space)
+"iw" = (
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/guide,
+/turf/open/floor/engine,
+/area/space)
 "ix" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -2328,6 +2390,12 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
 /turf/open/chasm/true/no_smooth,
+/area/space)
+"iP" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
 /area/space)
 "iQ" = (
 /obj/item/cane/crutch/wood,
@@ -2463,7 +2531,10 @@
 /area/space)
 "jq" = (
 /obj/structure/table,
-/obj/item/multitool,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/guide,
+/obj/item/multitool{
+	pixel_x = -11
+	},
 /turf/open/floor/engine,
 /area/space)
 "jr" = (
@@ -2639,6 +2710,7 @@
 	pixel_x = 2;
 	pixel_y = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/light,
 /area/space)
 "jZ" = (
@@ -3059,6 +3131,22 @@
 /obj/machinery/door/airlock/external,
 /turf/open/floor/catwalk_floor,
 /area/space)
+"lA" = (
+/obj/structure/chair/sofa/corp{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"lE" = (
+/obj/effect/decal/cleanable/blood/gibs/old{
+	icon_state = "gib4-old";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor5-old"
+	},
+/turf/open/floor/plating,
+/area/space)
 "lG" = (
 /obj/machinery/power/shieldwallgen/anchored,
 /obj/structure/lattice/catwalk,
@@ -3073,6 +3161,9 @@
 /area/space)
 "lI" = (
 /obj/structure/closet/mini_fridge,
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_x = 32
+	},
 /turf/open/floor/carpet/black,
 /area/space)
 "lK" = (
@@ -3105,6 +3196,15 @@
 /obj/structure/dresser,
 /obj/structure/sign/calendar/directional/north,
 /turf/open/floor/pod/light,
+/area/space)
+"lQ" = (
+/mob/living/basic/trooper/shipwrecker/officer,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/item/cigbutt{
+	pixel_x = 10;
+	pixel_y = -8
+	},
+/turf/open/floor/iron/smooth,
 /area/space)
 "lR" = (
 /obj/structure/table,
@@ -3184,6 +3284,10 @@
 	pixel_x = -5;
 	pixel_y = -12
 	},
+/obj/item/reagent_containers/cup/soda_cans/iron_tincture{
+	pixel_x = 13;
+	pixel_y = 8
+	},
 /turf/open/floor/iron/grimy,
 /area/space)
 "ma" = (
@@ -3243,7 +3347,11 @@
 	pixel_x = -13;
 	pixel_y = 5
 	},
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
+/area/space)
+"mj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
 /area/space)
 "mk" = (
 /obj/structure/grille/broken,
@@ -3434,6 +3542,7 @@
 /area/space)
 "mY" = (
 /obj/structure/window/reinforced/spawner/directional/east,
+/obj/effect/decal/cleanable/robot_debris/up,
 /turf/open/floor/mineral/titanium/blue,
 /area/space)
 "mZ" = (
@@ -3484,6 +3593,11 @@
 	dir = 4
 	},
 /turf/open/floor/wood/large,
+/area/space)
+"ni" = (
+/obj/item/c_tube,
+/obj/structure/table,
+/turf/open/floor/engine,
 /area/space)
 "nj" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -3543,6 +3657,27 @@
 	dir = 8
 	},
 /turf/open/floor/plating/reinforced,
+/area/space)
+"nx" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/soda_cans/iron_tincture{
+	pixel_x = -5;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/cup/soda_cans/iron_tincture{
+	pixel_x = 5;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/cup/soda_cans/iron_tincture{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/cup/glass{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/cup/glass/bottle/whiskey{
+	pixel_x = -6
+	},
+/turf/open/floor/iron/dark,
 /area/space)
 "nz" = (
 /obj/structure/closet/crate/trashcart,
@@ -3638,6 +3773,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"nT" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor6-old"
+	},
+/turf/open/floor/pod/dark,
+/area/space)
 "nV" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -3676,6 +3817,11 @@
 	dir = 1
 	},
 /turf/open/floor/iron/smooth,
+/area/space)
+"od" = (
+/obj/structure/rack,
+/obj/item/clothing/head/helmet/shipwrecker,
+/turf/open/floor/pod/light,
 /area/space)
 "of" = (
 /obj/structure/lattice,
@@ -3761,6 +3907,10 @@
 /obj/item/clothing/suit/armor/shipwrecker{
 	pixel_x = -5;
 	pixel_y = 5
+	},
+/obj/item/extinguisher/mini{
+	pixel_x = 7;
+	pixel_y = 4
 	},
 /turf/open/floor/iron/dark,
 /area/space)
@@ -3871,6 +4021,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/smooth,
 /area/space)
+"oO" = (
+/obj/structure/chair/sofa/corp/corner,
+/turf/open/floor/iron/dark,
+/area/space)
 "oP" = (
 /obj/structure/door_assembly/door_assembly_com,
 /obj/effect/mapping_helpers/broken_floor,
@@ -3908,6 +4062,14 @@
 "oX" = (
 /obj/structure/chair/sofa/right/brown,
 /turf/open/floor/iron/dark,
+/area/space)
+"oY" = (
+/obj/item/trash/can{
+	icon_state = "space-up";
+	pixel_x = 4;
+	pixel_y = -7
+	},
+/turf/open/floor/pod/light,
 /area/space)
 "oZ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3995,6 +4157,15 @@
 "pq" = (
 /obj/structure/railing,
 /turf/open/misc/ashplanet/rocky,
+/area/space)
+"pr" = (
+/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_y = 32
+	},
+/turf/open/floor/iron/smooth,
 /area/space)
 "ps" = (
 /obj/structure/rack,
@@ -4233,6 +4404,10 @@
 /area/space)
 "ql" = (
 /obj/structure/table/reinforced,
+/obj/item/reagent_containers/cup/soda_cans/iron_tincture{
+	pixel_y = 4;
+	pixel_x = 8
+	},
 /turf/open/floor/iron/checker,
 /area/space)
 "qm" = (
@@ -4291,6 +4466,11 @@
 "qx" = (
 /obj/structure/rack,
 /obj/item/wirecutters,
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_x = -32
+	},
 /turf/open/floor/pod/light,
 /area/space)
 "qy" = (
@@ -4404,6 +4584,11 @@
 	},
 /turf/open/floor/pod/light,
 /area/space)
+"qR" = (
+/obj/structure/rack,
+/obj/item/clothing/head/helmet/shipwrecker/heavy,
+/turf/open/floor/pod/light,
+/area/space)
 "qS" = (
 /obj/structure/bed/maint,
 /obj/effect/mob_spawn/corpse/human/shipwrecker,
@@ -4412,6 +4597,8 @@
 	pixel_x = -6;
 	pixel_y = 15
 	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/space)
 "qT" = (
@@ -4430,6 +4617,15 @@
 "qX" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/open/misc/ashplanet/rocky,
+/area/space)
+"qY" = (
+/obj/effect/decal/cleanable/blood/gibs/old{
+	icon_state = "gib6-old";
+	dir = 4;
+	pixel_x = -13;
+	pixel_y = 6
+	},
+/turf/open/floor/pod/dark,
 /area/space)
 "qZ" = (
 /obj/structure/chair/stool/directional/west,
@@ -4633,6 +4829,10 @@
 "rO" = (
 /turf/open/floor/mineral/titanium/white,
 /area/space)
+"rP" = (
+/obj/structure/closet/toolcloset,
+/turf/open/floor/iron/dark,
+/area/space)
 "rQ" = (
 /obj/structure/broken_flooring,
 /turf/open/floor/plating,
@@ -4666,7 +4866,7 @@
 /area/space)
 "rX" = (
 /obj/structure/bed/double,
-/obj/item/bedsheet/clown/double,
+/obj/item/bedsheet/green/double,
 /turf/open/floor/wood/tile,
 /area/space)
 "rZ" = (
@@ -4781,6 +4981,11 @@
 /obj/effect/turf_decal/tile/dark/anticorner/contrasted{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = 32
+	},
 /turf/open/floor/iron/smooth,
 /area/space)
 "sy" = (
@@ -4843,6 +5048,9 @@
 /obj/structure/sign/clock/directional/south,
 /obj/effect/decal/cleanable/plastic,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/trash/can{
+	icon_state = "iron-tincture"
+	},
 /turf/open/floor/carpet,
 /area/space)
 "sO" = (
@@ -4907,6 +5115,14 @@
 /obj/item/crowbar,
 /turf/open/floor/engine,
 /area/space)
+"sZ" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/item/cigbutt{
+	pixel_x = 10;
+	pixel_y = -8
+	},
+/turf/open/floor/iron/smooth,
+/area/space)
 "ta" = (
 /obj/effect/spawner/structure/window/survival_pod,
 /obj/effect/spawner/structure/window/survival_pod,
@@ -4929,6 +5145,17 @@
 	dir = 5
 	},
 /turf/open/floor/iron/grimy,
+/area/space)
+"tf" = (
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_y = -32
+	},
+/turf/open/floor/catwalk_floor/iron_smooth,
 /area/space)
 "tg" = (
 /obj/structure/table,
@@ -4999,6 +5226,10 @@
 /obj/item/clothing/head/cone,
 /turf/open/floor/iron/smooth,
 /area/space)
+"tt" = (
+/obj/item/chair,
+/turf/open/floor/engine,
+/area/space)
 "tu" = (
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/iron/dark,
@@ -5018,6 +5249,10 @@
 "tx" = (
 /obj/item/kirbyplants/synthetic/plant29,
 /turf/open/floor/wood/large,
+/area/space)
+"ty" = (
+/obj/item/cigbutt,
+/turf/open/floor/engine,
 /area/space)
 "tB" = (
 /obj/structure/closet/emcloset,
@@ -5042,6 +5277,14 @@
 /obj/item/folder/yellow,
 /obj/item/healthanalyzer,
 /turf/open/floor/iron/smooth,
+/area/space)
+"tF" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass{
+	pixel_y = 6;
+	pixel_x = -3
+	},
+/turf/open/floor/iron/dark,
 /area/space)
 "tG" = (
 /obj/item/stock_parts/subspace/analyzer,
@@ -5089,6 +5332,7 @@
 /area/space)
 "tQ" = (
 /obj/structure/table/reinforced,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/rambling/factory,
 /obj/effect/spawner/random/maintenance/four,
 /turf/open/floor/pod/light,
 /area/space)
@@ -5153,7 +5397,7 @@
 	pixel_x = -2;
 	pixel_y = -7
 	},
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "uc" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
@@ -5324,7 +5568,7 @@
 /area/space)
 "uP" = (
 /obj/machinery/photocopier/gratis,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "uQ" = (
 /obj/item/stock_parts/power_store/cell/empty,
@@ -5386,8 +5630,9 @@
 /turf/open/floor/wood/large,
 /area/space)
 "vd" = (
-/obj/item/clothing/under/color/darkblue,
 /obj/structure/closet/crate,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/rambling/bloodthirst,
+/obj/item/clothing/under/color/darkblue,
 /obj/item/clothing/suit/armor/shipwrecker,
 /turf/open/floor/carpet/green,
 /area/space)
@@ -5413,6 +5658,13 @@
 "vh" = (
 /obj/structure/rack,
 /obj/item/tattoo_kit,
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "Omni";
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/space)
 "vi" = (
@@ -5465,6 +5717,7 @@
 "vq" = (
 /obj/structure/rack,
 /obj/item/mecha_parts/mecha_equipment/ripleyupgrade,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/space)
 "vs" = (
@@ -5479,6 +5732,11 @@
 	},
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/smooth,
+/area/space)
+"vu" = (
+/obj/structure/closet/crate,
+/obj/item/chainsaw,
+/turf/open/floor/iron/dark,
 /area/space)
 "vv" = (
 /obj/effect/decal/cleanable/plasma{
@@ -5699,6 +5957,15 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space)
+"wh" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/effect/decal/cleanable/blood{
+	pixel_x = -11;
+	pixel_y = -8;
+	icon_state = "gibbl4"
+	},
+/turf/open/floor/mineral/titanium,
+/area/space)
 "wi" = (
 /obj/structure/sign/poster/contraband/borg_fancy_2/directional/north,
 /obj/effect/turf_decal/tile/dark/half/contrasted{
@@ -5726,6 +5993,10 @@
 	dir = 1
 	},
 /turf/open/floor/plating/reinforced,
+/area/space)
+"wm" = (
+/obj/effect/decal/cleanable/oil/streak,
+/turf/open/floor/iron/recharge_floor,
 /area/space)
 "wn" = (
 /obj/structure/chair/sofa/bench{
@@ -5961,13 +6232,17 @@
 /turf/open/floor/plating,
 /area/space)
 "xa" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/structure/closet/crate/wooden,
+/obj/item/cardpack/series_one{
+	pixel_x = -7;
+	pixel_y = -3
+	},
 /obj/item/toy/figure/clown{
 	pixel_x = -9;
 	pixel_y = 8
-	},
-/obj/structure/closet/crate/wooden,
-/obj/effect/turf_decal/siding/dark{
-	dir = 8
 	},
 /turf/open/floor/iron/grimy,
 /area/space)
@@ -6071,6 +6346,17 @@
 "xs" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
+/obj/item/cigarette{
+	pixel_x = -13
+	},
+/obj/item/cigarette{
+	pixel_y = 7;
+	pixel_x = 11
+	},
+/obj/item/cigarette{
+	pixel_y = 12;
+	pixel_x = 13
+	},
 /turf/open/floor/iron/grimy,
 /area/space)
 "xt" = (
@@ -6138,6 +6424,25 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/space)
+"xH" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 4
+	},
+/obj/item/trash/can{
+	icon_state = "iron-tincture"
+	},
+/obj/item/trash/can{
+	icon_state = "space-up";
+	pixel_x = 4;
+	pixel_y = -7
+	},
+/obj/item/trash/can{
+	icon_state = "space-up";
+	pixel_x = -9;
+	pixel_y = -4
+	},
+/turf/open/floor/iron/smooth,
+/area/space)
 "xI" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -6201,6 +6506,9 @@
 /obj/effect/turf_decal/tile/dark/half,
 /obj/effect/turf_decal/tile/dark{
 	dir = 4
+	},
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_x = 32
 	},
 /turf/open/floor/iron/smooth_edge,
 /area/space)
@@ -6298,11 +6606,12 @@
 "yl" = (
 /obj/structure/table/wood,
 /obj/structure/sign/poster/official/cohiba_robusto_ad/directional/north,
-/obj/item/megaphone,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/guide,
+/obj/item/megaphone,
 /turf/open/floor/iron/grimy,
 /area/space)
 "yn" = (
@@ -6349,7 +6658,7 @@
 "yv" = (
 /obj/structure/rack,
 /obj/item/crowbar,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "yw" = (
 /obj/structure/table/reinforced,
@@ -6358,7 +6667,7 @@
 	pixel_y = 14
 	},
 /obj/item/crowbar/hammer,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "yx" = (
 /obj/structure/urinal/directional/east,
@@ -6470,6 +6779,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/light,
 /area/space)
+"yS" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_y = -32
+	},
+/turf/open/floor/iron/smooth,
+/area/space)
 "yT" = (
 /obj/structure/table,
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/rambling/nigel/fullofshit{
@@ -6523,12 +6839,22 @@
 /obj/structure/noticeboard/directional/north,
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/cuttersafety,
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/rambling/carp,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/guide,
 /turf/open/floor/iron/smooth,
 /area/space)
 "zc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
 /turf/open/floor/plating/rust,
+/area/space)
+"zd" = (
+/obj/effect/decal/cleanable/blood{
+	pixel_x = 6;
+	pixel_y = 3;
+	icon_state = "splatter5"
+	},
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/mineral/titanium/purple,
 /area/space)
 "ze" = (
 /obj/item/mecha_parts/mecha_equipment/ripleyupgrade/shipwrecker,
@@ -6968,7 +7294,7 @@
 	pixel_x = 2;
 	pixel_y = 10
 	},
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "AC" = (
 /obj/structure/broken_flooring/pile/directional/north,
@@ -7072,7 +7398,7 @@
 /area/space)
 "Ba" = (
 /obj/item/kirbyplants/organic/plant2,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "Bc" = (
 /obj/structure/rack,
@@ -7135,6 +7461,10 @@
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /mob/living/basic/trooper/shipwrecker/heavy,
 /turf/open/floor/iron/showroomfloor,
+/area/space)
+"Bm" = (
+/obj/item/clothing/shoes/jackboots,
+/turf/open/floor/iron/grimy,
 /area/space)
 "Bn" = (
 /obj/structure/table/reinforced,
@@ -7206,6 +7536,9 @@
 /obj/structure/table,
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
+	},
+/obj/item/trash/can{
+	icon_state = "iron-tincture"
 	},
 /turf/open/floor/iron/dark,
 /area/space)
@@ -7315,6 +7648,12 @@
 	},
 /turf/open/floor/carpet,
 /area/space)
+"BX" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "BY" = (
 /obj/machinery/mech_bay_recharge_port,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7329,7 +7668,7 @@
 "Cb" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "Cd" = (
 /obj/machinery/door/airlock/survival_pod/glass,
@@ -7450,6 +7789,7 @@
 "Cu" = (
 /obj/item/mecha_parts/mecha_equipment/ripleyupgrade/shipwrecker,
 /obj/structure/rack,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/space)
 "Cw" = (
@@ -7468,6 +7808,10 @@
 "CA" = (
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/pod/dark,
+/area/space)
+"CC" = (
+/obj/structure/chair/sofa/corp/right,
+/turf/open/floor/iron/dark,
 /area/space)
 "CD" = (
 /obj/effect/spawner/random/structure/closet_empty/crate/with_loot,
@@ -7678,7 +8022,7 @@
 	pixel_y = -5;
 	pixel_x = -5
 	},
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "Do" = (
 /obj/structure/sign/poster/contraband/free_key/directional/north,
@@ -7912,6 +8256,13 @@
 /obj/structure/marker_beacon/burgundy,
 /turf/open/space/basic,
 /area/space)
+"Ef" = (
+/obj/effect/decal/cleanable/blood/drip{
+	pixel_y = 5;
+	pixel_x = 7
+	},
+/turf/open/floor/mineral/titanium/purple,
+/area/space)
 "Eg" = (
 /obj/effect/turf_decal/tile/dark/fourcorners,
 /obj/structure/cable,
@@ -8108,6 +8459,12 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"ES" = (
+/obj/structure/rack,
+/obj/item/mecha_parts/mecha_equipment/drill/diamonddrill,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/space)
 "ET" = (
 /mob/living/basic/trooper/shipwrecker,
 /turf/open/floor/iron/grimy,
@@ -8238,6 +8595,14 @@
 	},
 /turf/open/floor/wood/large,
 /area/space)
+"Fs" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/cup/soda_cans/space_mountain_wind{
+	pixel_y = 10;
+	pixel_x = -5
+	},
+/turf/open/floor/iron/checker,
+/area/space)
 "Ft" = (
 /obj/item/stack/sheet/glass{
 	amount = 15
@@ -8305,6 +8670,19 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"FE" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/food/burger/cheese{
+	pixel_y = 6;
+	pixel_x = 5
+	},
+/obj/item/food/burger/cheese{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/food/burger/cheese,
+/turf/open/floor/iron/dark,
+/area/space)
 "FF" = (
 /obj/structure/sink/directional/east,
 /turf/open/floor/iron/textured,
@@ -8316,7 +8694,7 @@
 "FH" = (
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "FI" = (
 /mob/living/basic/pet/dog/bullterrier/guarddog{
@@ -8474,7 +8852,7 @@
 "Gh" = (
 /obj/structure/rack,
 /obj/item/fish_analyzer,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "Gi" = (
 /obj/item/clothing/shoes/pirate,
@@ -8536,6 +8914,19 @@
 	pixel_x = -6;
 	pixel_y = 7
 	},
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "scroll";
+	pixel_y = -6;
+	pixel_x = 27
+	},
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "6";
+	pixel_y = -8;
+	pixel_x = 27
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/dark,
 /area/space)
 "Gt" = (
@@ -8921,6 +9312,7 @@
 	pixel_y = 1;
 	pixel_x = 9
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/space)
 "HS" = (
@@ -9160,6 +9552,12 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/mineral/titanium,
 /area/space)
+"IP" = (
+/obj/effect/decal/cleanable/blood/drip{
+	pixel_y = 11
+	},
+/turf/open/floor/mineral/titanium/purple,
+/area/space)
 "IQ" = (
 /obj/structure/lattice,
 /turf/open/space/basic,
@@ -9213,6 +9611,10 @@
 	},
 /obj/structure/sign/poster/official/moth_piping/directional/west,
 /turf/open/floor/pod/light,
+/area/space)
+"Jb" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron/recharge_floor,
 /area/space)
 "Jd" = (
 /obj/item/stack/tile/iron/smooth{
@@ -9480,7 +9882,12 @@
 /turf/open/floor/cult,
 /area/space)
 "Kd" = (
-/obj/effect/decal/cleanable/robot_debris/up,
+/obj/effect/decal/cleanable/blood{
+	pixel_x = 6;
+	pixel_y = 3;
+	icon_state = "splatter5";
+	dir = 8
+	},
 /turf/open/floor/mineral/titanium,
 /area/space)
 "Ke" = (
@@ -9490,7 +9897,7 @@
 	pixel_x = 11;
 	pixel_y = 7
 	},
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "Kf" = (
 /obj/effect/decal/cleanable/oil/streak,
@@ -9552,6 +9959,17 @@
 /obj/structure/cable,
 /turf/open/floor/iron/smooth,
 /area/space)
+"Ks" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = 32
+	},
+/turf/open/floor/iron/smooth,
+/area/space)
 "Kt" = (
 /obj/structure/ore_box,
 /turf/open/floor/plating/airless,
@@ -9586,6 +10004,11 @@
 /obj/structure/closet/crate,
 /turf/open/floor/pod/dark,
 /area/space)
+"Kz" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon/lime,
+/turf/open/floor/engine,
+/area/space)
 "KA" = (
 /obj/structure/chair/sofa/left/brown,
 /obj/effect/decal/cleanable/confetti,
@@ -9612,6 +10035,11 @@
 /obj/item/toy/plush/beeplushie,
 /obj/structure/rack,
 /turf/open/floor/iron/grimy,
+/area/space)
+"KE" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/item/cigbutt,
+/turf/open/floor/iron/smooth,
 /area/space)
 "KF" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -9714,6 +10142,14 @@
 /obj/item/target/syndicate,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/plating,
+/area/space)
+"KX" = (
+/obj/structure/rack,
+/obj/item/gun/energy/plasmacutter/pirate{
+	pixel_y = 6
+	},
+/obj/item/gun/energy/plasmacutter/pirate,
+/turf/open/floor/pod/light,
 /area/space)
 "KY" = (
 /obj/structure/rack,
@@ -9851,6 +10287,11 @@
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/recycle,
 /obj/structure/noticeboard/directional/south,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/guide,
+/turf/open/floor/iron/smooth,
+/area/space)
+"LA" = (
+/obj/structure/headpike/military,
 /turf/open/floor/iron/smooth,
 /area/space)
 "LC" = (
@@ -10033,6 +10474,10 @@
 /area/space)
 "Mm" = (
 /obj/structure/closet/crate,
+/obj/item/reagent_containers/cup/glass/bottle/hooch{
+	pixel_x = -5;
+	pixel_y = 7
+	},
 /obj/item/clothing/mask/gas,
 /turf/open/floor/carpet/green,
 /area/space)
@@ -10150,6 +10595,14 @@
 /obj/structure/closet/crate/bin,
 /obj/item/storage/bag/trash/filled,
 /turf/open/floor/pod/light,
+/area/space)
+"MK" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass{
+	pixel_x = 6;
+	pixel_y = 3
+	},
+/turf/open/floor/iron/dark,
 /area/space)
 "ML" = (
 /obj/machinery/conveyor/auto/inverted,
@@ -10348,6 +10801,7 @@
 	},
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/recycle,
 /obj/structure/noticeboard/directional/north,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/guide,
 /turf/open/floor/iron/smooth,
 /area/space)
 "Nu" = (
@@ -10422,6 +10876,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /turf/open/floor/iron/smooth,
+/area/space)
+"NH" = (
+/obj/structure/rack,
+/turf/open/floor/engine,
 /area/space)
 "NI" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted{
@@ -10543,6 +11001,10 @@
 /obj/structure/sign/poster/contraband/power/directional/north,
 /turf/open/floor/iron/smooth,
 /area/space)
+"Og" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/space)
 "Oh" = (
 /obj/item/electronics/airlock,
 /turf/open/floor/plating,
@@ -10607,6 +11069,10 @@
 /area/space)
 "Ot" = (
 /obj/structure/table/reinforced,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/guide{
+	pixel_x = -6;
+	pixel_y = 4
+	},
 /obj/item/stack/ore/slag,
 /turf/open/floor/pod/light,
 /area/space)
@@ -10803,6 +11269,10 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/space)
+"Ph" = (
+/obj/structure/bedsheetbin,
+/turf/open/floor/pod/light,
+/area/space)
 "Pk" = (
 /obj/effect/spawner/random/trash/hobo_squat,
 /obj/item/reagent_containers/hypospray/medipen/military/knockoff,
@@ -10859,6 +11329,11 @@
 "Px" = (
 /obj/structure/table/wood,
 /obj/structure/sign/poster/official/midtown_slice/directional/east,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/rambling/numbers/codetwo,
+/obj/item/coin/silver/doubloon{
+	name = "lucky silver coin";
+	desc = "This coin has a triangle scratched into its tails side. It feels lucky."
+	},
 /turf/open/floor/wood/large,
 /area/space)
 "Py" = (
@@ -11140,6 +11615,19 @@
 /obj/structure/headpike/military,
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /turf/open/floor/iron/smooth,
+/area/space)
+"QF" = (
+/obj/structure/rack,
+/obj/item/crowbar/hammer{
+	pixel_x = -4;
+	pixel_y = 5
+	},
+/obj/item/crowbar/hammer,
+/obj/item/crowbar/hammer{
+	pixel_y = -4;
+	pixel_x = 5
+	},
+/turf/open/floor/pod/light,
 /area/space)
 "QG" = (
 /obj/structure/closet/secure_closet/personal,
@@ -11763,6 +12251,7 @@
 /area/space)
 "SH" = (
 /obj/structure/barricade/wooden,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/dark,
 /area/space)
 "SI" = (
@@ -11825,6 +12314,9 @@
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_y = 32
+	},
 /turf/open/floor/pod/light,
 /area/space)
 "SU" = (
@@ -11852,6 +12344,11 @@
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /obj/structure/chair/office{
 	dir = 1
+	},
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = -32
 	},
 /turf/open/floor/iron/smooth,
 /area/space)
@@ -11960,7 +12457,7 @@
 "Tt" = (
 /obj/structure/table/reinforced,
 /obj/item/analyzer,
-/turf/open/floor/pod/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "Tu" = (
 /obj/structure/bookcase,
@@ -12019,6 +12516,15 @@
 	dir = 1
 	},
 /turf/open/floor/wood/large,
+/area/space)
+"TE" = (
+/obj/structure/door_assembly/door_assembly_ext,
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = -32
+	},
+/turf/open/floor/pod/light,
 /area/space)
 "TF" = (
 /obj/machinery/door/airlock/grunge,
@@ -12184,6 +12690,16 @@
 /obj/structure/rack,
 /turf/open/floor/plating,
 /area/space)
+"Um" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/item/cigbutt{
+	pixel_x = 10;
+	pixel_y = -8
+	},
+/turf/open/floor/iron/grimy,
+/area/space)
 "Un" = (
 /obj/structure/broken_flooring/singular/directional/east,
 /turf/open/floor/iron,
@@ -12266,10 +12782,18 @@
 /turf/open/floor/iron/smooth,
 /area/space)
 "UB" = (
-/obj/item/wrench,
-/obj/item/crowbar,
-/obj/effect/mob_spawn/corpse/human/scientist,
-/turf/open/floor/mineral/titanium/purple,
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_y = -32
+	},
+/turf/open/floor/pod/dark,
+/area/space)
+"UC" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 4
+	},
+/obj/item/cigarette,
+/turf/open/floor/iron/smooth,
 /area/space)
 "UD" = (
 /obj/structure/bed,
@@ -12328,6 +12852,10 @@
 /obj/item/kitchen/spoon{
 	pixel_y = 3;
 	pixel_x = 9
+	},
+/obj/item/reagent_containers/cup/soda_cans/iron_tincture{
+	pixel_x = -5;
+	pixel_y = 12
 	},
 /turf/open/floor/iron/smooth,
 /area/space)
@@ -12445,6 +12973,19 @@
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/pod/dark,
 /area/space)
+"Vt" = (
+/obj/effect/decal/cleanable/blood/drip{
+	pixel_x = 15;
+	pixel_y = 20
+	},
+/obj/item/wrench,
+/obj/item/crowbar,
+/obj/effect/mob_spawn/corpse/human/scientist,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor7"
+	},
+/turf/open/floor/mineral/titanium/purple,
+/area/space)
 "Vw" = (
 /obj/structure/bookcase,
 /obj/item/book/random,
@@ -12495,6 +13036,11 @@
 	},
 /obj/structure/rack,
 /obj/item/stack/cable_coil/thirty,
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_x = -32
+	},
 /turf/open/floor/iron/smooth,
 /area/space)
 "VD" = (
@@ -12779,6 +13325,10 @@
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /turf/open/floor/iron/smooth,
 /area/space)
+"WA" = (
+/obj/structure/chair/sofa/corp,
+/turf/open/floor/iron/dark,
+/area/space)
 "WB" = (
 /obj/item/electronics/firelock,
 /turf/open/floor/plating,
@@ -12808,6 +13358,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/grille/broken,
 /turf/open/floor/plating,
+/area/space)
+"WL" = (
+/obj/item/cigbutt{
+	pixel_x = 10;
+	pixel_y = -8
+	},
+/turf/open/floor/iron/smooth,
 /area/space)
 "WM" = (
 /obj/structure/chair/comfy/shuttle{
@@ -13192,10 +13749,16 @@
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 4
 	},
-/obj/item/trash/candy,
+/obj/item/trash/candy{
+	pixel_x = 3
+	},
 /obj/item/trash/ready_donk{
 	pixel_x = -3;
 	pixel_y = 17
+	},
+/obj/item/food/pistachios{
+	pixel_x = -4;
+	pixel_y = 2
 	},
 /turf/open/floor/iron/smooth,
 /area/space)
@@ -13321,6 +13884,10 @@
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /turf/open/floor/iron/smooth,
 /area/space)
+"Yu" = (
+/obj/structure/closet/crate/freezer,
+/turf/open/floor/pod/dark,
+/area/space)
 "Yy" = (
 /obj/machinery/conveyor/auto/inverted,
 /obj/effect/turf_decal/sand/plating/volcanic,
@@ -13363,6 +13930,9 @@
 /obj/item/climbing_hook/emergency{
 	pixel_y = -1;
 	pixel_x = -5
+	},
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_x = 32
 	},
 /turf/open/floor/iron/smooth,
 /area/space)
@@ -13458,6 +14028,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/plating,
 /area/space)
+"YX" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/dark,
+/area/space)
 "YZ" = (
 /obj/structure/broken_flooring/pile/directional/east,
 /turf/open/floor/engine,
@@ -13516,6 +14093,11 @@
 /obj/structure/closet/crate,
 /turf/open/floor/carpet/black,
 /area/space)
+"Zj" = (
+/obj/effect/turf_decal/tile/dark,
+/obj/item/cigbutt,
+/turf/open/floor/iron/smooth,
+/area/space)
 "Zk" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -13530,6 +14112,7 @@
 "Zm" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/structure/railing/corner/end/flip,
+/obj/item/chair,
 /turf/open/floor/pod/light,
 /area/space)
 "Zn" = (
@@ -13702,6 +14285,15 @@
 	dir = 1
 	},
 /obj/structure/sign/poster/official/safety_eye_protection/directional/north,
+/turf/open/floor/iron/smooth,
+/area/space)
+"ZR" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = -32
+	},
 /turf/open/floor/iron/smooth,
 /area/space)
 "ZS" = (
@@ -23361,7 +23953,7 @@ ib
 ib
 ib
 ib
-UH
+lE
 Ra
 Py
 Hi
@@ -26958,8 +27550,8 @@ Nn
 hg
 bN
 kQ
-kQ
-kQ
+Ef
+Vt
 Da
 Eo
 ZF
@@ -27214,7 +27806,7 @@ hg
 hg
 cv
 bN
-kQ
+IP
 tI
 kQ
 ON
@@ -27471,11 +28063,11 @@ eB
 rb
 hg
 eU
-kQ
+zd
 kQ
 QW
 kQ
-UB
+kQ
 Lm
 Fv
 ib
@@ -27979,7 +28571,7 @@ rG
 hg
 AY
 aF
-kw
+wh
 hg
 hg
 NZ
@@ -29502,7 +30094,7 @@ QV
 yY
 Tk
 Jk
-Hp
+WL
 Hp
 Hp
 Hp
@@ -31302,7 +31894,7 @@ yY
 QV
 Mp
 GQ
-GQ
+xH
 hm
 Hp
 tL
@@ -31345,7 +31937,7 @@ Sj
 Cs
 QV
 lK
-zw
+aI
 dC
 Nz
 IQ
@@ -33359,12 +33951,12 @@ VP
 De
 Gq
 QV
-qO
+Ks
 Hp
 tL
 ib
 ib
-ib
+iw
 gQ
 Ml
 ib
@@ -34913,7 +35505,7 @@ ib
 ib
 ib
 ib
-ib
+tt
 ib
 ib
 ib
@@ -35168,7 +35760,7 @@ ib
 ib
 ib
 ib
-ib
+tt
 ib
 ib
 ib
@@ -35964,7 +36556,7 @@ ib
 ib
 ib
 xI
-oH
+Zj
 GQ
 GQ
 GQ
@@ -36214,7 +36806,7 @@ ib
 QV
 DP
 Yk
-yY
+nT
 PD
 QV
 ib
@@ -36471,7 +37063,7 @@ ib
 QV
 tJ
 oR
-yY
+qY
 Bu
 QV
 ib
@@ -36992,7 +37584,7 @@ wO
 ib
 ib
 xI
-PM
+yS
 QV
 xw
 lr
@@ -37462,7 +38054,7 @@ ew
 vO
 ew
 HF
-Hp
+WL
 Re
 Pe
 qI
@@ -37980,7 +38572,7 @@ XB
 Hp
 Hp
 Hp
-Hp
+WL
 pw
 QV
 Hp
@@ -40076,7 +40668,7 @@ ib
 ib
 ib
 xI
-PM
+sZ
 HF
 ZD
 hf
@@ -40565,8 +41157,8 @@ ib
 ib
 ib
 ib
+er
 ib
-ib
 dg
 dg
 dg
@@ -40581,7 +41173,7 @@ dg
 dg
 dg
 ib
-ib
+er
 ib
 ib
 ib
@@ -41066,8 +41658,8 @@ NN
 QV
 vq
 bJ
-bJ
-bJ
+BY
+BY
 Aq
 QV
 qO
@@ -41324,7 +41916,7 @@ DJ
 Qg
 NC
 NC
-NC
+wm
 Qg
 gl
 qO
@@ -41580,7 +42172,7 @@ UH
 QV
 xW
 Qg
-Qg
+Og
 Qg
 Qg
 gl
@@ -42093,7 +42685,7 @@ UH
 YU
 QV
 HQ
-Qg
+mj
 Qg
 Qg
 Qg
@@ -42350,10 +42942,10 @@ UH
 UH
 DJ
 VQ
-NC
+Jb
 NC
 vn
-Qg
+Og
 gl
 qO
 tL
@@ -42606,10 +43198,10 @@ Pk
 DF
 XT
 QV
-KG
-RB
+ES
+bs
 dx
-RB
+bs
 Cu
 QV
 qO
@@ -42620,7 +43212,7 @@ ib
 ib
 ib
 ib
-ib
+er
 ib
 QV
 OS
@@ -42638,7 +43230,7 @@ OS
 OS
 QV
 ib
-ib
+er
 ib
 ib
 ib
@@ -44162,7 +44754,7 @@ ib
 Zn
 ib
 ib
-ib
+dg
 ib
 QV
 QV
@@ -44180,7 +44772,7 @@ OS
 QV
 QV
 ib
-ib
+dg
 ib
 ib
 ib
@@ -44420,7 +45012,7 @@ ib
 ib
 ib
 ib
-ib
+dg
 ib
 QV
 QV
@@ -44436,7 +45028,7 @@ QV
 QV
 QV
 ib
-ib
+dg
 ib
 ib
 ib
@@ -45962,11 +46554,11 @@ ib
 ib
 ib
 ib
-ib
+dg
 ib
 QV
 QV
-cW
+Vs
 QV
 QV
 vT
@@ -45974,11 +46566,11 @@ Hp
 rl
 QV
 QV
-cW
+Vs
 QV
 QV
 ib
-ib
+dg
 ib
 ib
 fu
@@ -46220,7 +46812,7 @@ ib
 ib
 ib
 ib
-ib
+dg
 ib
 QV
 yY
@@ -46234,7 +46826,7 @@ cr
 yY
 QV
 ib
-ib
+dg
 ib
 ib
 ib
@@ -46252,7 +46844,7 @@ Op
 Op
 Hp
 fK
-Hp
+WL
 Cn
 Op
 Op
@@ -46715,7 +47307,7 @@ Ol
 DS
 cm
 Ro
-Ro
+Um
 Tw
 QV
 OS
@@ -47007,7 +47599,7 @@ QV
 ib
 vZ
 ib
-ib
+Mj
 ib
 ib
 ib
@@ -47505,21 +48097,21 @@ ib
 ib
 ib
 ib
-ib
+Kz
 ib
 QV
 EE
 QV
 EE
 QV
-nM
+tf
 QV
 QV
 EE
 QV
 EE
 ib
-ib
+Kz
 ib
 ib
 ib
@@ -47757,7 +48349,7 @@ tL
 ib
 ib
 ib
-ib
+ty
 ci
 ci
 ci
@@ -48043,7 +48635,7 @@ ci
 ib
 ci
 Fw
-Ix
+lQ
 QV
 ex
 Bo
@@ -48289,7 +48881,7 @@ ci
 ci
 ib
 ib
-ib
+ty
 ib
 eK
 ci
@@ -48528,8 +49120,8 @@ tL
 ib
 ib
 ci
-ib
-ib
+NH
+NH
 Mj
 ib
 ib
@@ -48550,9 +49142,9 @@ ib
 ib
 ib
 ib
-Mj
 ib
-ib
+fV
+ni
 ci
 ib
 ci
@@ -48766,7 +49358,7 @@ Op
 sG
 hf
 QV
-kN
+pr
 fF
 fF
 JN
@@ -48788,9 +49380,9 @@ LH
 QV
 QV
 QV
-QV
-QV
-QV
+pP
+pP
+pP
 QV
 QV
 QV
@@ -48804,9 +49396,9 @@ QV
 QV
 QV
 QV
-QV
-QV
-QV
+pP
+pP
+pP
 QV
 QV
 QV
@@ -49039,7 +49631,7 @@ OS
 xn
 qO
 Hp
-Hp
+LA
 zv
 OV
 QV
@@ -49058,20 +49650,20 @@ hf
 hf
 hf
 Sr
-BO
-Rp
+fL
+KX
 QV
 yY
 yY
 yY
 yY
 yY
-YD
+QV
 qO
 Hp
 Hp
 Hp
-PM
+KE
 dq
 kI
 hu
@@ -49294,7 +49886,7 @@ OS
 OS
 OS
 QV
-XO
+ee
 GQ
 hm
 Hp
@@ -49316,7 +49908,7 @@ hf
 hf
 Sr
 hf
-Rp
+QF
 QV
 yY
 yY
@@ -49533,7 +50125,7 @@ RI
 QV
 hf
 hf
-hf
+UV
 hf
 hf
 QV
@@ -49561,7 +50153,7 @@ yY
 yY
 yY
 yY
-yY
+UB
 QV
 Rp
 hf
@@ -49602,9 +50194,9 @@ qO
 PM
 QV
 wB
-Rp
+qR
 UV
-Rp
+od
 hf
 QV
 RI
@@ -50045,11 +50637,11 @@ RI
 Lc
 RI
 QV
-yY
-yY
-yY
-yY
-yY
+OS
+OS
+OS
+OS
+OS
 QV
 GR
 iX
@@ -50074,7 +50666,7 @@ QV
 QV
 QV
 QV
-QV
+Ma
 QV
 QV
 QV
@@ -50302,12 +50894,12 @@ RI
 Lc
 RI
 HF
-yY
-yY
-yY
-yY
-yY
-YD
+OS
+OS
+OS
+OS
+OS
+rA
 qO
 PM
 QV
@@ -50371,12 +50963,12 @@ dL
 QV
 qO
 PM
-YD
-yY
-yY
-yY
-yY
-yY
+rA
+OS
+OS
+OS
+OS
+OS
 HF
 RI
 Lc
@@ -50559,11 +51151,11 @@ RI
 Lc
 RI
 HF
-yY
-yY
-yY
-yY
-yY
+OS
+OS
+OS
+OS
+OS
 QV
 qO
 PM
@@ -50630,10 +51222,10 @@ qO
 PM
 QV
 Ba
-yY
-yY
-yY
-Be
+OS
+OS
+OS
+oM
 HF
 RI
 Lc
@@ -50816,11 +51408,11 @@ RI
 Lc
 RI
 HF
-yY
-yY
-yY
-yY
-yY
+OS
+OS
+OS
+OS
+OS
 QV
 qO
 PM
@@ -50886,11 +51478,11 @@ QV
 qO
 PM
 QV
-Lo
-yY
-ek
-yY
-ek
+rP
+OS
+kE
+OS
+kE
 HF
 RI
 Lc
@@ -51073,11 +51665,11 @@ RI
 Lc
 RI
 HF
-yY
-yY
-yY
-yY
-yY
+OS
+OS
+OS
+OS
+OS
 QV
 qO
 PM
@@ -51144,9 +51736,9 @@ qO
 PM
 QV
 Cb
-yY
+OS
 Dn
-yY
+OS
 fc
 HF
 RI
@@ -51330,11 +51922,11 @@ Ee
 Lc
 IQ
 QV
-yY
-yY
-yY
-yY
-yY
+OS
+OS
+OS
+OS
+OS
 QV
 qO
 PM
@@ -51401,9 +51993,9 @@ Fn
 PM
 QV
 mh
-yY
+OS
 yv
-yY
+OS
 Ke
 QV
 IQ
@@ -51587,10 +52179,10 @@ RI
 IQ
 RI
 QV
-yY
-yY
+OS
+OS
 QV
-QV
+Vs
 QV
 QV
 qO
@@ -51640,8 +52232,8 @@ QV
 vM
 Hp
 PM
-Bq
-WG
+QV
+NS
 ox
 Op
 Op
@@ -51658,7 +52250,7 @@ qO
 PM
 QV
 QV
-QV
+Vs
 QV
 Tt
 AB
@@ -51847,8 +52439,8 @@ QV
 QV
 QV
 QV
-OS
-OS
+yY
+Yu
 QV
 qO
 PM
@@ -51896,9 +52488,9 @@ DV
 HF
 qO
 Hp
-PM
+ZR
 QV
-NS
+kn
 ox
 Op
 Op
@@ -51914,8 +52506,8 @@ QV
 qO
 PM
 QV
-OS
-OS
+yY
+yY
 QV
 QV
 QV
@@ -52103,9 +52695,9 @@ gc
 OS
 OS
 OS
-SU
-OS
-OS
+Vs
+yY
+yY
 QV
 qO
 PM
@@ -52135,7 +52727,7 @@ Op
 Op
 Op
 Op
-rV
+vu
 QV
 lL
 RD
@@ -52154,8 +52746,8 @@ HF
 qO
 Hp
 PM
-QV
-po
+Bq
+WG
 ox
 yu
 Op
@@ -52171,9 +52763,9 @@ QV
 qO
 PM
 QV
-OS
-OS
-SU
+yY
+yY
+Vs
 OS
 OS
 OS
@@ -52361,8 +52953,8 @@ OS
 OS
 EH
 QV
-OS
-OS
+iP
+iP
 QV
 qO
 PM
@@ -52412,7 +53004,7 @@ qO
 Hp
 PM
 QV
-kn
+po
 te
 FC
 lk
@@ -52428,8 +53020,8 @@ QV
 qO
 PM
 QV
-OS
-OS
+yY
+yY
 QV
 pu
 OS
@@ -53664,7 +54256,7 @@ hm
 oH
 SS
 SS
-SS
+UC
 XY
 XU
 GQ
@@ -53917,7 +54509,7 @@ QV
 QV
 QV
 QV
-qO
+Ks
 PM
 QV
 QV
@@ -55257,7 +55849,7 @@ Oz
 QV
 mp
 Op
-Op
+Bm
 QV
 hF
 yY
@@ -56257,11 +56849,11 @@ yY
 yY
 yY
 QV
-Wg
+nx
 RK
 qv
-Wg
-rV
+fH
+FE
 vk
 QJ
 QV
@@ -56542,7 +57134,7 @@ PM
 QV
 hf
 BO
-Ys
+TE
 QV
 Ky
 yY
@@ -56747,7 +57339,7 @@ QV
 qO
 PM
 QV
-hf
+br
 hf
 vF
 QV
@@ -56771,9 +57363,9 @@ bu
 yY
 vE
 QV
+tF
 Wg
-Wg
-Wg
+MK
 Wg
 OS
 XI
@@ -57005,7 +57597,7 @@ eG
 PM
 QV
 wk
-hf
+Ph
 MJ
 QV
 nN
@@ -57271,7 +57863,7 @@ JI
 SR
 In
 fj
-ql
+Fs
 QV
 Yn
 pf
@@ -58033,7 +58625,7 @@ QV
 QV
 mb
 QV
-RL
+YX
 RL
 RL
 RL
@@ -58290,7 +58882,7 @@ zS
 Yb
 cp
 QV
-OS
+CC
 OS
 OS
 OS
@@ -58547,7 +59139,7 @@ dd
 dd
 cp
 QV
-OS
+WA
 OS
 OS
 OS
@@ -58804,10 +59396,10 @@ Dq
 gu
 yO
 QV
-OS
-OS
-OS
-OS
+oO
+lA
+BX
+ke
 QV
 QV
 QV
@@ -58849,8 +59441,8 @@ OS
 QV
 gg
 hf
-hf
-Rp
+oY
+hO
 QV
 aq
 OS
