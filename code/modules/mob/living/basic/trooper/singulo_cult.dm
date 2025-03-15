@@ -1,5 +1,5 @@
 //CULT OF THE SINGULARITY:
-//A pirate subfaction
+//"Glarius tuet Singulo"
 
 //WHO ARE THEY:
 //NPCs who

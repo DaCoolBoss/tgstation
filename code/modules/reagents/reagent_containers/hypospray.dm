@@ -305,10 +305,14 @@
 		/datum/reagent/medicine/atropine = 2,
 		)
 
+/obj/item/reagent_containers/hypospray/medipen/military/Initialize(mapload)
+	if(prob(10))
+		desc += pick(" The ")
+	. = ..()
+
 /obj/item/reagent_containers/hypospray/medipen/military/knockoff
 
 /obj/item/reagent_containers/hypospray/medipen/military/knockoff/Initialize(mapload)
-	. = ..()
 	var/weak_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
 		/datum/reagent/drug/nicotine = 6,
 		/datum/reagent/medicine/c2/multiver = 6,
@@ -341,6 +345,7 @@
 	var/berserk_reagents = list(/datum/reagent/medicine/c2/penthrite = 8,  /datum/reagent/medicine/mine_salve = 6, /datum/reagent/drug/bath_salts = 4, /datum/reagent/drug/kronkaine/gore = 12)
 	if(prob(60))
 		list_reagents = pick_weight(list(weak_reagents = 20, tainted_reagents  = 15, unbalanced_reagents = 15, experimental_reagents = 5, berserk_reagents = 5))
+	. = ..()
 
 /obj/item/reagent_containers/hypospray/medipen/atropine
 	name = "atropine autoinjector"

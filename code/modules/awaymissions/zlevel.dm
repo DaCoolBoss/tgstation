@@ -65,6 +65,10 @@ GLOBAL_LIST_INIT(potentialConfigRandomZlevels, generate_map_list_from_directory(
 	name = "Moon Outpost 19 away spawn"
 	id = AWAYSTART_MOONOUTPOST
 
+/obj/effect/landmark/awaystart/scrapbreaker
+	name = "Scrapbreaker Prime away spawn"
+	id = AWAYSTART_SCRAPBREAKER
+
 /obj/effect/landmark/awaystart/snowcabin
 	name = "snow cabin away spawn"
 	id = AWAYSTART_SNOWCABIN

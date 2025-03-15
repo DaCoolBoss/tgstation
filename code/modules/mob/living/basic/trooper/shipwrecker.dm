@@ -19,7 +19,7 @@
 //GAMEPLAY THEMES:
 //These guys are designed to be more dangerous than regular space pirates, to have a unique gameplay pattern and to give interesting loot.
 //Mix of melee and ranged capability, these guys work together and specialise to cover multiple bases.
-//
+//Skewed melee, but weak to melee. Resistant to projectiles.
 
 //LOOT:
 //Primarily variants on station gear
@@ -27,9 +27,9 @@
 //
 
 //LORE:
-//The Shipwrecker Gang hangs out on the "Scrapmaker", a heavily modified pirate frigate. They share this vessel with the secretive and eccentric Cult of the Singularity.
+//The Shipwrecker Gang hangs out on the "Scrapbreaker Prime", a heavily modified pirate frigate. They share this vessel with the secretive and eccentric Cult of the Singularity.
 //Captain Carpheart is the leader of the Gang, and rules the ship with an iron fist. This Gang is highly militerised, disciplined and loyal.
-//The Scrapmaker is kept in a state of perpetual Warp by the Cult to prevent detection by corporate security forces.
+//The Scrapbreaker is kept in a state of perpetual Warpjump by the Cult to prevent detection by corporate security forces.
 //Shuttles using Warp Transit are often unprepared
 
 /mob/living/basic/trooper/shipwrecker
@@ -47,9 +47,9 @@
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
 	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
 	//chance we use an alternate weapon in left hand (percentage)
-	var/alt_weapon_chance_left = 50
+	var/alt_weapon_chance_left = 45
 	//list of alt weapons for left hand
-	var/list/alt_weapons_left = list(/obj/item/crowbar/hammer = 30,
+	var/list/alt_weapons_left = list(/obj/item/crowbar/hammer = 25,
 		/obj/item/lead_pipe = 10,
 		/obj/item/pickaxe/silver = 10,
 		)
@@ -60,7 +60,7 @@
 	//chance we use an alternate loadout (percentage)
 	var/alt_outfit_chance = 10
 	/// Type of bullet we use
-	var/casingtype = /obj/item/ammo_casing/energy/plasma/pirate
+	var/projectiletype = /obj/projectile/plasma/pirate
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
 	/// Time between taking shots
@@ -72,11 +72,19 @@
 	planning_subtrees = list(
 		/datum/ai_planning_subtree/simple_find_target,
 		/datum/ai_planning_subtree/attack_obstacle_in_path/trooper,
-		/datum/ai_planning_subtree/basic_melee_attack_subtree,
+		/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish,
 		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker,
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
 		/datum/ai_planning_subtree/random_speech/shipwrecker,
 	)
+
+/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish/SelectBehaviors(datum/ai_controller/controller, delta_time)
+	var/mob/target = controller.blackboard[BB_BASIC_MOB_CURRENT_TARGET]
+	if(!target || QDELETED(target))
+		return
+	for(target in range(1, src))
+		return
+	return ..()
 
 /mob/living/basic/trooper/shipwrecker/Initialize(mapload)
 	if(prob(alt_weapon_chance_left))
@@ -87,7 +95,7 @@
 	. = ..()
 	AddComponent(\
 		/datum/component/ranged_attacks,\
-		casing_type = casingtype,\
+		projectile_type = projectiletype,\
 		projectile_sound = projectilesound,\
 		cooldown_time = ranged_cooldown,\
 	)
@@ -117,11 +125,6 @@
 /datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
 	action_cooldown = 1.2 SECONDS
 	required_distance = 2
-	avoid_friendly_fire = TRUE
-
-/datum/ai_behavior/basic_ranged_attack/trooper_shotgun
-	action_cooldown = 3 SECONDS
-	required_distance = 3
 	avoid_friendly_fire = TRUE
 
 /datum/outfit/shipwrecker
@@ -156,6 +159,8 @@
 	/obj/item/wirecutters = 1,
 	/obj/item/boxcutter = 1,
 	)
+	if(prob(50))
+		ears = /obj/item/radio/headset
 	if(prob(60))
 		glasses = pick_weight(
 		/obj/item/clothing/glasses/eyepatch = 45,
@@ -333,6 +338,16 @@
 
 /mob/living/basic/trooper/shipwrecker/boss
 	name = "Commander"
+	r_hand = /obj/item/claymore/cutlass
+	icon_state = "officer" //change this later
+	desc = "Big boss of the Shipwrecker Gang, infamous for raiding shuttles mid-transit. This one is armed with a cutlass and a ?????."
+	response_help_continuous = "pushes"
+	response_help_simple = "push"
+	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
+	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker, /obj/item/gun/energy/plasmacutter/pirate, /obj/item/pickaxe)
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker
+	l_hand = /obj/item/pickaxe
+
 
 /mob/living/basic/trooper/shipwrecker/boss/blackskull
 	name = "\improper Commodore Blackskull"

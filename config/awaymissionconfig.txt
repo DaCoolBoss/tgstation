@@ -11,6 +11,7 @@
 #_maps/RandomZLevels/moonoutpost19.dmm
 #_maps/RandomZLevels/undergroundoutpost45.dmm
 #_maps/RandomZLevels/caves.dmm
+_maps/RandomZLevels/scrapbreaker_prime.dmm
 #_maps/RandomZLevels/snowdin.dmm
 #_maps/RandomZLevels/research.dmm
 #_maps/RandomZLevels/SnowCabin.dmm
