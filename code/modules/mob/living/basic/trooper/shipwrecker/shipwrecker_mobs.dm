@@ -40,7 +40,6 @@
 	response_help_continuous = "pushes"
 	response_help_simple = "push"
 	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
-	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker, /obj/item/gun/energy/plasmacutter/pirate, /obj/item/pickaxe)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker
 	r_hand = /obj/item/gun/energy/plasmacutter/pirate
 	l_hand = /obj/item/pickaxe
@@ -59,12 +58,28 @@
 	var/list/alt_weapons_right = list(/obj/item/gun/energy/plasmacutter/pirate = 100,)
 	//chance we use an alternate loadout (percentage)
 	var/alt_outfit_chance = 10
+
+	var/list/alt_outfits = list(,)
 	/// Type of bullet we use
 	var/projectiletype = /obj/projectile/plasma/pirate
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/plasma_cutter.ogg'
 	/// Time between taking shots
 	var/ranged_cooldown = 1.4 SECONDS
+
+/mob/living/basic/trooper/shipwrecker/Initialize(mapload)
+	if(prob(alt_weapon_chance_left))
+		l_hand = pick_weight(alt_weapons_left)
+	if(prob(alt_weapon_chance_right))
+		r_hand = pick_weight(alt_weapons_right)
+	loot = list(mob_spawner, r_hand, l_hand)
+	. = ..()
+	AddComponent(\
+		/datum/component/ranged_attacks,\
+		projectile_type = projectiletype,\
+		projectile_sound = projectilesound,\
+		cooldown_time = ranged_cooldown,\
+	)
 
 /datum/ai_controller/basic_controller/trooper/shipwrecker
 	ai_movement = /datum/ai_movement/basic_avoidance
@@ -77,121 +92,6 @@
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
 		/datum/ai_planning_subtree/random_speech/shipwrecker,
 	)
-
-/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish/SelectBehaviors(datum/ai_controller/controller, delta_time)
-	var/mob/target = controller.blackboard[BB_BASIC_MOB_CURRENT_TARGET]
-	if(!target || QDELETED(target))
-		return
-	for(target in range(1, src))
-		return
-	return ..()
-
-/mob/living/basic/trooper/shipwrecker/Initialize(mapload)
-	if(prob(alt_weapon_chance_left))
-		l_hand = pick_weight(alt_weapons_left)
-	if(prob(alt_weapon_chance_right))
-		r_hand = pick_weight(alt_weapons_right)
-	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker, r_hand, l_hand)
-	. = ..()
-	AddComponent(\
-		/datum/component/ranged_attacks,\
-		projectile_type = projectiletype,\
-		projectile_sound = projectilesound,\
-		cooldown_time = ranged_cooldown,\
-	)
-
-/datum/ai_planning_subtree/random_speech/shipwrecker
-	speech_chance = 0.5
-	speak = list("Haven't needed sleep lately. Too wide awake.",
-	"I gotta get in a fight soon.",
-	"I'm all twitchy. Keep hearing things...",
-	"Is someone there?",
-	"Can't wait to kill some fools.",
-	"Just need a little more stim money...",
-	"Oh I'm ready. Ready to kill something.",
-	"Running low on stims...",
-	"Hope we get some action soon...",
-	"It's kicking in!",
-	"Area secure.",
-	"Can't stop my heart racing...",
-	"Anyone else hear that?",
-	"I feel so alive!",
-	"One last score. Just need one last score. Maybe a couple...",)
-	emote_see = list("twitches.", "scratches their neck.", "glances around.", "taps their foot.",)
-
-/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker
-	ranged_attack_behavior = /datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
-
-/datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
-	action_cooldown = 1.2 SECONDS
-	required_distance = 2
-	avoid_friendly_fire = TRUE
-
-/datum/outfit/shipwrecker
-	name = "Shipwrecker Scrapper"
-	head = /obj/item/clothing/head/helmet/shipwrecker
-	mask = /obj/item/clothing/mask/gas
-	uniform = /obj/item/clothing/under/syndicate/wrecker
-	suit = /obj/item/clothing/suit/armor/shipwrecker
-	gloves = /obj/item/clothing/gloves/color/black
-	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/tank/jetpack/jumppack
-
-/datum/outfit/shipwrecker/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 20,
-	/obj/item/reagent_containers/hypospray/medipen/military = 15,
-	/obj/item/tank/internals/emergency_oxygen/engi = 10,
-	/obj/effect/spawner/random/trash/garbage = 10,
-	/obj/item/lighter/greyscale = 5,
-	/obj/effect/spawner/random/entertainment/coin = 5,
-	/obj/item/stack/medical/bandage/makeshift = 5,
-	/obj/effect/spawner/random/entertainment/cigarette = 5,
-	/obj/item/stack/spacecash/c20 = 5,
-	/obj/item/knife/combat/survival = 5,
-	/obj/item/dice/d6 = 2,
-	/obj/item/reagent_containers/pill/happy = 2,
-	/obj/item/reagent_containers/pill/aranesp = 2,
-	/obj/item/match = 2,
-	/obj/item/stack/sheet/mineral/plasma/five = 2,
-	/obj/item/crowbar = 1,
-	/obj/item/boxcutter = 1,
-	/obj/item/knife/shiv = 1,
-	/obj/item/wirecutters = 1,
-	/obj/item/boxcutter = 1,
-	)
-	if(prob(50))
-		ears = /obj/item/radio/headset
-	if(prob(60))
-		glasses = pick_weight(
-		/obj/item/clothing/glasses/eyepatch = 45,
-		/obj/item/clothing/glasses/sunglasses = 25,
-		/obj/item/clothing/glasses/meson = 25,
-		/obj/item/clothing/glasses/night = 5,
-		)
-	if(prob(70))
-		l_pocket = pick_weight(pocket_loot)
-	if(prob(70))
-		r_pocket = pick_weight(pocket_loot)
-
-/obj/effect/mob_spawn/corpse/human/shipwrecker
-	name = "Shipwrecker Pirate"
-	outfit = /datum/outfit/shipwrecker
-
-/mob/living/basic/trooper/shipwrecker/space
-	unsuitable_atmos_damage = 0
-	minimum_survivable_temperature = 0
-	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/space
-
-/datum/outfit/shipwrecker/space
-	name = "Shipwrecker Pirate (Spacesuit)"
-	head = /obj/item/clothing/head/helmet/shipwrecker
-	mask = /obj/item/clothing/mask/gas
-	suit = /obj/item/clothing/suit/space/pirate
-	suit_store = /obj/item/tank/internals/oxygen/red
-
-/obj/effect/mob_spawn/corpse/human/shipwrecker/space
-	name = "Shipwrecker Pirate (Spacesuit)"
-	outfit = /datum/outfit/shipwrecker/space
 
 /mob/living/basic/trooper/shipwrecker/heavy
 	//slow melee troopers with a lot of hp, armour and damage
@@ -272,52 +172,13 @@
 	desc = "A member of the infamous Shipwrecker Gang. Officers maintain discipline and cohesion during attacks on enemy ships. This one is armed with a scrap revolver."
 	icon_state = "wrecker_officer"
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/officer
-	r_hand = /obj/item/chainsaw/anglegrinder
+	r_hand = /obj/item/gun/ballistic/revolver/junk
 	l_hand = null
-	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/officer, /obj/item/chainsaw/anglegrinder)
+	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/officer, /obj/item/gun/ballistic/revolver/junk)
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker/officer
 	name = "Shipwrecker Officer"
 	outfit = /datum/outfit/shipwrecker/officer
-
-/datum/outfit/shipwrecker/officer
-	name = "Shipwrecker Officer"
-	head = /obj/item/clothing/head/helmet/shipwrecker/officer
-	suit = /obj/item/clothing/suit/armor/shipwrecker/officer
-
-/datum/outfit/shipwrecker/officer/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 30,
-	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 10,
-	/obj/item/tank/internals/emergency_oxygen/engi = 10,
-	/obj/effect/spawner/random/trash/deluxe_garbage = 10,
-	/obj/effect/spawner/random/entertainment/coin = 5,
-	/obj/item/stack/medical/mesh/advanced = 5,
-	/obj/effect/spawner/random/entertainment/cigar = 5,
-	/obj/item/stack/spacecash/c100 = 5,
-	/obj/item/knife/combat/survival = 5,
-	/obj/item/dice/d12 = 2,
-	/obj/item/food/drug/moon_rock = 2,
-	/obj/item/reagent_containers/pill/aranesp = 2,
-	/obj/item/stack/medical/suture = 2,
-	/obj/effect/spawner/random/entertainment/cigar = 2,
-	/obj/item/crowbar = 2,
-	/obj/item/lighter = 1,
-	/obj/item/lighter/skull = 1,
-	/obj/item/reagent_containers/pill/zoom = 1,
-	/obj/item/spess_knife = 1,
-	)
-	if(prob(80))
-		glasses = pick_weight(
-		/obj/item/clothing/glasses/sunglasses = 40,
-		/obj/item/clothing/glasses/night = 25,
-		/obj/item/clothing/glasses/hud/health/sunglasses = 15,
-		/obj/item/clothing/glasses/eyepatch = 10,
-		/obj/item/clothing/glasses/meson/night = 10,
-		)
-	if(prob(90))
-		l_pocket = pick_weight(pocket_loot)
-	if(prob(90))
-		r_pocket = pick_weight(pocket_loot)
 
 /datum/action/cooldown/spell/conjure/shipwrecker_reinforcements
 	name = "Shipwrecker Reinforcements"

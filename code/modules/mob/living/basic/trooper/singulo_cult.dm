@@ -2,7 +2,8 @@
 //"Glarius tuet Singulo"
 
 //WHO ARE THEY:
-//NPCs who
+//Acolyte -
+//
 
 //WHAT DO THEY DO
 //
