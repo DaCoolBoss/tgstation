@@ -260,6 +260,11 @@
 	requires_power = TRUE
 	area_limited_icon_smoothing = /area/shuttle/ruin/cyborg_mothership
 
+// Scrapmaker // The Shipwrecker's attack shuttle
+/area/shuttle/ruin/scrapmaker
+	name = "Scrapmaker Prime"
+	requires_power = TRUE
+
 // ----------- Arena Shuttle
 /area/shuttle/shuttle_arena
 	name = "arena"

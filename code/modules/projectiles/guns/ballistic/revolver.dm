@@ -180,6 +180,7 @@
 	name = "scrap revolver"
 	desc = "A revolving 5-chamber handgun designed to shoot junk and scrap rounds."
 	icon_state = "junk_revolver"
+	fire_sound = 'sound/items/weapons/gun/general/heavy_shot_suppressed.ogg'
 	projectile_damage_multiplier = 1.2
 	projectile_wound_bonus = 5
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/cylinder/scrap

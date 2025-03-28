@@ -1,8 +1,5 @@
 /datum/outfit/shipwrecker
 	name = "Shipwrecker Scrapper"
-	desc = "A set of light armour for a low-ranking member of the Shipwrecker gang. \
-	Has a back-mounted jump pack for zero-grav combat, and a mask for internals. \
-	Scrappers sometimes have random augments and useful items in their pockets."
 	head = /obj/item/clothing/head/helmet/shipwrecker
 	mask = /obj/item/clothing/mask/gas
 	uniform = /obj/item/clothing/under/syndicate/wrecker
@@ -63,26 +60,36 @@
 		var/obj/item/organ/stomach/cybernetic/newgut = new()
 		newgut.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
 	if(prob(20))
-		var/obj/item/organ/stomach/cybernetic/newgut = new()
-		newgut.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
+		var/obj/item/organ/lungs/cybernetic/newlungs = new()
+		newlungs.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
 	if(prob(5))
 		var/obj/item/organ/tongue/robot/newtongue = new()
 		newtongue.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
-
-	/obj/item/bodypart/leg/left/robot
-
+	if(prob(15))
+		var/obj/item/bodypart/leg/right/robot/newrightleg = new()
+		newrightleg.try_attach_limb(scrapper)
+	if(prob(15))
+		var/obj/item/bodypart/leg/right/robot/newleftleg = new()
+		newleftleg.try_attach_limb(scrapper)
+	if(prob(15))
+		var/obj/item/bodypart/arm/right/robot/newrightarm = new()
+		newrightarm.try_attach_limb(scrapper)
+	if(prob(15))
+		var/obj/item/bodypart/arm/right/robot/newleftarm = new()
+		newleftarm.try_attach_limb(scrapper)
 
 /datum/outfit/shipwrecker/looter
 	name = "Shipwrecker Scrapper (extra loot)"
-	desc = "This "
 	belt = /obj/item/storage/belt/military
 
 /datum/outfit/shipwrecker/looter/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
 	. = ..()
-	for(var/counter to rand(5))
+	for(var/counter in 1 to rand(1,5))
 		belt_contents += pick_weight(list(
-			/obj/item/stack/sheet/iron/ten = 20,
-			/obj/item/stack/sheet/mineral/plasma/five = 20,
+			/obj/item/stack/sheet/iron/ten = 10,
+			/obj/item/stack/sheet/iron/five = 10,
+			/obj/item/stack/sheet/mineral/plasma/five = 10,
+			/obj/item/stack/sheet/mineral/plasma = 10,
 			/obj/effect/spawner/random/food_or_drink/donkpockets_single = 20,
 			/obj/item/weldingtool/hugetank = 10,
 			/obj/item/grenade/frag = 10,
@@ -98,6 +105,26 @@
 /datum/outfit/shipwrecker/badass
 	name = "Shipwrecker Scrapper (extra augments, better loot)"
 
+/datum/outfit/shipwrecker/badass/post_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+	. = ..()
+	if(prob(20))
+		var/obj/item/organ/heart/cybernetic/tier2/newheart = new()
+		newheart.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
+	if(prob(30))
+		var/obj/item/organ/cyberimp/eyes/hud/diagnostic/newvision = new()
+		newvision.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
+	if(prob(15))
+		var/obj/item/organ/eyes/robotic/shield/neweyes = new()
+		neweyes.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
+	if(prob(20))
+		var/obj/item/organ/stomach/cybernetic/tier2/newgut = new()
+		newgut.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
+	if(prob(20))
+		var/obj/item/organ/stomach/cybernetic/newgut = new()
+		newgut.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
+	if(prob(5))
+		var/obj/item/organ/tongue/robot/newtongue = new()
+		newtongue.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker
 	name = "Shipwrecker Pirate"

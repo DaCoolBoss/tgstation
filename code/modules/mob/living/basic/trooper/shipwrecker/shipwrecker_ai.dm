@@ -57,18 +57,21 @@
 	"No visual on hostiles.",
 	"Need to slaughter. Can't hold it back.",
 	"One more score...",)
-	emote_see = list("twitches.", "growls.", "glances around.", "shakes their shoulders.",)
+	emote_see = list("twitches.", "growls.", "glances around.", "shrugs their shoulders.",)
 
 
 /datum/ai_planning_subtree/random_speech/shipwrecker/officer
 	speak = list("Is something out there?",
 	"Keep the scrap flowing.",
+	"More blood. More loot.",
 	"Troops, stay alert.",
 	"Eyes out, troops.",
 	"Loose formation.",
 	"Loaded.",
-	"These new stims are .",
 	"These Spinward locals are weak.",
-	"Need to slaughter. Can't hold it back.",
+	"Hey, you hear that?",
+	"I want to kill the next one myself.",
+	"Could be targets anywhere.",
+	"Nearing the end of my stim ration...",
 	"One more score...",)
-	emote_see = list("twitches.", "growls.", "glances around.", "shakes their shoulders.",)
+	emote_see = list("twitches.", "fiddles with their sleeve.", "glances around.", "taps their foot.",)

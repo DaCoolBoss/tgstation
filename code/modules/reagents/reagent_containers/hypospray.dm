@@ -292,6 +292,10 @@
 	desc = "An autoinjecting hypopen labelled '8752b', an experimental chemical cocktail designed to keep injured soldiers on their feet. Commonplace among private military groups and space pirates."
 	icon_state = "milstim"
 	base_icon_state = "milstim"
+	//chance (percentage) of having description hinting at knockoff status
+	var/counterfeit_indicator = 10 //10% false positive rate
+	//chance (percentage) of having nonstandard reagents
+	var/reagent_taint_chance = FALSE
 	volume = 40
 	amount_per_transfer_from_this = 40
 	list_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
@@ -299,18 +303,32 @@
 		/datum/reagent/medicine/c2/syriniver = 6,
 		/datum/reagent/medicine/c2/helbital = 4,
 		/datum/reagent/medicine/c2/convermol = 4,
-		/datum/reagent/medicine/mine_salve = 4,
+		/datum/reagent/medicine/modafinil = 4,
 		/datum/reagent/medicine/synaptizine = 4,
 		/datum/reagent/medicine/coagulant = 2,
 		/datum/reagent/medicine/atropine = 2,
 		)
 
 /obj/item/reagent_containers/hypospray/medipen/military/Initialize(mapload)
-	if(prob(10))
-		desc += pick(" The ")
+	var/weak_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
+		/datum/reagent/drug/nicotine = 6,
+		/datum/reagent/medicine/c2/multiver = 6,
+		/datum/reagent/medicine/c2/helbital = 4,
+		/datum/reagent/medicine/c2/convermol = 4,
+		/datum/reagent/medicine/mine_salve = 4,
+		/datum/reagent/medicine/synaptizine = 4,
+		/datum/reagent/medicine/coagulant = 2,
+		/datum/reagent/medicine/atropine = 2,
+		)
+	if(prob(counterfeit_indicator))
+		desc += pick(" The anti-tamper light is on.", " The hyponeedle is dull.", " There are traces of rust at the parting line."," Its internal cylinder is loose.",)
+	if(prob(reagent_taint_chance))
+
 	. = ..()
 
 /obj/item/reagent_containers/hypospray/medipen/military/knockoff
+	counterfeit_indicator = 65
+	reagent_taint_chance = 40
 
 /obj/item/reagent_containers/hypospray/medipen/military/knockoff/Initialize(mapload)
 	var/weak_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,

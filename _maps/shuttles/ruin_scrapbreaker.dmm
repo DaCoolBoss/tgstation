@@ -1,0 +1,1878 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ag" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/obj/structure/closet/crate/preopen,
+/obj/item/stock_parts/power_store/cell/crap/empty{
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/obj/item/stock_parts/scanning_module/phasic{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/servo/femto,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"ai" = (
+/obj/structure/rack,
+/turf/open/floor/iron/smooth_corner,
+/area/shuttle/ruin/scrapmaker)
+"an" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/power/port_gen/pacman/super,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"aY" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon/burgundy,
+/turf/template_noop,
+/area/shuttle/ruin/scrapmaker)
+"bn" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-29"
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 10
+	},
+/obj/item/stock_parts/servo/femto,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"bE" = (
+/turf/closed/wall/mineral/titanium/survival,
+/area/shuttle/ruin/scrapmaker)
+"bN" = (
+/obj/structure/rack,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"bP" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-23"
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 6
+	},
+/obj/item/stock_parts/scanning_module/triphasic,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"cm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"cK" = (
+/obj/structure/cable,
+/obj/machinery/computer/shuttle/white_ship/ruin{
+	dir = 4
+	},
+/turf/open/floor/carpet/green,
+/area/shuttle/ruin/scrapmaker)
+"dg" = (
+/obj/structure/table/reinforced,
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"dv" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"dL" = (
+/obj/structure/reflector/box/anchored{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/ruin/scrapmaker)
+"dT" = (
+/obj/machinery/atmospherics/components/tank/air,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"ef" = (
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"eg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"es" = (
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/obj/machinery/status_display/shuttle{
+	pixel_y = 32
+	},
+/obj/item/stock_parts/power_store/cell/hyper,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"ez" = (
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"eJ" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"eM" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-157"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
+/area/shuttle/ruin/scrapmaker)
+"fa" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"fg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/smes/ship,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"fP" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-29"
+	},
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = 32
+	},
+/obj/machinery/cell_charger,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"gt" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/mob/living/basic/bot/dedbot{
+	name = "\improper Slashsky";
+	desc = "A DEDbot with menacing blades spinning on top. He looks less than pleased..."
+	},
+/turf/open/floor/iron/smooth_edge{
+	dir = 8
+	},
+/area/shuttle/ruin/scrapmaker)
+"gx" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_corner{
+	dir = 4
+	},
+/area/shuttle/ruin/scrapmaker)
+"hk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/carpet/green,
+/area/shuttle/ruin/scrapmaker)
+"ig" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"im" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"iS" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"jk" = (
+/obj/structure/table/reinforced,
+/obj/machinery/recharger,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"jI" = (
+/obj/structure/table/reinforced,
+/obj/item/stock_parts/power_store/cell/bluespace/empty{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/stock_parts/power_store/cell/bluespace/empty{
+	pixel_x = -4;
+	pixel_y = 1
+	},
+/obj/item/stock_parts/power_store/cell/high/empty{
+	pixel_x = -6;
+	pixel_y = -4
+	},
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker{
+	pixel_x = 10
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"jP" = (
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"kb" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/item/paper/fluff/awaymissions/piratefleet,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"kr" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-flat-3"
+	},
+/turf/template_noop,
+/area/template_noop)
+"lg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/port_gen/pacman/pre_loaded,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"li" = (
+/obj/structure/reflector/single/anchored{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/shuttle/ruin/scrapmaker)
+"lT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/item/clothing/glasses/welding,
+/obj/item/weldingtool/largetank,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"me" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-flat-1"
+	},
+/turf/template_noop,
+/area/template_noop)
+"mk" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_corner{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"mI" = (
+/obj/machinery/portable_atmospherics/canister,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"mX" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-111"
+	},
+/obj/structure/closet/crate/preopen,
+/turf/open/floor/iron/smooth_corner{
+	dir = 4
+	},
+/area/shuttle/ruin/scrapmaker)
+"nG" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"nW" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/office,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"oa" = (
+/obj/structure/table/reinforced,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker,
+/obj/item/claymore/cutlass/old,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"oB" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_edge{
+	dir = 4
+	},
+/area/shuttle/ruin/scrapmaker)
+"oF" = (
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"oQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/mob/living/basic/bot/dedbot{
+	name = "\improper Stabsky";
+	desc = "A DEDbot with menacing blades spinning on top. He looks less than pleased..."
+	},
+/turf/open/floor/iron/smooth,
+/area/shuttle/ruin/scrapmaker)
+"oR" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-255"
+	},
+/obj/structure/table/reinforced,
+/obj/item/extinguisher/mini{
+	pixel_y = 11;
+	pixel_x = 7
+	},
+/obj/item/dice/d10{
+	pixel_y = 1;
+	pixel_x = -7
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"ph" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"pp" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"pr" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 6
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"pW" = (
+/mob/living/basic/trooper/shipwrecker/officer,
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/turf/open/floor/carpet/green,
+/area/shuttle/ruin/scrapmaker)
+"qs" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-2"
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"qB" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-111"
+	},
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 9;
+	pixel_x = 4
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = -1;
+	pixel_x = -1
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"qC" = (
+/mob/living/basic/trooper/shipwrecker/heavy,
+/obj/structure/cable,
+/obj/machinery/status_display/shuttle{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"rD" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 5
+	},
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"rI" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker/whiteship/ruin{
+	dir = 4
+	},
+/turf/open/floor/carpet/green,
+/area/shuttle/ruin/scrapmaker)
+"rS" = (
+/obj/structure/lattice,
+/obj/structure/grille,
+/turf/template_noop,
+/area/shuttle/ruin/scrapmaker)
+"si" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"tA" = (
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/crayon/x{
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/shuttle/ruin/scrapmaker)
+"tB" = (
+/obj/structure/lattice,
+/obj/structure/lattice,
+/obj/structure/grille,
+/turf/template_noop,
+/area/shuttle/ruin/scrapmaker)
+"tQ" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-8"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth,
+/area/shuttle/ruin/scrapmaker)
+"tT" = (
+/obj/structure/reflector/single/anchored{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/shuttle/ruin/scrapmaker)
+"ug" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-flat-3"
+	},
+/obj/item/food/grown/citrus/lime{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/food/chips{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/item/food/grown/citrus/orange{
+	pixel_y = 6
+	},
+/obj/item/food/grown/citrus/lime{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/obj/item/food/chips{
+	pixel_x = 8
+	},
+/obj/structure/closet/crate/cardboard,
+/turf/open/floor/iron/smooth_corner,
+/area/shuttle/ruin/scrapmaker)
+"uk" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 9
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"ul" = (
+/obj/structure/chair/office{
+	dir = 1
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"uq" = (
+/obj/machinery/door/airlock/grunge,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"uu" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"uz" = (
+/obj/structure/rack,
+/turf/open/floor/iron/smooth_corner{
+	dir = 4
+	},
+/area/shuttle/ruin/scrapmaker)
+"uO" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon/lime,
+/turf/template_noop,
+/area/shuttle/ruin/scrapmaker)
+"uT" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/structure/chair/office,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"vd" = (
+/mob/living/basic/trooper/shipwrecker/boss,
+/turf/open/floor/carpet/green,
+/area/shuttle/ruin/scrapmaker)
+"vi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"vt" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"vy" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"vD" = (
+/obj/structure/reflector/single/anchored{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/crayon{
+	name = "graffiti";
+	icon_state = "skull";
+	pixel_x = -32
+	},
+/turf/open/floor/plating,
+/area/shuttle/ruin/scrapmaker)
+"vR" = (
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"wz" = (
+/obj/structure/table/reinforced,
+/obj/item/plate,
+/obj/item/food/burger/big_blue{
+	pixel_y = 5
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"wD" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"xa" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/electrical,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"xd" = (
+/obj/machinery/status_display/shuttle{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"xj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"xG" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_corner{
+	dir = 8
+	},
+/area/shuttle/ruin/scrapmaker)
+"yi" = (
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"yD" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium/survival,
+/area/shuttle/ruin/scrapmaker)
+"yW" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"zo" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-23"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"zv" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"zC" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"zD" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"Ad" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-8"
+	},
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/mineral/uranium{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/item/stack/sheet/iron/five{
+	pixel_y = 7;
+	pixel_x = 5
+	},
+/obj/item/stack/sheet/mineral/plasma/five{
+	pixel_y = -3
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"Ag" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/backpack{
+	pixel_y = 10;
+	pixel_x = 3
+	},
+/obj/item/clothing/head/helmet/skull{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"An" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-flat-1"
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"AM" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"AW" = (
+/obj/machinery/door/airlock/hatch,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"CA" = (
+/obj/structure/cable,
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"CI" = (
+/obj/structure/cable,
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_corner{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"CW" = (
+/obj/structure/barricade/sandbags,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
+/area/shuttle/ruin/scrapmaker)
+"CX" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"CZ" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"DI" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/obj/machinery/door/poddoor,
+/obj/machinery/door/poddoor,
+/turf/open/floor/plating,
+/area/shuttle/ruin/scrapmaker)
+"DY" = (
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"Es" = (
+/obj/machinery/status_display/shuttle{
+	pixel_y = 32
+	},
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"Fv" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"GD" = (
+/obj/machinery/door/airlock/hatch,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"GF" = (
+/obj/machinery/door/airlock/hatch,
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"Hf" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_edge{
+	dir = 4
+	},
+/area/shuttle/ruin/scrapmaker)
+"HR" = (
+/obj/machinery/door/airlock/grunge,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"HS" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"HT" = (
+/obj/structure/table/reinforced,
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
+	},
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"Ie" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 5
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"Iu" = (
+/obj/structure/chair/comfy/shuttle,
+/mob/living/basic/trooper/shipwrecker,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"IQ" = (
+/obj/effect/turf_decal/siding/dark,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"IR" = (
+/obj/machinery/status_display/shuttle{
+	pixel_y = 32
+	},
+/obj/machinery/portable_atmospherics/pump,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"Jv" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"JX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/space_heater,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"KB" = (
+/obj/structure/cable,
+/obj/structure/rack,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/item/clothing/mask/gas{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/clothing/mask/gas,
+/obj/item/clothing/mask/gas{
+	pixel_y = -6;
+	pixel_x = -5
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"KQ" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/machinery/space_heater,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"Lb" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/obj/item/storage/backpack/satchel{
+	pixel_y = 6;
+	pixel_x = 4
+	},
+/obj/item/clothing/suit/armor/shipwrecker,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"Lh" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/effect/turf_decal/siding/dark,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"Lk" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"LD" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"LG" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"Mn" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/status_display/shuttle{
+	pixel_y = 32
+	},
+/obj/item/clothing/head/helmet/shipwrecker/heavy{
+	pixel_x = -11;
+	pixel_y = 5
+	},
+/obj/item/crowbar,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"Mp" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"Mr" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"Mu" = (
+/obj/machinery/door/airlock/grunge,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"Mw" = (
+/obj/effect/turf_decal/siding/dark,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"MH" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"MT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"MU" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-2"
+	},
+/obj/structure/chair/comfy/shuttle,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"Nj" = (
+/obj/structure/chair/office,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"Ns" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"Ny" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"NH" = (
+/mob/living/basic/trooper/shipwrecker/officer,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/item/food/grown/bungopit{
+	pixel_y = 16;
+	pixel_x = 11
+	},
+/obj/item/trash/boritos/green{
+	pixel_y = 11;
+	pixel_x = 4
+	},
+/turf/open/floor/iron/smooth_edge{
+	dir = 8
+	},
+/area/shuttle/ruin/scrapmaker)
+"NU" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth,
+/area/shuttle/ruin/scrapmaker)
+"Pj" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 9
+	},
+/obj/structure/table/reinforced,
+/obj/item/stock_parts/power_store/cell/bluespace,
+/obj/machinery/cell_charger,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"PB" = (
+/turf/open/floor/carpet/green,
+/area/shuttle/ruin/scrapmaker)
+"Qn" = (
+/obj/machinery/door/airlock/hatch,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"QC" = (
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"QF" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-23"
+	},
+/obj/structure/closet/crate/bin,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"QS" = (
+/obj/structure/lattice,
+/turf/template_noop,
+/area/shuttle/ruin/scrapmaker)
+"Rh" = (
+/obj/structure/grille,
+/turf/template_noop,
+/area/shuttle/ruin/scrapmaker)
+"Rk" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/machinery/status_display/shuttle{
+	pixel_y = 32
+	},
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"Ro" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-flat-3"
+	},
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/iron/smooth_corner{
+	dir = 8
+	},
+/area/shuttle/ruin/scrapmaker)
+"Rs" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-29"
+	},
+/obj/effect/turf_decal/siding/dark,
+/obj/item/stock_parts/micro_laser/high{
+	pixel_y = 4;
+	pixel_x = -9
+	},
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"Ry" = (
+/turf/template_noop,
+/area/shuttle/ruin/scrapmaker)
+"RQ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_edge{
+	dir = 4
+	},
+/area/shuttle/ruin/scrapmaker)
+"Sx" = (
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"SH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"TN" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"TZ" = (
+/obj/machinery/door/airlock/grunge,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-255"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"Uj" = (
+/obj/structure/cable,
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/turf/open/floor/iron/smooth_corner{
+	dir = 8
+	},
+/area/shuttle/ruin/scrapmaker)
+"Uv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/port_gen/pacman/pre_loaded,
+/obj/structure/cable,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"UA" = (
+/mob/living/basic/trooper/shipwrecker/heavy,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"UD" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"UJ" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/structure/chair/office,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"UK" = (
+/obj/machinery/power/emitter/welded{
+	dir = 8;
+	anchored = 1;
+	active = 1;
+	welded = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/shuttle/ruin/scrapmaker)
+"UY" = (
+/obj/effect/spawner/structure/window/survival_pod,
+/obj/machinery/door/poddoor,
+/turf/open/floor/plating,
+/area/shuttle/ruin/scrapmaker)
+"Vk" = (
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"Vl" = (
+/obj/machinery/door/airlock/hatch,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"VA" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"Wg" = (
+/obj/structure/cable,
+/obj/structure/chair/comfy/carp{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/carpet/green,
+/area/shuttle/ruin/scrapmaker)
+"Wu" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/structure/cable,
+/mob/living/basic/trooper/shipwrecker/heavy,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"WT" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"Xx" = (
+/mob/living/basic/trooper/shipwrecker,
+/obj/effect/turf_decal/siding/dark{
+	dir = 10
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/grimy,
+/area/shuttle/ruin/scrapmaker)
+"XG" = (
+/obj/machinery/door/airlock/grunge,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_large,
+/area/shuttle/ruin/scrapmaker)
+"XK" = (
+/obj/structure/cable,
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/structure/closet/mini_fridge,
+/turf/open/floor/iron/dark,
+/area/shuttle/ruin/scrapmaker)
+"Yq" = (
+/obj/structure/cable,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"YB" = (
+/turf/template_noop,
+/area/template_noop)
+"YK" = (
+/obj/structure/chair/comfy/shuttle,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/turf/open/floor/iron/smooth_corner,
+/area/shuttle/ruin/scrapmaker)
+"YL" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/turf/open/floor/catwalk_floor,
+/area/shuttle/ruin/scrapmaker)
+"Zq" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_corner{
+	dir = 1
+	},
+/area/shuttle/ruin/scrapmaker)
+"Zu" = (
+/obj/structure/cable,
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"ZD" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/ash{
+	pixel_y = -4;
+	pixel_x = 5
+	},
+/obj/machinery/status_display/shuttle{
+	pixel_y = -32
+	},
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+"ZU" = (
+/obj/machinery/power/shieldwallgen/anchored,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"ZY" = (
+/obj/structure/table/reinforced,
+/obj/item/coin/iron{
+	pixel_y = 7;
+	pixel_x = 2
+	},
+/obj/item/clothing/mask/gas,
+/turf/open/floor/pod/light,
+/area/shuttle/ruin/scrapmaker)
+
+(1,1,1) = {"
+YB
+YB
+YB
+YB
+aY
+YB
+YB
+YB
+YB
+YB
+YB
+YB
+YB
+YB
+aY
+YB
+YB
+YB
+YB
+"}
+(2,1,1) = {"
+YB
+aY
+YB
+QS
+QS
+QS
+Rh
+Rh
+Rh
+Rh
+Rh
+Rh
+Rh
+QS
+QS
+QS
+YB
+aY
+YB
+"}
+(3,1,1) = {"
+YB
+rS
+rS
+tB
+bE
+bE
+bE
+YB
+YB
+YB
+YB
+YB
+bE
+bE
+bE
+rS
+tB
+tB
+YB
+"}
+(4,1,1) = {"
+YB
+tB
+YB
+kr
+bE
+ZU
+UY
+UY
+UY
+UY
+UY
+UY
+UY
+ZU
+bE
+YB
+YB
+tB
+YB
+"}
+(5,1,1) = {"
+YB
+bE
+bE
+DI
+bE
+Vl
+bE
+jI
+PB
+vd
+rI
+wz
+bE
+Vl
+bE
+UY
+bE
+bE
+YB
+"}
+(6,1,1) = {"
+YB
+bE
+tT
+dL
+li
+oF
+bE
+es
+pW
+PB
+pW
+HT
+bE
+oF
+tT
+dL
+vD
+bE
+YB
+"}
+(7,1,1) = {"
+YB
+bE
+UK
+UK
+UK
+oF
+bE
+ai
+PB
+PB
+PB
+uz
+bE
+oF
+UK
+UK
+UK
+bE
+YB
+"}
+(8,1,1) = {"
+YB
+bE
+xd
+nG
+nG
+nG
+GD
+Vk
+PB
+cK
+PB
+ez
+GD
+nG
+nG
+nG
+jP
+bE
+YB
+"}
+(9,1,1) = {"
+YB
+bE
+bE
+bE
+bE
+Qn
+bE
+Es
+hk
+Wg
+hk
+DY
+bE
+Qn
+bE
+bE
+bE
+bE
+YB
+"}
+(10,1,1) = {"
+aY
+YB
+bE
+Pj
+uT
+Xx
+Mu
+xG
+Hf
+RQ
+Hf
+mk
+Mu
+uk
+AM
+bn
+bE
+YB
+aY
+"}
+(11,1,1) = {"
+rS
+QS
+bE
+Mn
+ul
+Lh
+bE
+bE
+oa
+jk
+wD
+bE
+bE
+ph
+ef
+Rs
+bE
+QS
+rS
+"}
+(12,1,1) = {"
+rS
+YB
+UY
+kb
+Lk
+IQ
+KB
+bE
+UY
+UY
+UY
+bE
+yW
+Wu
+LG
+Mw
+UY
+YB
+rS
+"}
+(13,1,1) = {"
+rS
+YB
+UY
+HS
+ef
+QC
+XK
+bE
+ug
+NH
+mX
+bE
+qC
+HS
+CZ
+pp
+UY
+YB
+rS
+"}
+(14,1,1) = {"
+rS
+YB
+UY
+uu
+ef
+QC
+ig
+bE
+UD
+CW
+qs
+bE
+ig
+HS
+Nj
+pp
+UY
+YB
+rS
+"}
+(15,1,1) = {"
+rS
+QS
+bE
+rD
+UJ
+pr
+dv
+uq
+fa
+oQ
+im
+uq
+ig
+Ie
+KQ
+bP
+bE
+QS
+rS
+"}
+(16,1,1) = {"
+QS
+YB
+bE
+bE
+si
+Ag
+VA
+bE
+CA
+NU
+Zu
+bE
+Lb
+TN
+bN
+bE
+bE
+me
+QS
+"}
+(17,1,1) = {"
+YB
+QS
+YB
+bE
+bE
+bE
+bE
+bE
+Uj
+Hf
+CI
+bE
+bE
+bE
+bE
+bE
+YB
+QS
+YB
+"}
+(18,1,1) = {"
+YB
+rS
+QS
+bE
+lT
+xa
+Ad
+bE
+bE
+Mu
+bE
+bE
+ZY
+dg
+oR
+bE
+QS
+rS
+YB
+"}
+(19,1,1) = {"
+YB
+rS
+YB
+UY
+nW
+UA
+ZD
+bE
+YK
+gt
+gx
+bE
+IR
+MH
+mI
+UY
+YB
+rS
+YB
+"}
+(20,1,1) = {"
+YB
+rS
+YB
+UY
+iS
+CX
+Sx
+bE
+MU
+eM
+LD
+bE
+Ny
+Fv
+WT
+UY
+YB
+rS
+YB
+"}
+(21,1,1) = {"
+YB
+rS
+kr
+UY
+ag
+vy
+vy
+HR
+fa
+tQ
+cm
+TZ
+zo
+eg
+yi
+UY
+YB
+rS
+YB
+"}
+(22,1,1) = {"
+YB
+rS
+QS
+bE
+fP
+Yq
+QF
+bE
+Iu
+NU
+Jv
+bE
+qB
+vi
+JX
+bE
+QS
+rS
+YB
+"}
+(23,1,1) = {"
+YB
+QS
+YB
+bE
+bE
+GF
+bE
+bE
+Rk
+NU
+zC
+bE
+bE
+AW
+bE
+bE
+YB
+QS
+YB
+"}
+(24,1,1) = {"
+YB
+YB
+QS
+YB
+bE
+vR
+fg
+bE
+eJ
+NU
+zD
+bE
+dT
+MT
+bE
+YB
+QS
+YB
+YB
+"}
+(25,1,1) = {"
+YB
+YB
+rS
+QS
+bE
+xj
+Mr
+bE
+eJ
+NU
+An
+bE
+Mp
+zv
+bE
+QS
+rS
+YB
+YB
+"}
+(26,1,1) = {"
+YB
+YB
+rS
+YB
+bE
+xj
+an
+bE
+eJ
+NU
+zD
+bE
+Ns
+oF
+bE
+YB
+rS
+YB
+YB
+"}
+(27,1,1) = {"
+YB
+YB
+rS
+YB
+bE
+Uv
+lg
+bE
+Ro
+oB
+Zq
+bE
+SH
+vt
+bE
+me
+rS
+YB
+YB
+"}
+(28,1,1) = {"
+YB
+YB
+rS
+QS
+bE
+bE
+bE
+bE
+bE
+XG
+bE
+bE
+bE
+bE
+bE
+QS
+rS
+YB
+YB
+"}
+(29,1,1) = {"
+YB
+YB
+uO
+YB
+bE
+yD
+bE
+yD
+bE
+tA
+bE
+bE
+yD
+bE
+yD
+YB
+uO
+YB
+YB
+"}
+(30,1,1) = {"
+YB
+YB
+YB
+YB
+Ry
+Ry
+Ry
+Ry
+bE
+YL
+bE
+Ry
+Ry
+Ry
+Ry
+YB
+YB
+YB
+YB
+"}
