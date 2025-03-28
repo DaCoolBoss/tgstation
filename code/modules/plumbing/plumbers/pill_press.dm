@@ -173,9 +173,9 @@
 
 			//decode container & its category
 			packaging_type = locate(container)
-			if(ispath(packaging_type, /obj/item/reagent_containers/applicator/patch))
+			if(ispath(packaging_type, /obj/item/reagent_containers/pill/patch))
 				packaging_category = CAT_PATCHES
-			else if(ispath(packaging_type, /obj/item/reagent_containers/applicator/pill))
+			else if(ispath(packaging_type, /obj/item/reagent_containers/pill))
 				packaging_category = CAT_PILLS
 			else
 				packaging_category = "Bottles"

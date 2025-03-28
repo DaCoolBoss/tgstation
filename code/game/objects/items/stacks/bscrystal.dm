@@ -101,6 +101,3 @@
 			to_chat(user, span_notice("You break off a crystal."))
 	else
 		..()
-
-/obj/item/stack/sheet/bluespace_crystal/fifty
-	amount = 50
