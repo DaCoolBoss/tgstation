@@ -70,7 +70,6 @@
 		BB_AGGRO_RANGE = 7,
 		BB_TARGET_MINIMUM_STAT = HARD_CRIT,
 	)
-
 	ai_movement = /datum/ai_movement/basic_avoidance
 	idle_behavior = /datum/idle_behavior/idle_random_walk
 	planning_subtrees = list(
@@ -78,6 +77,10 @@
 		/datum/ai_planning_subtree/simple_find_target,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
 	)
+
+/mob/living/basic/pet/dog/bullterrier/guarddog/shipwrecker
+	faction = list(FACTION_HOSTILE)
+	gold_core_spawnable = HOSTILE_SPAWN
 
 /mob/living/basic/pet/dog/breaddog //Most of the code originates from Cak
 	name = "Kobun"

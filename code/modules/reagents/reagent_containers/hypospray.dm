@@ -310,27 +310,38 @@
 		)
 
 /obj/item/reagent_containers/hypospray/medipen/military/Initialize(mapload)
-	var/weak_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
-		/datum/reagent/drug/nicotine = 6,
-		/datum/reagent/medicine/c2/multiver = 6,
-		/datum/reagent/medicine/c2/helbital = 4,
-		/datum/reagent/medicine/c2/convermol = 4,
-		/datum/reagent/medicine/mine_salve = 4,
-		/datum/reagent/medicine/synaptizine = 4,
-		/datum/reagent/medicine/coagulant = 2,
-		/datum/reagent/medicine/atropine = 2,
+	var/list/stimulants = list(/datum/reagent/medicine/muscle_stimulant = 70,
+		/datum/reagent/drug/nicotine = 9,
+		/datum/reagent/medicine/atropine = 9,
+		/datum/reagent/drug/methamphetamine = 5,
+		/datum/reagent/medicine/changelinghaste = 2,
+		/datum/reagent/medicine/changelingadrenaline = 2,
+		/datum/reagent/medicine/stimulants = 1,
+		/datum/reagent/drug/bath_salts = 1,
+		/datum/reagent/drug/kronkaine/gore = 1,
 		)
+	var/primary_healer = list(/datum/reagent/medicine/c2/helbital = 60,
+		/datum/reagent/medicine/c2/probital = 10,
+		/datum/reagent/consumable/nutriment/vitamin = 2,
+	)
+	var/secondary_healer = list(/datum/reagent/medicine/c2/helbital = 60,
+	)
 	if(prob(counterfeit_indicator))
-		desc += pick(" The anti-tamper light is on.", " The hyponeedle is dull.", " There are traces of rust at the parting line."," Its internal cylinder is loose.",)
+		desc += pick(" The anti-tamper light is blinking.", " The hyponeedle is dull.", " There are traces of rust on it."," Its internal cylinder is loose.",)
 	if(prob(reagent_taint_chance))
+		list_reagents = (pick_weight(list/stimulants) = 8,)
 
 	. = ..()
 
-/obj/item/reagent_containers/hypospray/medipen/military/knockoff
+/obj/item/reagent_containers/hypospray/medipen/military/unreliable
 	counterfeit_indicator = 65
 	reagent_taint_chance = 40
 
-/obj/item/reagent_containers/hypospray/medipen/military/knockoff/Initialize(mapload)
+/obj/item/reagent_containers/hypospray/medipen/military/very_unreliable
+	counterfeit_indicator = 90
+	reagent_taint_chance = 75
+
+/obj/item/reagent_containers/hypospray/medipen/military/unreliable/Initialize(mapload)
 	var/weak_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
 		/datum/reagent/drug/nicotine = 6,
 		/datum/reagent/medicine/c2/multiver = 6,

@@ -38,7 +38,7 @@
 	armor_flag = ENERGY
 	damage = 15
 	range = 6
-	dismemberment = 15
+	dismemberment = 20
 	mine_range = 2
 	catastropic_dismemberment = TRUE
 	wound_bonus = 30

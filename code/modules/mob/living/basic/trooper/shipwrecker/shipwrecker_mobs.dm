@@ -46,7 +46,7 @@
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
 	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
 	//chance we use an alternate weapon in left hand (percentage)
-	var/alt_weapon_chance_left = 45
+	var/alt_weapon_chance_left = 35
 	//list of alt weapons for left hand
 	var/list/alt_weapons_left = list(/obj/item/crowbar/hammer = 25,
 		/obj/item/lead_pipe = 10,
@@ -58,8 +58,10 @@
 	var/list/alt_weapons_right = list(/obj/item/gun/energy/plasmacutter/pirate = 100,)
 	//chance we use an alternate loadout (percentage)
 	var/alt_outfit_chance = 10
-
-	var/list/alt_outfits = list(,)
+	//list of alt mob spawners (ie outfits) mob and corpse will both wear
+	var/list/alt_outfits = list(/datum/outfit/shipwrecker/badass = 50,
+	/datum/outfit/shipwrecker/looter = 40,
+	/datum/outfit/shipwrecker/space = 10,)
 	/// Type of bullet we use
 	var/projectiletype = /obj/projectile/plasma/pirate
 	/// Sound to play when firing weapon
@@ -72,6 +74,8 @@
 		l_hand = pick_weight(alt_weapons_left)
 	if(prob(alt_weapon_chance_right))
 		r_hand = pick_weight(alt_weapons_right)
+	if(prob(alt_outfits))
+		mob_spawner = pick_weight(alt_outfits)
 	loot = list(mob_spawner, r_hand, l_hand)
 	. = ..()
 	AddComponent(\
@@ -79,18 +83,6 @@
 		projectile_type = projectiletype,\
 		projectile_sound = projectilesound,\
 		cooldown_time = ranged_cooldown,\
-	)
-
-/datum/ai_controller/basic_controller/trooper/shipwrecker
-	ai_movement = /datum/ai_movement/basic_avoidance
-	idle_behavior = /datum/idle_behavior/idle_random_walk
-	planning_subtrees = list(
-		/datum/ai_planning_subtree/simple_find_target,
-		/datum/ai_planning_subtree/attack_obstacle_in_path/trooper,
-		/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish,
-		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker,
-		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
-		/datum/ai_planning_subtree/random_speech/shipwrecker,
 	)
 
 /mob/living/basic/trooper/shipwrecker/heavy
@@ -120,50 +112,6 @@
 	demolition_mod = 1.7
 	custom_materials = list(/datum/material/iron= SHEET_MATERIAL_AMOUNT * 8, /datum/material/titanium= SHEET_MATERIAL_AMOUNT * 2, /datum/material/glass= SHEET_MATERIAL_AMOUNT * 0.5)
 
-/obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
-	name = "Shipwrecker Heavy Wrecker"
-	outfit = /datum/outfit/shipwrecker/heavy
-
-/datum/outfit/shipwrecker/heavy
-	name = "Shipwrecker Heavy Wrecker"
-	head = /obj/item/clothing/head/helmet/shipwrecker/heavy
-	suit = /obj/item/clothing/suit/armor/shipwrecker/heavy
-
-/datum/outfit/shipwrecker/heavy/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 25,
-	/obj/item/reagent_containers/hypospray/medipen/military/knockoff = 15,
-	/obj/item/tank/internals/emergency_oxygen/engi = 10,
-	/obj/effect/spawner/random/trash/deluxe_garbage = 10,
-	/obj/effect/spawner/random/entertainment/coin = 5,
-	/obj/item/stack/medical/bandage = 5,
-	/obj/effect/spawner/random/entertainment/cigarette = 5,
-	/obj/item/stack/spacecash/c50 = 5,
-	/obj/item/knife/combat/survival = 5,
-	/obj/item/dice/d10 = 2,
-	/obj/item/reagent_containers/cup/blastoff_ampoule = 2,
-	/obj/item/reagent_containers/pill/aranesp = 2,
-	/obj/item/lighter = 2,
-	/obj/effect/spawner/random/entertainment/cigar = 2,
-	/obj/item/crowbar = 2,
-	/obj/item/weldingtool/largetank = 1,
-	/obj/item/shard = 1,
-	/obj/item/wirecutters = 1,
-	/obj/item/boxcutter = 1,
-	)
-	if(prob(80))
-		glasses = pick_weight(
-		/obj/item/clothing/glasses/welding = 25,
-		/obj/item/clothing/glasses/sunglasses = 20,
-		/obj/item/clothing/glasses/eyepatch = 15,
-		/obj/item/clothing/glasses/night = 10,
-		/obj/item/clothing/glasses/meson = 10,
-		/obj/item/clothing/glasses/hud/health = 10,
-		/obj/item/clothing/glasses/meson/night = 10,
-		)
-	if(prob(80))
-		l_pocket = pick_weight(pocket_loot)
-	if(prob(80))
-		r_pocket = pick_weight(pocket_loot)
 
 /mob/living/basic/trooper/shipwrecker/heavy/space
 
@@ -175,27 +123,18 @@
 	r_hand = /obj/item/gun/ballistic/revolver/junk
 	l_hand = null
 	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/officer, /obj/item/gun/ballistic/revolver/junk)
+	projectiletype = /obj/projectile/bullet/junk
+	projectilesound = 'sound/items/weapons/gun/general/heavy_shot_suppressed.ogg'
+	ranged_cooldown = 0.9 SECONDS
+	alt_weapon_chance_left = 40
+	alt_weapons_left = list(null)
+	alt_weapon_chance_right = 0
+	alt_weapons_right = list(/obj/item/chainsaw = 100,)
+	var/datum/action/cooldown/mob_cooldown/targeted_mob_ability/donk_laser
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker/officer
 	name = "Shipwrecker Officer"
 	outfit = /datum/outfit/shipwrecker/officer
-
-/datum/action/cooldown/spell/conjure/shipwrecker_reinforcements
-	name = "Shipwrecker Reinforcements"
-	button_icon = 'icons/obj/clothing/masks.dmi'
-	button_icon_state = "gas_alt"
-	invocation = "Rise, my creations! Jump off your pages and into this realm!"
-	invocation_type = INVOCATION_SHOUT
-	spell_requirements = NONE
-	create_summon_timer = 4 SECONDS
-	cooldown_time = 15 SECONDS
-	summon_type = list(
-		/mob/living/basic/stickman,
-		/mob/living/basic/stickman/ranged,
-		/mob/living/basic/stickman/dog,
-	)
-	summon_radius = 1
-	summon_amount = 2
 
 /mob/living/basic/trooper/shipwrecker/boss
 	name = "Commander"
@@ -212,3 +151,15 @@
 
 /mob/living/basic/trooper/shipwrecker/boss/blackskull
 	name = "\improper Commodore Blackskull"
+	desc = ""
+
+/mob/living/basic/snake/banded/examine_more(mob/user)
+	. = ..()
+	. += span_notice("<i>You examine the bands on the snake very closely...</i>")
+	if(src.poison_reagent == (/datum/reagent/consumable/milk))
+		. += span_info("[pick(src.rhymes_harmless)]")
+		. += span_notice("This snake is not dangerous!")
+	else
+		. += span_info("[pick(src.rhymes_dangerous)]")
+		. += span_notice("This snake is dangerous!")
+	return .

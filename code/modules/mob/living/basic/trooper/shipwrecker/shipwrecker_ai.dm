@@ -10,16 +10,20 @@
 		/datum/ai_planning_subtree/random_speech/shipwrecker,
 	)
 
+/datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
+	action_cooldown = 1.2 SECONDS
+	required_distance = 5
+	avoid_friendly_fire = TRUE
+
 /datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish/SelectBehaviors(datum/ai_controller/controller, delta_time)
 	var/mob/target = controller.blackboard[BB_BASIC_MOB_CURRENT_TARGET]
 	if(!target || QDELETED(target))
 		return
 	for(target in range(1, src))
-		return
-	return ..()
+		return ..()
 
 /datum/ai_planning_subtree/random_speech/shipwrecker
-	speech_chance = 0.5
+	speech_chance = 0.8
 	speak = list("Haven't needed sleep lately. Too wide awake.",
 	"I gotta get in a fight soon.",
 	"I'm all twitchy. Keep hearing things...",
@@ -40,11 +44,27 @@
 /datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker
 	ranged_attack_behavior = /datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
 
-/datum/ai_behavior/basic_ranged_attack/trooper/shipwrecker
-	action_cooldown = 1.2 SECONDS
-	required_distance = 2
-	avoid_friendly_fire = TRUE
+/datum/ai_controller/basic_controller/trooper/shipwrecker/heavy
+	ai_movement = /datum/ai_movement/basic_avoidance
+	idle_behavior = /datum/idle_behavior/idle_random_walk
+	planning_subtrees = list(
+		/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter,
+		/datum/ai_planning_subtree/targeted_mob_ability/shipwrecker_reinforcements,
+		/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish,
+		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
+		/datum/ai_planning_subtree/random_speech/shipwrecker/heavy,
+	)
 
+
+/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter
+	var/list/alert_vocals = list("Target spotted!",
+	"I see them!",
+	"Kill! Kill!",
+	"Rip them apart!",
+	"Blasting!",
+	"Opening fire!",
+	"Got visual!",
+	)
 
 /datum/ai_planning_subtree/random_speech/shipwrecker/heavy
 	speak = list("Alert.",
@@ -67,6 +87,38 @@
 	"Troops, stay alert.",
 	"Eyes out, troops.",
 	"Loose formation.",
+	"Loaded.",
+	"These Spinward locals are weak.",
+	"Hey, you hear that?",
+	"I want to kill the next one myself.",
+	"Could be targets anywhere.",
+	"Nearing the end of my stim ration...",
+	"One more score...",)
+	emote_see = list("twitches.", "fiddles with their sleeve.", "glances around.", "taps their foot.",)
+
+/datum/ai_planning_subtree/random_speech/shipwrecker/boss
+	speak = list("This better be good.",
+	"No mercy. Never.",
+	"More blood. More loot.",
+	"Troops, stay alert.",
+	"Eyes out, troops.",
+	"Loose formation.",
+	"Loaded.",
+	"These Spinward locals are weak.",
+	"Hey, you hear that?",
+	"I want to kill the next one myself.",
+	"Could be targets anywhere.",
+	"Nearing the end of my stim ration...",
+	"One more score...",)
+	emote_see = list("twitches.", "fiddles with their sleeve.", "glances around.", "taps their foot.",)
+
+/datum/ai_planning_subtree/random_speech/shipwrecker/boss/steelskull
+	speak = list("No mercy for the intruders!",
+	"Bring me their skulls.",
+	"I want this situation under control, now!",
+	"Heads will roll!",
+	"Break the fools!",
+	"Everyone, on alert. We have targets.",
 	"Loaded.",
 	"These Spinward locals are weak.",
 	"Hey, you hear that?",

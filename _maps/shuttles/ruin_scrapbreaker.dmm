@@ -17,13 +17,25 @@
 /area/shuttle/ruin/scrapmaker)
 "ai" = (
 /obj/structure/rack,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/smooth_corner,
 /area/shuttle/ruin/scrapmaker)
 "an" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable,
 /obj/machinery/power/port_gen/pacman/super,
+/obj/machinery/light/small/dim/directional/south,
 /turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"aI" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half,
+/turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "aY" = (
 /obj/structure/lattice,
@@ -42,7 +54,10 @@
 /turf/open/floor/iron/grimy,
 /area/shuttle/ruin/scrapmaker)
 "bE" = (
-/turf/closed/wall/mineral/titanium/survival,
+/obj/machinery/power/shuttle_engine/large{
+	dir = 4
+	},
+/turf/template_noop,
 /area/shuttle/ruin/scrapmaker)
 "bN" = (
 /obj/structure/rack,
@@ -61,6 +76,7 @@
 /area/shuttle/ruin/scrapmaker)
 "cm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "cK" = (
@@ -105,13 +121,20 @@
 	pixel_y = 32
 	},
 /obj/item/stock_parts/power_store/cell/hyper,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/ruin/scrapmaker)
 "ez" = (
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "eJ" = (
 /obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -128,6 +151,9 @@
 "fa" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -161,6 +187,9 @@
 	name = "\improper Slashsky";
 	desc = "A DEDbot with menacing blades spinning on top. He looks less than pleased..."
 	},
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 8
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 8
 	},
@@ -170,6 +199,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 8
+	},
 /turf/open/floor/iron/smooth_corner{
 	dir = 4
 	},
@@ -187,7 +219,14 @@
 "im" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
+/area/shuttle/ruin/scrapmaker)
+"iK" = (
+/obj/machinery/atmospherics/components/binary/pump/off/general/visible/layer2{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
 /area/shuttle/ruin/scrapmaker)
 "iS" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -196,6 +235,7 @@
 "jk" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/ruin/scrapmaker)
 "jI" = (
@@ -215,7 +255,10 @@
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker{
 	pixel_x = 10
 	},
-/turf/open/floor/iron/smooth_large,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_corner,
 /area/shuttle/ruin/scrapmaker)
 "jP" = (
 /obj/machinery/status_display/shuttle{
@@ -267,6 +310,7 @@
 "mk" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/anticorner,
 /turf/open/floor/iron/smooth_corner{
 	dir = 1
 	},
@@ -280,6 +324,9 @@
 	icon_state = "dirt-111"
 	},
 /obj/structure/closet/crate/preopen,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 8
+	},
 /turf/open/floor/iron/smooth_corner{
 	dir = 4
 	},
@@ -298,15 +345,21 @@
 /obj/structure/table/reinforced,
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker,
 /obj/item/claymore/cutlass/old,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/ruin/scrapmaker)
 "oB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
 	},
 /area/shuttle/ruin/scrapmaker)
 "oF" = (
+/obj/machinery/light/cold/directional/north,
+/obj/structure/cable,
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/scrapmaker)
 "oQ" = (
@@ -363,6 +416,8 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-2"
 	},
+/obj/effect/turf_decal/tile/dark/half,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "qB" = (
@@ -387,6 +442,7 @@
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/scrapmaker)
 "rD" = (
@@ -394,6 +450,7 @@
 	dir = 5
 	},
 /obj/structure/closet/crate/bin,
+/obj/item/reagent_containers/hypospray/medipen/military/unreliable,
 /turf/open/floor/iron/grimy,
 /area/shuttle/ruin/scrapmaker)
 "rI" = (
@@ -467,6 +524,9 @@
 	pixel_x = 8
 	},
 /obj/structure/closet/crate/cardboard,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_corner,
 /area/shuttle/ruin/scrapmaker)
 "uk" = (
@@ -498,6 +558,8 @@
 /area/shuttle/ruin/scrapmaker)
 "uz" = (
 /obj/structure/rack,
+/obj/effect/turf_decal/tile/dark/half,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/smooth_corner{
 	dir = 4
 	},
@@ -524,12 +586,10 @@
 /turf/open/floor/pod/light,
 /area/shuttle/ruin/scrapmaker)
 "vt" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/open/floor/pod/dark,
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/dark,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/stimsafety,
+/turf/open/floor/iron/grimy,
 /area/shuttle/ruin/scrapmaker)
 "vy" = (
 /obj/structure/cable,
@@ -557,10 +617,27 @@
 /obj/item/food/burger/big_blue{
 	pixel_y = 5
 	},
-/turf/open/floor/iron/smooth_large,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_corner{
+	dir = 4
+	},
 /area/shuttle/ruin/scrapmaker)
 "wD" = (
 /obj/structure/table/reinforced,
+/obj/item/reagent_containers/hypospray/medipen/military{
+	pixel_x = -4;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/hypospray/medipen/military{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/hypospray/medipen/military{
+	pixel_x = 2;
+	pixel_y = 1
+	},
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/ruin/scrapmaker)
 "xa" = (
@@ -584,6 +661,9 @@
 "xG" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth_corner{
 	dir = 8
 	},
@@ -593,10 +673,7 @@
 /turf/open/floor/pod/light,
 /area/shuttle/ruin/scrapmaker)
 "yD" = (
-/obj/machinery/power/shuttle_engine/large{
-	dir = 4
-	},
-/turf/closed/wall/mineral/titanium/survival,
+/turf/closed/wall/mineral/titanium/survival/nodiagonal,
 /area/shuttle/ruin/scrapmaker)
 "yW" = (
 /obj/structure/cable,
@@ -612,7 +689,12 @@
 /turf/open/floor/pod/light,
 /area/shuttle/ruin/scrapmaker)
 "zv" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer2,
+/turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"zA" = (
+/obj/machinery/light/cold/directional/south,
+/obj/structure/cable,
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/scrapmaker)
 "zC" = (
@@ -622,12 +704,15 @@
 /obj/machinery/status_display/shuttle{
 	pixel_y = -32
 	},
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "zD" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/turf_decal/tile/dark/half,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "Ad" = (
@@ -667,6 +752,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "AM" = (
@@ -687,6 +773,9 @@
 "CA" = (
 /obj/structure/cable,
 /obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -696,6 +785,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/turf_decal/tile/dark/anticorner,
 /turf/open/floor/iron/smooth_corner{
 	dir = 1
 	},
@@ -729,11 +819,15 @@
 /obj/machinery/status_display/shuttle{
 	pixel_y = -32
 	},
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "Es" = (
 /obj/machinery/status_display/shuttle{
 	pixel_y = 32
+	},
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
 	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
@@ -748,6 +842,7 @@
 /area/shuttle/ruin/scrapmaker)
 "GD" = (
 /obj/machinery/door/airlock/hatch,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/ruin/scrapmaker)
 "GF" = (
@@ -758,6 +853,9 @@
 "Hf" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
 	},
@@ -779,6 +877,7 @@
 /obj/machinery/status_display/shuttle{
 	pixel_y = -32
 	},
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/ruin/scrapmaker)
 "Ie" = (
@@ -790,6 +889,9 @@
 "Iu" = (
 /obj/structure/chair/comfy/shuttle,
 /mob/living/basic/trooper/shipwrecker,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -812,6 +914,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "JX" = (
@@ -872,6 +975,8 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/half,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "LG" = (
@@ -896,8 +1001,8 @@
 /turf/open/floor/iron/grimy,
 /area/shuttle/ruin/scrapmaker)
 "Mp" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer2,
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/scrapmaker)
 "Mr" = (
@@ -928,7 +1033,7 @@
 /area/shuttle/ruin/scrapmaker)
 "MT" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer2,
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/scrapmaker)
 "MU" = (
@@ -938,6 +1043,10 @@
 /obj/structure/chair/comfy/shuttle,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -948,12 +1057,17 @@
 /area/shuttle/ruin/scrapmaker)
 "Ns" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/components/binary/pump/on/general/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/light/small/dim/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/scrapmaker)
 "Ny" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-4"
 	},
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/pod/light,
 /area/shuttle/ruin/scrapmaker)
 "NH" = (
@@ -968,6 +1082,9 @@
 /obj/item/trash/boritos/green{
 	pixel_y = 11;
 	pixel_x = 4
+	},
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 8
 	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 8
@@ -1019,6 +1136,9 @@
 /obj/machinery/status_display/shuttle{
 	pixel_y = 32
 	},
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -1028,6 +1148,9 @@
 	icon_state = "dirt-flat-3"
 	},
 /obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth_corner{
 	dir = 8
 	},
@@ -1051,20 +1174,31 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
 	},
 /area/shuttle/ruin/scrapmaker)
 "Sx" = (
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/pod/light,
 /area/shuttle/ruin/scrapmaker)
 "SH" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/pod/dark,
+/area/shuttle/ruin/scrapmaker)
+"Tp" = (
+/obj/machinery/door/airlock/grunge,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/full,
+/turf/open/floor/iron/smooth_large,
 /area/shuttle/ruin/scrapmaker)
 "TN" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1086,6 +1220,9 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-4"
 	},
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 4
+	},
 /turf/open/floor/iron/smooth_corner{
 	dir = 8
 	},
@@ -1103,6 +1240,10 @@
 /area/shuttle/ruin/scrapmaker)
 "UD" = (
 /obj/structure/barricade/sandbags,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -1130,16 +1271,26 @@
 /turf/open/floor/plating,
 /area/shuttle/ruin/scrapmaker)
 "Vk" = (
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
 /area/shuttle/ruin/scrapmaker)
 "Vl" = (
-/obj/machinery/door/airlock/hatch,
-/turf/open/floor/pod/dark,
+/obj/structure/chair/comfy/shuttle,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/shuttle/ruin/scrapmaker)
 "VA" = (
 /obj/structure/table/reinforced,
+/obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/cuttersafety,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/scrapmaker)
 "Wg" = (
@@ -1184,6 +1335,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /obj/structure/closet/mini_fridge,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/scrapmaker)
 "Yq" = (
@@ -1197,17 +1349,27 @@
 /obj/structure/chair/comfy/shuttle,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/effect/turf_decal/tile/dark/anticorner{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth_corner,
 /area/shuttle/ruin/scrapmaker)
 "YL" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
+/obj/docking_port/mobile{
+	dir = 8;
+	shuttle_id = "scrapbreaker";
+	name = "Scrapbreaker";
+	port_direction = 2
+	},
 /turf/open/floor/catwalk_floor,
 /area/shuttle/ruin/scrapmaker)
 "Zq" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/turf_decal/tile/dark/anticorner,
 /turf/open/floor/iron/smooth_corner{
 	dir = 1
 	},
@@ -1217,6 +1379,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/ruin/scrapmaker)
 "ZD" = (
@@ -1233,7 +1396,8 @@
 /turf/open/floor/pod/light,
 /area/shuttle/ruin/scrapmaker)
 "ZU" = (
-/obj/machinery/power/shieldwallgen/anchored,
+/obj/machinery/power/shieldwallgen/unlocked/anchored,
+/obj/structure/cable,
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/scrapmaker)
 "ZY" = (
@@ -1293,17 +1457,17 @@ YB
 rS
 rS
 tB
-bE
-bE
-bE
+yD
+yD
+yD
 YB
 YB
 YB
 YB
 YB
-bE
-bE
-bE
+yD
+yD
+yD
 rS
 tB
 tB
@@ -1311,10 +1475,10 @@ YB
 "}
 (4,1,1) = {"
 YB
-tB
+QS
 YB
 kr
-bE
+yD
 ZU
 UY
 UY
@@ -1324,78 +1488,78 @@ UY
 UY
 UY
 ZU
-bE
+yD
 YB
 YB
-tB
+QS
 YB
 "}
 (5,1,1) = {"
 YB
-bE
-bE
+yD
+yD
 DI
-bE
-Vl
-bE
+yD
+GF
+yD
 jI
 PB
 vd
 rI
 wz
-bE
-Vl
-bE
+yD
+GF
+yD
 UY
-bE
-bE
+yD
+yD
 YB
 "}
 (6,1,1) = {"
 YB
-bE
+yD
 tT
 dL
 li
-oF
-bE
+vR
+yD
 es
 pW
 PB
 pW
 HT
-bE
-oF
+yD
+vR
 tT
 dL
 vD
-bE
+yD
 YB
 "}
 (7,1,1) = {"
 YB
-bE
+yD
 UK
 UK
 UK
-oF
-bE
+zA
+yD
 ai
 PB
 PB
 PB
 uz
-bE
+yD
 oF
 UK
 UK
 UK
-bE
+yD
 YB
 "}
 (8,1,1) = {"
 YB
-bE
+yD
 xd
 nG
 nG
@@ -1411,69 +1575,69 @@ nG
 nG
 nG
 jP
-bE
+yD
 YB
 "}
 (9,1,1) = {"
 YB
-bE
-bE
-bE
-bE
+yD
+yD
+yD
+yD
 Qn
-bE
+yD
 Es
 hk
 Wg
 hk
 DY
-bE
+yD
 Qn
-bE
-bE
-bE
-bE
+yD
+yD
+yD
+yD
 YB
 "}
 (10,1,1) = {"
 aY
 YB
-bE
+yD
 Pj
 uT
 Xx
-Mu
+Tp
 xG
 Hf
 RQ
 Hf
 mk
-Mu
+Tp
 uk
 AM
 bn
-bE
+yD
 YB
 aY
 "}
 (11,1,1) = {"
 rS
 QS
-bE
+yD
 Mn
 ul
 Lh
-bE
-bE
+yD
+yD
 oa
 jk
 wD
-bE
-bE
+yD
+yD
 ph
 ef
 Rs
-bE
+yD
 QS
 rS
 "}
@@ -1485,11 +1649,11 @@ kb
 Lk
 IQ
 KB
-bE
+yD
 UY
 UY
 UY
-bE
+yD
 yW
 Wu
 LG
@@ -1506,15 +1670,15 @@ HS
 ef
 QC
 XK
-bE
+yD
 ug
 NH
 mX
-bE
+yD
 qC
 HS
 CZ
-pp
+vt
 UY
 YB
 rS
@@ -1527,11 +1691,11 @@ uu
 ef
 QC
 ig
-bE
+yD
 UD
 CW
 qs
-bE
+yD
 ig
 HS
 Nj
@@ -1543,7 +1707,7 @@ rS
 (15,1,1) = {"
 rS
 QS
-bE
+yD
 rD
 UJ
 pr
@@ -1557,28 +1721,28 @@ ig
 Ie
 KQ
 bP
-bE
+yD
 QS
 rS
 "}
 (16,1,1) = {"
 QS
 YB
-bE
-bE
+yD
+yD
 si
 Ag
 VA
-bE
+yD
 CA
 NU
 Zu
-bE
+yD
 Lb
 TN
 bN
-bE
-bE
+yD
+yD
 me
 QS
 "}
@@ -1586,19 +1750,19 @@ QS
 YB
 QS
 YB
-bE
-bE
-bE
-bE
-bE
+yD
+yD
+yD
+yD
+yD
 Uj
 Hf
 CI
-bE
-bE
-bE
-bE
-bE
+yD
+yD
+yD
+yD
+yD
 YB
 QS
 YB
@@ -1607,19 +1771,19 @@ YB
 YB
 rS
 QS
-bE
+yD
 lT
 xa
 Ad
-bE
-bE
+yD
+yD
 Mu
-bE
-bE
+yD
+yD
 ZY
 dg
 oR
-bE
+yD
 QS
 rS
 YB
@@ -1632,11 +1796,11 @@ UY
 nW
 UA
 ZD
-bE
+yD
 YK
 gt
 gx
-bE
+yD
 IR
 MH
 mI
@@ -1653,11 +1817,11 @@ UY
 iS
 CX
 Sx
-bE
+yD
 MU
 eM
 LD
-bE
+yD
 Ny
 Fv
 WT
@@ -1691,19 +1855,19 @@ YB
 YB
 rS
 QS
-bE
+yD
 fP
 Yq
 QF
-bE
+yD
 Iu
 NU
 Jv
-bE
+yD
 qB
 vi
 JX
-bE
+yD
 QS
 rS
 YB
@@ -1712,19 +1876,19 @@ YB
 YB
 QS
 YB
-bE
-bE
+yD
+yD
 GF
-bE
-bE
+yD
+yD
 Rk
 NU
 zC
-bE
-bE
+yD
+yD
 AW
-bE
-bE
+yD
+yD
 YB
 QS
 YB
@@ -1734,17 +1898,17 @@ YB
 YB
 QS
 YB
-bE
+yD
 vR
 fg
-bE
+yD
 eJ
 NU
-zD
-bE
+aI
+yD
 dT
 MT
-bE
+yD
 YB
 QS
 YB
@@ -1755,17 +1919,17 @@ YB
 YB
 rS
 QS
-bE
+yD
 xj
 Mr
-bE
+yD
 eJ
 NU
 An
-bE
+yD
 Mp
 zv
-bE
+yD
 QS
 rS
 YB
@@ -1776,17 +1940,17 @@ YB
 YB
 rS
 YB
-bE
+yD
 xj
 an
-bE
-eJ
+yD
+Vl
 NU
 zD
-bE
+yD
 Ns
-oF
-bE
+iK
+yD
 YB
 rS
 YB
@@ -1797,17 +1961,17 @@ YB
 YB
 rS
 YB
-bE
+yD
 Uv
 lg
-bE
+yD
 Ro
 oB
 Zq
-bE
+yD
 SH
-vt
-bE
+SH
+yD
 me
 rS
 YB
@@ -1818,17 +1982,17 @@ YB
 YB
 rS
 QS
-bE
-bE
-bE
-bE
-bE
+yD
+yD
+yD
+yD
+yD
 XG
-bE
-bE
-bE
-bE
-bE
+yD
+yD
+yD
+yD
+yD
 QS
 rS
 YB
@@ -1839,16 +2003,16 @@ YB
 YB
 uO
 YB
-bE
 yD
-bE
 yD
-bE
+yD
+yD
+yD
 tA
-bE
-bE
 yD
-bE
+yD
+yD
+yD
 yD
 YB
 uO
@@ -1861,16 +2025,16 @@ YB
 YB
 YB
 Ry
-Ry
-Ry
+bE
 Ry
 bE
+yD
 YL
+yD
+Ry
 bE
 Ry
-Ry
-Ry
-Ry
+bE
 YB
 YB
 YB

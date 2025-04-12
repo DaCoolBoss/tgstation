@@ -17,6 +17,11 @@
 	name = "Pirate Cutter"
 	description = "Small pirate vessel with ballistic turrets. Spawns with 3 pirate mobs, one of which drops an energy cutlass."
 
+/datum/map_template/shuttle/ruin/scrapbreaker
+	suffix = "scrapbreaker"
+	name = "Scrapbreaker"
+	description = "Attack shuttle owned by the Shipwrecker Gang. Spawns with a lot of Shipwrecker mobs and loot."
+
 /datum/map_template/shuttle/ruin/syndicate_dropship
 	suffix = "syndicate_dropship"
 	name = "Syndicate Dropship"

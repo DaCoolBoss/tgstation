@@ -123,6 +123,13 @@
 /obj/item/ammo_box/rocket/can_load(mob/user)
 	return FALSE
 
+/obj/item/ammo_box/scrap
+	name = "speed loader (Junk round)"
+	desc = "Designed to quickly reload scrap revolvers."
+	ammo_type = /obj/item/ammo_casing/junk
+	max_ammo = 5
+	ammo_band_color = COLOR_AMMO_MATCH
+
 /obj/item/ammo_box/strilka310
 	name = "stripper clip (.310 Strilka)"
 	desc = "A stripper clip."

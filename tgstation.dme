@@ -5206,6 +5206,7 @@
 #include "code\modules\mob\living\basic\trooper\syndicate.dm"
 #include "code\modules\mob\living\basic\trooper\trooper.dm"
 #include "code\modules\mob\living\basic\trooper\trooper_ai.dm"
+#include "code\modules\mob\living\basic\trooper\shipwrecker\shipwrecker_abilities.dm"
 #include "code\modules\mob\living\basic\trooper\shipwrecker\shipwrecker_ai.dm"
 #include "code\modules\mob\living\basic\trooper\shipwrecker\shipwrecker_mobs.dm"
 #include "code\modules\mob\living\basic\trooper\shipwrecker\shipwrecker_outfits.dm"

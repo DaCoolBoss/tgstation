@@ -34,6 +34,10 @@
 /// Key where we store the charging apc ability
 #define BB_FESTIVE_APC "BB_festive_apc"
 
+//Shipwrecker Gang AI keys
+/// Key where we store the Officer's reinforcements ability
+#define BB_SHIPWRECKER_REINFORCEMENTS "BB_shipwrecker_reinforcements"
+
 //Paperwizard AI keys
 /// Key where we store the summon minions ability
 #define BB_WIZARD_SUMMON_MINIONS "BB_summon_minions"
