@@ -49,8 +49,20 @@
 	inhand_icon_state = "syndicate-black"
 	icon_state = "syndicate-black-white"
 
+/obj/item/clothing/head/helmet/space/pirate/shipwrecker
+	name = "ballistic vaccum-helmet"
+	desc = "A reinforced helmet made of composite armour plates for protecting the wearer from ballistic and laser projectiles. \
+		It is vaccum-sealed against the external enviroment, providing total protection from low or high pressure enviroments."
+	icon_state = "shipwrecker"
+	inhand_icon_state = "helmet_shipwrecker"
+	armor_type = /datum/armor/helmet_ballistic
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*0.8, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*0.6)
+	visor_dirt = "helm_dirt"
+	slowdown = 0.8
+
 /obj/item/clothing/suit/space/pirate/shipwrecker
-	name = "ballistic EVA suit"
+	name = "ballistic vaccum-suit"
 	inhand_icon_state = "shipwrecker_heavy"
 	icon_state = "shipwrecker"
 	desc = "A rigid yet lightweight set of composite armour plates designed to be worn around the torso. \
@@ -60,9 +72,10 @@
 	custom_materials = list(list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2, /datum/material/glass=SMALL_MATERIAL_AMOUNT*1))
 	strip_delay = 80
 	slowdown = 0.8
+	allowed = list(/obj/item/gun, /obj/item/melee/baton, /obj/item/reagent_containers/hypospray, /obj/item/tank/internals, /obj/item/pickaxe, /obj/item/storage/bag/ore,)
 
 /obj/item/clothing/suit/space/pirate/shipwrecker/heavy
-	name = "heavy ballistic plate armour"
+	name = "heavy ballistic vaccum-suit"
 	desc = "A heavy suit of armour made of rigid composite armour plates. \
 		It has a minor slowdown, but offers decent protection and helps the wearer resist shoving in close quarters."
 	icon_state = "shipwrecker_heavy"

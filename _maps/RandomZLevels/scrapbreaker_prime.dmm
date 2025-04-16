@@ -59,6 +59,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/dark,
 /area/awaymission/scrapbreaker_prime)
+"al" = (
+/obj/effect/decal/cleanable/confetti,
+/obj/item/cigbutt{
+	pixel_y = 18;
+	pixel_x = -10
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "am" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -233,6 +241,12 @@
 /obj/item/stack/sheet/iron/twenty,
 /turf/open/floor/pod/dark,
 /area/awaymission/scrapbreaker_prime)
+"aK" = (
+/obj/structure/table/reinforced,
+/obj/item/paper,
+/obj/item/stack/wrapping_paper,
+/turf/open/floor/pod/light,
+/area/awaymission/scrapbreaker_prime)
 "aL" = (
 /obj/structure/table/reinforced,
 /obj/item/trash/pistachios{
@@ -267,6 +281,7 @@
 /obj/structure/filingcabinet/chestdrawer,
 /obj/item/folder,
 /obj/item/folder,
+/obj/item/paper/pamphlet/gateway,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "aQ" = (
@@ -819,6 +834,13 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
+"cA" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-29"
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "cB" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 1
@@ -883,6 +905,7 @@
 /obj/structure/table/reinforced,
 /obj/structure/sign/poster/contraband/cybersun_six_hundred/directional/west,
 /obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
 "cL" = (
@@ -991,6 +1014,11 @@
 	icon_state = "dirt-4"
 	},
 /turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
+"da" = (
+/obj/structure/table/reinforced,
+/obj/item/radio/off,
+/turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "db" = (
 /obj/item/pipe{
@@ -1125,6 +1153,11 @@
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/space)
+"du" = (
+/obj/structure/table/reinforced,
+/obj/item/papercutter,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "dv" = (
 /obj/machinery/atmospherics/components/trinary/mixer/airmix{
 	dir = 8
@@ -1151,6 +1184,12 @@
 	},
 /obj/machinery/light/cold/directional/east,
 /turf/open/floor/iron,
+/area/awaymission/scrapbreaker_prime)
+"dy" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor5-old"
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "dz" = (
 /obj/structure/chair/comfy/lime{
@@ -1380,10 +1419,12 @@
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/awaymission/scrapbreaker_prime/engineblock)
 "em" = (
-/obj/effect/decal/cleanable/dirt{
-	icon_state = "dirt-4"
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
 	},
-/turf/open/floor/plating,
+/obj/structure/table,
+/obj/item/storage/toolbox/electrical,
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "en" = (
 /obj/effect/turf_decal/tile/purple/fourcorners,
@@ -1824,6 +1865,12 @@
 /obj/machinery/door/airlock/vault,
 /turf/open/floor/circuit/red/off,
 /area/awaymission/scrapbreaker_prime)
+"fD" = (
+/obj/effect/turf_decal/tile/dark/half,
+/obj/structure/table/reinforced,
+/obj/item/pen,
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/scrapbreaker_prime)
 "fE" = (
 /obj/machinery/door/poddoor,
 /turf/open/floor/plating,
@@ -2232,6 +2279,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-4"
 	},
+/obj/item/stack/cable_coil,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "gQ" = (
@@ -2439,6 +2487,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-2"
 	},
+/obj/item/pushbroom,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -2479,6 +2528,15 @@
 /area/awaymission/scrapbreaker_prime)
 "hz" = (
 /obj/structure/closet/crate/science,
+/obj/item/slime_extract/silver{
+	pixel_y = 3;
+	pixel_x = -4
+	},
+/obj/item/slime_extract/purple{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/item/slime_extract/pyrite,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "hA" = (
@@ -2506,10 +2564,13 @@
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime)
 "hD" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 8
+	},
+/obj/machinery/light/cold/directional/west,
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
-/obj/machinery/light/cold/directional/west,
-/turf/open/floor/plating,
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "hF" = (
 /obj/structure/filingcabinet/chestdrawer/wheeled,
@@ -2541,13 +2602,13 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/scrapbreaker_prime/engineblock)
 "hK" = (
+/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+	dir = 1
+	},
 /obj/structure/rack,
 /obj/item/clothing/mask/gas,
 /obj/item/hatchet/wooden,
-/obj/effect/decal/cleanable/dirt{
-	icon_state = "dirt-29"
-	},
-/turf/open/floor/plating,
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "hL" = (
 /obj/item/boulder/gulag,
@@ -2881,6 +2942,11 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
+"iM" = (
+/obj/structure/rack,
+/obj/item/stack/rods/ten,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "iN" = (
 /obj/structure/table,
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/cuttersafety{
@@ -3129,6 +3195,19 @@
 /obj/structure/sign/poster/contraband/kss13/directional/north,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
+"jB" = (
+/obj/structure/table/reinforced,
+/obj/item/stamp{
+	pixel_y = 6;
+	pixel_x = -4
+	},
+/obj/item/stamp/denied,
+/obj/item/sticker/smile{
+	pixel_x = 9;
+	pixel_y = 7
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/scrapbreaker_prime)
 "jC" = (
 /obj/machinery/door/poddoor,
 /turf/open/floor/iron/dark,
@@ -3199,6 +3278,14 @@
 /obj/structure/broken_flooring/pile/directional/west,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
+/area/awaymission/scrapbreaker_prime)
+"jP" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/machinery/light/cold/directional/south,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-2"
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "jQ" = (
 /obj/structure/rack,
@@ -3359,6 +3446,12 @@
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris/directional/east,
 /obj/item/kirbyplants/organic/plant22,
 /turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
+"kp" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor7-old"
+	},
+/turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
 "kq" = (
 /obj/machinery/door/airlock/command,
@@ -3626,6 +3719,18 @@
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
+"lg" = (
+/obj/structure/table/reinforced,
+/obj/item/trash/ready_donk{
+	pixel_x = -4;
+	pixel_y = -3
+	},
+/obj/item/pen{
+	pixel_x = 4;
+	pixel_y = 5
+	},
+/turf/open/floor/pod/light,
+/area/awaymission/scrapbreaker_prime)
 "lh" = (
 /obj/structure/sign/poster/contraband/self_ai_liberation/directional/east,
 /turf/open/floor/pod/dark,
@@ -3660,6 +3765,7 @@
 /obj/structure/table/reinforced,
 /obj/item/stack/sheet/iron/five,
 /obj/item/stack/cable_coil/thirty,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "ln" = (
@@ -4342,6 +4448,15 @@
 /obj/effect/decal/cleanable/glass/plastitanium,
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime)
+"nk" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor7-old"
+	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
 "nl" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing/corner{
@@ -4393,6 +4508,13 @@
 	},
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris/directional/west,
 /turf/open/floor/carpet/black,
+/area/awaymission/scrapbreaker_prime)
+"nv" = (
+/obj/structure/table/wood,
+/obj/item/storage/lockbox/dueling{
+	req_access = null
+	},
+/turf/open/floor/wood/tile,
 /area/awaymission/scrapbreaker_prime)
 "nw" = (
 /obj/effect/turf_decal/stripes/line{
@@ -4687,6 +4809,17 @@
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
+"on" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/confetti,
+/obj/item/cigbutt/roach{
+	pixel_x = 8;
+	pixel_y = 16
+	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
 "oo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -4716,6 +4849,9 @@
 	pixel_y = 10;
 	pixel_x = 2
 	},
+/obj/item/pen{
+	pixel_x = -9
+	},
 /turf/open/floor/carpet/black,
 /area/awaymission/scrapbreaker_prime)
 "ot" = (
@@ -4736,6 +4872,7 @@
 	pixel_x = 7;
 	pixel_y = 4
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "ov" = (
@@ -4988,6 +5125,11 @@
 /obj/item/stack/rods/two,
 /turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
+"pj" = (
+/obj/structure/table/reinforced,
+/obj/item/clothing/glasses/meson,
+/turf/open/floor/pod/light,
+/area/awaymission/scrapbreaker_prime)
 "pk" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /obj/effect/turf_decal/siding/wood,
@@ -5065,6 +5207,7 @@
 /obj/item/stack/spacecash/c1{
 	amount = 5
 	},
+/obj/item/pen,
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "pz" = (
@@ -5106,6 +5249,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/dark,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-2"
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -5166,6 +5312,13 @@
 	},
 /turf/closed/wall/r_wall,
 /area/space)
+"pN" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor5-old"
+	},
+/turf/open/floor/engine,
+/area/awaymission/scrapbreaker_prime)
 "pO" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/item/clothing/shoes/laceup{
@@ -5955,6 +6108,11 @@
 /obj/item/gun/energy/laser/hellgun,
 /turf/open/floor/wood/tile,
 /area/awaymission/scrapbreaker_prime)
+"sn" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/mineral/plasma/five,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "so" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -6049,7 +6207,6 @@
 "sD" = (
 /obj/effect/decal/cleanable/plastic,
 /obj/item/stack/cable_coil/cut,
-/obj/item/stack/cable_coil/cut,
 /turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
 "sE" = (
@@ -6127,6 +6284,7 @@
 /area/awaymission/scrapbreaker_prime)
 "sS" = (
 /obj/structure/closet/crate/wooden,
+/obj/item/stack/sheet/mineral/plasma/five,
 /turf/open/floor/wood/tile,
 /area/awaymission/scrapbreaker_prime)
 "sT" = (
@@ -6370,8 +6528,8 @@
 /turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
 "tH" = (
-/obj/structure/floodlight_frame,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/floodlight_frame,
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime)
 "tI" = (
@@ -6395,6 +6553,12 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/iron/smooth_edge,
+/area/awaymission/scrapbreaker_prime)
+"tM" = (
+/obj/structure/table/reinforced,
+/obj/item/folder,
+/obj/item/pen,
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "tN" = (
 /obj/effect/spawner/random/maintenance/two,
@@ -6521,7 +6685,6 @@
 /area/awaymission/scrapbreaker_prime)
 "ui" = (
 /obj/structure/table/reinforced,
-/obj/item/pai_card,
 /obj/item/pai_card,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/smooth,
@@ -7322,6 +7485,8 @@
 "wB" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/pen,
+/obj/item/stack/medical/bandage,
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "wD" = (
@@ -7390,6 +7555,10 @@
 /area/awaymission/scrapbreaker_prime/engineblock)
 "wM" = (
 /obj/structure/table/reinforced,
+/obj/item/book/manual/fish_catalog{
+	pixel_x = -4;
+	pixel_y = 3
+	},
 /obj/item/fishing_lure/led,
 /obj/effect/decal/cleanable/crayon{
 	name = "graffiti";
@@ -7421,6 +7590,16 @@
 /obj/item/stack/ore/iron,
 /turf/open/floor/plating,
 /area/space)
+"wS" = (
+/obj/item/cigbutt{
+	pixel_x = 11;
+	pixel_y = 14
+	},
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
 "wT" = (
 /obj/effect/spawner/random/trash/deluxe_garbage,
 /obj/item/mop,
@@ -7547,6 +7726,7 @@
 /turf/open/floor/carpet/red,
 /area/awaymission/scrapbreaker_prime)
 "xi" = (
+/obj/structure/rack,
 /obj/effect/spawner/random/engineering/tool,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
@@ -7790,6 +7970,7 @@
 	dir = 1
 	},
 /obj/structure/closet/crate,
+/obj/item/paper/pamphlet/gateway,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "xS" = (
@@ -8075,6 +8256,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
+"yI" = (
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/mineral/plasma,
+/turf/open/floor/iron/smooth_edge{
+	dir = 4
+	},
+/area/awaymission/scrapbreaker_prime)
 "yJ" = (
 /obj/structure/lattice,
 /obj/structure/broken_flooring/plating{
@@ -8095,6 +8286,11 @@
 /obj/machinery/microwave,
 /obj/structure/table/reinforced,
 /turf/open/floor/iron/checker,
+/area/awaymission/scrapbreaker_prime)
+"yN" = (
+/obj/structure/table/reinforced,
+/obj/item/cigbutt/cigarbutt,
+/turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "yO" = (
 /obj/structure/closet/crate/bin,
@@ -8369,6 +8565,16 @@
 /obj/item/clothing/glasses/regular,
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
+"zC" = (
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/obj/item/pen/blue,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/awaymission/scrapbreaker_prime)
 "zD" = (
 /obj/structure/broken_flooring/plating,
 /turf/open/floor/engine,
@@ -8376,6 +8582,13 @@
 "zE" = (
 /obj/structure/frame/machine,
 /turf/open/floor/plating,
+/area/awaymission/scrapbreaker_prime)
+"zF" = (
+/obj/structure/barricade/sandbags,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor6-old"
+	},
+/turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
 "zG" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted{
@@ -8801,6 +9014,7 @@
 /area/awaymission/scrapbreaker_prime)
 "AP" = (
 /obj/item/toy/spinningtoy,
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/glass/reinforced/plasma,
 /area/awaymission/scrapbreaker_prime/engineblock)
 "AQ" = (
@@ -8977,8 +9191,14 @@
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
 "Bs" = (
-/obj/machinery/door/airlock/hatch,
-/turf/open/floor/iron/smooth_large,
+/obj/effect/turf_decal/tile/dark/half{
+	dir = 8
+	},
+/obj/structure/rack,
+/obj/item/pickaxe,
+/turf/open/floor/iron/smooth_edge{
+	dir = 8
+	},
 /area/awaymission/scrapbreaker_prime)
 "Bu" = (
 /obj/structure/chair/comfy/shuttle{
@@ -9143,6 +9363,12 @@
 /obj/structure/shipping_container/defaced,
 /turf/open/floor/pod/dark,
 /area/awaymission/scrapbreaker_prime)
+"BU" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/pod/light,
+/area/awaymission/scrapbreaker_prime)
 "BV" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -9181,6 +9407,9 @@
 "Cb" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-8"
+	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "Cc" = (
@@ -9374,6 +9603,13 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/pod/dark,
 /area/awaymission/scrapbreaker_prime)
+"CB" = (
+/obj/structure/tank_holder/oxygen/yellow,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-2"
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "CC" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/iron/dark,
@@ -9396,6 +9632,11 @@
 	dir = 9
 	},
 /turf/open/floor/carpet/green,
+/area/awaymission/scrapbreaker_prime)
+"CF" = (
+/obj/structure/rack,
+/obj/item/wrench,
+/turf/open/floor/pod/dark,
 /area/awaymission/scrapbreaker_prime)
 "CG" = (
 /obj/effect/turf_decal/stripes/line,
@@ -9435,13 +9676,18 @@
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "CM" = (
-/obj/machinery/door/poddoor/shutters/preopen,
-/obj/effect/turf_decal/caution/stand_clear,
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 1
 	},
-/turf/open/floor/plating/reinforced,
+/obj/structure/table/reinforced,
+/obj/item/rack_parts{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/rack_parts,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/awaymission/scrapbreaker_prime)
 "CN" = (
 /obj/effect/turf_decal/tile/dark/fourcorners,
@@ -9463,6 +9709,9 @@
 /obj/item/xenos_claw{
 	pixel_y = 11;
 	pixel_x = -2
+	},
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-29"
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
@@ -9652,6 +9901,9 @@
 	dir = 1
 	},
 /obj/item/restraints/legcuffs/beartrap/prearmed,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor7-old"
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -9712,6 +9964,14 @@
 "DB" = (
 /obj/effect/mob_spawn/corpse/human/doctor,
 /turf/open/floor/mineral/titanium/white,
+/area/awaymission/scrapbreaker_prime)
+"DC" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 4
+	},
+/obj/machinery/light/cold/directional/east,
+/obj/item/cigbutt,
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "DD" = (
 /obj/structure/dresser,
@@ -10107,6 +10367,10 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
+/obj/item/clipboard,
+/obj/item/clothing/under/color/darkgreen{
+	pixel_x = -6
+	},
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
 "EO" = (
@@ -10163,10 +10427,14 @@
 "EU" = (
 /obj/effect/spawner/random/structure/closet_empty/crate/with_loot,
 /obj/effect/decal/cleanable/cobweb,
-/obj/item/sticker/star,
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-255"
 	},
+/obj/item/broken_missile{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/sticker/star,
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "EV" = (
@@ -10396,6 +10664,14 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
+"FD" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/tile/dark/half,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-flat-3"
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/scrapbreaker_prime)
 "FE" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/food/burger/cheese{
@@ -10446,6 +10722,10 @@
 	icon_state = "dirt-29"
 	},
 /turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
+"FL" = (
+/obj/item/stack/cable_coil/five,
+/turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime)
 "FM" = (
 /obj/item/electronics/airlock,
@@ -10503,11 +10783,8 @@
 /turf/open/chasm/true/no_smooth,
 /area/space)
 "FW" = (
-/obj/structure/headpike/military,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/smooth,
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "FY" = (
 /obj/structure/table,
@@ -10552,6 +10829,13 @@
 "Gc" = (
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime/engineblock)
+"Gd" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/item/stack/cable_coil/cut,
+/turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
 "Ge" = (
 /obj/structure/chair/sofa/middle{
 	dir = 1
@@ -11094,6 +11378,10 @@
 /obj/structure/railing,
 /turf/open/floor/plating,
 /area/space)
+"HH" = (
+/obj/item/cigbutt,
+/turf/open/floor/pod/light,
+/area/awaymission/scrapbreaker_prime)
 "HI" = (
 /obj/machinery/door/airlock/highsecurity,
 /obj/effect/turf_decal/tile/dark/fourcorners,
@@ -11377,6 +11665,10 @@
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/scrapbreaker_prime/engineblock)
+"IA" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/pod/light,
+/area/awaymission/scrapbreaker_prime)
 "IB" = (
 /obj/effect/turf_decal/tile/dark/fourcorners,
 /obj/effect/decal/cleanable/crayon{
@@ -11477,6 +11769,11 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime/engineblock)
+"IR" = (
+/obj/structure/table/reinforced,
+/obj/item/plate,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "IS" = (
 /obj/structure/sign/poster/contraband/blood_geometer/directional/north,
 /turf/open/floor/iron/dark,
@@ -11596,6 +11893,13 @@
 /obj/machinery/door/poddoor/preopen,
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime/engineblock)
+"Jm" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-8"
+	},
+/mob/living/basic/trooper/shipwrecker,
+/turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
 "Jn" = (
 /obj/structure/sign/poster/contraband/borg_fancy_2/directional/north,
 /obj/effect/decal/cleanable/oil,
@@ -11683,6 +11987,10 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-255"
 	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
+"JA" = (
+/obj/item/cigbutt,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "JB" = (
@@ -12393,6 +12701,14 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-4"
 	},
+/obj/item/c_tube{
+	pixel_x = 1;
+	pixel_y = -7
+	},
+/obj/item/broken_bottle{
+	pixel_x = 13;
+	pixel_y = -7
+	},
 /turf/open/floor/iron/smooth_edge{
 	dir = 8
 	},
@@ -12493,6 +12809,7 @@
 	icon_state = "dirt-2"
 	},
 /obj/structure/rack,
+/obj/item/fireaxe/boardingaxe,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -12638,6 +12955,10 @@
 /area/awaymission/scrapbreaker_prime)
 "Mt" = (
 /obj/structure/table/wood/fancy/red,
+/obj/item/paint_palette{
+	pixel_x = 7;
+	pixel_y = 7
+	},
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
 "Mu" = (
@@ -12688,6 +13009,7 @@
 "Mz" = (
 /obj/structure/table/reinforced,
 /obj/item/ammo_casing/shotgun/incendiary,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "MA" = (
@@ -13254,6 +13576,13 @@
 /obj/item/electronics/airlock,
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime)
+"Oi" = (
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 8
+	},
+/obj/structure/closet/crate/trashcart/filled,
+/turf/open/floor/iron/smooth,
+/area/awaymission/scrapbreaker_prime)
 "Oj" = (
 /obj/structure/rack,
 /obj/item/stack/rods/ten,
@@ -13371,6 +13700,14 @@
 	icon_state = "dirt-47"
 	},
 /turf/open/floor/pod/dark,
+/area/awaymission/scrapbreaker_prime)
+"OC" = (
+/obj/structure/rack,
+/obj/item/chainsaw/anglegrinder{
+	pixel_y = 6
+	},
+/obj/item/chainsaw/anglegrinder,
+/turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "OD" = (
 /obj/structure/chair/office{
@@ -13562,10 +13899,11 @@
 /turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
 "Pd" = (
-/obj/effect/decal/cleanable/dirt{
-	icon_state = "dirt-29"
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
 	},
-/turf/open/floor/plating,
+/obj/structure/rack,
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "Pe" = (
 /obj/structure/table/reinforced,
@@ -13703,6 +14041,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-4"
 	},
+/obj/item/pen,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "PA" = (
@@ -13964,6 +14303,15 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
+"Qn" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 6
+	},
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/iron/grimy,
+/area/awaymission/scrapbreaker_prime)
 "Qo" = (
 /obj/effect/spawner/random/engineering/canister,
 /turf/open/floor/engine,
@@ -14044,7 +14392,10 @@
 	icon_state = "dirt-23"
 	},
 /obj/machinery/light/cold/directional/east,
-/turf/open/floor/plating,
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "QD" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
@@ -14161,6 +14512,7 @@
 	dir = 8
 	},
 /obj/structure/rack,
+/obj/item/shield/ballistic,
 /turf/open/floor/iron/smooth_edge{
 	dir = 8
 	},
@@ -14534,6 +14886,9 @@
 /mob/living/basic/trooper/shipwrecker/heavy,
 /obj/structure/sign/warning/no_smoking/circle/directional/south,
 /obj/machinery/light/cold/directional/south,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-23"
+	},
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "RZ" = (
@@ -14576,11 +14931,13 @@
 /area/awaymission/scrapbreaker_prime)
 "Se" = (
 /obj/structure/table,
-/obj/item/storage/toolbox/electrical,
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-47"
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "Sf" = (
 /obj/structure/lattice,
@@ -15043,6 +15400,7 @@
 /area/awaymission/scrapbreaker_prime)
 "Tt" = (
 /obj/structure/table/reinforced,
+/obj/item/wrench,
 /obj/item/analyzer,
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
@@ -15213,6 +15571,9 @@
 /obj/structure/rack,
 /obj/item/clipboard,
 /obj/item/barcodescanner,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-23"
+	},
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "TV" = (
@@ -15486,6 +15847,12 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime/engineblock)
+"UJ" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-4"
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "UL" = (
 /obj/structure/chair/sofa/corp/left,
 /turf/open/floor/pod/light,
@@ -15729,8 +16096,10 @@
 /turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
 "Vz" = (
-/obj/machinery/power/shieldwallgen/anchored,
-/turf/open/floor/iron/smooth_large,
+/obj/effect/turf_decal/tile/dark/half,
+/obj/structure/table/reinforced,
+/obj/item/stack/sheet/mineral/plasma,
+/turf/open/floor/iron/smooth_edge,
 /area/awaymission/scrapbreaker_prime)
 "VA" = (
 /obj/machinery/door/airlock/grunge,
@@ -16317,6 +16686,11 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
+"Xo" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/medical/bandage,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "Xp" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 4
@@ -16383,6 +16757,12 @@
 /obj/structure/lattice/catwalk,
 /turf/open/chasm/true/no_smooth,
 /area/space)
+"Xy" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor6-old"
+	},
+/turf/open/floor/engine,
+/area/awaymission/scrapbreaker_prime)
 "Xz" = (
 /obj/item/pickaxe{
 	pixel_x = -2;
@@ -16674,6 +17054,7 @@
 /obj/machinery/door/poddoor/shutters/window/preopen{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime)
 "Yi" = (
@@ -17042,6 +17423,9 @@
 /area/awaymission/scrapbreaker_prime)
 "Zh" = (
 /obj/structure/tank_holder/extinguisher,
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "dirt-8"
+	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "Zi" = (
@@ -25667,7 +26051,7 @@ Qe
 Qe
 Qe
 Qe
-Qe
+Xy
 Qe
 Qe
 Qe
@@ -28222,8 +28606,8 @@ CA
 fM
 hK
 hD
-fM
-qO
+Oi
+Hq
 hP
 tL
 Qe
@@ -28478,9 +28862,9 @@ fM
 yY
 Tk
 Pd
-sb
-Fc
-qO
+wS
+PY
+Zg
 PY
 tL
 Qe
@@ -28734,10 +29118,10 @@ bq
 Nz
 yY
 Tk
-Pd
-sb
-CM
 qO
+AN
+PY
+PY
 PY
 tL
 Qe
@@ -28774,8 +29158,8 @@ Qe
 xI
 PY
 PY
-JC
 xi
+PY
 Jp
 Tk
 yY
@@ -28991,10 +29375,10 @@ Nz
 Nz
 yY
 Tk
-sb
-sb
-Fc
 qO
+Jm
+JC
+PY
 PY
 tL
 Qe
@@ -29248,10 +29632,10 @@ WD
 Nz
 yY
 Tk
-sb
-ZF
-fM
-FW
+qO
+PY
+JC
+PY
 PY
 tL
 Qe
@@ -29505,10 +29889,10 @@ Nz
 Nz
 yY
 Tk
-sb
-sb
-Fc
 qO
+Ow
+JC
+PY
 PY
 tL
 Qe
@@ -29762,14 +30146,14 @@ bq
 Nz
 yY
 Tk
-sb
-sb
-CM
 qO
+PY
+PY
+PY
 PY
 tL
 Qe
-Qe
+cH
 Qe
 pi
 Qe
@@ -30020,9 +30404,9 @@ fM
 yY
 Tk
 em
-sb
-Fc
-qO
+PY
+PY
+PY
 PY
 tL
 Qe
@@ -30278,8 +30662,8 @@ CA
 fM
 Se
 QC
-fM
-qO
+GQ
+hm
 PY
 tL
 Qe
@@ -30539,10 +30923,10 @@ fM
 qO
 PY
 tL
-Qe
+HK
 Qe
 LO
-Qe
+PS
 Qe
 Qe
 bN
@@ -30795,7 +31179,7 @@ ls
 fM
 Gp
 PY
-tL
+FD
 Qe
 CY
 Qe
@@ -34903,7 +35287,7 @@ zw
 yY
 fM
 Mp
-Xp
+DC
 xH
 hm
 PY
@@ -36181,7 +36565,7 @@ ew
 vO
 ew
 Nz
-sb
+FL
 nY
 FQ
 fM
@@ -36219,7 +36603,7 @@ Qe
 Qe
 Qe
 Qe
-Qe
+kp
 Qe
 Qe
 Qe
@@ -36483,7 +36867,7 @@ Qe
 Qe
 xI
 PY
-PM
+Ee
 uJ
 hf
 BO
@@ -37988,7 +38372,7 @@ yY
 hA
 tk
 PY
-PY
+dy
 PY
 PY
 tL
@@ -38246,7 +38630,7 @@ hA
 qO
 PY
 PY
-PY
+JA
 PY
 tL
 Qe
@@ -38757,7 +39141,7 @@ Nz
 Nz
 UM
 hA
-qO
+nk
 Ow
 PY
 PY
@@ -39825,9 +40209,9 @@ Qe
 xI
 It
 fM
-nS
-nS
-nS
+fM
+fM
+fM
 fM
 Vj
 fM
@@ -40080,7 +40464,7 @@ Qe
 Qe
 Qe
 xI
-ds
+jP
 fM
 Jd
 Tq
@@ -42357,7 +42741,7 @@ mz
 Nz
 fw
 hf
-hf
+HH
 nS
 qO
 tL
@@ -42869,7 +43253,7 @@ Nz
 Nz
 yY
 Nz
-jn
+pj
 hf
 hf
 fM
@@ -43383,7 +43767,7 @@ Nz
 Nz
 yY
 Nz
-jn
+yN
 hf
 hf
 fM
@@ -44186,7 +44570,7 @@ Qe
 er
 Qe
 Qe
-Qe
+JZ
 Qe
 Qe
 Qe
@@ -44685,7 +45069,7 @@ wd
 Qe
 HK
 fM
-Vz
+Qe
 UT
 UT
 UT
@@ -44693,7 +45077,7 @@ UT
 UT
 UT
 UT
-Vz
+Qe
 fM
 Qe
 Qe
@@ -44942,15 +45326,15 @@ fM
 fM
 ww
 fM
-Bs
-fM
 Qe
 Qe
 Qe
 Qe
 Qe
-fM
-Bs
+Qe
+Qe
+Qe
+Qe
 fM
 UT
 fM
@@ -46251,7 +46635,7 @@ xI
 PM
 nS
 Vf
-Dc
+tM
 PY
 PY
 PY
@@ -49815,7 +50199,7 @@ nS
 qO
 tL
 Qe
-Qe
+JZ
 Qe
 Qe
 Qe
@@ -51360,7 +51744,7 @@ Qe
 Qe
 LP
 ty
-ci
+zF
 ci
 ci
 ci
@@ -51380,7 +51764,7 @@ Qe
 Qe
 ci
 ci
-ci
+pN
 Qe
 Qe
 Qe
@@ -51604,12 +51988,12 @@ fM
 RH
 PM
 fM
+du
+Hs
 ke
+IR
 ke
-ke
-ke
-ke
-ke
+da
 fM
 vp
 tL
@@ -51652,7 +52036,7 @@ Bo
 Jf
 sS
 Tb
-Bo
+nv
 fM
 Ci
 PM
@@ -51850,7 +52234,7 @@ ew
 fM
 jY
 Bn
-jn
+BU
 Wx
 fS
 fM
@@ -51866,7 +52250,7 @@ Vg
 Vg
 Vg
 Vg
-ke
+Hs
 xn
 qO
 tL
@@ -52119,9 +52503,9 @@ qO
 PM
 dq
 Vg
-kE
 Vg
-kE
+Vg
+Vg
 Vg
 ke
 xn
@@ -52376,11 +52760,11 @@ Sc
 PM
 dq
 Vg
-kE
+Hy
 Vg
 kE
 Vg
-ke
+Vg
 xn
 qO
 aH
@@ -52619,7 +53003,7 @@ ew
 vO
 ew
 nS
-hf
+FW
 Cn
 Op
 sG
@@ -52633,11 +53017,11 @@ PY
 PM
 dq
 Vg
-kE
+fm
 Vg
-kE
+OC
 Vg
-ke
+Vg
 xn
 qO
 PY
@@ -52876,10 +53260,10 @@ ew
 vO
 ew
 nS
-hf
-jj
+IA
+qb
 Ro
-CW
+Qn
 cy
 fM
 qO
@@ -52894,7 +53278,7 @@ Vg
 Vg
 Vg
 Vg
-ke
+sn
 fM
 ee
 GQ
@@ -53133,11 +53517,11 @@ ew
 vO
 ew
 fM
-jn
+lg
 jn
 UV
-jn
-jn
+aK
+jB
 fM
 qO
 PM
@@ -53408,7 +53792,7 @@ sr
 sr
 Oa
 sr
-QU
+Bs
 QU
 gV
 fM
@@ -54170,7 +54554,7 @@ fM
 qO
 PM
 fM
-pU
+zC
 tL
 UQ
 Qe
@@ -54181,7 +54565,7 @@ Qe
 Qe
 Qe
 xI
-rL
+Vz
 fM
 Np
 PY
@@ -54941,7 +55325,7 @@ fM
 qO
 PM
 fM
-pU
+CM
 Dl
 am
 am
@@ -54952,7 +55336,7 @@ am
 am
 am
 ki
-rL
+fD
 fM
 GR
 Oc
@@ -56010,7 +56394,7 @@ DV
 DV
 DV
 nS
-qO
+Gd
 PY
 PM
 fM
@@ -56231,7 +56615,7 @@ YC
 VO
 uU
 Fq
-BF
+yI
 BF
 BF
 VO
@@ -57279,7 +57663,7 @@ GQ
 hm
 PM
 fM
-ke
+cA
 ke
 Vg
 Vg
@@ -57538,11 +57922,11 @@ PM
 fM
 Zh
 Vg
-Vg
+UJ
 la
+UJ
 Vg
-Vg
-oM
+CB
 fM
 qO
 PM
@@ -57784,7 +58168,7 @@ yY
 hY
 fM
 YN
-kE
+iM
 vk
 Vg
 Vg
@@ -57821,7 +58205,7 @@ fM
 CK
 jc
 yY
-ek
+CF
 iQ
 Te
 yY
@@ -58313,7 +58697,7 @@ cL
 rR
 qt
 qu
-ke
+Xo
 fM
 qO
 PM
@@ -58816,7 +59200,7 @@ uv
 uv
 sG
 Vg
-ke
+qu
 nS
 gU
 Li
@@ -61361,7 +61745,7 @@ yY
 Vs
 XO
 GQ
-XS
+on
 XS
 GQ
 GQ
@@ -61648,13 +62032,13 @@ nS
 ew
 bq
 ew
-bq
+vO
 fM
 xj
 mZ
 xj
 fM
-bq
+vO
 ew
 bq
 ew
@@ -62132,7 +62516,7 @@ bV
 fM
 KA
 GI
-qe
+al
 Dv
 fM
 LE
@@ -63415,10 +63799,10 @@ ew
 vO
 ew
 bq
-ew
-ew
-ew
-ew
+bq
+bq
+bq
+vO
 WS
 xM
 xM
@@ -63482,10 +63866,10 @@ Jl
 Jl
 Jl
 WS
+vO
 bq
 bq
 bq
-ew
 bq
 ew
 vO
@@ -63972,8 +64356,8 @@ bE
 WS
 qK
 KW
-KW
-KW
+Rw
+Rw
 KW
 WS
 pZ
@@ -64229,8 +64613,8 @@ qK
 WS
 qK
 KW
-KW
-KW
+Rw
+Rw
 KW
 WS
 UN
@@ -64486,8 +64870,8 @@ lF
 WS
 qK
 KW
-KW
-KW
+Rw
+Rw
 KW
 WS
 KW
@@ -64743,8 +65127,8 @@ qK
 WS
 qK
 KW
-KW
-KW
+Rw
+Rw
 KW
 WS
 KW

@@ -301,36 +301,49 @@
 	list_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
 		/datum/reagent/drug/aranesp = 6,
 		/datum/reagent/medicine/c2/syriniver = 6,
-		/datum/reagent/medicine/c2/helbital = 4,
-		/datum/reagent/medicine/c2/convermol = 4,
+		/datum/reagent/medicine/c2/helbital = 6,
+		/datum/reagent/medicine/c2/convermol = 6,
 		/datum/reagent/medicine/modafinil = 4,
-		/datum/reagent/medicine/synaptizine = 4,
 		/datum/reagent/medicine/coagulant = 2,
 		/datum/reagent/medicine/atropine = 2,
 		)
 
 /obj/item/reagent_containers/hypospray/medipen/military/Initialize(mapload)
-	var/list/stimulants = list(/datum/reagent/medicine/muscle_stimulant = 70,
-		/datum/reagent/drug/nicotine = 9,
-		/datum/reagent/medicine/atropine = 9,
-		/datum/reagent/drug/methamphetamine = 5,
-		/datum/reagent/medicine/changelinghaste = 2,
-		/datum/reagent/medicine/changelingadrenaline = 2,
-		/datum/reagent/medicine/stimulants = 1,
-		/datum/reagent/drug/bath_salts = 1,
-		/datum/reagent/drug/kronkaine/gore = 1,
-		)
-	var/primary_healer = list(/datum/reagent/medicine/c2/helbital = 60,
-		/datum/reagent/medicine/c2/probital = 10,
-		/datum/reagent/consumable/nutriment/vitamin = 2,
-	)
-	var/secondary_healer = list(/datum/reagent/medicine/c2/helbital = 60,
-	)
 	if(prob(counterfeit_indicator))
 		desc += pick(" The anti-tamper light is blinking.", " The hyponeedle is dull.", " There are traces of rust on it."," Its internal cylinder is loose.",)
 	if(prob(reagent_taint_chance))
-		list_reagents = (pick_weight(list/stimulants) = 8,)
+		var/list/primary_stim = list(/datum/reagent/medicine/muscle_stimulant = 75,
+			/datum/reagent/medicine/atropine = 9,
+			/datum/reagent/drug/methamphetamine = 5,
+			/datum/reagent/drug/nicotine = 4,
+			/datum/reagent/medicine/changelinghaste = 2,
+			/datum/reagent/medicine/changelingadrenaline = 2,
+			/datum/reagent/medicine/stimulants = 1,
+			/datum/reagent/drug/bath_salts = 1,
+			/datum/reagent/drug/kronkaine/gore = 1,
+			)
+		var/list/secondary_stim = list(/datum/reagent/drug/aranesp = 60,
+			/datum/reagent/medicine/muscle_stimulant = 10,
+			/datum/reagent/medicine/ephedrine = 10,
+			/datum/reagent/medicine/epinephrine = 5,
+			/datum/reagent/drug/nicotine = 5,
+			/datum/reagent/drug/maint/tar = 5,
+			/datum/reagent/drug/pumpup = 5,
+		)
+		var/list/primary_heal = list(/datum/reagent/medicine/c2/syriniver = 60,
+			/datum/reagent/medicine/c2/probital = 15,
+			/datum/reagent/medicine/mine_salve = 5,
+			/datum/reagent/consumable/nutriment/vitamin = 2,
+		)
+		var/list/secondary_heal = list(/datum/reagent/medicine/c2/helbital = 60,
 
+		)
+		var/list/tertiary_heal = list(/datum/reagent/medicine/c2/convermol = 50,
+		/datum/reagent/medicine/salbutamol = 20,
+		/datum/reagent/medicine/morphine = 2,
+		)
+		var/list/new_reagents = list((pick_weight(primary_stim) = 8),(pick_weight(secondary_stim) = 8), (pick_weight(primary_heal) = 8), (pick_weight(secondary_heal) = 8), (pick_weight(tertiary_heal) = 8),)
+		list_reagents = new_reagents
 	. = ..()
 
 /obj/item/reagent_containers/hypospray/medipen/military/unreliable
@@ -340,41 +353,6 @@
 /obj/item/reagent_containers/hypospray/medipen/military/very_unreliable
 	counterfeit_indicator = 90
 	reagent_taint_chance = 75
-
-/obj/item/reagent_containers/hypospray/medipen/military/unreliable/Initialize(mapload)
-	var/weak_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
-		/datum/reagent/drug/nicotine = 6,
-		/datum/reagent/medicine/c2/multiver = 6,
-		/datum/reagent/medicine/c2/helbital = 4,
-		/datum/reagent/medicine/c2/convermol = 4,
-		/datum/reagent/medicine/mine_salve = 4,
-		/datum/reagent/medicine/synaptizine = 4,
-		/datum/reagent/medicine/coagulant = 2,
-		/datum/reagent/medicine/atropine = 2,
-		)
-	var/tainted_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
-		/datum/reagent/drug/aranesp = 6,
-		/datum/reagent/medicine/c2/multiver = 6,
-		/datum/reagent/medicine/c2/helbital = 4,
-		/datum/reagent/medicine/c2/convermol = 4,
-		/datum/reagent/medicine/mine_salve = 4,
-		/datum/reagent/medicine/synaptizine = 4,
-		/datum/reagent/medicine/coagulant = 2,
-		/datum/reagent/medicine/atropine = 2,
-		)
-	var/unbalanced_reagents = list()
-	var/offbrand_reagents = list(/datum/reagent/drug/pumpup = 10,
-		/datum/reagent/drug/maint/tar = 10,
-		/datum/reagent/medicine/c2/helbital = 4,
-		/datum/reagent/medicine/c2/convermol = 4,)
-	var/experimental_reagents = list(/datum/reagent/drug/pumpup = 10,
-		/datum/reagent/drug/maint/tar = 10,
-		/datum/reagent/medicine/c2/helbital = 4,
-		/datum/reagent/medicine/c2/convermol = 4,)
-	var/berserk_reagents = list(/datum/reagent/medicine/c2/penthrite = 8,  /datum/reagent/medicine/mine_salve = 6, /datum/reagent/drug/bath_salts = 4, /datum/reagent/drug/kronkaine/gore = 12)
-	if(prob(60))
-		list_reagents = pick_weight(list(weak_reagents = 20, tainted_reagents  = 15, unbalanced_reagents = 15, experimental_reagents = 5, berserk_reagents = 5))
-	. = ..()
 
 /obj/item/reagent_containers/hypospray/medipen/atropine
 	name = "atropine autoinjector"

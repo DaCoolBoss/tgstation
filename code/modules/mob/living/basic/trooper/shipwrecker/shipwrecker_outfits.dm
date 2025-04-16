@@ -137,16 +137,15 @@
 	minimum_survivable_temperature = 0
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/space
 
-/datum/outfit/shipwrecker/space
-	name = "Shipwrecker Pirate (Spacesuit)"
-	head = /obj/item/clothing/head/helmet/shipwrecker
-	mask = /obj/item/clothing/mask/gas
-	suit = /obj/item/clothing/suit/space/pirate
-	suit_store = /obj/item/tank/internals/oxygen/red
-
 /obj/effect/mob_spawn/corpse/human/shipwrecker/space
 	name = "Shipwrecker Pirate (Spacesuit)"
 	outfit = /datum/outfit/shipwrecker/space
+
+/datum/outfit/shipwrecker/space
+	name = "Shipwrecker Pirate (Spacesuit)"
+	head = /obj/item/clothing/head/helmet/space/pirate/shipwrecker
+	suit = /obj/item/clothing/suit/space/pirate/shipwrecker
+	suit_store = /obj/item/tank/internals/oxygen/red
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
 	name = "Shipwrecker Heavy Wrecker"
@@ -329,17 +328,8 @@
 	newgut.Insert(wrecker, movement_flags = DELETE_IF_REPLACED)
 	var/obj/item/organ/tongue/robot/newtongue = new()
 	newtongue.Insert(wrecker, movement_flags = DELETE_IF_REPLACED)
-	var/obj/item/bodypart/chest/robot/newchest = new()
-	newchest.try_attach_limb(wrecker)
-	if(prob(20))
-		var/obj/item/bodypart/leg/right/robot/advanced/newrightleg = new()
-		newrightleg.try_attach_limb(wrecker)
-	if(prob(20))
-		var/obj/item/bodypart/leg/right/robot/advanced/newleftleg = new()
-		newleftleg.try_attach_limb(wrecker)
-	if(prob(25))
-		var/obj/item/bodypart/arm/right/robot/advanced/newrightarm = new()
-		newrightarm.try_attach_limb(wrecker)
-	if(prob(25))
-		var/obj/item/bodypart/arm/right/robot/advanced/newleftarm = new()
-		newleftarm.try_attach_limb(wrecker)
+	var/obj/item/bodypart/leg/right/robot/advanced/newrightleg = new()
+	newrightleg.try_attach_limb(wrecker)
+	var/obj/item/bodypart/arm/right/robot/advanced/newrightarm = new()
+	newrightarm.try_attach_limb(wrecker)
+

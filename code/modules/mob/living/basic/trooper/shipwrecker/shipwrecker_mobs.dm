@@ -48,20 +48,20 @@
 	//chance we use an alternate weapon in left hand (percentage)
 	var/alt_weapon_chance_left = 35
 	//list of alt weapons for left hand
-	var/list/alt_weapons_left = list(/obj/item/crowbar/hammer = 25,
+	var/list/alt_weapons_left = list(/obj/item/crowbar/hammer = 20,
 		/obj/item/lead_pipe = 10,
-		/obj/item/pickaxe/silver = 10,
+		/obj/item/pickaxe/silver = 5,
 		)
 	//chance we use an alternate weapon in right hand (percentage)
 	var/alt_weapon_chance_right = 0
 	//list of alt weapons for right hand
 	var/list/alt_weapons_right = list(/obj/item/gun/energy/plasmacutter/pirate = 100,)
 	//chance we use an alternate loadout (percentage)
-	var/alt_outfit_chance = 10
+	var/alt_outfit_chance = 15
 	//list of alt mob spawners (ie outfits) mob and corpse will both wear
-	var/list/alt_outfits = list(/datum/outfit/shipwrecker/badass = 50,
-	/datum/outfit/shipwrecker/looter = 40,
-	/datum/outfit/shipwrecker/space = 10,)
+	var/list/alt_outfits = list(/datum/outfit/shipwrecker/badass = 5,
+	/datum/outfit/shipwrecker/looter = 5,
+	/datum/outfit/shipwrecker/space = 5,)
 	/// Type of bullet we use
 	var/projectiletype = /obj/projectile/plasma/pirate
 	/// Sound to play when firing weapon
@@ -130,7 +130,7 @@
 	alt_weapons_left = list(null)
 	alt_weapon_chance_right = 0
 	alt_weapons_right = list(/obj/item/chainsaw = 100,)
-	var/datum/action/cooldown/mob_cooldown/targeted_mob_ability/donk_laser
+	var/datum/action/cooldown/spell/pointed/shipwrecker_reinforcements
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker/officer
 	name = "Shipwrecker Officer"
@@ -143,7 +143,7 @@
 	desc = "Big boss of the Shipwrecker Gang, infamous for raiding shuttles mid-transit. This one is armed with a cutlass and a ?????."
 	response_help_continuous = "pushes"
 	response_help_simple = "push"
-	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
+	mob_spawner = /datum/outfit/shipwrecker/officer/boss
 	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker, /obj/item/gun/energy/plasmacutter/pirate, /obj/item/pickaxe)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker
 	l_hand = /obj/item/pickaxe
@@ -152,6 +152,7 @@
 /mob/living/basic/trooper/shipwrecker/boss/blackskull
 	name = "\improper Commodore Blackskull"
 	desc = ""
+	mob_spawner = /datum/outfit/shipwrecker/officer/boss/blackskull
 
 /mob/living/basic/snake/banded/examine_more(mob/user)
 	. = ..()

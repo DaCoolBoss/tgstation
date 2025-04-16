@@ -715,6 +715,7 @@
 	armor_type = /datum/armor/suit_ballistic
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*4, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*1.5, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*1)
+	allowed = list(/obj/item/gun, /obj/item/melee/baton, /obj/item/reagent_containers/hypospray, /obj/item/tank/internals, /obj/item/pickaxe,)
 
 /datum/armor/suit_ballistic
 	melee = 20

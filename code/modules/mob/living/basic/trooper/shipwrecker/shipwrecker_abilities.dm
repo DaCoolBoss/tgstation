@@ -57,3 +57,5 @@
 	for(var/mob/living/victim in loc)
 		to_chat(victim, span_warning("You are struck by a large bolt of electricity!"))
 		victim.electrocute_act(splat_damage, src, flags = SHOCK_NOGLOVES | SHOCK_NOSTUN)
+
+/datum/action/cooldown/spell/pointed/shipwrecker_airstrike
