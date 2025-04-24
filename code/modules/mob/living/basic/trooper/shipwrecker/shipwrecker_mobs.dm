@@ -43,6 +43,7 @@
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker
 	r_hand = /obj/item/gun/energy/plasmacutter/pirate
 	l_hand = /obj/item/pickaxe
+	attack_vis_effect = ATTACK_EFFECT_SMASH
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
 	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
 	//chance we use an alternate weapon in left hand (percentage)
@@ -85,6 +86,12 @@
 		cooldown_time = ranged_cooldown,\
 	)
 
+/mob/living/basic/trooper/shipwrecker/space
+	alt_outfit_chance = 0
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/space
+	unsuitable_atmos_damage = 0
+	minimum_survivable_temperature = 0
+
 /mob/living/basic/trooper/shipwrecker/heavy
 	//slow melee troopers with a lot of hp, armour and damage
 	name = "Wrecker"
@@ -93,6 +100,7 @@
 	melee_damage_lower = 24
 	melee_damage_upper = 26
 	armour_penetration = 35
+	obj_damage = 60
 	attack_verb_continuous = "slashes"
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
 	r_hand = /obj/item/chainsaw/anglegrinder

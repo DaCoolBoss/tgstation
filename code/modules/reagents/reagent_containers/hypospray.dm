@@ -295,7 +295,7 @@
 	//chance (percentage) of having description hinting at knockoff status
 	var/counterfeit_indicator = 10 //10% false positive rate
 	//chance (percentage) of having nonstandard reagents
-	var/reagent_taint_chance = FALSE
+	var/reagent_taint_chance = 0
 	volume = 40
 	amount_per_transfer_from_this = 40
 	list_reagents = list(/datum/reagent/medicine/muscle_stimulant = 8,
@@ -307,6 +307,10 @@
 		/datum/reagent/medicine/coagulant = 2,
 		/datum/reagent/medicine/atropine = 2,
 		)
+
+/obj/item/reagent_containers/hypospray/medipen/military/blend_requirements(obj/machinery/reagentgrinder/grindr)
+	//can't grind the reagents out of this type of pen.
+	return FALSE
 
 /obj/item/reagent_containers/hypospray/medipen/military/Initialize(mapload)
 	if(prob(counterfeit_indicator))
@@ -321,7 +325,7 @@
 			/datum/reagent/medicine/stimulants = 1,
 			/datum/reagent/drug/bath_salts = 1,
 			/datum/reagent/drug/kronkaine/gore = 1,
-			)
+		)
 		var/list/secondary_stim = list(/datum/reagent/drug/aranesp = 60,
 			/datum/reagent/medicine/muscle_stimulant = 10,
 			/datum/reagent/medicine/ephedrine = 10,
@@ -339,10 +343,24 @@
 
 		)
 		var/list/tertiary_heal = list(/datum/reagent/medicine/c2/convermol = 50,
-		/datum/reagent/medicine/salbutamol = 20,
-		/datum/reagent/medicine/morphine = 2,
+			/datum/reagent/medicine/salbutamol = 20,
+			/datum/reagent/medicine/mannitol = 20,
+			/datum/reagent/medicine/morphine = 5,
 		)
-		var/list/new_reagents = list((pick_weight(primary_stim) = 8),(pick_weight(secondary_stim) = 8), (pick_weight(primary_heal) = 8), (pick_weight(secondary_heal) = 8), (pick_weight(tertiary_heal) = 8),)
+		var/list/anti_tox = list(/datum/reagent/medicine/c2/convermol = 70,
+			/datum/reagent/medicine/antihol = 10,
+		)
+		var/list/coagulant = list(/datum/reagent/medicine/coagulant = 75,
+			/datum/reagent/medicine/coagulant/banana_peel = 10,
+			/datum/reagent/medicine/coagulant/seraka_extract = 10,
+			/datum/reagent/toxin/heparin = 5, //trolled
+		)
+		var/list/kicker = list(/datum/reagent/medicine/atropine = 70,
+
+		/datum/reagent/medicine/epinephrine = 8,
+		/datum/reagent/medicine/c2/penthrite = 2,
+		)
+		var/list/new_reagents = list((pick_weight(primary_stim) = 8),(pick_weight(secondary_stim) = 6), (pick_weight(primary_heal) = 6), (pick_weight(secondary_heal) = 6), (pick_weight(tertiary_heal) = 6), (pick_weight(anti_tox) = 4), (pick_weight(coagulant) = 2), (pick_weight(kicker) = 2),)
 		list_reagents = new_reagents
 	. = ..()
 
