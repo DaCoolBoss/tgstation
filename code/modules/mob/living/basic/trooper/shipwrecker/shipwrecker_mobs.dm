@@ -1,3 +1,5 @@
+#define SHIPWRECKER_REINFORCMENT_ABILITY_TYPEPATH /datum/action/cooldown/spell/pointed/shipwrecker_reinforcements
+
 //THE SHIPWRECKER GANG
 //"Scrap 'em."
 
@@ -140,6 +142,12 @@
 	alt_weapons_right = list(/obj/item/chainsaw = 100,)
 	var/datum/action/cooldown/spell/pointed/shipwrecker_reinforcements
 
+/mob/living/basic/trooper/shipwrecker/officer/Initialize(mapload)
+	. = ..()
+	var/static/list/innate_actions = list(
+		SHIPWRECKER_REINFORCMENT_ABILITY_TYPEPATH = BB_SHIPWRECKER_REINFORCEMENTS,
+	)
+
 /obj/effect/mob_spawn/corpse/human/shipwrecker/officer
 	name = "Shipwrecker Officer"
 	outfit = /datum/outfit/shipwrecker/officer
@@ -172,3 +180,5 @@
 		. += span_info("[pick(src.rhymes_dangerous)]")
 		. += span_notice("This snake is dangerous!")
 	return .
+
+#undef SHIPWRECKER_REINFORCMENT_ABILITY_TYPEPATH
