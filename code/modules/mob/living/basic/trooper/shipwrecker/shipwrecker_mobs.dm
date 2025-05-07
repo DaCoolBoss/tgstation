@@ -7,11 +7,7 @@
 //Scrapper - hybrid melee/ranged trooper
 //Wrecker - slow & tanky melee trooper
 //Officer - support ranged trooper who can summon random backup
-//Shipbreaker -
-//Commander -
-
-//WHAT DO THEY DO
-//
+//Commander - boss
 
 //VISUAL THEMES:
 //Green, Black, Grey
@@ -23,11 +19,6 @@
 //Mix of melee and ranged capability, these guys work together and specialise to cover multiple bases.
 //Skewed melee, but weak to melee. Resistant to projectiles.
 
-//LOOT:
-//Primarily variants on station gear
-//A lot of junk, sorting through piles of garbage to find good items
-//
-
 //LORE:
 //The Shipwrecker Gang hangs out on the "Scrapbreaker Prime", a heavily modified pirate frigate. They share this vessel with the secretive and eccentric Cult of the Singularity.
 //Captain Carpheart is the leader of the Gang, and rules the ship with an iron fist. This Gang is highly militerised, disciplined and loyal.
@@ -38,7 +29,7 @@
 	//Basic close-range troopers, with melee (brute) and ranged (burn) damage
 	name = "Scrapper"
 	icon_state = "wrecker"
-	desc = "A low-ranking member of the Shipwrecker Gang, infamous for raiding shuttles mid-transit. This one is armed with a plasma cutter and a pickaxe."
+	desc = "A low-ranking member of the Shipwrecker Gang, infamous for raiding shuttles mid-transit. Armed with mining tools and a plasma cutter."
 	response_help_continuous = "pushes"
 	response_help_simple = "push"
 	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
@@ -48,21 +39,14 @@
 	attack_vis_effect = ATTACK_EFFECT_SMASH
 	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
 	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
-	//chance we use an alternate weapon in left hand (percentage)
-	var/alt_weapon_chance_left = 35
-	//list of alt weapons for left hand
-	var/list/alt_weapons_left = list(/obj/item/crowbar/hammer = 20,
+	alt_weapon_chance_left = 35
+	alt_weapons_left = list(/obj/item/crowbar/hammer = 20,
 		/obj/item/lead_pipe = 10,
 		/obj/item/pickaxe/silver = 5,
 		)
-	//chance we use an alternate weapon in right hand (percentage)
-	var/alt_weapon_chance_right = 0
-	//list of alt weapons for right hand
-	var/list/alt_weapons_right = list(/obj/item/gun/energy/plasmacutter/pirate = 100,)
-	//chance we use an alternate loadout (percentage)
-	var/alt_outfit_chance = 15
-	//list of alt mob spawners (ie outfits) mob and corpse will both wear
-	var/list/alt_outfits = list(/datum/outfit/shipwrecker/badass = 5,
+	alt_weapons_right = list(/obj/item/gun/energy/plasmacutter/pirate = 100,)
+	alt_outfit_chance = 15
+	alt_outfits = list(/datum/outfit/shipwrecker/badass = 5,
 	/datum/outfit/shipwrecker/looter = 5,
 	/datum/outfit/shipwrecker/space = 5,)
 	/// Type of bullet we use
@@ -73,13 +57,6 @@
 	var/ranged_cooldown = 1.4 SECONDS
 
 /mob/living/basic/trooper/shipwrecker/Initialize(mapload)
-	if(prob(alt_weapon_chance_left))
-		l_hand = pick_weight(alt_weapons_left)
-	if(prob(alt_weapon_chance_right))
-		r_hand = pick_weight(alt_weapons_right)
-	if(prob(alt_outfits))
-		mob_spawner = pick_weight(alt_outfits)
-	loot = list(mob_spawner, r_hand, l_hand)
 	. = ..()
 	AddComponent(\
 		/datum/component/ranged_attacks,\
@@ -94,36 +71,33 @@
 	unsuitable_atmos_damage = 0
 	minimum_survivable_temperature = 0
 
-/mob/living/basic/trooper/shipwrecker/heavy
+/mob/living/basic/trooper/shipwrecker_heavy
 	//slow melee troopers with a lot of hp, armour and damage
 	name = "Wrecker"
 	icon_state = "wrecker_heavy"
-	desc = "A member of the infamous Shipwrecker Gang. This one is heavily armoured and brandishing a huge angle grinder."
+	desc = "A member of the infamous Shipwrecker Gang. This one is heavily armoured and brandishing a huge weapon."
 	melee_damage_lower = 24
 	melee_damage_upper = 26
 	armour_penetration = 35
 	obj_damage = 60
-	attack_verb_continuous = "slashes"
+	attack_verb_continuous = "grinds"
+	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
-	r_hand = /obj/item/chainsaw/anglegrinder
+	r_hand = /obj/item/chainsaw/chaingrinder
 	l_hand = null
-	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/heavy, /obj/item/chainsaw/anglegrinder)
-	alt_weapon_chance_left = 0
-	alt_weapons_left = list(null)
+	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/heavy, /obj/item/chainsaw/chaingrinder)
 	alt_weapon_chance_right = 10
 	alt_weapons_right = list(/obj/item/chainsaw = 100,)
 
-/obj/item/chainsaw/anglegrinder
-	name = "saw grinder"
+/obj/item/chainsaw/chaingrinder
+	name = "chain grinder"
 	desc = "A huge motorised circular saw with wicked titanium teeth. Designed to be wielded in both hands, and used to rip apart rock and scrap metal."
 	icon_state = "grinder"
 	tool_behaviour = TOOL_MINING
 	throwforce = 10
 	demolition_mod = 1.7
 	custom_materials = list(/datum/material/iron= SHEET_MATERIAL_AMOUNT * 8, /datum/material/titanium= SHEET_MATERIAL_AMOUNT * 2, /datum/material/glass= SHEET_MATERIAL_AMOUNT * 0.5)
-
-
-/mob/living/basic/trooper/shipwrecker/heavy/space
+	inhand_icon_state = "grinder"
 
 /mob/living/basic/trooper/shipwrecker/officer
 	name = "Officer"

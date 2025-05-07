@@ -42,7 +42,7 @@
 	var/list/reinforcements = list(
 		/mob/living/basic/trooper/shipwrecker = 50,
 		/mob/living/basic/pet/dog/bullterrier/guarddog/shipwrecker = 30,
-		/mob/living/basic/trooper/shipwrecker/heavy = 20,
+		/mob/living/basic/trooper/shipwrecker_heavy = 20,
 	)
 
 /obj/effect/temp_visual/shipwrecker_reinforcement_target/Initialize(mapload)

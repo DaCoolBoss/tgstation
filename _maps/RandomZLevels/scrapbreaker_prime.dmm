@@ -1756,6 +1756,13 @@
 	},
 /turf/open/floor/iron/checker,
 /area/awaymission/scrapbreaker_prime)
+"fk" = (
+/obj/effect/decal/cleanable/oil/streak{
+	icon_state = "streak2"
+	},
+/obj/machinery/recharge_station,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "fm" = (
 /obj/structure/rack,
 /obj/item/gun/energy/plasmacutter/pirate{
@@ -2124,6 +2131,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-flat-3"
 	},
+/obj/effect/spawner/random/trash/cigbutt,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -3881,6 +3889,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
+"lB" = (
+/obj/structure/table/optable,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "lC" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 1
@@ -3928,6 +3940,11 @@
 	pixel_x = 32
 	},
 /turf/open/floor/carpet/black,
+/area/awaymission/scrapbreaker_prime)
+"lJ" = (
+/obj/effect/decal/cleanable/oil/slippery,
+/obj/effect/decal/cleanable/robot_debris/up,
+/turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "lK" = (
 /obj/machinery/firealarm/directional/north,
@@ -5083,9 +5100,9 @@
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "pb" = (
-/obj/structure/rack,
-/obj/item/chainsaw/anglegrinder,
-/turf/open/floor/iron/dark,
+/obj/effect/decal/cleanable/glass,
+/obj/structure/lattice,
+/turf/open/floor/engine,
 /area/awaymission/scrapbreaker_prime)
 "pc" = (
 /obj/machinery/button/flasher{
@@ -5925,8 +5942,12 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/awaymission/scrapbreaker_prime)
 "rF" = (
-/obj/machinery/recharge_station,
 /obj/machinery/light/cold/directional/west,
+/obj/structure/table/reinforced,
+/obj/item/surgical_drapes{
+	pixel_x = -3;
+	pixel_y = -15
+	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "rG" = (
@@ -6101,6 +6122,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-flat-1"
 	},
+/obj/effect/spawner/random/trash/crushed_can,
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "sm" = (
@@ -6486,6 +6508,15 @@
 "ty" = (
 /obj/item/cigbutt,
 /turf/open/floor/engine,
+/area/awaymission/scrapbreaker_prime)
+"tz" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/drone{
+	pixel_x = -2;
+	pixel_y = 7
+	},
+/obj/item/multitool,
+/turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "tB" = (
 /obj/structure/closet/emcloset,
@@ -8929,6 +8960,10 @@
 	pixel_x = 2;
 	pixel_y = 10
 	},
+/obj/item/sticker/assistant{
+	name = "shipwrecker sticker";
+	pixel_x = -12
+	},
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "AC" = (
@@ -9776,6 +9811,8 @@
 /area/awaymission/scrapbreaker_prime)
 "Dd" = (
 /obj/machinery/light/cold/directional/north,
+/obj/effect/spawner/random/structure/table_or_rack,
+/obj/effect/spawner/random/engineering/tool,
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "De" = (
@@ -10186,6 +10223,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-flat-1"
 	},
+/obj/item/hatchet,
 /turf/open/floor/pod/light,
 /area/awaymission/scrapbreaker_prime)
 "Ek" = (
@@ -10393,10 +10431,6 @@
 	dir = 1
 	},
 /obj/structure/closet/crate/secure/weapon,
-/obj/item/chainsaw/anglegrinder{
-	pixel_y = 6
-	},
-/obj/item/chainsaw/anglegrinder,
 /turf/open/floor/iron/grimy,
 /area/awaymission/scrapbreaker_prime)
 "ER" = (
@@ -11665,6 +11699,11 @@
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/awaymission/scrapbreaker_prime/engineblock)
+"Iz" = (
+/obj/effect/spawner/random/trash/garbage,
+/obj/effect/spawner/random/trash/crushed_can,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
 "IA" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/pod/light,
@@ -13701,14 +13740,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/awaymission/scrapbreaker_prime)
-"OC" = (
-/obj/structure/rack,
-/obj/item/chainsaw/anglegrinder{
-	pixel_y = 6
-	},
-/obj/item/chainsaw/anglegrinder,
-/turf/open/floor/iron/dark,
-/area/awaymission/scrapbreaker_prime)
 "OD" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -15244,6 +15275,10 @@
 /area/awaymission/scrapbreaker_prime)
 "SU" = (
 /obj/machinery/door/airlock/hatch,
+/turf/open/floor/iron/dark,
+/area/awaymission/scrapbreaker_prime)
+"SV" = (
+/obj/effect/spawner/random/engineering/tank,
 /turf/open/floor/iron/dark,
 /area/awaymission/scrapbreaker_prime)
 "SW" = (
@@ -35301,7 +35336,7 @@ Av
 dg
 KU
 ka
-dg
+pb
 jG
 dg
 Qe
@@ -39929,7 +39964,7 @@ eY
 ER
 sb
 dg
-tO
+Qe
 dg
 Qe
 Qe
@@ -47406,7 +47441,7 @@ gr
 nz
 fM
 Dd
-Vg
+SV
 Vg
 Tk
 yY
@@ -47662,9 +47697,9 @@ Qe
 xI
 sl
 fM
+Iz
 Vg
-Vg
-Vg
+sF
 Tk
 yY
 nS
@@ -47921,7 +47956,7 @@ PM
 SO
 Vg
 Vg
-Vg
+lJ
 Tk
 bY
 nS
@@ -49677,10 +49712,10 @@ yU
 uj
 fM
 Vg
-xX
+ke
 rF
-xX
-xX
+tz
+lB
 fM
 aW
 tL
@@ -50185,16 +50220,16 @@ nS
 hx
 Lg
 Op
-Op
+ZO
 RJ
 Op
 ct
 fM
+xX
+fk
 Vg
-sF
-Vg
-Vg
-Vg
+xX
+xX
 nS
 qO
 tL
@@ -50704,11 +50739,11 @@ Ro
 Um
 Tw
 fM
+xX
+xX
 Vg
-Vg
-Vg
-Vg
-Vg
+xX
+xX
 fM
 Sw
 tL
@@ -51724,7 +51759,7 @@ ew
 ew
 ew
 fM
-pb
+kE
 Vg
 fm
 fM
@@ -53019,7 +53054,7 @@ dq
 Vg
 fm
 Vg
-OC
+kE
 Vg
 Vg
 xn

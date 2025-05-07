@@ -84,6 +84,27 @@
 
 /datum/outfit/shipwrecker/looter/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
 	. = ..()
+	for(var/counter in 1 to rand(1,5))
+		belt_contents += pick_weight(list(
+			/obj/item/stack/sheet/iron/ten = 10,
+			/obj/item/stack/sheet/iron/five = 10,
+			/obj/item/stack/sheet/mineral/plasma/five = 10,
+			/obj/item/stack/sheet/mineral/plasma = 10,
+			/obj/effect/spawner/random/food_or_drink/donkpockets_single = 10,
+			/obj/item/weldingtool/hugetank = 10,
+			/obj/item/grenade/frag = 10,
+			/obj/item/knife/combat = 10,
+			/obj/item/stack/circuit_stack/full = 10,
+			/obj/item/assembly/flash = 5,
+			/obj/item/grenade/frag = 5,
+		))
+
+/datum/outfit/shipwrecker/looter/medical
+	name = "Shipwrecker Scrapper (extra stims/healing items)"
+
+
+/datum/outfit/shipwrecker/looter/medical/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+	. = ..()
 	for(var/counter in 1 to rand(1,3))
 		belt_contents += pick_weight(list(
 			/obj/item/stack/sheet/iron/ten = 10,
@@ -94,21 +115,26 @@
 			/obj/item/weldingtool/hugetank = 10,
 			/obj/item/grenade/frag = 10,
 			/obj/item/knife/combat = 10,
-			/obj/item/assembly/flash = 10,
+			/obj/item/hatchet = 10,
 			/obj/item/assembly/flash = 5,
 			/obj/item/grenade/frag = 5,
 		))
-
-/datum/outfit/shipwrecker/looter/medical
-	name = "Shipwrecker Scrapper (extra stims/healing items)"
-	suit = /obj/item/clothing/suit/armor/shipwrecker
-	belt = /obj/item/storage/belt/military
 
 /datum/outfit/shipwrecker/badass
 	name = "Shipwrecker Scrapper (extra augments, better loot)"
 
 /datum/outfit/shipwrecker/badass/post_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
 	. = ..()
+	var/pocket_loot = pick_weight(list(/obj/item/grenade/frag = 25,
+	/obj/item/knife/combat = 25,
+	/obj/item/assembly/flash = 20,
+	/obj/item/assembly/flash = 20,
+	/obj/item/assembly/flash = 10,
+	))
+	if(l_pocket == null)
+		l_pocket = pocket_loot
+	if(r_pocket == null)
+		r_pocket = pocket_loot
 	if(prob(20))
 		var/obj/item/organ/heart/cybernetic/tier2/newheart = new()
 		newheart.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
@@ -221,6 +247,11 @@
 	if(prob(25))
 		var/obj/item/bodypart/arm/right/robot/advanced/newleftarm = new()
 		newleftarm.try_attach_limb(wrecker)
+
+/datum/outfit/shipwrecker/heavy/badass
+	name = "Shipwrecker Wrecker (extra augments, better loot)"
+
+
 
 /obj/effect/mob_spawn/corpse/human/shipwrecker/officer
 	name = "Shipwrecker Officer"

@@ -56,7 +56,7 @@
 	planning_subtrees = list(
 		/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter,
 		/datum/ai_planning_subtree/targeted_mob_ability/shipwrecker_reinforcements,
-		/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish,
+		/datum/ai_planning_subtree/basic_melee_attack_subtree,
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
 		/datum/ai_planning_subtree/random_speech/shipwrecker/heavy,
 	)
