@@ -25,14 +25,10 @@
 	attack_verb_simple = "slash"
 	attack_sound = 'sound/items/weapons/blade1.ogg'
 	attack_vis_effect = ATTACK_EFFECT_SLASH
-	loot = list(/obj/effect/mob_spawn/corpse/human/pirate/melee)
 	light_range = 2
 	light_power = 2.5
 	light_color = COLOR_SOFT_RED
-	loot = list(
-		/obj/effect/mob_spawn/corpse/human/pirate/melee,
-		/obj/item/melee/energy/sword/pirate,
-	)
+	drop_hand_gear = TRUE
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/pirate/melee
 	r_hand = /obj/item/melee/energy/sword/pirate
 	plunder_credits = 50 //they hit hard so they steal more

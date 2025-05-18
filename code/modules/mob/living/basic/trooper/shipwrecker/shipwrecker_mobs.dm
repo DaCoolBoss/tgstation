@@ -36,19 +36,22 @@
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker
 	r_hand = /obj/item/gun/energy/plasmacutter/pirate
 	l_hand = /obj/item/pickaxe
+	melee_damage_lower = 14
+	melee_damage_upper = 16
 	attack_vis_effect = ATTACK_EFFECT_SMASH
-	damage_coeff = list(BRUTE = 0.9, BURN = 0.6, TOX = 1, STAMINA = 0, OXY = 0)
+	damage_coeff = list(BRUTE = 0.7, BURN = 0.7, TOX = 1, STAMINA = 0, OXY = 0)
 	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
+	drop_hand_gear = TRUE
 	alt_weapon_chance_left = 35
 	alt_weapons_left = list(/obj/item/crowbar/hammer = 20,
 		/obj/item/lead_pipe = 10,
 		/obj/item/pickaxe/silver = 5,
 		)
-	alt_weapons_right = list(/obj/item/gun/energy/plasmacutter/pirate = 100,)
 	alt_outfit_chance = 15
 	alt_outfits = list(/datum/outfit/shipwrecker/badass = 5,
-	/datum/outfit/shipwrecker/looter = 5,
-	/datum/outfit/shipwrecker/space = 5,)
+		/datum/outfit/shipwrecker/looter = 5,
+		/datum/outfit/shipwrecker/looter/medic = 5,
+		)
 	/// Type of bullet we use
 	var/projectiletype = /obj/projectile/plasma/pirate
 	/// Sound to play when firing weapon
@@ -76,18 +79,28 @@
 	name = "Wrecker"
 	icon_state = "wrecker_heavy"
 	desc = "A member of the infamous Shipwrecker Gang. This one is heavily armoured and brandishing a huge weapon."
+	/// The looping sound for our chainsaw when running
+	var/datum/looping_sound/chainsaw/chainsaw_loop
+	ai_controller = /datum/ai_controller/basic_controller/trooper/shipwrecker
+	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
 	melee_damage_lower = 24
 	melee_damage_upper = 26
 	armour_penetration = 35
+	attack_sound = 'sound/items/weapons/chainsawhit.ogg'
 	obj_damage = 60
 	attack_verb_continuous = "grinds"
 	faction = list(FACTION_PIRATE, FACTION_SHIPWRECKER)
+	damage_coeff = list(BRUTE = 0.6, BURN = 0.7, TOX = 0.8, STAMINA = 0, OXY = 0)
+	drop_hand_gear = TRUE
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
-	r_hand = /obj/item/chainsaw/chaingrinder
-	l_hand = null
-	loot = list(/obj/effect/mob_spawn/corpse/human/shipwrecker/heavy, /obj/item/chainsaw/chaingrinder)
-	alt_weapon_chance_right = 10
-	alt_weapons_right = list(/obj/item/chainsaw = 100,)
+	drop_hand_gear = FALSE
+	l_hand = /obj/item/chainsaw/chaingrinder
+	alt_weapon_chance_left = 5
+	alt_weapons_left = list(/obj/item/chainsaw = 100,)
+
+/mob/living/basic/trooper/shipwrecker_heavy/Initialize(mapload)
+	. = ..()
+	chainsaw_loop = new(src)
 
 /obj/item/chainsaw/chaingrinder
 	name = "chain grinder"
@@ -97,7 +110,6 @@
 	throwforce = 10
 	demolition_mod = 1.7
 	custom_materials = list(/datum/material/iron= SHEET_MATERIAL_AMOUNT * 8, /datum/material/titanium= SHEET_MATERIAL_AMOUNT * 2, /datum/material/glass= SHEET_MATERIAL_AMOUNT * 0.5)
-	inhand_icon_state = "grinder"
 
 /mob/living/basic/trooper/shipwrecker/officer
 	name = "Officer"

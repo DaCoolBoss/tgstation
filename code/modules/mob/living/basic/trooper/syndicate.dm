@@ -3,7 +3,6 @@
 	name = "Syndicate Operative"
 	desc = "Death to Nanotrasen."
 	faction = list(ROLE_SYNDICATE)
-	loot = list(/obj/effect/mob_spawn/corpse/human/syndicatesoldier)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/syndicatesoldier
 
 /mob/living/basic/trooper/syndicate/space

@@ -738,7 +738,6 @@
 	desc = "A heavy suit of armour composed of multiple layers of rigid composite armour plates. \
 		It provides a great deal of protection to the torso and limbs. It is heavy and rigid at the joints."
 	icon_state = "shipwrecker_heavy"
-	inhand_icon_state = "swat_suit"
 	armor_type = /datum/armor/suit_ballistic_heavy
 	strip_delay = 120
 	clothing_flags = THICKMATERIAL

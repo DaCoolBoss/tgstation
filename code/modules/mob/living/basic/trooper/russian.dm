@@ -16,19 +16,12 @@
 
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian
 	r_hand = /obj/item/knife/kitchen
-	loot = list(
-		/obj/effect/mob_spawn/corpse/human/russian,
-		/obj/item/knife/kitchen,
-	)
+	drop_hand_gear = TRUE
 
 /mob/living/basic/trooper/russian/ranged
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/ranged
-	r_hand = /obj/item/gun/ballistic/automatic/pistol
-	loot = list(
-		/obj/effect/mob_spawn/corpse/human/russian/ranged,
-		/obj/item/gun/ballistic/revolver/nagant,
-	)
+	r_hand = /obj/item/gun/ballistic/revolver/nagant
 	var/casingtype = /obj/item/ammo_casing/n762
 	var/projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
 

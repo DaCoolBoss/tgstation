@@ -83,7 +83,6 @@
 	belt = /obj/item/storage/belt/military/army
 
 /datum/outfit/shipwrecker/looter/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	. = ..()
 	for(var/counter in 1 to rand(1,5))
 		belt_contents += pick_weight(list(
 			/obj/item/stack/sheet/iron/ten = 10,
@@ -99,12 +98,10 @@
 			/obj/item/grenade/frag = 5,
 		))
 
-/datum/outfit/shipwrecker/looter/medical
+/datum/outfit/shipwrecker/looter/medic
 	name = "Shipwrecker Scrapper (extra stims/healing items)"
 
-
-/datum/outfit/shipwrecker/looter/medical/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	. = ..()
+/datum/outfit/shipwrecker/looter/medic/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
 	for(var/counter in 1 to rand(1,3))
 		belt_contents += pick_weight(list(
 			/obj/item/stack/sheet/iron/ten = 10,
@@ -124,7 +121,6 @@
 	name = "Shipwrecker Scrapper (extra augments, better loot)"
 
 /datum/outfit/shipwrecker/badass/post_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	. = ..()
 	var/pocket_loot = pick_weight(list(/obj/item/grenade/frag = 25,
 	/obj/item/knife/combat = 25,
 	/obj/item/assembly/flash = 20,
@@ -219,7 +215,6 @@
 		r_pocket = pick_weight(pocket_loot)
 
 /datum/outfit/shipwrecker/heavy/post_equip(mob/living/carbon/human/wrecker, visuals_only = FALSE)
-	. = ..()
 	if(prob(40))
 		var/obj/item/organ/heart/cybernetic/tier2/newheart = new()
 		newheart.Insert(wrecker, movement_flags = DELETE_IF_REPLACED)

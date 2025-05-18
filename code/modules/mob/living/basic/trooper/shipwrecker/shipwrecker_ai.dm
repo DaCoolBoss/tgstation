@@ -1,8 +1,14 @@
 /datum/ai_controller/basic_controller/trooper/shipwrecker
+	blackboard = list(
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
+		BB_TARGET_MINIMUM_STAT = HARD_CRIT,
+		BB_REINFORCEMENTS_SAY = "411 in progress, requesting backup!"
+	)
+
 	ai_movement = /datum/ai_movement/basic_avoidance
 	idle_behavior = /datum/idle_behavior/idle_random_walk
 	planning_subtrees = list(
-		/datum/ai_planning_subtree/simple_find_target,
+		/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter,
 		/datum/ai_planning_subtree/attack_obstacle_in_path/trooper,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish,
 		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker,
@@ -28,6 +34,17 @@
 	for(target in range(1, src))
 		return ..()
 
+/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter
+	var/list/alert_vocals = list("Target spotted!",
+	"I see them!",
+	"Kill! Kill!",
+	"Rip them apart!",
+	"Blasting!",
+	"Opening fire!",
+	"Got visual!",
+	"Prioritising targets!"
+	)
+
 /datum/ai_planning_subtree/random_speech/shipwrecker
 	speech_chance = 0.8
 	speak = list("Haven't needed sleep lately. Too wide awake.",
@@ -35,7 +52,7 @@
 	"I'm all twitchy. Keep hearing things...",
 	"Is someone there?",
 	"Can't wait to kill some fools.",
-	"Just need a little more stim money...",
+	"Just need a little more...",
 	"Oh I'm ready. Ready to kill something.",
 	"Running low on stims...",
 	"Hope we get some action soon...",
@@ -59,18 +76,6 @@
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
 		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
 		/datum/ai_planning_subtree/random_speech/shipwrecker/heavy,
-	)
-
-
-/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter
-	var/list/alert_vocals = list("Target spotted!",
-	"I see them!",
-	"Kill! Kill!",
-	"Rip them apart!",
-	"Blasting!",
-	"Opening fire!",
-	"Got visual!",
-	"Prioritising targets!"
 	)
 
 /datum/ai_planning_subtree/random_speech/shipwrecker/heavy
