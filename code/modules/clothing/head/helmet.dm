@@ -610,6 +610,7 @@
 	armor_type = /datum/armor/helmet_ballistic
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*2, /datum/material/titanium=SHEET_MATERIAL_AMOUNT*0.8, /datum/material/plastic=SHEET_MATERIAL_AMOUNT*0.6)
+	dog_fashion = /datum/dog_fashion/head/shipwrecker
 
 /datum/armor/helmet_ballistic
 	melee = 20

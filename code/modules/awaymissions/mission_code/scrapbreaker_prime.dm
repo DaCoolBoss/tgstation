@@ -2,7 +2,6 @@
 /area/awaymission/scrapbreaker_prime
 	name = "Scrapbreaker Prime"
 	icon_state = "shipwrecker"
-	static_lighting = FALSE
 	base_lighting_alpha = 20
 
 /area/awaymission/scrapbreaker_prime/engineblock

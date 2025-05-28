@@ -258,3 +258,15 @@
 	name = "Barrelmelon Berserk %REAL_NAME%"
 	desc = "Either the sturdiness of the helmet gave %REAL_NAME% a confidence boost, or its bit tight on their head..."
 	obj_icon_state = "barrelmelon"
+
+/datum/dog_fashion/head/shipwrecker
+	name = "Scrapper %REAL_NAME%"
+	desc = "%REAL_NAME% is ready to rip shuttles apart and binge on dubious stimulants."
+	obj_icon_state = "shipwrecker"
+	emote_see = list("twitches", "glances around")
+
+/datum/dog_fashion/head/shipwrecker_heavy
+
+/datum/dog_fashion/head/shipwrecker_officer
+
+/datum/dog_fashion/head/shipwrecker_boss

@@ -93,7 +93,6 @@
 	damage_coeff = list(BRUTE = 0.6, BURN = 0.7, TOX = 0.8, STAMINA = 0, OXY = 0)
 	drop_hand_gear = TRUE
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/shipwrecker/heavy
-	drop_hand_gear = FALSE
 	l_hand = /obj/item/chainsaw/chaingrinder
 	alt_weapon_chance_left = 5
 	alt_weapons_left = list(/obj/item/chainsaw = 100,)
