@@ -129,3 +129,53 @@
 
 /obj/item/paper/fluff/awaymissions/piratefleet/shipwrecker/ss13/insurance
 	default_raw_text = "Insurance racket is a partial success. Nanotrasen gives its research outposts full control over whether or not they pay out, and these station captains are inconsistant. Word in the sector is that they don't have to pay out on extortion attempts because not enough of their shuttles get attacked. Well, we aim to fix that."
+
+///holodisk shit
+/datum/preset_holoimage/shipwrecker
+	outfit_type = /datum/outfit/shipwrecker
+
+/datum/preset_holoimage/shipwrecker/boss
+	outfit_type = /datum/outfit/shipwrecker/officer/boss
+
+/obj/item/disk/holodisk/ruin/scrapbreaker
+	name = "Shipwrecker Holo Propaganda"
+	preset_image_type = /datum/preset_holoimage/shipwrecker/boss
+	preset_record_text = {"
+	NAME Commadore Blackskull
+	DELAY 10
+	SAY Welcome to the Scrapbreaker.
+	DELAY 15
+	SAY If you are here it is because you are the be
+	DELAY 10
+	SAY You don't need to tell me twice, I just need to swipe access and then..
+	DELAY 15
+	SOUND sound/effects/glass/glassbr1.ogg
+	DELAY 10
+	SOUND sound/effects/glass/glassbr2.ogg
+	DELAY 15
+	NAME Jacob Ullman
+	DELAY 10
+	SAY What the FUCK was that?
+	DELAY 20
+	SAY OH FUCK THERE'S MORE OF THEM. CALL FASTER JESUS CHRIST.
+	DELAY 20
+	NAME Elizabeth Queef
+	DELAY 10
+	SAY DON'T FUCKING RUSH ME ALRIGHT IT'S BEING CALLED.
+	DELAY 15
+	SOUND sound/mobs/non-humanoids/frog/huuu.ogg
+	DELAY 5
+	SOUND sound/mobs/non-humanoids/frog/huuu.ogg
+	DELAY 15
+	SOUND sound/effects/woodhit.ogg
+	DELAY 2
+	SOUND sound/effects/bodyfall/bodyfall3.ogg
+	DELAY 5
+	SOUND sound/effects/meow1.ogg
+	DELAY 15
+	NAME Jacob Ullman
+	DELAY 15
+	SAY OH FUCK IT'S GOT ME JESUS CHRIIIiiii-
+	NAME Elizabeth Queef
+	SAY AAAAAAAAAAAAAAAA FUCK THAT
+	DELAY 15;"}

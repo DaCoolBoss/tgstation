@@ -27,6 +27,8 @@
 /datum/ai_behavior/call_reinforcements/shipwrecker
 	reinforcements_range = 15
 
+/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic
+
 /datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish/SelectBehaviors(datum/ai_controller/controller, delta_time)
 	var/mob/target = controller.blackboard[BB_BASIC_MOB_CURRENT_TARGET]
 	if(!target || QDELETED(target))
