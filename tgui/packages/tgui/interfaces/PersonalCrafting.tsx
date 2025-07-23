@@ -271,7 +271,7 @@ export const PersonalCrafting = (props) => {
                       (mode === MODE.cooking ? ' recipes...' : ' designs...')
                     }
                     value={searchText}
-                    onInput={(e, value) => {
+                    onChange={(value) => {
                       setPages(1);
                       setSearchText(value);
                     }}
@@ -550,7 +550,7 @@ export const PersonalCrafting = (props) => {
               )}
               {recipes.length > displayLimit && (
                 <Section
-                  mb={2}
+                  mb={1}
                   textAlign="center"
                   style={{ cursor: 'pointer' }}
                   onClick={() => setPages(pages + 1)}
@@ -936,7 +936,7 @@ const RecipeContent = ({ item, craftable, busy, mode, diet }) => {
                       <Divider />
                       {item.foodtypes.map((foodtype) => (
                         <FoodtypeContent
-                          key={item.ref}
+                          key={item.ref + foodtype}
                           type={foodtype}
                           diet={diet}
                         />

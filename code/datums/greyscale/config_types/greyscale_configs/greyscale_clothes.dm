@@ -369,6 +369,26 @@
 	name = "Sailor Dress(Worn)"
 	icon_file = 'icons/mob/clothing/under/dress.dmi'
 
+/datum/greyscale_config/seifuku
+	name = "Seifuku"
+	icon_file = 'icons/obj/clothing/under/costume.dmi'
+	json_config = 'code/datums/greyscale/json_configs/seifuku.json'
+
+/datum/greyscale_config/seifuku/worn
+	name = "Seifuku (Worn)"
+	icon_file = 'icons/mob/clothing/under/costume.dmi'
+	json_config = 'code/datums/greyscale/json_configs/seifuku_worn.json'
+
+/datum/greyscale_config/seifuku_inhands_left
+	name = "Seifuku Inhands Left"
+	icon_file = 'icons/mob/inhands/clothing/suits_lefthand.dmi'
+	json_config = 'code/datums/greyscale/json_configs/seifuku_inhands.json'
+
+/datum/greyscale_config/seifuku_inhands_right
+	name = "Seifuku Inhands Right"
+	icon_file = 'icons/mob/inhands/clothing/suits_righthand.dmi'
+	json_config = 'code/datums/greyscale/json_configs/seifuku_inhands.json'
+
 // SHIRTS, PANTS AND SHORTS
 /datum/greyscale_config/slacks
 	name = "Slacks"
@@ -506,6 +526,24 @@
 
 /datum/greyscale_config/sweater/worn
 	name = "Sweater (Worn)"
+	icon_file = 'icons/mob/clothing/suits/jacket.dmi'
+
+/datum/greyscale_config/blazer
+	name = "Blazer"
+	icon_file = 'icons/obj/clothing/suits/jacket.dmi'
+	json_config = 'code/datums/greyscale/json_configs/blazer.json'
+
+/datum/greyscale_config/blazer/worn
+	name = "Blazer (Worn)"
+	icon_file = 'icons/mob/clothing/suits/jacket.dmi'
+
+/datum/greyscale_config/trenchcoat
+	name = "Trenchcoat"
+	icon_file = 'icons/obj/clothing/suits/jacket.dmi'
+	json_config = 'code/datums/greyscale/json_configs/trenchcoat.json'
+
+/datum/greyscale_config/trenchcoat/worn
+	name = "Trenchcoat (Worn)"
 	icon_file = 'icons/mob/clothing/suits/jacket.dmi'
 
 /datum/greyscale_config/jacket_oversized
@@ -832,3 +870,12 @@
 /datum/greyscale_config/jester_hat/worn
 	name = "Jester Hat (Worn)"
 	icon_file = 'icons/mob/clothing/head/costume.dmi'
+
+/datum/greyscale_config/fedora
+	name = "Fedora"
+	icon_file = 'icons/obj/clothing/head/hats.dmi'
+	json_config = 'code/datums/greyscale/json_configs/fedora.json'
+
+/datum/greyscale_config/fedora/worn
+	name = "Fedora (Worn)"
+	icon_file = 'icons/mob/clothing/head/hats.dmi'

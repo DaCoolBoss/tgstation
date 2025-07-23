@@ -88,6 +88,8 @@ Always compile, always use that verb, and always make sure that it works for wha
 #define ZTRAIT_SNOWSTORM "Weather_Snowstorm"
 #define ZTRAIT_ASHSTORM "Weather_Ashstorm"
 #define ZTRAIT_VOIDSTORM "Weather_Voidstorm"
+#define ZTRAIT_RAINSTORM "Weather_Rainstorm"
+#define ZTRAIT_SANDSTORM "Weather_Sandstorm"
 
 /// boolean - does this z prevent ghosts from observing it
 #define ZTRAIT_SECRET "Secret"
@@ -241,3 +243,8 @@ Always compile, always use that verb, and always make sure that it works for wha
 #define AWAYSTART_SNOWDIN "AWAYSTART_SNOWDIN"
 #define AWAYSTART_UNDERGROUND "AWAYSTART_UNDERGROUND"
 #define AWAYSTART_SCRAPBREAKER "AWAYSTART_SCRAPBREAKER"
+
+// Minetypes for maps
+#define MINETYPE_NONE "none"
+#define MINETYPE_LAVALAND "lavaland"
+#define MINETYPE_ICE "ice"

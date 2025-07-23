@@ -178,7 +178,18 @@ GLOBAL_LIST_INIT(announcer_keys, list(
 	ANNOUNCER_SPANOMALIES,
 ))
 
-/// List of all of our sound keys.
+/**
+# assoc list of datum by key
+* k = SFX_KEY (see below)
+* v = singleton sound_effect datum ref
+* initialized in SSsounds init
+*/
+GLOBAL_LIST_EMPTY(sfx_datum_by_key)
+
+/* List of all of our sound keys.
+	used with /datum/sound_effect as the key
+	see code\game\sound_keys.dm
+*/
 #define SFX_BODYFALL "bodyfall"
 #define SFX_BULLET_MISS "bullet_miss"
 #define SFX_CAN_OPEN "can_open"
@@ -263,6 +274,11 @@ GLOBAL_LIST_INIT(announcer_keys, list(
 #define SFX_SUTURE_END "suture_end"
 #define SFX_SUTURE_PICKUP "suture_pickup"
 #define SFX_SUTURE_DROP "suture_drop"
+#define SFX_REGEN_MESH_BEGIN "regen_mesh_begin"
+#define SFX_REGEN_MESH_CONTINUOUS "regen_mesh_continuous"
+#define SFX_REGEN_MESH_END "regen_mesh_end"
+#define SFX_REGEN_MESH_PICKUP "regen_mesh_pickup"
+#define SFX_REGEN_MESH_DROP "regen_mesh_drop"
 
 // Standard is 44.1khz
 #define MIN_EMOTE_PITCH 40000

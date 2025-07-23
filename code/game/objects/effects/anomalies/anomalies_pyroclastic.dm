@@ -23,7 +23,7 @@
 
 /obj/effect/anomaly/pyro/anomalyEffect(seconds_per_tick)
 	..()
-	if(!already_polling && death_time < (world.time - poll_time))
+	if(!immortal && !already_polling && death_time < (world.time - poll_time))
 		start_poll()
 	ticks += seconds_per_tick
 	if(ticks < releasedelay)
@@ -54,7 +54,6 @@
 	if(isnull(chosen_one))
 		return
 	pyro.PossessByPlayer(chosen_one.key)
-	pyro.mind.special_role = ROLE_PYROCLASTIC_SLIME
 	pyro.mind.add_antag_datum(/datum/antagonist/pyro_slime)
 	pyro.log_message("was made into a slime by pyroclastic anomaly", LOG_GAME)
 	chosen_one = null
