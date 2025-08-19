@@ -18,8 +18,10 @@
 	unsuitable_heat_damage = 7.5
 	ai_controller = /datum/ai_controller/basic_controller/trooper
 
-	/// Loot this mob drops on death. Leave blank to drop mob corpse.
-	var/loot
+	/// Loot this mob drops on death.
+	var/list/loot
+	/// Corpse to spawn
+	var/corpse = /obj/effect/mob_spawn/corpse/human
 	/// Path of the mob spawner we base the mob's visuals off of.
 	var/mob_spawner = /obj/effect/mob_spawn/corpse/human
 	//chance we use an alternate loadout (percentage)

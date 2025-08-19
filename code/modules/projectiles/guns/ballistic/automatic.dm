@@ -334,6 +334,71 @@
 	fire_sound = 'sound/items/weapons/laser.ogg'
 	casing_ejector = FALSE
 
+/obj/item/gun/ballistic/automatic/laser/cybersun
+	name = "\improper Cybersun S-220"
+	desc = "A tactical plasma gun with multiple fire modes."
+	icon = 'icons/obj/weapons/guns/energy.dmi'
+	icon_state = "cybersun_s220"
+	inhand_icon_state = "laser"
+	custom_materials = list(/datum/material/alloy/plastitanium=SHEET_MATERIAL_AMOUNT,/datum/material/plastic=SHEET_MATERIAL_AMOUNT,/datum/material/uranium=HALF_SHEET_MATERIAL_AMOUNT,/datum/material/diamond=COIN_MATERIAL_AMOUNT)
+	ammo_x_offset = 1
+	fire_sound = 'sound/items/weapons/gun/pistol/shot.ogg'
+	accepted_magazine_type = /obj/item/ammo_box/magazine/recharge/s220
+	burst_size = 3
+	burst_delay = 1
+	spread = 3
+	dual_wield_spread = 18
+	actions_types = list(/datum/action/item_action/toggle_firemode)
+	selector_switch_icon = TRUE
+	force = 12
+	bolt_wording = "bolt"
+	magazine_wording = "plasma pack"
+	cartridge_wording = "energy unit"
+	//What fire mode this gun is on
+	var/shooting_mode = "Suppression"
+	//How many bullets it takes to fire one bullet
+	var/firecost_multiplyer
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
+	AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/proc/mode_select()
+	var/mob/living/carbon/human/user
+	burst_fire_selection = !burst_fire_selection
+	if(shooting_mode == "Suppression")
+		burst_size = 3
+		fire_delay = 0
+		balloon_alert(user, "switched to Tri-Burst Mode")
+		shooting_mode = "Tri-Burst"
+	else if(shooting_mode == "Tri-Burst")
+		burst_size = initial(burst_size)
+		fire_delay = initial(fire_delay)
+		balloon_alert(user, "switched to High-Power Mode")
+		shooting_mode = "High-Power"
+	else
+		AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
+		burst_size = 1
+		fire_delay = 0
+		balloon_alert(user, "switched to Suppression Mode")
+		shooting_mode = "Suppression"
+	playsound(user, 'sound/machines/nuke/general_beep.ogg', 30, TRUE)
+	update_appearance()
+	update_item_action_buttons()
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/update_icon_state()
+		temp_icon_to_use += "[shot.select_name]"
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/update_overlays()
+	. = ..()
+
+
+/obj/item/gun/energy/laser/cybersun/syndicate_pin
+	pin = /obj/item/firing_pin/implant/pindicate
+
+
+
 // NT Battle Rifle //
 
 /obj/item/gun/ballistic/automatic/battle_rifle
@@ -525,3 +590,4 @@
 /// proc to handle our detonation
 /obj/item/gun/ballistic/automatic/battle_rifle/proc/fucking_explodes_you()
 	explosion(src, devastation_range = 1, heavy_impact_range = 3, light_impact_range = 6, explosion_cause = src)
+

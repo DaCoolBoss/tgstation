@@ -181,8 +181,12 @@
 	icon_state = "junk_revolver"
 	fire_sound = 'sound/items/weapons/gun/general/heavy_shot_suppressed.ogg'
 	projectile_damage_multiplier = 1.2
-	projectile_wound_bonus = 5
+
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/cylinder/scrap
+	casing_ejector = TRUE
+
+/obj/item/gun/ballistic/revolver/junk/add_bayonet_point()
+	AddComponent(/datum/component/bayonet_attachable, offset_x = 26, offset_y = 12)
 
 // A gun to play Russian Roulette!
 // You can spin the chamber to randomize the position of the bullet.
