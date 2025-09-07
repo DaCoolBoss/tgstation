@@ -364,15 +364,13 @@
 	AddElement(/datum/element/update_icon_updates_onmob)
 	AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
 
-/obj/item/gun/ballistic/automatic/laser/cybersun/proc/mode_select()
-	var/mob/living/carbon/human/user
-	burst_fire_selection = !burst_fire_selection
+/obj/item/gun/ballistic/automatic/laser/cybersun/attack_self(mob/living/user)
 	if(shooting_mode == "Suppression")
 		burst_size = 3
 		fire_delay = 0
-		balloon_alert(user, "switched to Tri-Burst Mode")
-		shooting_mode = "Tri-Burst"
-	else if(shooting_mode == "Tri-Burst")
+		balloon_alert(user, "switched to Triple-Burst Mode")
+		shooting_mode = "Triple-Burst"
+	else if(shooting_mode == "Triple-Burst")
 		burst_size = initial(burst_size)
 		fire_delay = initial(fire_delay)
 		balloon_alert(user, "switched to High-Power Mode")
@@ -383,12 +381,16 @@
 		fire_delay = 0
 		balloon_alert(user, "switched to Suppression Mode")
 		shooting_mode = "Suppression"
-	playsound(user, 'sound/machines/nuke/general_beep.ogg', 30, TRUE)
+	playsound(user, 'sound/machines/nuke/general_beep.ogg', 24, TRUE)
 	update_appearance()
 	update_item_action_buttons()
 
+//obj/item/gun/ballistic/automatic/laser/cybersun/proc/mode_select(mob/living/user)
+
+
 /obj/item/gun/ballistic/automatic/laser/cybersun/update_icon_state()
-		temp_icon_to_use += "[shot.select_name]"
+	. = ..()
+//		temp_icon_to_use += "[shot.select_name]"
 
 /obj/item/gun/ballistic/automatic/laser/cybersun/update_overlays()
 	. = ..()
