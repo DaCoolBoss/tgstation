@@ -12,6 +12,8 @@
 	burst_fire_selection = TRUE
 	drop_sound = 'sound/items/handling/gun/ballistics/smg/smg_drop1.ogg'
 	pickup_sound = 'sound/items/handling/gun/ballistics/smg/smg_pickup1.ogg'
+	tac_reloads = FALSE
+
 
 /obj/item/gun/ballistic/automatic/proto
 	name = "\improper Nanotrasen Saber SMG"
@@ -334,72 +336,97 @@
 	fire_sound = 'sound/items/weapons/laser.ogg'
 	casing_ejector = FALSE
 
+#define FIREMODE_SUPPRESSION 0
+#define FIREMODE_BURST 1
+#define FIREMODE_HIGHPOWER 2
+
 /obj/item/gun/ballistic/automatic/laser/cybersun
 	name = "\improper Cybersun S-220"
-	desc = "A tactical plasma gun with multiple fire modes."
+	desc = "A military plasma gun with multiple fire modes. "
 	icon = 'icons/obj/weapons/guns/energy.dmi'
 	icon_state = "cybersun_s220"
 	inhand_icon_state = "laser"
 	custom_materials = list(/datum/material/alloy/plastitanium=SHEET_MATERIAL_AMOUNT,/datum/material/plastic=SHEET_MATERIAL_AMOUNT,/datum/material/uranium=HALF_SHEET_MATERIAL_AMOUNT,/datum/material/diamond=COIN_MATERIAL_AMOUNT)
 	ammo_x_offset = 1
-	fire_sound = 'sound/items/weapons/gun/pistol/shot.ogg'
 	accepted_magazine_type = /obj/item/ammo_box/magazine/recharge/s220
-	burst_size = 3
-	burst_delay = 1
+	burst_size = 1
+	burst_delay = 0.2 SECONDS
 	spread = 3
 	dual_wield_spread = 18
-	actions_types = list(/datum/action/item_action/toggle_firemode)
-	selector_switch_icon = TRUE
+	actions_types = list(/datum/action/item_action/firemode/cybersun)
 	force = 12
 	bolt_wording = "bolt"
 	magazine_wording = "plasma pack"
 	cartridge_wording = "energy unit"
 	//What fire mode this gun is on
-	var/shooting_mode = "Suppression"
+	var/shooting_mode = FIREMODE_SUPPRESSION
 	//How many bullets it takes to fire one bullet
-	var/firecost_multiplyer
+	var/firecost_mult = 1
+	//What projectile is currently loaded
+	var/bullet_override = /obj/projectile/beam/laser/cybersun/maim
+	dry_fire_sound = 'sound/machines/nuke/angry_beep.ogg'
+	fire_sound = 'sound/items/weapons/laser2.ogg'
+	fire_sound_volume = 80
+	rack_sound = 'sound/items/weapons/gun/smg/smgrack.ogg'
+	eject_sound = 'sound/machines/buckle/unbuckle2.ogg'
+	eject_empty_sound = 'sound/machines/buckle/unbuckle2.ogg'
+	load_sound = 'sound/machines/buckle/buckle1.ogg'
+	load_empty_sound = 'sound/machines/buckle/buckle1.ogg'
+
+/datum/action/item_action/firemode/cybersun
+	name = "Cycle S-220 Firemode"
+	background_icon_state = "bg_tech_cyber"
+	overlay_icon_state = "bg_tech_cyber_border"
 
 /obj/item/gun/ballistic/automatic/laser/cybersun/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/update_icon_updates_onmob)
 	AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
+	update_appearance()
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/add_bayonet_point()
+	AddComponent(/datum/component/bayonet_attachable, offset_x = 26, offset_y = 12)
 
 /obj/item/gun/ballistic/automatic/laser/cybersun/attack_self(mob/living/user)
-	if(shooting_mode == "Suppression")
+	var/mode_readout = "ERROR"
+	shooting_mode++
+	if(shooting_mode == FIREMODE_BURST)
 		burst_size = 3
-		fire_delay = 0
-		balloon_alert(user, "switched to Triple-Burst Mode")
-		shooting_mode = "Triple-Burst"
-	else if(shooting_mode == "Triple-Burst")
+		fire_delay = 0.5 SECONDS
+		firecost_mult = 1
+		bullet_override = /obj/projectile/beam/laser/cybersun
+		mode_readout = "Burst Mode"
+	else if(shooting_mode == FIREMODE_HIGHPOWER)
+		burst_size = 1
+		fire_delay = 0.9 SECONDS
+		firecost_mult = 3
+		bullet_override = /obj/projectile/beam/laser/cybersun
+		mode_readout = "Full Power Mode"
+	else
 		burst_size = initial(burst_size)
 		fire_delay = initial(fire_delay)
-		balloon_alert(user, "switched to High-Power Mode")
-		shooting_mode = "High-Power"
-	else
-		AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
-		burst_size = 1
-		fire_delay = 0
-		balloon_alert(user, "switched to Suppression Mode")
-		shooting_mode = "Suppression"
-	playsound(user, 'sound/machines/nuke/general_beep.ogg', 24, TRUE)
+		firecost_mult = initial(firecost_mult)
+		bullet_override = initial(bullet_override)
+		shooting_mode = FIREMODE_SUPPRESSION
+		mode_readout = "Suppression Mode"
+	balloon_alert(user, "switched to [mode_readout].")
+	playsound(user, 'sound/machines/nuke/general_beep.ogg', 19, TRUE)
 	update_appearance()
 	update_item_action_buttons()
 
-//obj/item/gun/ballistic/automatic/laser/cybersun/proc/mode_select(mob/living/user)
-
-
 /obj/item/gun/ballistic/automatic/laser/cybersun/update_icon_state()
 	. = ..()
-//		temp_icon_to_use += "[shot.select_name]"
 
 /obj/item/gun/ballistic/automatic/laser/cybersun/update_overlays()
 	. = ..()
-
+	. += "cybersun_s220_mode_[shooting_mode]"
 
 /obj/item/gun/energy/laser/cybersun/syndicate_pin
 	pin = /obj/item/firing_pin/implant/pindicate
 
-
+#undef FIREMODE_SUPPRESSION
+#undef FIREMODE_BURST
+#undef FIREMODE_HIGHPOWER
 
 // NT Battle Rifle //
 

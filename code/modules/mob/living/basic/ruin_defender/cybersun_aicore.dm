@@ -107,6 +107,10 @@
 	desc = "Electrocutes a target with a big lightning bolt. Has a small delay."
 	button_icon = 'icons/mob/actions/actions_spells.dmi'
 	button_icon_state = "lightning"
+	active_background_icon_state = "bg_tech_cyber_on"
+	active_overlay_icon_state = null
+	background_icon_state = "bg_tech_cyber"
+	overlay_icon_state = "bg_tech_cyber_border"
 	cooldown_time = 4 SECONDS
 	click_to_activate = TRUE
 	shared_cooldown = NONE
@@ -171,6 +175,10 @@
 /datum/action/cooldown/spell/pointed/projectile/cybersun_barrage
 	name = "plasma beam barrage"
 	desc = "Charges up a cluster of lasers, then sends it towards a foe after a short delay."
+	active_background_icon_state = "bg_tech_cyber_on"
+	active_overlay_icon_state = null
+	background_icon_state = "bg_tech_cyber"
+	overlay_icon_state = "bg_tech_cyber_border"
 	button_icon = 'icons/obj/weapons/transforming_energy.dmi'
 	button_icon_state = "e_sword_on_red"
 	cooldown_time = 5.5 SECONDS

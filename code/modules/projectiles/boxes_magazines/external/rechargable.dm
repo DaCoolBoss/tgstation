@@ -22,11 +22,13 @@
 	name = "plasma pack"
 	desc = "A rechargeable, detachable plasma battery that serves as a magazine for Cybersun plasma guns. Do not pierce or overheat."
 	max_integrity = 80
-	max_ammo = 30
+	max_ammo = 36
 	ammo_type = /obj/item/ammo_casing/energy/lasergun/cybersun
 	custom_materials = list(/datum/material/alloy/plastitanium=HALF_SHEET_MATERIAL_AMOUNT,/datum/material/plasma=SMALL_MATERIAL_AMOUNT)
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	multiple_sprite_use_base = TRUE
+	icon_state = "cybersun_pack"
+	base_icon_state = "cybersun_pack"
 
 /obj/item/ammo_box/magazine/recharge/s220/emp_act(severity)
 	. = ..()
