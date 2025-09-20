@@ -12,8 +12,8 @@
 	banned_upgrades = RCD_ALL_UPGRADES & ~RCD_UPGRADE_SILO_LINK
 	matter = 200
 	max_matter = 200
-	drop_sound = 'sound/items/handling/rcd_drop.ogg'
-	pickup_sound = 'sound/items/handling/rcd_pickup.ogg'
+	drop_sound = 'sound/items/handling/tools/rcd_drop.ogg'
+	pickup_sound = 'sound/items/handling/tools/rcd_pickup.ogg'
 	sound_vary = TRUE
 
 	///category of design selected
@@ -92,10 +92,6 @@
 	UnregisterSignal(user, COMSIG_MOUSE_SCROLL_ON)
 	return ..()
 
-/obj/item/construction/plumbing/cyborg_unequip(mob/user)
-	UnregisterSignal(user, COMSIG_MOUSE_SCROLL_ON)
-	return ..()
-
 /obj/item/construction/plumbing/attack_self(mob/user)
 	. = ..()
 	ui_interact(user)
@@ -113,7 +109,7 @@
 
 /obj/item/construction/plumbing/ui_assets(mob/user)
 	return list(
-		get_asset_datum(/datum/asset/spritesheet/plumbing),
+		get_asset_datum(/datum/asset/spritesheet_batched/plumbing),
 	)
 
 /obj/item/construction/plumbing/ui_static_data(mob/user)
@@ -247,6 +243,8 @@
 	. = ..()
 	if(. & ITEM_INTERACT_ANY_BLOCKER)
 		return .
+	if(HAS_TRAIT(interacting_with, TRAIT_COMBAT_MODE_SKIP_INTERACTION))
+		return NONE
 
 	for(var/category_name in plumbing_design_types)
 		var/list/designs = plumbing_design_types[category_name]
@@ -260,7 +258,12 @@
 				balloon_alert(user, "unanchor first!")
 				return ITEM_INTERACT_BLOCKING
 			if(do_after(user, 2 SECONDS, target = interacting_with))
-				machine_target.deconstruct() //Let's not substract matter
+				var/design_cost = designs[machine_target.type]
+				var/to_return = min(design_cost, max_matter - matter) // Give back matter was used to create smth
+				if(to_return < design_cost)
+					balloon_alert(user, "storage full!")
+				matter += to_return
+				machine_target.deconstruct()
 				playsound(src, 'sound/machines/click.ogg', 50, TRUE) //this is just such a great sound effect
 			return ITEM_INTERACT_SUCCESS
 

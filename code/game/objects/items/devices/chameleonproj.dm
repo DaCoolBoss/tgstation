@@ -68,7 +68,7 @@
 	return TRUE
 
 /obj/item/chameleon/proc/make_copy(atom/target, mob/user)
-	playsound(get_turf(src), 'sound/weapons/flash.ogg', 100, TRUE, -6)
+	playsound(get_turf(src), 'sound/items/weapons/flash.ogg', 100, TRUE, -6)
 	to_chat(user, span_notice("Scanned [target]."))
 	var/obj/temp = new /obj()
 	temp.appearance = target.appearance
@@ -77,9 +77,7 @@
 	saved_appearance = temp.appearance
 
 /obj/item/chameleon/proc/check_sprite(atom/target)
-	if(target.icon_state in icon_states(target.icon))
-		return TRUE
-	return FALSE
+	return icon_exists(target.icon, target.icon_state)
 
 /obj/item/chameleon/proc/toggle(mob/user)
 	if(!can_use || !saved_appearance)

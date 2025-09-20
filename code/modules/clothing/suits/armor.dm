@@ -8,8 +8,8 @@
 	min_cold_protection_temperature = ARMOR_MIN_TEMP_PROTECT
 	heat_protection = CHEST|GROIN
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	strip_delay = 60
-	equip_delay_other = 40
+	strip_delay = 6 SECONDS
+	equip_delay_other = 4 SECONDS
 	max_integrity = 250
 	resistance_flags = NONE
 	armor_type = /datum/armor/suit_armor
@@ -67,7 +67,7 @@
 /obj/item/clothing/suit/armor/vest/press/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
 	. = ..()
 	if(!isinhands)
-		. += emissive_appearance(icon_file, "[icon_state]-emissive", src, alpha = src.alpha)
+		. += emissive_appearance(icon_file, "[icon_state]-emissive", src, alpha = src.alpha, effect_type = EMISSIVE_SPECULAR)
 
 /obj/item/clothing/suit/armor/vest/marine
 	name = "tactical armor vest"
@@ -145,6 +145,10 @@
 	inhand_icon_state = "armor"
 	dog_fashion = null
 
+/obj/item/clothing/suit/armor/vest/cuirass/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_PLATE_ARMOR_RUSTLE, 8)
+
 /obj/item/clothing/suit/armor/hos
 	name = "armored greatcoat"
 	desc = "A greatcoat enhanced with a special alloy for some extra protection and style for those with a commanding presence."
@@ -154,7 +158,7 @@
 	armor_type = /datum/armor/armor_hos
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
-	strip_delay = 80
+	strip_delay = 8 SECONDS
 
 /datum/armor/armor_hos
 	melee = 30
@@ -172,7 +176,7 @@
 	icon_state = "hostrench"
 	inhand_icon_state = "hostrench"
 	flags_inv = 0
-	strip_delay = 80
+	strip_delay = 8 SECONDS
 
 /obj/item/clothing/suit/armor/hos/trenchcoat/winter
 	name = "head of security's winter trenchcoat"
@@ -199,7 +203,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	cold_protection = CHEST|GROIN|ARMS|HANDS
 	heat_protection = CHEST|GROIN|ARMS|HANDS
-	strip_delay = 70
+	strip_delay = 7 SECONDS
 	resistance_flags = FLAMMABLE
 	dog_fashion = null
 
@@ -223,7 +227,7 @@
 /obj/item/clothing/suit/armor/vest/secjacket/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
 	. = ..()
 	if(!isinhands)
-		. += emissive_appearance(icon_file, "[icon_state]-emissive", src, alpha = src.alpha)
+		. += emissive_appearance(icon_file, "[icon_state]-emissive", src, alpha = src.alpha, effect_type = EMISSIVE_SPECULAR)
 
 /datum/armor/armor_secjacket //Gotta compensate those extra covered limbs
 	melee = 25
@@ -290,9 +294,17 @@
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor_type = /datum/armor/armor_riot
-	strip_delay = 80
-	equip_delay_other = 60
+	strip_delay = 8 SECONDS
+	equip_delay_other = 6 SECONDS
 	clothing_traits = list(TRAIT_BRAWLING_KNOCKDOWN_BLOCKED)
+
+/obj/item/clothing/suit/armor/riot/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, 5)
+	init_rustle_component()
+
+/obj/item/clothing/suit/armor/riot/proc/init_rustle_component()
+	AddComponent(/datum/component/item_equipped_movement_rustle)
 
 /datum/armor/armor_riot
 	melee = 50
@@ -311,8 +323,8 @@
 	blood_overlay_type = "armor"
 	armor_type = /datum/armor/balloon_vest
 	siemens_coefficient = 0
-	strip_delay = 70
-	equip_delay_other = 50
+	strip_delay = 7 SECONDS
+	equip_delay_other = 5 SECONDS
 
 /datum/armor/balloon_vest
 	melee = 10
@@ -324,7 +336,7 @@
 /obj/item/clothing/suit/armor/balloon_vest/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK, damage_type = BRUTE)
 	if(isitem(hitby))
 		var/obj/item/item_hit = hitby
-		if(item_hit.sharpness)
+		if(item_hit.get_sharpness())
 			pop()
 
 	if(istype(hitby, /obj/projectile/bullet))
@@ -333,7 +345,7 @@
 	return ..()
 
 /obj/item/clothing/suit/armor/balloon_vest/proc/pop()
-	playsound(src, 'sound/effects/cartoon_pop.ogg', 50, vary = TRUE)
+	playsound(src, 'sound/effects/cartoon_sfx/cartoon_pop.ogg', 50, vary = TRUE)
 	qdel(src)
 
 
@@ -344,8 +356,8 @@
 	inhand_icon_state = "armor"
 	blood_overlay_type = "armor"
 	armor_type = /datum/armor/armor_bulletproof
-	strip_delay = 70
-	equip_delay_other = 50
+	strip_delay = 7 SECONDS
+	equip_delay_other = 5 SECONDS
 
 /datum/armor/armor_bulletproof
 	melee = 15
@@ -402,7 +414,7 @@
 	icon_state = "heavy"
 	inhand_icon_state = "swat_suit"
 	armor_type = /datum/armor/armor_swat
-	strip_delay = 120
+	strip_delay = 12 SECONDS
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	clothing_flags = THICKMATERIAL
 	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
@@ -412,6 +424,14 @@
 	slowdown = 0.7
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	clothing_traits = list(TRAIT_BRAWLING_KNOCKDOWN_BLOCKED)
+
+/obj/item/clothing/suit/armor/swat/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, 5)
+	init_rustle_component()
+
+/obj/item/clothing/suit/armor/swat/proc/init_rustle_component()
+	AddComponent(/datum/component/item_equipped_movement_rustle)
 
 
 //All of the armor below is mostly unused
@@ -511,6 +531,8 @@
 		/obj/item/tank/internals/emergency_oxygen,
 		/obj/item/tank/internals/plasmaman,
 		)
+/obj/item/clothing/suit/armor/riot/knight/init_rustle_component()
+	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_PLATE_ARMOR_RUSTLE, 8)
 
 /obj/item/clothing/suit/armor/riot/knight/yellow
 	icon_state = "knight_yellow"
@@ -547,12 +569,16 @@
 	desc = "A vest made of durathread with strips of leather acting as trauma plates."
 	icon_state = "durathread"
 	inhand_icon_state = null
-	strip_delay = 60
-	equip_delay_other = 40
+	strip_delay = 6 SECONDS
+	equip_delay_other = 4 SECONDS
 	max_integrity = 200
 	resistance_flags = FLAMMABLE
 	armor_type = /datum/armor/vest_durathread
 	dog_fashion = null
+
+/obj/item/clothing/suit/armor/vest/durathread/Initialize(mapload)
+	. = ..()
+	allowed |= /obj/item/clothing/suit/apron::allowed
 
 /datum/armor/vest_durathread
 	melee = 20
@@ -582,7 +608,7 @@
 
 /obj/item/clothing/suit/armor/vest/russian_coat
 	name = "russian battle coat"
-	desc = "Used in extremly cold fronts, made out of real bears."
+	desc = "Used in extremely cold fronts, made out of real bears."
 	icon_state = "rus_coat"
 	inhand_icon_state = null
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -695,6 +721,10 @@
 		/obj/item/gun/ballistic/bow
 	)
 
+/obj/item/clothing/suit/armor/vest/military/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, 5)
+
 /datum/armor/military
 	melee = 45
 	bullet = 25
@@ -729,14 +759,14 @@
 	take_damage(1, BRUTE, 0, 0)
 
 /obj/item/clothing/suit/armor/durability/watermelon
-	name = "watermelon"
-	desc = "An armour, made from watermelons. Propably won't take too many hits, but at least it looks serious... As serious as worn watermelon can be."
+	name = "watermelon armor"
+	desc = "An armor, made from watermelons. Probably won't take too many hits, but at least it looks serious... As serious as worn watermelon can be."
 	icon_state = "watermelon"
 	inhand_icon_state = null
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor_type = /datum/armor/watermelon
-	strip_delay = 60
-	equip_delay_other = 40
+	strip_delay = 6 SECONDS
+	equip_delay_other = 4 SECONDS
 	clothing_traits = list(TRAIT_BRAWLING_KNOCKDOWN_BLOCKED)
 	max_integrity = 15
 
@@ -763,17 +793,16 @@
 	wound = 5
 
 /obj/item/clothing/suit/armor/durability/holymelon
-	name = "holymelon"
-	desc = "An armour, made from holymelons. Inspires you to go on some sort of a crusade... Perhaps spreading spinach to children?"
+	name = "holymelon armor"
+	desc = "An armor, made from holymelons. Inspires you to go on some sort of crusade... Perhaps spreading spinach to children?"
 	icon_state = "holymelon"
 	inhand_icon_state = null
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor_type = /datum/armor/watermelon
-	strip_delay = 60
-	equip_delay_other = 40
+	strip_delay = 6 SECONDS
+	equip_delay_other = 4 SECONDS
 	clothing_traits = list(TRAIT_BRAWLING_KNOCKDOWN_BLOCKED)
 	max_integrity = 15
-	var/decayed = FALSE
 
 /obj/item/clothing/suit/armor/durability/holymelon/fire_resist
 	resistance_flags = FIRE_PROOF
@@ -781,16 +810,13 @@
 
 /obj/item/clothing/suit/armor/durability/holymelon/Initialize(mapload)
 	. = ..()
-	if(decayed)
-		decay()
-		return
 
 	AddComponent(
 		/datum/component/anti_magic, \
-		antimagic_flags = MAGIC_RESISTANCE_HOLY, \
+		antimagic_flags = MAGIC_RESISTANCE|MAGIC_RESISTANCE_HOLY, \
 		inventory_flags = ITEM_SLOT_OCLOTHING, \
 		charges = 1, \
-		drain_antimagic = CALLBACK(src, PROC_REF(drain_antimagic)), \
+		block_magic = CALLBACK(src, PROC_REF(drain_antimagic)), \
 		expiration = CALLBACK(src, PROC_REF(decay)) \
 	)
 
@@ -802,14 +828,14 @@
 
 
 /obj/item/clothing/suit/armor/durability/barrelmelon
-	name = "barrelmelon"
-	desc = "An armour, made from barrelmelons. Reeks of ale, inspiring to courageous deeds. Or, perhaps, a bar brawl."
+	name = "barrelmelon armor"
+	desc = "An armor, made from barrelmelons. Reeks of ale, inspiring to courageous deeds. Or, perhaps, a bar brawl."
 	icon_state = "barrelmelon"
 	inhand_icon_state = null
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor_type = /datum/armor/barrelmelon
-	strip_delay = 60
-	equip_delay_other = 40
+	strip_delay = 6 SECONDS
+	equip_delay_other = 4 SECONDS
 	clothing_traits = list(TRAIT_BRAWLING_KNOCKDOWN_BLOCKED)
 	max_integrity = 10
 
@@ -834,3 +860,13 @@
 	fire = 20
 	acid = 40
 	wound = 10
+
+/obj/item/clothing/suit/armor/dragoon
+	name = "drachen suit"
+	desc = "A chainmail suit with dragon scales attached to the skeleton, with ash-covered mythril plate reinforcement covering it."
+	icon_state = "dragoon"
+	inhand_icon_state = "dragoon"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	allowed = list(/obj/item/spear/skybulge)

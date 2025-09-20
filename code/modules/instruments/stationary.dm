@@ -46,13 +46,15 @@
 /obj/structure/musician/piano/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/falling_hazard, damage = 60, wound_bonus = 10, hardhat_safety = FALSE, crushes = TRUE, impact_sound = 'sound/effects/piano_hit.ogg')
+	AddElement(/datum/element/climbable)
+	AddElement(/datum/element/elevation, pixel_shift = 10)
 
 /obj/structure/musician/piano/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	switch(damage_type)
 		if(BRUTE)
 			playsound(src, 'sound/effects/piano_hit.ogg', 100, TRUE)
 		if(BURN)
-			playsound(src, 'sound/items/welder.ogg', 100, TRUE)
+			playsound(src, 'sound/items/tools/welder.ogg', 100, TRUE)
 
 /obj/structure/musician/piano/atom_break(damage_flag)
 	. = ..()

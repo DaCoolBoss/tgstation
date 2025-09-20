@@ -151,7 +151,7 @@
 		ui = new(user, src, "PipeDispenser", name)
 		ui.open()
 
-/obj/machinery/pipedispenser/attackby(obj/item/W, mob/user, params)
+/obj/machinery/pipedispenser/attackby(obj/item/W, mob/user, list/modifiers, list/attack_modifiers)
 	add_fingerprint(user)
 	if (istype(W, /obj/item/pipe) || istype(W, /obj/item/pipe_meter))
 		to_chat(usr, span_notice("You put [W] back into [src]."))
@@ -171,10 +171,8 @@
 
 /obj/machinery/pipedispenser/wrench_act(mob/living/user, obj/item/tool)
 	. = ..()
-	if(default_unfasten_wrench(user, tool, time = 4 SECONDS))
-		user << browse(null, "window=pipedispenser")
-
-	return TRUE
+	default_unfasten_wrench(user, tool, time = 4 SECONDS)
+	return ITEM_INTERACT_SUCCESS
 
 
 /obj/machinery/pipedispenser/disposal
@@ -187,9 +185,6 @@
 
 //Allow you to drag-drop disposal pipes and transit tubes into it
 /obj/machinery/pipedispenser/disposal/mouse_drop_receive(obj/structure/pipe, mob/user, params)
-	if(user.incapacitated)
-		return
-
 	if (!istype(pipe, /obj/structure/disposalconstruct) && !istype(pipe, /obj/structure/c_transit_tube) && !istype(pipe, /obj/structure/c_transit_tube_pod))
 		return
 

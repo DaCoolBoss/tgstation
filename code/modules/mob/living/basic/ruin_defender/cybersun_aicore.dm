@@ -10,6 +10,7 @@
 	icon_state = "ai-red"
 	icon_living = "ai-red"
 	gender = NEUTER
+	status_flags = NONE
 	basic_mob_flags = MOB_ROBOTIC
 	mob_size = MOB_SIZE_HUGE
 	basic_mob_flags = DEL_ON_DEATH
@@ -77,7 +78,7 @@
 ///dramatic death animations
 	var/turf/my_turf = get_turf(src)
 	new /obj/effect/gibspawner/robot(my_turf)
-	playsound(loc, 'sound/effects/explosion2.ogg', vol = 75, vary = TRUE, pressure_affected = FALSE)
+	playsound(loc, 'sound/effects/explosion/explosion2.ogg', vol = 75, vary = TRUE, pressure_affected = FALSE)
 	for (var/mob/witness in range(10, src))
 		if (!witness.client || !isliving(witness))
 			continue
@@ -119,7 +120,7 @@
 	. = ..()
 	//this is where the spell will hit. it will not move even if the target does, allowing the spell to be dodged.
 	new/obj/effect/temp_visual/lightning_strike(get_turf(target))
-	playsound(owner, 'sound/effects/sparks1.ogg', vol = 120, vary = TRUE)
+	playsound(owner, 'sound/effects/sparks/sparks1.ogg', vol = 120, vary = TRUE)
 
 /obj/effect/temp_visual/lightning_strike
 	name = "lightning strike"
@@ -142,7 +143,7 @@
 
 /obj/effect/temp_visual/lightning_strike/proc/zap()
 	new/obj/effect/temp_visual/lightning_strike_zap(loc)
-	playsound(src, 'sound/magic/lightningbolt.ogg', vol = 70, vary = TRUE)
+	playsound(src, 'sound/effects/magic/lightningbolt.ogg', vol = 70, vary = TRUE)
 	if (!isturf(loc))
 		return
 	for(var/mob/living/victim in loc)
@@ -188,7 +189,7 @@
 	if(lockon_zone == my_turf)
 		return
 	my_turf.Beam(lockon_zone, icon_state = "1-full", beam_color = COLOR_MEDIUM_DARK_RED, time = barrage_delay)
-	playsound(lockon_zone, 'sound/machines/terminal_prompt_deny.ogg', vol = 60, vary = TRUE)
+	playsound(lockon_zone, 'sound/machines/terminal/terminal_prompt_deny.ogg', vol = 60, vary = TRUE)
 	StartCooldown(cooldown_time)
 	return ..()
 

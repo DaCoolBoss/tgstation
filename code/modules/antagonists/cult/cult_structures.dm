@@ -1,7 +1,7 @@
 // Cult buildings!
 /obj/structure/destructible/cult
 	icon = 'icons/obj/antags/cult/structures.dmi'
-	break_sound = 'sound/hallucinations/veryfar_noise.ogg'
+	break_sound = 'sound/effects/hallucinations/veryfar_noise.ogg'
 	density = TRUE
 	anchored = TRUE
 	light_power = 2
@@ -172,7 +172,12 @@
 
 	var/list/choices = list()
 	for(var/item in options)
-		choices[item] = options[item][PREVIEW_IMAGE]
+		var/datum/radial_menu_choice/cultitem = new()
+		cultitem.name = item
+		cultitem.info = span_cult_italic(options[item][RADIAL_DESC])
+		cultitem.image = options[item][PREVIEW_IMAGE]
+		cultitem.tooltip_theme = "cult"
+		choices[item] = cultitem
 
 	var/picked_choice = show_radial_menu(
 		user,
@@ -181,7 +186,7 @@
 		custom_check = CALLBACK(src, PROC_REF(check_menu), user),
 		require_near = TRUE,
 		tooltips = TRUE,
-		)
+	)
 
 	if(!picked_choice)
 		return
@@ -215,5 +220,5 @@
 /obj/effect/gateway/singularity_act()
 	return
 
-/obj/effect/gateway/singularity_pull()
+/obj/effect/gateway/singularity_pull(atom/singularity, current_size)
 	return

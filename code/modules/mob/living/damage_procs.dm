@@ -12,10 +12,11 @@
  * * forced - "Force" exactly the damage dealt. This means it skips damage modifier from blocked.
  * * spread_damage - For carbons, spreads the damage across all bodyparts rather than just the targeted zone.
  * * wound_bonus - Bonus modifier for wound chance.
- * * bare_wound_bonus - Bonus modifier for wound chance on bare skin.
+ * * exposed_wound_bonus - Bonus modifier for wound chance on bare skin.
  * * sharpness - Sharpness of the weapon.
  * * attack_direction - Direction of the attack from the attacker to [src].
  * * attacking_item - Item that is attacking [src].
+ * * wound_clothing - If this should cause damage to clothing.
  *
  * Returns the amount of damage dealt.
  */
@@ -27,10 +28,11 @@
 	forced = FALSE,
 	spread_damage = FALSE,
 	wound_bonus = 0,
-	bare_wound_bonus = 0,
+	exposed_wound_bonus = 0,
 	sharpness = NONE,
 	attack_direction = null,
 	attacking_item,
+	wound_clothing = TRUE,
 )
 	SHOULD_CALL_PARENT(TRUE)
 	var/damage_amount = damage
@@ -40,7 +42,7 @@
 	if(damage_amount <= 0)
 		return 0
 
-	SEND_SIGNAL(src, COMSIG_MOB_APPLY_DAMAGE, damage_amount, damagetype, def_zone, blocked, wound_bonus, bare_wound_bonus, sharpness, attack_direction, attacking_item)
+	SEND_SIGNAL(src, COMSIG_MOB_APPLY_DAMAGE, damage_amount, damagetype, def_zone, blocked, wound_bonus, exposed_wound_bonus, sharpness, attack_direction, attacking_item, wound_clothing)
 
 	var/damage_dealt = 0
 	switch(damagetype)
@@ -53,10 +55,11 @@
 					burn = 0,
 					forced = forced,
 					wound_bonus = wound_bonus,
-					bare_wound_bonus = bare_wound_bonus,
+					exposed_wound_bonus = exposed_wound_bonus,
 					sharpness = sharpness,
 					attack_direction = attack_direction,
 					damage_source = attacking_item,
+					wound_clothing = wound_clothing,
 				))
 					update_damage_overlays()
 				damage_dealt = actual_hit.get_damage() - delta // Unfortunately bodypart receive_damage doesn't return damage dealt so we do it manually
@@ -71,10 +74,11 @@
 					burn = damage_amount,
 					forced = forced,
 					wound_bonus = wound_bonus,
-					bare_wound_bonus = bare_wound_bonus,
+					exposed_wound_bonus = exposed_wound_bonus,
 					sharpness = sharpness,
 					attack_direction = attack_direction,
 					damage_source = attacking_item,
+					wound_clothing = wound_clothing,
 				))
 					update_damage_overlays()
 				damage_dealt = actual_hit.get_damage() - delta // See above
@@ -89,7 +93,7 @@
 		if(BRAIN)
 			damage_dealt = -1 * adjustOrganLoss(ORGAN_SLOT_BRAIN, damage_amount)
 
-	SEND_SIGNAL(src, COMSIG_MOB_AFTER_APPLY_DAMAGE, damage_dealt, damagetype, def_zone, blocked, wound_bonus, bare_wound_bonus, sharpness, attack_direction, attacking_item)
+	SEND_SIGNAL(src, COMSIG_MOB_AFTER_APPLY_DAMAGE, damage_dealt, damagetype, def_zone, blocked, wound_bonus, exposed_wound_bonus, sharpness, attack_direction, attacking_item, wound_clothing)
 	return damage_dealt
 
 /**
@@ -241,7 +245,7 @@
 	if(drowsy)
 		adjust_drowsiness(drowsy)
 	if(eyeblur)
-		adjust_eye_blur(eyeblur)
+		adjust_eye_blur_up_to(eyeblur, eyeblur)
 	if(jitter && !check_stun_immunity(CANSTUN))
 		adjust_jitter(jitter)
 	if(slur)
@@ -304,7 +308,7 @@
 		if(HAS_TRAIT(src, TRAIT_GODMODE))
 			return FALSE
 		if (required_respiration_type)
-			var/obj/item/organ/internal/lungs/affected_lungs = get_organ_slot(ORGAN_SLOT_LUNGS)
+			var/obj/item/organ/lungs/affected_lungs = get_organ_slot(ORGAN_SLOT_LUNGS)
 			if(isnull(affected_lungs))
 				if(!(mob_respiration_type & required_respiration_type))  // if the mob has no lungs, use mob_respiration_type
 					return FALSE
@@ -331,7 +335,7 @@
 		if(HAS_TRAIT(src, TRAIT_GODMODE))
 			return FALSE
 
-		var/obj/item/organ/internal/lungs/affected_lungs = get_organ_slot(ORGAN_SLOT_LUNGS)
+		var/obj/item/organ/lungs/affected_lungs = get_organ_slot(ORGAN_SLOT_LUNGS)
 		if(isnull(affected_lungs))
 			if(!(mob_respiration_type & required_respiration_type))
 				return FALSE
@@ -435,7 +439,7 @@
 /mob/living/proc/setOrganLoss(slot, amount, maximum, required_organ_flag)
 	return
 
-/mob/living/proc/get_organ_loss(slot)
+/mob/living/proc/get_organ_loss(slot, required_organ_flag)
 	return
 
 /mob/living/proc/getStaminaLoss()
@@ -501,7 +505,7 @@
 		updatehealth()
 
 /// damage ONE external organ, organ gets randomly selected from damaged ones.
-/mob/living/proc/take_bodypart_damage(brute = 0, burn = 0, updating_health = TRUE, required_bodytype, check_armor = FALSE, wound_bonus = 0, bare_wound_bonus = 0, sharpness = NONE)
+/mob/living/proc/take_bodypart_damage(brute = 0, burn = 0, updating_health = TRUE, required_bodytype, check_armor = FALSE, wound_bonus = 0, exposed_wound_bonus = 0, sharpness = NONE)
 	. = (adjustBruteLoss(abs(brute), updating_health = FALSE) + adjustFireLoss(abs(burn), updating_health = FALSE))
 	if(!.) // no change, no need to update
 		return FALSE

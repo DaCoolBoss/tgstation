@@ -33,6 +33,12 @@
 		to_chat(M, span_warning("You can't enter the exosuit with other creatures attached to you!"))
 		log_message("Permission denied (Attached mobs).", LOG_MECHA)
 		return FALSE
+
+	for(var/obj/item/thing in M.held_items)
+		if(!(thing.item_flags & (ABSTRACT|HAND_ITEM)))
+			to_chat(M, span_warning("You can't enter the exosuit while your hands are occupied!"))
+			return FALSE
+
 	return ..()
 
 ///proc called when a new non-mmi mob enters this mech
@@ -50,7 +56,7 @@
 	playsound(src, 'sound/machines/windowdoor.ogg', 50, TRUE)
 	set_mouse_pointer()
 	if(!internal_damage)
-		SEND_SOUND(newoccupant, sound('sound/mecha/nominal.ogg',volume=50))
+		SEND_SOUND(newoccupant, sound('sound/vehicles/mecha/nominal.ogg',volume=50))
 	return TRUE
 
 ///proc called when a new mmi mob tries to enter this mech
@@ -100,7 +106,7 @@
 	setDir(SOUTH)
 	log_message("[brain_obj] moved in as pilot.", LOG_MECHA)
 	if(!internal_damage)
-		SEND_SOUND(brain_obj, sound('sound/mecha/nominal.ogg',volume=50))
+		SEND_SOUND(brain_obj, sound('sound/vehicles/mecha/nominal.ogg',volume=50))
 	user.log_message("has put the MMI/posibrain of [key_name(brain_mob)] into [src]", LOG_GAME)
 	brain_mob.log_message("was put into [src] by [key_name(user)]", LOG_GAME, log_globally = FALSE)
 	return TRUE
@@ -167,6 +173,7 @@
 		mmi.set_mecha(null)
 		mmi.update_appearance()
 	setDir(SOUTH)
+	SEND_SIGNAL(src, COMSIG_MECHA_MOB_EXIT)
 	return ..()
 
 /obj/vehicle/sealed/mecha/add_occupant(mob/driver, control_flags)

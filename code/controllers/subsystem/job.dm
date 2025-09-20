@@ -1,6 +1,8 @@
 SUBSYSTEM_DEF(job)
 	name = "Jobs"
-	init_order = INIT_ORDER_JOBS
+	dependencies = list(
+		/datum/controller/subsystem/processing/station,
+	)
 	flags = SS_NO_FIRE
 
 	/// List of all jobs.
@@ -33,8 +35,10 @@ SUBSYSTEM_DEF(job)
 
 	var/list/level_order = list(JP_HIGH, JP_MEDIUM, JP_LOW)
 
-	/// Lazylist of mob:occupation_string pairs.
-	var/list/dynamic_forced_occupations
+	/// Lazylist of mob:occupation_string pairs. Forces mobs into certain occupations with highest priority.
+	var/list/forced_occupations
+	/// Lazylist of mob:list(occupation_string) pairs. Prevents mobs from taking certain occupations at all.
+	var/list/prevented_occupations
 
 	/**
 	 * Keys should be assigned job roles. Values should be >= 1.
@@ -73,10 +77,11 @@ SUBSYSTEM_DEF(job)
 
 	/// This is just the message we prepen and put into all of the config files to ensure documentation. We use this in more than one place, so let's put it in the SS to make life a bit easier.
 	var/config_documentation = "## This is the configuration file for the job system.\n## This will only be enabled when the config flag LOAD_JOBS_FROM_TXT is enabled.\n\
-	## We use a system of keys here that directly correlate to the job, just to ensure they don't desync if we choose to change the name of a job.\n## You are able to change (as of now) five different variables in this file.\n\
+	## We use a system of keys here that directly correlate to the job, just to ensure they don't desync if we choose to change the name of a job.\n## You are able to change (as of now) five (six if the job is a command head) different variables in this file.\n\
 	## Total Positions are how many job slots you get in a shift, Spawn Positions are how many you get that load in at spawn. If you set this to -1, it is unrestricted.\n## Playtime Requirements is in minutes, and the job will unlock when a player reaches that amount of time.\n\
 	## However, that can be superseded by Required Account Age, which is a time in days that you need to have had an account on the server for.\n\
-	## Also there is a required character age in years. It prevents player from joining as this job, if their character's age as is lower than required. Setting it to 0 means it is turned off for this job.\n\n\
+	## Also there is a required character age in years. It prevents player from joining as this job, if their character's age as is lower than required. Setting it to 0 means it is turned off for this job.\n\
+	## Lastly there's Human Authority Whitelist Setting. You can set it to either \"HUMANS_ONLY\" or \"NON_HUMANS_ALLOWED\". Check the \"Human Authority\" setting on the game_options file to know which you should choose. Note that this entry only appears on jobs that are marked as heads of staff.\n\n\
 	## As time goes on, more config options may be added to this file.\n\
 	## You can use the admin verb 'Generate Job Configuration' in-game to auto-regenerate this config as a downloadable file without having to manually edit this file if we add more jobs or more things you can edit here.\n\
 	## It will always respect prior-existing values in the config, but will appropriately add more fields when they generate.\n## It's strongly advised you create your own version of this file rather than use the one provisioned on the codebase.\n\n\
@@ -313,7 +318,6 @@ SUBSYSTEM_DEF(job)
 		if(!player?.mind)
 			continue
 		player.mind.set_assigned_role(get_job_type(/datum/job/unassigned))
-		player.mind.special_role = null
 	setup_occupations()
 	unassigned = list()
 	if(CONFIG_GET(flag/load_jobs_from_txt))
@@ -362,13 +366,21 @@ SUBSYSTEM_DEF(job)
 	for(var/datum/job/job as anything in command_department.department_jobs)
 		if((job.current_positions >= job.total_positions) && job.total_positions != -1)
 			continue
+
 		var/list/candidates = find_occupation_candidates(job, level)
 		if(!candidates.len)
 			continue
+
 		var/mob/dead/new_player/candidate = pick(candidates)
-		// Eligibility checks done as part of find_occupation_candidates
-		if(assign_role(candidate, job, do_eligibility_checks = FALSE))
-			.++
+
+		// Eligibility checks done as part of find_occupation_candidates() above.
+		if(!assign_role(candidate, job, do_eligibility_checks = FALSE))
+			continue
+
+		.++
+
+		if((job.current_positions >= job.spawn_positions) && job.spawn_positions != -1)
+			job_debug("JOBS: Command Job is now full, Job: [job], Positions: [job.current_positions], Limit: [job.spawn_positions]")
 
 /// Attempts to fill out all available AI positions.
 /datum/controller/subsystem/job/proc/fill_ai_positions()
@@ -398,9 +410,8 @@ SUBSYSTEM_DEF(job)
 	SEND_SIGNAL(src, COMSIG_OCCUPATIONS_DIVIDED, pure, allow_all)
 
 	//Get the players who are ready
-	for(var/i in GLOB.new_player_list)
-		var/mob/dead/new_player/player = i
-		if(player.ready == PLAYER_READY_TO_PLAY && player.check_preferences() && player.mind && is_unassigned_job(player.mind.assigned_role))
+	for(var/mob/dead/new_player/player as anything in GLOB.new_player_list)
+		if(player.ready == PLAYER_READY_TO_PLAY && player.check_job_preferences(!pure) && player.mind && is_unassigned_job(player.mind.assigned_role))
 			unassigned += player
 
 	initial_players_to_assign = length(unassigned)
@@ -443,12 +454,21 @@ SUBSYSTEM_DEF(job)
 	// From assign_all_overflow_positions()
 	// 4. Anyone with the overflow role enabled has been given the overflow role.
 
-	// Shuffle the joinable occupation list and filter out ineligible occupations due to above job assignments.
+	// Copy the joinable occupation list and filter out ineligible occupations due to above job assignments.
 	var/list/available_occupations = joinable_occupations.Copy()
+	var/datum/job_department/command_department = get_department_type(/datum/job_department/command)
+
 	for(var/datum/job/job in available_occupations)
 		// Make sure the job isn't filled. If it is, remove it from the list so it doesn't get checked.
 		if((job.current_positions >= job.spawn_positions) && job.spawn_positions != -1)
 			job_debug("DO: Job is now filled, Job: [job], Current: [job.current_positions], Limit: [job.spawn_positions]")
+			available_occupations -= job
+			continue
+
+		// Command jobs are handled via fill_all_head_positions_at_priority(...)
+		// Remove these jobs from the list of available occupations to prevent multiple players being assigned to the same
+		// limited role without constantly having to iterate over the available_occupations list and re-check them.
+		if(job in command_department?.department_jobs)
 			available_occupations -= job
 
 	job_debug("DO: Running standard job assignment")
@@ -536,6 +556,11 @@ SUBSYSTEM_DEF(job)
 		if (BEOVERFLOW)
 			var/datum/job/overflow_role_datum = get_job_type(overflow_role)
 
+			if((overflow_role_datum.current_positions >= overflow_role_datum.spawn_positions) && overflow_role_datum.spawn_positions != -1)
+				job_debug("HU: Overflow role player cap reached, trying to reject: [player]")
+				try_reject_player(player)
+				return
+
 			if(check_job_eligibility(player, overflow_role_datum, debug_prefix = "HU", add_job_to_log = TRUE) != JOB_AVAILABLE)
 				job_debug("HU: Player cannot be overflow, trying to reject: [player]")
 				try_reject_player(player)
@@ -572,7 +597,7 @@ SUBSYSTEM_DEF(job)
 	job.announce_job(equipping)
 
 	if(player_client?.holder)
-		if(CONFIG_GET(flag/auto_deadmin_players) || (player_client.prefs?.toggles & DEADMIN_ALWAYS))
+		if(CONFIG_GET(flag/auto_deadmin_always) || (player_client.prefs?.toggles & DEADMIN_ALWAYS))
 			player_client.holder.auto_deadmin()
 		else
 			handle_auto_deadmin_roles(player_client, job.title)
@@ -673,14 +698,15 @@ SUBSYSTEM_DEF(job)
 	return 0
 
 /datum/controller/subsystem/job/proc/try_reject_player(mob/dead/new_player/player)
-	if(player.mind && player.mind.special_role)
-		job_debug("RJCT: Player unable to be rejected due to special_role, Player: [player], SpecialRole: [player.mind.special_role]")
-		return FALSE
+	for(var/datum/dynamic_ruleset/roundstart/ruleset in SSdynamic.queued_rulesets)
+		if(player.mind in ruleset.selected_minds)
+			job_debug("RJCT: Player unable to be rejected due to being selected by dynamic, Player: [player], Ruleset: [ruleset]")
+			return FALSE
 
 	job_debug("RJCT: Player rejected, Player: [player]")
 	unassigned -= player
 	if(!run_divide_occupation_pure)
-		to_chat(player, "<span class='infoplain'><b>You have failed to qualify for any job you desired.</b></span>")
+		to_chat(player, span_infoplain("<b>You have failed to qualify for any job you desired.</b>"))
 		player.ready = PLAYER_NOT_READY
 
 
@@ -815,10 +841,10 @@ SUBSYSTEM_DEF(job)
 
 	var/paper = new /obj/item/folder/biscuit/confidential/spare_id_safe_code()
 	var/list/slots = list(
-		LOCATION_LPOCKET = ITEM_SLOT_LPOCKET,
-		LOCATION_RPOCKET = ITEM_SLOT_RPOCKET,
-		LOCATION_BACKPACK = ITEM_SLOT_BACKPACK,
-		LOCATION_HANDS = ITEM_SLOT_HANDS
+		LOCATION_LPOCKET,
+		LOCATION_RPOCKET,
+		LOCATION_BACKPACK,
+		LOCATION_HANDS,
 	)
 	var/where = new_captain.equip_in_one_of_slots(paper, slots, FALSE, indirect_action = TRUE) || "at your feet"
 
@@ -846,11 +872,12 @@ SUBSYSTEM_DEF(job)
 /// Assigns roles that are considered high priority, either due to dynamic needing to force a specific role for a specific ruleset
 /// or making sure roles critical to round progression exist where possible every shift.
 /datum/controller/subsystem/job/proc/assign_priority_positions()
-	job_debug("APP: Assigning Dynamic ruleset forced occupations: [length(dynamic_forced_occupations)]")
-	for(var/mob/new_player in dynamic_forced_occupations)
+	job_debug("APP: Assigning Dynamic ruleset forced occupations: [LAZYLEN(forced_occupations)]")
+	for(var/datum/mind/mind as anything in forced_occupations)
+		var/mob/dead/new_player = mind.current
 		// Eligibility checks already carried out as part of the dynamic ruleset trim_candidates proc.
 		// However no guarantee of game state between then and now, so don't skip eligibility checks on assign_role.
-		assign_role(new_player, get_job(dynamic_forced_occupations[new_player]))
+		assign_role(new_player, get_job_type(LAZYACCESS(forced_occupations, mind)))
 
 	// Get JP_HIGH department Heads of Staff in place. Indirectly useful for the Revolution ruleset to have as many Heads as possible.
 	job_debug("APP: Assigning all JP_HIGH head of staff roles.")
@@ -879,7 +906,13 @@ SUBSYSTEM_DEF(job)
 	// appear normal from the UI. By passing in JP_ANY, it will return all players that have the overflow job pref (which should be a toggle)
 	// set to any level.
 	var/list/overflow_candidates = find_occupation_candidates(overflow_datum, JP_ANY)
+	job_debug("OVRFLW: Attempting to assign the overflow role to [length(overflow_candidates)] players.")
 	for(var/mob/dead/new_player/player in overflow_candidates)
+		if((overflow_datum.current_positions >= overflow_datum.spawn_positions) && overflow_datum.spawn_positions != -1)
+			job_debug("OVRFLW: Overflow role cap reached, role only assigned to [overflow_datum.current_positions] players.")
+			job_debug("OVRFLW: Overflow Job is now full, Job: [overflow_datum], Positions: [overflow_datum.current_positions], Limit: [overflow_datum.spawn_positions]")
+			return
+
 		// Eligibility checks done as part of find_occupation_candidates, so skip them.
 		assign_role(player, get_job_type(overflow_role), do_eligibility_checks = FALSE)
 		job_debug("OVRFLW: Assigned overflow to player: [player]")
@@ -909,7 +942,7 @@ SUBSYSTEM_DEF(job)
 		job_debug("[debug_prefix]: Player has no mind, Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_GENERIC
 
-	if(possible_job.title in player.mind.restricted_roles)
+	if(possible_job.title in LAZYACCESS(prevented_occupations, player.mind))
 		job_debug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_ANTAG_INCOMPAT, possible_job.title)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_ANTAG_INCOMPAT
 
@@ -928,7 +961,8 @@ SUBSYSTEM_DEF(job)
 		return JOB_UNAVAILABLE_BANNED
 
 	// Check for character age
-	if(possible_job.required_character_age > player.client.prefs.read_preference(/datum/preference/numeric/age) && possible_job.required_character_age != null)
+	var/client/player_client = GET_CLIENT(player)
+	if(isnum(possible_job.required_character_age) && possible_job.required_character_age > player_client.prefs.read_preference(/datum/preference/numeric/age))
 		job_debug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_AGE)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_AGE
 

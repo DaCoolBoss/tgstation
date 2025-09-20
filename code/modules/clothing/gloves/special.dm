@@ -14,6 +14,7 @@
 	. = ..()
 	RegisterSignal(src, COMSIG_ITEM_EQUIPPED, PROC_REF(on_glove_equip))
 	RegisterSignal(src, COMSIG_ITEM_POST_UNEQUIP, PROC_REF(on_glove_unequip))
+	AddComponent(/datum/component/adjust_fishing_difficulty, 19)
 
 /// Called when the glove is equipped. Adds a component to the equipper and stores a weak reference to it.
 /obj/item/clothing/gloves/cargo_gauntlet/proc/on_glove_equip(datum/source, mob/equipper, slot)
@@ -59,6 +60,7 @@
 /obj/item/clothing/gloves/rapid/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/punchcooldown)
+	AddComponent(/datum/component/adjust_fishing_difficulty, -9)
 
 /obj/item/clothing/gloves/radio
 	name = "translation gloves"
@@ -74,6 +76,10 @@
 	icon_state = "black"
 	greyscale_colors = "#2f2e31"
 
+/obj/item/clothing/gloves/race/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -9)
+
 /obj/item/clothing/gloves/captain
 	desc = "Regal blue gloves, with a nice gold trim, a diamond anti-shock coating, and an integrated thermal barrier. Swanky."
 	name = "captain's gloves"
@@ -85,10 +91,14 @@
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
-	strip_delay = 60
+	strip_delay = 6 SECONDS
 	armor_type = /datum/armor/captain_gloves
 	resistance_flags = NONE
 	clothing_traits = list(TRAIT_FAST_CUFFING)
+
+/obj/item/clothing/gloves/captain/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -6)
 
 /datum/armor/captain_gloves
 	bio = 90
@@ -105,6 +115,7 @@
 	armor_type = /datum/armor/latex_gloves
 	clothing_traits = list(TRAIT_QUICK_CARRY)
 	resistance_flags = NONE
+	equip_sound = 'sound/items/equip/glove_equip.ogg'
 
 /datum/armor/latex_gloves
 	bio = 100
@@ -117,6 +128,10 @@
 	greyscale_colors = "#99eeff"
 	clothing_traits = list(TRAIT_QUICKER_CARRY, TRAIT_FASTMED)
 
+/obj/item/clothing/gloves/latex/nitrile/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -6)
+
 /obj/item/clothing/gloves/latex/coroner
 	name = "coroner's gloves"
 	desc = "Black gloves made from latex with a superhydrophobic coating. Useful for picking bodies up instead of dragging blood behind."
@@ -125,15 +140,15 @@
 	greyscale_colors = "#15191a"
 	clothing_traits = list(TRAIT_QUICK_CARRY, TRAIT_FASTMED)
 
-/obj/item/clothing/gloves/latex/coroner/add_blood_DNA(list/blood_DNA_to_add)
+/obj/item/clothing/gloves/latex/coroner/add_blood_DNA(list/blood_DNA_to_add, list/datum/disease/diseases)
 	return FALSE
 
 /obj/item/clothing/gloves/tinkerer
 	name = "tinker's gloves"
-	desc = "Overdesigned engineering gloves that have automated construction subrutines dialed in, allowing for faster construction while worn."
+	desc = "Overdesigned engineering gloves that have automated construction subroutines dialed in, allowing for faster construction while worn."
 	inhand_icon_state = "greyscale_gloves"
 	icon_state = "clockwork_gauntlets"
-	greyscale_colors = "#db6f05"
+	greyscale_colors = "#996e23"
 	siemens_coefficient = 0.8
 	armor_type = /datum/armor/tinker_gloves
 	clothing_traits = list(TRAIT_QUICK_BUILD)
@@ -154,46 +169,54 @@
 	resistance_flags = FIRE_PROOF
 	siemens_coefficient = 0.3
 	clothing_traits = list(TRAIT_QUICKER_CARRY, TRAIT_CHUNKYFINGERS)
-	clothing_flags = THICKMATERIAL
+	clothing_flags = parent_type::clothing_flags | THICKMATERIAL|STOPSPRESSUREDAMAGE
+
+/obj/item/clothing/gloves/atmos/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, 6)
 
 ///A pair of gloves that both allow the user to fish without the need of a held fishing rod and provides athletics experience.
 /obj/item/clothing/gloves/fishing
 	name = "athletic fishing gloves"
 	desc = "A pair of gloves to fish without a fishing rod but your raw <b>athletics</b> strength. It doubles as a good workout device. <i><b>WARNING</b>: May cause injuries when catching bigger fish.</i>"
 	icon_state = "fishing_gloves"
+	///The current fishing minigame datum the wearer is engaged in.
+	var/datum/fishing_challenge/challenge
 
 /obj/item/clothing/gloves/fishing/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/profound_fisher, new /obj/item/fishing_rod/mob_fisher/athletic(src))
+	AddComponent(/datum/component/adjust_fishing_difficulty, -4) //on top of the extra that you get from the athletics skill.
 
 /obj/item/clothing/gloves/fishing/equipped(mob/user, slot)
 	. = ..()
 	if(slot == ITEM_SLOT_GLOVES)
-		RegisterSignal(user, SIGNAL_ADDTRAIT(TRAIT_ACTIVELY_FISHING), PROC_REF(begin_workout))
+		RegisterSignal(user, COMSIG_MOB_BEGIN_FISHING_MINIGAME, PROC_REF(begin_workout))
 
 /obj/item/clothing/gloves/fishing/dropped(mob/user)
-	UnregisterSignal(user, list(SIGNAL_ADDTRAIT(TRAIT_ACTIVELY_FISHING), SIGNAL_REMOVETRAIT(TRAIT_ACTIVELY_FISHING)))
-	STOP_PROCESSING(SSprocessing, src)
+	UnregisterSignal(user, COMSIG_MOB_BEGIN_FISHING_MINIGAME)
+	if(challenge)
+		stop_workout(user)
 	return ..()
 
-/obj/item/clothing/gloves/fishing/proc/begin_workout(datum/source)
+/obj/item/clothing/gloves/fishing/proc/begin_workout(datum/source, datum/fishing_challenge/challenge)
 	SIGNAL_HANDLER
-	RegisterSignal(source, SIGNAL_REMOVETRAIT(TRAIT_ACTIVELY_FISHING), PROC_REF(stop_workout))
+	RegisterSignal(source, COMSIG_MOB_COMPLETE_FISHING, PROC_REF(stop_workout))
 	if(HAS_TRAIT(source, TRAIT_PROFOUND_FISHER)) //Only begin working out if we're fishing with these gloves and not some other fishing rod..
 		START_PROCESSING(SSprocessing, src)
+		src.challenge = challenge
 
 /obj/item/clothing/gloves/fishing/proc/stop_workout(datum/source)
 	SIGNAL_HANDLER
-	UnregisterSignal(source, SIGNAL_REMOVETRAIT(TRAIT_ACTIVELY_FISHING))
+	UnregisterSignal(source, COMSIG_MOB_COMPLETE_FISHING)
+	challenge = null
 	STOP_PROCESSING(SSprocessing, src)
 
 /obj/item/clothing/gloves/fishing/process(seconds_per_tick)
 	var/mob/living/wearer = loc
-	var/list/trait_source = GET_TRAIT_SOURCES(wearer, TRAIT_ACTIVELY_FISHING)
-	var/datum/fishing_challenge/challenge = trait_source[1]
-	var/stamina_exhaustion = 2.5 + challenge.difficulty * 0.025
+	var/stamina_exhaustion = 2 + challenge.difficulty * 0.02
 	var/is_heavy_gravity = wearer.has_gravity() > STANDARD_GRAVITY
-	var/obj/item/organ/internal/cyberimp/chest/spine/potential_spine = wearer.get_organ_slot(ORGAN_SLOT_SPINE)
+	var/obj/item/organ/cyberimp/chest/spine/potential_spine = wearer.get_organ_slot(ORGAN_SLOT_SPINE)
 	if(istype(potential_spine))
 		stamina_exhaustion *= potential_spine.athletics_boost_multiplier
 	if(HAS_TRAIT(wearer, TRAIT_STRENGTH))
@@ -213,6 +236,7 @@
 	name = "athletics fishing gloves"
 	icon = /obj/item/clothing/gloves/fishing::icon
 	icon_state = /obj/item/clothing/gloves/fishing::icon_state
+	frame_state = "frame_athletic"
 	line = null
 	bait = null
 	ui_description = "A pair of gloves to fish without a fishing rod while training your athletics."
@@ -227,7 +251,7 @@
 	return list()
 
 /obj/item/fishing_rod/mob_fisher/athletic/hook_hit(atom/atom_hit_by_hook_projectile, mob/user)
-	difficulty_modifier = -3 * user.mind?.get_skill_level(/datum/skill/athletics)
+	difficulty_modifier = -3 * (user.mind?.get_skill_level(/datum/skill/athletics) - 1)
 	return ..()
 
 /obj/item/fishing_rod/mob_fisher/athletic/proc/noodling_is_dangerous(datum/source, atom/movable/reward, mob/living/user)
@@ -249,4 +273,4 @@
 	if(damage)
 		var/body_zone = pick(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM)
 		user.apply_damage(damage, BRUTE, body_zone, user.run_armor_check(body_zone, MELEE))
-		playsound(src,'sound/weapons/bite.ogg', damage * 2, TRUE)
+		playsound(src,'sound/items/weapons/bite.ogg', damage * 2, TRUE)

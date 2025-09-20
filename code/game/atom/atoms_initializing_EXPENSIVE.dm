@@ -132,6 +132,9 @@
 	if (light_system == COMPLEX_LIGHT && light_power && light_range)
 		update_light()
 
+	if(post_init_icon_state)
+		icon_state = post_init_icon_state
+
 	SETUP_SMOOTHING()
 
 	if(uses_integrity)
@@ -142,7 +145,8 @@
 	// This MUST come after atom_integrity is set above, as if old materials get removed,
 	// atom_integrity is checked against max_integrity and can BREAK the atom.
 	// The integrity to max_integrity ratio is still preserved.
-	set_custom_materials(custom_materials)
+	if(custom_materials)
+		initialize_materials(custom_materials)
 
 	if(ispath(ai_controller))
 		ai_controller = new ai_controller(src)

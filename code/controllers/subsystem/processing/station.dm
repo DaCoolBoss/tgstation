@@ -1,6 +1,5 @@
 PROCESSING_SUBSYSTEM_DEF(station)
 	name = "Station"
-	init_order = INIT_ORDER_STATION
 	flags = SS_BACKGROUND
 	runlevels = RUNLEVEL_GAME
 	wait = 5 SECONDS
@@ -181,5 +180,4 @@ PROCESSING_SUBSYSTEM_DEF(station)
 		var/datum/hud/new_player/observer_hud = player.hud_used
 		if (!istype(observer_hud))
 			continue
-		observer_hud.add_station_trait_buttons()
-		observer_hud.show_hud(observer_hud.hud_version)
+		observer_hud.show_station_trait_buttons()

@@ -23,7 +23,7 @@
 
 /obj/item/clothing/head/hooded/flashsuit/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/wearable_client_colour, /datum/client_colour/flash_hood, ITEM_SLOT_HEAD, forced = TRUE)
+	AddElement(/datum/element/wearable_client_colour, /datum/client_colour/flash_hood, ITEM_SLOT_HEAD, HELMET_TRAIT, forced = TRUE)
 
 /obj/item/clothing/suit/costume/pirate
 	name = "pirate coat"
@@ -42,8 +42,8 @@
 
 /obj/item/clothing/suit/costume/pirate/armored
 	armor_type = /datum/armor/pirate_armored
-	strip_delay = 40
-	equip_delay_other = 20
+	strip_delay = 4 SECONDS
+	equip_delay_other = 2 SECONDS
 	species_exception = null
 
 /obj/item/clothing/suit/costume/pirate/captain
@@ -54,8 +54,8 @@
 
 /obj/item/clothing/suit/costume/pirate/captain/armored
 	armor_type = /datum/armor/pirate_armored
-	strip_delay = 40
-	equip_delay_other = 20
+	strip_delay = 4 SECONDS
+	equip_delay_other = 2 SECONDS
 	species_exception = null
 
 /obj/item/clothing/suit/costume/cyborg_suit
@@ -121,7 +121,7 @@
 	icon_state = "imperium_monk"
 	inhand_icon_state = "imperium_monk"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	flags_inv = HIDESHOES|HIDEJUMPSUIT
+	flags_inv = HIDESHOES|HIDEJUMPSUIT|HIDEBELT
 	allowed = list(/obj/item/book/bible, /obj/item/nullrod, /obj/item/reagent_containers/cup/glass/bottle/holywater, /obj/item/storage/fancy/candle_box, /obj/item/flashlight/flare/candle, /obj/item/tank/internals/emergency_oxygen)
 
 /obj/item/clothing/suit/costume/chickensuit
@@ -219,6 +219,7 @@
 	icon_state = "classicponcho"
 	inhand_icon_state = null
 	species_exception = list(/datum/species/golem)
+	flags_inv = HIDEBELT
 
 /obj/item/clothing/suit/costume/poncho/green
 	name = "green poncho"
@@ -248,7 +249,7 @@
 	icon_state = "white_dress"
 	inhand_icon_state = "w_suit"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDESHOES
+	flags_inv = HIDEJUMPSUIT|HIDESHOES|HIDEBELT
 
 /obj/item/clothing/suit/hooded/carp_costume
 	name = "carp costume"
@@ -263,6 +264,10 @@
 	allowed = list(/obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/gun/ballistic/rifle/boltaction/harpoon)
 	hoodtype = /obj/item/clothing/head/hooded/carp_hood
 
+/obj/item/clothing/suit/hooded/carp_costume/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -4)
+
 /obj/item/clothing/head/hooded/carp_hood
 	name = "carp hood"
 	desc = "A hood attached to a carp costume."
@@ -273,6 +278,10 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEHAIR|HIDEEARS
+
+/obj/item/clothing/head/hooded/carp_hood/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -5)
 
 /obj/item/clothing/head/hooded/carp_hood/equipped(mob/living/carbon/human/user, slot)
 	..()
@@ -394,6 +403,10 @@
 	clothing_flags = THICKMATERIAL
 	hoodtype = /obj/item/clothing/head/hooded/shark_hood
 
+/obj/item/clothing/suit/hooded/shark_costume/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -4)
+
 /obj/item/clothing/head/hooded/shark_hood
 	name = "shark hood"
 	desc = "A hood attached to a shark costume."
@@ -403,6 +416,10 @@
 	body_parts_covered = HEAD
 	clothing_flags = THICKMATERIAL
 	flags_inv = HIDEHAIR|HIDEEARS
+
+/obj/item/clothing/head/hooded/shark_hood/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -5)
 
 /obj/item/clothing/suit/hooded/shork_costume // Oh God Why
 	name = "shork costume"
@@ -415,6 +432,10 @@
 	clothing_flags = THICKMATERIAL
 	hoodtype = /obj/item/clothing/head/hooded/shork_hood
 
+/obj/item/clothing/suit/hooded/shork_costume/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, 4)
+
 /obj/item/clothing/head/hooded/shork_hood
 	name = "shork hood"
 	desc = "A hood attached to a shork costume."
@@ -425,6 +446,10 @@
 	clothing_flags = THICKMATERIAL
 	flags_inv = HIDEHAIR|HIDEEARS
 
+/obj/item/clothing/head/hooded/shork_hood/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, 5)
+
 /obj/item/clothing/suit/hooded/bloated_human //OH MY GOD WHAT HAVE YOU DONE!?!?!?
 	name = "bloated human suit"
 	desc = "A horribly bloated suit made from human skins."
@@ -434,7 +459,6 @@
 	inhand_icon_state = "labcoat"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|FEET
 	allowed = list()
-	actions_types = list(/datum/action/item_action/toggle_human_head)
 	hoodtype = /obj/item/clothing/head/hooded/human_head
 	species_exception = list(/datum/species/golem) //Finally, flesh
 
@@ -479,6 +503,7 @@
 	desc = "Perfect for those who want to stalk around a corner of a bar."
 	icon_state = "gothcoat"
 	inhand_icon_state = null
+	flags_inv = HIDEBELT
 
 /obj/item/clothing/suit/costume/xenos
 	name = "xenos suit"
@@ -486,7 +511,7 @@
 	icon_state = "xenos"
 	inhand_icon_state = "xenos_suit"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
-	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDEBELT
 	allowed = list(/obj/item/clothing/mask/facehugger/toy)
 
 /obj/item/clothing/suit/costume/nemes
@@ -562,7 +587,7 @@
 
 /obj/item/clothing/suit/coordinator
 	name = "coordinator jacket"
-	desc = "A jacket for a party ooordinator, stylish!."
+	desc = "A jacket for a party coordinator, stylish!."
 	icon_state = "capformal"
 	icon = 'icons/obj/clothing/suits/armor.dmi'
 	worn_icon = 'icons/mob/clothing/suits/armor.dmi'
@@ -581,7 +606,9 @@
 /obj/item/clothing/suit/costume/hawaiian
 	name = "hawaiian overshirt"
 	desc = "A cool shirt for chilling on the beach."
-	icon_state = "hawaiian_shirt"
+	icon = 'icons/map_icons/clothing/suit/costume.dmi'
+	icon_state = "/obj/item/clothing/suit/costume/hawaiian"
+	post_init_icon_state = "hawaiian_shirt"
 	inhand_icon_state = null
 	greyscale_config = /datum/greyscale_config/hawaiian_shirt
 	greyscale_config_worn = /datum/greyscale_config/hawaiian_shirt/worn
@@ -589,10 +616,16 @@
 	flags_1 = IS_PLAYER_COLORABLE_1
 	species_exception = list(/datum/species/golem)
 
+/obj/item/clothing/suit/costume/hawaiian/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -5)
+
 /obj/item/clothing/suit/costume/football_armor
 	name = "football protective gear"
 	desc = "Given to members of the football team!"
-	icon_state = "football_armor"
+	icon = 'icons/map_icons/clothing/suit/costume.dmi'
+	icon_state = "/obj/item/clothing/suit/costume/football_armor"
+	post_init_icon_state = "football_armor"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	greyscale_config = /datum/greyscale_config/football_armor
 	greyscale_config_worn = /datum/greyscale_config/football_armor/worn
@@ -649,3 +682,44 @@
 	inhand_icon_state = null
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/suit/costume/bear_suit
+	name = "bear suit"
+	desc = "A suit of 100% bear fur. Would probably be a lot more convincing without that HUGE zipper on the front."
+	icon_state = "bear"
+	worn_icon_state = "bear"
+	inhand_icon_state = null
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
+	///Are we friendly with bears (wearing the full head/suit combo)?
+	var/full_suit = FALSE
+
+/obj/item/clothing/suit/costume/bear_suit/equipped(mob/living/user, slot)
+	..()
+	if(slot & ITEM_SLOT_OCLOTHING)
+		var/mob/living/carbon/human/human_user = user
+		make_friendly(user, human_user.head)
+
+/obj/item/clothing/suit/costume/bear_suit/dropped(mob/living/user)
+	..()
+	if (!full_suit)
+		return
+	full_suit = FALSE
+	var/mob/living/carbon/human/human_user = user
+	UnregisterSignal(human_user.head, COMSIG_ITEM_DROPPED)
+	user.faction -= FACTION_BEAR
+
+/obj/item/clothing/suit/costume/bear_suit/proc/make_friendly(mob/living/carbon/human/human_user, obj/item/clothing/head/costume/bearpelt/bear_head)
+	if(!istype(human_user))
+		return
+	if(!bear_head || !istype(bear_head))
+		return
+	RegisterSignal(bear_head, COMSIG_ITEM_DROPPED, PROC_REF(helmet_drop))
+	full_suit = TRUE
+	human_user.faction |= FACTION_BEAR
+
+/obj/item/clothing/suit/costume/bear_suit/proc/helmet_drop(datum/source, mob/living/user)
+	SIGNAL_HANDLER
+	UnregisterSignal(source, COMSIG_ITEM_DROPPED)
+	full_suit = FALSE
+	user.faction -= FACTION_BEAR

@@ -122,8 +122,13 @@
 
 /datum/mood_event/heretics
 	description = "THE HIGHER I RISE, THE MORE I SEE."
-	mood_change = 10 //maybe being a cultist isnt that bad after all
+	mood_change = 10 //maybe being a heretic isnt that bad after all
 	hidden = TRUE
+
+/datum/mood_event/rift_fishing
+	description = "THE MORE I FISH, THE HIGHER I RISE."
+	mood_change = 7
+	timeout = 5 MINUTES
 
 /datum/mood_event/family_heirloom
 	description = "My family heirloom is safe with me."
@@ -285,7 +290,7 @@
 	timeout = 30 SECONDS
 
 /datum/mood_event/gamer_won
-	description = "I love winning videogames!"
+	description = "I love winning video games!"
 	mood_change = 10
 	timeout = 5 MINUTES
 
@@ -349,6 +354,17 @@
 		description = "Some scavenger will surely find a use for the remains of [fish.name]. How pragmatic."
 	else
 		description = "Returned to the burden of the deep. But is this truly a mercy, [fish.name]? There will always be bigger fish..."
+
+/datum/mood_event/fish_petting
+	description = "It felt nice to pet the fish."
+	mood_change = 2
+	timeout = 2 MINUTES
+
+/datum/mood_event/fish_petting/add_effects(obj/item/fish/fish, morbid)
+	if(!morbid)
+		description = "It felt nice to pet \the [fish]."
+	else
+		description = "I caress \the [fish] as [fish.p_they()] squirms under my touch, blissfully unaware of how cruel this world is."
 
 /datum/mood_event/kobun
 	description = "You are all loved by the Universe. I’m not alone, and you aren’t either."
