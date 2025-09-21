@@ -365,7 +365,9 @@
 "eM" = (
 /obj/structure/disposaloutlet{
 	dir = 4;
-	name = "reject outlet"
+	name = "reject outlet";
+	eject_range = 10;
+	eject_speed = 6
 	},
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -613,7 +615,7 @@
 /obj/effect/mapping_helpers/airlock_note_placer,
 /obj/item/paper/fluff{
 	name = "handwritten sign";
-	default_raw_text = 'OUT OF ORDER - MANAGEMENT'
+	default_raw_text = 'OUTOFORDER-MANAGEMENT'
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/dark/textured,
@@ -699,6 +701,7 @@
 	},
 /obj/structure/sign/warning/firing_range/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/gun/magic/wand/fireball,
 /turf/open/floor/plating,
 /area/deathmatch)
 "jc" = (
@@ -1215,6 +1218,7 @@
 "oK" = (
 /obj/structure/closet/crate/bin,
 /obj/structure/fluff/fake_camera,
+/obj/item/paper/pamphlet/centcom/visitor_info,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "oL" = (
@@ -1603,7 +1607,7 @@
 	pixel_y = 3
 	},
 /obj/item/food/waffles{
-	pixel_y = 5
+	pixel_y = 6
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -1709,7 +1713,7 @@
 /obj/structure/table/reinforced,
 /obj/item/trash/tray,
 /obj/item/food/waffles{
-	pixel_y = 1
+	pixel_y = 2
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/large/textured,
@@ -1922,12 +1926,12 @@
 /area/deathmatch)
 "vH" = (
 /obj/machinery/computer/terminal{
-	content = list("Property of Spinward-Upsilon Sanitation Department. Authorised employees only.");
-	desc = "A garbage truck's dusty old control console.";
-	name = "dashboard";
-	upperinfo = "Controls locked.";
+	content = list("Waffle Corp - Come For A ROFL!");
+	desc = "A Univeral Point-of-Sale terminal. This is for processing customer transactions.";
+	name = "U-POS terminal";
+	upperinfo = "Present cashier ID to unlock.";
 	dir = 1;
-	tguitheme = "neutral"
+	tguitheme = "ntOS95"
 	},
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2409,14 +2413,15 @@
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "Dt" = (
+/obj/structure/table/wood,
 /obj/machinery/computer/terminal{
-	desc = "A garbage truck's dusty old control console.";
-	name = "dashboard";
-	upperinfo = "LOCKED";
+	content = list("Bargain Thrifts - We Match Everyone On Anything");
+	desc = "A Univeral Point-of-Sale terminal. This is for processing customer transactions.";
+	name = "U-POS terminal";
+	upperinfo = "Present cashier ID to unlock.";
 	dir = 8;
 	tguitheme = "ntOS95"
 	},
-/obj/structure/table/wood,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "DI" = (
@@ -3361,7 +3366,7 @@
 	pixel_y = 3
 	},
 /obj/item/food/rofflewaffles{
-	pixel_y = 5
+	pixel_y = 7
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -3783,7 +3788,9 @@
 	pixel_x = 1;
 	pixel_y = -2
 	},
-/obj/item/food/waffles,
+/obj/item/food/waffles{
+	pixel_y = 1
+	},
 /turf/open/indestructible,
 /area/deathmatch)
 "Sl" = (
@@ -3859,7 +3866,7 @@
 	pixel_y = 12
 	},
 /obj/item/food/waffles{
-	pixel_y = 14
+	pixel_y = 15
 	},
 /turf/open/indestructible/large/textured,
 /area/deathmatch)
@@ -4322,7 +4329,7 @@
 /obj/structure/table/reinforced,
 /obj/item/trash/tray,
 /obj/item/food/waffles{
-	pixel_y = 1
+	pixel_y = 2
 	},
 /turf/open/indestructible/large/textured,
 /area/deathmatch)

@@ -554,7 +554,8 @@
 // Waffle Corp Parking Lot	//
 /datum/outfit/deathmatch_loadout/syndicate
 	name = "Deathmatch: Syndicate Agent"
-	display_name = "Spinward Syndicate"
+	display_name = "Syndicate"
+	var/jobname = "Syndicate Agent"
 	desc = "The typical loadout for agents employed in the Spinward Periphery. Equipped with a pistol, a knife, and plenty of ammo."
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate
@@ -563,12 +564,11 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	back = /obj/item/storage/backpack/fireproof
-	id = /obj/item/card/id/advanced/chameleon
+	id = /obj/item/card/id/advanced/black
 	l_hand = /obj/item/gun/ballistic/automatic/pistol
 	l_pocket = /obj/item/knife/combat
 	backpack_contents = list(/obj/item/ammo_box/magazine/m9mm = 5)
 	implants = list(/obj/item/implant/explosive, /obj/item/implant/weapons_auth)
-	var/jobname = "Syndicate Agent"
 
 /datum/outfit/deathmatch_loadout/syndicate/post_equip(mob/living/carbon/human/player, visualsOnly = FALSE)
 	if(visualsOnly)
@@ -582,9 +582,10 @@
 /datum/outfit/deathmatch_loadout/syndicate/cybersun
 	name = "Deathmatch: Cybersun Troubleshooter"
 	display_name = "Cybersun Industries"
+	jobname = "Troubleshooter"
 	desc = "The loadout used by Cybersun's infamous Troubleshooter Division. Equipped with an S-120, and energy dagger, and inducer cells."
 	uniform = /obj/item/clothing/under/syndicate/combat
-	suit = /obj/item/clothing/suit/jacket/det_suit/dark/cyberpunk
+	suit = /obj/item/clothing/suit/jacket/det_suit/cyberpunk
 	glasses = /obj/item/clothing/glasses/sunglasses/oval
 	back = /obj/item/storage/backpack/messenger
 	belt = /obj/item/gun/energy/laser/carbine/cybersun/unrestricted
@@ -592,11 +593,10 @@
 	l_pocket = /obj/item/pen/edagger
 	backpack_contents = list(/obj/item/inducer_cell = 2,)
 
-
-
 /datum/outfit/deathmatch_loadout/syndicate/donk
 	name = "Deathmatch: Donk Co. Employee"
 	display_name = "Donk Company"
+	jobname = "Donk Co. Employee"
 	desc = "Some people would kill to make minimum wage. This loadout is for those people. Equipped with a .38 revolver, grenades, and tactical rations."
 	head = /obj/item/clothing/head/utility/hardhat/orange
 	suit = /obj/item/clothing/suit/hazardvest
@@ -607,15 +607,16 @@
 	l_pocket = /obj/item/grenade/smokebomb
 	r_pocket = /obj/item/food/donkpocket/warm/deluxe
 	id = /obj/item/card/id/away/donk
-	backpack_contents = list(/obj/item/ammo_box/c38 = 2, /obj/item/grenade/frag = 2,)
+	backpack_contents = list(/obj/item/ammo_box/speedloader/c38 = 2, /obj/item/grenade/frag = 2,)
 
 /datum/outfit/deathmatch_loadout/syndicate/gorlex
-	name = "Deathmatch: Gorlex Rent-A-Trooper"
+	name = "Deathmatch: Gorlex Ace Trooper"
 	display_name = "Gorlex Marauders"
-	desc = "The uniform worn by Gorlex's basic troopers. Each soldier comes with a shotgun, a knife, and a grenade."
+	jobname = "Ace Trooper"
+	desc = "The uniform worn by Gorlex's front line troopers. Each trooper comes with a shotgun, a knife, and a grenade."
 	head = /obj/item/clothing/head/helmet/swat
 	uniform = /obj/item/clothing/under/syndicate/bloodred
-	glasses = /obj/item/clothing/glasses/night/colorless
+	glasses = /obj/item/clothing/glasses/night
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	mask = /obj/item/clothing/mask/gas/syndicate
 	id = /obj/item/card/id/dogtag/gorlex
@@ -626,6 +627,7 @@
 /datum/outfit/deathmatch_loadout/syndicate/waffle
 	name = "Deathmatch: Waffle Corporate Security"
 	display_name = "Waffle Corporation"
+	jobname = "Waffle Corp Security Guard"
 	desc = "Standard equipment loadout for Waffle Corp's corporate security team. Equipped with an autorifle, spare ammo, and emergency gauze."
 	uniform = /obj/item/clothing/under/syndicate/camo/blue
 	head = /obj/item/clothing/head/helmet/blueshirt
