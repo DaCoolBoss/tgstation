@@ -286,3 +286,23 @@
 		examine(interacting_living)
 		to_chat(interacting_living, span_boldwarning("[user] shows the [src] to you."))
 		user.visible_message(span_notice("[user] shows a [src] to [interacting_living]."))
+
+/obj/item/clothing/accessory/jacket_patch
+	name = "patch"
+	desc = "An iron-on patch for decorating clothing, while covering up holes. This one has the logo of some punk band on it."
+	icon_state = "punkpatch"
+
+/obj/item/clothing/accessory/jacket_patch
+	name = "back patch"
+	desc = "An iron-on patch for decorating clothing, while covering up holes. This one is big and has a big skull on it. Badass."
+	icon_state = "punkpatch_big"
+
+/obj/item/clothing/accessory/jacket_patch/theta
+	name = "theta patch"
+	desc = "An iron-on patch for combat uniforms. This one has a black and white logo on it, with the label 'THETA'."
+	icon_state = "thetapatch"
+
+/obj/item/clothing/accessory/jacket_patch/theta/back
+	name = "theta back patch"
+	desc = "An iron-on patch for combat uniforms. This one is a big logo, for display on the back piece. It's labelled 'THETA'."
+	icon_state = "thetapatch_big"

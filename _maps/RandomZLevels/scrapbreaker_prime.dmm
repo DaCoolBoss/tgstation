@@ -1092,6 +1092,11 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/scrapbreaker_prime)
+"dr" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external,
+/turf/open/floor/plating,
+/area/space)
 "ds" = (
 /obj/effect/turf_decal/tile/dark/half/contrasted,
 /obj/machinery/light/cold/directional/south,
@@ -13377,10 +13382,8 @@
 /turf/open/floor/iron/smooth,
 /area/awaymission/scrapbreaker_prime)
 "PA" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
-/mob/living/basic/trooper/syndicate/ranged/shotgun/space,
+/obj/machinery/door/poddoor/preopen,
+/obj/structure/fans/tiny,
 /turf/open/floor/mineral/plastitanium,
 /area/space)
 "PB" = (
@@ -16609,7 +16612,7 @@
 /obj/machinery/door/poddoor/preopen,
 /obj/structure/fans/tiny,
 /mob/living/basic/trooper/syndicate/ranged/smg/space,
-/turf/open/floor/plating,
+/turf/open/floor/mineral/plastitanium,
 /area/space)
 "Zt" = (
 /obj/structure/table/reinforced,
@@ -20275,13 +20278,13 @@ ew
 ew
 ew
 Lc
-Pp
+dr
 kd
 kd
 kd
 kd
 kd
-Pp
+dr
 Lc
 ew
 ew
@@ -21819,9 +21822,9 @@ Nj
 Nj
 tr
 TB
-TB
-kd
-PA
+jU
+Jy
+jU
 wo
 cu
 Nj
@@ -22076,9 +22079,9 @@ bQ
 Nj
 Nj
 Hi
-Hi
+jU
 kd
-Hi
+jU
 Hi
 Nj
 Nj
@@ -23104,9 +23107,9 @@ Nj
 Nj
 Nj
 Nj
-fE
-fE
-fE
+Qt
+Qt
+Qt
 Nj
 Nj
 Nj
@@ -23361,9 +23364,9 @@ Nj
 UH
 UH
 pv
-UH
-UH
-UH
+kd
+kd
+kd
 pv
 UH
 UH
@@ -23618,9 +23621,9 @@ Nj
 DF
 Bc
 Nj
-UH
-UH
-UH
+kd
+kd
+kd
 Nj
 Ip
 To
@@ -23875,9 +23878,9 @@ Nj
 Nj
 Nj
 Nj
-xG
+PA
 Zs
-xG
+PA
 Nj
 Nj
 Nj

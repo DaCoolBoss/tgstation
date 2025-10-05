@@ -8,75 +8,75 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/tank/jetpack/jumppack
 
-/datum/outfit/shipwrecker/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
-	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military/unreliable = 20,
-	/obj/item/reagent_containers/hypospray/medipen/military = 15,
-	/obj/item/tank/internals/emergency_oxygen/engi = 10,
-	/obj/effect/spawner/random/trash/garbage = 10,
-	/obj/item/lighter/greyscale = 5,
-	/obj/effect/spawner/random/entertainment/coin = 5,
-	/obj/item/stack/medical/bandage/makeshift = 5,
-	/obj/effect/spawner/random/entertainment/cigarette = 5,
-	/obj/item/stack/spacecash/c20 = 5,
+/datum/outfit/theta_company/pre_equip(mob/living/carbon/human/theta, visuals_only = FALSE)
+	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 30,
+	/obj/item/tank/internals/emergency_oxygen/engi = 20,
+	/obj/item/reagent_containers/hypospray/medipen/military/unreliable = 10,
 	/obj/item/knife/combat/survival = 5,
-	/obj/item/dice/d6 = 2,
-	/obj/item/reagent_containers/applicator/pill/happy = 2,
-	/obj/item/reagent_containers/applicator/pill/aranesp = 2,
-	/obj/item/match = 2,
-	/obj/item/stack/sheet/mineral/plasma/five = 2,
-	/obj/item/crowbar = 1,
-	/obj/item/boxcutter = 1,
-	/obj/item/knife/shiv = 1,
-	/obj/item/wirecutters = 1,
-	/obj/item/boxcutter = 1,
-	)
-	if(prob(50))
-		ears = /obj/item/radio/headset
-	if(prob(60))
+	/obj/effect/spawner/random/entertainment/coin = 5,
+	/obj/effect/spawner/random/entertainment/cigar = 2,
+	/obj/item/crowbar = 2,
+	/obj/item/cigarette/syndicate = 2,
+	/obj/item/trench_tool = 2,
+	/obj/item/weldingtool = 1,
+	/obj/item/clothing/accessory/anti_sec_pin = 2,
+	/obj/item/assembly/flash = 1,
+	) //82
+	uniform = /obj/item/clothing/under/syndicate
+	suit = /obj/item/clothing/suit/armor/vest
+	shoes = /obj/item/clothing/shoes/combat
+	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
+	ears = /obj/item/radio/headset
+	mask = /obj/item/clothing/mask/gas/syndicate
+	head = /obj/item/clothing/head/helmet/swat
+	back = /obj/item/storage/backpack
+	id = /obj/item/card/id/advanced/chameleon
+	id_trim = /datum/id_trim/chameleon/operative
+	if(prob(70))
 		glasses = pick_weight(
-		/obj/item/clothing/glasses/eyepatch = 45,
-		/obj/item/clothing/glasses/sunglasses = 25,
-		/obj/item/clothing/glasses/meson = 25,
-		/obj/item/clothing/glasses/night = 5,
+		/obj/item/clothing/glasses/eyepatch = 30,
+		/obj/item/clothing/glasses/sunglasses = 30,
+		/obj/item/clothing/glasses/meson = 20,
+		/obj/item/clothing/glasses/night = 20,
 		)
-	if(prob(70))
+	if(prob(80))
 		l_pocket = pick_weight(pocket_loot)
-	if(prob(70))
+	if(prob(80))
 		r_pocket = pick_weight(pocket_loot)
 
-/datum/outfit/shipwrecker/post_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
+/datum/outfit/theta_company/post_equip(mob/living/carbon/human/theta, visuals_only = FALSE)
 	if(visuals_only)
 		return
-	if(prob(25))
-		var/obj/item/organ/heart/cybernetic/newheart = new()
-		newheart.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
 	if(prob(30))
-		var/obj/item/organ/cyberimp/eyes/hud/diagnostic/newvision = new()
-		newvision.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
-	if(prob(35))
+		var/obj/item/organ/heart/cybernetic/newheart = new()
+		newheart.Insert(theta, movement_flags = DELETE_IF_REPLACED)
+	if(prob(20))
+		var/obj/item/organ/cyberimp/eyes/hud/medical/newvision = new()
+		newvision.Insert(theta, movement_flags = DELETE_IF_REPLACED)
+	if(prob(30))
 		var/obj/item/organ/eyes/robotic/basic/neweyes = new()
-		neweyes.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
-	if(prob(20))
+		neweyes.Insert(theta, movement_flags = DELETE_IF_REPLACED)
+	if(prob(10))
 		var/obj/item/organ/stomach/cybernetic/newgut = new()
-		newgut.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
-	if(prob(20))
+		newgut.Insert(theta, movement_flags = DELETE_IF_REPLACED)
+	if(prob(30))
 		var/obj/item/organ/lungs/cybernetic/newlungs = new()
-		newlungs.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
-	if(prob(5))
+		newlungs.Insert(theta, movement_flags = DELETE_IF_REPLACED)
+	if(prob(10))
 		var/obj/item/organ/tongue/robot/newtongue = new()
-		newtongue.Insert(scrapper, movement_flags = DELETE_IF_REPLACED)
-	if(prob(15))
+		newtongue.Insert(theta, movement_flags = DELETE_IF_REPLACED)
+	if(prob(5))
 		var/obj/item/bodypart/leg/right/robot/newrightleg = new()
-		newrightleg.try_attach_limb(scrapper)
-	if(prob(15))
+		newrightleg.try_attach_limb(theta)
+	if(prob(5))
 		var/obj/item/bodypart/leg/right/robot/newleftleg = new()
-		newleftleg.try_attach_limb(scrapper)
-	if(prob(15))
+		newleftleg.try_attach_limb(theta)
+	if(prob(10))
 		var/obj/item/bodypart/arm/right/robot/newrightarm = new()
-		newrightarm.try_attach_limb(scrapper)
-	if(prob(15))
+		newrightarm.try_attach_limb(theta)
+	if(prob(10))
 		var/obj/item/bodypart/arm/right/robot/newleftarm = new()
-		newleftarm.try_attach_limb(scrapper)
+		newleftarm.try_attach_limb(theta)
 
 /datum/outfit/shipwrecker/looter
 	name = "Shipwrecker Scrapper (extra loot)"

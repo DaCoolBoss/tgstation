@@ -22,8 +22,9 @@
 	/obj/item/dice/d6 = 2,
 	/obj/item/reagent_containers/applicator/pill/happy = 2,
 	/obj/item/reagent_containers/applicator/pill/aranesp = 2,
-	/obj/item/match = 2,
 	/obj/item/stack/sheet/mineral/plasma/five = 2,
+	/obj/item/match = 1,
+	/obj/item/clothing/accessory/jacket_patch = 1,
 	/obj/item/crowbar = 1,
 	/obj/item/boxcutter = 1,
 	/obj/item/knife/shiv = 1,
@@ -256,7 +257,7 @@
 	name = "Shipwrecker Officer"
 	head = /obj/item/clothing/head/helmet/shipwrecker/officer
 	suit = /obj/item/clothing/suit/armor/shipwrecker/officer
-	belt = /obj/item/storage/belt/military
+	belt = /obj/item/storage/belt/military/army
 
 /datum/outfit/shipwrecker/officer/pre_equip(mob/living/carbon/human/scrapper, visuals_only = FALSE)
 	var/pocket_loot = list(/obj/item/reagent_containers/hypospray/medipen/military = 30,

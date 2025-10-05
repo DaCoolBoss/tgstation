@@ -4,10 +4,11 @@
 		BB_TARGET_MINIMUM_STAT = HARD_CRIT,
 		BB_REINFORCEMENTS_SAY = "411 in progress, requesting backup!"
 	)
-
+/datum/ai_behavior/find_potential_targets/nearest
 	ai_movement = /datum/ai_movement/basic_avoidance
 	idle_behavior = /datum/idle_behavior/idle_random_walk
 	planning_subtrees = list(
+		/datum/ai_behavior/find_potential_targets/nearest/shipwrecker_chatter,
 		/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter,
 		/datum/ai_planning_subtree/attack_obstacle_in_path/trooper,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish,
@@ -52,6 +53,7 @@
 	speak = list("Haven't needed sleep lately. Too wide awake.",
 	"I gotta get in a fight soon.",
 	"I'm all twitchy. Keep hearing things...",
+	"Another day, another job.",
 	"Is someone there?",
 	"Can't wait to kill some fools.",
 	"Just need a little more...",
@@ -103,6 +105,26 @@
 	"WITNESS MY FURY!",
 	"DIE!",
 	"BREAK YOU!",
+	"Smash you!",
+	"Your END is here!",
+	)
+
+/datum/ai_controller/basic_controller/trooper/shipwrecker/officer
+	blackboard = list(
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
+		BB_TARGET_MINIMUM_STAT = HARD_CRIT,
+		BB_REINFORCEMENTS_SAY = "GET ON ME!"
+	)
+
+	ai_movement = /datum/ai_movement/basic_avoidance
+	idle_behavior = /datum/idle_behavior/idle_random_walk
+	planning_subtrees = list(
+		/datum/ai_planning_subtree/simple_find_target/shipwrecker_chatter/officer,
+		/datum/ai_planning_subtree/attack_obstacle_in_path/trooper,
+		/datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic/skirmish,
+		/datum/ai_planning_subtree/basic_ranged_attack_subtree/trooper/shipwrecker,
+		/datum/ai_planning_subtree/travel_to_point/and_clear_target/reinforce,
+		/datum/ai_planning_subtree/random_speech/shipwrecker/officer,
 	)
 
 /datum/ai_planning_subtree/random_speech/shipwrecker/officer

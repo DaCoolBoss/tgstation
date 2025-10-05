@@ -15,7 +15,7 @@
 
 //LORE:
 
-/mob/living/basic/trooper/thetaco
+/mob/living/basic/trooper/syndicate/theta
 	//
 	name = "Theta Trooper"
 	icon_state = "wrecker"
@@ -32,8 +32,8 @@
 	response_help_simple = "push"
 	faction = list(FACTION_PIRATE, FACTION_SYNDICATE)
 
-/mob/living/basic/trooper/marauder/bomber
-	name = "Theta Trooper"
+/mob/living/basic/trooper/marauder/flamer
+	name = "Theta Flamer"
 	icon_state = "wrecker"
 	desc = "."
 	response_help_continuous = "pushes"
