@@ -88,6 +88,32 @@
 	else if(isturf(target))
 		impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser/wall
 
+/obj/projectile/beam/laser/cybersun
+	name = "red plasma beam"
+	icon_state = "lava"
+	light_color = COLOR_DARK_RED
+	damage = 22
+	wound_bonus = 0
+	armour_penetration = 10
+	speed = 1.2
+
+/obj/projectile/beam/laser/cybersun/maim
+	name = "purple plasma beam"
+	icon_state = "firebeam"
+	light_color = COLOR_VOID_PURPLE
+	wound_bonus = 20
+	speed = 1
+
+/obj/projectile/beam/laser/cybersun/heavy
+	name = "heavy plasma beam"
+	icon_state = "heavylaser"
+	light_color = COLOR_SYNDIE_RED
+	damage = 34
+	wound_bonus = 30
+	speed = 0.85
+	armour_penetration = 50
+	demolition_mod = 22
+
 /obj/projectile/beam/laser/musket
 	name = "low-power laser"
 	icon_state = "laser_musket"

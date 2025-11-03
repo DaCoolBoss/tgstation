@@ -326,6 +326,7 @@
 	desc = "Though sometimes mocked for the relatively weak firepower of their energy weapons, the logistic miracle of rechargeable ammunition has given Nanotrasen a decisive edge over many a foe."
 	icon_state = "oldrifle"
 	w_class = WEIGHT_CLASS_BULKY
+	bolt_type = BOLT_TYPE_OPEN
 	inhand_icon_state = "arg"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/recharge
 	empty_indicator = TRUE
@@ -335,6 +336,134 @@
 	actions_types = list()
 	fire_sound = 'sound/items/weapons/laser.ogg'
 	casing_ejector = FALSE
+
+#define FIREMODE_SUPPRESSION 0
+#define FIREMODE_BURST 1
+#define FIREMODE_HIGHPOWER 2
+
+/obj/item/gun/ballistic/automatic/laser/cybersun
+	name = "\improper Cybersun S-220"
+	desc = "A military plasma gun with multiple fire modes. "
+	icon = 'icons/obj/weapons/guns/energy.dmi'
+	icon_state = "cybersun_s220"
+	inhand_icon_state = "s220"
+	custom_materials = list(/datum/material/alloy/plastitanium=SHEET_MATERIAL_AMOUNT,/datum/material/plastic=SHEET_MATERIAL_AMOUNT,/datum/material/uranium=HALF_SHEET_MATERIAL_AMOUNT,/datum/material/diamond=COIN_MATERIAL_AMOUNT)
+	ammo_x_offset = 1
+	accepted_magazine_type = /obj/item/ammo_box/magazine/recharge/plasma
+	burst_size = 1
+	burst_delay = 0.25 SECONDS
+	spread = 3
+	dual_wield_spread = 12
+	actions_types = list(/datum/action/item_action/firemode/cybersun)
+	force = 12
+	pin = /obj/item/firing_pin/implant/pindicate
+	bolt_wording = "plasma coil"
+	magazine_wording = "plasma pack"
+	cartridge_wording = "energy unit"
+	//What fire mode this gun is on
+	var/shooting_mode = FIREMODE_SUPPRESSION
+	//How many extra bullets it costs to fire
+	var/firecost_override = 0
+	//What projectile is currently loaded
+	var/bullet_override = /obj/projectile/beam/laser/cybersun/maim
+	dry_fire_sound = 'sound/machines/nuke/angry_beep.ogg'
+	dry_fire_sound_volume = 18
+	fire_sound = 'sound/items/weapons/laser2.ogg'
+	fire_sound_volume = 80
+	eject_sound = 'sound/machines/buckle/unbuckle2.ogg'
+	eject_empty_sound = 'sound/machines/buckle/unbuckle2.ogg'
+	load_sound = 'sound/machines/buckle/buckle1.ogg'
+	load_empty_sound = 'sound/machines/buckle/buckle1.ogg'
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/examine_lore, \
+		lore_hint = span_notice("It has a  [EXAMINE_HINT("look closer")] to recall a tale about [src]."), \
+		lore = "<b>This is a </b><br><br>\
+		It is said that the first slaying committed on a Nanotrasen space station was by an assistant.<br><br>\
+		That this act, done by toolbox, maybe spear, was what consigned their kind to a life of destitution, rejection and violence.<br><br>\
+		They carry the weight of this act visibly; the grey jumpsuit. Breathing deeply filtered air. And with bloodsoaked yellow hands clenched into fists.<br><br>\
+		Eyes, sharp and waiting. Hunters in the dark.<br><br>\
+		Eventually, these killing spirits sought to stake a claim on the metal tombs they were trapped within. Rejecting their status. Determined to be something more.<br><br>\
+		This weapon is one such tool. And it is a grim one indeed. Wrought from scrap, pulled from the station's walls and floors and the very nails holding it together.<br>\
+		<br>\
+		It is a symbol that the true masters of this place are not those who merely inhabit it. But the one willing to twist it towards a killing intent." \
+	)
+
+/datum/action/item_action/firemode/cybersun
+	name = "Cycle S-220 Firemode"
+	background_icon_state = "bg_tech_cyber"
+	overlay_icon_state = "bg_tech_cyber_border"
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
+	AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
+	update_appearance()
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/add_bayonet_point()
+	AddComponent(/datum/component/bayonet_attachable, offset_x = 26, offset_y = 12)
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/attack_self(mob/living/user)
+	var/mode_readout = "ERROR"
+	shooting_mode++
+	switch(shooting_mode)
+		if(FIREMODE_BURST)
+			mode_readout = "Burst Mode"
+			burst_size = 3
+			fire_delay = 0.5 SECONDS
+			firecost_override  = 0
+			bullet_override = /obj/projectile/beam/laser/cybersun
+			spread = 8
+			dual_wield_spread = 24
+		if(FIREMODE_HIGHPOWER)
+			mode_readout = "Full Power Mode"
+			burst_size = 1
+			fire_delay = 0.9 SECONDS
+			firecost_override  = 3
+			bullet_override = /obj/projectile/beam/laser/cybersun
+			spread = 0
+			dual_wield_spread = 24
+		else
+			shooting_mode = FIREMODE_SUPPRESSION
+			mode_readout = "Suppression Mode"
+			burst_size = initial(burst_size)
+			fire_delay = initial(fire_delay)
+			firecost_override  = initial(firecost_override)
+			bullet_override = initial(bullet_override)
+			spread = initial(spread)
+			dual_wield_spread = initial(dual_wield_spread)
+	balloon_alert(user, "Selecting [mode_readout].")
+	playsound(user, 'sound/machines/nuke/general_beep.ogg', 19, TRUE)
+	update_appearance()
+	update_item_action_buttons()
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/process_fire(mob/living/user,)
+	var/current_ammo = get_ammo(countchambered = FALSE)
+	if(firecost_override)
+		if(current_ammo <= firecost_override)
+			balloon_alert(user, "Insufficient energy!")
+			playsound(src, dry_fire_sound, dry_fire_sound_volume, TRUE)
+			return
+		else
+	if(bullet_override)
+
+
+	return ..()
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/update_icon_state()
+	. = ..()
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/update_overlays()
+	. = ..()
+	. += "cybersun_s220_mode_[shooting_mode]"
+
+/obj/item/gun/ballistic/automatic/laser/cybersun/unrestricted
+	pin = /obj/item/firing_pin
+
+#undef FIREMODE_SUPPRESSION
+#undef FIREMODE_BURST
+#undef FIREMODE_HIGHPOWER
 
 // NT Battle Rifle //
 

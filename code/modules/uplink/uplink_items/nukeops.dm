@@ -258,6 +258,17 @@
 			Strike fear into the hearts of your enemies."
 	item = /obj/item/ammo_casing/rocket/heap
 
+// ~~ Cybersun S-220 ~~
+
+/datum/uplink_item/weapon_kits/medium_cost/s220case
+	name = "S-220 Assault Plasmagun Case (Easy)"
+	desc = "An experimental energy-based weapon that fires deadly bolts of superheated electrons. \
+		Capable of firing in most enviroments, and through transparent solid material. \
+		Three-firemode selector for fulfilling a variety of roles. \
+		Comes with two additional rechargable plasma packs."
+	item = /obj/item/storage/toolbox/guncase/s220
+	cost = 16
+
 //High-cost: 18 TC each. Really should only be coming out during war for how powerful it is, or be the majority of your TC outside of war.
 
 /datum/uplink_item/weapon_kits/high_cost

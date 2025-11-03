@@ -13,6 +13,24 @@
 	e_cost = LASER_SHOTS(16, STANDARD_CELL_CHARGE)
 	select_name = "kill"
 
+/obj/item/ammo_casing/energy/lasergun/cybersun
+	projectile_type = /obj/projectile/beam/laser/cybersun
+	e_cost = LASER_SHOTS(36, STANDARD_CELL_CHARGE)
+	select_name = "three round burst"
+	fire_sound = 'sound/items/weapons/laser2.ogg'
+	newtonian_force = 0.75
+
+/obj/item/ammo_casing/energy/lasergun/cybersun/maim
+	projectile_type = /obj/projectile/beam/laser/cybersun/maim
+	e_cost = LASER_SHOTS(36, STANDARD_CELL_CHARGE)
+	select_name = "suppression"
+
+/obj/item/ammo_casing/energy/lasergun/cybersun/heavy
+	projectile_type = /obj/projectile/beam/laser/cybersun/heavy
+	e_cost = LASER_SHOTS(12, STANDARD_CELL_CHARGE)
+	select_name = "full power"
+	newtonian_force = 1
+
 /obj/item/ammo_casing/energy/lasergun/carbine
 	projectile_type = /obj/projectile/beam/laser/carbine
 	e_cost = LASER_SHOTS(40, STANDARD_CELL_CHARGE)

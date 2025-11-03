@@ -193,6 +193,11 @@
 	new weapon_to_spawn (src)
 	new extra_to_spawn (src)
 
+/obj/item/storage/toolbox/guncase/s220
+	name = "S-220 gun case"
+	weapon_to_spawn = /obj/item/gun/ballistic/automatic/laser/cybersun
+	extra_to_spawn = /obj/item/ammo_box/magazine/recharge/plasma
+
 /obj/item/storage/toolbox/guncase/revolver
 	name = "revolver gun case"
 	weapon_to_spawn = /obj/item/gun/ballistic/revolver/badass/nuclear
