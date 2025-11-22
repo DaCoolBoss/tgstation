@@ -37,12 +37,14 @@
 
 /obj/item/storage/toolbox/ammobox/strilka310
 	name = ".310 Strilka ammo box (Surplus?)"
-	desc = "It contains a few clips. Goddamn, this thing smells awful. \
-		Has this been sitting in a warehouse for the last several centuries?"
+	desc = "It contains a few clips of ammunition for the Strilka."
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310
 
-/obj/item/storage/toolbox/ammobox/strilka310/surplus
-	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/surplus
+/obj/item/storage/toolbox/ammobox/strilka310/rusty
+	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310
+
+/obj/item/storage/toolbox/ammobox/strilka310/really_rusty
+	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
 
 /obj/item/storage/toolbox/ammobox/wt550m9
 	name = "4.6x30mm ammo box"
@@ -237,8 +239,36 @@
 	desc = "A weapon's case. Has the symbol of the Third Soviet Union stamped on the side."
 	icon_state = "sakhno_case"
 	inhand_icon_state = "sakhno_case"
-	weapon_to_spawn = /obj/effect/spawner/random/sakhno
-	extra_to_spawn = /obj/effect/spawner/random/sakhno/ammo
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction
+	extra_to_spawn = /obj/item/ammo_box/speedloader/strilka310
+
+/obj/item/storage/toolbox/guncase/soviet/unreliable
+
+
+
+/obj/item/storage/toolbox/guncase/krakgun
+	name = "ancient gun case"
+	desc = "A weapon's case. It is stamped with the TerraGov Espatiers Corps insignia."
+	icon_state = "sakhno_case"
+	inhand_icon_state = "sakhno_case"
+
+/obj/item/storage/toolbox/guncase/krakgun/unreliable
+
+/obj/item/storage/toolbox/guncase/slugger
+	name = "ancient gun case"
+	desc = "A weapon's case. It bears the Tiziran Armed Forces coat of arms."
+
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/slugger/royal
+
+/obj/item/storage/toolbox/guncase/slugger/weaker
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/slugger
+
+/obj/item/storage/toolbox/guncase/donkmusket
+	name = "\improper Donk Co. gun case"
+	desc = "A weapon's case. It is stamped with the word 'DONK'."
+	weapon_to_spawn = /obj/item/gun/ballistic/shotgun/musket
+	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/donk
+
 
 /obj/item/storage/toolbox/guncase/monkeycase
 	name = "monkey gun case"

@@ -85,3 +85,17 @@
 	desc = parent_type::desc + " Flare casings launch a concentrated particle beam towards a target, lighting them up for everyone to see."
 	ammo_type = /obj/item/ammo_casing/c38/flare
 	ammo_band_color = COLOR_AMMO_HELLFIRE
+
+/obj/item/ammo_box/magazine/krak
+	name = "krak rifle clip (K-Series)"
+	desc = "A clip for holding eight laser-capacitors, and loading them into a Krak rifle."
+	ammo_type = /obj/item/ammo_casing/krak_laser
+	ammo_band_color = COLOR_AMMO_HELLFIRE
+
+/obj/item/ammo_box/magazine/krak/unreliable
+	desc = parent_type::desc + "This one has dings and scratches from field use."
+	ammo_type = /obj/item/ammo_casing/c38/flare
+
+/obj/item/ammo_box/magazine/krak/really_unreliable
+	desc = parent_type::desc + "This one has a big crack in it."
+	ammo_type = /obj/item/ammo_casing/krak_laser/degraded

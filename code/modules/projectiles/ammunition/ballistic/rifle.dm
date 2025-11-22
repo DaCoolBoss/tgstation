@@ -12,10 +12,9 @@
 
 	AddElement(/datum/element/caseless)
 
-/obj/item/ammo_casing/strilka310/surplus
-	name = ".310 Strilka surplus bullet casing"
-	desc = parent_type::desc + " Damp red powder at that."
-	projectile_type = /obj/projectile/bullet/strilka310/surplus
+/obj/item/ammo_casing/strilka310/degraded
+	desc = parent_type::desc + " The powder has started crumbling from exposure to moisture, worsening its velocity and penetration."
+	projectile_type = /obj/projectile/bullet/strilka310/degraded
 
 /obj/item/ammo_casing/strilka310/enchanted
 	projectile_type = /obj/projectile/bullet/strilka310/enchanted
@@ -24,6 +23,32 @@
 	name = ".310 Strilka phasic bullet casing"
 	desc = "A phasic .310 Strilka bullet casing."
 	projectile_type = /obj/projectile/bullet/strilka310/phasic
+
+// Krak laser rifle
+/obj/item/ammo_casing/krak_laser
+	name = "type k laser capacitor"
+	desc = "A single-use munition capacitor for a krak rifle. Fires a laser instead of a bullet."
+	projectile_type = /obj/projectile/bullet/strilka310/phasic
+	caliber = CALIBER_KRAK
+	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/gold =SMALL_MATERIAL_AMOUNT,)
+
+/obj/item/ammo_casing/krak_laser/spent
+	name = "spent " + parent_type::name
+	desc = " This one is burnt out."
+	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT * 0.8, /datum/material/glass =SMALL_MATERIAL_AMOUNT,)
+
+
+/obj/item/ammo_casing/krak_laser/degraded
+
+/obj/item/ammo_casing/krak_laser/degraded/Initialize(mapload)
+	. = ..()
+	if(prob(80))
+		desc += " This one seems to be damaged."
+	if(prob(60))
+
+	if(prob(40))
+		randomspread = rand(0,10)
+
 // .223 (M-90gl Carbine)
 
 /obj/item/ammo_casing/a223

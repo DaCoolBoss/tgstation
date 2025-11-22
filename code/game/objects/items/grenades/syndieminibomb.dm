@@ -36,6 +36,16 @@
 	ex_light = 3
 	ex_flame = 4
 
+/obj/item/grenade/frag/dusty
+	name = "dusty old frag grenade"
+	desc = "An old anti-personnel fragmentation grenade, this weapon excelled at killing soft targets by shredding them with metal shrapnel when it was first issued. It might still work!"
+	icon_state = "frag"
+	shrapnel_type = /obj/projectile/bullet/shrapnel
+	shrapnel_radius = 4
+	ex_heavy = 1
+	ex_light = 3
+	ex_flame = 4
+
 /obj/item/grenade/frag/mega
 	name = "FRAG grenade"
 	desc = "An anti-everything fragmentation grenade, this weapon excels at killing anything any everything by shredding them with metal shrapnel."

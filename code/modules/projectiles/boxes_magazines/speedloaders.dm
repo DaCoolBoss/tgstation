@@ -121,10 +121,9 @@
 	ammo_box_multiload = AMMO_BOX_MULTILOAD_ALL
 	caliber = CALIBER_STRILKA310
 
-/obj/item/ammo_box/speedloader/strilka310/surplus
-	name = "stripper clip (.310 Surplus)"
-	desc = parent_type::desc + " This one has a few spots of rust where there's not excessive amounts of gun grease."
-	ammo_type = /obj/item/ammo_casing/strilka310/surplus
+/obj/item/ammo_box/speedloader/strilka310/degraded
+	desc = parent_type::desc + " The metal has rusted from water exposure."
+	ammo_type = /obj/item/ammo_casing/strilka310/degraded
 
 /obj/item/ammo_box/speedloader/strilka310/phasic
 	name = "stripper clip (.310 Phasic)"

@@ -6,7 +6,7 @@
 	max_ammo = 5
 
 /obj/item/ammo_box/magazine/internal/boltaction/surplus
-	ammo_type = /obj/item/ammo_casing/strilka310/surplus
+	ammo_type = /obj/item/ammo_casing/strilka310/degraded
 
 /obj/item/ammo_box/magazine/internal/boltaction/phasic
 	ammo_type = /obj/item/ammo_casing/strilka310/phasic

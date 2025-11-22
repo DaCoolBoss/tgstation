@@ -215,45 +215,48 @@
 	)
 	crate_type = /obj/structure/closet/crate/secure/syndicate/gorlex/weapons/bustedlock
 
-/datum/supply_pack/imports/russian
-	name = "Russian Surplus Military Gear Crate"
-	desc = "Hello <;~insert appropriate greeting here: 'Comrade'|'Imperalist Scum'|'Quartermaster of Reputable Station'~;>, \
-		we have the most modern russian military equipment the black market can offer, for the right price of course. \
-		No lock, best price."
+/datum/supply_pack/imports/military_surplus
+	name = "Surplus Military Gear Loot Crate"
+	desc = "We're clearing out the warehouses, so you can get CHEAP and FIELD READY army surplus in one of our bulk crates!\
+		We have a variety of genuine military clothing, armour, paraphernalia, ammunition and gear sourced from armies across the galaxy. \
+		May contain one or more functioning firearm, weapon or explosive device. Does not ship to sectors A1-15, B11, D1 & D4-25, or F1-25."
 	contraband = TRUE
 	cost = CARGO_CRATE_VALUE * 12
 	contains = list(
-		/obj/item/food/rationpack,
-		/obj/item/ammo_box/speedloader/strilka310,
-		/obj/item/ammo_box/speedloader/strilka310/surplus,
-		/obj/effect/spawner/random/armory/strilka,
-		/obj/item/gun_maintenance_supplies,
-		/obj/item/clothing/suit/armor/vest/russian,
-		/obj/item/clothing/head/helmet/rus_helmet,
-		/obj/item/clothing/shoes/russian,
-		/obj/item/clothing/gloves/tackler/combat,
-		/obj/item/clothing/under/syndicate/rus_army,
-		/obj/item/clothing/under/costume/soviet,
-		/obj/item/clothing/mask/russian_balaclava,
-		/obj/item/clothing/head/helmet/rus_ushanka,
-		/obj/item/clothing/suit/armor/vest/russian_coat,
-		/obj/item/storage/toolbox/guncase/soviet = 2,
+		/obj/effect/spawner/random/mil_surplus/guns/doesnt_spawn_half_the_time_bleedin_typical,
+		/obj/effect/spawner/random/mil_surplus = 9,
 	)
 	discountable = SUPPLY_PACK_RARE_DISCOUNTABLE
 
-/datum/supply_pack/imports/russian/fill(obj/structure/closet/crate/our_crate)
-	for(var/items in 1 to 10)
-		var/item = pick(contains)
-		new item(our_crate)
-
 /datum/supply_pack/imports/moistnuggets
-	name = "Refurbished Sakhno Precision Rifle Crate"
-	desc = "Hello Comrade Operative. You need gun? You hate garbage we sell to station normally? \
-		Then we have the perfect weapon for you! Special price for good friends! \
+	name = "Soviet Operator Crate"
+	desc = "Need reliable weapons in a hurry? We can help! \
+		This pack of premium-quality firearms ! \
 		We don't have enough spare ammo, so you'll have to pick up the weapon of \
 		dead comrade when you run out."
 	hidden = TRUE
-	cost = CARGO_CRATE_VALUE * 6
+	cost = CARGO_CRATE_VALUE * 4
+	contains = list(/obj/item/gun/ballistic/rifle/boltaction = 6)
+
+/datum/supply_pack/imports/oldarmy
+	name = "TG Resupply Crate"
+	desc = "If you need soldiers outfitted in reliable gear in a hurry, we can help! \
+		This pack of genuine near-mint-or-better condition ! \
+		Contains three uniforms, three krak-rifles, and two spare boxes of ammo. \
+		dead comrade when you run out."
+	hidden = TRUE
+	cost = CARGO_CRATE_VALUE * 4
+	contains = list(/obj/item/gun/ballistic/rifle/krak = 3,
+	)
+
+/datum/supply_pack/imports/moistnuggets
+	name = "Imperial Tirizan Crate"
+	desc = "Need reliable weapons in a hurry? We can help! \
+		This pack of premium-quality firearms ! \
+		We don't have enough spare ammo, so you'll have to pick up the weapon of \
+		dead comrade when you run out."
+	hidden = TRUE
+	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/gun/ballistic/rifle/boltaction = 6)
 
 /datum/supply_pack/imports/vehicle

@@ -621,6 +621,32 @@
 	acid = 40
 	wound = 15
 
+/obj/item/clothing/head/helmet/army
+	name = "space army helmet"
+	desc = "An old mass-produced plasteel helmet with integrated flash-visor. Provides good protection, but prevents full peripheral vision. \
+	This one has a generic olive drab design."
+	icon_state = "army"
+	inhand_icon_state = "knight_helmet"
+	flags_inv = HIDEEARS
+	flags_cover = HEADCOVERSEYES
+
+/datum/armor/helmet_army
+	melee = 45
+	bullet = 40
+	laser = 40
+	energy = 20
+	bomb = 25
+	fire = 10
+	acid = 20
+	wound = 20
+
+/obj/item/clothing/head/helmet/army/alt
+	name = "space army helmet"
+	desc = "An old mass-produced plasteel helmet with integrated ballistic visor. Provides good protection, but prevents full peripheral vision. \
+	This one has a white and red colour scheme."
+	icon_state = "army-alt"
+
+
 /obj/item/clothing/head/helmet/military
 	name = "Crude Helmet"
 	desc = "A cheaply made kettle helmet with an added faceplate to protect your eyes and mouth."

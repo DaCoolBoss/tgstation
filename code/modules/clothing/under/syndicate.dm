@@ -114,6 +114,27 @@
 	can_adjust = FALSE
 	supports_variations_flags = NONE
 
+/obj/item/clothing/under/syndicate/camo/desert
+	desc = "A tan military camouflage uniform."
+	icon_state = "camogreen"
+	inhand_icon_state = "g_suit"
+
+
+/obj/item/clothing/under/syndicate/camo/ocean
+	desc = "A blue military camouflage uniform."
+	icon_state = "camogreen"
+	inhand_icon_state = "g_suit"
+
+/obj/item/clothing/under/syndicate/camo/snow
+	desc = "A white military camouflage uniform."
+	icon_state = "camogreen"
+	inhand_icon_state = "g_suit"
+
+/obj/item/clothing/under/syndicate/camo/urban
+	desc = "A grey military camouflage uniform."
+	icon_state = "camogrey"
+	inhand_icon_state = "g_suit"
+
 /obj/item/clothing/under/syndicate/floortilecamo
 	name = "floortile camouflage fatigues"
 	desc = "The newest floortile camouflage fatigues used for hallway warfare. \

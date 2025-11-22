@@ -38,10 +38,10 @@
 	name = "Ammobox of .310 Strilka"
 	desc = "Listen, .310 Strilka isn't exactly rare, but if you want it to come through \
 		any source that isn't the Third Soviet diehards, then you get what you get. \
-		Some of this is the good stuff. Some of it is surplus. We make no promises, okay?"
+		This is stuff salvaged from a space wreck in the Outer Sector. Not all of it is in great condition."
 	stock_max = 7
 	availability_prob = 35
-	item = /obj/effect/spawner/random/armory/strilka
+	item = /obj/item/storage/toolbox/ammobox/strilka310/rusty
 	price_min = CARGO_CRATE_VALUE
 	price_max = CARGO_CRATE_VALUE * 2
 

@@ -25,10 +25,10 @@
 	wound_bonus = -45
 	wound_falloff_tile = 0
 
-/obj/projectile/bullet/strilka310/surplus
-	name = ".310 Strilka surplus bullet"
+/obj/projectile/bullet/strilka310/degraded
 	weak_against_armour = TRUE //this is specifically more important for fighting carbons than fighting noncarbons. Against a simple mob, this is still a full force bullet
 	armour_penetration = 0
+	speed = 1.15
 
 /obj/projectile/bullet/strilka310/enchanted
 	name = "enchanted .310 bullet"

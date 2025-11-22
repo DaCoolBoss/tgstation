@@ -170,6 +170,29 @@
 	if(.)
 		name = "\improper Obrez Moderna" // wear it loud and proud
 
+/obj/item/gun/ballistic/rifle/boltaction/slugger
+	name = "\improper Imperial-Issue Slug-Cannon"
+	desc = "A solid projectile firearm made of bronze and hypercompressed timbershroom, manufactured one of the Tirazan factory.\
+		Based on a traditional Tirazan design, but fine-tuned and mordernised to deliver more damage. \
+		Capable of firing either traditionally prepared ripper-slug chitin or factory-produced lead spinter-slugs."
+	icon_state = "zhihao"
+	inhand_icon_state = "zhihao"
+	worn_icon_state = "zhihao"
+	can_be_sawn_off = FALSE
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/phasic
+
+/obj/item/gun/ballistic/rifle/boltaction/slugger/royal
+
+/obj/item/gun/ballistic/rifle/boltaction/slugger/antique
+	name = "\improper Heirloom Slug-Cannon"
+	desc = "A solid projectile firearm handcrafted by a Tirizan artesan gunsmith.\
+		Capable of firing dried ripper-slug chitin, or their modern lead equivelents."
+	internal_magazine = FALSE
+
+/obj/item/gun/ballistic/rifle/boltaction/prime/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/scope, range_modifier = 1.5)
+
 /obj/item/gun/ballistic/rifle/boltaction/donkrifle
 	name = "\improper Donk Co. Jezail"
 	desc = "A mass-manufactured bolt-action sporting rifle with a distinctively long barrel. Powerful enough to take down a space bear from a thousand paces. The lengthened barrel gives it good accuracy and power, even at range."
@@ -190,6 +213,41 @@
 	if(.)
 		projectile_damage_multiplier = 0.75
 		spread = 50
+
+/obj/item/gun/ballistic/rifle/krak
+	name = "L08 krak rifle"
+	desc = "An old fashioned bullpup laser rifle. Uses Type-K non-rechargable ammunition. \
+	"
+/obj/item/gun/ballistic/rifle/krak/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/examine_lore, \
+		lore_hint = span_notice("It bears the Asra Corp logo. [EXAMINE_HINT("Read closely")] to learn more."), \
+		lore = "The L08 Assault Ray Cannon was  \
+		Commonly known as the 'Krak rifle' due to the distinctive noise of made when discharging.<br>\
+		<br>\
+		The slide is chopped down, with the front half of the handgun featuring a monolithic integral suppressor built around the barrel." \
+	)
+
+/obj/item/gun/ballistic/rifle/krak/carbine
+	name = "L10 krak carbine"
+	desc = "An old fashioned carbine laser rifle that uses Type-K ammunition."
+
+/obj/item/gun/ballistic/rifle/krak/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/examine_lore, \
+		lore_hint = span_notice("You can [EXAMINE_HINT("look closer")] to learn a little more about [src]."), \
+		lore = "The Ansem/SC is a Scarborough Arms overhaul suite for their own Ansem handgun, designed for special operators who operate operationally, \
+		especially against people who like using lightbulbs.<br>\
+		<br>\
+		The slide is chopped down, with the front half of the handgun featuring a monolithic integral suppressor built around the barrel, \
+		and a compact kinetic light disruptor mounted underneath the barrel assembly. The integral suppressor is engineered to not affect \
+		ballistic performance nor affect the concealability of the handgun, leading to a surprisingly robust firearm.<br>\
+		<br>\
+		Scarborough Arms has never actually addressed allegations of their involvement with the modification and/or manufacture \
+		of the SC/FISHER or similar disruptor weapons. Prospective operators are reminded that kinetic light disruptors do not actually physically harm targets.<br>\
+		<br>\
+		Caveat emptor." \
+	)
 
 /obj/item/gun/ballistic/rifle/rebarxbow
 	name = "heated rebar crossbow"
