@@ -28,16 +28,17 @@
 	loot = list(
 		/obj/item/clothing/suit/armor/vest/russian = 20,				//0.72
 		/obj/item/clothing/head/helmet/rus_helmet = 20,
-		/obj/item/clothing/head/helmet/army = 10,
-		/obj/item/clothing/head/helmet/army/alt = 5,
-		/obj/item/clothing/suit/armor/vest/cuirass = 10,				//0.36
-		/obj/item/clothing/head/helmet/rus_ushanka = 10,				//
-		/obj/item/clothing/suit/armor/vest/russian_coat = 10,			//
-		/obj/item/clothing/suit/armor/swat = 10,						//
+		/obj/item/clothing/head/helmet/army = 8,
+		/obj/item/clothing/head/helmet/army/alt = 7,
+		/obj/item/clothing/suit/armor/vest/cuirass = 8,				//0.36
+		/obj/item/clothing/head/helmet/rus_ushanka = 12,				//
+		/obj/item/clothing/suit/armor/vest/russian_coat = 12,			//
+		/obj/item/clothing/suit/armor/swat = 8,						//
 		/obj/item/clothing/head/helmet/military = 5,					//
-		/obj/item/clothing/suit/armor/bulletproof = 4,					//
-		/obj/item/clothing/suit/armor/laserproof = 2,
+		/obj/item/clothing/suit/armor/bulletproof = 3,					//
+		/obj/item/clothing/suit/armor/laserproof = 1,
 		/obj/item/clothing/mask/ballistic = 2,
+		/obj/item/clothing/shoes/combat = 2,
 	)
 
 /obj/effect/spawner/random/mil_surplus/armour/double
@@ -87,13 +88,16 @@
 		/obj/item/gun_maintenance_supplies = 20,
 		/obj/item/food/rationpack = 20,
 		/obj/item/clothing/gloves/tackler/combat = 10,
-		/obj/item/storage/belt/military/army = 10,
+		/obj/item/storage/belt/military/army = 8,
 		/obj/item/clothing/accessory/medal = 5,
+		/obj/item/storage/belt/military/assault = 2,
 		/obj/item/knife/combat = 2,
 		/obj/item/spess_knife = 2,
 		/obj/item/grenade/frag/dusty = 2,
 		/obj/item/bear_armor = 2,
-		/obj/item/shovel,
+		/obj/item/trench_tool = 2,
+		/obj/item/book/granter/crafting_recipe/dusting/laser_musket_prime = 0.05,
+		/obj/item/book/granter/crafting_recipe/dusting/smoothbore_disabler_prime = 0.05,
 	)
 
 /obj/effect/spawner/random/mil_surplus/guncases
@@ -120,11 +124,11 @@
 	name = "military surplus ammo spawner"
 	desc = "You were issued some assorted loose ammo, soldier, it is YOUR duty to make it compatable with your gun! No excuses!"
 	loot = list(
-		/obj/effect/spawner/random/mil_surplus/ammo/strilka310 = 25,
-		/obj/effect/spawner/random/mil_surplus/ammo/krak = 20,
-		/obj/effect/spawner/random/mil_surplus/ammo/slugger = 15,
-		/obj/effect/spawner/random/mil_surplus/ammo/donk = 15,
-		/obj/item/ammo_casing,
+		/obj/effect/spawner/random/mil_surplus/ammo/strilka310 = 10,
+		/obj/effect/spawner/random/mil_surplus/ammo/strilka310/box = 20,
+		/obj/effect/spawner/random/mil_surplus/ammo/krak = 25,
+		/obj/effect/spawner/random/mil_surplus/ammo/slugger = 25,
+		/obj/effect/spawner/random/mil_surplus/ammo/donk = 20,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/double
@@ -133,6 +137,9 @@
 /obj/effect/spawner/random/mil_surplus/ammo/krak
 	name = "krak rifle ammo spawner"
 	desc = "Spawns some ammo for the Krak Rifle. "
+	loot = list(
+		/obj/item/shovel = 40,
+	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/slugger
 	name = "tirizan slugger ammo spawner"
@@ -156,10 +163,19 @@
 
 /obj/effect/spawner/random/mil_surplus/ammo/strilka310
 	name = "moist .310 Strilka stripper clip spawner"
-	desc = "Spawns some Strilka ammo. May have water damage."
+	desc = "Spawns a Strilka clip. May have water damage."
 	loot = list(
-		/obj/item/ammo_box/speedloader/strilka310/degraded = 60,
-		/obj/item/ammo_box/speedloader/strilka310 = 40,
+		/obj/item/ammo_box/speedloader/strilka310/degraded = 70,
+		/obj/item/ammo_box/speedloader/strilka310 = 30,
+	)
+
+/obj/effect/spawner/random/mil_surplus/ammo/strilka310/box
+	name = "moist .310 Strilka ammo box spawner"
+	desc = "Spawns a Strilka ammo box. May have water damage."
+	loot = list(
+		/obj/item/storage/toolbox/ammobox/strilka310/rusty = 55,
+		/obj/item/storage/toolbox/ammobox/strilka310 = 35,
+		/obj/item/storage/toolbox/ammobox/strilka310/really_rusty = 10,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/krak

@@ -4103,6 +4103,7 @@
 #include "code\modules\clothing\head\wig.dm"
 #include "code\modules\clothing\masks\_masks.dm"
 #include "code\modules\clothing\masks\animal_masks.dm"
+#include "code\modules\clothing\masks\ballistic.dm"
 #include "code\modules\clothing\masks\bandana.dm"
 #include "code\modules\clothing\masks\boxing.dm"
 #include "code\modules\clothing\masks\breath.dm"

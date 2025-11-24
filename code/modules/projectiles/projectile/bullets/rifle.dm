@@ -35,6 +35,11 @@
 	damage = 20
 	stamina = 80
 
+/obj/projectile/bullet/strilka310/impact
+	damage = 50
+	weak_against_armour = TRUE
+	stamina = 60
+
 /obj/projectile/bullet/strilka310/phasic
 	name = "phasic .310 bullet"
 	projectile_phasing =  PASSTABLE | PASSGLASS | PASSGRILLE | PASSCLOSEDTURF | PASSMACHINE | PASSSTRUCTURE | PASSDOORS

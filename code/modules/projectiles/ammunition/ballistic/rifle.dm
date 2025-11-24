@@ -19,6 +19,11 @@
 /obj/item/ammo_casing/strilka310/enchanted
 	projectile_type = /obj/projectile/bullet/strilka310/enchanted
 
+/obj/item/ammo_casing/strilka310/impact
+	name = ".310 Strilka impact slug"
+	desc = "A caseless .310 Strilka impact slug. Its solid iron core delivers immense stopping power."
+	projectile_type = /obj/projectile/bullet/strilka310/impact
+
 /obj/item/ammo_casing/strilka310/phasic
 	name = ".310 Strilka phasic bullet casing"
 	desc = "A phasic .310 Strilka bullet casing."
@@ -44,8 +49,8 @@
 	. = ..()
 	if(prob(80))
 		desc += " This one seems to be damaged."
-	if(prob(60))
-
+	if(prob(15))
+		projectile_type = null
 	if(prob(40))
 		randomspread = rand(0,10)
 

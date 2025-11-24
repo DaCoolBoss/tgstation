@@ -186,12 +186,12 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
-/datum/design/strilka310_surplus
-	name = ".310 Surplus Bullet Casing (VERY Lethal)"
+/datum/design/strilka310_impact
+	name = ".310 Impact Slug Casing (Lethal)"
 	id = "strilka310_surplus"
 	build_type = AUTOLATHE
 	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 3)
-	build_path = /obj/item/ammo_casing/strilka310/surplus
+	build_path = /obj/item/ammo_casing/strilka310/impact
 	category = list(
 		RND_CATEGORY_HACKED,
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO,

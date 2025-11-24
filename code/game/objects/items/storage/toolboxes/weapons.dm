@@ -36,14 +36,27 @@
 			new ammo_to_spawn(src)
 
 /obj/item/storage/toolbox/ammobox/strilka310
-	name = ".310 Strilka ammo box (Surplus?)"
+	name = ".310 Strilka ammo box"
 	desc = "It contains a few clips of ammunition for the Strilka."
+	icon_state = "ammobox_strilka"
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310
 
 /obj/item/storage/toolbox/ammobox/strilka310/rusty
+	icon_state = "ammobox_strilka_rusty"
 	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310
 
+/obj/item/storage/toolbox/ammobox/strilka310/rusty/Initialize(mapload)
+	. = ..()
+	if(prob(40))
+		icon_state = "ammobox_strilka"
+		if(prob(50))
+			desc += " It has a few flakes of rust on the hinges."
+	else
+		desc += " It is covered in rust."
+
+
 /obj/item/storage/toolbox/ammobox/strilka310/really_rusty
+	icon_state = "ammobox_strilka_rusty"
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
 
 /obj/item/storage/toolbox/ammobox/wt550m9
@@ -235,29 +248,30 @@
 	new /obj/item/clothing/under/rank/prisoner/nosensor (src)
 
 /obj/item/storage/toolbox/guncase/soviet
-	name = "ancient gun case"
+	name = "old soviet gun case"
 	desc = "A weapon's case. Has the symbol of the Third Soviet Union stamped on the side."
 	icon_state = "sakhno_case"
 	inhand_icon_state = "sakhno_case"
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction
-	extra_to_spawn = /obj/item/ammo_box/speedloader/strilka310
+	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310
 
 /obj/item/storage/toolbox/guncase/soviet/unreliable
-
-
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/surplus
+	extra_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
 
 /obj/item/storage/toolbox/guncase/krakgun
 	name = "ancient gun case"
 	desc = "A weapon's case. It is stamped with the TerraGov Espatiers Corps insignia."
 	icon_state = "sakhno_case"
 	inhand_icon_state = "sakhno_case"
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/krak
+	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/krak
 
 /obj/item/storage/toolbox/guncase/krakgun/unreliable
 
 /obj/item/storage/toolbox/guncase/slugger
 	name = "ancient gun case"
 	desc = "A weapon's case. It bears the Tiziran Armed Forces coat of arms."
-
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/slugger/royal
 
 /obj/item/storage/toolbox/guncase/slugger/weaker

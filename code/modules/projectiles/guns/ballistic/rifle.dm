@@ -215,24 +215,34 @@
 		spread = 50
 
 /obj/item/gun/ballistic/rifle/krak
-	name = "L08 krak rifle"
+	name = "L08 krack rifle"
 	desc = "An old fashioned bullpup laser rifle. Uses Type-K non-rechargable ammunition. \
 	"
-/obj/item/gun/ballistic/rifle/krak/Initialize(mapload)
+	force = 14
+
+/obj/item/gun/ballistic/rifle/krack/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/examine_lore, \
 		lore_hint = span_notice("It bears the Asra Corp logo. [EXAMINE_HINT("Read closely")] to learn more."), \
-		lore = "The L08 Assault Ray Cannon was  \
-		Commonly known as the 'Krak rifle' due to the distinctive noise of made when discharging.<br>\
+		lore = "The L08 Kinetic Ray Cannon was produced by Asra Corporation  \
+		Commonly known as the 'Krack rifle' due to the distinctive noise of made when discharging.<br>\
 		<br>\
 		The slide is chopped down, with the front half of the handgun featuring a monolithic integral suppressor built around the barrel." \
 	)
 
-/obj/item/gun/ballistic/rifle/krak/carbine
+/obj/item/gun/ballistic/rifle/krack/carbine
 	name = "L10 krak carbine"
-	desc = "An old fashioned carbine laser rifle that uses Type-K ammunition."
+	desc = "An old fashioned carbine laser rifle. Uses Type-K ammunition."
+	force = 10
+	sawn_desc = "An unwieldy field-modified carbine laser rifle. Uses Type-K ammunition.\
+	This one "
 
-/obj/item/gun/ballistic/rifle/krak/Initialize(mapload)
+/obj/item/gun/ballistic/rifle/krak/carbine/sawoff(mob/user)
+	. = ..()
+	if(.)
+		name = "L10 short krak"
+
+/obj/item/gun/ballistic/rifle/krak/carbine/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/examine_lore, \
 		lore_hint = span_notice("You can [EXAMINE_HINT("look closer")] to learn a little more about [src]."), \

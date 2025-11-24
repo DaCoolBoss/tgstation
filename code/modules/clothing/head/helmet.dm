@@ -624,11 +624,17 @@
 /obj/item/clothing/head/helmet/army
 	name = "space army helmet"
 	desc = "An old mass-produced plasteel helmet with integrated flash-visor. Provides good protection, but prevents full peripheral vision. \
-	This one has a generic olive drab design."
+	This one has a generic green colour scheme."
 	icon_state = "army"
 	inhand_icon_state = "knight_helmet"
+	flash_protect = FLASH_PROTECTION_FLASH
 	flags_inv = HIDEEARS
-	flags_cover = HEADCOVERSEYES
+	flags_cover = HEADCOVERSEYES | HIDEHAIR
+	armor_type = /datum/armor/helmet_army
+
+/obj/item/clothing/head/helmet/army/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/clothing_fov_visor, FOV_90_DEGREES)
 
 /datum/armor/helmet_army
 	melee = 45
