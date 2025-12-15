@@ -15,11 +15,11 @@
 		/obj/effect/spawner/random/mil_surplus/armour = 20, 			//1.8
 		/obj/effect/spawner/random/mil_surplus/clothing/double = 20,	//1.8
 		/obj/effect/spawner/random/mil_surplus/gadgets = 15,			//1.35
-		/obj/effect/spawner/random/mil_surplus/clothing = 15, 			//1.35
+		/obj/effect/spawner/random/mil_surplus/clothing = 13, 			//1.35
 		/obj/effect/spawner/random/mil_surplus/armour/double = 10, 		//0.9
 		/obj/effect/spawner/random/mil_surplus/ammo = 10, 				//0.9
-		/obj/effect/spawner/random/mil_surplus/ammo/double = 5, 		//0.45
-		/obj/effect/spawner/random/mil_surplus/guncases = 5, 			//0.45
+		/obj/effect/spawner/random/mil_surplus/ammo/double = 6, 		//0.45
+		/obj/effect/spawner/random/mil_surplus/guncases = 6, 			//0.45
 	)
 
 /obj/effect/spawner/random/mil_surplus/armour
@@ -35,6 +35,7 @@
 		/obj/item/clothing/suit/armor/vest/russian_coat = 12,			//
 		/obj/item/clothing/suit/armor/swat = 8,						//
 		/obj/item/clothing/head/helmet/military = 5,					//
+		/obj/item/clothing/suit/armor/vest/military = 5,
 		/obj/item/clothing/suit/armor/bulletproof = 3,					//
 		/obj/item/clothing/suit/armor/laserproof = 1,
 		/obj/item/clothing/mask/ballistic = 2,
@@ -61,9 +62,10 @@
 		/obj/item/clothing/under/syndicate/rus_army = 15,
 		/obj/item/clothing/head/costume/ushanka = 5,
 		/obj/item/clothing/mask/balaclava = 2,
-		/obj/item/clothing/head/soft/veteran = 2,
+		/obj/item/clothing/head/beret/militia = 2,
 		/obj/item/clothing/suit/jacket/miljacket = 2,					//0.1
-		/obj/item/clothing/suit/toggle/jacket/trenchcoat = 2,
+		/obj/item/clothing/suit/toggle/jacket/trenchcoat = 1,
+		/obj/item/clothing/head/soft/veteran = 1,
 	)
 
 /obj/effect/spawner/random/mil_surplus/clothing/camo
@@ -85,17 +87,26 @@
 	desc = "Old military stuff."
 	icon_state = "pistol"
 	loot = list(
-		/obj/item/gun_maintenance_supplies = 20,
-		/obj/item/food/rationpack = 20,
+		/obj/item/gun_maintenance_supplies = 25,
+		/obj/item/food/rationpack = 25,
 		/obj/item/clothing/gloves/tackler/combat = 10,
 		/obj/item/storage/belt/military/army = 8,
-		/obj/item/clothing/accessory/medal = 5,
+		/obj/item/clothing/accessory/medal/antique = 5,
+		/obj/item/reagent_containers/cup/glass/flask = 5,
+		/obj/item/knife/combat = 4,
 		/obj/item/storage/belt/military/assault = 2,
-		/obj/item/knife/combat = 2,
 		/obj/item/spess_knife = 2,
 		/obj/item/grenade/frag/dusty = 2,
 		/obj/item/bear_armor = 2,
-		/obj/item/trench_tool = 2,
+		/obj/item/clothing/accessory/medal/antique/silver = 2,
+		/obj/item/clothing/mask/gas/atmos = 2,
+		/obj/item/trench_tool = 1,
+		/obj/item/spear/military = 1,
+		/obj/item/lighter = 1,
+		/obj/item/reagent_containers/cup/glass/flask = 1,
+		/obj/item/storage/box/emptysandbags = 1,
+		/obj/item/storage/belt/bandolier = 0.5,
+		/obj/item/clothing/accessory/medal/antique/gold = 0.4,
 		/obj/item/book/granter/crafting_recipe/dusting/laser_musket_prime = 0.05,
 		/obj/item/book/granter/crafting_recipe/dusting/smoothbore_disabler_prime = 0.05,
 	)
@@ -126,27 +137,14 @@
 	loot = list(
 		/obj/effect/spawner/random/mil_surplus/ammo/strilka310 = 10,
 		/obj/effect/spawner/random/mil_surplus/ammo/strilka310/box = 20,
-		/obj/effect/spawner/random/mil_surplus/ammo/krak = 25,
-		/obj/effect/spawner/random/mil_surplus/ammo/slugger = 25,
+		/obj/effect/spawner/random/mil_surplus/ammo/krak/clip = 10,
+		/obj/effect/spawner/random/mil_surplus/ammo/krak/box = 20,
+		/obj/effect/spawner/random/mil_surplus/ammo/ripslug = 25,
 		/obj/effect/spawner/random/mil_surplus/ammo/donk = 20,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/double
 	spawn_loot_count = 2
-
-/obj/effect/spawner/random/mil_surplus/ammo/krak
-	name = "krak rifle ammo spawner"
-	desc = "Spawns some ammo for the Krak Rifle. "
-	loot = list(
-		/obj/item/shovel = 40,
-	)
-
-/obj/effect/spawner/random/mil_surplus/ammo/slugger
-	name = "tirizan slugger ammo spawner"
-	desc = "Spawns some ammo for the Tirizan Slugger. Traditionalists swear by the ancient tradition of firing ritually cured ripperslug shells, despite their inferiority to modern munitions."
-	loot = list(
-		/obj/item/shovel = 40,
-	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/donk
 	name = "donk musket ammo spawner"
@@ -179,15 +177,6 @@
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/krak
-	name = "old series k clip spawner"
-	desc = "Spawns some Krak rifle ammo. These things get really unreliable with age."
-	loot = list(
-		/obj/item/ammo_box/magazine/krak/unreliable = 50,
-		/obj/item/ammo_box/magazine/krak = 40,
-		/obj/item/ammo_box/magazine/krak/really_unreliable = 10,
-	)
-
-/obj/effect/spawner/random/mil_surplus/ammo/krak/single
 	name = "old series k laser round spawner"
 	desc = "Spawns a loose round of ammo for the Krak rifle. A lot of the old ones are duds."
 	loot = list(
@@ -195,8 +184,26 @@
 		/obj/item/ammo_casing/krak_laser = 40,
 	)
 
-/obj/effect/spawner/random/mil_surplus/ammo/slugger
-	name = "old series k laser round spawner"
+/obj/effect/spawner/random/mil_surplus/ammo/krak/box
+	name = "old series k ammo box spawner"
+	desc = "Spawns an old box of ammo for the Krak rifle. These things degrade over time, and the boxes look pretty old..."
+	loot = list(
+		/obj/item/storage/toolbox/ammobox/krak/degraded = 55,
+		/obj/item/storage/toolbox/ammobox/krak = 35,
+		/obj/item/storage/toolbox/ammobox/krak/really_degraded = 10,
+	)
+
+/obj/effect/spawner/random/mil_surplus/ammo/krak/clip
+	name = "old series k clip spawner"
+	desc = "Spawns a clip of Krak rifle ammo, of dubious quality."
+	loot = list(
+		/obj/item/ammo_box/magazine/krak/unreliable = 50,
+		/obj/item/ammo_box/magazine/krak = 40,
+		/obj/item/ammo_box/magazine/krak/really_unreliable = 10,
+	)
+
+/obj/effect/spawner/random/mil_surplus/ammo/ripslug
+	name = "ripslug case spawner"
 	desc = "Spawns a loose round of ammo for the Krak rifle. A lot of the old ones are duds."
 	loot = list(
 		/obj/item/ammo_casing/krak_laser/degraded = 60,

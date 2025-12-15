@@ -249,9 +249,9 @@
 	contains = list(/obj/item/gun/ballistic/rifle/krak = 3,
 	)
 
-/datum/supply_pack/imports/moistnuggets
-	name = "Imperial Tirizan Crate"
-	desc = "Need reliable weapons in a hurry? We can help! \
+/datum/supply_pack/imports/tirizansoldier
+	name = "Tirizan Supply Crate"
+	desc = "We  \
 		This pack of premium-quality firearms ! \
 		We don't have enough spare ammo, so you'll have to pick up the weapon of \
 		dead comrade when you run out."

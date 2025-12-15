@@ -124,6 +124,19 @@
 /obj/projectile/beam/weak/penetrator
 	armour_penetration = 50
 
+/obj/projectile/beam/krak
+	name = "krak laser"
+	icon_state = "laser"
+	damage = 30
+	damage_falloff_tile = 1
+	hitsound = 'sound/items/weapons/sear.ogg'
+	hitsound_wall = 'sound/items/weapons/effects/searwall.ogg'
+	eyeblur = 0.6 SECONDS
+	impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser
+	reflectable = TRUE
+	wound_bonus = -30
+	damage_falloff_tile = 1
+
 /obj/projectile/beam/practice
 	name = "practice laser"
 	damage = 0

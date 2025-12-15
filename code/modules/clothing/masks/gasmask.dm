@@ -210,6 +210,26 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	inhand_icon_state = "gas_centcom"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
+/obj/item/clothing/mask/gas/atmos/russian
+	name = "russian gas mask"
+	desc = "A fireproof gas mask with a robust set of filters. Wraps around the entire head, limiting peripheral vision."
+	icon = 'icons/obj/clothing/masks.dmi'
+	worn_icon = 'icons/mob/clothing/mask.dmi'
+	worn_icon_state = "gas_russian"
+	icon_state = "gas_russian"
+	inhand_icon_state = "gas_russian"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT|HIDEHAIR
+
+/obj/item/clothing/mask/gas/atmos/russian/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/clothing_fov_visor, FOV_90_DEGREES)
+
+/datum/armor/gas_russian
+	bio = 100
+	fire = 100
+	acid = 100
+
 // **** Welding gas mask ****
 
 /obj/item/clothing/mask/gas/welding

@@ -33,7 +33,8 @@
 /obj/item/ammo_casing/krak_laser
 	name = "type k laser capacitor"
 	desc = "A single-use munition capacitor for a krak rifle. Fires a laser instead of a bullet."
-	projectile_type = /obj/projectile/bullet/strilka310/phasic
+	icon_state = "k_casing"
+	projectile_type = /obj/projectile/beam/krak
 	caliber = CALIBER_KRAK
 	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/gold =SMALL_MATERIAL_AMOUNT,)
 

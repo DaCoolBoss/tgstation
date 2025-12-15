@@ -39,12 +39,18 @@
 /obj/item/grenade/frag/dusty
 	name = "dusty old frag grenade"
 	desc = "An old anti-personnel fragmentation grenade, this weapon excelled at killing soft targets by shredding them with metal shrapnel when it was first issued. It might still work!"
-	icon_state = "frag"
-	shrapnel_type = /obj/projectile/bullet/shrapnel
-	shrapnel_radius = 4
-	ex_heavy = 1
-	ex_light = 3
-	ex_flame = 4
+	display_timer = FALSE
+
+/obj/item/grenade/frag/dusty/Initialize(mapload)
+	. = ..()
+	if(prob(50))
+		det_time = rand(1 SECONDS,9 SECONDS)
+	if(prob(30))
+		ex_heavy = rand(0,1)
+	if(prob(30))
+		ex_light = rand(2,4)
+	if(prob(30))
+		ex_flame = rand(0,5)
 
 /obj/item/grenade/frag/mega
 	name = "FRAG grenade"
