@@ -707,6 +707,21 @@
 	acid = 50
 	wound = 30
 
+/obj/item/clothing/suit/armor/vest/army
+	name = "army chestplate"
+	desc = "A green set of reinforced polymer plates. "
+	icon_state = "army-green"
+	inhand_icon_state = "army-green"
+	dog_fashion = null
+	armor_type = /datum/armor/military
+	allowed = list(
+		/obj/item/banner,
+		/obj/item/claymore/shortsword,
+		/obj/item/nullrod,
+		/obj/item/spear,
+		/obj/item/gun/ballistic/bow
+	)
+
 /obj/item/clothing/suit/armor/vest/military
 	name = "Crude chestplate"
 	desc = "It may look rough, rusty and battered, but it's also made out of junk and uncomfortable to wear."

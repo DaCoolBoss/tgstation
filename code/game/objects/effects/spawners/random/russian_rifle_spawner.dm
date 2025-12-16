@@ -1,3 +1,5 @@
+//This file contains the random tables for military surplus rates
+//
 //Expected outcomes for each Mil Surplus crate:
 //4.95x Clothing
 //3.6x Armour
@@ -33,7 +35,7 @@
 		/obj/item/clothing/suit/armor/vest/cuirass = 8,				//0.36
 		/obj/item/clothing/head/helmet/rus_ushanka = 12,				//
 		/obj/item/clothing/suit/armor/vest/russian_coat = 12,			//
-		/obj/item/clothing/suit/armor/swat = 8,						//
+		/obj/item/clothing/suit/armor/vest/army = 8,						//
 		/obj/item/clothing/head/helmet/military = 5,					//
 		/obj/item/clothing/suit/armor/vest/military = 5,
 		/obj/item/clothing/suit/armor/bulletproof = 3,					//
@@ -99,7 +101,7 @@
 		/obj/item/grenade/frag/dusty = 2,
 		/obj/item/bear_armor = 2,
 		/obj/item/clothing/accessory/medal/antique/silver = 2,
-		/obj/item/clothing/mask/gas/atmos = 2,
+		/obj/item/clothing/mask/gas/atmos/russian = 2,
 		/obj/item/trench_tool = 1,
 		/obj/item/spear/military = 1,
 		/obj/item/lighter = 1,
@@ -126,6 +128,7 @@
 		/obj/item/gun/ballistic/automatic/pistol/m1911 = 0.05,				//0.0046
 	)
 
+//this rolls once in every military surplus crate
 /obj/effect/spawner/random/mil_surplus/guns/doesnt_spawn_half_the_time_bleedin_typical
 	name = "50/50 military surplus gun spawner (or nothing)"
 	desc = "what a rip!"
@@ -140,7 +143,8 @@
 		/obj/effect/spawner/random/mil_surplus/ammo/krak/clip = 10,
 		/obj/effect/spawner/random/mil_surplus/ammo/krak/box = 20,
 		/obj/effect/spawner/random/mil_surplus/ammo/ripslug = 25,
-		/obj/effect/spawner/random/mil_surplus/ammo/donk = 20,
+		/obj/effect/spawner/random/mil_surplus/ammo/donk = 14,
+		/obj/item/storage/box/donkpockets/donkpocketshell = 5,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/double
@@ -159,7 +163,7 @@
 		/obj/item/ammo_casing/shotgun/rubbershot = 10,
 	)
 
-/obj/effect/spawner/random/mil_surplus/ammo/strilka310
+/obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip
 	name = "moist .310 Strilka stripper clip spawner"
 	desc = "Spawns a Strilka clip. May have water damage."
 	loot = list(
@@ -209,3 +213,21 @@
 		/obj/item/ammo_casing/krak_laser/degraded = 60,
 		/obj/item/ammo_casing/krak_laser = 40,
 	)
+
+
+//                                             //tester man
+/datum/outfit/armyman
+	name = "! Army Man"
+	uniform = /obj/item/clothing/under/costume/soviet
+	suit = /obj/item/clothing/suit/armor/vest/army
+	suit_store = /obj/item/gun/ballistic/rifle/boltaction/krak
+	back = /obj/item/storage/backpack
+	ears = /obj/item/radio/headset
+	glasses = /obj/item/clothing/glasses/sunglasses
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/helmet/army
+	shoes = /obj/item/clothing/shoes/jackboots
+	belt = /obj/item/storage/belt/military/army
+	l_pocket = /obj/item/trench_tool
+	r_pocket = /obj/item/clothing/mask/gas/atmos/russian
+	id = /obj/item/card/id/advanced/bountyhunter

@@ -171,7 +171,7 @@
 	. = ..()
 	if(!commendation_message)
 		commendation_message = pick(list(
-			"For Two Years of Honorable Service.",
+			"For Honorable Service.",
 			"For Remaining Stalwart.",
 			"For Great Bravery.",
 			"For Stepping Up.",
@@ -183,11 +183,13 @@
 		awarder = "[issued_by_rank] [pick(GLOB.last_names)]"
 
 /obj/item/clothing/accessory/medal/antique/silver
-	name = "silver cross of exceptional heroism"
-	desc = "A valuable medal handed out to soldiers in the army if they survive a couple of years without messing up too badly."
+	name = "silver cross of exceptional service"
+	desc = "A valuable medal handed out by TerraGov generals to soldiers that really impress them."
 	issued_by_rank = "General"
+	icon_state = "silver"
 
 /obj/item/clothing/accessory/medal/antique/gold
-	name = "gold medal of "
+	name = "gold medal of heroic service"
 	desc = "A very valuable medal. It bears the insignia of TerraGov and was personally awarded by a sitting president to a soldier for acts of exceptional heroism."
 	issued_by_rank = "President"
+	icon_state = "gold"
