@@ -274,10 +274,10 @@
 /obj/item/storage/toolbox/guncase/soviet
 	name = "old soviet gun case"
 	desc = "A weapon's case. Has the symbol of the Third Soviet Union stamped on the side."
-	icon_state = "sakhno_case"
+	icon_state = "soviet_guncase"
 	inhand_icon_state = "sakhno_case"
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction
-	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310
+	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip
 
 /obj/item/storage/toolbox/guncase/soviet/unreliable
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/surplus
@@ -286,7 +286,7 @@
 /obj/item/storage/toolbox/guncase/krakgun
 	name = "ancient gun case"
 	desc = "A weapon's case. It is stamped with the TerraGov Espatiers Corps insignia."
-	icon_state = "sakhno_case"
+	icon_state = "army_guncase"
 	inhand_icon_state = "sakhno_case"
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/krak
 	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/krak/clip
@@ -298,6 +298,7 @@
 /obj/item/storage/toolbox/guncase/slugger
 	name = "ancient gun case"
 	desc = "A weapon's case. It bears the Tiziran Armed Forces coat of arms."
+	icon_state = "imperial_guncase"
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/slugger/royal
 
 /obj/item/storage/toolbox/guncase/slugger/weaker
@@ -306,6 +307,7 @@
 /obj/item/storage/toolbox/guncase/donkmusket
 	name = "\improper Donk Co. gun case"
 	desc = "A weapon's case. It is stamped with the word 'DONK'."
+	icon_state = "donk_guncase"
 	weapon_to_spawn = /obj/item/gun/ballistic/shotgun/musket
 	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/donk
 

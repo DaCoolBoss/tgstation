@@ -116,7 +116,7 @@
 
 /obj/item/clothing/under/syndicate/camo/desert
 	desc = "A tan military camouflage uniform."
-	icon_state = "camogreen"
+	icon_state = "camotan"
 	inhand_icon_state = "g_suit"
 
 
@@ -127,7 +127,7 @@
 
 /obj/item/clothing/under/syndicate/camo/snow
 	desc = "A white military camouflage uniform."
-	icon_state = "camogreen"
+	icon_state = "camowhite"
 	inhand_icon_state = "g_suit"
 
 /obj/item/clothing/under/syndicate/camo/urban

@@ -212,12 +212,13 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 
 /obj/item/clothing/mask/gas/atmos/russian
 	name = "russian gas mask"
-	desc = "A fireproof gas mask with a robust set of filters. Wraps around the entire head, limiting peripheral vision."
+	desc = "A protective gas mask made of thick rubber, with a large set of filters. Wraps around the entire head, limiting peripheral vision."
 	icon = 'icons/obj/clothing/masks.dmi'
 	worn_icon = 'icons/mob/clothing/mask.dmi'
 	worn_icon_state = "gas_russian"
 	icon_state = "gas_russian"
 	inhand_icon_state = "gas_russian"
+	voice_filter = "lowpass=f=800,volume=1.6"
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT|HIDEHAIR
 

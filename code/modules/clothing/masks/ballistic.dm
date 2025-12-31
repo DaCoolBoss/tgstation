@@ -17,6 +17,7 @@
 
 /datum/armor/ballistic_mask
 	melee = 10
-	bullet = 10
-	bomb = 20
+	bullet = 20
+	laser = 10
+	bomb = 10
 	wound = 10

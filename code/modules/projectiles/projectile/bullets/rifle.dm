@@ -36,6 +36,7 @@
 	stamina = 80
 
 /obj/projectile/bullet/strilka310/impact
+	name = ".310 Strilka slug"
 	damage = 50
 	weak_against_armour = TRUE
 	stamina = 60

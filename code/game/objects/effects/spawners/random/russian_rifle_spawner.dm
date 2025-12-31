@@ -31,17 +31,19 @@
 		/obj/item/clothing/suit/armor/vest/russian = 20,				//0.72
 		/obj/item/clothing/head/helmet/rus_helmet = 20,
 		/obj/item/clothing/head/helmet/army = 8,
-		/obj/item/clothing/head/helmet/army/alt = 7,
+		/obj/item/clothing/head/helmet/army/grey = 4,
 		/obj/item/clothing/suit/armor/vest/cuirass = 8,				//0.36
 		/obj/item/clothing/head/helmet/rus_ushanka = 12,				//
 		/obj/item/clothing/suit/armor/vest/russian_coat = 12,			//
 		/obj/item/clothing/suit/armor/vest/army = 8,						//
+		/obj/item/clothing/suit/armor/vest/army/grey = 3,
 		/obj/item/clothing/head/helmet/military = 5,					//
 		/obj/item/clothing/suit/armor/vest/military = 5,
 		/obj/item/clothing/suit/armor/bulletproof = 3,					//
 		/obj/item/clothing/suit/armor/laserproof = 1,
-		/obj/item/clothing/mask/ballistic = 2,
-		/obj/item/clothing/shoes/combat = 2,
+		/obj/item/clothing/mask/ballistic = 1.9,
+		/obj/item/clothing/shoes/combat = 1.9,
+		/obj/item/clothing/suit/armor/vest/marine/pmc = 0.2
 	)
 
 /obj/effect/spawner/random/mil_surplus/armour/double
@@ -52,22 +54,27 @@
 	desc = "Old military clothing. This might be from a punk's wardrobe."
 	icon_state = "pistol"
 	loot = list(
-		/obj/effect/spawner/random/mil_surplus/clothing/camo = 15,		//0.74
-		/obj/item/clothing/under/syndicate/rus_army = 15,				//0.74
-		/obj/item/clothing/gloves/color/black = 5,
-		/obj/item/clothing/under/syndicate/combat = 5,					//
-		/obj/item/clothing/mask/russian_balaclava = 5,					//0.25
-		/obj/item/clothing/shoes/jackboots = 10,						//0.49
-		/obj/item/clothing/shoes/russian = 10,							//0.49
-		/obj/item/clothing/under/costume/soviet = 5,
-		/obj/item/clothing/under/syndicate/camo = 15,					//0.74
-		/obj/item/clothing/under/syndicate/rus_army = 15,
+		/obj/effect/spawner/random/mil_surplus/clothing/camo = 20,		//0.74
+		/obj/item/clothing/under/syndicate/rus_army = 20,				//0.74
+		/obj/item/clothing/shoes/jackboots = 10.5,						//0.49
+		/obj/item/clothing/shoes/russian = 10.5,
+		/obj/item/clothing/mask/gas/atmos/russian = 10,					//0.74
+		/obj/item/clothing/gloves/color/black = 7,
+		/obj/item/clothing/mask/russian_balaclava = 6,					//0.25
 		/obj/item/clothing/head/costume/ushanka = 5,
-		/obj/item/clothing/mask/balaclava = 2,
+		/obj/item/clothing/under/costume/soviet = 5,
+		/obj/item/clothing/under/syndicate/combat = 5,					//84
+		/obj/item/clothing/mask/balaclava = 4,
+		/obj/item/clothing/under/syndicate/soviet = 3,
+		/obj/item/clothing/suit/jacket/bomber = 2,
 		/obj/item/clothing/head/beret/militia = 2,
 		/obj/item/clothing/suit/jacket/miljacket = 2,					//0.1
 		/obj/item/clothing/suit/toggle/jacket/trenchcoat = 1,
 		/obj/item/clothing/head/soft/veteran = 1,
+		/obj/item/clothing/under/pants/camo = 0.45,
+		/obj/item/clothing/under/syndicate/tacticool = 0.45,
+		/obj/item/clothing/under/syndicate = 0.05,
+		/obj/item/clothing/under/suit/navy = 0.05,
 	)
 
 /obj/effect/spawner/random/mil_surplus/clothing/camo
@@ -82,6 +89,8 @@
 	)
 
 /obj/effect/spawner/random/mil_surplus/clothing/double
+	name = "double military surplus clothing spawner"
+	desc = "Spawns two of the same military surplus clothing item. "
 	spawn_loot_count = 2
 
 /obj/effect/spawner/random/mil_surplus/gadgets
@@ -95,13 +104,13 @@
 		/obj/item/storage/belt/military/army = 8,
 		/obj/item/clothing/accessory/medal/antique = 5,
 		/obj/item/reagent_containers/cup/glass/flask = 5,
-		/obj/item/knife/combat = 4,
+		/obj/item/knife/combat = 2,
 		/obj/item/storage/belt/military/assault = 2,
 		/obj/item/spess_knife = 2,
 		/obj/item/grenade/frag/dusty = 2,
 		/obj/item/bear_armor = 2,
 		/obj/item/clothing/accessory/medal/antique/silver = 2,
-		/obj/item/clothing/mask/gas/atmos/russian = 2,
+		/obj/item/knife/combat/survival = 2,
 		/obj/item/trench_tool = 1,
 		/obj/item/spear/military = 1,
 		/obj/item/lighter = 1,
@@ -128,20 +137,20 @@
 		/obj/item/gun/ballistic/automatic/pistol/m1911 = 0.05,				//0.0046
 	)
 
-//this rolls once in every military surplus crate
+//one of these spawners in every military surplus crate
 /obj/effect/spawner/random/mil_surplus/guns/doesnt_spawn_half_the_time_bleedin_typical
 	name = "50/50 military surplus gun spawner (or nothing)"
-	desc = "what a rip!"
+	desc = "Only spawns a gun case 50% of the time. What a rip!"
 	spawn_loot_chance = 50
 
 /obj/effect/spawner/random/mil_surplus/ammo
 	name = "military surplus ammo spawner"
 	desc = "You were issued some assorted loose ammo, soldier, it is YOUR duty to make it compatable with your gun! No excuses!"
 	loot = list(
-		/obj/effect/spawner/random/mil_surplus/ammo/strilka310 = 10,
 		/obj/effect/spawner/random/mil_surplus/ammo/strilka310/box = 20,
-		/obj/effect/spawner/random/mil_surplus/ammo/krak/clip = 10,
 		/obj/effect/spawner/random/mil_surplus/ammo/krak/box = 20,
+		/obj/effect/spawner/random/mil_surplus/ammo/strilka310 = 10,
+		/obj/effect/spawner/random/mil_surplus/ammo/krak/clip = 10,
 		/obj/effect/spawner/random/mil_surplus/ammo/ripslug = 25,
 		/obj/effect/spawner/random/mil_surplus/ammo/donk = 14,
 		/obj/item/storage/box/donkpockets/donkpocketshell = 5,
@@ -163,6 +172,14 @@
 		/obj/item/ammo_casing/shotgun/rubbershot = 10,
 	)
 
+/obj/effect/spawner/random/mil_surplus/ammo/strilka310
+	name = "moist .310 Strilka bullet spawner"
+	desc = "Spawns a single, soggy Strilka round."
+	loot = list(
+		/obj/item/ammo_casing/strilka310/degraded = 70,
+		/obj/item/ammo_casing/strilka310 = 30,
+	)
+
 /obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip
 	name = "moist .310 Strilka stripper clip spawner"
 	desc = "Spawns a Strilka clip. May have water damage."
@@ -173,7 +190,7 @@
 
 /obj/effect/spawner/random/mil_surplus/ammo/strilka310/box
 	name = "moist .310 Strilka ammo box spawner"
-	desc = "Spawns a Strilka ammo box. May have water damage."
+	desc = "Spawns a Strilka ammo box. Inspect for signs of rust before using."
 	loot = list(
 		/obj/item/storage/toolbox/ammobox/strilka310/rusty = 55,
 		/obj/item/storage/toolbox/ammobox/strilka310 = 35,
@@ -202,8 +219,8 @@
 	desc = "Spawns a clip of Krak rifle ammo, of dubious quality."
 	loot = list(
 		/obj/item/ammo_box/magazine/krak/unreliable = 50,
-		/obj/item/ammo_box/magazine/krak = 40,
-		/obj/item/ammo_box/magazine/krak/really_unreliable = 10,
+		/obj/item/ammo_box/magazine/krak = 35,
+		/obj/item/ammo_box/magazine/krak/really_unreliable = 15,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/ripslug
@@ -218,16 +235,17 @@
 //                                             //tester man
 /datum/outfit/armyman
 	name = "! Army Man"
-	uniform = /obj/item/clothing/under/costume/soviet
-	suit = /obj/item/clothing/suit/armor/vest/army
-	suit_store = /obj/item/gun/ballistic/rifle/boltaction/krak
+	uniform = /obj/item/clothing/under/syndicate/camo/urban
+	suit = /obj/item/clothing/suit/armor/vest/army/grey
+	suit_store = /obj/item/gun/ballistic/rifle/krak
 	back = /obj/item/storage/backpack
 	ears = /obj/item/radio/headset
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/combat
-	head = /obj/item/clothing/head/helmet/army
+	head = /obj/item/clothing/head/helmet/army/grey
 	shoes = /obj/item/clothing/shoes/jackboots
 	belt = /obj/item/storage/belt/military/army
 	l_pocket = /obj/item/trench_tool
-	r_pocket = /obj/item/clothing/mask/gas/atmos/russian
+	r_pocket = /obj/item/ammo_box/magazine/krak/unreliable
+	r_hand = /obj/item/clothing/mask/gas/atmos/russian
 	id = /obj/item/card/id/advanced/bountyhunter

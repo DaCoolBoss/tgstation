@@ -708,19 +708,32 @@
 	wound = 30
 
 /obj/item/clothing/suit/armor/vest/army
-	name = "army chestplate"
-	desc = "A green set of reinforced polymer plates. "
+	name = "space army chestplate"
+	desc = "A green set of reinforced polymer plates."
 	icon_state = "army-green"
 	inhand_icon_state = "army-green"
 	dog_fashion = null
-	armor_type = /datum/armor/military
-	allowed = list(
-		/obj/item/banner,
-		/obj/item/claymore/shortsword,
-		/obj/item/nullrod,
-		/obj/item/spear,
-		/obj/item/gun/ballistic/bow
-	)
+	armor_type = /datum/armor/space_army_light
+	clothing_flags = THICKMATERIAL
+	body_parts_covered = CHEST|ARMS
+	cold_protection = CHEST | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT_OFF
+	heat_protection = CHEST|ARMS
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/datum/armor/space_army_light
+	melee = 25
+	bullet = 40
+	laser = 40
+	energy = 35
+	bomb = 50
+	fire = 40
+	acid = 50
+	wound = 30
+
+/obj/item/clothing/suit/armor/vest/army/grey
+	icon_state = "army-grey"
+	inhand_icon_state = "army-grey"
 
 /obj/item/clothing/suit/armor/vest/military
 	name = "Crude chestplate"

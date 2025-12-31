@@ -173,10 +173,14 @@
 /obj/structure/closet/crate/secure/weapon{
 	name = "surplus crate"
 	},
-/obj/item/ammo_box/speedloader/strilka310,
-/obj/item/ammo_box/speedloader/strilka310,
-/obj/item/ammo_box/speedloader/strilka310,
-/obj/item/ammo_box/speedloader/strilka310,
+/obj/item/storage/toolbox/ammobox/strilka310{
+	pixel_x = -4;
+	pixel_y = 5
+	},
+/obj/item/storage/toolbox/ammobox/strilka310{
+	pixel_x = 4;
+	pixel_y = -2
+	},
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
 "qF" = (
@@ -609,9 +613,9 @@
 	name = "commandant's crate"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/toolbox/guncase/soviet,
 /obj/item/gun/ballistic/automatic/pistol,
 /obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/speedloader/strilka310,
 /obj/item/crowbar,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)

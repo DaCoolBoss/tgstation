@@ -66,8 +66,8 @@
 #define CALIBER_PEA "pea"
 /// The caliber used by the krak laser gun
 #define CALIBER_KRAK "type k"
-/// The caliber used by the tirizan slugger
-#define CALIBER_SLUGGER "slugger"
+/// The caliber used by the Tiziran ripperlance
+#define CALIBER_RIPPER "ripper"
 
 /// For gunpoints, how many tiles around the target the shooter can roam without losing their shot
 #define GUNPOINT_SHOOTER_STRAY_RANGE 2

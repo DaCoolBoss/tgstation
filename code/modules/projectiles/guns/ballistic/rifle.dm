@@ -185,7 +185,7 @@
 
 /obj/item/gun/ballistic/rifle/boltaction/slugger/antique
 	name = "heirloom ripperlance"
-	desc = "A solid projectile firearm handcrafted by a Tirizan artesan gunsmith.\
+	desc = "A solid projectile firearm handcrafted by a Tiziran artesan gunsmith.\
 		Capable of firing dried ripper-slug chitin, or their modern lead equivelents."
 	internal_magazine = FALSE
 
@@ -221,6 +221,9 @@
 	desc = "An old fashioned bullpup laser rifle. Uses Type-K non-rechargable ammunition. \
 	"
 	internal_magazine = FALSE
+	semi_auto = FALSE
+	internal_magazine = TRUE
+	casing_ejector = FALSE
 	force = 14
 	icon_state = "krak"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/krak

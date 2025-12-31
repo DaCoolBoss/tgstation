@@ -220,7 +220,7 @@
 	desc = "We're clearing out the warehouses, so you can get CHEAP and FIELD READY army surplus in one of our bulk crates!\
 		We have a variety of genuine military clothing, armour, paraphernalia, ammunition and gear sourced from armies across the galaxy. \
 		May contain one or more functioning firearm, weapon or explosive device. Does not ship to sectors A1-15, B11, D1 & D4-25, or F1-25."
-	contraband = TRUE
+	order_flags = ORDER_CONTRABAND
 	cost = CARGO_CRATE_VALUE * 12
 	contains = list(
 		/obj/effect/spawner/random/mil_surplus/guns/doesnt_spawn_half_the_time_bleedin_typical,
@@ -228,36 +228,37 @@
 	)
 	discountable = SUPPLY_PACK_RARE_DISCOUNTABLE
 
-/datum/supply_pack/imports/moistnuggets
-	name = "Soviet Operator Crate"
-	desc = "Need reliable weapons in a hurry? We can help! \
-		This pack of premium-quality firearms ! \
-		We don't have enough spare ammo, so you'll have to pick up the weapon of \
-		dead comrade when you run out."
-	hidden = TRUE
+/datum/supply_pack/imports/vintage_soviet
+	name = "Vintage Soviet Supply Crate"
+	desc = "Need reliable field-tested antique soviet weaponry in a hurry? Look no further! \
+		Vintage Corp picks the best army surplus for you! Guaranteed quality! \
+		Each crate has three Sakhno precision rifles and two boxes of ammunition. \
+		Three authentic soviet uniform and battle-ready armour sets are included. Perfect for historical reenactments!"
+	order_flags = ORDER_EMAG_ONLY
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/gun/ballistic/rifle/boltaction = 6)
 
-/datum/supply_pack/imports/oldarmy
-	name = "TG Resupply Crate"
+/datum/supply_pack/imports/vintage_army
+	name = "Vintage TG Supply Crate"
 	desc = "If you need soldiers outfitted in reliable gear in a hurry, we can help! \
 		This pack of genuine near-mint-or-better condition ! \
 		Contains three uniforms, three krak-rifles, and two spare boxes of ammo. \
 		dead comrade when you run out."
-	hidden = TRUE
+	order_flags = ORDER_EMAG_ONLY
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/gun/ballistic/rifle/krak = 3,
 	)
 
-/datum/supply_pack/imports/tirizansoldier
-	name = "Tirizan Supply Crate"
-	desc = "We  \
-		This pack of premium-quality firearms ! \
-		We don't have enough spare ammo, so you'll have to pick up the weapon of \
+/datum/supply_pack/imports/vintage_tiziran
+	name = "Vintage Tiziran Supply Crate"
+	desc = "If you need soldiers outfitted in reliable gear in a hurry, we can help! \
+		This pack of genuine near-mint-or-better condition ! \
+		Contains three uniforms, three krak-rifles, and two spare boxes of ammo. \
 		dead comrade when you run out."
-	hidden = TRUE
+	order_flags = ORDER_EMAG_ONLY
 	cost = CARGO_CRATE_VALUE * 4
-	contains = list(/obj/item/gun/ballistic/rifle/boltaction = 6)
+	contains = list(/obj/item/gun/ballistic/rifle/krak = 3,
+	)
 
 /datum/supply_pack/imports/vehicle
 	name = "Biker Gang Kit" //TUNNEL SNAKES OWN THIS TOWN
