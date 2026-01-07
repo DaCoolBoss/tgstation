@@ -182,34 +182,36 @@
 	suit = /obj/item/clothing/suit/costume/pirate
 
 /obj/effect/mob_spawn/corpse/human/russian
-	name = "Russian"
+	name = "Dead Russian Mobster"
 	outfit = /datum/outfit/russiancorpse
-	hairstyle = "Bald"
-	facial_hairstyle = "Shaved"
 
 /datum/outfit/russiancorpse
-	name = "Russian Corpse"
-	uniform = /obj/item/clothing/under/costume/soviet
-	shoes = /obj/item/clothing/shoes/jackboots
+	name = "Russian Mobster"
+	uniform = /obj/item/clothing/under/costume/rus_tracksuit
+	shoes = /obj/item/clothing/shoes/russian
 	head = /obj/item/clothing/head/costume/bearpelt
 	gloves = /obj/item/clothing/gloves/color/black
-	mask = /obj/item/clothing/mask/gas
+	mask = /obj/item/clothing/mask/gas/atmos/russian
 
-
+/datum/outfit/russiancorpse/armour
+	name = "Russian Mobster (armour)"
+	suit = /obj/item/clothing/suit/armor/vest/russian
+	head = /obj/item/clothing/head/helmet/rus_helmet
 
 /obj/effect/mob_spawn/corpse/human/russian/ranged
+	name = "Russian Soldier"
 	outfit = /datum/outfit/russiancorpse/ranged
 
 /datum/outfit/russiancorpse/ranged
-	name = "Ranged Russian Corpse"
-	head = /obj/item/clothing/head/costume/ushanka
+	name = "Russian Soldier"
+	head = /obj/item/clothing/head/helmet/rus_helmet
+	suit = /obj/item/clothing/suit/armor/vest/russian
 
+/obj/effect/mob_spawn/corpse/human/russian/ranged/elite
+	outfit = /datum/outfit/russiancorpse/ranged/elite
 
-/obj/effect/mob_spawn/corpse/human/russian/ranged/trooper
-	outfit = /datum/outfit/russiancorpse/ranged/trooper
-
-/datum/outfit/russiancorpse/ranged/trooper
-	name = "Ranged Russian Trooper Corpse"
+/datum/outfit/russiancorpse/ranged/elite
+	name = "Russian Elite"
 	uniform = /obj/item/clothing/under/syndicate/camo
 	suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/combat
@@ -231,6 +233,13 @@
 	ears = /obj/item/radio/headset
 	head = /obj/item/clothing/head/costume/ushanka
 
+/datum/outfit/sovietcorpse
+	name = "Soviet Mobster"
+	uniform = /obj/item/clothing/under/costume/soviet
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/costume/ushanka
+	gloves = /obj/item/clothing/gloves/color/black
+	mask = /obj/item/clothing/mask/gas/atmos/russian
 
 /obj/effect/mob_spawn/corpse/human/wizard
 	name = "Space Wizard Corpse"

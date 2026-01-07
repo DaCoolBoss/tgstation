@@ -60,9 +60,9 @@
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
 
 /obj/item/storage/toolbox/ammobox/krak
-	name = "type k ammo box"
-	desc = "It contains a few clips of ammunition for the Strilka."
-	icon_state = "ammobox_strilka"
+	name = "k-type ammo box"
+	desc = "This is a shock-resistant It contains a few clips of ammunition for the Strilka."
+	icon_state = "ammobox_ktype"
 	ammo_to_spawn = /obj/item/ammo_box/magazine/krak
 
 /obj/item/storage/toolbox/ammobox/krak/degraded
@@ -72,7 +72,7 @@
 /obj/item/storage/toolbox/ammobox/krak/degraded/Initialize(mapload)
 	. = ..()
 	if(prob(80))
-		name = "battered "
+		name += "battered "
 		if(prob(50))
 			desc += " It has a few flakes of rust on the hinges."
 	else
@@ -282,6 +282,9 @@
 /obj/item/storage/toolbox/guncase/soviet/unreliable
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/surplus
 	extra_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
+
+/obj/item/storage/toolbox/guncase/soviet/sks
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/sks
 
 /obj/item/storage/toolbox/guncase/krakgun
 	name = "ancient gun case"

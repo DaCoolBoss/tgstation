@@ -223,7 +223,7 @@
 	order_flags = ORDER_CONTRABAND
 	cost = CARGO_CRATE_VALUE * 12
 	contains = list(
-		/obj/effect/spawner/random/mil_surplus/guns/doesnt_spawn_half_the_time_bleedin_typical,
+		/obj/effect/spawner/random/mil_surplus/guncases/fifty_percent_spawnrate,
 		/obj/effect/spawner/random/mil_surplus = 9,
 	)
 	discountable = SUPPLY_PACK_RARE_DISCOUNTABLE
@@ -232,7 +232,7 @@
 	name = "Vintage Soviet Supply Crate"
 	desc = "Need reliable field-tested antique soviet weaponry in a hurry? Look no further! \
 		Vintage Corp picks the best army surplus for you! Guaranteed quality! \
-		Each crate has three Sakhno precision rifles and two boxes of ammunition. \
+		Each crate has three fully functioning Sakhno precision rifles and two boxes of live ammunition. \
 		Three authentic soviet uniform and battle-ready armour sets are included. Perfect for historical reenactments!"
 	order_flags = ORDER_EMAG_ONLY
 	cost = CARGO_CRATE_VALUE * 4
@@ -240,10 +240,10 @@
 
 /datum/supply_pack/imports/vintage_army
 	name = "Vintage TG Supply Crate"
-	desc = "If you need soldiers outfitted in reliable gear in a hurry, we can help! \
-		This pack of genuine near-mint-or-better condition ! \
-		Contains three uniforms, three krak-rifles, and two spare boxes of ammo. \
-		dead comrade when you run out."
+	desc = "Need reliable field-tested space-age weaponry in a hurry? Look no further! \
+		Vintage Corp picks the best army surplus for you! Guaranteed quality! \
+		Each crate has three fully functioning Sakhno precision rifles and two boxes of live ammunition. \
+		Three authentic soviet uniform and battle-ready armour sets are included. Perfect for historical reenactments!"
 	order_flags = ORDER_EMAG_ONLY
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/gun/ballistic/rifle/krak = 3,
@@ -251,10 +251,10 @@
 
 /datum/supply_pack/imports/vintage_tiziran
 	name = "Vintage Tiziran Supply Crate"
-	desc = "If you need soldiers outfitted in reliable gear in a hurry, we can help! \
-		This pack of genuine near-mint-or-better condition ! \
-		Contains three uniforms, three krak-rifles, and two spare boxes of ammo. \
-		dead comrade when you run out."
+	desc = "Need reliable field-tested Tiziran weaponry in a hurry? Look no further! \
+		Vintage Corp picks the best army surplus for you! Guaranteed quality! \
+		Each crate has three fully functioning imperial-pattern ripperlances and two boxes of live ammunition. \
+		Three authentic soviet uniform and battle-ready armour sets are included. Perfect for historical reenactments!"
 	order_flags = ORDER_EMAG_ONLY
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/gun/ballistic/rifle/krak = 3,

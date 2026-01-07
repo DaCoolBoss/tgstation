@@ -1,32 +1,34 @@
-//This file contains the random tables for military surplus rates
+//This file contains the random tables for military surplus crates
 //
-//Expected outcomes for each Mil Surplus crate:
-//4.95x Clothing
-//3.6x Armour
-//1.8x Ammo
-//1.35x Gadgets
-//0.95x Gun
+//Expected item drops for each crate:
+//4.32x Clothing
+//2.7x Armour
+//1.94x Ammo
+//1.44x Gadgets
+//1.04x Gun
 
-
-//This spawns 9 times in a surplus box
 /obj/effect/spawner/random/mil_surplus
+	//nine of these spawners in every military surplus crate
 	name = "random military surplus stuff spawner"
-	desc = "Stuff that's been in some military storehouse for at least a couple of decades."
-	icon_state = "pistol"
+	desc = "One or two pieces of equipment from the military surplus storehouses. \
+	Most of this stuff is decades, if not centuries, old."
+	icon_state = "lootdrop"
+	spawn_loot_split = TRUE
 	loot = list(												//expected drops per crate:
 		/obj/effect/spawner/random/mil_surplus/armour = 20, 			//1.8
-		/obj/effect/spawner/random/mil_surplus/clothing/double = 20,	//1.8
-		/obj/effect/spawner/random/mil_surplus/gadgets = 15,			//1.35
-		/obj/effect/spawner/random/mil_surplus/clothing = 13, 			//1.35
+		/obj/effect/spawner/random/mil_surplus/clothing = 16, 			//1.44
+		/obj/effect/spawner/random/mil_surplus/clothing/double = 16,	//1.44
+		/obj/effect/spawner/random/mil_surplus/gadgets = 16,			//1.44
 		/obj/effect/spawner/random/mil_surplus/armour/double = 10, 		//0.9
 		/obj/effect/spawner/random/mil_surplus/ammo = 10, 				//0.9
-		/obj/effect/spawner/random/mil_surplus/ammo/double = 6, 		//0.45
-		/obj/effect/spawner/random/mil_surplus/guncases = 6, 			//0.45
+		/obj/effect/spawner/random/mil_surplus/ammo/double = 6, 		//0.54
+		/obj/effect/spawner/random/mil_surplus/guncases = 6, 			//0.54
 	)
 
 /obj/effect/spawner/random/mil_surplus/armour
 	name = "military surplus armour spawner"
 	desc = "Don't tell the privates, but all their gear comes from Space Temu."
+	icon_state = "bulletproof_armor"
 	loot = list(
 		/obj/item/clothing/suit/armor/vest/russian = 20,				//0.72
 		/obj/item/clothing/head/helmet/rus_helmet = 20,
@@ -47,12 +49,14 @@
 	)
 
 /obj/effect/spawner/random/mil_surplus/armour/double
+	name = "double military surplus armour spawner"
+	desc = "Spawns two matching bits of armour. Now you can share!"
 	spawn_loot_count = 2
 
 /obj/effect/spawner/random/mil_surplus/clothing
 	name = "military surplus clothing spawner"
 	desc = "Old military clothing. This might be from a punk's wardrobe."
-	icon_state = "pistol"
+	icon_state = "syndicate"
 	loot = list(
 		/obj/effect/spawner/random/mil_surplus/clothing/camo = 20,		//0.74
 		/obj/item/clothing/under/syndicate/rus_army = 20,				//0.74
@@ -77,6 +81,11 @@
 		/obj/item/clothing/under/suit/navy = 0.05,
 	)
 
+/obj/effect/spawner/random/mil_surplus/clothing/double
+	name = "double military surplus clothing spawner"
+	desc = "Spawns two of the same military surplus clothing item."
+	spawn_loot_count = 2
+
 /obj/effect/spawner/random/mil_surplus/clothing/camo
 	name = "camouflage uniform spawner"
 	desc = "Chances are, one of these will match your surroundings. Eventually."
@@ -88,15 +97,10 @@
 	/obj/item/clothing/under/syndicate/camo/urban = 10,
 	)
 
-/obj/effect/spawner/random/mil_surplus/clothing/double
-	name = "double military surplus clothing spawner"
-	desc = "Spawns two of the same military surplus clothing item. "
-	spawn_loot_count = 2
-
 /obj/effect/spawner/random/mil_surplus/gadgets
 	name = "military surplus gadget spawner"
 	desc = "Old military stuff."
-	icon_state = "pistol"
+	icon_state = "dice"
 	loot = list(
 		/obj/item/gun_maintenance_supplies = 25,
 		/obj/item/food/rationpack = 25,
@@ -125,27 +129,29 @@
 /obj/effect/spawner/random/mil_surplus/guncases
 	name = "military surplus gun spawner"
 	desc = "oh boy now we're talking"
-	icon_state = "pistol"
+	icon_state = "shotgun"
 	loot = list(
 		/obj/item/storage/toolbox/guncase/soviet/unreliable = 25,
 		/obj/item/storage/toolbox/guncase/krakgun/unreliable = 25,
 		/obj/item/storage/toolbox/guncase/slugger/weaker = 20,
 		/obj/item/storage/toolbox/guncase/soviet = 10,
-		/obj/item/storage/toolbox/guncase/krakgun = 10,
-		/obj/item/storage/toolbox/guncase/slugger = 5,
+		/obj/item/storage/toolbox/guncase/krakgun = 9.75,
+		/obj/item/storage/toolbox/guncase/slugger = 4.75,
 		/obj/item/storage/toolbox/guncase/donkmusket = 4.95,				//0.045
+		/obj/item/storage/toolbox/guncase/soviet/sks = 0.5,
 		/obj/item/gun/ballistic/automatic/pistol/m1911 = 0.05,				//0.0046
 	)
 
-//one of these spawners in every military surplus crate
-/obj/effect/spawner/random/mil_surplus/guns/doesnt_spawn_half_the_time_bleedin_typical
+/obj/effect/spawner/random/mil_surplus/guncases/fifty_percent_spawnrate
+	//one of these spawners in every military surplus crate
 	name = "50/50 military surplus gun spawner (or nothing)"
 	desc = "Only spawns a gun case 50% of the time. What a rip!"
 	spawn_loot_chance = 50
 
 /obj/effect/spawner/random/mil_surplus/ammo
 	name = "military surplus ammo spawner"
-	desc = "You were issued some assorted loose ammo, soldier, it is YOUR duty to make it compatable with your gun! No excuses!"
+	desc = "You were issued some assorted loose ammo soldier, it is YOUR duty to make it compatable with your gun! No excuses!"
+	icon_state = "junkround"
 	loot = list(
 		/obj/effect/spawner/random/mil_surplus/ammo/strilka310/box = 20,
 		/obj/effect/spawner/random/mil_surplus/ammo/krak/box = 20,
@@ -157,6 +163,8 @@
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/double
+	name = "double military surplus ammo spawner"
+	desc = "Spawns ammo, then spawns an extra copy of it. How nice."
 	spawn_loot_count = 2
 
 /obj/effect/spawner/random/mil_surplus/ammo/donk
@@ -180,14 +188,6 @@
 		/obj/item/ammo_casing/strilka310 = 30,
 	)
 
-/obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip
-	name = "moist .310 Strilka stripper clip spawner"
-	desc = "Spawns a Strilka clip. May have water damage."
-	loot = list(
-		/obj/item/ammo_box/speedloader/strilka310/degraded = 70,
-		/obj/item/ammo_box/speedloader/strilka310 = 30,
-	)
-
 /obj/effect/spawner/random/mil_surplus/ammo/strilka310/box
 	name = "moist .310 Strilka ammo box spawner"
 	desc = "Spawns a Strilka ammo box. Inspect for signs of rust before using."
@@ -195,6 +195,14 @@
 		/obj/item/storage/toolbox/ammobox/strilka310/rusty = 55,
 		/obj/item/storage/toolbox/ammobox/strilka310 = 35,
 		/obj/item/storage/toolbox/ammobox/strilka310/really_rusty = 10,
+	)
+
+/obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip
+	name = "moist .310 Strilka stripper clip spawner"
+	desc = "Spawns a Strilka clip. May have water damage."
+	loot = list(
+		/obj/item/ammo_box/speedloader/strilka310/degraded = 70,
+		/obj/item/ammo_box/speedloader/strilka310 = 30,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/krak
@@ -216,7 +224,7 @@
 
 /obj/effect/spawner/random/mil_surplus/ammo/krak/clip
 	name = "old series k clip spawner"
-	desc = "Spawns a clip of Krak rifle ammo, of dubious quality."
+	desc = "Spawns a clip of Krak rifle ammo."
 	loot = list(
 		/obj/item/ammo_box/magazine/krak/unreliable = 50,
 		/obj/item/ammo_box/magazine/krak = 35,

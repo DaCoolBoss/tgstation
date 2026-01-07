@@ -188,6 +188,7 @@ GLOBAL_LIST_INIT(uncommon_loot, list(//uncommon: useful items
 		/obj/item/clothing/head/helmet/old = 1,
 		/obj/item/clothing/head/utility/welding = 1,
 		/obj/item/clothing/mask/muzzle = 1,
+		/obj/item/clothing/mask/gas/atmos/russian = 1,
 		/obj/item/clothing/suit/armor/vest/old = 1,
 		/obj/item/storage/belt/medical = 1,
 		/obj/item/storage/belt/utility = 1,

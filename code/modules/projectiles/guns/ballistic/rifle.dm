@@ -170,8 +170,8 @@
 	if(.)
 		name = "\improper Obrez Moderna" // wear it loud and proud
 
-/obj/item/gun/ballistic/rifle/boltaction/slugger
-	name = "ripperlance"
+/obj/item/gun/ballistic/rifle/boltaction/ripperlance
+	name = "imperial ripperlance"
 	desc = "A solid projectile firearm made of bronze and hypercompressed timbershroom, manufactured one of the Tirazan factory.\
 		Based on a traditional Tirazan design, but fine-tuned and mordernised to deliver more damage. \
 		Capable of firing either traditionally prepared ripper-slug chitin or factory-produced lead spinter-slugs."
@@ -180,8 +180,6 @@
 	worn_icon_state = "lionhunter"
 	can_be_sawn_off = FALSE
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/phasic
-
-/obj/item/gun/ballistic/rifle/boltaction/slugger/royal
 
 /obj/item/gun/ballistic/rifle/boltaction/slugger/antique
 	name = "heirloom ripperlance"
