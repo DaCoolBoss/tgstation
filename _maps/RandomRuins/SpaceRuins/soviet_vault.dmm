@@ -1,0 +1,2631 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bm" = (
+/obj/structure/door_assembly/door_assembly_vault{
+	anchored = 1
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"bL" = (
+/obj/structure/chair/stool/directional/west,
+/obj/machinery/duct,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"bR" = (
+/obj/item/stack/rods/two,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"cd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/delivery,
+/obj/structure/reagent_dispensers/plumbed{
+	dir = 8;
+	tank_volume = 100000
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"cf" = (
+/obj/effect/mob_spawn/corpse/human/soviet/officer,
+/obj/structure/closet/crate/coffin,
+/obj/effect/spawner/random/mil_surplus/gadgets,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/contraband/communist_state/directional/west,
+/obj/machinery/light/small/dim/directional/west,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"cl" = (
+/obj/structure/closet/crate/secure/weapon{
+	req_access = list("unobtainable")
+	},
+/obj/effect/spawner/random/mil_surplus/guncases{
+	spawn_loot_chance = 15
+	},
+/obj/effect/spawner/random/mil_surplus,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"co" = (
+/obj/structure/sign/warning/secure_area/directional/north,
+/turf/closed/mineral/random,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"cC" = (
+/mob/living/basic/mining/goliath/ancient,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"dn" = (
+/obj/structure/closet/crate/preopen,
+/obj/item/flashlight/flare{
+	pixel_y = -3
+	},
+/obj/item/screwdriver/red{
+	pixel_x = 1;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/cup/glass/bottle/vodka{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"do" = (
+/obj/item/stack/ore/iron{
+	pixel_y = -7;
+	pixel_x = -5
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"dB" = (
+/obj/structure/punji_sticks/spikes,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"dN" = (
+/obj/structure/closet/crate/coffin,
+/obj/effect/mob_spawn/corpse/human/soviet,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"dU" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/soviet_bunker)
+"ed" = (
+/obj/structure/sink/directional/south,
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/east,
+/obj/item/reagent_containers/cup/bucket/wooden{
+	pixel_x = 6;
+	pixel_y = -9
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"eL" = (
+/obj/effect/spawner/structure/electrified_grille,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"eY" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/effect/spawner/random/mil_surplus/clothing,
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/west,
+/obj/item/bedsheet/grey{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"fE" = (
+/obj/structure/table,
+/obj/item/reagent_containers/cup/glass/bottle/vodka{
+	pixel_x = -7;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/food/rationpack{
+	pixel_x = 6;
+	pixel_y = -7
+	},
+/obj/structure/sign/poster/contraband/communist_state/directional/west,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"fZ" = (
+/obj/structure/girder/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"gj" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/noticeboard/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"gp" = (
+/mob/living/basic/trooper/russian/soviet,
+/obj/effect/decal/hammerandsickle,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"gD" = (
+/mob/living/basic/mining/basilisk,
+/turf/open/misc/asteroid/dug,
+/area/space/nearstation)
+"gF" = (
+/obj/structure/closet/crate/preopen,
+/obj/effect/spawner/random/mil_surplus,
+/obj/machinery/light/small/dim/directional/north,
+/obj/machinery/duct,
+/obj/effect/spawner/random/mil_surplus{
+	spawn_loot_chance = 10
+	},
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/ruin/space/has_grav/soviet_bunker)
+"gI" = (
+/obj/structure/sign/warning/secure_area/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/soviet_bunker)
+"hR" = (
+/obj/structure/lattice,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"ie" = (
+/obj/structure/punji_sticks/spikes,
+/obj/effect/mob_spawn/corpse/human{
+	mob_species = /datum/species/skeleton
+	},
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"ih" = (
+/turf/template_noop,
+/area/template_noop)
+"iN" = (
+/obj/structure/bed,
+/obj/effect/spawner/random/mil_surplus/clothing,
+/obj/effect/spawner/random/mil_surplus/clothing,
+/obj/item/bedsheet/grey,
+/obj/machinery/status_display/random_message/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"jZ" = (
+/obj/item/stack/ore/iron,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"kc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/mob_spawn/corpse/human{
+	mob_species = /datum/species/skeleton
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"ks" = (
+/obj/structure/chair/stool/directional/west,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"kO" = (
+/obj/structure/sign/warning/secure_area/directional/south,
+/turf/closed/mineral/random,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"le" = (
+/obj/effect/mob_spawn/corpse/human/assistant/brainrot_infection,
+/turf/closed/mineral/random/high_chance,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"ll" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/power/smes/full{
+	output_level = 200000
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"lr" = (
+/obj/structure/table,
+/obj/item/reagent_containers/cup/glass/bottle/vodka{
+	pixel_x = -7;
+	pixel_y = 14
+	},
+/obj/effect/spawner/random/medical/minor_healing,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"md" = (
+/obj/structure/sign/warning/electric_shock/directional/west,
+/obj/effect/mob_spawn/corpse/human{
+	mob_species = /datum/species/skeleton
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"mw" = (
+/obj/structure/rack,
+/obj/item/geiger_counter,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"nc" = (
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"np" = (
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"nB" = (
+/obj/structure/punji_sticks/spikes,
+/obj/effect/decal/cleanable/blood/old,
+/obj/item/bodypart/arm/right/skeleton{
+	pixel_x = -13;
+	pixel_y = 5
+	},
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"nG" = (
+/obj/effect/turf_decal/stripes{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"nN" = (
+/obj/structure/chair/stool/directional/north,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"nP" = (
+/obj/structure/rack,
+/obj/item/weldingtool/largetank{
+	pixel_x = -4;
+	pixel_y = 7
+	},
+/obj/item/weldingtool/largetank,
+/obj/item/weldingtool/largetank{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/machinery/light/small/dim/directional/south,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"oa" = (
+/obj/item/mail/junkmail,
+/turf/closed/indestructible/opshuttle,
+/area/ruin/space/has_grav/soviet_bunker)
+"op" = (
+/obj/effect/decal/cleanable/blood/gibs/old,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"oW" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/obj/structure/closet/crate,
+/obj/item/storage/belt/bandolier{
+	pixel_x = 8
+	},
+/obj/item/storage/belt/bandolier,
+/obj/item/storage/belt/bandolier{
+	pixel_x = -8
+	},
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/ruin/space/has_grav/soviet_bunker)
+"pj" = (
+/mob/living/basic/trooper/russian/soviet,
+/obj/structure/sign/poster/contraband/communist_state/directional/north,
+/obj/machinery/light/small/dim/directional/north,
+/obj/structure/chair/stool/directional/south,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/soviet_bunker)
+"pr" = (
+/mob/living/basic/trooper/russian/soviet/ranged,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"pv" = (
+/obj/item/bear_armor{
+	pixel_x = -2;
+	pixel_y = 6
+	},
+/obj/item/bear_armor,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/contraband/communist_state/directional/north,
+/obj/structure/closet/crate/large,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"pU" = (
+/obj/structure/bed,
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/east,
+/obj/item/bedsheet/grey,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"qa" = (
+/obj/item/gps/spaceruin{
+	pixel_x = -6;
+	pixel_y = 14
+	},
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"qu" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating/reinforced,
+/area/ruin/space/has_grav/soviet_bunker)
+"ri" = (
+/obj/structure/sign/warning/secure_area/directional/north,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"rr" = (
+/obj/machinery/light/small/dim/directional/south,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"rB" = (
+/mob/living/basic/bear/russian,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"rL" = (
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/north,
+/obj/structure/table,
+/obj/effect/spawner/random/mil_surplus/clothing,
+/obj/effect/spawner/random/mil_surplus/armour,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"rN" = (
+/obj/structure/closet/crate/preopen,
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
+/obj/item/extinguisher/mini{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/effect/spawner/random/mil_surplus/clothing,
+/obj/effect/spawner/random/mil_surplus/gadgets,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"rT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"rY" = (
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"se" = (
+/obj/effect/baseturf_helper/asteroid,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"sp" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/obj/machinery/duct,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/ruin/space/has_grav/soviet_bunker)
+"sD" = (
+/obj/machinery/duct,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"sL" = (
+/obj/machinery/status_display/random_message/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"sS" = (
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"tr" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"tJ" = (
+/obj/machinery/door/airlock/vault,
+/obj/structure/fans/tiny/invisible,
+/obj/effect/mapping_helpers/airlock/access/all/away/generic4,
+/obj/effect/mapping_helpers/airlock/access/all/away/security,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"ub" = (
+/obj/structure/cable,
+/obj/structure/rack,
+/obj/item/stack/cable_coil/thirty{
+	pixel_y = -6
+	},
+/obj/item/wirecutters{
+	pixel_y = 7
+	},
+/obj/item/clothing/gloves/color/yellow,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"uv" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/emergency/old{
+	pixel_x = 3;
+	pixel_y = 9
+	},
+/obj/item/storage/toolbox/ammobox/strilka310/really_rusty,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"uQ" = (
+/obj/effect/spawner/structure/electrified_grille,
+/turf/open/floor/plating/rust,
+/area/ruin/space/has_grav/soviet_bunker)
+"vu" = (
+/obj/effect/mine/shrapnel,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"wz" = (
+/obj/structure/reagent_dispensers/fueltank/large{
+	anchored = 1
+	},
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"wP" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"xa" = (
+/obj/structure/closet/crate/cardboard,
+/obj/item/wirecutters,
+/obj/item/wrench,
+/obj/machinery/status_display/random_message/directional/south,
+/obj/machinery/light/small/dim/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"xc" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"xl" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"xH" = (
+/mob/living/basic/trooper/russian/soviet,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"xJ" = (
+/obj/effect/mine/shrapnel,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"yB" = (
+/obj/machinery/status_display/random_message/directional/north,
+/obj/structure/chair/stool/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"yH" = (
+/obj/structure/lattice,
+/obj/item/stack/sheet/mineral/wood{
+	amount = 3
+	},
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"yL" = (
+/obj/machinery/light/small/broken/directional/west,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"yP" = (
+/obj/structure/sign/warning/electric_shock/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/sheet/mineral/wood{
+	amount = 3
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Ab" = (
+/obj/structure/chair/stool/directional/west,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"Aq" = (
+/obj/structure/table,
+/obj/item/gun_maintenance_supplies{
+	pixel_x = -11;
+	pixel_y = 8
+	},
+/obj/item/gun_maintenance_supplies{
+	pixel_x = -7;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/cup/glass/mug{
+	pixel_x = 9
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ar" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/components/tank/oxygen{
+	dir = 8;
+	piping_layer = 2
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Az" = (
+/obj/effect/spawner/random/mil_surplus/clothing{
+	spawn_loot_chance = 50
+	},
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"AH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/gibs/old{
+	pixel_x = 1;
+	pixel_y = 13
+	},
+/obj/item/bodypart/chest/skeleton/nonfunctional{
+	pixel_x = -8;
+	pixel_y = 8
+	},
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"AI" = (
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"AP" = (
+/obj/structure/table,
+/obj/item/food/rationpack{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/food/rationpack{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Bb" = (
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/structure/punji_sticks/spikes,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Ch" = (
+/obj/structure/bed,
+/obj/structure/sign/poster/contraband/communist_state/directional/east,
+/obj/item/bedsheet/grey,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"CD" = (
+/obj/structure/sign/poster/contraband/communist_state/directional/west,
+/mob/living/basic/trooper/russian/soviet/ranged,
+/obj/structure/chair/stool/directional/east,
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"CN" = (
+/mob/living/basic/trooper/russian/soviet,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"Dr" = (
+/obj/machinery/atmospherics/components/tank/oxygen{
+	dir = 8;
+	piping_layer = 2
+	},
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ds" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/sign/poster/contraband/communist_state/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Du" = (
+/obj/structure/barricade/wooden,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"DI" = (
+/mob/living/basic/bear/russian,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"DX" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Ea" = (
+/obj/item/gun/ballistic/rifle/boltaction{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/item/ammo_box/speedloader/strilka310{
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/structure/closet/crate/wooden,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ei" = (
+/obj/item/trash/flare,
+/obj/structure/punji_sticks/spikes,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Ej" = (
+/obj/effect/baseturf_helper/asteroid,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"EF" = (
+/obj/structure/barricade/wooden,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"ER" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"EY" = (
+/obj/item/stack/ore/iron{
+	pixel_y = 5;
+	pixel_x = 4
+	},
+/obj/item/t_scanner/adv_mining_scanner/lesser{
+	pixel_x = -9;
+	pixel_y = -2
+	},
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"FE" = (
+/obj/machinery/status_display/random_message/directional/west,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"FZ" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Gf" = (
+/turf/closed/mineral/random/high_chance,
+/area/space/nearstation)
+"Gy" = (
+/obj/item/reagent_containers/cup/bucket/wooden{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"GG" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/power/port_gen/pacman/pre_loaded,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Hp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Hr" = (
+/obj/structure/bed/maint,
+/obj/item/trash/semki,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Hu" = (
+/obj/item/holochip{
+	credits = 1
+	},
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"HN" = (
+/obj/structure/barricade/sandbags,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ij" = (
+/obj/structure/table,
+/obj/item/storage/medkit/ancient,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ip" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/obj/machinery/duct,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ir" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"IA" = (
+/obj/structure/sign/warning/gas_mask/directional/east,
+/obj/machinery/light/small/dim/directional/east,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"IL" = (
+/mob/living/basic/carp,
+/turf/template_noop,
+/area/template_noop)
+"IR" = (
+/obj/structure/lattice,
+/turf/closed/mineral/random,
+/area/space/nearstation)
+"IT" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ji" = (
+/obj/structure/bed,
+/obj/effect/spawner/random/mil_surplus/armour,
+/obj/structure/sign/poster/contraband/pharlap/directional/east,
+/obj/item/bedsheet/grey,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Jj" = (
+/obj/structure/tank_holder/extinguisher,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"JU" = (
+/obj/structure/sign/warning/gas_mask/directional/west,
+/obj/structure/punji_sticks/spikes,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/broken/directional/south,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"JW" = (
+/obj/structure/closet/crate,
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/crowbar/hammer{
+	name = "notched hammer";
+	desc = "It's a heavy hammer with a pry bar on the back of its head. It has tally marks carved into its handle, 17 of them."
+	},
+/obj/item/relic{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"JZ" = (
+/obj/structure/lattice,
+/obj/item/stack/ore/iron{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"Lh" = (
+/obj/effect/spawner/structure/electrified_grille,
+/obj/effect/spawner/structure/electrified_grille,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Lr" = (
+/turf/closed/mineral/random,
+/area/space/nearstation)
+"Lw" = (
+/obj/structure/sign/poster/contraband/revolver/directional/north,
+/mob/living/basic/trooper/russian/soviet/ranged,
+/obj/effect/spawner/random/mil_surplus{
+	spawn_loot_chance = 60;
+	spawn_loot_count = 2
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"LH" = (
+/obj/structure/frame/machine/secured,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"LL" = (
+/obj/item/stack/ore/silver,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"Mo" = (
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Mp" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/west,
+/obj/item/bedsheet/grey{
+	dir = 4
+	},
+/obj/item/ammo_casing/strilka310{
+	pixel_x = -2;
+	pixel_y = -4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"ME" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/structure/sign/poster/contraband/communist_state/directional/west,
+/obj/structure/sign/poster/ripped/directional/north,
+/obj/item/food/rationpack{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/obj/item/bedsheet/grey{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Nd" = (
+/obj/item/trash/ready_donk{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"Ng" = (
+/obj/item/holochip{
+	credits = 1
+	},
+/turf/template_noop,
+/area/template_noop)
+"Nm" = (
+/turf/closed/mineral/random,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"No" = (
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/north,
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ny" = (
+/obj/structure/fluff/sat_dish{
+	pixel_x = 17;
+	dir = 8;
+	pixel_y = -8
+	},
+/turf/template_noop,
+/area/template_noop)
+"NF" = (
+/obj/structure/sign/warning/rad_shelter/directional/west,
+/obj/structure/punji_sticks/spikes,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/broken/directional/north,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"NO" = (
+/obj/effect/spawner/structure/electrified_grille,
+/obj/effect/spawner/structure/window/reinforced/tinted,
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"OF" = (
+/obj/structure/sign/warning/electric_shock/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/cable,
+/obj/machinery/power/rtg/advanced{
+	power_gen = 12000
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"ON" = (
+/obj/structure/lattice,
+/obj/item/stack/ore/glass,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"Pp" = (
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/effect/mob_spawn/corpse/human{
+	mob_species = /datum/species/skeleton
+	},
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Pv" = (
+/obj/item/mail/junkmail,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/mob_spawn/corpse/human/postman,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"PJ" = (
+/mob/living/basic/trooper/russian/soviet/ranged,
+/obj/machinery/light/small/dim/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"PM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"PQ" = (
+/obj/structure/closet/crate/cardboard,
+/obj/effect/decal/cleanable/blood/oil/slippery,
+/obj/item/storage/box/stockparts/basic,
+/obj/item/electronics/apc{
+	pixel_y = -6
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"PW" = (
+/obj/effect/mob_spawn/corpse/human/miner/explorer,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"PX" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Qq" = (
+/obj/structure/closet/crate/coffin,
+/obj/effect/spawner/random/mil_surplus/ammo/strilka310/box{
+	spawn_loot_chance = 40
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Qv" = (
+/obj/effect/mapping_helpers/bombable_wall,
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/soviet_bunker)
+"Qy" = (
+/obj/effect/decal/hammerandsickle{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"QH" = (
+/obj/item/soap,
+/obj/machinery/duct,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"Rg" = (
+/obj/item/stack/ore/glass,
+/turf/open/misc/asteroid/dug,
+/area/space/nearstation)
+"Rh" = (
+/obj/item/pickaxe/drill,
+/obj/effect/mob_spawn/corpse/human/skeleton,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"Rn" = (
+/obj/effect/turf_decal/stripes{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/full_charge,
+/obj/effect/mapping_helpers/apc/unlocked,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Rt" = (
+/obj/item/food/deadmouse/moldy,
+/obj/effect/spawner/structure/electrified_grille,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"RC" = (
+/obj/machinery/door/airlock/vault,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/obj/machinery/duct,
+/obj/effect/mapping_helpers/airlock/access/all/away/generic4,
+/obj/effect/mapping_helpers/airlock/access/all/away/security,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/ruin/space/has_grav/soviet_bunker)
+"Sx" = (
+/obj/structure/sink/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"SJ" = (
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"SL" = (
+/obj/structure/closet/crate/cardboard,
+/obj/item/storage/box/emergencytank{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/obj/item/storage/box/emptysandbags{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ti" = (
+/obj/structure/mop_bucket,
+/obj/item/mop,
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Tj" = (
+/obj/effect/mapping_helpers/bombable_wall,
+/obj/structure/fans/tiny/invisible,
+/turf/closed/indestructible/opshuttle,
+/area/ruin/space/has_grav/soviet_bunker)
+"To" = (
+/turf/closed/indestructible/opshuttle,
+/area/ruin/space/has_grav/soviet_bunker)
+"TK" = (
+/obj/structure/barricade/sandbags,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"UM" = (
+/obj/structure/girder/reinforced,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"UQ" = (
+/obj/structure/table,
+/obj/item/ammo_box/speedloader/strilka310/degraded{
+	pixel_y = 7;
+	pixel_x = 1
+	},
+/obj/item/ammo_box/speedloader/strilka310/degraded,
+/obj/item/ammo_casing/strilka310/degraded{
+	pixel_x = -10;
+	pixel_y = 6
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Vb" = (
+/obj/effect/mob_spawn/corpse/human/skeleton,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"Ve" = (
+/obj/structure/closet/crate/secure/plasma{
+	req_access = list("unobtainable")
+	},
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Vx" = (
+/obj/structure/lattice,
+/turf/template_noop,
+/area/space/nearstation)
+"VJ" = (
+/obj/structure/table,
+/obj/item/food/rationpack{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/toy/cards/deck{
+	pixel_y = -3
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Wa" = (
+/obj/structure/girder/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"Wp" = (
+/obj/structure/sign/warning/secure_area/directional/east,
+/obj/machinery/status_display/random_message/directional/north,
+/obj/structure/filingcabinet,
+/obj/item/folder,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/soviet_bunker)
+"WT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"WX" = (
+/obj/structure/closet/crate/coffin,
+/obj/effect/mob_spawn/corpse/human/soviet,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"XH" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"XQ" = (
+/obj/structure/closet/crate/coffin,
+/obj/item/food/rationpack{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/obj/item/food/rationpack{
+	pixel_y = -1
+	},
+/obj/item/food/rationpack{
+	pixel_y = -4;
+	pixel_x = 10
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Ys" = (
+/mob/living/basic/trooper/russian/soviet/ranged,
+/obj/machinery/status_display/random_message/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"YH" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -5;
+	pixel_y = 9
+	},
+/obj/item/multitool{
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/obj/effect/mob_spawn/corpse/human/pirate/ranged/space,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
+"YL" = (
+/obj/structure/table,
+/obj/item/clipboard{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/obj/item/pen,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"YM" = (
+/obj/structure/girder/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker)
+"Zb" = (
+/obj/structure/sign/warning/rad_shelter/directional/east,
+/obj/machinery/light/small/dim/directional/east,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"Zk" = (
+/obj/effect/mob_spawn/corpse/human/soviet/armoured,
+/obj/structure/closet/crate/coffin,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/east,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/soviet_bunker)
+"Zq" = (
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/structure/sign/poster/ripped/directional/west,
+/obj/item/bedsheet/grey{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/soviet_bunker)
+"Zv" = (
+/mob/living/basic/trooper/russian/soviet,
+/obj/structure/sign/poster/contraband/soviet_propaganda/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/soviet_bunker)
+"Zz" = (
+/mob/living/basic/bear/russian,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+"ZW" = (
+/obj/structure/chair/stool/directional/west,
+/obj/machinery/status_display/random_message/directional/south,
+/turf/open/floor/mineral/titanium/tiled,
+/area/ruin/space/has_grav/soviet_bunker)
+
+(1,1,1) = {"
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+nc
+Lr
+Lr
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+"}
+(2,1,1) = {"
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+Lr
+ih
+ih
+ih
+ih
+Ny
+ih
+ih
+ih
+ih
+ih
+nc
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+ih
+ih
+"}
+(3,1,1) = {"
+ih
+ih
+ih
+ih
+ih
+nc
+nc
+nc
+nc
+nc
+ih
+ih
+ih
+Lr
+nc
+Lr
+ih
+ih
+Vx
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+nc
+nc
+ih
+ih
+ih
+ih
+ih
+ih
+"}
+(4,1,1) = {"
+ih
+ih
+ih
+nc
+nc
+nc
+nc
+nc
+nc
+nc
+jZ
+Lr
+Lr
+Lr
+Lr
+Lr
+nc
+Lr
+IR
+Lr
+Ng
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+"}
+(5,1,1) = {"
+ih
+ih
+Lr
+nc
+jZ
+Lr
+nc
+nc
+Lr
+Lr
+Lr
+Gf
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+IR
+Lr
+Lr
+Lr
+Lr
+Lr
+nc
+nc
+ih
+ih
+ih
+ih
+Lr
+Lr
+ih
+ih
+"}
+(6,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Gf
+Lr
+Lr
+Lr
+Lr
+IR
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+nc
+nc
+nc
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+"}
+(7,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+ih
+"}
+(8,1,1) = {"
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+eL
+eL
+eL
+eL
+eL
+eL
+eL
+eL
+eL
+eL
+eL
+Lh
+dU
+Lr
+Lr
+Lr
+Lr
+Gf
+Lr
+Lr
+ih
+ih
+ih
+ih
+"}
+(9,1,1) = {"
+ih
+Lr
+Lr
+Lr
+Lr
+dU
+dU
+dU
+dU
+eL
+To
+To
+Tj
+To
+To
+To
+To
+To
+To
+To
+To
+eL
+dU
+dU
+dU
+dU
+dU
+Lr
+nc
+ih
+ih
+ih
+ih
+ih
+"}
+(10,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+dU
+eL
+eL
+eL
+eL
+To
+ME
+eY
+Zq
+Mp
+dn
+Ir
+mw
+fE
+YL
+To
+eL
+eL
+eL
+eL
+eL
+dU
+Lr
+nc
+nc
+ih
+ih
+ih
+ih
+"}
+(11,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+dU
+eL
+To
+To
+To
+To
+Lw
+sS
+gp
+xl
+WT
+WT
+WT
+ks
+ZW
+To
+To
+To
+To
+To
+eL
+dU
+Lr
+Lr
+nc
+nc
+ih
+ih
+ih
+"}
+(12,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+dU
+eL
+To
+pv
+cl
+To
+iN
+Ji
+Ch
+pU
+JW
+Ir
+xH
+WT
+Gy
+To
+WX
+cf
+dN
+To
+eL
+dU
+Lr
+Lr
+Lr
+nc
+nc
+ih
+ih
+"}
+(13,1,1) = {"
+ih
+nc
+Lr
+Lr
+Lr
+dU
+eL
+To
+rN
+Az
+oa
+oa
+To
+To
+To
+To
+To
+gj
+HN
+sS
+Ir
+Mo
+Mo
+Qq
+To
+eL
+dU
+Lr
+Lr
+nc
+nc
+ih
+ih
+ih
+"}
+(14,1,1) = {"
+ih
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+To
+uv
+XH
+Ir
+VJ
+lr
+CD
+XH
+FE
+Ir
+XH
+WT
+sS
+AI
+Mo
+XQ
+Zk
+To
+eL
+dU
+Lr
+Lr
+Hu
+ih
+ih
+ih
+ih
+"}
+(15,1,1) = {"
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+To
+Ij
+sS
+sS
+Ab
+Ab
+ER
+ER
+ER
+sS
+sS
+WT
+sS
+nG
+Ti
+Ir
+To
+To
+eL
+dU
+Lr
+Lr
+nc
+ih
+IL
+ih
+ih
+"}
+(16,1,1) = {"
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+Rt
+To
+rL
+sS
+xl
+WT
+WT
+Zz
+WT
+WT
+WT
+WT
+WT
+wP
+sS
+ER
+XH
+To
+eL
+eL
+dU
+Lr
+Lr
+bR
+ih
+ih
+ih
+ih
+"}
+(17,1,1) = {"
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+To
+PQ
+sS
+pr
+ER
+sS
+IT
+sS
+ER
+pr
+sS
+WT
+WT
+WT
+ER
+PJ
+To
+eL
+dU
+dU
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+"}
+(18,1,1) = {"
+Lr
+nc
+Gf
+Lr
+Lr
+dU
+eL
+To
+Ve
+XH
+TK
+xc
+sS
+Ej
+sS
+xc
+TK
+UQ
+nN
+sS
+WT
+ER
+Ys
+To
+eL
+dU
+Lr
+Lr
+Lr
+nc
+ih
+ih
+ih
+ih
+"}
+(19,1,1) = {"
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+To
+GG
+Rn
+To
+xH
+sS
+sS
+sS
+xH
+To
+Aq
+nN
+sS
+WT
+ER
+Ds
+To
+eL
+dU
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+"}
+(20,1,1) = {"
+ih
+nc
+nc
+jZ
+Lr
+dU
+eL
+To
+OF
+rr
+To
+yB
+sS
+Qy
+sS
+sL
+To
+Sx
+QH
+sD
+Ip
+CN
+xa
+To
+eL
+dU
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+"}
+(21,1,1) = {"
+ih
+nc
+Lr
+nc
+nc
+dU
+uQ
+To
+ll
+ub
+To
+No
+IA
+sS
+Zb
+Ir
+To
+ed
+bL
+rB
+Ip
+Jj
+AP
+To
+eL
+dU
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+ih
+"}
+(22,1,1) = {"
+ih
+Lr
+Lr
+gD
+Rh
+Qv
+uQ
+To
+To
+NO
+To
+To
+To
+tJ
+To
+To
+To
+To
+To
+fZ
+Ip
+Ir
+To
+To
+eL
+dU
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+ih
+"}
+(23,1,1) = {"
+ih
+Lr
+Lr
+Lr
+EY
+dU
+uQ
+Lh
+eL
+eL
+eL
+dU
+NF
+xJ
+JU
+dU
+eL
+eL
+To
+pj
+Ip
+Zv
+To
+eL
+eL
+dU
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+"}
+(24,1,1) = {"
+Lr
+Lr
+Lr
+Lr
+Gf
+dU
+dU
+dU
+eL
+dU
+dU
+dU
+Qv
+bm
+dU
+dU
+dU
+eL
+To
+Wp
+Ip
+gI
+To
+eL
+dU
+dU
+Lr
+nc
+Lr
+Lr
+nc
+ih
+ih
+ih
+"}
+(25,1,1) = {"
+ih
+Lr
+Lr
+Lr
+Gf
+Lr
+Lr
+dU
+eL
+dU
+co
+le
+SJ
+YH
+Nm
+kO
+dU
+eL
+To
+To
+RC
+To
+To
+eL
+dU
+Lr
+Lr
+nc
+Lr
+Lr
+nc
+ih
+ih
+ih
+"}
+(26,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+dU
+Nm
+Nm
+Nm
+SJ
+SJ
+Nm
+dU
+eL
+To
+SL
+sp
+wz
+To
+eL
+dU
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Hu
+ih
+ih
+"}
+(27,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+dU
+Du
+AH
+dB
+SJ
+vu
+Nm
+dU
+eL
+To
+Ea
+sp
+nP
+To
+eL
+Dr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+ih
+"}
+(28,1,1) = {"
+ih
+ih
+Lr
+Gf
+Lr
+Lr
+Lr
+dU
+eL
+dU
+ie
+SJ
+SJ
+DI
+Nm
+Nm
+dU
+eL
+To
+gF
+sp
+oW
+To
+eL
+Dr
+Lr
+Lr
+Gf
+nc
+Lr
+Lr
+Lr
+Lr
+ih
+"}
+(29,1,1) = {"
+ih
+ih
+Lr
+Gf
+Gf
+Lr
+Lr
+dU
+eL
+dU
+Nm
+op
+Pp
+Nm
+Nm
+Nm
+dU
+eL
+To
+cd
+qu
+Ar
+To
+eL
+dU
+Lr
+nc
+nc
+nc
+Vb
+Gf
+Lr
+Lr
+ih
+"}
+(30,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+dU
+SJ
+se
+Nm
+Nm
+Nm
+Bb
+dU
+eL
+To
+To
+To
+To
+To
+eL
+dU
+Lr
+Gf
+Vb
+cC
+nc
+nc
+Lr
+Lr
+Lr
+"}
+(31,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+dU
+nB
+SJ
+Nm
+Nm
+Pv
+qa
+dU
+eL
+eL
+eL
+eL
+eL
+eL
+eL
+dU
+Lr
+Gf
+nc
+nc
+nc
+nc
+Gf
+Lr
+Lr
+"}
+(32,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+dU
+Nm
+SJ
+SJ
+SJ
+SJ
+SJ
+dU
+eL
+dU
+dU
+dU
+dU
+dU
+dU
+dU
+Lr
+Lr
+Gf
+nc
+nc
+Gf
+Lr
+Lr
+Lr
+"}
+(33,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+dU
+Ei
+SJ
+vu
+Nm
+Nm
+Nm
+dU
+eL
+dU
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+nc
+PW
+jZ
+nc
+Lr
+Lr
+Lr
+ih
+"}
+(34,1,1) = {"
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+dU
+eL
+dU
+ri
+DX
+Nm
+Nm
+Nm
+kO
+dU
+eL
+dU
+Lr
+nc
+nc
+Lr
+Lr
+Gf
+nc
+nc
+Lr
+Gf
+Lr
+Lr
+Lr
+Lr
+ih
+"}
+(35,1,1) = {"
+ih
+Lr
+Lr
+Lr
+Lr
+nc
+Lr
+dU
+dU
+dU
+FZ
+Wa
+rY
+rY
+UM
+rY
+dU
+dU
+YM
+ih
+ih
+ih
+ih
+nc
+LL
+Gf
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+"}
+(36,1,1) = {"
+ih
+Lr
+Lr
+Gf
+nc
+nc
+ON
+Hp
+md
+np
+PM
+do
+LH
+EF
+Hr
+yL
+np
+yP
+tr
+Vx
+ih
+ih
+ih
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Gf
+Gf
+ih
+ih
+ih
+"}
+(37,1,1) = {"
+ih
+Lr
+Lr
+Rg
+nc
+ih
+nc
+yH
+rT
+rT
+np
+np
+kc
+np
+np
+rT
+PM
+Hp
+np
+hR
+ih
+ih
+ih
+ih
+ih
+nc
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+"}
+(38,1,1) = {"
+ih
+ih
+Lr
+Lr
+Hu
+ih
+ih
+hR
+PX
+rY
+rY
+rY
+rY
+rY
+rY
+rY
+rY
+rY
+JZ
+nc
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+"}
+(39,1,1) = {"
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+Vx
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+Nd
+nc
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+"}
+(40,1,1) = {"
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+Vx
+ih
+ih
+Lr
+Lr
+Lr
+Lr
+Lr
+Lr
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+"}

@@ -161,35 +161,23 @@
 	desc = "Often referred to as the \"elder atmosian\" award, this medal is awarded to the exemplary scientists and technicians who push the boundaries and demonstrate mastery of atmospherics."
 	icon_state = "elderatmosian"
 
-/obj/item/clothing/accessory/medal/antique
+/obj/item/clothing/accessory/antique_medal
+	name = "antique medal"
+	desc = "An old medal made from cheap metal. It's probably worthless."
+	icon_state = "iron"
+
+/obj/item/clothing/accessory/antique_medal/bronze
 	name = "bronze medal of service"
-	desc = "A medal handed out to soldiers in the army if they survive a couple of years without messing up too badly."
-	//military rank that gives out this medal
-	var/issued_by_rank = "Grand Major"
+	desc = "An old medal made out of bronze. It's probbly worth something."
+	icon_state = "bronze_alt"
+	worn_icon_state = "bronze"
 
-/obj/item/clothing/accessory/medal/antique/Initialize(mapload)
-	. = ..()
-	if(!commendation_message)
-		commendation_message = pick(list(
-			"For Honorable Service.",
-			"For Remaining Stalwart.",
-			"For Great Bravery.",
-			"For Stepping Up.",
-			"For Adequate Participation.",
-		))
-	if(!awarded_to)
-		awarded_to = "[pick(GLOB.first_names)] [pick(GLOB.last_names)]"
-	if(!awarder)
-		awarder = "[issued_by_rank] [pick(GLOB.last_names)]"
-
-/obj/item/clothing/accessory/medal/antique/silver
+/obj/item/clothing/accessory/antique_medal/silver
 	name = "silver cross of exceptional service"
-	desc = "A valuable medal handed out by TerraGov generals to soldiers that really impress them."
-	issued_by_rank = "General"
+	desc = "An old medal made out of silver. It's probably pretty valuable."
 	icon_state = "silver"
 
-/obj/item/clothing/accessory/medal/antique/gold
+/obj/item/clothing/accessory/antique_medal/gold
 	name = "gold medal of heroic service"
-	desc = "A very valuable medal. It bears the insignia of TerraGov and was personally awarded by a sitting president to a soldier for acts of exceptional heroism."
-	issued_by_rank = "President"
-	icon_state = "gold"
+	desc = "An old medal made out of gold. It's probably worth a lot of money."
+	icon_state = "gold_alt"

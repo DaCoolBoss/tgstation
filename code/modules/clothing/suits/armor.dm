@@ -597,11 +597,12 @@
 	inhand_icon_state = null
 	armor_type = /datum/armor/vest_russian
 	dog_fashion = null
+	body_parts_covered = CHEST|GROIN
 
 /datum/armor/vest_russian
-	melee = 25
-	bullet = 30
-	energy = 10
+	melee = 30
+	bullet = 40
+	laser = 10
 	bomb = 10
 	fire = 20
 	acid = 50
@@ -612,18 +613,18 @@
 	desc = "Used in extremely cold fronts, made out of real bears."
 	icon_state = "rus_coat"
 	inhand_icon_state = null
-	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	cold_protection = CHEST|GROIN|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	armor_type = /datum/armor/vest_russian_coat
 	dog_fashion = null
 
 /datum/armor/vest_russian_coat
-	melee = 25
-	bullet = 20
-	laser = 20
+	melee = 30
+	bullet = 10
+	laser = 10
 	energy = 30
-	bomb = 20
+	bomb = 25
 	bio = 50
 	fire = -10
 	acid = 50
@@ -709,7 +710,7 @@
 
 /obj/item/clothing/suit/armor/vest/army
 	name = "space army chestplate"
-	desc = "A green set of reinforced polymer plates."
+	desc = "A wearable set of reinforced polymer plates. Good at protecting your body from projectiles."
 	icon_state = "army-green"
 	inhand_icon_state = "army-green"
 	dog_fashion = null
@@ -722,10 +723,10 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /datum/armor/space_army_light
-	melee = 25
-	bullet = 40
+	melee = 15
+	bullet = 35
 	laser = 40
-	energy = 35
+	energy = 20
 	bomb = 50
 	fire = 40
 	acid = 50

@@ -19,38 +19,76 @@
 	corpse = /obj/effect/mob_spawn/corpse/human/russian
 	loot = list(/obj/item/knife/combat/survival)
 
-/mob/living/basic/trooper/russian/soviet
-	name = "Soviet Mobster"
-	desc = "For the motherland!"
-	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian
-	r_hand = /obj/item/knife/combat/survival
-	corpse = /obj/effect/mob_spawn/corpse/human/russian
-	loot = list(/obj/item/knife/combat/survival)
-
 /mob/living/basic/trooper/russian/armoured
-	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian
-	corpse = /obj/effect/mob_spawn/corpse/human/russian
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/armoured
+	corpse = /obj/effect/mob_spawn/corpse/human/russian/armoured
 
 
 /mob/living/basic/trooper/russian/ranged
+	name = "Russian Soldier"
+	speed = 1.05
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/armoured
+	r_hand = /obj/item/gun/ballistic/rifle/boltaction/surplus
+	corpse = /obj/effect/mob_spawn/corpse/human/russian/armoured
+	var/casingtype = /obj/item/ammo_casing/strilka310/degraded
+	var/projectilesound = 'sound/items/weapons/gun/rifle/shot_heavy.ogg'
+	var/shoot_cooldown = 2 SECONDS
+
+/mob/living/basic/trooper/russian/ranged/ranged/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/ranged_attacks, casing_type = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
+
+/mob/living/basic/trooper/russian/ranged/no_weapon_drop
+	loot = null
 
 /mob/living/basic/trooper/russian/ranged/elite
+	name = "Russian Officer"
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
-	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/ranged
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/elite
 	r_hand = /obj/item/gun/ballistic/automatic/pistol
-	corpse = /obj/effect/mob_spawn/corpse/human/russian/ranged
+	corpse = /obj/effect/mob_spawn/corpse/human/russian/elite
 	loot = list(/obj/item/gun/ballistic/revolver/nagant)
-	var/casingtype = /obj/item/ammo_casing/n762
-	var/projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
+	casingtype = /obj/item/ammo_casing/n762
+	projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
+	shoot_cooldown = 1 SECONDS
 
-/mob/living/basic/trooper/russian/ranged/elite/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/ranged_attacks, casing_type = casingtype, projectile_sound = projectilesound, cooldown_time = 1 SECONDS)
-
-/mob/living/basic/trooper/russian/ranged/lootless
+/mob/living/basic/trooper/russian/ranged/elite/no_weapon_drop
 	loot = null
 
 /mob/living/basic/trooper/russian/soviet
-	name = "Soviet Mobster"
-	desc = "For the Motherland!"
+	name = "Soviet Soldier"
+	desc = "For the motherland!"
+	speed = 1.15
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/soviet
+	r_hand = /obj/item/knife/kitchen
+	corpse = /obj/effect/mob_spawn/corpse/human/soviet
+	loot = list(/obj/item/knife/kitchen)
+
+/mob/living/basic/trooper/russian/soviet/ranged
+	speed = 1
+	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
+	r_hand = /obj/item/gun/ballistic/rifle/boltaction/surplus
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/soviet/armoured
+	corpse = /obj/effect/mob_spawn/corpse/human/soviet/armoured
+	var/casingtype = /obj/item/ammo_casing/strilka310/degraded
+	var/projectilesound = 'sound/items/weapons/gun/rifle/shot_heavy.ogg'
+	var/shoot_cooldown = 2 SECONDS
+
+/mob/living/basic/trooper/russian/ranged/ranged/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/ranged_attacks, casing_type = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
+
+
+/mob/living/basic/trooper/russian/soviet/ranged/elite
+	name = "Soviet Officer"
+	mob_spawner = /obj/effect/mob_spawn/corpse/human/soviet/officer
+	r_hand = /obj/item/gun/ballistic/automatic/pistol
+	corpse = /obj/effect/mob_spawn/corpse/human/soviet/officer
+	loot = list(/obj/item/gun/ballistic/revolver/nagant)
+	casingtype = /obj/item/ammo_casing/n762
+	projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
+	shoot_cooldown = 1 SECONDS
+
+/mob/living/basic/trooper/russian/soviet/ranged/elite/no_weapon_drop
+	loot = null

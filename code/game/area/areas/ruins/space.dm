@@ -785,3 +785,16 @@
 
 /area/ruin/space/has_grav/film_studio/starboard
 	name = "\improper Film Studio Starboard Wing"
+
+// Soviet bunker
+/area/ruin/space/has_grav/soviet_bunker
+	name = "\improper Совет Бункер П6-7Ж"
+	icon_state = "ks13"
+	airlock_wires = /datum/wires/airlock/ai
+	sound_environment = SOUND_AREA_TUNNEL_ENCLOSED
+	ambience_index = AMBIENCE_DANGER
+
+/area/ruin/space/has_grav/soviet_bunker/exterior
+	name = "Unexplored Location"
+	icon_state = "oldstation"
+	ambience_index = AMBIENCE_RUINS

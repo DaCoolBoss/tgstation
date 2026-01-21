@@ -514,6 +514,12 @@
 	name = "Space-Ruin Donk Co. Interstellar Trading Post 6016"
 	description = "A small station for trading ships to dock at. It's been abandoned for some time, but its security systems have kept looters away. Rumored to be haunted."
 
+/datum/map_template/ruin/space/soviet_vault
+	id = "soviet_vault"
+	suffix = "soviet_vault.dmm"
+	name = "Space-Ruin совет бункер п6-7ж"
+	description = "A long-lost bunker full of soviet soldiers, embedded in an asteroid. They subsist on preserved military rations, and keep intruders out by force."
+
 /datum/map_template/ruin/space/commsbuoy
 	id = "commsbuoy"
 	suffix = "commsbuoy_lowtech.dmm"

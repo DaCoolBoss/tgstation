@@ -179,12 +179,26 @@
 /datum/shuttle_loan_situation/russian_party/spawn_items(list/spawn_list, list/empty_shuttle_turfs, list/blocked_shutte_turfs)
 	var/datum/supply_pack/pack = SSshuttle.supply_packs[/datum/supply_pack/service/party]
 	pack.generate(pick_n_take(empty_shuttle_turfs))
+	for(var/counter in 1 to 7)
+		var/decal = pick(/obj/effect/decal/cleanable/blood,
+		/obj/effect/decal/cleanable/dirt,
+		/obj/effect/decal/cleanable/confetti,
+		)
+		new decal(pick_n_take(empty_shuttle_turfs))
 
-	spawn_list.Add(/mob/living/basic/trooper/russian)
-	spawn_list.Add(/mob/living/basic/trooper/russian/ranged) //drops a mateba
-	spawn_list.Add(/mob/living/basic/bear/russian)
-	if(prob(75))
-		spawn_list.Add(/mob/living/basic/trooper/russian)
+	for(var/counter in 1 to 3)
+		var/vodka_drop = /obj/item/reagent_containers/cup/glass/bottle/vodka
+		new vodka_drop(pick_n_take(empty_shuttle_turfs))
+	spawn_list.Add(/mob/living/basic/trooper/russian/armoured)
+	spawn_list.Add(/mob/living/basic/trooper/russian/ranged/elite) //drops a mateba
+	var/extra_muscle = pick(/mob/living/basic/trooper/russian,
+	/mob/living/basic/trooper/russian/armoured,
+	/mob/living/basic/trooper/russian/ranged,
+	)
+	if(prob(80))
+		spawn_list.Add(extra_muscle)
+	if(prob(80))
+		spawn_list.Add(extra_muscle)
 	if(prob(50))
 		spawn_list.Add(/mob/living/basic/bear/russian)
 

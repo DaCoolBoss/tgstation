@@ -27,35 +27,35 @@
 
 /obj/effect/spawner/random/mil_surplus/armour
 	name = "military surplus armour spawner"
-	desc = "Don't tell the privates, but all their gear comes from Space Temu."
+	desc = "A random piece of military-grade protective gear. It might save your life!"
 	icon_state = "bulletproof_armor"
 	loot = list(
-		/obj/item/clothing/suit/armor/vest/russian = 20,				//0.72
+		/obj/item/clothing/suit/armor/vest/russian = 20,
 		/obj/item/clothing/head/helmet/rus_helmet = 20,
+		/obj/item/clothing/head/helmet/rus_ushanka = 12,
+		/obj/item/clothing/suit/armor/vest/russian_coat = 12,
 		/obj/item/clothing/head/helmet/army = 8,
-		/obj/item/clothing/head/helmet/army/grey = 4,
-		/obj/item/clothing/suit/armor/vest/cuirass = 8,				//0.36
-		/obj/item/clothing/head/helmet/rus_ushanka = 12,				//
-		/obj/item/clothing/suit/armor/vest/russian_coat = 12,			//
-		/obj/item/clothing/suit/armor/vest/army = 8,						//
-		/obj/item/clothing/suit/armor/vest/army/grey = 3,
-		/obj/item/clothing/head/helmet/military = 5,					//
+		/obj/item/clothing/suit/armor/vest/alt = 8,
+		/obj/item/clothing/suit/armor/vest/army = 8,
+		/obj/item/clothing/head/helmet/military = 5,
 		/obj/item/clothing/suit/armor/vest/military = 5,
-		/obj/item/clothing/suit/armor/bulletproof = 3,					//
-		/obj/item/clothing/suit/armor/laserproof = 1,
+		/obj/item/clothing/head/helmet/army/grey = 4,
+		/obj/item/clothing/suit/armor/bulletproof = 3,
+		/obj/item/clothing/suit/armor/vest/army/grey = 3,
 		/obj/item/clothing/mask/ballistic = 1.9,
 		/obj/item/clothing/shoes/combat = 1.9,
-		/obj/item/clothing/suit/armor/vest/marine/pmc = 0.2
+		/obj/item/clothing/suit/armor/laserproof = 1,
+		/obj/item/clothing/suit/armor/vest/marine/pmc = 0.2,
 	)
 
 /obj/effect/spawner/random/mil_surplus/armour/double
 	name = "double military surplus armour spawner"
-	desc = "Spawns two matching bits of armour. Now you can share!"
+	desc = "Spawns two random bits of armour. Maybe they will match, maybe they won't."
 	spawn_loot_count = 2
 
 /obj/effect/spawner/random/mil_surplus/clothing
 	name = "military surplus clothing spawner"
-	desc = "Old military clothing. This might be from a punk's wardrobe."
+	desc = "Spawns a random bit of old military clothing."
 	icon_state = "syndicate"
 	loot = list(
 		/obj/effect/spawner/random/mil_surplus/clothing/camo = 20,		//0.74
@@ -83,7 +83,7 @@
 
 /obj/effect/spawner/random/mil_surplus/clothing/double
 	name = "double military surplus clothing spawner"
-	desc = "Spawns two of the same military surplus clothing item."
+	desc = "Spawns two military surplus clothing items. Perfect for filling a punk's wardrobe."
 	spawn_loot_count = 2
 
 /obj/effect/spawner/random/mil_surplus/clothing/camo
@@ -106,14 +106,14 @@
 		/obj/item/food/rationpack = 25,
 		/obj/item/clothing/gloves/tackler/combat = 10,
 		/obj/item/storage/belt/military/army = 8,
-		/obj/item/clothing/accessory/medal/antique = 5,
+		/obj/item/clothing/accessory/antique_medal/bronze = 5,
 		/obj/item/reagent_containers/cup/glass/flask = 5,
 		/obj/item/knife/combat = 2,
 		/obj/item/storage/belt/military/assault = 2,
 		/obj/item/spess_knife = 2,
 		/obj/item/grenade/frag/dusty = 2,
 		/obj/item/bear_armor = 2,
-		/obj/item/clothing/accessory/medal/antique/silver = 2,
+		/obj/item/clothing/accessory/antique_medal/silver = 2,
 		/obj/item/knife/combat/survival = 2,
 		/obj/item/trench_tool = 1,
 		/obj/item/spear/military = 1,
@@ -121,7 +121,8 @@
 		/obj/item/reagent_containers/cup/glass/flask = 1,
 		/obj/item/storage/box/emptysandbags = 1,
 		/obj/item/storage/belt/bandolier = 0.5,
-		/obj/item/clothing/accessory/medal/antique/gold = 0.4,
+		/obj/item/clothing/accessory/antique_medal/gold = 0.35,
+		/obj/item/melee/sabre/cavalry = 0.05,
 		/obj/item/book/granter/crafting_recipe/dusting/laser_musket_prime = 0.05,
 		/obj/item/book/granter/crafting_recipe/dusting/smoothbore_disabler_prime = 0.05,
 	)
@@ -182,7 +183,7 @@
 
 /obj/effect/spawner/random/mil_surplus/ammo/strilka310
 	name = "moist .310 Strilka bullet spawner"
-	desc = "Spawns a single, soggy Strilka round."
+	desc = "Spawns a single, soggy, Strilka round."
 	loot = list(
 		/obj/item/ammo_casing/strilka310/degraded = 70,
 		/obj/item/ammo_casing/strilka310 = 30,
@@ -193,8 +194,8 @@
 	desc = "Spawns a Strilka ammo box. Inspect for signs of rust before using."
 	loot = list(
 		/obj/item/storage/toolbox/ammobox/strilka310/rusty = 55,
-		/obj/item/storage/toolbox/ammobox/strilka310 = 35,
-		/obj/item/storage/toolbox/ammobox/strilka310/really_rusty = 10,
+		/obj/item/storage/toolbox/ammobox/strilka310 = 30,
+		/obj/item/storage/toolbox/ammobox/strilka310/really_rusty = 15,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip

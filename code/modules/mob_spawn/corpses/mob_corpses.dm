@@ -192,34 +192,63 @@
 	head = /obj/item/clothing/head/costume/bearpelt
 	gloves = /obj/item/clothing/gloves/color/black
 	mask = /obj/item/clothing/mask/gas/atmos/russian
+	//random stuff this outfit may have in pockets
+	var/pocket_loot = list(
+	/obj/item/tank/internals/emergency_oxygen = 25,
+	/obj/item/knife/shiv = 15,
+	/obj/item/tank/internals/emergency_oxygen/engi = 10,
+	/obj/effect/spawner/random/entertainment/cigarette = 5,
+	/obj/effect/spawner/random/entertainment/coin = 5,
+	/obj/effect/spawner/random/medical/minor_healing = 5,
+	/obj/effect/spawner/random/trash/food_packaging = 5,
+	/obj/item/knife/combat/survival = 5,
+	/obj/item/boxcutter = 3,
+	/obj/item/stack/spacecash/c20 = 3,
+	/obj/item/crowbar = 3,
+	/obj/item/stack/spacecash/c10 = 2,
+	/obj/item/lighter/greyscale = 2,
+	/obj/item/reagent_containers/cup/glass/bottle/small = 2,
+	/obj/item/flashlight/flare = 2,
+	/obj/effect/spawner/random/trash/crushed_can = 2,
+	/obj/item/reagent_containers/cup/glass/bottle/vodka = 1,
+	/obj/item/gas_filter = 1,
+	/obj/item/modular_computer/pda = 1,
+	/obj/item/food/grown/redbeet = 1,
+	/obj/item/flashlight = 1,
+	/obj/item/stack/spacecash/c50 = 1,
+	)
 
-/datum/outfit/russiancorpse/armour
-	name = "Russian Mobster (armour)"
+/datum/outfit/russiancorpse/pre_equip(mob/living/carbon/human/wearer, visuals_only = FALSE)
+	if(prob(20))
+		ears = /obj/item/radio/headset
+	if(prob(60))
+		l_pocket = pick_weight(pocket_loot)
+	if(prob(60))
+		r_pocket = pick_weight(pocket_loot)
+
+/obj/effect/mob_spawn/corpse/human/russian/armoured
+	name = "Russian Soldier"
+	outfit = /datum/outfit/russiancorpse/armoured
+
+/datum/outfit/russiancorpse/armoured
+	name = "Russian Soldier"
+	uniform = /obj/item/clothing/under/syndicate/rus_army
 	suit = /obj/item/clothing/suit/armor/vest/russian
 	head = /obj/item/clothing/head/helmet/rus_helmet
+	l_pocket = /obj/item/ammo_casing/strilka310/degraded //40% chance
 
-/obj/effect/mob_spawn/corpse/human/russian/ranged
-	name = "Russian Soldier"
-	outfit = /datum/outfit/russiancorpse/ranged
+/obj/effect/mob_spawn/corpse/human/russian/elite
+	outfit = /datum/outfit/russiancorpse/elite
 
-/datum/outfit/russiancorpse/ranged
-	name = "Russian Soldier"
-	head = /obj/item/clothing/head/helmet/rus_helmet
-	suit = /obj/item/clothing/suit/armor/vest/russian
-
-/obj/effect/mob_spawn/corpse/human/russian/ranged/elite
-	outfit = /datum/outfit/russiancorpse/ranged/elite
-
-/datum/outfit/russiancorpse/ranged/elite
-	name = "Russian Elite"
+/datum/outfit/russiancorpse/elite
+	name = "Russian Soldier (Elite)"
 	uniform = /obj/item/clothing/under/syndicate/camo
 	suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	ears = /obj/item/radio/headset
 	head = /obj/item/clothing/head/helmet/alt
-	mask = /obj/item/clothing/mask/balaclava
-
+	mask = /obj/item/clothing/mask/russian_balaclava
 
 /obj/effect/mob_spawn/corpse/human/russian/ranged/officer
 	name = "Russian Officer"
@@ -233,12 +262,49 @@
 	ears = /obj/item/radio/headset
 	head = /obj/item/clothing/head/costume/ushanka
 
+/obj/effect/mob_spawn/corpse/human/soviet
+	name = "Dead Soviet Mobster"
+	outfit = /datum/outfit/sovietcorpse
+
 /datum/outfit/sovietcorpse
 	name = "Soviet Mobster"
 	uniform = /obj/item/clothing/under/costume/soviet
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/costume/ushanka
 	gloves = /obj/item/clothing/gloves/color/black
+	mask = /obj/item/clothing/mask/gas/atmos/russian
+	var/pocket_loot = list(
+	/obj/item/tank/internals/emergency_oxygen = 40,
+	/obj/item/food/rationpack = 20,
+	/obj/item/tank/internals/emergency_oxygen/engi = 10,
+	/obj/item/geiger_counter = 15,
+	/obj/item/knife/combat/survival = 5,
+	/obj/item/reagent_containers/cup/glass/bottle/vodka = 5,
+	/obj/item/food/grown/redbeet = 5,
+	)
+
+/datum/outfit/sovietcorpse/pre_equip(mob/living/carbon/human/wearer, visuals_only = FALSE)
+	l_pocket = pick_weight(pocket_loot)
+	if(prob(50))
+		r_pocket = pick_weight(pocket_loot)
+
+/obj/effect/mob_spawn/corpse/human/soviet/armoured
+	name = "Dead Soviet Soldier"
+	outfit = /datum/outfit/sovietcorpse/armoured
+
+/datum/outfit/sovietcorpse/armoured
+	name = "Soviet Soldier"
+	suit = /obj/item/clothing/suit/armor/vest/alt
+	head = /obj/item/clothing/head/helmet/rus_ushanka
+
+/obj/effect/mob_spawn/corpse/human/soviet/officer
+	name = "Dead Soviet Officer"
+	outfit = /datum/outfit/sovietcorpse/officer
+
+/datum/outfit/sovietcorpse/officer
+	name = "Soviet Officer"
+	suit = /obj/item/clothing/suit/armor/vest/russian_coat
+	head = /obj/item/clothing/head/helmet/rus_ushanka
 	mask = /obj/item/clothing/mask/gas/atmos/russian
 
 /obj/effect/mob_spawn/corpse/human/wizard
@@ -406,6 +472,18 @@
 	facial_hairstyle = "Shaved"
 	skin_tone = "caucasian1"
 	outfit = /datum/outfit/job/assistant/consistent
+
+/obj/effect/mob_spawn/corpse/human/postman
+	name = "Dead Postman"
+	outfit = /datum/outfit/postman
+
+/datum/outfit/postman
+	name = "Postman"
+	head = /obj/item/clothing/head/costume/mailman
+	uniform = /obj/item/clothing/under/misc/mailman
+	belt = /obj/item/storage/bag/mail
+	shoes = /obj/item/clothing/shoes/laceup
+	back = /obj/item/storage/backpack/satchel/leather
 
 /obj/effect/mob_spawn/corpse/human/prey_pod
 	husk = TRUE
