@@ -86,17 +86,17 @@
 	ammo_type = /obj/item/ammo_casing/c38/flare
 	ammo_band_color = COLOR_AMMO_HELLFIRE
 
-/obj/item/ammo_box/magazine/krak
-	name = "krak rifle clip (K-Series)"
+/obj/item/ammo_box/magazine/karrak
+	name = "karrak rifle clip (K-Series)"
 	icon_state = "k_clip"
-	desc = "A clip for holding eight laser-capacitors, and loading them into a Krak rifle."
-	ammo_type = /obj/item/ammo_casing/krak_laser
+	desc = "A clip for holding eight laser-capacitors, and loading them into a Karrak rifle."
+	ammo_type = /obj/item/ammo_casing/karrak_laser
 	ammo_band_color = COLOR_AMMO_HELLFIRE
 
-/obj/item/ammo_box/magazine/krak/unreliable
+/obj/item/ammo_box/magazine/karrak/unreliable
 	desc = parent_type::desc + "This one has dings and scratches from field use."
-	ammo_type = /obj/item/ammo_casing/krak_laser/degraded
+	ammo_type = /obj/item/ammo_casing/karrak_laser/degraded
 
-/obj/item/ammo_box/magazine/krak/really_unreliable
+/obj/item/ammo_box/magazine/karrak/really_unreliable
 	desc = parent_type::desc + "This one has a big crack in it."
-	ammo_type = /obj/item/ammo_casing/krak_laser/degraded
+	ammo_type = /obj/item/ammo_casing/karrak_laser/degraded

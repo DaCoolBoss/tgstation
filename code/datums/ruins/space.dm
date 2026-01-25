@@ -517,7 +517,7 @@
 /datum/map_template/ruin/space/soviet_vault
 	id = "soviet_vault"
 	suffix = "soviet_vault.dmm"
-	name = "Space-Ruin совет бункер п6-7ж"
+	name = "Space-Ruin Soviet Vault п6-7ж"
 	description = "A long-lost bunker full of soviet soldiers, embedded in an asteroid. They subsist on preserved military rations, and keep intruders out by force."
 
 /datum/map_template/ruin/space/commsbuoy

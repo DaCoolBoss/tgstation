@@ -3,12 +3,16 @@
 /obj/structure/door_assembly/door_assembly_vault{
 	anchored = 1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker)
 "bL" = (
-/obj/structure/chair/stool/directional/west,
 /obj/machinery/duct,
 /obj/machinery/light/small/directional/east,
+/obj/item/soap{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/item/chair/stool,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "bR" = (
@@ -110,6 +114,10 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
+"ft" = (
+/obj/structure/sign/poster/ripped/directional/west,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
 "fE" = (
 /obj/structure/table,
 /obj/item/reagent_containers/cup/glass/bottle/vodka{
@@ -148,16 +156,19 @@
 /area/space/nearstation)
 "gF" = (
 /obj/structure/closet/crate/preopen,
-/obj/effect/spawner/random/mil_surplus,
 /obj/machinery/light/small/dim/directional/north,
 /obj/machinery/duct,
 /obj/effect/spawner/random/mil_surplus{
-	spawn_loot_chance = 10
+	spawn_loot_chance = 55
+	},
+/obj/effect/spawner/random/mil_surplus{
+	spawn_loot_chance = 55
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/soviet_bunker)
 "gI" = (
 /obj/structure/sign/warning/secure_area/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/soviet_bunker)
 "hR" = (
@@ -167,7 +178,8 @@
 "ie" = (
 /obj/structure/punji_sticks/spikes,
 /obj/effect/mob_spawn/corpse/human{
-	mob_species = /datum/species/skeleton
+	brute_damage = 300;
+	husk = 1
 	},
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
@@ -190,7 +202,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mob_spawn/corpse/human{
-	mob_species = /datum/species/skeleton
+	outfit = /datum/outfit/space;
+	brute_damage = 210;
+	burn_damage = 50
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
@@ -227,13 +241,14 @@
 "md" = (
 /obj/structure/sign/warning/electric_shock/directional/west,
 /obj/effect/mob_spawn/corpse/human{
-	mob_species = /datum/species/skeleton
+	husk = 1
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "mw" = (
 /obj/structure/rack,
 /obj/item/geiger_counter,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "nc" = (
@@ -276,9 +291,9 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "oa" = (
-/obj/item/mail/junkmail,
-/turf/closed/indestructible/opshuttle,
-/area/ruin/space/has_grav/soviet_bunker)
+/obj/structure/sign/poster/contraband/thunderdrome/directional/east,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
 "op" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/misc/asteroid/airless,
@@ -297,10 +312,10 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/soviet_bunker)
 "pj" = (
-/mob/living/basic/trooper/russian/soviet,
 /obj/structure/sign/poster/contraband/communist_state/directional/north,
 /obj/machinery/light/small/dim/directional/north,
 /obj/structure/chair/stool/directional/south,
+/mob/living/basic/trooper/russian/soviet/ranged,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/soviet_bunker)
 "pr" = (
@@ -343,10 +358,6 @@
 /obj/machinery/light/small/dim/directional/south,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/ruin/space/has_grav/soviet_bunker)
-"rB" = (
-/mob/living/basic/bear/russian,
-/turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "rL" = (
 /obj/structure/sign/poster/contraband/soviet_propaganda/directional/north,
@@ -417,6 +428,9 @@
 	pixel_y = 7
 	},
 /obj/item/clothing/gloves/color/yellow,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "uv" = (
@@ -471,7 +485,7 @@
 /area/ruin/space/has_grav/soviet_bunker)
 "xJ" = (
 /obj/effect/mine/shrapnel,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker)
 "yB" = (
 /obj/machinery/status_display/random_message/directional/north,
@@ -487,6 +501,7 @@
 /area/space/nearstation)
 "yL" = (
 /obj/machinery/light/small/broken/directional/west,
+/obj/effect/spawner/random/trash/graffiti,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "yP" = (
@@ -536,6 +551,7 @@
 /obj/effect/turf_decal/stripes{
 	dir = 4
 	},
+/obj/machinery/light/small/dim/directional/south,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "AH" = (
@@ -574,6 +590,11 @@
 /obj/structure/punji_sticks/spikes,
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
+"Bj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/ripped/directional/east,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
 "Ch" = (
 /obj/structure/bed,
 /obj/structure/sign/poster/contraband/communist_state/directional/east,
@@ -592,12 +613,12 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/ruin/space/has_grav/soviet_bunker)
 "Dr" = (
-/obj/machinery/atmospherics/components/tank/oxygen{
-	dir = 8;
-	piping_layer = 2
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/trash/graffiti{
+	pixel_x = 32
 	},
-/turf/closed/wall/r_wall,
-/area/ruin/space/has_grav/soviet_bunker)
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
 "Ds" = (
 /obj/structure/barricade/sandbags,
 /obj/structure/sign/poster/contraband/communist_state/directional/south,
@@ -639,6 +660,11 @@
 "EF" = (
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/crayon{
+	pixel_x = -32;
+	icon_state = "Tunnel";
+	paint_colour = "#2F43BA"
+	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "ER" = (
@@ -756,7 +782,7 @@
 /obj/structure/punji_sticks/spikes,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/broken/directional/south,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker)
 "JW" = (
 /obj/structure/closet/crate,
@@ -802,6 +828,7 @@
 /area/ruin/space/has_grav/soviet_bunker)
 "LH" = (
 /obj/structure/frame/machine/secured,
+/obj/structure/sign/poster/ripped/directional/west,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "LL" = (
@@ -863,9 +890,8 @@
 /area/ruin/space/has_grav/soviet_bunker)
 "Ny" = (
 /obj/structure/fluff/sat_dish{
-	pixel_x = 17;
-	dir = 8;
-	pixel_y = -8
+	pixel_x = 16;
+	dir = 8
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -874,12 +900,12 @@
 /obj/structure/punji_sticks/spikes,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/broken/directional/north,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker)
 "NO" = (
-/obj/effect/spawner/structure/electrified_grille,
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /obj/structure/fans/tiny/invisible,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "OF" = (
@@ -899,23 +925,34 @@
 "Pp" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
 /obj/effect/mob_spawn/corpse/human{
-	mob_species = /datum/species/skeleton
+	brute_damage = 300;
+	husk = 1
 	},
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "Pv" = (
 /obj/item/mail/junkmail,
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/mob_spawn/corpse/human/postman,
+/obj/effect/mob_spawn/corpse/human/postman{
+	brute_damage = 200;
+	husk = 1
+	},
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "PJ" = (
 /mob/living/basic/trooper/russian/soviet/ranged,
 /obj/machinery/light/small/dim/directional/south,
+/obj/structure/chair/stool/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "PM" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/crayon{
+	icon_state = "face";
+	pixel_x = -6;
+	pixel_y = 8;
+	paint_colour = "#A2B020"
+	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
@@ -929,18 +966,20 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "PW" = (
+/obj/item/kinetic_crusher,
 /obj/effect/mob_spawn/corpse/human/miner/explorer,
 /turf/open/misc/asteroid/airless,
 /area/space/nearstation)
 "PX" = (
-/obj/structure/girder/reinforced,
-/turf/open/floor/plating,
+/obj/structure/sign/poster/contraband/grey_tide/directional/west,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "Qq" = (
 /obj/structure/closet/crate/coffin,
 /obj/effect/spawner/random/mil_surplus/ammo/strilka310/box{
 	spawn_loot_chance = 40
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
@@ -955,17 +994,25 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/ruin/space/has_grav/soviet_bunker)
 "QH" = (
-/obj/item/soap,
-/obj/machinery/duct,
-/turf/open/floor/mineral/titanium/tiled,
-/area/ruin/space/has_grav/soviet_bunker)
+/obj/effect/decal/cleanable/crayon{
+	pixel_x = 32;
+	icon_state = "matt";
+	paint_colour = "#D4DBD3"
+	},
+/obj/structure/sign/poster/ripped/directional/east,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
 "Rg" = (
 /obj/item/stack/ore/glass,
 /turf/open/misc/asteroid/dug,
 /area/space/nearstation)
 "Rh" = (
 /obj/item/pickaxe/drill,
-/obj/effect/mob_spawn/corpse/human/skeleton,
+/obj/effect/mob_spawn/corpse/human{
+	brute_damage = 150;
+	burn_damage = 150;
+	outfit = /datum/outfit/space
+	},
 /turf/open/misc/asteroid/airless,
 /area/space/nearstation)
 "Rn" = (
@@ -980,8 +1027,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "Rt" = (
-/obj/item/food/deadmouse/moldy,
-/obj/effect/spawner/structure/electrified_grille,
+/mob/living/basic/bear/russian,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "RC" = (
@@ -994,6 +1040,7 @@
 /area/ruin/space/has_grav/soviet_bunker)
 "Sx" = (
 /obj/structure/sink/directional/south,
+/mob/living/basic/trooper/russian/soviet,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "SJ" = (
@@ -1052,7 +1099,10 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "Vb" = (
-/obj/effect/mob_spawn/corpse/human/skeleton,
+/obj/effect/mob_spawn/corpse/human{
+	brute_damage = 300;
+	husk = 1
+	},
 /turf/open/misc/asteroid/airless,
 /area/space/nearstation)
 "Ve" = (
@@ -1094,10 +1144,20 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/ruin/space/has_grav/soviet_bunker)
 "WX" = (
-/obj/structure/closet/crate/coffin,
-/obj/effect/mob_spawn/corpse/human/soviet,
-/turf/open/floor/plating,
+/mob/living/basic/bear/russian,
+/turf/open/floor/mineral/titanium/tiled,
 /area/ruin/space/has_grav/soviet_bunker)
+"WY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/flashlight,
+/obj/effect/decal/cleanable/crayon{
+	pixel_x = 32;
+	icon_state = "peace";
+	paint_colour = "#V746A4"
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav/soviet_bunker/exterior)
 "XH" = (
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
@@ -1117,8 +1177,8 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "Ys" = (
-/mob/living/basic/trooper/russian/soviet/ranged,
 /obj/machinery/status_display/random_message/directional/south,
+/obj/structure/chair/stool/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "YH" = (
@@ -1131,7 +1191,10 @@
 	pixel_x = 9;
 	pixel_y = 5
 	},
-/obj/effect/mob_spawn/corpse/human/pirate/ranged/space,
+/obj/effect/mob_spawn/corpse/human/pirate/ranged/space{
+	brute_damage = 270;
+	burn_damage = 30
+	},
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "YL" = (
@@ -1158,6 +1221,7 @@
 /obj/structure/closet/crate/coffin,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sign/poster/contraband/soviet_propaganda/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "Zq" = (
@@ -1177,11 +1241,6 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/soviet_bunker)
-"Zz" = (
-/mob/living/basic/bear/russian,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
-/turf/open/floor/mineral/titanium/tiled,
 /area/ruin/space/has_grav/soviet_bunker)
 "ZW" = (
 /obj/structure/chair/stool/directional/west,
@@ -1607,7 +1666,7 @@ xH
 WT
 Gy
 To
-WX
+dN
 cf
 dN
 To
@@ -1632,8 +1691,8 @@ eL
 To
 rN
 Az
-oa
-oa
+To
+To
 To
 To
 To
@@ -1644,7 +1703,7 @@ HN
 sS
 Ir
 Mo
-Mo
+Rt
 Qq
 To
 eL
@@ -1703,7 +1762,7 @@ dU
 eL
 To
 Ij
-sS
+WX
 sS
 Ab
 Ab
@@ -1736,14 +1795,14 @@ Lr
 Lr
 Lr
 dU
-Rt
+eL
 To
 rL
 sS
 xl
 WT
 WT
-Zz
+WT
 WT
 WT
 WT
@@ -1752,7 +1811,7 @@ WT
 wP
 sS
 ER
-XH
+xc
 To
 eL
 eL
@@ -1776,7 +1835,7 @@ eL
 To
 PQ
 sS
-pr
+sS
 ER
 sS
 IT
@@ -1853,7 +1912,7 @@ xH
 sS
 sS
 sS
-xH
+XH
 To
 Aq
 nN
@@ -1892,7 +1951,7 @@ sS
 sL
 To
 Sx
-QH
+sD
 sD
 Ip
 CN
@@ -1929,7 +1988,7 @@ Ir
 To
 ed
 bL
-rB
+XH
 Ip
 Jj
 AP
@@ -1989,7 +2048,7 @@ Lr
 EY
 dU
 uQ
-Lh
+eL
 eL
 eL
 eL
@@ -2150,7 +2209,7 @@ sp
 nP
 To
 eL
-Dr
+dU
 Lr
 Lr
 Lr
@@ -2186,7 +2245,7 @@ sp
 oW
 To
 eL
-Dr
+dU
 Lr
 Lr
 Gf
@@ -2459,14 +2518,14 @@ nc
 ON
 Hp
 md
-np
+ft
 PM
 do
 LH
 EF
 Hr
 yL
-np
+PX
 yP
 tr
 Vx
@@ -2495,14 +2554,14 @@ ih
 nc
 yH
 rT
-rT
+Dr
 np
-np
+QH
 kc
+oa
 np
-np
-rT
-PM
+Bj
+WY
 Hp
 np
 hR
@@ -2530,7 +2589,7 @@ Hu
 ih
 ih
 hR
-PX
+UM
 rY
 rY
 rY

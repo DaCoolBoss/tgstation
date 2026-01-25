@@ -132,8 +132,8 @@
 /obj/projectile/beam/weak/penetrator
 	armour_penetration = 50
 
-/obj/projectile/beam/krak
-	name = "krak laser"
+/obj/projectile/beam/karrak
+	name = "karrak laser"
 	icon_state = "laser"
 	damage = 30
 	damage_falloff_tile = 1

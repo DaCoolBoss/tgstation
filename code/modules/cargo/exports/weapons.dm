@@ -16,7 +16,6 @@
 	unit_name = "combat knife"
 	export_types = list(/obj/item/knife/combat)
 
-
 /datum/export/weapon/taser
 	cost = CARGO_CRATE_VALUE
 	unit_name = "advanced taser"
@@ -66,7 +65,6 @@
 	unit_name = "combat shotgun"
 	export_types = list(/obj/item/gun/ballistic/shotgun/automatic/combat)
 
-
 /datum/export/weapon/flashbang
 	cost = CARGO_CRATE_VALUE * 0.025
 	unit_name = "flashbang grenade"
@@ -76,7 +74,6 @@
 	cost = CARGO_CRATE_VALUE * 0.025
 	unit_name = "tear gas grenade"
 	export_types = list(/obj/item/grenade/chem_grenade/teargas)
-
 
 /datum/export/weapon/flash
 	cost = CARGO_CRATE_VALUE * 0.025
@@ -94,4 +91,3 @@
 	cost = CARGO_CRATE_VALUE * 1.5
 	unit_name = "WT-550 automatic rifle"
 	export_types = list(/obj/item/gun/ballistic/automatic/wt550)
-

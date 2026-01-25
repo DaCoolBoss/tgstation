@@ -43,6 +43,14 @@
 	name = "EMT's garment bag"
 	desc = "A bag for storing extra clothes and shoes. This one belongs to the emergency medical team."
 
+/obj/item/storage/bag/garment/soldier
+	name = "military garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one is for carrying a full set of military fatigues and armour."
+
+/obj/item/storage/bag/garment/soviet_soldier
+	name = "soviet garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one is for carrying a uniform for a Soviet New Red Army soldier. It's pretty dusty."
+
 /obj/item/storage/bag/garment/captain/PopulateContents()
 	new /obj/item/clothing/under/rank/captain(src)
 	new /obj/item/clothing/under/rank/captain/skirt(src)
@@ -166,3 +174,19 @@
 	new /obj/item/clothing/gloves/latex/nitrile(src)
 	new /obj/item/clothing/shoes/workboots/black(src)
 	new /obj/item/clothing/glasses/hud/health(src)
+
+/obj/item/storage/bag/garment/soldier/PopulateContents()
+	new /obj/item/clothing/head/helmet/army
+	new /obj/item/clothing/mask/balaclava
+	new /obj/item/clothing/suit/armor/vest/army
+	new /obj/item/clothing/under/syndicate/combat
+	new /obj/item/clothing/gloves/color/black
+	new /obj/item/clothing/shoes/combat
+
+/obj/item/storage/bag/garment/soviet_soldier/PopulateContents()
+	new /obj/item/clothing/head/helmet/rus_ushanka
+	new /obj/item/clothing/mask/russian_balaclava
+	new /obj/item/clothing/suit/armor/vest/russian_coat
+	new /obj/item/clothing/under/syndicate/soviet
+	new /obj/item/clothing/gloves/color/black
+	new /obj/item/clothing/shoes/jackboots

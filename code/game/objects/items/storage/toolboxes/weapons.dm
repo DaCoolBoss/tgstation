@@ -59,17 +59,17 @@
 	icon_state = "ammobox_strilka_rusty"
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
 
-/obj/item/storage/toolbox/ammobox/krak
+/obj/item/storage/toolbox/ammobox/karrak
 	name = "k-type ammo box"
 	desc = "This is a shock-resistant It contains a few clips of ammunition for the Strilka."
 	icon_state = "ammobox_ktype"
-	ammo_to_spawn = /obj/item/ammo_box/magazine/krak
+	ammo_to_spawn = /obj/item/ammo_box/magazine/karrak
 
-/obj/item/storage/toolbox/ammobox/krak/degraded
+/obj/item/storage/toolbox/ammobox/karrak/degraded
 	icon_state = "ammobox_strilka_rusty"
-	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/krak/clip
+	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
 
-/obj/item/storage/toolbox/ammobox/krak/degraded/Initialize(mapload)
+/obj/item/storage/toolbox/ammobox/karrak/degraded/Initialize(mapload)
 	. = ..()
 	if(prob(80))
 		name += "battered "
@@ -79,9 +79,9 @@
 		desc += " It is covered in rust."
 
 
-/obj/item/storage/toolbox/ammobox/krak/really_degraded
+/obj/item/storage/toolbox/ammobox/karrak/really_degraded
 	icon_state = "ammobox_strilka_rusty"
-	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
+	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
 
 /obj/item/storage/toolbox/ammobox/wt550m9
 	name = "4.6x30mm ammo box"
@@ -286,26 +286,26 @@
 /obj/item/storage/toolbox/guncase/soviet/sks
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/sks
 
-/obj/item/storage/toolbox/guncase/krakgun
+/obj/item/storage/toolbox/guncase/karrak
 	name = "ancient gun case"
 	desc = "A weapon's case. It is stamped with the TerraGov Espatiers Corps insignia."
 	icon_state = "army_guncase"
 	inhand_icon_state = "sakhno_case"
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/krak
-	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/krak/clip
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/karrak
+	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
 
-/obj/item/storage/toolbox/guncase/krakgun/unreliable
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/krak/carbine
-	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/krak/clip
+/obj/item/storage/toolbox/guncase/karrak/unreliable
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/karrak/carbine
+	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
 
-/obj/item/storage/toolbox/guncase/slugger
+/obj/item/storage/toolbox/guncase/ripper
 	name = "ancient gun case"
 	desc = "A weapon's case. It bears the Tiziran Armed Forces coat of arms."
 	icon_state = "imperial_guncase"
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/slugger/royal
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/ripperlance
 
-/obj/item/storage/toolbox/guncase/slugger/weaker
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/slugger
+/obj/item/storage/toolbox/guncase/ripper/antique
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/ripperlance/antique
 
 /obj/item/storage/toolbox/guncase/donkmusket
 	name = "\improper Donk Co. gun case"

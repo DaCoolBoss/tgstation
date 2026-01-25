@@ -29,24 +29,25 @@
 	desc = "A phasic .310 Strilka bullet casing."
 	projectile_type = /obj/projectile/bullet/strilka310/phasic
 
-// Krak laser rifle
-/obj/item/ammo_casing/krak_laser
+// Karrak laser rifle
+
+/obj/item/ammo_casing/karrak_laser
 	name = "type k laser capacitor"
-	desc = "A single-use munition capacitor for a krak rifle. Fires a laser instead of a bullet."
+	desc = "A single-use munition capacitor for a Karrak rifle. Fires a laser instead of a bullet."
 	icon_state = "k_casing"
-	projectile_type = /obj/projectile/beam/krak
-	caliber = CALIBER_KRAK
+	projectile_type = /obj/projectile/beam/karrak
+	caliber = CALIBER_KARRAK
 	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/gold =SMALL_MATERIAL_AMOUNT,)
 
-/obj/item/ammo_casing/krak_laser/spent
+/obj/item/ammo_casing/karrak_laser/spent
 	name = "spent " + parent_type::name
 	desc = " This one is burnt out."
 	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT * 0.8, /datum/material/glass =SMALL_MATERIAL_AMOUNT,)
 
 
-/obj/item/ammo_casing/krak_laser/degraded
+/obj/item/ammo_casing/karrak_laser/degraded
 
-/obj/item/ammo_casing/krak_laser/degraded/Initialize(mapload)
+/obj/item/ammo_casing/karrak_laser/degraded/Initialize(mapload)
 	. = ..()
 	if(prob(80))
 		desc += " This one seems to be damaged."
@@ -54,6 +55,20 @@
 		projectile_type = null
 	if(prob(40))
 		randomspread = rand(0,10)
+
+//ripperslug (ammo for the tizrian ripperlance)
+
+/obj/item/ammo_casing/ripperslug
+	name = "ripperslug shell"
+	desc = "The treated bone shell of a ripperslug. Traditional Tizrian ammunition for their ripperlance rifles."
+	icon_state = "k_casing"
+	projectile_type = /obj/projectile/beam/karrak
+	caliber = CALIBER_RIPPER
+
+/obj/item/ammo_casing/ripperslug/lead
+	name = "lead ripperslug"
+	desc = "A fragmenting lead projectile for Tizrian ripperlance rifles."
+	icon_state = "k_casing"
 
 // .223 (M-90gl Carbine)
 

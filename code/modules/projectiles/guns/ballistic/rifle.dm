@@ -171,18 +171,18 @@
 		name = "\improper Obrez Moderna" // wear it loud and proud
 
 /obj/item/gun/ballistic/rifle/boltaction/ripperlance
-	name = "imperial ripperlance"
+	name = "Tizrian army-issue ripperlance"
 	desc = "A solid projectile firearm made of bronze and hypercompressed timbershroom, manufactured one of the Tirazan factory.\
 		Based on a traditional Tirazan design, but fine-tuned and mordernised to deliver more damage. \
 		Capable of firing either traditionally prepared ripper-slug chitin or factory-produced lead spinter-slugs."
-	icon_state = "lionhunter"
+	icon_state = "ripperlance"
 	inhand_icon_state = "lionhunter"
 	worn_icon_state = "lionhunter"
 	can_be_sawn_off = FALSE
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/phasic
 
-/obj/item/gun/ballistic/rifle/boltaction/slugger/antique
-	name = "heirloom ripperlance"
+/obj/item/gun/ballistic/rifle/boltaction/ripperlance/antique
+	name = "antique ripperlance"
 	desc = "A solid projectile firearm handcrafted by a Tiziran artesan gunsmith.\
 		Capable of firing dried ripper-slug chitin, or their modern lead equivelents."
 	internal_magazine = FALSE
@@ -214,8 +214,8 @@
 		projectile_damage_multiplier = 0.75
 		spread = 50
 
-/obj/item/gun/ballistic/rifle/krak
-	name = "L08 krak laser rifle"
+/obj/item/gun/ballistic/rifle/karrak
+	name = "L08 Karrack laser rifle"
 	desc = "An old fashioned bullpup laser rifle. Uses Type-K non-rechargable ammunition. \
 	"
 	internal_magazine = FALSE
@@ -223,36 +223,36 @@
 	internal_magazine = TRUE
 	casing_ejector = FALSE
 	force = 14
-	icon_state = "krak"
-	accepted_magazine_type = /obj/item/ammo_box/magazine/krak
+	icon_state = "karrak"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/karrak
 	bolt_type = BOLT_TYPE_STANDARD
 	weapon_weight = WEAPON_HEAVY
 	need_bolt_lock_to_interact = FALSE
 
 
-/obj/item/gun/ballistic/rifle/krak/Initialize(mapload)
+/obj/item/gun/ballistic/rifle/karrak/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/examine_lore, \
 		lore_hint = span_notice("It bears the Asra Corp logo. [EXAMINE_HINT("Read closely")] to learn more."), \
-		lore = "The L08 Kinetic Ray Cannon was produced by Asra Corporation from 2371 until the corporation's liquidation in 2404.<br>\
-		Commonly known as the 'Krak rifle' due to the distinctive noise of made when discharging.<br>\
+		lore = "The L08 Kinetic Ray Cannon was produced by Karrak  from 2371 until the corporation's liquidation in 2404.<br>\
+		Commonly known as the 'Karrak rifle' due to the distinctive noise of made when discharging.<br>\
 		<br>\
 		The slide is chopped down, with the front half of the handgun featuring a monolithic integral suppressor built around the barrel." \
 	)
 
-/obj/item/gun/ballistic/rifle/krak/carbine
-	name = "L10 krak laser carbine"
+/obj/item/gun/ballistic/rifle/karrak/carbine
+	name = "L10 karrak laser carbine"
 	desc = "An old fashioned carbine laser rifle. Uses Type-K ammunition."
 	force = 10
 	sawn_desc = "An unwieldy field-modified carbine laser rifle. Uses Type-K ammunition.\
 	This one "
 
-/obj/item/gun/ballistic/rifle/krak/carbine/sawoff(mob/user)
+/obj/item/gun/ballistic/rifle/karrak/carbine/sawoff(mob/user)
 	. = ..()
 	if(.)
-		name = "L10 short krak"
+		name = "L10 short karrak"
 
-/obj/item/gun/ballistic/rifle/krak/carbine/Initialize(mapload)
+/obj/item/gun/ballistic/rifle/karrak/carbine/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/examine_lore, \
 		lore_hint = span_notice("You can [EXAMINE_HINT("look closer")] to learn a little more about [src]."), \

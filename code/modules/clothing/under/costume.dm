@@ -70,7 +70,7 @@
 /obj/item/clothing/under/costume/rus_tracksuit
 	name = "russian tracksuit"
 	desc = "A popular choice of clothing for Russian gangsters. Made from the cheapest synthetic fibres around."
-	icon = 'icons/obj/clothing/under/syndicate.dmi'
+	icon = 'icons/obj/clothing/under/army.dmi'
 	icon_state = "rus_under"
 	inhand_icon_state = null
 	can_adjust = FALSE

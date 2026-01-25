@@ -30,14 +30,16 @@
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/armoured
 	r_hand = /obj/item/gun/ballistic/rifle/boltaction/surplus
+	loot = /obj/item/gun/ballistic/rifle/boltaction/surplus
 	corpse = /obj/effect/mob_spawn/corpse/human/russian/armoured
-	var/casingtype = /obj/item/ammo_casing/strilka310/degraded
+	var/projectiletype = /obj/projectile/bullet/strilka310/degraded
+	var/casingtype = null
 	var/projectilesound = 'sound/items/weapons/gun/rifle/shot_heavy.ogg'
 	var/shoot_cooldown = 2 SECONDS
 
 /mob/living/basic/trooper/russian/ranged/ranged/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/ranged_attacks, casing_type = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
+	AddComponent(/datum/component/ranged_attacks, projectile_type = projectiletype = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
 
 /mob/living/basic/trooper/russian/ranged/no_weapon_drop
 	loot = null
@@ -49,6 +51,7 @@
 	r_hand = /obj/item/gun/ballistic/automatic/pistol
 	corpse = /obj/effect/mob_spawn/corpse/human/russian/elite
 	loot = list(/obj/item/gun/ballistic/revolver/nagant)
+	projectiletype = null
 	casingtype = /obj/item/ammo_casing/n762
 	projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
 	shoot_cooldown = 1 SECONDS
@@ -60,25 +63,33 @@
 	name = "Soviet Soldier"
 	desc = "For the motherland!"
 	speed = 1.15
+	melee_damage_lower = 13
+	melee_damage_upper = 18
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/soviet
-	r_hand = /obj/item/knife/kitchen
+	r_hand = /obj/item/crowbar/hammer
 	corpse = /obj/effect/mob_spawn/corpse/human/soviet
-	loot = list(/obj/item/knife/kitchen)
+	loot = list(/obj/item/crowbar/hammer)
+	attack_verb_continuous = "smashes"
+	attack_verb_simple = "smash"
+	attack_sound = 'sound/items/weapons/genhit2.ogg'
+	attack_vis_effect = ATTACK_EFFECT_SMASH
 
 /mob/living/basic/trooper/russian/soviet/ranged
 	speed = 1
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
 	r_hand = /obj/item/gun/ballistic/rifle/boltaction/surplus
+	loot = /obj/item/gun/ballistic/rifle/boltaction/surplus
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/soviet/armoured
 	corpse = /obj/effect/mob_spawn/corpse/human/soviet/armoured
-	var/casingtype = /obj/item/ammo_casing/strilka310/degraded
+	///The type of projectile that fires from attacks.
+	var/projectiletype = /obj/projectile/bullet/strilka310/degraded
+	var/casingtype = null
 	var/projectilesound = 'sound/items/weapons/gun/rifle/shot_heavy.ogg'
 	var/shoot_cooldown = 2 SECONDS
 
-/mob/living/basic/trooper/russian/ranged/ranged/Initialize(mapload)
+/mob/living/basic/trooper/russian/soviet/ranged/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/ranged_attacks, casing_type = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
-
+	AddComponent(/datum/component/ranged_attacks, projectile_type = projectiletype = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
 
 /mob/living/basic/trooper/russian/soviet/ranged/elite
 	name = "Soviet Officer"
@@ -86,6 +97,7 @@
 	r_hand = /obj/item/gun/ballistic/automatic/pistol
 	corpse = /obj/effect/mob_spawn/corpse/human/soviet/officer
 	loot = list(/obj/item/gun/ballistic/revolver/nagant)
+	projectiletype = null
 	casingtype = /obj/item/ammo_casing/n762
 	projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
 	shoot_cooldown = 1 SECONDS
