@@ -62,13 +62,14 @@
 	name = "ripperslug shell"
 	desc = "The treated bone shell of a ripperslug. Traditional Tizrian ammunition for their ripperlance rifles."
 	icon_state = "k_casing"
-	projectile_type = /obj/projectile/beam/karrak
+	projectile_type = /obj/projectile/bullet/ripperslug
 	caliber = CALIBER_RIPPER
 
-/obj/item/ammo_casing/ripperslug/lead
+/obj/item/ammo_casing/ripperslug/bone
 	name = "lead ripperslug"
 	desc = "A fragmenting lead projectile for Tizrian ripperlance rifles."
 	icon_state = "k_casing"
+	projectile_type = /obj/projectile/bullet/ripperslug/bone
 
 // .223 (M-90gl Carbine)
 

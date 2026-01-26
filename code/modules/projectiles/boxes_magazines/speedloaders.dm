@@ -131,3 +131,16 @@
 		hastily developed after an incident where a misfire resulted in the destruction of Atrakor Silverscale's priceless Vigoxian Fabergé egg. \
 		These fancy bullets pass right though valuables until they end up in a far less expensive human skull."
 	ammo_type = /obj/item/ammo_casing/strilka310/phasic
+
+/obj/item/ammo_box/speedloader/ripperslug
+	name = "ripperslug can"
+	desc = "A can for holding ripperlance ammo. Pour directly into refill hatch. Holds 4 slugs."
+	icon_state = "m12gb"
+	ammo_type = /obj/item/ammo_casing/ripperslug
+	max_ammo = 4
+	ammo_box_multiload = AMMO_BOX_MULTILOAD_ALL
+	caliber = CALIBER_RIPPER
+
+/obj/item/ammo_box/speedloader/ripperslug/bone
+	ammo_type = /obj/item/ammo_casing/ripperslug/bone
+	icon_state = "m12gsl"

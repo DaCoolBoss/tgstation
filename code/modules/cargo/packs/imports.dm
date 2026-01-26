@@ -223,38 +223,41 @@
 	order_flags = ORDER_CONTRABAND
 	cost = CARGO_CRATE_VALUE * 12
 	contains = list(
-		/obj/effect/spawner/random/mil_surplus = 9,
 		/obj/effect/spawner/random/mil_surplus/guncases/fifty_percent_spawnrate,
+		/obj/effect/spawner/random/mil_surplus = 9,
 	)
 	discountable = SUPPLY_PACK_RARE_DISCOUNTABLE
+	crate_name = "military crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /datum/supply_pack/imports/vintage_army
 	name = "Vintage TerraGov Supply Crate"
 	desc = "Need reliable field-tested space-age weaponry in a hurry? Look no further! \
 		Vintage Corp picks the best army surplus for you! Guaranteed quality! \
-		Each crate has three fully functioning Sakhno precision rifles and two boxes of live ammunition. \
-		Three authentic soviet uniform and battle-ready armour sets are included. Perfect for historical reenactments!"
+		Each crate has three pristine L08 Karrak rifles and a bonus box of live ammunition. \
+		Three Tiziran War era TerraGov uniforms and battle-ready armour sets are included. Perfect for historical reenactments!"
 	order_flags = ORDER_EMAG_ONLY
-	cost = CARGO_CRATE_VALUE * 4
-	contains = list(/obj/item/gun/ballistic/rifle/karrak = 3,
-	/obj/item/storage/bag/garment/soldier = 3,
+	cost = CARGO_CRATE_VALUE * 4.75
+	contains = list(/obj/item/storage/toolbox/guncase/karrak = 3,
 	/obj/item/storage/toolbox/ammobox/karrak = 1,
+	/obj/item/storage/bag/garment/soldier = 3,
 	)
+	crate_name = "military crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /datum/supply_pack/imports/vintage_soviet
 	name = "Vintage Soviet Supply Crate"
 	desc = "Need reliable field-tested antique soviet weaponry in a hurry? Look no further! \
 		Vintage Corp picks the best army surplus for you! Guaranteed quality! \
-		Each crate has three fully functioning Sakhno precision rifles and two boxes of live ammunition. \
+		Each crate has three fully functioning Sakhno precision rifles and a bonus box of live ammunition. \
 		Three authentic soviet uniform and battle-ready armour sets are included. Perfect for historical reenactments!"
 	order_flags = ORDER_EMAG_ONLY
-	cost = CARGO_CRATE_VALUE * 4
-	contains = list(/obj/item/gun/ballistic/rifle/boltaction = 3,
-	/obj/item/storage/bag/garment/soviet_soldier = 3,
+	cost = CARGO_CRATE_VALUE * 4.75
+	contains = list(/obj/item/storage/toolbox/guncase/soviet = 3,
 	/obj/item/storage/toolbox/ammobox/strilka310 = 1,
+	/obj/item/storage/bag/garment/soviet_soldier = 3,
 	)
+	crate_name = "military crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
 /datum/supply_pack/imports/vehicle

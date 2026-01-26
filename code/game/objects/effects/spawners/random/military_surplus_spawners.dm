@@ -103,11 +103,11 @@
 		/obj/item/gun_maintenance_supplies = 25,
 		/obj/item/food/rationpack = 25,
 		/obj/item/clothing/gloves/tackler/combat = 10,
-		/obj/item/storage/belt/military/army = 8,
+		/obj/item/storage/belt/military/assault = 8,
 		/obj/item/clothing/accessory/antique_medal/bronze = 5,
 		/obj/item/reagent_containers/cup/glass/flask = 5,
 		/obj/item/knife/combat = 2,
-		/obj/item/storage/belt/military/assault = 2,
+		/obj/item/storage/belt/military/army = 2,
 		/obj/item/spess_knife = 2,
 		/obj/item/grenade/frag/dusty = 2,
 		/obj/item/bear_armor = 2,
@@ -158,7 +158,7 @@
 		/obj/effect/spawner/random/mil_surplus/ammo/karrak/clip = 10,
 		/obj/effect/spawner/random/mil_surplus/ammo/ripslug/clip = 25,
 		/obj/effect/spawner/random/mil_surplus/ammo/donk = 14,
-		/obj/item/storage/box/donkpockets/donkpocketshell = 5,
+		/obj/item/storage/box/donkpockets/donkpocketshell = 1,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/double
@@ -168,7 +168,7 @@
 
 /obj/effect/spawner/random/mil_surplus/ammo/donk
 	name = "donk musket ammo spawner"
-	desc = "Spawns some ammo for the Donk Musket. The Musket can use a variety of rounds, some more useful than others."
+	desc = "Spawns a loose piece of random ammo for the Donk Musket. The Musket can use a variety of rounds, some more useful than others."
 	loot = list(
 		/obj/item/ammo_casing/shotgun/flechette/donk = 40,
 		/obj/item/ammo_casing/shotgun/flechette = 10,
@@ -234,32 +234,14 @@
 	name = "ripslug case spawner"
 	desc = "Spawns a ripslug. Can either be lead or bone."
 	loot = list(
-		/obj/item/ammo_casing/ripperslug = 60,
-		/obj/item/ammo_casing/ripperslug/lead = 40,
+		/obj/item/ammo_casing/ripperslug/bone = 60,
+		/obj/item/ammo_casing/ripperslug = 40,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/ripslug/clip
 	name = "ripslug can spawner"
 	desc = "Spawns a can of ripslugs. Can either be lead or bone."
 	loot = list(
-		/obj/item/ammo_casing/karrak_laser/degraded = 60, //5555555555555555555555555
-		/obj/item/ammo_casing/karrak_laser = 40,//5555555555555555555555555
+		/obj/item/ammo_box/speedloader/ripperslug/bone = 60,
+		/obj/item/ammo_box/speedloader/ripperslug = 40,
 	)
-
-//                                             //tester man
-/datum/outfit/armyman
-	name = "! Army Man"
-	uniform = /obj/item/clothing/under/syndicate/camo/grey
-	suit = /obj/item/clothing/suit/armor/vest/army/grey
-	suit_store = /obj/item/gun/ballistic/rifle/karrak
-	back = /obj/item/storage/backpack
-	ears = /obj/item/radio/headset
-	glasses = /obj/item/clothing/glasses/sunglasses
-	gloves = /obj/item/clothing/gloves/combat
-	head = /obj/item/clothing/head/helmet/army/grey
-	shoes = /obj/item/clothing/shoes/jackboots
-	belt = /obj/item/storage/belt/military/army
-	l_pocket = /obj/item/trench_tool
-	r_pocket = /obj/item/ammo_box/magazine/karrak/unreliable
-	r_hand = /obj/item/clothing/mask/gas/atmos/russian
-	id = /obj/item/card/id/advanced/bountyhunter

@@ -61,6 +61,15 @@
 	caliber = CALIBER_REBAR
 	ammo_type = /obj/item/ammo_casing/rebar/syndie
 
+/obj/item/ammo_box/magazine/internal/ripper
+	name = "ripperlance internal magazine (lead)"
+	ammo_type = /obj/item/ammo_casing/ripperslug
+	caliber = CALIBER_RIPPER
+	max_ammo = 4
+
+/obj/item/ammo_box/magazine/internal/ripper/bone
+	name = "ripperlance internal magazine (bone)"
+	ammo_type = /obj/item/ammo_casing/ripperslug/bone
 
 /obj/item/ammo_box/magazine/internal/sks
 	name = "\improper SKS rifle internal magazine"

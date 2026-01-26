@@ -274,3 +274,44 @@
 	. = ..()
 	AddElement(/datum/element/projectile_drop, shrapnel_type)
 	AddElement(/datum/element/bane, mob_biotypes = MOB_MINING, damage_multiplier = 2)
+
+/obj/projectile/bullet/ripperslug
+	name = "rebar"
+	icon_state = "rebar"
+	damage = 30
+	speed = 1.5
+	dismemberment = 1
+	armour_penetration = 25
+	wound_bonus = 10
+	exposed_wound_bonus = 20
+	embed_type = /datum/embedding/ripper
+	embed_falloff_tile = -5
+	wound_falloff_tile = -2
+
+/obj/projectile/bullet/ripperslug/bone
+	exposed_wound_bonus = 30
+	embed_type = /datum/embedding/ripper/bone
+	shrapnel_type = /datum/embedding/ripper/bone
+	embed_falloff_tile = -10
+	wound_falloff_tile = -4
+
+
+/datum/embedding/ripper
+	embed_chance = 60
+	fall_chance = 2
+	jostle_chance = 2
+	ignore_throwspeed_threshold = TRUE
+	pain_stam_pct = 0.4
+	pain_mult = 3
+	jostle_pain_mult = 2.5
+	rip_time = 0.8 SECONDS
+
+/datum/embedding/ripper/bone
+	embed_chance = 60
+	fall_chance = 2
+	jostle_chance = 2
+	ignore_throwspeed_threshold = TRUE
+	pain_stam_pct = 0.4
+	pain_mult = 3
+	jostle_pain_mult = 3
+	rip_time = 1.2 SECONDS

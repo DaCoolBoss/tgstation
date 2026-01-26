@@ -162,7 +162,8 @@
 	spawn_loot_chance = 55
 	},
 /obj/effect/spawner/random/mil_surplus{
-	spawn_loot_chance = 55
+	spawn_loot_chance = 55;
+	pixel_y = -2
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/soviet_bunker)
@@ -247,8 +248,13 @@
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "mw" = (
 /obj/structure/rack,
-/obj/item/geiger_counter,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/geiger_counter{
+	pixel_x = 6
+	},
+/obj/item/geiger_counter{
+	pixel_x = -6
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "nc" = (
@@ -296,6 +302,7 @@
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "op" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
+/obj/effect/baseturf_helper/asteroid,
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "oW" = (
@@ -363,7 +370,9 @@
 /obj/structure/sign/poster/contraband/soviet_propaganda/directional/north,
 /obj/structure/table,
 /obj/effect/spawner/random/mil_surplus/clothing,
-/obj/effect/spawner/random/mil_surplus/armour,
+/obj/effect/spawner/random/mil_surplus/armour{
+	pixel_x = -13
+	},
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
@@ -386,10 +395,6 @@
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "rY" = (
 /turf/closed/wall/r_wall,
-/area/ruin/space/has_grav/soviet_bunker/exterior)
-"se" = (
-/obj/effect/baseturf_helper/asteroid,
-/turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "sp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer2,
@@ -1004,7 +1009,9 @@
 /area/ruin/space/has_grav/soviet_bunker/exterior)
 "Rg" = (
 /obj/item/stack/ore/glass,
-/turf/open/misc/asteroid/dug,
+/turf/open/misc/asteroid/dug{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/space/nearstation)
 "Rh" = (
 /obj/item/pickaxe/drill,
@@ -1049,8 +1056,8 @@
 "SL" = (
 /obj/structure/closet/crate/cardboard,
 /obj/item/storage/box/emergencytank{
-	pixel_x = -3;
-	pixel_y = 2
+	pixel_x = -2;
+	pixel_y = -1
 	},
 /obj/item/storage/box/emptysandbags{
 	pixel_x = 4;
@@ -1874,7 +1881,7 @@ XH
 TK
 xc
 sS
-Ej
+sS
 sS
 xc
 TK
@@ -1910,9 +1917,9 @@ Rn
 To
 xH
 sS
+Ej
 sS
-sS
-XH
+sL
 To
 Aq
 nN
@@ -1948,7 +1955,7 @@ yB
 sS
 Qy
 sS
-sL
+mw
 To
 Sx
 sD
@@ -2304,7 +2311,7 @@ dU
 eL
 dU
 SJ
-se
+SJ
 Nm
 Nm
 Nm

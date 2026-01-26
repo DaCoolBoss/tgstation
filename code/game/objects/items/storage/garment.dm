@@ -176,17 +176,17 @@
 	new /obj/item/clothing/glasses/hud/health(src)
 
 /obj/item/storage/bag/garment/soldier/PopulateContents()
-	new /obj/item/clothing/head/helmet/army
-	new /obj/item/clothing/mask/balaclava
-	new /obj/item/clothing/suit/armor/vest/army
-	new /obj/item/clothing/under/syndicate/combat
-	new /obj/item/clothing/gloves/color/black
-	new /obj/item/clothing/shoes/combat
+	new /obj/item/clothing/head/helmet/army(src)
+	new /obj/item/clothing/mask/balaclava(src)
+	new /obj/item/clothing/suit/armor/vest/army(src)
+	new /obj/item/clothing/under/syndicate/combat(src)
+	new /obj/item/clothing/gloves/color/black(src)
+	new /obj/item/clothing/shoes/combat(src)
 
 /obj/item/storage/bag/garment/soviet_soldier/PopulateContents()
-	new /obj/item/clothing/head/helmet/rus_ushanka
-	new /obj/item/clothing/mask/russian_balaclava
-	new /obj/item/clothing/suit/armor/vest/russian_coat
-	new /obj/item/clothing/under/syndicate/soviet
-	new /obj/item/clothing/gloves/color/black
-	new /obj/item/clothing/shoes/jackboots
+	new /obj/item/clothing/head/helmet/rus_ushanka(src)
+	new /obj/item/clothing/mask/russian_balaclava(src)
+	new /obj/item/clothing/suit/armor/vest/russian_coat(src)
+	new /obj/item/clothing/under/syndicate/soviet(src)
+	new /obj/item/clothing/gloves/color/black(src)
+	new /obj/item/clothing/shoes/jackboots(src)
