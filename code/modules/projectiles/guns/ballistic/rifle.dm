@@ -62,7 +62,7 @@
 	icon_state = "sakhno"
 	inhand_icon_state = "sakhno"
 	worn_icon_state = "sakhno"
-
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 4, /datum/material/wood = SHEET_MATERIAL_AMOUNT * 2,)
 	slot_flags = ITEM_SLOT_BACK
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction
 	can_be_sawn_off = TRUE
@@ -141,6 +141,7 @@
 	worn_icon_state = "slopno"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/surplus
 	can_jam = TRUE
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 4, /datum/material/plastic = SHEET_MATERIAL_AMOUNT * 2,)
 
 /obj/item/gun/ballistic/rifle/boltaction/surplus/add_bayonet_point()
 	AddComponent(/datum/component/bayonet_attachable, offset_x = 41, offset_y = 14, bayonet_overlay = "bayonet_thin_surplus")
@@ -160,6 +161,8 @@
 		All you had to do was take an allen wrench to the stock to take it off. But no, you just had to \
 		go for the saw."
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/phasic
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 4,/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 2,/datum/material/plastic = SHEET_MATERIAL_AMOUNT,/datum/material/gold = HALF_SHEET_MATERIAL_AMOUNT,)
+
 
 /obj/item/gun/ballistic/rifle/boltaction/prime/Initialize(mapload)
 	. = ..()
@@ -169,32 +172,6 @@
 	. = ..()
 	if(.)
 		name = "\improper Obrez Moderna" // wear it loud and proud
-
-/obj/item/gun/ballistic/rifle/boltaction/ripperlance
-	name = "MkIII ripperlance"
-	desc = "A solid projectile firearm made of bronze and hypercompressed timbershroom, manufactured one of the Tirazan factory.\
-		Based on a traditional Tirazan design, but fine-tuned and mordernised to deliver more damage. \
-		Capable of firing either traditionally prepared ripper-slug chitin or factory-produced lead spinter-slugs."
-	icon_state = "ripperlance"
-	inhand_icon_state = "lionhunter"
-	worn_icon_state = "lionhunter"
-	bolt_wording = "refill hatch"
-	semi_auto = TRUE
-	can_be_sawn_off = FALSE
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper
-
-/obj/item/gun/ballistic/rifle/boltaction/ripperlance/antique
-	name = "antique ripperlance"
-	desc = "A solid projectile firearm handcrafted by a Tiziran artesan gunsmith.\
-		Capable of firing dried ripper-slug chitin, or their modern lead equivelents."
-	icon_state = "ripperlance_traditional"
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper/bone
-
-/obj/item/gun/ballistic/rifle/boltaction/slugger/royal
-	name = "mastercraft ripperlance"
-/obj/item/gun/ballistic/rifle/boltaction/slugger/royal/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/scope, range_modifier = 1.5)
 
 /obj/item/gun/ballistic/rifle/boltaction/donkrifle
 	name = "\improper Donk Co. Jezail"
@@ -216,51 +193,6 @@
 	if(.)
 		projectile_damage_multiplier = 0.75
 		spread = 50
-
-/obj/item/gun/ballistic/rifle/karrak
-	name = "L08 Karrack laser rifle"
-	desc = "An old fashioned bullpup laser rifle. Uses Type-K non-rechargable ammunition."
-	internal_magazine = FALSE
-	semi_auto = FALSE
-	internal_magazine = TRUE
-	casing_ejector = FALSE
-	force = 14
-	icon_state = "karrak"
-	accepted_magazine_type = /obj/item/ammo_box/magazine/karrak
-	bolt_type = BOLT_TYPE_STANDARD
-	weapon_weight = WEAPON_HEAVY
-	need_bolt_lock_to_interact = FALSE
-
-
-/obj/item/gun/ballistic/rifle/karrak/Initialize(mapload)
-	. = ..()
-	AddElement(/datum/element/examine_lore, \
-		lore_hint = span_notice("It bears the Karrak Industries logo. [EXAMINE_HINT("Examine closely")] to learn more."), \
-		lore = "The L08 Light Ray Cannon was produced by Karrak Industries from 2371 until the corporation's liquidation in 2418.<br>\
-		The L08 was the first photon-based firearm to see widespread use in armed conflicts, and is still used in frontier conflicts to this day. <br>\
-		Commonly called a 'Karrak rifle', despite not technically being a rifle." \
-	)
-
-/obj/item/gun/ballistic/rifle/karrak/carbine
-	name = "L10 karrak laser carbine"
-	desc = "An old fashioned carbine lasergun with a collapsable stock. Uses Type-K ammunition."
-	force = 10
-	sawn_desc = "An unwieldy field-modified carbine lasergun. Uses Type-K ammunition."
-
-/obj/item/gun/ballistic/rifle/karrak/carbine/sawoff(mob/user)
-	. = ..()
-	if(.)
-		name = "L10 Karrak short carbine"
-
-/obj/item/gun/ballistic/rifle/karrak/carbine/Initialize(mapload)
-	. = ..()
-	AddElement(/datum/element/examine_lore, \
-		lore_hint = span_notice("It bears the Karrak Industries logo. [EXAMINE_HINT("Examine closely")] to learn more."), \
-		lore = "The L10 Light Ray Cannon was produced by Karrak Industries from 2387 until the corporation's liquidation in 2418.<br>\
-		The L10 was designed as a cut-down version of the earlier L08 design, significantly cheaper to produce and more compact.<br>\
-		Largely considered inferior to its predecessor due to producing a slower, colder beam. It is primarly popular among criminals, for whom the ability to collapse or remove the stock is worth the reduction in killing power.<br>\
-		Commonly called a 'Karrak carbine', despite not technically being a carbine." \
-	)
 
 /obj/item/gun/ballistic/rifle/rebarxbow
 	name = "heated rebar crossbow"
@@ -608,3 +540,37 @@
 	actions_types = list()
 	suppressor_x_offset = 3
 	suppressor_y_offset = 3
+
+// Tiziran Ripperlance //
+
+/obj/item/gun/ballistic/rifle/ripperlance
+	name = "mkIII ripperlance"
+	desc = "A solid projectile firearm made of bronze and hypercompressed timbershroom, manufactured one of the Tirazan factory.\
+		Based on a traditional Tirazan design, but fine-tuned and mordernised to deliver more damage. \
+		Uses ripperslug ammunition."
+	icon_state = "ripperlance"
+	inhand_icon_state = "lionhunter"
+	worn_icon_state = "lionhunter"
+	bolt_wording = "refill hatch"
+	semi_auto = TRUE
+	can_be_sawn_off = FALSE
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper
+	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 6, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 4, /datum/material/bronze = SHEET_MATERIAL_AMOUNT * 2, /datum/material/plastic = SHEET_MATERIAL_AMOUNT * 1.5)
+
+/obj/item/gun/ballistic/rifle/ripperlance/antique
+	name = "antique ripperlance"
+	desc = "A solid projectile firearm handcrafted by a Tiziran artisan gunsmith.\
+		Uses ripperslug ammunition."
+	icon_state = "ripperlance_traditional"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper/bone
+	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT * 6, /datum/material/bronze = SHEET_MATERIAL_AMOUNT * 4, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 2)
+
+
+/obj/item/gun/ballistic/rifle/ripperlance/royal
+	name = "mastercraft ripperlance"
+	desc = "A solid projectile firearm made of fine materials, handcrafted by a cabal of Tiziran artesan gunsmiths.\
+		Capable of firing dried ripper-slug chitin, or their modern lead equivelents."
+
+/obj/item/gun/ballistic/rifle/ripperlance/royal/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/scope, range_modifier = 1.5)

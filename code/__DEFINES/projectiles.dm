@@ -64,7 +64,7 @@
 #define CALIBER_JUNK "junk"
 /// The caliber used by the (gatfruit) peashooter
 #define CALIBER_PEA "pea"
-/// The caliber used by the karrak laser gun
+/// The caliber used by the karrak laser guns
 #define CALIBER_KARRAK "type k"
 /// The caliber used by the Tiziran ripperlance
 #define CALIBER_RIPPER "ripper"

@@ -110,13 +110,6 @@
 		/obj/item/lighter/bright,
 	)
 
-/datum/export/antique_medal
-	cost = CARGO_CRATE_VALUE * 0.1
-	unit_name = "iron medal"
-	export_types = list(
-		/obj/item/clothing/accessory/antique_medal,
-	)
-
 /datum/export/antique_medal/bronze
 	cost = CARGO_CRATE_VALUE * 2.5
 	unit_name = "bronze medal"

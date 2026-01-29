@@ -5918,6 +5918,7 @@
 #include "code\modules\projectiles\guns\magic.dm"
 #include "code\modules\projectiles\guns\ballistic\automatic.dm"
 #include "code\modules\projectiles\guns\ballistic\launchers.dm"
+#include "code\modules\projectiles\guns\ballistic\leveraction.dm"
 #include "code\modules\projectiles\guns\ballistic\pistol.dm"
 #include "code\modules\projectiles\guns\ballistic\revolver.dm"
 #include "code\modules\projectiles\guns\ballistic\rifle.dm"

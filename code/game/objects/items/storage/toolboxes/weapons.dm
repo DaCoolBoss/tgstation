@@ -43,7 +43,7 @@
 
 /obj/item/storage/toolbox/ammobox/strilka310/rusty
 	icon_state = "ammobox_strilka_rusty"
-	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310
+	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip
 
 /obj/item/storage/toolbox/ammobox/strilka310/rusty/Initialize(mapload)
 	. = ..()
@@ -288,28 +288,30 @@
 
 /obj/item/storage/toolbox/guncase/karrak
 	name = "ancient gun case"
-	desc = "A weapon's case. It is stamped with the TerraGov Espatiers Corps insignia."
+	desc = "A case for holding a gun. It is stamped with the TerraGov Espatiers Corps insignia."
 	icon_state = "army_guncase"
 	inhand_icon_state = "sakhno_case"
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/karrak
+	weapon_to_spawn = /obj/item/gun/ballistic/lever_action/karrak
 	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
 
 /obj/item/storage/toolbox/guncase/karrak/unreliable
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/karrak/carbine
+	weapon_to_spawn = /obj/item/gun/ballistic/lever_action/karrak/carbine
 	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
 
 /obj/item/storage/toolbox/guncase/ripper
-	name = "ancient gun case"
-	desc = "A weapon's case. It bears the Tiziran Armed Forces coat of arms."
+	name = "imperial gun case"
+	desc = "A case for holding a gun. It bears the Tiziran Armed Forces coat of arms."
 	icon_state = "imperial_guncase"
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/ripperlance
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/ripperlance
+	extra_to_spawn = /obj/item/ammo_casing/ripperslug
 
 /obj/item/storage/toolbox/guncase/ripper/antique
-	weapon_to_spawn = /obj/item/gun/ballistic/rifle/boltaction/ripperlance/antique
+	weapon_to_spawn = /obj/item/gun/ballistic/rifle/ripperlance/antique
+	extra_to_spawn = /obj/item/ammo_casing/ripperslug/bone
 
 /obj/item/storage/toolbox/guncase/donkmusket
 	name = "\improper Donk Co. gun case"
-	desc = "A weapon's case. It is stamped with the word 'DONK'."
+	desc = "A case for holding a gun. It is stamped with the word 'DONK'."
 	icon_state = "donk_guncase"
 	weapon_to_spawn = /obj/item/gun/ballistic/shotgun/musket
 	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/donk

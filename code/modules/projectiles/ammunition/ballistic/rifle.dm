@@ -33,17 +33,15 @@
 
 /obj/item/ammo_casing/karrak_laser
 	name = "type k laser capacitor"
-	desc = "A single-use munition capacitor for a Karrak rifle. Fires a laser instead of a bullet."
+	desc = "A single-use munition capacitor for a Karrak laser gun. Fires a laser instead of a bullet."
 	icon_state = "k_casing"
 	projectile_type = /obj/projectile/beam/karrak
+	muzzle_flash_color = COLOR_SECURITY_RED
 	caliber = CALIBER_KARRAK
-	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/gold =SMALL_MATERIAL_AMOUNT,)
 
 /obj/item/ammo_casing/karrak_laser/spent
 	name = "spent " + parent_type::name
 	desc = " This one is burnt out."
-	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT * 0.8, /datum/material/glass =SMALL_MATERIAL_AMOUNT,)
-
 
 /obj/item/ammo_casing/karrak_laser/degraded
 
@@ -60,16 +58,24 @@
 
 /obj/item/ammo_casing/ripperslug
 	name = "ripperslug shell"
-	desc = "The treated bone shell of a ripperslug. Traditional Tizrian ammunition for their ripperlance rifles."
-	icon_state = "k_casing"
+	desc = "A titanium projectile."
+	icon_state = "tshell"
 	projectile_type = /obj/projectile/bullet/ripperslug
 	caliber = CALIBER_RIPPER
+	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 1.8,)
+
+/obj/item/ammo_casing/ripperslug/grind_results()
+	return list(/datum/reagent/gunpowder = 2)
 
 /obj/item/ammo_casing/ripperslug/bone
 	name = "lead ripperslug"
 	desc = "A fragmenting lead projectile for Tizrian ripperlance rifles."
-	icon_state = "k_casing"
+	icon_state = "blshell"
 	projectile_type = /obj/projectile/bullet/ripperslug/bone
+	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT * 1.8,)
+
+/obj/item/ammo_casing/ripperslug/bone/grind_results()
+	return list(/datum/reagent/brimdust = 2.5)
 
 // .223 (M-90gl Carbine)
 

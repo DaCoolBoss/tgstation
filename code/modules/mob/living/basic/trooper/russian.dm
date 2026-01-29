@@ -30,7 +30,7 @@
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/armoured
 	r_hand = /obj/item/gun/ballistic/rifle/boltaction/surplus
-	loot = /obj/item/gun/ballistic/rifle/boltaction/surplus
+	loot = list(/obj/item/gun/ballistic/rifle/boltaction/surplus)
 	corpse = /obj/effect/mob_spawn/corpse/human/russian/armoured
 	var/projectiletype = /obj/projectile/bullet/strilka310/degraded
 	var/casingtype = null
@@ -39,7 +39,7 @@
 
 /mob/living/basic/trooper/russian/ranged/ranged/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/ranged_attacks, projectile_type = projectiletype = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
+	AddComponent(/datum/component/ranged_attacks, projectile_type = projectiletype, casing_type = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
 
 /mob/living/basic/trooper/russian/ranged/no_weapon_drop
 	loot = null
@@ -78,7 +78,7 @@
 	speed = 1
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
 	r_hand = /obj/item/gun/ballistic/rifle/boltaction/surplus
-	loot = /obj/item/gun/ballistic/rifle/boltaction/surplus
+	loot = list(/obj/item/gun/ballistic/rifle/boltaction/surplus)
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/soviet/armoured
 	corpse = /obj/effect/mob_spawn/corpse/human/soviet/armoured
 	///The type of projectile that fires from attacks.
@@ -89,7 +89,7 @@
 
 /mob/living/basic/trooper/russian/soviet/ranged/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/ranged_attacks, projectile_type = projectiletype = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
+	AddComponent(/datum/component/ranged_attacks, projectile_type = projectiletype, casing_type = casingtype, projectile_sound = projectilesound, cooldown_time = shoot_cooldown)
 
 /mob/living/basic/trooper/russian/soviet/ranged/elite
 	name = "Soviet Officer"

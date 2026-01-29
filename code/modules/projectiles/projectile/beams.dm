@@ -134,16 +134,13 @@
 
 /obj/projectile/beam/karrak
 	name = "karrak laser"
-	icon_state = "laser"
-	damage = 30
-	damage_falloff_tile = 1
-	hitsound = 'sound/items/weapons/sear.ogg'
-	hitsound_wall = 'sound/items/weapons/effects/searwall.ogg'
+	icon_state = "carbine_laser"
+	damage = 32
+	speed = 2.1
+	armour_penetration = 10
 	eyeblur = 0.6 SECONDS
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser
-	reflectable = TRUE
 	wound_bonus = -30
-	damage_falloff_tile = 1
+	light_color = COLOR_SECURITY_RED
 
 /obj/projectile/beam/practice
 	name = "practice laser"

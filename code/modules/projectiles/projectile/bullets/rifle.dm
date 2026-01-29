@@ -276,29 +276,32 @@
 	AddElement(/datum/element/bane, mob_biotypes = MOB_MINING, damage_multiplier = 2)
 
 /obj/projectile/bullet/ripperslug
-	name = "rebar"
+	name = "ripperslug"
 	icon_state = "rebar"
-	damage = 30
-	speed = 1.5
+	sharpness = SHARP_EDGED
+	damage = 32
+	speed = 1.6
 	dismemberment = 1
 	armour_penetration = 25
-	wound_bonus = 10
-	exposed_wound_bonus = 20
+	wound_bonus = 30
+	exposed_wound_bonus = 30
 	embed_type = /datum/embedding/ripper
-	embed_falloff_tile = -5
+	embed_falloff_tile = -4
 	wound_falloff_tile = -2
 
 /obj/projectile/bullet/ripperslug/bone
-	exposed_wound_bonus = 30
+	damage = 26
+	wound_bonus = 25
+	exposed_wound_bonus = 45
+	speed = 1.4
 	embed_type = /datum/embedding/ripper/bone
 	shrapnel_type = /datum/embedding/ripper/bone
-	embed_falloff_tile = -10
+	embed_falloff_tile = -6
 	wound_falloff_tile = -4
 
-
 /datum/embedding/ripper
-	embed_chance = 60
-	fall_chance = 2
+	embed_chance = 75
+	fall_chance = 3
 	jostle_chance = 2
 	ignore_throwspeed_threshold = TRUE
 	pain_stam_pct = 0.4
@@ -309,9 +312,6 @@
 /datum/embedding/ripper/bone
 	embed_chance = 60
 	fall_chance = 2
-	jostle_chance = 2
-	ignore_throwspeed_threshold = TRUE
-	pain_stam_pct = 0.4
-	pain_mult = 3
+	jostle_chance = 3
 	jostle_pain_mult = 3
 	rip_time = 1.2 SECONDS

@@ -247,8 +247,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	ears = /obj/item/radio/headset
-	head = /obj/item/clothing/head/helmet/alt
-	mask = /obj/item/clothing/mask/russian_balaclava
+	head = /obj/item/clothing/head/helmet/army
 
 /obj/effect/mob_spawn/corpse/human/russian/ranged/officer
 	name = "Russian Officer"
@@ -484,6 +483,25 @@
 	belt = /obj/item/storage/bag/mail
 	shoes = /obj/item/clothing/shoes/laceup
 	back = /obj/item/storage/backpack/satchel/leather
+
+/datum/outfit/postman/pre_equip(mob/living/carbon/human/wearer, visuals_only = FALSE)
+	backpack_contents += list(/obj/item/storage/box/survival/engineer/radio,
+	/obj/item/stack/package_wrap/small,
+	)
+	if(prob(80))
+		for(var/counter in 1 to rand(1,6))
+			belt_contents += list(/obj/item/mail/junkmail,)
+	if(prob(50))
+		r_pocket = pick(list(/obj/item/reagent_containers/cup/glass/waterbottle = 40,
+		/obj/item/food/candy = 20,
+		/obj/item/food/sustenance_bar = 20,
+		/obj/item/reagent_containers/cup/soda_cans/grey_bull = 20,
+		))
+	if(prob(75))
+		l_pocket = pick(list(/obj/item/universal_scanner = 50,
+		/obj/item/dest_tagger = 25,
+		/obj/item/hand_labeler = 25,
+		))
 
 /obj/effect/mob_spawn/corpse/human/prey_pod
 	husk = TRUE

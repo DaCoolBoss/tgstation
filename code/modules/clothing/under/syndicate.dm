@@ -119,12 +119,12 @@
 /obj/item/clothing/under/syndicate/camo/tan
 	desc = "A tan military camouflage uniform."
 	icon_state = "camotan"
-	inhand_icon_state = "g_suit"
+	inhand_icon_state = "lb_suit"
 
 /obj/item/clothing/under/syndicate/camo/grey
 	desc = "A grey military camouflage uniform."
 	icon_state = "camogrey"
-	inhand_icon_state = "g_suit"
+	inhand_icon_state = "gy_suit"
 
 /obj/item/clothing/under/syndicate/floortilecamo
 	name = "floortile camouflage fatigues"
@@ -164,10 +164,13 @@
 	name = "advanced military tracksuit"
 	desc = "Military grade tracksuits for frontline squatting."
 	icon_state = "rus_under"
+	inhand_icon_state = "g_suit"
 	can_adjust = FALSE
 	supports_variations_flags = NONE
 	armor_type = /datum/armor/clothing_under/syndicate_rus_army
 	resistance_flags = NONE
+	icon = 'icons/obj/clothing/under/army.dmi'
+	worn_icon = 'icons/mob/clothing/under/army.dmi'
 
 /datum/armor/clothing_under/syndicate_rus_army
 	melee = 5

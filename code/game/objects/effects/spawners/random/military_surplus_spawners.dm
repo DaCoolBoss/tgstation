@@ -209,7 +209,8 @@
 	desc = "Spawns a loose round of ammo for the Karrak rifle. A lot of the old ones are duds."
 	loot = list(
 		/obj/item/ammo_casing/karrak_laser/degraded = 60,
-		/obj/item/ammo_casing/karrak_laser = 40,
+		/obj/item/ammo_casing/karrak_laser = 35,
+		/obj/item/ammo_casing/karrak_laser/spent = 5,
 	)
 
 /obj/effect/spawner/random/mil_surplus/ammo/karrak/box
