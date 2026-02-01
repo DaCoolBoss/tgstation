@@ -22,7 +22,8 @@
 /mob/living/basic/trooper/russian/armoured
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/armoured
 	corpse = /obj/effect/mob_spawn/corpse/human/russian/armoured
-
+	speed = 1.1
+	armor_type = /datum/armor/vest_russian
 
 /mob/living/basic/trooper/russian/ranged
 	name = "Russian Soldier"
@@ -48,10 +49,10 @@
 	name = "Russian Officer"
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/elite
-	r_hand = /obj/item/gun/ballistic/automatic/pistol
+	r_hand = /obj/item/gun/ballistic/revolver/nagant
 	corpse = /obj/effect/mob_spawn/corpse/human/russian/elite
 	loot = list(/obj/item/gun/ballistic/revolver/nagant)
-	projectiletype = null
+	projectiletype = /obj/projectile/bullet/n762
 	casingtype = /obj/item/ammo_casing/n762
 	projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
 	shoot_cooldown = 1 SECONDS
@@ -97,7 +98,7 @@
 	r_hand = /obj/item/gun/ballistic/automatic/pistol
 	corpse = /obj/effect/mob_spawn/corpse/human/soviet/officer
 	loot = list(/obj/item/gun/ballistic/revolver/nagant)
-	projectiletype = null
+	projectiletype = /obj/projectile/bullet/n762
 	casingtype = /obj/item/ammo_casing/n762
 	projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
 	shoot_cooldown = 1 SECONDS

@@ -627,7 +627,7 @@
 	desc = "An old mass-produced plasteel helmet with integrated dust visor. Provides good protection against projectiles. \
 	This one is green."
 	icon_state = "army"
-	inhand_icon_state = "knight_helmet"
+	inhand_icon_state = "army_helmet_green"
 	clothing_flags = THICKMATERIAL
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT_OFF
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -640,6 +640,7 @@
 	desc = "An old mass-produced plasteel helmet with integrated dust visor. Provides good protection against projectiles. \
 	This one is grey, with a red stripe from front to back."
 	icon_state = "army-grey"
+	inhand_icon_state = "army_helmet_grey"
 
 /obj/item/clothing/head/helmet/military
 	name = "Crude Helmet"

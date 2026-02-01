@@ -237,12 +237,12 @@
 
 /obj/projectile/bullet/ripperslug
 	name = "ripperslug"
-	icon_state = "rebar"
+	icon_state = "ripper"
 	sharpness = SHARP_EDGED
-	damage = 32
+	damage = 34
 	speed = 1.6
 	dismemberment = 1
-	armour_penetration = 25
+	armour_penetration = 20
 	wound_bonus = 30
 	exposed_wound_bonus = 30
 	embed_type = /datum/embedding/ripper
@@ -250,10 +250,11 @@
 	wound_falloff_tile = -2
 
 /obj/projectile/bullet/ripperslug/bone
-	damage = 26
+	icon_state = "ripper_bone"
 	wound_bonus = 25
+	armour_penetration = 10
 	exposed_wound_bonus = 45
-	speed = 1.4
+	speed = 1.5
 	embed_type = /datum/embedding/ripper/bone
 	shrapnel_type = /datum/embedding/ripper/bone
 	embed_falloff_tile = -6

@@ -134,10 +134,11 @@
 
 /obj/item/ammo_box/speedloader/ripperslug
 	name = "ripperslug can"
-	desc = "A can for holding ripperlance ammo. Pour directly into refill hatch. Holds 4 slugs."
+	desc = "A can for holding ripperlance ammo. Pour directly into refill hatch. Holds 3 slugs."
+	multiple_sprites = AMMO_BOX_ONE_SPRITE
 	icon_state = "m12gb"
 	ammo_type = /obj/item/ammo_casing/ripperslug
-	max_ammo = 4
+	max_ammo = 3
 	ammo_box_multiload = AMMO_BOX_MULTILOAD_ALL
 	caliber = CALIBER_RIPPER
 

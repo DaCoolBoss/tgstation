@@ -135,12 +135,17 @@
 /obj/projectile/beam/karrak
 	name = "karrak laser"
 	icon_state = "carbine_laser"
-	damage = 32
-	speed = 2.1
+	damage = 36
+	speed = 1.9
 	armour_penetration = 10
 	eyeblur = 0.6 SECONDS
 	wound_bonus = -30
 	light_color = COLOR_SECURITY_RED
+
+/obj/projectile/beam/karrak/weaker
+	damage = 32
+	speed = 1.9
+	armour_penetration = 0
 
 /obj/projectile/beam/practice
 	name = "practice laser"

@@ -170,14 +170,13 @@
 	name = "bronze medal of service"
 	desc = "An old medal made out of bronze. It's probbly worth something."
 	icon_state = "bronze_alt"
-	worn_icon_state = "bronze"
 
 /obj/item/clothing/accessory/antique_medal/silver
-	name = "silver cross of exceptional service"
+	name = "silver medal of exceptional service"
 	desc = "An old medal made out of silver. It's probably pretty valuable."
 	icon_state = "silver"
 
 /obj/item/clothing/accessory/antique_medal/gold
-	name = "gold medal of heroic service"
+	name = "gold cross of heroic service"
 	desc = "An old medal made out of gold. It's probably worth a lot of money."
 	icon_state = "gold_alt"

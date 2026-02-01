@@ -712,7 +712,7 @@
 	name = "space army chestplate"
 	desc = "A wearable set of reinforced polymer plates. Good at protecting your body from projectiles."
 	icon_state = "army-green"
-	inhand_icon_state = "army-green"
+	inhand_icon_state = "armor_army_green"
 	dog_fashion = null
 	armor_type = /datum/armor/space_army_light
 	clothing_flags = THICKMATERIAL
@@ -734,7 +734,7 @@
 
 /obj/item/clothing/suit/armor/vest/army/grey
 	icon_state = "army-grey"
-	inhand_icon_state = "army-grey"
+	inhand_icon_state = "armor_army_grey"
 
 /obj/item/clothing/suit/armor/vest/military
 	name = "Crude chestplate"

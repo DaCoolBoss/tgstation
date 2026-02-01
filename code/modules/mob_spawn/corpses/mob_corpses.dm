@@ -472,20 +472,21 @@
 	skin_tone = "caucasian1"
 	outfit = /datum/outfit/job/assistant/consistent
 
-/obj/effect/mob_spawn/corpse/human/postman
-	name = "Dead Postman"
-	outfit = /datum/outfit/postman
+/obj/effect/mob_spawn/corpse/human/mailman
+	name = "Dead Mailman"
+	outfit = /datum/outfit/mailman
 
-/datum/outfit/postman
-	name = "Postman"
+/datum/outfit/mailman
+	name = "Mailman"
 	head = /obj/item/clothing/head/costume/mailman
 	uniform = /obj/item/clothing/under/misc/mailman
 	belt = /obj/item/storage/bag/mail
 	shoes = /obj/item/clothing/shoes/laceup
 	back = /obj/item/storage/backpack/satchel/leather
 
-/datum/outfit/postman/pre_equip(mob/living/carbon/human/wearer, visuals_only = FALSE)
+/datum/outfit/mailman/pre_equip(mob/living/carbon/human/wearer, visuals_only = FALSE)
 	backpack_contents += list(/obj/item/storage/box/survival/engineer/radio,
+	/obj/item/flashlight,
 	/obj/item/stack/package_wrap/small,
 	)
 	if(prob(80))

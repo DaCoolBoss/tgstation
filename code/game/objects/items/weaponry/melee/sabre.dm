@@ -19,9 +19,11 @@
 	attack_verb_simple = list("slash", "cut")
 	block_sound = 'sound/items/weapons/parry.ogg'
 	hitsound = 'sound/items/weapons/rapierhit.ogg'
-	custom_materials = list(/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT)
+	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT,/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT)
 	wound_bonus = 10
 	exposed_wound_bonus = 25
+	//whether this sword does extra damage to assistants
+	var/assistant_bane = TRUE
 
 /obj/item/melee/sabre/Initialize(mapload)
 	. = ..()
@@ -34,9 +36,10 @@
 		bonus_modifier = 5, \
 	)
 	// The weight of authority comes down on the tider's crimes.
-	AddElement(/datum/element/bane, target_type = /mob/living/carbon/human, damage_multiplier = 0.35)
-	RegisterSignal(src, COMSIG_OBJECT_PRE_BANING, PROC_REF(attempt_bane))
-	RegisterSignal(src, COMSIG_OBJECT_ON_BANING, PROC_REF(bane_effects))
+	if(assistant_bane)
+		AddElement(/datum/element/bane, target_type = /mob/living/carbon/human, damage_multiplier = 0.35)
+		RegisterSignal(src, COMSIG_OBJECT_PRE_BANING, PROC_REF(attempt_bane))
+		RegisterSignal(src, COMSIG_OBJECT_ON_BANING, PROC_REF(bane_effects))
 
 /**
  * If the target reeks of maintenance, the blade can tear through their body with a total of 20 damage.
@@ -112,6 +115,16 @@
 		user.death(FALSE)
 	REMOVE_TRAIT(src, TRAIT_NODROP, SABRE_SUICIDE_TRAIT)
 
+/obj/item/melee/sabre/cavalry
+	name = "cavalry sabre"
+	icon_state = "cavalry_sabre"
+	inhand_icon_state = "cavalry_sabre"
+	force = 18
+	throwforce = 6
+	demolition_mod = 0.70
+	block_chance = 20
+	assistant_bane = FALSE
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT,/datum/material/titanium = HALF_SHEET_MATERIAL_AMOUNT)
 
 /obj/item/melee/parsnip_sabre
 	name = "parsnip sabre"

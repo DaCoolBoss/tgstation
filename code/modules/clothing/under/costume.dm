@@ -71,6 +71,7 @@
 	name = "russian tracksuit"
 	desc = "A popular choice of clothing for Russian gangsters. Made from the cheapest synthetic fibres around."
 	icon = 'icons/obj/clothing/under/army.dmi'
+	worn_icon = 'icons/mob/clothing/under/army.dmi'
 	icon_state = "rus_under"
 	inhand_icon_state = null
 	can_adjust = FALSE

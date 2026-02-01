@@ -44,44 +44,54 @@
 /obj/item/storage/toolbox/ammobox/strilka310/rusty
 	icon_state = "ammobox_strilka_rusty"
 	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip
+	//percent chance this box will look non-rusty
+	var/upgrade_appearance_chance = 40
 
 /obj/item/storage/toolbox/ammobox/strilka310/rusty/Initialize(mapload)
 	. = ..()
-	if(prob(40))
+	if(prob(upgrade_appearance_chance))
 		icon_state = "ammobox_strilka"
 		if(prob(50))
 			desc += " It has a few flakes of rust on the hinges."
 	else
 		desc += " It is covered in rust."
 
-
-/obj/item/storage/toolbox/ammobox/strilka310/really_rusty
-	icon_state = "ammobox_strilka_rusty"
+/obj/item/storage/toolbox/ammobox/strilka310/rusty/really_rusty
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/degraded
+	upgrade_appearance_chance = 2
 
 /obj/item/storage/toolbox/ammobox/karrak
 	name = "k-type ammo box"
 	desc = "This is a shock-resistant It contains a few clips of ammunition for the Strilka."
-	icon_state = "ammobox_ktype"
+	icon_state = "ammobox_karrak"
 	ammo_to_spawn = /obj/item/ammo_box/magazine/karrak
 
 /obj/item/storage/toolbox/ammobox/karrak/degraded
-	icon_state = "ammobox_strilka_rusty"
 	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
 
 /obj/item/storage/toolbox/ammobox/karrak/degraded/Initialize(mapload)
 	. = ..()
 	if(prob(80))
-		name += "battered "
-		if(prob(50))
-			desc += " It has a few flakes of rust on the hinges."
+		name = "battered k-type ammo box"
+		desc += " It has a few dents in it."
 	else
-		desc += " It is covered in rust."
+		if(prob(50))
+			desc += " It is covered in scratches."
 
 
 /obj/item/storage/toolbox/ammobox/karrak/really_degraded
-	icon_state = "ammobox_strilka_rusty"
 	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
+
+/obj/item/storage/toolbox/ammobox/ripperslug
+	name = "ripperslug ammo box"
+	desc = "An ammo box with the seal of the Tizrian Armed Forces printed on it. It should contain a few cans of ammunition for the Tizrian ripperlance."
+	ammo_to_spawn = /obj/item/ammo_box/speedloader/ripperslug
+
+/obj/item/storage/toolbox/ammobox/ripperslug/traditional
+	ammo_to_spawn = /obj/item/ammo_box/speedloader/ripperslug/bone
+
+/obj/item/storage/toolbox/ammobox/ripperslug/mixed
+	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/ripperslug/clip
 
 /obj/item/storage/toolbox/ammobox/wt550m9
 	name = "4.6x30mm ammo box"

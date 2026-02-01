@@ -57,22 +57,24 @@
 //ripperslug (ammo for the tizrian ripperlance)
 
 /obj/item/ammo_casing/ripperslug
-	name = "ripperslug shell"
-	desc = "A titanium projectile."
+	name = "titanium ripperslug"
+	desc = "A fragmenting metal projectile with sharp barbs. Fire it from a ripperlance at something you want to kill."
 	icon_state = "tshell"
 	projectile_type = /obj/projectile/bullet/ripperslug
 	caliber = CALIBER_RIPPER
 	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 1.8,)
+	variance = 1
 
 /obj/item/ammo_casing/ripperslug/grind_results()
 	return list(/datum/reagent/gunpowder = 2)
 
 /obj/item/ammo_casing/ripperslug/bone
-	name = "lead ripperslug"
-	desc = "A fragmenting lead projectile for Tizrian ripperlance rifles."
+	name = "ripperslug shell"
+	desc = "A fragmenting bony projectile with sharp barbs. Fire it from a ripperlance at something you want to kill."
 	icon_state = "blshell"
 	projectile_type = /obj/projectile/bullet/ripperslug/bone
 	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT * 1.8,)
+	variance = 3
 
 /obj/item/ammo_casing/ripperslug/bone/grind_results()
 	return list(/datum/reagent/brimdust = 2.5)

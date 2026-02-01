@@ -549,7 +549,7 @@
 		Based on a traditional Tirazan design, but fine-tuned and mordernised to deliver more damage. \
 		Uses ripperslug ammunition."
 	icon_state = "ripperlance"
-	inhand_icon_state = "lionhunter"
+	inhand_icon_state = "ripperlance"
 	worn_icon_state = "lionhunter"
 	bolt_wording = "refill hatch"
 	semi_auto = TRUE
@@ -557,13 +557,37 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper
 	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 6, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 4, /datum/material/bronze = SHEET_MATERIAL_AMOUNT * 2, /datum/material/plastic = SHEET_MATERIAL_AMOUNT * 1.5)
 
+/obj/item/gun/ballistic/rifle/ripperlance/antique/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/examine_lore, \
+		lore_hint = span_notice("It bears the heraldry of the Tiziran Empire on its stock. [EXAMINE_HINT("Examine closely")] to learn more."), \
+		lore = "Adapted in 2330 to replace the earlier MkII model, the MkIII Imperial Ripperlance was the dominant firearm used by the Tiziran Armed Forces (TAF) during the great Lizard-Human war.<br>\
+		The MkIII was replaced in 2460 with the MkIV as the primary firearm pattern of the TAF, but production ran until 2489 because of the MkIII's popularity.\
+		The MkIII is more reliable and powerful than earlier models, but its real strength is the ease of  \
+		The thaturhree different barrels.<br>\
+		.<br>\
+		Commonly called a 'Karrak rifle', despite not technically being a rifle." \
+	)
+
 /obj/item/gun/ballistic/rifle/ripperlance/antique
 	name = "antique ripperlance"
 	desc = "A solid projectile firearm handcrafted by a Tiziran artisan gunsmith.\
 		Uses ripperslug ammunition."
 	icon_state = "ripperlance_traditional"
+	inhand_icon_state = "ripperlance_traditional"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper/bone
 	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT * 6, /datum/material/bronze = SHEET_MATERIAL_AMOUNT * 4, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 2)
+
+/obj/item/gun/ballistic/rifle/ripperlance/antique/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/examine_lore, \
+		lore_hint = span_notice("It has a crude maker's mark carved into its stock. [EXAMINE_HINT("Examine closely")] to learn more."), \
+		lore = "The design of the ripperlance predates written Tizrian history. Ancient examples, dating back up to 12 centuries old, were hand-crafted by tribal experts from parts of local fauna.<br>\
+		The thick, robust skull of a pachydon serves as the main housing for the weapon. Because of its natural shape, the ripperlance is capable of firing three slugs in rapid succession through three different barrels.<br>\
+		The firing mechanism is crude but simple. A bronze crankhatch in the stock allows loading of all three barrels at once.\
+		.<br>\
+		Commonly called a 'Karrak rifle', despite not technically being a rifle." \
+	)
 
 
 /obj/item/gun/ballistic/rifle/ripperlance/royal

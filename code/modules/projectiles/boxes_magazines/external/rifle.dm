@@ -87,16 +87,50 @@
 	ammo_band_color = COLOR_AMMO_HELLFIRE
 
 /obj/item/ammo_box/magazine/karrak
-	name = "karrak rifle clip (K-Series)"
+	name = "capacitor clip (K-Series)"
 	icon_state = "k_clip"
-	desc = "A clip for holding eight laser-capacitors, and loading them into a Karrak rifle."
+	desc = "A clip for holding eight laser-capacitors, and loading them into a Karrak laser gun."
 	ammo_type = /obj/item/ammo_casing/karrak_laser
-	ammo_band_color = COLOR_AMMO_HELLFIRE
+	max_ammo = 8
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	//percent chance that this mag gets cosmetic damage on examine message
+	var/damage_chance = 10
+	//percent chance that, if damage_chance is rolled, the message will be upgraded in severity
+	var/damage_chance_severity = 1
+	//percent chance ammo will have random defect (if it doesnt spawn as dud)
+	var/ammo_degrade_chance = 2
+	//percent chance ammo will be be spent when it spawns
+	var/ammo_dud_chance = 0
+
+/obj/item/ammo_box/magazine/karrak/Initialize(mapload)
+	. = ..()
+	var/list/damage_messages = list(
+		"It seems to be damaged",
+		"It's a little dinged up",
+		"There are little scratches all over",
+		"It's a little scuffed",
+	)
+	var/list/severe_damage_messages = list(
+		"It's got big scratches all over",
+		"There's a sizable crack in it",
+		"The side is somewhat bent",
+	)
+	if(prob(damage_chance))
+		if(prob(damage_chance_severity))
+			damage_messages = severe_damage_messages
+		desc += " [pick(damage_messages)]."
 
 /obj/item/ammo_box/magazine/karrak/unreliable
-	desc = parent_type::desc + "This one has dings and scratches from field use."
 	ammo_type = /obj/item/ammo_casing/karrak_laser/degraded
+	damage_chance = 70
+	damage_chance_severity = 5
+	ammo_degrade_chance = 55
+	ammo_dud_chance = 5
+
 
 /obj/item/ammo_box/magazine/karrak/really_unreliable
-	desc = parent_type::desc + "This one has a big crack in it."
 	ammo_type = /obj/item/ammo_casing/karrak_laser/degraded
+	damage_chance = 90
+	damage_chance_severity = 85
+	ammo_degrade_chance = 80
+	ammo_dud_chance = 20

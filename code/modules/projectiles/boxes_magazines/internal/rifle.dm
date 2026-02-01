@@ -65,7 +65,7 @@
 	name = "ripperlance internal magazine (lead)"
 	ammo_type = /obj/item/ammo_casing/ripperslug
 	caliber = CALIBER_RIPPER
-	max_ammo = 4
+	max_ammo = 3
 
 /obj/item/ammo_box/magazine/internal/ripper/bone
 	name = "ripperlance internal magazine (bone)"

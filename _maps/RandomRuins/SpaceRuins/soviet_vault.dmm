@@ -975,7 +975,7 @@
 	pixel_y = 9
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/mob_spawn/corpse/human/postman{
+/obj/effect/mob_spawn/corpse/human/mailman{
 	brute_damage = 200;
 	husk = 1
 	},
