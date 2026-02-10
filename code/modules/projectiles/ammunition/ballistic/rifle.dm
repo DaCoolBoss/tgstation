@@ -33,7 +33,7 @@
 
 /obj/item/ammo_casing/karrak_laser
 	name = "type k laser capacitor"
-	desc = "A single-use munition capacitor for a Karrak laser gun. Fires a laser instead of a bullet."
+	desc = "A single-use munition capacitor for a Karrak laser gun."
 	icon_state = "k_casing"
 	projectile_type = /obj/projectile/beam/karrak
 	muzzle_flash_color = COLOR_SECURITY_RED
@@ -64,6 +64,10 @@
 	caliber = CALIBER_RIPPER
 	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 1.8,)
 	variance = 1
+
+/obj/item/ammo_casing/ripperslug/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/caseless)
 
 /obj/item/ammo_casing/ripperslug/grind_results()
 	return list(/datum/reagent/gunpowder = 2)

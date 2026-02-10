@@ -89,6 +89,8 @@
 /obj/item/ammo_box/magazine/karrak
 	name = "capacitor clip (K-Series)"
 	icon_state = "k_clip"
+	worn_icon = null
+	worn_icon_state = null
 	desc = "A clip for holding eight laser-capacitors, and loading them into a Karrak laser gun."
 	ammo_type = /obj/item/ammo_casing/karrak_laser
 	max_ammo = 8

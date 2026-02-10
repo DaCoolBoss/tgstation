@@ -240,7 +240,7 @@
 	icon_state = "ripper"
 	sharpness = SHARP_EDGED
 	damage = 34
-	speed = 1.6
+	speed = 1.15
 	dismemberment = 1
 	armour_penetration = 20
 	wound_bonus = 30
@@ -248,31 +248,41 @@
 	embed_type = /datum/embedding/ripper
 	embed_falloff_tile = -4
 	wound_falloff_tile = -2
+	ricochets_max = 2
+	ricochet_chance = 50
+	ricochet_auto_aim_angle = 20
+	ricochet_auto_aim_range = 3
+	ricochet_decay_chance = 0.5
+	ricochet_decay_damage = 0.8
+
+/datum/embedding/ripper
+	embed_chance = 75
+	fall_chance = 2
+	jostle_chance = 2
+	ignore_throwspeed_threshold = TRUE
+	pain_stam_pct = 0.4
+	pain_mult = 3
+	jostle_pain_mult = 2.5
+	rip_time = 1.2 SECONDS
 
 /obj/projectile/bullet/ripperslug/bone
 	icon_state = "ripper_bone"
 	wound_bonus = 25
 	armour_penetration = 10
 	exposed_wound_bonus = 45
-	speed = 1.5
+	speed = 1.1
 	embed_type = /datum/embedding/ripper/bone
 	shrapnel_type = /datum/embedding/ripper/bone
 	embed_falloff_tile = -6
 	wound_falloff_tile = -4
-
-/datum/embedding/ripper
-	embed_chance = 75
-	fall_chance = 3
-	jostle_chance = 2
-	ignore_throwspeed_threshold = TRUE
-	pain_stam_pct = 0.4
-	pain_mult = 3
-	jostle_pain_mult = 2.5
-	rip_time = 0.8 SECONDS
+	ricochet_chance = 60
+	ricochet_auto_aim_angle = 30
+	ricochet_auto_aim_range = 4
+	ricochet_decay_damage = 0.7
 
 /datum/embedding/ripper/bone
 	embed_chance = 60
-	fall_chance = 2
+	fall_chance = 3.5
 	jostle_chance = 3
 	jostle_pain_mult = 3
-	rip_time = 1.2 SECONDS
+	rip_time = 1.6 SECONDS

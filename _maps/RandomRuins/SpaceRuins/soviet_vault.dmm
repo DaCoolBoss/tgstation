@@ -3,6 +3,9 @@
 /obj/structure/door_assembly/door_assembly_vault{
 	anchored = 1
 	},
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/soviet_bunker)
 "bL" = (
@@ -243,6 +246,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "lr" = (
@@ -434,6 +438,9 @@
 /obj/structure/fans/tiny/invisible,
 /obj/effect/mapping_helpers/airlock/access/all/away/generic4,
 /obj/effect/mapping_helpers/airlock/access/all/away/security,
+/obj/effect/turf_decal/stripes{
+	dir = 4
+	},
 /turf/open/floor/mineral/titanium/tiled,
 /area/ruin/space/has_grav/soviet_bunker)
 "ub" = (
@@ -457,10 +464,7 @@
 	pixel_x = 3;
 	pixel_y = 9
 	},
-/obj/item/storage/toolbox/ammobox/strilka310/really_rusty{
-	pixel_x = -3;
-	pixel_y = -2
-	},
+/obj/item/storage/toolbox/ammobox/strilka310/rusty/really_rusty,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/soviet_bunker)
 "uQ" = (
@@ -734,6 +738,7 @@
 /turf/open/floor/mineral/titanium/tiled,
 /area/ruin/space/has_grav/soviet_bunker)
 "GG" = (
+/obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/stripes{
 	dir = 8
 	},
@@ -790,10 +795,6 @@
 /mob/living/basic/carp,
 /turf/template_noop,
 /area/template_noop)
-"IR" = (
-/obj/structure/lattice,
-/turf/closed/mineral/random,
-/area/space/nearstation)
 "IT" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -954,6 +955,7 @@
 /obj/machinery/power/rtg/advanced{
 	power_gen = 12000
 	},
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/soviet_bunker)
 "ON" = (
@@ -1443,9 +1445,9 @@ Lr
 Lr
 Lr
 nc
-Lr
-IR
-Lr
+nc
+hR
+nc
 Ng
 ih
 ih
@@ -1479,8 +1481,8 @@ Lr
 Lr
 Lr
 Lr
-Lr
-IR
+nc
+hR
 Lr
 Lr
 Lr
@@ -1516,7 +1518,7 @@ Lr
 Lr
 Lr
 Lr
-IR
+hR
 Lr
 Lr
 Lr

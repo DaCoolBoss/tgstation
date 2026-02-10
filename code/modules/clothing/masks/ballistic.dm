@@ -2,7 +2,7 @@
 	name = "ballistic mask"
 	desc = "A carbon fiber mask for deflecting bullets away from your face. Obstructs peripheral vision."
 	icon_state = "ballistic"
-	inhand_icon_state = "greyscale_bandana"
+	inhand_icon_state = "ballistic"
 	flags_cover = MASKCOVERSMOUTH
 	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
 	visor_flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDESNOUT

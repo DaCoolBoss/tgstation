@@ -62,7 +62,7 @@
 
 /obj/item/storage/toolbox/ammobox/karrak
 	name = "k-type ammo box"
-	desc = "This is a shock-resistant It contains a few clips of ammunition for the Strilka."
+	desc = "A shock-resistant container for ammo, with the Karrak Industries logo painted on the front. It contains a few clips of ammunition for a Karrak laser gun."
 	icon_state = "ammobox_karrak"
 	ammo_to_spawn = /obj/item/ammo_box/magazine/karrak
 
@@ -80,11 +80,14 @@
 
 
 /obj/item/storage/toolbox/ammobox/karrak/really_degraded
-	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/karrak/clip
+	ammo_to_spawn = /obj/item/ammo_box/magazine/karrak/really_unreliable
+	name = "battered k-type ammo box"
+	desc = parent_type::desc + " It has a few dents in it."
 
 /obj/item/storage/toolbox/ammobox/ripperslug
 	name = "ripperslug ammo box"
 	desc = "An ammo box with the seal of the Tizrian Armed Forces printed on it. It should contain a few cans of ammunition for the Tizrian ripperlance."
+	icon_state = "ammobox_ripper"
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/ripperslug
 
 /obj/item/storage/toolbox/ammobox/ripperslug/traditional

@@ -185,12 +185,11 @@
 		/obj/effect/decal/cleanable/confetti,
 		)
 		new decal(pick_n_take(empty_shuttle_turfs))
-
 	for(var/counter in 1 to 3)
 		var/vodka_drop = /obj/item/reagent_containers/cup/glass/bottle/vodka
 		new vodka_drop(pick_n_take(empty_shuttle_turfs))
 	spawn_list.Add(/mob/living/basic/trooper/russian/armoured)
-	spawn_list.Add(/mob/living/basic/trooper/russian/ranged/elite) //drops a mateba
+	spawn_list.Add(/mob/living/basic/trooper/russian/ranged_elite) //drops a mateba
 	var/extra_muscle = pick(/mob/living/basic/trooper/russian,
 	/mob/living/basic/trooper/russian/armoured,
 	/mob/living/basic/trooper/russian/ranged,

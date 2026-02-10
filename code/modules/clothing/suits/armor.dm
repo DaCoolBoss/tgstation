@@ -621,7 +621,7 @@
 
 /datum/armor/vest_russian_coat
 	melee = 30
-	bullet = 10
+	bullet = 30
 	laser = 10
 	energy = 30
 	bomb = 25

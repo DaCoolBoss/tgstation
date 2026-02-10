@@ -62,7 +62,7 @@
 	ammo_type = /obj/item/ammo_casing/rebar/syndie
 
 /obj/item/ammo_box/magazine/internal/ripper
-	name = "ripperlance internal magazine (lead)"
+	name = "ripperlance internal magazine (titanium)"
 	ammo_type = /obj/item/ammo_casing/ripperslug
 	caliber = CALIBER_RIPPER
 	max_ammo = 3
