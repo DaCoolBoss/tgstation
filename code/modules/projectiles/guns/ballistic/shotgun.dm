@@ -428,12 +428,10 @@
 	icon_state = "donk_musket"
 	inhand_icon_state = "donk_musket"
 	worn_icon_state = "donk_musket"
-	desc = "A large-bore muzzleloading firearm with a classy wooden frame. Cheap, accurate, and easy to maintain. Reload after every shot."
+	desc = "A large-bore single-shot muzzleloading firearm with a classy wooden frame. Cheap, accurate, and easy to maintain. \
+	Compatible with a wide variety of ammo calibers due to patented AutoSabot™ technology. Reload by shoving a new round directly into the barrel when empty."
 	bolt_type = BOLT_TYPE_OPEN
-
-	alternative_caliber = CALIBER_50BMG
 	casing_ejector = TRUE
-	bolt_type = BOLT_TYPE_LOCKING
-	bolt_wording = "bolt"
 	internal_magazine = TRUE
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/single/musket
+	var/list/compatible_calibers = list(CALIBER_45,CALIBER_50BMG,CALIBER_50AE,CALIBER_SHOTGUN,CALIBER_JUNK,)

@@ -64,6 +64,7 @@
 	name = "k-type ammo box"
 	desc = "A shock-resistant container for ammo, with the Karrak Industries logo painted on the front. It contains a few clips of ammunition for a Karrak laser gun."
 	icon_state = "ammobox_karrak"
+	inhand_icon_state = "ammobox_karrak"
 	ammo_to_spawn = /obj/item/ammo_box/magazine/karrak
 
 /obj/item/storage/toolbox/ammobox/karrak/degraded
@@ -84,17 +85,18 @@
 	name = "battered k-type ammo box"
 	desc = parent_type::desc + " It has a few dents in it."
 
-/obj/item/storage/toolbox/ammobox/ripperslug
-	name = "ripperslug ammo box"
+/obj/item/storage/toolbox/ammobox/ripperdart
+	name = "ripperdart ammo box"
 	desc = "An ammo box with the seal of the Tizrian Armed Forces printed on it. It should contain a few cans of ammunition for the Tizrian ripperlance."
 	icon_state = "ammobox_ripper"
-	ammo_to_spawn = /obj/item/ammo_box/speedloader/ripperslug
+	inhand_icon_state = "ammobox_ripper"
+	ammo_to_spawn = /obj/item/ammo_box/speedloader/ripperdart
 
-/obj/item/storage/toolbox/ammobox/ripperslug/traditional
-	ammo_to_spawn = /obj/item/ammo_box/speedloader/ripperslug/bone
+/obj/item/storage/toolbox/ammobox/ripperdart/traditional
+	ammo_to_spawn = /obj/item/ammo_box/speedloader/ripperdart/bone
 
-/obj/item/storage/toolbox/ammobox/ripperslug/mixed
-	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/ripperslug/clip
+/obj/item/storage/toolbox/ammobox/ripperdart/mixed
+	ammo_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/ripperdart/clip
 
 /obj/item/storage/toolbox/ammobox/wt550m9
 	name = "4.6x30mm ammo box"
@@ -315,20 +317,21 @@
 	name = "imperial gun case"
 	desc = "A case for holding a gun. It bears the Tiziran Armed Forces coat of arms."
 	icon_state = "imperial_guncase"
+	inhand_icon_state = "tizrian_case"
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/ripperlance
-	extra_to_spawn = /obj/item/ammo_casing/ripperslug
+	extra_to_spawn = /obj/item/ammo_casing/ripperdart
 
 /obj/item/storage/toolbox/guncase/ripper/antique
 	weapon_to_spawn = /obj/item/gun/ballistic/rifle/ripperlance/antique
-	extra_to_spawn = /obj/item/ammo_casing/ripperslug/bone
+	extra_to_spawn = /obj/item/ammo_casing/ripperdart/bone
 
 /obj/item/storage/toolbox/guncase/donkmusket
 	name = "\improper Donk Co. gun case"
-	desc = "A case for holding a gun. It is stamped with the word 'DONK'."
+	desc = "A case for holding a gun. It has 'DONK' stamped across it in bold yellow letters."
 	icon_state = "donk_guncase"
+	inhand_icon_state = "donk_case"
 	weapon_to_spawn = /obj/item/gun/ballistic/shotgun/musket
 	extra_to_spawn = /obj/effect/spawner/random/mil_surplus/ammo/donk
-
 
 /obj/item/storage/toolbox/guncase/monkeycase
 	name = "monkey gun case"

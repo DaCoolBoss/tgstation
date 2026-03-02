@@ -545,19 +545,23 @@
 
 /obj/item/gun/ballistic/rifle/ripperlance
 	name = "mkIII ripperlance"
-	desc = "A solid projectile firearm made of bronze and hypercompressed timbershroom, manufactured one of the Tirazan factory.\
-		Based on a traditional Tirazan design, but fine-tuned and mordernised to deliver more damage. \
-		Uses ripperslug ammunition."
-	icon_state = "ripperlance"
+	desc = "A solid projectile firearm made to the standards of the Tiziran Imperial Manufactory Corp in one of its many munitions factories. \
+		Has an integrated monomolecular axe-head on the underside of the barrel. Uses ripperdart ammunition."
+	icon_state = "ripperlance_modern"
 	inhand_icon_state = "ripperlance"
-	worn_icon_state = "lionhunter"
+	worn_icon_state = "ripperlance"
 	bolt_wording = "refill hatch"
+	force = 18
+	exposed_wound_bonus = 10
+	sharpness = SHARP_EDGED
 	semi_auto = TRUE
-	can_be_sawn_off = FALSE
+	armour_penetration = 20
+	can_hold_up = FALSE
+	can_be_sawn_off = TRUE
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper
-	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 6, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 4, /datum/material/bronze = SHEET_MATERIAL_AMOUNT * 2, /datum/material/plastic = SHEET_MATERIAL_AMOUNT * 1.5)
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 6, /datum/material/titanium = SHEET_MATERIAL_AMOUNT * 4, /datum/material/plastic = SHEET_MATERIAL_AMOUNT * 1.5)
 	var/deep_lore = "Adapted in 2330 to replace the earlier MkII model, the MkIII Imperial Ripperlance was the dominant firearm used by the Tiziran Armed Forces (TAF) during the great Lizard-Human war.<br>\
-		The MkIII was replaced in 2460 with the MkIV as the primary firearm pattern of the TAF, but production ran until 2489 because of the MkIII's popularity.\
+		The MkIII was replaced in 2460 with the MkIV as the primary firearm pattern of the TAF, but production ran until 2489 because of the MkIII's popularity. \
 		The MkIII is more reliable and powerful than earlier models, but its real strength is the ease of  \
 		The thaturhree different barrels.<br>\
 		.<br>\
@@ -566,34 +570,87 @@
 
 /obj/item/gun/ballistic/rifle/ripperlance/Initialize(mapload)
 	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
 	AddElement(/datum/element/examine_lore, \
 		lore_hint = span_notice("It bears [makers_mark] on its stock. [EXAMINE_HINT("Examine closely")] to learn more."), \
 		lore = deep_lore \
 	)
 
+/obj/item/gun/ballistic/rifle/ripperlance/update_icon_state()
+	. = ..()
+	var/updated_icon = "[inhand_icon_state]"
+	if(sawn_off)
+		updated_icon = "[updated_icon]" + "_sawn"
+	if(!magazine)
+		updated_icon = "[updated_icon]" + "-open"
+	inhand_icon_state = updated_icon
+
+/obj/item/gun/ballistic/rifle/ripperlance/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, \
+		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
+		light_overlay = "flight", \
+		overlay_x = 21, \
+		overlay_y = 13)
+
+/obj/item/gun/ballistic/rifle/ripperlance/sawoff(mob/user)
+	. = ..()
+	if(.)
+		name = "mkIII rippergun"
+		base_icon_state = "ripperlance_modern"
+		icon_state = "ripperlance_modern_sawn"
+		inhand_icon_state = "ripperlance_sawn"
+		worn_icon_state = "karrak_carbine_sawn"
+		force = 5
+		sharpness = FALSE
+		update_appearance()
+
+/obj/item/gun/ballistic/rifle/ripperlance/rack(mob/user = null)
+	if (bolt_locked == FALSE)
+		balloon_alert(user, "ammo hatch opened")
+		playsound(src, rack_sound, rack_sound_volume, rack_sound_vary)
+		process_chamber(FALSE, FALSE, FALSE)
+		bolt_locked = TRUE
+		update_appearance()
+		return
+	drop_bolt(user)
+
+/obj/item/gun/ballistic/rifle/ripperlance/attack_secondary(mob/living/victim, mob/living/user)
+	//rightclicking while holding the ripperlance uses it as a lance (unless you cut the speartip off)
+	if(!sawn_off)
+		melee_attack_chain(user, victim)
+	else return SECONDARY_ATTACK_CALL_NORMAL
+
 /obj/item/gun/ballistic/rifle/ripperlance/antique
 	name = "antique ripperlance"
-	desc = "A solid projectile firearm handcrafted by a Tiziran artisan gunsmith.\
-		Uses ripperslug ammunition."
+	desc = "A solid projectile firearm handmade by a Tiziran artisan gunsmith from traditional materials. \
+		Has an integrated axe-head on the underside of the barrel. Uses ripperdart ammunition."
 	icon_state = "ripperlance_traditional"
 	inhand_icon_state = "ripperlance_traditional"
+	worn_icon_state = "ripperlance_traditional"
+	force = 16
+	wound_bonus = -15
+	exposed_wound_bonus = 20
+	armour_penetration = 10
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/ripper/bone
 	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT * 6, /datum/material/bronze = SHEET_MATERIAL_AMOUNT * 4, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 2)
-	makers_mark = "a crudly engraved maker's mark"
+	makers_mark = "an engraved monogram"
+	sawn_desc = null
 	deep_lore = "The design of the ripperlance predates written Tizrian history. Ancient examples, at least 12 centuries old, were hand-crafted by tribal experts from parts of local fauna. That tradition has survived among some Tiziran tribes to this day.<br>\
 		The thick, robust skull of a pachydon serves as the main housing for the weapon. Because of its natural shape, the ripperlance is capable of firing three slugs in rapid succession through three different barrels.<br>\
-		The firing mechanism is crude but simple. A bronze crankhatch in the stock allows loading of all three barrels at once.\
-		.<br>\
-		Commonly called a 'Karrak rifle', despite not technically being a rifle."
+		The firing mechanism is crude but simple. A bronze crankhatch in the stock allows loading of all three barrels at once, and a robust friction-cog .\
+		.<br>"
 
-/obj/item/gun/ballistic/rifle/ripperlance/mastercraft
-	name = "mastercraft ripperlance"
-	desc = "A solid projectile firearm made of fine materials, handcrafted by a cabal of Tiziran artesan gunsmiths.\
-		Capable of firing dried ripper-slug chitin, or their modern lead equivelents."
-	makers_mark = "the royal seal of the Bronzeclaw Caste"
-	deep_lore = "Manufactured to exacting standards and hand-assembled by the elders of the Bronzeclaw caste, widely regarded as the galaxy's finest firearms manufacturers, the mastercraft is the pinnacle of ripperlance design.<br>\
-		The finest materials have been selected for maximum reliability and ergonomics. The extreme cost of creating each one these weapons makes them incredibly rare and valuable on the open market.<br>"
+/obj/item/gun/ballistic/rifle/ripperlance/antique/add_seclight_point()
+	return
 
-/obj/item/gun/ballistic/rifle/ripperlance/mastercraft/Initialize(mapload)
+/obj/item/gun/ballistic/rifle/ripperlance/antique/sawoff(mob/user)
 	. = ..()
-	AddComponent(/datum/component/scope, range_modifier = 1.5)
+	if(.)
+		name = "antique rippergun"
+		base_icon_state = "ripperlance_traditional"
+		icon_state = "ripperlance_traditional_sawn"
+		inhand_icon_state = "ripperlance_sawn"
+		worn_icon_state = "karrak_carbine_sawn"
+		force = 5
+		sharpness = FALSE
+		update_appearance()

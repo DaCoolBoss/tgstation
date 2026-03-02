@@ -235,8 +235,8 @@
 	damage_type = BRUTE
 	icon_state = "paperball"
 
-/obj/projectile/bullet/ripperslug
-	name = "ripperslug"
+/obj/projectile/bullet/ripperdart
+	name = "ripperdart"
 	icon_state = "ripper"
 	sharpness = SHARP_EDGED
 	damage = 34
@@ -265,7 +265,7 @@
 	jostle_pain_mult = 2.5
 	rip_time = 1.2 SECONDS
 
-/obj/projectile/bullet/ripperslug/bone
+/obj/projectile/bullet/ripperdart/bone
 	icon_state = "ripper_bone"
 	wound_bonus = 25
 	armour_penetration = 10

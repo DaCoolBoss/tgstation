@@ -52,7 +52,7 @@
 
 /obj/effect/spawner/random/mil_surplus/armour/double
 	name = "double military surplus armour spawner"
-	desc = "Spawns two random bits of armour, so you can share with a friend. Maybe they will match, maybe they won't."
+	desc = "Spawns two random bits of armour, so you can share with a friend."
 	spawn_loot_count = 2
 
 /obj/effect/spawner/random/mil_surplus/clothing
@@ -156,11 +156,11 @@
 	loot = list(
 		/obj/effect/spawner/random/mil_surplus/ammo/strilka310/box = 25,
 		/obj/effect/spawner/random/mil_surplus/ammo/karrak/box = 20,
-		/obj/effect/spawner/random/mil_surplus/ammo/ripperslug/box = 15,
+		/obj/effect/spawner/random/mil_surplus/ammo/ripperdart/box = 15,
 		/obj/effect/spawner/random/mil_surplus/ammo/donk = 14,
 		/obj/effect/spawner/random/mil_surplus/ammo/strilka310/clip = 10,
 		/obj/effect/spawner/random/mil_surplus/ammo/karrak/clip = 10,
-		/obj/effect/spawner/random/mil_surplus/ammo/ripperslug/clip = 5,
+		/obj/effect/spawner/random/mil_surplus/ammo/ripperdart/clip = 5,
 		/obj/item/storage/box/donkpockets/donkpocketshell = 1,
 	)
 
@@ -234,27 +234,27 @@
 		/obj/item/ammo_box/magazine/karrak/really_unreliable = 30,
 	)
 
-/obj/effect/spawner/random/mil_surplus/ammo/ripperslug
+/obj/effect/spawner/random/mil_surplus/ammo/ripperdart
 	name = "ripslug case spawner"
 	desc = "Spawns a ripslug. Can either be titanium or bone. Either way, getting shot with one really hurts."
 	loot = list(
-		/obj/item/ammo_casing/ripperslug/bone = 60,
-		/obj/item/ammo_casing/ripperslug = 40,
+		/obj/item/ammo_casing/ripperdart/bone = 60,
+		/obj/item/ammo_casing/ripperdart = 40,
 	)
 
-/obj/effect/spawner/random/mil_surplus/ammo/ripperslug/box
-	name = "random ripperslug ammo box spawner"
-	desc = "Spawns a box of cans of ripperslugs. A random one."
+/obj/effect/spawner/random/mil_surplus/ammo/ripperdart/box
+	name = "random ripperdart ammo box spawner"
+	desc = "Spawns a box of cans of ripperdarts. A random one."
 	loot = list(
-		/obj/item/storage/toolbox/ammobox/ripperslug/traditional = 50,
-		/obj/item/storage/toolbox/ammobox/ripperslug = 30,
-		/obj/item/storage/toolbox/ammobox/ripperslug/mixed = 10,
+		/obj/item/storage/toolbox/ammobox/ripperdart/traditional = 50,
+		/obj/item/storage/toolbox/ammobox/ripperdart = 30,
+		/obj/item/storage/toolbox/ammobox/ripperdart/mixed = 10,
 	)
 
-/obj/effect/spawner/random/mil_surplus/ammo/ripperslug/clip
-	name = "random ripperslug can spawner"
+/obj/effect/spawner/random/mil_surplus/ammo/ripperdart/clip
+	name = "random ripperdart can spawner"
 	desc = "Spawns a can of ripslugs. Can either be titanium or bone."
 	loot = list(
-		/obj/item/ammo_box/speedloader/ripperslug/bone = 60,
-		/obj/item/ammo_box/speedloader/ripperslug = 40,
+		/obj/item/ammo_box/speedloader/ripperdart/bone = 60,
+		/obj/item/ammo_box/speedloader/ripperdart = 40,
 	)

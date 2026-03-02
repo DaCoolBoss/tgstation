@@ -132,16 +132,23 @@
 		These fancy bullets pass right though valuables until they end up in a far less expensive human skull."
 	ammo_type = /obj/item/ammo_casing/strilka310/phasic
 
-/obj/item/ammo_box/speedloader/ripperslug
-	name = "ripperslug can"
+/obj/item/ammo_box/speedloader/ripperdart
+	name = "ripperdart can"
 	desc = "A can for holding ripperlance ammo. Pour directly into refill hatch. Holds 3 slugs."
 	multiple_sprites = AMMO_BOX_ONE_SPRITE
-	icon_state = "m12gb"
-	ammo_type = /obj/item/ammo_casing/ripperslug
+	icon_state = "ripperlance_clip"
+	ammo_type = /obj/item/ammo_casing/ripperdart
 	max_ammo = 3
 	ammo_box_multiload = AMMO_BOX_MULTILOAD_ALL
 	caliber = CALIBER_RIPPER
 
-/obj/item/ammo_box/speedloader/ripperslug/bone
-	ammo_type = /obj/item/ammo_casing/ripperslug/bone
-	icon_state = "m12gsl"
+/obj/item/ammo_box/speedloader/ripperdart/update_overlays()
+	. = ..()
+	if(!LAZYLEN(stored_ammo))
+		return
+	for(var/inserted_ammo in 1 to stored_ammo.len)
+		var/obj/item/ammo_casing/ripperdart/this_slug = stored_ammo[inserted_ammo]
+		. += "ripperlance_clip-[this_slug::ripper_type]-[inserted_ammo]"
+
+/obj/item/ammo_box/speedloader/ripperdart/bone
+	ammo_type = /obj/item/ammo_casing/ripperdart/bone

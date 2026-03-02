@@ -39,9 +39,8 @@
 	custom_materials = list(/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 4,/datum/material/iron = SHEET_MATERIAL_AMOUNT * 2.5,/datum/material/glass = HALF_SHEET_MATERIAL_AMOUNT,)
 	obj_flags = null
 	tac_reloads = TRUE
-	var/deep_lore = "The L08 Karrak Lever Action Light Ray Cannon was produced by Karrak Industries from 2381 until the corporation's liquidation in 2428. <br>\
-		The L08 was the first photon-based firearm to see widespread use in state conflicts, most famously during the late Human-Lizard wars. <br>\
-		The L08's lack of fully automatic fire and its reliance on single-use capacitor cells led to its swift decline in popularity upon the invention of NT's rechargable internal laser capacitors. <br>\
+	var/deep_lore = "The L08 Karrak Lever Action Light Ray Cannon was produced by Karrak Industries from 2381 until the corporation's liquidation in 2428. It was the first photon-based firearm to see widespread use in state conflicts, most famously during the late Human-Lizard wars. <br>\
+		The L08's lack of fully automatic fire and its reliance on single-use capacitor cells led to its swift decline in popularity upon the invention of NT's rechargable internal laser capacitors. In the current day it sees use primarily among the outer fringes of colonised space. <br>\
 		Commonly called a 'Karrak rifle', despite not technically being a rifle."
 
 /obj/item/gun/ballistic/lever_action/karrak/Initialize(mapload)
@@ -91,6 +90,7 @@
 		inhand_icon_state = "karrak_carbine_sawn"
 		worn_icon_state = "karrak_carbine_sawn"
 		is_stock_folded = FALSE
+		recoil = null
 		update_appearance()
 
 /obj/item/gun/ballistic/lever_action/karrak/carbine/blow_up(mob/user)
@@ -104,7 +104,6 @@
 	. = ..()
 
 /obj/item/gun/ballistic/lever_action/karrak/carbine/click_alt(mob/user)
-	//alt+clicking the gun flips the stock up or down
 	if(sawn_off)
 		return CLICK_ACTION_SUCCESS
 	if(loc != user || !(src in user.held_items))

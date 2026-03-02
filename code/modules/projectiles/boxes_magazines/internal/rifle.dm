@@ -63,13 +63,13 @@
 
 /obj/item/ammo_box/magazine/internal/ripper
 	name = "ripperlance internal magazine (titanium)"
-	ammo_type = /obj/item/ammo_casing/ripperslug
+	ammo_type = /obj/item/ammo_casing/ripperdart
 	caliber = CALIBER_RIPPER
 	max_ammo = 3
 
 /obj/item/ammo_box/magazine/internal/ripper/bone
 	name = "ripperlance internal magazine (bone)"
-	ammo_type = /obj/item/ammo_casing/ripperslug/bone
+	ammo_type = /obj/item/ammo_casing/ripperdart/bone
 
 /obj/item/ammo_box/magazine/internal/sks
 	name = "\improper SKS rifle internal magazine"

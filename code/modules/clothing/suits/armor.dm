@@ -592,7 +592,7 @@
 
 /obj/item/clothing/suit/armor/vest/russian
 	name = "russian vest"
-	desc = "A bulletproof vest with forest camo. Good thing there's plenty of forests to hide in around here, right?"
+	desc = "A protective armour vest with forest camo. Good thing there's plenty of forests to hide in around here, right?"
 	icon_state = "rus_armor"
 	inhand_icon_state = null
 	armor_type = /datum/armor/vest_russian
@@ -600,17 +600,17 @@
 	body_parts_covered = CHEST|GROIN
 
 /datum/armor/vest_russian
-	melee = 30
+	melee = 45
 	bullet = 40
-	laser = 10
-	bomb = 10
+	energy = 10
+	bomb = 20
 	fire = 20
 	acid = 50
 	wound = 10
 
 /obj/item/clothing/suit/armor/vest/russian_coat
 	name = "russian battle coat"
-	desc = "Used in extremely cold fronts, made out of real bears."
+	desc = "A protective coat designed to be used in extremely cold fronts. Thick layers of insulating space bear hide keep the cold out, while kevlar underlayers protect the wearer from bullets."
 	icon_state = "rus_coat"
 	inhand_icon_state = null
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
@@ -620,14 +620,14 @@
 	dog_fashion = null
 
 /datum/armor/vest_russian_coat
-	melee = 30
-	bullet = 30
-	laser = 10
-	energy = 30
-	bomb = 25
+	melee = 45
+	bullet = 40
+	energy = 10
+	bomb = 20
+	wound = 10
 	bio = 50
 	fire = -10
-	acid = 50
+	acid = 75
 	wound = 10
 
 /obj/item/clothing/suit/armor/elder_atmosian
@@ -724,8 +724,8 @@
 
 /datum/armor/space_army_light
 	melee = 15
-	bullet = 35
-	laser = 40
+	bullet = 45
+	laser = 50
 	energy = 20
 	bomb = 50
 	fire = 40

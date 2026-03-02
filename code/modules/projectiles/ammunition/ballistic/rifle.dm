@@ -54,33 +54,33 @@
 	if(prob(40))
 		randomspread = rand(0,10)
 
-//ripperslug (ammo for the tizrian ripperlance)
+//ripperdart (ammo for the tizrian ripperlance)
 
-/obj/item/ammo_casing/ripperslug
-	name = "titanium ripperslug"
-	desc = "A fragmenting metal projectile with sharp barbs. Fire it from a ripperlance at something you want to kill."
-	icon_state = "tshell"
-	projectile_type = /obj/projectile/bullet/ripperslug
+/obj/item/ammo_casing/ripperdart
+	name = "titanium ripperdart"
+	desc = "A sharp metal dart with barbed fins. Fire it from a ripperlance at something you want to kill."
+	icon_state = "ripperdart-titanium"
+	projectile_type = /obj/projectile/bullet/ripperdart
 	caliber = CALIBER_RIPPER
-	custom_materials = list(/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 1.8,)
 	variance = 1
+	var/ripper_type = "titanium"
 
-/obj/item/ammo_casing/ripperslug/Initialize(mapload)
+/obj/item/ammo_casing/ripperdart/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/caseless)
 
-/obj/item/ammo_casing/ripperslug/grind_results()
+/obj/item/ammo_casing/ripperdart/grind_results()
 	return list(/datum/reagent/gunpowder = 2)
 
-/obj/item/ammo_casing/ripperslug/bone
-	name = "ripperslug shell"
-	desc = "A fragmenting bony projectile with sharp barbs. Fire it from a ripperlance at something you want to kill."
-	icon_state = "blshell"
-	projectile_type = /obj/projectile/bullet/ripperslug/bone
-	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT * 1.8,)
+/obj/item/ammo_casing/ripperdart/bone
+	name = "ripperdart shell"
+	desc = "A traditionally prepared dart. The spine of a ripperfish is compressed and dried into a deadly projectile, and a small amount of propellant is put in the lowest vertibrae. Fire this from a ripperlance."
+	icon_state = "ripperdart-bone"
+	projectile_type = /obj/projectile/bullet/ripperdart/bone
 	variance = 3
+	ripper_type = "bone"
 
-/obj/item/ammo_casing/ripperslug/bone/grind_results()
+/obj/item/ammo_casing/ripperdart/bone/grind_results()
 	return list(/datum/reagent/brimdust = 2.5)
 
 // .223 (M-90gl Carbine)
